@@ -17,8 +17,8 @@ Master runbook for building `yt-verdict` (V1 skill) inside the `youtube-inspecto
 
 | # | Phase | Status | Blocked by | Output |
 |---|---|---|---|---|
-| 0 | Repo bootstrap | `[ ]` | — | `pyproject.toml`, `.gitignore`, `README.md`, `git init` |
-| 1 | `scripts/fetch.py` | `[ ]` | 0 | URL → validated JSON; tested on 5 video types |
+| 0 | Repo bootstrap | `[x]` Complete | — | `pyproject.toml`, `.gitignore`, `README.md`, `git init` |
+| 1 | `scripts/fetch.py` | `[~]` Code complete; awaiting 5-video e2e | 0 | URL → validated JSON; tested on 5 video types |
 | 2 | Prompts (3 passes) | `[ ]` | 1 | `prompts/*.md`; iterated on 10 real transcripts |
 | 3 | `scripts/analyze.py` | `[ ]` | 2 | LLM orchestrator; report at `~/yt-reports/{video_id}.md` |
 | 4 | `SKILL.md` + skills.sh publish | `[ ]` | 3 | Public GitHub repo; install command verified |
@@ -27,16 +27,16 @@ Master runbook for building `yt-verdict` (V1 skill) inside the `youtube-inspecto
 
 ## Phase 0 — Repo bootstrap
 
-**Status:** `[ ]` Pending
+**Status:** `[x]` Complete (2026-05-05)
 
 **Goal:** Clean Python repo skeleton. No domain code yet.
 
 **Deliverable checklist:**
-- [ ] `.gitignore` — `.venv/`, `__pycache__/`, `*.pyc`, `.DS_Store`, `~/yt-reports/.cache/` reference, `.pytest_cache/`
-- [ ] `pyproject.toml` — project metadata, Python `>=3.11`, deps `yt-dlp`, `youtube-transcript-api`; dev extra `pytest`
-- [ ] `README.md` — one-paragraph repo description, sister-skill roadmap table, install placeholder
-- [ ] `git init` + first commit
-- [ ] Fresh venv: `pip install -e .` succeeds
+- [x] `.gitignore` — `.venv/`, `__pycache__/`, `*.pyc`, `.DS_Store`, `~/yt-reports/.cache/` reference, `.pytest_cache/`
+- [x] `pyproject.toml` — project metadata, Python `>=3.11`, deps `yt-dlp`, `youtube-transcript-api>=0.6.2,<1.0`; dev extra `pytest`
+- [x] `README.md` — one-paragraph repo description, sister-skill roadmap table, install placeholder
+- [x] `git init` + first commit (`353a412 chore: bootstrap repo`)
+- [x] Fresh venv: `pip install -e ".[dev]"` succeeds
 
 **Verification:** `pip install -e .` in a clean venv works. `pytest -q` reports 0 tests collected (no error). `git log --oneline` shows one commit.
 
@@ -71,7 +71,7 @@ When done:
 
 ## Phase 1 — `scripts/fetch.py`
 
-**Status:** `[ ]` Pending  
+**Status:** `[~]` Code complete (2026-05-05); awaits e2e verification on 5 real video URLs.  
 **Blocked by:** Phase 0
 
 **Goal:** URL → schema-valid JSON with metadata + transcript. No LLM calls.
@@ -79,12 +79,13 @@ When done:
 **Spec:** Full CLI contract, JSON schema, rejection rules, library plan, test plan, and verification steps live in `/Users/nishil/.claude/plans/velvety-cuddling-lighthouse.md`. Read it before starting.
 
 **Deliverable checklist:**
-- [ ] `scripts/fetch.py` — CLI implements all rejection rules in cheap→expensive order
-- [ ] `tests/test_fetch.py` — URL parsing, error JSON shape, cache round-trip (no network; mock yt-dlp)
-- [ ] 5 happy-path video types produce schema-valid JSON: tutorial, podcast (>1hr), finance pitch, news, vlog
-- [ ] 6 rejection cases exit 2 with structured error JSON: invalid URL, playlist, live stream, <5min, no transcript, non-English
-- [ ] `--cache` flag round-trips correctly (write then read serves from `~/yt-reports/.cache/`)
-- [ ] `pytest tests/` passes
+- [x] `scripts/fetch.py` — CLI implements all rejection rules in cheap→expensive order
+- [x] `tests/test_fetch.py` — URL parsing, error JSON shape, cache round-trip (no network; mock yt-dlp). 35 tests passing.
+- [ ] 5 happy-path video types produce schema-valid JSON: tutorial, podcast (>1hr), finance pitch, news, vlog *(needs real public URLs — to be verified by user)*
+- [x] Rejection cases verified locally without network: invalid URL → exit 2 with `INVALID_URL`; playlist URL → exit 2 with `PLAYLIST`; empty input → exit 2 with `INVALID_URL`. Unit-test mocks cover `LIVE_STREAM` and `TOO_SHORT`.
+- [ ] Live e2e of `LIVE_STREAM`, `TOO_SHORT`, `NO_TRANSCRIPT`, `NON_ENGLISH` against real videos *(needs URLs)*
+- [x] `--cache` flag round-trips correctly — verified in unit tests (`test_round_trip`, `test_cached_success_skips_network`, `test_cached_rejection_re_emits_error`); live cache round-trip awaits a real video URL.
+- [x] `pytest tests/` passes (35 passed in 0.43s)
 
 **Verification:** Run the full Verification block in the plan file (5 happy-path videos + 6 rejection cases + cache check + pytest). Show the actual command output, not summaries.
 
@@ -291,3 +292,5 @@ Carry forward; don't act on without confirming.
 | Date | Phase | Change |
 |---|---|---|
 | 2026-05-05 | — | PHASES.md tracker created |
+| 2026-05-05 | 0 | Repo bootstrapped: `.gitignore`, `pyproject.toml`, `README.md`, `git init` + first commit `353a412`. `pip install -e ".[dev]"` succeeds in fresh `.venv/`. |
+| 2026-05-05 | 1 | `scripts/fetch.py` + `tests/test_fetch.py` written. 35 unit tests pass (URL parsing, error JSON shape, cache round-trip, VTT parser, mocked rejection paths, mocked happy path). CLI rejection paths smoke-tested without network: `INVALID_URL`, `PLAYLIST`, empty input → all exit 2 with structured stderr JSON. **Pending:** real-URL e2e for the 5 video types and the network-dependent rejection cases. |

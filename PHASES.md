@@ -19,9 +19,11 @@ Master runbook for building `yt-verdict` (V1 skill) inside the `youtube-inspecto
 |---|---|---|---|---|
 | 0 | Repo bootstrap | `[x]` Complete | — | `pyproject.toml`, `.gitignore`, `README.md`, `git init` |
 | 1 | `scripts/fetch.py` | `[~]` Code complete; awaiting 5-video e2e | 0 | URL → validated JSON; tested on 5 video types |
-| 2 | Prompts (3 passes) | `[ ]` | 1 | `prompts/*.md`; iterated on 10 real transcripts |
-| 3 | `scripts/analyze.py` | `[ ]` | 2 | LLM orchestrator; report at `~/yt-reports/{video_id}.md` |
-| 4 | `SKILL.md` + skills.sh publish | `[ ]` | 3 | Public GitHub repo; install command verified |
+| 2 | Prompts (3 passes) | `[ ]` | 1 | `prompts/*.md`; agent-agnostic; iterated on 10 real transcripts |
+| 3 | `SKILL.md` orchestration | `[ ]` | 2 | Frontmatter + step-by-step workflow the host agent follows; cache instructions |
+| 4 | Cross-platform validation + skills.sh publish | `[ ]` | 3 | Smoke-tested on ≥2 agents; public GitHub repo; install command verified |
+
+**Important:** This is an agent-agnostic skill. It ships on skills.sh and runs inside whatever host agent installs it (Claude Code, Cursor, Antigravity, Codex, etc.). The host agent's underlying LLM does all three passes. We do **not** ship orchestrator code that calls a specific vendor's API. No `ANTHROPIC_API_KEY` requirement, no Anthropic SDK in the repo, no model lock-in.
 
 ---
 
@@ -130,17 +132,19 @@ When done:
 **Goal:** Three production-grade prompts. The plan doc is explicit: *"the prompts are the actual product. Code is glue."* This phase is where the skill earns its keep.
 
 **Deliverable checklist:**
-- [ ] `prompts/extract_structure.md` — Pass 1 (Haiku): mechanical segmentation into hook/content/pitch/outro with timestamps
-- [ ] `prompts/inventory_claims.md` — Pass 2 (Sonnet): per-section inventory of concrete claims, vague claims, evidence shown, pitches; **every item has timestamp + verbatim quote**
-- [ ] `prompts/generate_verdict.md` — Pass 3 (Sonnet): synthesis to the report format from the plan doc
+- [ ] `prompts/extract_structure.md` — Pass 1: mechanical segmentation into hook/content/pitch/outro with timestamps
+- [ ] `prompts/inventory_claims.md` — Pass 2: per-section inventory of concrete claims, vague claims, evidence shown, pitches; **every item has timestamp + verbatim quote**
+- [ ] `prompts/generate_verdict.md` — Pass 3: synthesis to the report format from the plan doc
+- [ ] Prompts are **model-agnostic** — written in plain natural language, no vendor-specific syntax (no `cache_control`, no Anthropic-style XML tag conventions over-relied on, no Claude-specific instructions). Output formats are explicit so any frontier LLM produces consistent structure.
 - [ ] `prompts/iteration-notes.md` — log of what changed each iteration and why
 - [ ] `prompts/samples/transcripts/` — fetch.py output for the 10 test videos
 - [ ] `prompts/samples/outputs/` — Pass-1, Pass-2, Pass-3 outputs for ≥3 of the 10
+- [ ] **Cross-model spot-check:** run Pass 3 on the same Pass-1 + Pass-2 inputs against ≥2 different frontier models (e.g., one Anthropic, one OpenAI). Verdict shouldn't flip; format should hold.
 - [ ] **Hard rule check:** every flag in every Pass-3 sample cites a timestamp + verbatim quote. Anything that doesn't is broken; iterate until clean.
 
-**Verification:** Manual review. Pass-3 outputs read in <30 seconds. Format matches the plan doc exactly. No flags without quoted citations.
+**Verification:** Manual review. Pass-3 outputs read in <30 seconds. Format matches the plan doc exactly. No flags without quoted citations. No prompt phrasing that locks in a single vendor's model.
 
-**Prompt to submit to Claude Code:**
+**Prompt to submit to your agent:**
 
 ```
 Implement Phase 2 — three prompts for yt-verdict.
@@ -151,14 +155,18 @@ Read first:
 
 Working directory: /Users/nishil/Documents/work/youtube-inspector/
 
+CONTEXT: This skill ships on skills.sh and runs inside any host agent (Claude Code, Cursor, Antigravity, Codex). The prompts must work across frontier models — do not write prompts that depend on Anthropic-specific syntax, Claude-specific instructions, or any single vendor's quirks.
+
 Phase 1 (scripts/fetch.py) is complete. Use it to fetch transcripts for 10 real YouTube videos covering the 5 types from the plan doc (tutorial, podcast, finance pitch, news, vlog — at least 2 of each). Save them under prompts/samples/transcripts/.
 
 Build, in order, iterating against the 10 transcripts:
-1. prompts/extract_structure.md (Pass 1, claude-haiku-4-5)
-2. prompts/inventory_claims.md (Pass 2, claude-sonnet-4-6)
-3. prompts/generate_verdict.md (Pass 3, claude-sonnet-4-6)
+1. prompts/extract_structure.md — Pass 1: mechanical segmentation
+2. prompts/inventory_claims.md — Pass 2: claim/evidence inventory with verbatim quotes
+3. prompts/generate_verdict.md — Pass 3: synthesis into the report format
 
-For each prompt: write v1, run on the 10 transcripts, record failures in prompts/iteration-notes.md, revise, repeat. Save final-version outputs under prompts/samples/outputs/.
+For each prompt: write v1 in plain natural language, run on the 10 transcripts, record failures in prompts/iteration-notes.md, revise, repeat. Save final outputs under prompts/samples/outputs/.
+
+Cross-model check: spot-test Pass 3 against ≥2 different frontier models on the same Pass-1+Pass-2 inputs. Verdict should not flip; output format should hold. Document the test in iteration-notes.md.
 
 Hard rule (do NOT mark complete until satisfied): every flag in every Pass-3 sample output quotes the transcript verbatim AND includes a timestamp. Hallucinated quotes or unsourced flags = not done.
 
@@ -169,80 +177,92 @@ When done:
 
 ---
 
-## Phase 3 — `scripts/analyze.py`
+## Phase 3 — `SKILL.md` orchestration
 
 **Status:** `[ ]` Pending  
 **Blocked by:** Phase 2
 
-**Goal:** Orchestrate the three LLM passes. Cache aggressively so prompt edits don't re-trigger expensive earlier passes. Write final report to `~/yt-reports/{video_id}.md`.
+**Goal:** Wire the three prompts and `fetch.py` into a complete agent-runnable workflow. The host agent (Claude Code / Cursor / Antigravity / Codex) reads `SKILL.md`, follows the steps, makes its own LLM calls using its own auth and model. There is **no** Python orchestrator, **no** vendor SDK in the repo, and **no** API key the user has to provide.
+
+Caching is the agent's job. SKILL.md instructs it: before each pass, check the relevant cache file at `~/yt-reports/.cache/{video_id}-pass{n}.json`. If present and the prompt hash matches, reuse. Otherwise run the pass and write the cache.
 
 **Deliverable checklist:**
-- [ ] `scripts/analyze.py` — Anthropic SDK; `claude-haiku-4-5` for Pass 1, `claude-sonnet-4-6` for Passes 2–3
-- [ ] Per-pass intermediate cache: `~/yt-reports/.cache/{video_id}-pass{n}.json` so re-runs after a prompt edit only re-run from the changed pass
-- [ ] Prompt caching enabled (`cache_control` on system prompt blocks)
-- [ ] Final report written to `~/yt-reports/{video_id}.md`
-- [ ] CLI: `python scripts/analyze.py <url-or-video-id>`
-- [ ] `tests/test_analyze.py` — mocks Anthropic SDK; verifies pipeline order, cache reuse, error propagation
-- [ ] End-to-end run on 5 of the Phase 2 transcripts; outputs match Phase 2 samples within iteration drift
+- [ ] `skills/yt-verdict/SKILL.md` with YAML frontmatter (name, description) — see Phase 4 for description tuning
+- [ ] SKILL.md body documents the workflow as numbered steps the agent follows verbatim
+- [ ] Workflow steps reference `scripts/fetch.py` (run it as a subprocess) and `prompts/*.md` (apply each as an LLM pass)
+- [ ] Cache protocol documented in SKILL.md: cache key per pass, what counts as a cache hit (prompt-content hash + transcript-hash matching), when to invalidate
+- [ ] Final report written to `~/yt-reports/{video_id}.md` per the format in `yt-worth-it-plan.md`
+- [ ] Optional thin Python helper `scripts/cache.py` if file-path caching needs more than what SKILL.md instructions can express. **Default: don't add it.** Only introduce if the agent struggles to manage cache reads/writes via tool use alone.
+- [ ] End-to-end smoke on 3 transcripts from Phase 2: run inside a host agent (Claude Code) with no API key set in the environment beyond what the agent itself uses; produce reports matching the Phase 2 samples within iteration drift.
 
-**Verification:** Run on 5 known transcripts; diff vs saved Phase 2 samples. `pytest tests/test_analyze.py` passes. Cache reuse verified by deleting only `pass3.json`, re-running, confirming Passes 1–2 are not re-called.
+**Verification:**
+- Run the skill against 3 known transcripts inside Claude Code; outputs land in `~/yt-reports/` and match Phase 2 samples within iteration drift.
+- Delete only `~/yt-reports/.cache/{video_id}-pass3.json` and re-trigger; confirm the agent reuses Pass 1 and Pass 2 caches and only re-runs Pass 3.
+- Confirm no `import anthropic` / `import openai` / vendor SDK anywhere in the shipped repo.
 
-**Prompt to submit to Claude Code:**
+**Prompt to submit to your agent:**
 
 ```
-Implement Phase 3 — scripts/analyze.py orchestrator.
+Implement Phase 3 — SKILL.md orchestration — for yt-verdict.
 
 Read first:
-- /Users/nishil/Documents/work/youtube-inspector/yt-worth-it-plan.md ("Implementation phases" → Phase 3)
+- /Users/nishil/Documents/work/youtube-inspector/yt-worth-it-plan.md ("Implementation phases" → Phase 3, "Three-pass analysis", "Publishing to skills.sh")
 - /Users/nishil/Documents/work/youtube-inspector/PHASES.md (Phase 3 section)
-- The three prompt files in prompts/
+- prompts/extract_structure.md, prompts/inventory_claims.md, prompts/generate_verdict.md
 
 Working directory: /Users/nishil/Documents/work/youtube-inspector/
 
-Use the claude-api skill — invoke it before writing Anthropic SDK code so prompt caching, model selection, and SDK best practices are correct.
+CRITICAL CONSTRAINT: this is a cross-platform skill. It will be installed via `npx skills add` and run inside Claude Code, Cursor, Antigravity, Codex, etc. The host agent's underlying LLM does the work. Do NOT:
+- Write a Python orchestrator that calls anthropic/openai SDKs
+- Require ANTHROPIC_API_KEY or any vendor key from the user
+- Hardcode model names (claude-sonnet-4-6, gpt-4, etc.)
+- Use vendor-specific prompt features (Anthropic cache_control, etc.)
 
-Build scripts/analyze.py:
-- Input: URL or video_id
-- Pipeline: load fetch.py output (use --cache) → Pass 1 (claude-haiku-4-5) → Pass 2 (claude-sonnet-4-6) → Pass 3 (claude-sonnet-4-6) → write Markdown report to ~/yt-reports/{video_id}.md
-- Cache each pass to ~/yt-reports/.cache/{video_id}-pass{n}.json. On re-run, skip passes whose cache exists AND whose prompt hash hasn't changed (store the prompt hash alongside the output)
-- Add prompt caching (cache_control) on the long system prompt blocks
-- Errors: surface clearly; don't write a half-baked report
+Build skills/yt-verdict/SKILL.md:
+- YAML frontmatter: name=yt-verdict, description=(placeholder; tuned in Phase 4)
+- Body: numbered workflow the host agent follows when triggered
+  1. Extract video URL from user input
+  2. Run `python scripts/fetch.py <url> --cache` and parse the JSON
+  3. Check cache for Pass 1 at ~/yt-reports/.cache/{video_id}-pass1.json — reuse if prompt hash matches; else apply prompts/extract_structure.md to the transcript and write to cache
+  4. Same pattern for Pass 2 (input: Pass 1 output + transcript) and Pass 3 (input: Pass 1 + Pass 2 + metadata)
+  5. Write final report to ~/yt-reports/{video_id}.md per the format in yt-worth-it-plan.md
+- Cache protocol: SKILL.md must spell out the cache key, hash inputs, and invalidation rules so any agent can implement them via file tool use
 
-tests/test_analyze.py: mock anthropic.Anthropic; verify pass order, cache reuse, prompt-hash invalidation, error propagation. No real API calls in tests.
+If the agent reports cache management is too brittle as pure SKILL.md instructions, add scripts/cache.py — a tiny Python helper with `read(pass_n, video_id)` / `write(pass_n, video_id, content, prompt_hash)` operations. No LLM calls in cache.py. Document the choice in SKILL.md.
 
 Verify:
-- Run on 5 of the Phase 2 sample transcripts; diff against prompts/samples/outputs/ — matches within iteration drift
-- Delete only ~/yt-reports/.cache/{video_id}-pass3.json, re-run, confirm Passes 1–2 are NOT re-called (check with a debug log)
-- pytest tests/test_analyze.py passes
+- Run yt-verdict against 3 of the Phase 2 sample transcripts inside Claude Code (or any installed host agent). Outputs at ~/yt-reports/{video_id}.md match the Phase 2 samples within iteration drift.
+- Delete only ~/yt-reports/.cache/{video_id}-pass3.json; re-run; confirm Passes 1–2 are NOT re-executed (the agent should report it skipped them due to cache hits).
+- grep -r "import anthropic\|import openai\|from anthropic\|from openai\|ANTHROPIC_API_KEY\|OPENAI_API_KEY" . — must return nothing.
 
 When done:
-- Update PHASES.md: tick checkboxes, change summary row to [x], log API spend estimate per video in Change log.
+- Update PHASES.md: tick checkboxes, change summary row to [x], note the 3 transcripts used.
 - Report.
 ```
 
 ---
 
-## Phase 4 — `SKILL.md` + skills.sh publish
+## Phase 4 — Cross-platform validation + skills.sh publish
 
 **Status:** `[ ]` Pending  
 **Blocked by:** Phase 3
 
-**Goal:** Wrap as a publishable Claude Code skill. Install command works on a fresh machine. Description triggers reliably from natural-language prompts.
+**Goal:** Tune the description for trigger quality, validate the skill works on **at least two different host agents** (proves cross-platform claim), publish to GitHub, register on skills.sh.
 
 **Deliverable checklist:**
-- [ ] `skills/yt-verdict/SKILL.md` with YAML frontmatter; description 80–120 words mentioning concrete trigger phrases
-- [ ] `skills/yt-verdict/` references the shared `scripts/fetch.py` and `scripts/analyze.py` (decide: symlink / relative path call / copy — document the choice in `SKILL.md`)
-- [ ] `README.md` updated: install command, 3–4 example invocations, sister-skill roadmap
-- [ ] Trigger-quality test: 5 different natural-language phrasings for "is this worth watching" pasted into a fresh Claude Code session; skill triggers in ≥4/5
-- [ ] Public GitHub repo at `github.com/<owner>/youtube-inspector` (do NOT push without explicit confirmation)
-- [ ] `npx skills add <owner>/youtube-inspector --skill yt-verdict` install command verified end-to-end
+- [ ] `SKILL.md` description tuned: 80–120 words, mentions concrete trigger phrases ("is this video worth watching", "what's actually in this video", "should I watch this", "skip or watch", "pre-watch summary", "is this YouTube video any good")
+- [ ] `README.md` updated: install command, 3–4 example invocations, sister-skill roadmap, **explicit "works on Claude Code, Cursor, Antigravity, Codex" line**, list of dependencies the user needs (Python 3.11+, that's it — no API keys)
+- [ ] Trigger-quality test on the primary agent (Claude Code): 5 different natural-language phrasings + YouTube URL pasted into fresh sessions; skill triggers in ≥4/5
+- [ ] **Cross-platform smoke test:** install + run yt-verdict on at least one non-Claude-Code agent (Cursor or Antigravity). Same URL, compare outputs. Acceptance: same WATCH/SKIM/SKIP verdict, same evidence quality (verbatim quotes + timestamps).
+- [ ] Public GitHub repo at `github.com/<owner>/youtube-inspector` (do NOT push without explicit user confirmation)
+- [ ] `npx skills add <owner>/youtube-inspector --skill yt-verdict` install command verified end-to-end on a clean machine
 
-**Verification:** A fresh user installs via the published command, pastes a YouTube URL with a natural ask ("is this worth watching?"), gets a verdict report.
+**Verification:** A fresh user on a non-Claude agent (Cursor/Antigravity) installs via the published command, pastes a YouTube URL with a natural ask ("is this worth watching?"), gets a verdict report. No API key prompts. No "ANTHROPIC_API_KEY missing" errors.
 
-**Prompt to submit to Claude Code:**
+**Prompt to submit to your agent:**
 
 ```
-Implement Phase 4 — skill packaging and skills.sh publish prep — for yt-verdict.
+Implement Phase 4 — cross-platform validation and skills.sh publish prep — for yt-verdict.
 
 Read first:
 - /Users/nishil/Documents/work/youtube-inspector/yt-worth-it-plan.md ("Publishing to skills.sh")
@@ -252,27 +272,35 @@ Working directory: /Users/nishil/Documents/work/youtube-inspector/
 
 Phases 0–3 are complete and verified.
 
-Build:
-- skills/yt-verdict/SKILL.md with YAML frontmatter (name: yt-verdict). The description is the most important part of this phase — spend real time on it. 80–120 words, mention concrete trigger phrases: "is this video worth watching", "what's actually in this video", "should I watch this", "skip or watch", "pre-watch summary", "is this YouTube video any good".
-- Decide how skills/yt-verdict/ accesses scripts/fetch.py and scripts/analyze.py (symlink / relative-path subprocess call / copy). Document the choice and rationale in SKILL.md.
-- Update README.md: install command (npx skills add <owner>/youtube-inspector --skill yt-verdict), 3–4 example invocations, sister-skill roadmap.
+Tune:
+- skills/yt-verdict/SKILL.md description (frontmatter): 80–120 words; concrete trigger phrases for "is this video worth watching", "what's actually in this video", "should I watch this", "skip or watch", "pre-watch summary", "is this YouTube video any good".
+- README.md:
+  - Install command: npx skills add <owner>/youtube-inspector --skill yt-verdict
+  - 3–4 example invocations
+  - Explicit "Works on Claude Code, Cursor, Antigravity, Codex" line
+  - Dependencies: Python 3.11+ (no API keys; the host agent provides LLM access)
+  - Sister-skill roadmap
 
-Trigger-quality test (you must run this before marking complete):
-- Open 5 fresh Claude Code sessions in this repo
-- Paste 5 different natural-language phrasings + a YouTube URL
-- Record whether the skill triggered without prompting
-- Acceptance: ≥4/5 trigger correctly. If <4/5, revise the description and retest.
+Trigger-quality test (Claude Code):
+- 5 fresh sessions, 5 different natural-language phrasings + a YouTube URL
+- Acceptance: ≥4/5 triggers without prompting
+
+Cross-platform smoke test (must do at least one):
+- Install yt-verdict in Cursor (or Antigravity)
+- Run on a known URL from the Phase 2 sample set
+- Compare verdict + format against the Claude Code output
+- Acceptance: same WATCH/SKIM/SKIP, same flag count ±1, same evidence-quality bar (verbatim quotes + timestamps)
 
 Stop before pushing to GitHub or skills.sh. Report:
-- Which 5 phrasings you tested and the trigger results
-- The final description text
-- The integration approach you chose (symlink/subprocess/copy)
+- 5 trigger-test phrasings + outcomes
+- Cross-platform smoke test result with both agent names
+- Final SKILL.md description text
 - Any naming/description tweaks you'd recommend
 
 DO NOT run git push or any skills.sh publish command without explicit user confirmation.
 
 When done:
-- Update PHASES.md: tick checkboxes, change summary row to [x] Complete, log the 5 trigger-test phrasings + outcomes in Change log.
+- Update PHASES.md: tick checkboxes, change summary row to [x] Complete, log the trigger-test phrasings + cross-platform results in Change log.
 ```
 
 ---
@@ -296,3 +324,4 @@ Carry forward; don't act on without confirming.
 | 2026-05-05 | 1 | `scripts/fetch.py` + `tests/test_fetch.py` written. 35 unit tests pass (URL parsing, error JSON shape, cache round-trip, VTT parser, mocked rejection paths, mocked happy path). CLI rejection paths smoke-tested without network: `INVALID_URL`, `PLAYLIST`, empty input → all exit 2 with structured stderr JSON. **Pending:** real-URL e2e for the 5 video types and the network-dependent rejection cases. |
 | 2026-05-05 | 1 | Live e2e against 2 real URLs: `n0phBDPz8z0` (228s) → `TOO_SHORT` rejected at 300s floor; `xP0SQHXVHjQ` (Hindi) → `NON_ENGLISH` rejected. Cache round-trip verified live: rejection JSON cached at `~/yt-reports/.cache/`, second run ~0.03s vs 1.6–3.0s fresh (~50× speedup). |
 | 2026-05-05 | 1 | Lowered `MIN_DURATION_SECONDS` from 300 → 180 per user direction; updated `yt-worth-it-plan.md` Hard constraint #2 to match. After re-fetching `n0phBDPz8z0` (228s) it now passes: title "The Lazy Way I Make Money With AI (2026)", channel "Travis Nicholson", 186 transcript segments, language `en-orig`, all required fields populated, timestamps monotonic. Added `noprogress=True` to yt-dlp fallback opts to suppress download progress noise. |
+| 2026-05-05 | 2–4 | **Re-architected Phases 2–4 to remove Anthropic-specific assumptions.** Old Phase 3 (`scripts/analyze.py` calling Anthropic SDK with `ANTHROPIC_API_KEY`) deleted. New Phase 3 = `SKILL.md` orchestration (host agent runs the three passes using its own LLM/auth). Phase 4 split out as cross-platform validation + publish. Phase 2 prompts now required to be model-agnostic with cross-model spot-checks. Reason: skill ships on skills.sh and runs on any host agent (Claude Code, Cursor, Antigravity, Codex) — must not lock to a single vendor. Updated `yt-worth-it-plan.md` to match. No code changes; only doc surgery. |

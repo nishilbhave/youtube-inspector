@@ -89,25 +89,21 @@ yt-worth-it/
 
 ## Three-pass analysis
 
+The skill is agent-agnostic — it ships on skills.sh and runs inside whatever host agent installs it (Claude Code, Cursor, Antigravity, Codex, etc.). The host agent's underlying LLM does all three passes. We do **not** ship orchestrator code that calls a specific vendor's API or assumes a particular model. Each pass is a markdown prompt; SKILL.md tells the agent to apply them in order with intermediate caching.
+
 **Pass 1 — Structure extraction**
 
-Transcript with timestamps → time-coded sections (hook / content / pitch / outro).
-
-Mechanical segmentation. Use Haiku.
+Transcript with timestamps → time-coded sections (hook / content / pitch / outro). Mechanical segmentation; designed to work reliably on any frontier model.
 
 **Pass 2 — Claim & evidence inventory**
 
 For each section, extract concrete claims, vague claims, evidence shown, and pitches. Each item must have a timestamp and quote.
 
-Use Sonnet.
-
 **Pass 3 — Synthesis**
 
 Inputs: structure + claim inventory + metadata. Output: the report shown above.
 
-Use Sonnet.
-
-Don't combine these into one pass. Quality drops sharply, structured outputs become unreliable.
+Don't combine these into one pass. Quality drops sharply, structured outputs become unreliable. Three discrete prompts also let the agent cache each pass's output independently and re-run only what changed.
 
 ---
 
@@ -123,17 +119,24 @@ Test on 5 video types before moving on: tutorial, podcast, finance pitch, news, 
 
 **Phase 2: prompts**
 
-Write the three prompts. Iterate them on 10 real videos before wiring up Python.
+Write the three prompts. Iterate them on 10 real videos. Test them against multiple frontier models (different agents will use different models — the prompts must be model-agnostic).
 
-The prompts are the actual product. Code is glue.
+The prompts are the actual product. Everything else is glue.
 
-**Phase 3: `analyze.py`**
+**Phase 3: `SKILL.md` orchestration**
 
-Orchestrate the three LLM calls. Cache by video_id. Save report to `~/yt-reports/{video_id}.md`.
+`SKILL.md` is the orchestrator — it instructs the host agent through the three-pass workflow:
+1. Run `python scripts/fetch.py <url> --cache` to obtain the transcript JSON.
+2. Apply Pass 1 prompt to the transcript; cache the result at `~/yt-reports/.cache/{video_id}-pass1.json`.
+3. Apply Pass 2 prompt to (Pass 1 output + transcript); cache to `pass2.json`.
+4. Apply Pass 3 prompt to (Pass 1 + Pass 2 + metadata); write the final report to `~/yt-reports/{video_id}.md`.
+5. On re-run, the agent reads existing cache files first; only passes whose inputs changed are re-run.
 
-**Phase 4: `SKILL.md`**
+No Python orchestrator. No vendor SDK. No API key requirement on the user.
 
-Routing logic + invocation triggers. See "Publishing to skills.sh" below for what this file needs.
+**Phase 4: skills.sh publish**
+
+Public GitHub repo, install command, frontmatter description tuned for trigger quality, cross-platform smoke test (verify the skill runs the same way on Claude Code AND on at least one other agent — Cursor or Antigravity).
 
 ---
 

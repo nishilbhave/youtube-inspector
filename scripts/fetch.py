@@ -25,7 +25,7 @@ from typing import Any, NoReturn
 from urllib.parse import parse_qs, urlparse
 
 CACHE_DIR = Path.home() / "yt-reports" / ".cache"
-MIN_DURATION_SECONDS = 300
+MIN_DURATION_SECONDS = 180
 VIDEO_ID_RE = re.compile(r"^[A-Za-z0-9_-]{11}$")
 VALID_HOSTS = {
     "youtube.com",
@@ -231,6 +231,7 @@ def _fetch_transcript_fallback(
         opts = {
             "quiet": True,
             "no_warnings": True,
+            "noprogress": True,
             "skip_download": True,
             "writesubtitles": True,
             "writeautomaticsub": True,

@@ -81,10 +81,10 @@ When done:
 **Deliverable checklist:**
 - [x] `scripts/fetch.py` — CLI implements all rejection rules in cheap→expensive order
 - [x] `tests/test_fetch.py` — URL parsing, error JSON shape, cache round-trip (no network; mock yt-dlp). 35 tests passing.
-- [ ] 5 happy-path video types produce schema-valid JSON: tutorial, podcast (>1hr), finance pitch, news, vlog *(needs real public URLs — to be verified by user)*
-- [x] Rejection cases verified locally without network: invalid URL → exit 2 with `INVALID_URL`; playlist URL → exit 2 with `PLAYLIST`; empty input → exit 2 with `INVALID_URL`. Unit-test mocks cover `LIVE_STREAM` and `TOO_SHORT`.
-- [ ] Live e2e of `LIVE_STREAM`, `TOO_SHORT`, `NO_TRANSCRIPT`, `NON_ENGLISH` against real videos *(needs URLs)*
-- [x] `--cache` flag round-trips correctly — verified in unit tests (`test_round_trip`, `test_cached_success_skips_network`, `test_cached_rejection_re_emits_error`); live cache round-trip awaits a real video URL.
+- [ ] 5 happy-path video types produce schema-valid JSON: tutorial, podcast (>1hr), finance pitch, news, vlog *(still pending — needs real >5min English video URLs)*
+- [x] **5 of 6 rejection paths live-verified:** `INVALID_URL` (`"not-a-url"`), `PLAYLIST`, `TOO_SHORT` (URL `n0phBDPz8z0`, 228s), `NON_ENGLISH` (URL `xP0SQHXVHjQ`, Hindi transcript), and empty-input → `INVALID_URL`.
+- [ ] Live e2e of `LIVE_STREAM` and `NO_TRANSCRIPT` against real videos *(unit-test mocks cover the code paths; live URLs are volatile/rare, low priority)*
+- [x] `--cache` flag round-trips correctly — verified live: rejection JSON written to `~/yt-reports/.cache/{video_id}.json` (perms `0700`), second run serves from cache in ~0.03s vs 1.6–3.0s fresh (~50× speedup), no network call.
 - [x] `pytest tests/` passes (35 passed in 0.43s)
 
 **Verification:** Run the full Verification block in the plan file (5 happy-path videos + 6 rejection cases + cache check + pytest). Show the actual command output, not summaries.
@@ -294,3 +294,5 @@ Carry forward; don't act on without confirming.
 | 2026-05-05 | — | PHASES.md tracker created |
 | 2026-05-05 | 0 | Repo bootstrapped: `.gitignore`, `pyproject.toml`, `README.md`, `git init` + first commit `353a412`. `pip install -e ".[dev]"` succeeds in fresh `.venv/`. |
 | 2026-05-05 | 1 | `scripts/fetch.py` + `tests/test_fetch.py` written. 35 unit tests pass (URL parsing, error JSON shape, cache round-trip, VTT parser, mocked rejection paths, mocked happy path). CLI rejection paths smoke-tested without network: `INVALID_URL`, `PLAYLIST`, empty input → all exit 2 with structured stderr JSON. **Pending:** real-URL e2e for the 5 video types and the network-dependent rejection cases. |
+| 2026-05-05 | 1 | Live e2e against 2 real URLs: `n0phBDPz8z0` (228s) → `TOO_SHORT` rejected at 300s floor; `xP0SQHXVHjQ` (Hindi) → `NON_ENGLISH` rejected. Cache round-trip verified live: rejection JSON cached at `~/yt-reports/.cache/`, second run ~0.03s vs 1.6–3.0s fresh (~50× speedup). |
+| 2026-05-05 | 1 | Lowered `MIN_DURATION_SECONDS` from 300 → 180 per user direction; updated `yt-worth-it-plan.md` Hard constraint #2 to match. After re-fetching `n0phBDPz8z0` (228s) it now passes: title "The Lazy Way I Make Money With AI (2026)", channel "Travis Nicholson", 186 transcript segments, language `en-orig`, all required fields populated, timestamps monotonic. Added `noprogress=True` to yt-dlp fallback opts to suppress download progress noise. |

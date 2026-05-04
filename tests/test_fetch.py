@@ -78,7 +78,7 @@ class TestParseVideoId:
 class TestErrorOutput:
     def test_emit_error_writes_json_to_stderr(self, capsys):
         err = fetch.FetchError(
-            "TOO_SHORT", "Video is 142s; minimum is 300s.", "abc12345678"
+            "TOO_SHORT", "Video is 142s; minimum is 180s.", "abc12345678"
         )
         with pytest.raises(SystemExit) as exit_info:
             fetch.emit_error(err)
@@ -89,7 +89,7 @@ class TestErrorOutput:
         payload = json.loads(captured.err)
         assert payload == {
             "error": "TOO_SHORT",
-            "message": "Video is 142s; minimum is 300s.",
+            "message": "Video is 142s; minimum is 180s.",
             "video_id": "abc12345678",
         }
 
@@ -139,7 +139,7 @@ class TestFetchMetadataRejections:
                 fetch.fetch_metadata("dQw4w9WgXcQ")
         assert exc.value.code == "TOO_SHORT"
         assert "142s" in exc.value.message
-        assert "300s" in exc.value.message
+        assert "180s" in exc.value.message
 
     def test_happy_path_returns_metadata(self):
         info = {

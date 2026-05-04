@@ -141,7 +141,7 @@ Routing logic + invocation triggers. See "Publishing to skills.sh" below for wha
 
 1. Every flag cites a timestamp + verbatim quote. Drop anything that can't.
 
-2. Reject videos under 5 minutes. Not enough signal, false positive rate spikes.
+2. Reject videos under 3 minutes (180s). Not enough signal, false positive rate spikes. Lowered from 5min after testing — 3min still filters Shorts and trailers while letting dense finance/tutorial content through.
 
 3. Reject live streams and playlists.
 

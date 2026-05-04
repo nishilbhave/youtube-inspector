@@ -148,6 +148,14 @@ Public GitHub repo, install command, frontmatter description tuned for trigger q
 
 3. Reject live streams and playlists.
 
+3a. **Zero setup.** A user installing `yt-verdict` must not have to provide:
+- Any API key (no `ANTHROPIC_API_KEY`, `OPENAI_API_KEY`, `YOUTUBE_API_KEY`, etc.)
+- Any environment variable
+- Any config file (no `.env`, no `~/.config/yt-verdict/`)
+- Any account creation on a third-party service
+
+The only system requirement is Python 3.11+ (already present on most developer machines). The host agent (Claude Code, Cursor, Antigravity, Codex) provides LLM access through its own existing subscription — `yt-verdict` adds no incremental cost. If a fresh user has to read more than the install command before running the skill, the design is wrong.
+
 4. Phrase outputs as fit-with-title, never as judgments of the creator.
 
 5. Cache by `video_id` — same video analyzed twice serves from cache.

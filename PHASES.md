@@ -247,17 +247,31 @@ When done:
 **Status:** `[ ]` Pending  
 **Blocked by:** Phase 3
 
-**Goal:** Tune the description for trigger quality, validate the skill works on **at least two different host agents** (proves cross-platform claim), publish to GitHub, register on skills.sh.
+**Goal:** Tune the description for trigger quality, validate the skill works on **Claude Code AND Cursor** (locked test pair — proves cross-platform claim), publish to GitHub, register on skills.sh.
+
+**Locked cross-platform test pair:** **Claude Code + Cursor.** Cursor is the largest non-Claude agent in the skills ecosystem; if yt-verdict installs and runs the same way on both, the cross-platform claim holds for Antigravity / Codex / future agents that follow the same convention.
+
+**Zero-setup hard rule** (must hold or the publish is blocked):
+- No API key the user has to provide (`ANTHROPIC_API_KEY`, `OPENAI_API_KEY`, `YOUTUBE_API_KEY` — none)
+- No environment variable the skill requires
+- No config file the user has to create (`.env`, `~/.config/...` — none)
+- No third-party account signup
+- Only system requirement: Python 3.11+ (already present on most dev machines)
+
+If a fresh user has to read more than the `npx skills add` command before getting a verdict on their first URL, the publish is blocked.
 
 **Deliverable checklist:**
 - [ ] `SKILL.md` description tuned: 80–120 words, mentions concrete trigger phrases ("is this video worth watching", "what's actually in this video", "should I watch this", "skip or watch", "pre-watch summary", "is this YouTube video any good")
-- [ ] `README.md` updated: install command, 3–4 example invocations, sister-skill roadmap, **explicit "works on Claude Code, Cursor, Antigravity, Codex" line**, list of dependencies the user needs (Python 3.11+, that's it — no API keys)
-- [ ] Trigger-quality test on the primary agent (Claude Code): 5 different natural-language phrasings + YouTube URL pasted into fresh sessions; skill triggers in ≥4/5
-- [ ] **Cross-platform smoke test:** install + run yt-verdict on at least one non-Claude-Code agent (Cursor or Antigravity). Same URL, compare outputs. Acceptance: same WATCH/SKIM/SKIP verdict, same evidence quality (verbatim quotes + timestamps).
+- [ ] `README.md` updated: install command, 3–4 example invocations, sister-skill roadmap, **explicit "Works on Claude Code and Cursor (verified). Antigravity / Codex via the same skill convention." line**, dependencies section that says exactly "Python 3.11+. No API keys. No env vars. No config files."
+- [ ] Trigger-quality test in Claude Code: 5 different natural-language phrasings + YouTube URL pasted into fresh sessions; skill triggers in ≥4/5
+- [ ] Trigger-quality test in Cursor: same 5 phrasings + URL pasted into fresh sessions; skill triggers in ≥4/5
+- [ ] **Zero-setup smoke test on Cursor:** uninstall yt-verdict, clear `~/yt-reports/`, install via `npx skills add ...`, paste a Phase 2 sample URL. The skill must produce a verdict report with **no prompts asking for keys, env vars, or configuration**. Document the full transcript of the install-to-output flow.
+- [ ] **Output parity check:** run yt-verdict on the same URL in Claude Code and Cursor. Acceptance: same WATCH/SKIM/SKIP verdict, same flag count ±1, same evidence-quality bar (verbatim quotes + timestamps).
+- [ ] `grep -rE "(ANTHROPIC_API_KEY\|OPENAI_API_KEY\|YOUTUBE_API_KEY\|api_key|os\.environ\['.*KEY)" .` returns nothing in shipped repo (excluding `.venv/` and `.git/`).
 - [ ] Public GitHub repo at `github.com/<owner>/youtube-inspector` (do NOT push without explicit user confirmation)
 - [ ] `npx skills add <owner>/youtube-inspector --skill yt-verdict` install command verified end-to-end on a clean machine
 
-**Verification:** A fresh user on a non-Claude agent (Cursor/Antigravity) installs via the published command, pastes a YouTube URL with a natural ask ("is this worth watching?"), gets a verdict report. No API key prompts. No "ANTHROPIC_API_KEY missing" errors.
+**Verification:** Fresh Cursor user installs via the published command, pastes a YouTube URL with a natural ask ("is this worth watching?"), gets a verdict report. No "set this env var first" steps. No "create an API key" steps. The first thing they see is the report.
 
 **Prompt to submit to your agent:**
 
@@ -265,42 +279,65 @@ When done:
 Implement Phase 4 — cross-platform validation and skills.sh publish prep — for yt-verdict.
 
 Read first:
-- /Users/nishil/Documents/work/youtube-inspector/yt-worth-it-plan.md ("Publishing to skills.sh")
+- /Users/nishil/Documents/work/youtube-inspector/yt-worth-it-plan.md ("Publishing to skills.sh", "Hard constraints" #3a — Zero setup)
 - /Users/nishil/Documents/work/youtube-inspector/PHASES.md (Phase 4 section)
 
 Working directory: /Users/nishil/Documents/work/youtube-inspector/
 
 Phases 0–3 are complete and verified.
 
+CROSS-PLATFORM TEST PAIR IS LOCKED: Claude Code + Cursor. Both must work end-to-end before publish.
+
+ZERO-SETUP HARD RULE: A fresh user on Cursor must install yt-verdict and produce a verdict on their first URL without:
+- Providing any API key (no ANTHROPIC_API_KEY, OPENAI_API_KEY, YOUTUBE_API_KEY)
+- Setting any env var
+- Creating any config file (.env, ~/.config/...)
+- Signing up for any third-party account
+The only system requirement is Python 3.11+. The host agent's existing subscription provides LLM access. If the install-to-output flow has any extra step, the publish is blocked.
+
 Tune:
 - skills/yt-verdict/SKILL.md description (frontmatter): 80–120 words; concrete trigger phrases for "is this video worth watching", "what's actually in this video", "should I watch this", "skip or watch", "pre-watch summary", "is this YouTube video any good".
 - README.md:
   - Install command: npx skills add <owner>/youtube-inspector --skill yt-verdict
   - 3–4 example invocations
-  - Explicit "Works on Claude Code, Cursor, Antigravity, Codex" line
-  - Dependencies: Python 3.11+ (no API keys; the host agent provides LLM access)
+  - Explicit line: "Works on Claude Code and Cursor (verified). Antigravity / Codex via the same skill convention."
+  - Dependencies section, exactly: "Python 3.11+. No API keys. No env vars. No config files."
   - Sister-skill roadmap
 
-Trigger-quality test (Claude Code):
+Trigger-quality test in Claude Code:
 - 5 fresh sessions, 5 different natural-language phrasings + a YouTube URL
 - Acceptance: ≥4/5 triggers without prompting
 
-Cross-platform smoke test (must do at least one):
-- Install yt-verdict in Cursor (or Antigravity)
-- Run on a known URL from the Phase 2 sample set
-- Compare verdict + format against the Claude Code output
-- Acceptance: same WATCH/SKIM/SKIP, same flag count ±1, same evidence-quality bar (verbatim quotes + timestamps)
+Trigger-quality test in Cursor:
+- 5 fresh sessions, same 5 phrasings + URL
+- Acceptance: ≥4/5 triggers without prompting
+
+Zero-setup smoke test in Cursor (mandatory):
+- Uninstall any prior install of yt-verdict; clear ~/yt-reports/
+- Install via: npx skills add <owner>/youtube-inspector --skill yt-verdict
+- Paste a Phase 2 sample URL
+- Capture a transcript of every prompt, message, and step from install to verdict output
+- ACCEPTANCE: zero prompts asking for keys, env vars, or config. First non-install thing the user sees is the verdict report.
+
+Output parity check:
+- Run on the same URL in Claude Code and Cursor
+- Acceptance: same WATCH/SKIM/SKIP, same flag count ±1, same evidence quality (verbatim quotes + timestamps)
+
+Verify zero-credential repo:
+- grep -rE "(ANTHROPIC_API_KEY|OPENAI_API_KEY|YOUTUBE_API_KEY|api_key|os\.environ\['.*KEY)" --exclude-dir=.venv --exclude-dir=.git .
+- Must return nothing.
 
 Stop before pushing to GitHub or skills.sh. Report:
-- 5 trigger-test phrasings + outcomes
-- Cross-platform smoke test result with both agent names
+- 5 trigger-test phrasings + outcomes (Claude Code AND Cursor)
+- Full transcript of the Cursor zero-setup smoke test
+- Output parity diff between Claude Code and Cursor
 - Final SKILL.md description text
 - Any naming/description tweaks you'd recommend
 
 DO NOT run git push or any skills.sh publish command without explicit user confirmation.
 
 When done:
-- Update PHASES.md: tick checkboxes, change summary row to [x] Complete, log the trigger-test phrasings + cross-platform results in Change log.
+- Update PHASES.md: tick checkboxes, change summary row to [x] Complete, log results in Change log.
 ```
 
 ---
@@ -325,3 +362,4 @@ Carry forward; don't act on without confirming.
 | 2026-05-05 | 1 | Live e2e against 2 real URLs: `n0phBDPz8z0` (228s) → `TOO_SHORT` rejected at 300s floor; `xP0SQHXVHjQ` (Hindi) → `NON_ENGLISH` rejected. Cache round-trip verified live: rejection JSON cached at `~/yt-reports/.cache/`, second run ~0.03s vs 1.6–3.0s fresh (~50× speedup). |
 | 2026-05-05 | 1 | Lowered `MIN_DURATION_SECONDS` from 300 → 180 per user direction; updated `yt-worth-it-plan.md` Hard constraint #2 to match. After re-fetching `n0phBDPz8z0` (228s) it now passes: title "The Lazy Way I Make Money With AI (2026)", channel "Travis Nicholson", 186 transcript segments, language `en-orig`, all required fields populated, timestamps monotonic. Added `noprogress=True` to yt-dlp fallback opts to suppress download progress noise. |
 | 2026-05-05 | 2–4 | **Re-architected Phases 2–4 to remove Anthropic-specific assumptions.** Old Phase 3 (`scripts/analyze.py` calling Anthropic SDK with `ANTHROPIC_API_KEY`) deleted. New Phase 3 = `SKILL.md` orchestration (host agent runs the three passes using its own LLM/auth). Phase 4 split out as cross-platform validation + publish. Phase 2 prompts now required to be model-agnostic with cross-model spot-checks. Reason: skill ships on skills.sh and runs on any host agent (Claude Code, Cursor, Antigravity, Codex) — must not lock to a single vendor. Updated `yt-worth-it-plan.md` to match. No code changes; only doc surgery. |
+| 2026-05-05 | 4 | **Locked cross-platform test pair: Claude Code + Cursor.** Added "Zero setup" hard rule (Hard constraint #3a in `yt-worth-it-plan.md`): no API keys, no env vars, no config files, no third-party accounts; only Python 3.11+. Phase 4 publish gate now blocked unless a fresh Cursor user can install via `npx skills add` and get a verdict on the first URL with no setup steps. README updated with explicit "Zero setup" section. Verified: `grep -rE "(API_KEY|api_key|os.environ[.*KEY)"` in `scripts/`/`tests/` returns nothing. |

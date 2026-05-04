@@ -1,6 +1,18 @@
 # youtube-inspector
 
-Umbrella repo for YouTube analysis Claude Code skills. Each skill answers a different question about a YouTube video, all built on a shared transcript + metadata pipeline.
+Umbrella repo for YouTube analysis agent skills. Each skill answers a different question about a YouTube video, all built on a shared transcript + metadata pipeline.
+
+**Works on Claude Code and Cursor (verified at publish time).** Antigravity, Codex, and any other agent that follows the agent-skills convention work via the same `npx skills add` install path.
+
+## Zero setup
+
+- **No API keys.** No `ANTHROPIC_API_KEY`, `OPENAI_API_KEY`, `YOUTUBE_API_KEY` — none.
+- **No environment variables.** Nothing to export.
+- **No config files.** No `.env`, no `~/.config/`.
+- **No third-party accounts.** No Google Cloud project, no API console.
+- **No additional cost.** The host agent's existing LLM subscription does the work.
+
+The only system requirement is **Python 3.11+** (already on most developer machines).
 
 ## Skills
 

@@ -18,13 +18,13 @@ The only system requirement is **Python 3.11+** (already on most developer machi
 
 | Skill | Status | What it does |
 |---|---|---|
-| `yt-verdict` | In development (V1) | Pre-watch decision: WATCH / OKAY / SKIP, with timestamped citations |
-| `yt-claims` | Planned | Extract every concrete claim with timestamp + evidence (V2 adds web verification) |
-| `yt-tldr` | Planned | Fast summary of what was actually said, no verdict |
-| `yt-extract` | Planned | Pull links, code snippets, citations, book titles mentioned |
-| `yt-channel` | Planned | Analyze a creator's pattern across N videos |
-| `yt-quote` | Planned | Search transcript for verbatim quotes by topic |
-| `yt-clip` | Planned | Find the best N-minute segment of a video |
+| `youtube-verdict` | In development (V1) | Pre-watch decision: WATCH / OKAY / SKIP, with timestamped citations |
+| `youtube-claims` | Planned | Extract every concrete claim with timestamp + evidence (V2 adds web verification) |
+| `youtube-tldr` | Planned | Fast summary of what was actually said, no verdict |
+| `youtube-extract` | Planned | Pull links, code snippets, citations, book titles mentioned |
+| `youtube-channel` | Planned | Analyze a creator's pattern across N videos |
+| `youtube-quote` | Planned | Search transcript for verbatim quotes by topic |
+| `youtube-clip` | Planned | Find the best N-minute segment of a video |
 
 ## Build status
 
@@ -32,12 +32,12 @@ See [`PHASES.md`](./PHASES.md) for the runbook (status checkboxes, copy-paste pr
 
 ## Install
 
-_Install instructions will be added in Phase 4 once `yt-verdict` is published to skills.sh._
+_Install instructions will be added in Phase 4 once `youtube-verdict` is published to skills.sh._
 
 Planned form:
 
 ```
-npx skills add <owner>/youtube-inspector --skill yt-verdict
+npx skills add <owner>/youtube-inspector --skill youtube-verdict
 ```
 
 ## Local development

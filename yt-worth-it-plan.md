@@ -127,9 +127,9 @@ The prompts are the actual product. Everything else is glue.
 
 `SKILL.md` is the orchestrator — it instructs the host agent through the three-pass workflow:
 1. Run `python scripts/fetch.py <url> --cache` to obtain the transcript JSON.
-2. Apply Pass 1 prompt to the transcript; cache the result at `~/yt-reports/.cache/{video_id}-pass1.json`.
+2. Apply Pass 1 prompt to the transcript; cache the result at `~/youtube-reports/.cache/{video_id}-pass1.json`.
 3. Apply Pass 2 prompt to (Pass 1 output + transcript); cache to `pass2.json`.
-4. Apply Pass 3 prompt to (Pass 1 + Pass 2 + metadata); write the final report to `~/yt-reports/{video_id}.md`.
+4. Apply Pass 3 prompt to (Pass 1 + Pass 2 + metadata); write the final report to `~/youtube-reports/{video_id}.md`.
 5. On re-run, the agent reads existing cache files first; only passes whose inputs changed are re-run.
 
 No Python orchestrator. No vendor SDK. No API key requirement on the user.
@@ -148,13 +148,13 @@ Public GitHub repo, install command, frontmatter description tuned for trigger q
 
 3. Reject live streams and playlists.
 
-3a. **Zero setup.** A user installing `yt-verdict` must not have to provide:
+3a. **Zero setup.** A user installing `youtube-verdict` must not have to provide:
 - Any API key (no `ANTHROPIC_API_KEY`, `OPENAI_API_KEY`, `YOUTUBE_API_KEY`, etc.)
 - Any environment variable
-- Any config file (no `.env`, no `~/.config/yt-verdict/`)
+- Any config file (no `.env`, no `~/.config/youtube-verdict/`)
 - Any account creation on a third-party service
 
-The only system requirement is Python 3.11+ (already present on most developer machines). The host agent (Claude Code, Cursor, Antigravity, Codex) provides LLM access through its own existing subscription — `yt-verdict` adds no incremental cost. If a fresh user has to read more than the install command before running the skill, the design is wrong.
+The only system requirement is Python 3.11+ (already present on most developer machines). The host agent (Claude Code, Cursor, Antigravity, Codex) provides LLM access through its own existing subscription — `youtube-verdict` adds no incremental cost. If a fresh user has to read more than the install command before running the skill, the design is wrong.
 
 4. Phrase outputs as fit-with-title, never as judgments of the creator.
 

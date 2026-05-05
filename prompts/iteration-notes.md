@@ -1,4 +1,4 @@
-# Iteration notes — yt-verdict prompts
+# Iteration notes — youtube-verdict prompts
 
 This file logs prompt iteration history during Phase 2: what failed on real transcripts, what was changed, and why. Cross-model spot-check is **out of scope per user direction**; Phase 2 testing was Claude only. Model-agnosticism is upheld by prompt construction (no vendor-specific syntax) — Phase 4 cross-platform validation is where empirical multi-host verification will happen.
 

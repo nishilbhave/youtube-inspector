@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """segments.py — slice a cached transcript to one section's segments.
 
-Part of the yt-verdict skill. No LLM calls. No network calls.
+Part of the youtube-verdict skill. No LLM calls. No network calls.
 
-Reads `~/yt-reports/.cache/{video_id}.json` (written by fetch.py) and prints
+Reads `~/youtube-reports/.cache/{video_id}.json` (written by fetch.py) and prints
 a JSON object on stdout with the same shape the Pass 2 prompt expects, but
 containing only the segments whose `start` is in `[start_ts, end_ts)`.
 
@@ -23,7 +23,7 @@ import json
 import sys
 from pathlib import Path
 
-DEFAULT_CACHE_DIR = Path.home() / "yt-reports" / ".cache"
+DEFAULT_CACHE_DIR = Path.home() / "youtube-reports" / ".cache"
 
 
 def parse_timestamp(ts: str) -> int:
@@ -70,7 +70,7 @@ def main(argv: list[str] | None = None) -> int:
         "--cache-dir",
         type=Path,
         default=DEFAULT_CACHE_DIR,
-        help="Override the cache directory (default: ~/yt-reports/.cache)",
+        help="Override the cache directory (default: ~/youtube-reports/.cache)",
     )
     args = parser.parse_args(argv)
 

@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """fetch.py — YouTube URL → validated JSON (metadata + transcript).
 
-Part of the yt-verdict skill in the youtube-inspector repo. No LLM calls.
+Part of the youtube-verdict skill in the youtube-inspector repo. No LLM calls.
 
 CLI:
     python scripts/fetch.py <url-or-id> [--out PATH] [--cache] [--language en]
@@ -25,7 +25,7 @@ from pathlib import Path
 from typing import Any, NoReturn
 from urllib.parse import parse_qs, urlparse
 
-CACHE_DIR = Path.home() / "yt-reports" / ".cache"
+CACHE_DIR = Path.home() / "youtube-reports" / ".cache"
 MIN_DURATION_SECONDS = 180
 VIDEO_ID_RE = re.compile(r"^[A-Za-z0-9_-]{11}$")
 SLUG_MAX_LEN = 60

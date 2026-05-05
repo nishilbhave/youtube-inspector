@@ -1,16 +1,20 @@
 ---
-name: yt-verdict
+name: youtube-verdict
 description: |
-  Pre-watch decision tool for YouTube. Given a video URL, produces a
-  WATCH/OKAY/SKIP verdict with a 0–10 score, what the video actually
-  delivers vs what the title promises, substance density, who should
-  watch or skip, and the best minutes if you must watch. Saves a full
-  report to ~/yt-reports/ and prints a one-glance dashboard inline.
+  Pre-watch decision tool for YouTube videos. Use when the user pastes
+  a YouTube URL and asks "is this worth watching", "should I watch
+  this", "what's actually in this video", or wants a pre-watch summary.
+  Returns WATCH / OKAY / SKIP with a 0–10 score, a best-minutes range,
+  substance density (concrete vs vague claims, evidence shown, pitches),
+  and a who-should-watch / who-should-skip split. Every flag cites a
+  verbatim transcript quote with a timestamp — no hallucinated criticism.
+  Saves the full report to ~/youtube-reports/ and prints a one-glance
+  dashboard inline.
 ---
 
-# yt-verdict — pre-watch decision tool for YouTube videos
+# youtube-verdict — pre-watch decision tool for YouTube videos
 
-You are the host agent running this skill. The user has asked whether a YouTube video is worth watching, what's actually in it, or for a pre-watch summary. Your job is to produce a structured report at `~/yt-reports/{video_id}.md`.
+You are the host agent running this skill. The user has asked whether a YouTube video is worth watching, what's actually in it, or for a pre-watch summary. Your job is to produce a structured report at `~/youtube-reports/{video_id}.md`.
 
 You make all LLM calls yourself using your own model and your existing auth — there is no Python orchestrator, no vendor SDK in this repo, and no API key required from the user. The only system requirement is **Python 3.11+** for the bundled `scripts/fetch.py`.
 
@@ -37,7 +41,7 @@ Run as a subprocess (no LLM call):
 python scripts/fetch.py <url-or-id> --cache
 ```
 
-The `--cache` flag reads/writes `~/yt-reports/.cache/{video_id}.json` so a second run on the same video skips the network entirely.
+The `--cache` flag reads/writes `~/youtube-reports/.cache/{video_id}.json` so a second run on the same video skips the network entirely.
 
 Interpret the exit code:
 
@@ -60,7 +64,7 @@ fetched_at
 
 ### Step 3 — Pass 1: Structure extraction
 
-Cache file: `~/yt-reports/.cache/{video_id}-pass1.json`.
+Cache file: `~/youtube-reports/.cache/{video_id}-pass1.json`.
 
 1. Compute `prompt_hash` for `prompts/extract_structure.md` (see "Cache protocol" below).
 2. Compute `inputs_hash` for the canonical JSON `{"transcript": <full fetch.py output from Step 2>}`.
@@ -82,7 +86,7 @@ Tell the user one short line: `Pass 1: cache hit` or `Pass 1: ran (N sections ex
 
 ### Step 4 — Pass 2: Claim & evidence inventory
 
-Cache file: `~/yt-reports/.cache/{video_id}-pass2.json`.
+Cache file: `~/youtube-reports/.cache/{video_id}-pass2.json`.
 
 The Pass 2 cache protocol is the same as Step 3 (prompt-hash + inputs-hash check, then write the wrapper file on a miss). What's different is **how a cache miss is executed**: do not load the full transcript into your context. Process the transcript section by section instead.
 
@@ -128,7 +132,7 @@ If `scripts/segments.py` is unavailable for any reason, an inline fallback is:
 python3 -c "import json,sys; d=json.load(open(sys.argv[1])); s,e=<start_sec>,<end_sec>; \
   print(json.dumps({k:d[k] for k in ['video_id','title','duration_seconds']} | \
   {'transcript':[x for x in d['transcript'] if s<=x['start']<e]}, separators=(',',':')))" \
-  ~/yt-reports/.cache/<video_id>.json
+  ~/youtube-reports/.cache/<video_id>.json
 ```
 Convert the Pass 1 `M:SS` boundaries to seconds yourself in this fallback.
 
@@ -138,14 +142,14 @@ Convert the Pass 1 `M:SS` boundaries to seconds yourself in this fallback.
 
 ### Step 5 — Pass 3: Synthesis
 
-Cache file: `~/yt-reports/.cache/{video_id}-pass3.json`.
+Cache file: `~/youtube-reports/.cache/{video_id}-pass3.json`.
 
 Same protocol as Step 3, but:
 
 - Prompt: `prompts/generate_verdict.md`.
 - Canonical inputs: `{"metadata": <metadata subset>, "pass1": <Pass 1 output>, "pass2": <Pass 2 output>}`.
 - The metadata subset is exactly: `{title, channel, duration_seconds, view_count, upload_date}` from the Step 2 fetch JSON.
-- **Pass 3 does not need the transcript at all.** Every flag in the verdict cites a quote from Pass 2 (which already substring-matches the transcript). Do not Read `~/yt-reports/.cache/{video_id}.json` for this pass.
+- **Pass 3 does not need the transcript at all.** Every flag in the verdict cites a quote from Pass 2 (which already substring-matches the transcript). Do not Read `~/youtube-reports/.cache/{video_id}.json` for this pass.
 - The model's response is markdown wrapped in a single fenced code block (the prompt enforces this format). Strip the outer ` ``` ` fence; what remains is the report text.
 - The `output` field of the cache wrapper is the **stripped** report **as a JSON string**.
 
@@ -162,7 +166,7 @@ Build the filename from the Step 2 fetch JSON:
 Write the unwrapped Pass 3 report (the markdown text from the cache `output`) to:
 
 ```
-~/yt-reports/{date}-{slug}-{video_id}.md
+~/youtube-reports/{date}-{slug}-{video_id}.md
 ```
 
 Always overwrite if it exists. Re-running on the same video produces an identical filename — `--cache` keeps `fetched_at` stable, so no orphan files accumulate. Do **not** print the full report inline — it's a structured document meant for the file. Terminal output is the dashboard in Step 7.
@@ -192,7 +196,7 @@ Print this dashboard directly to the user. Borders are exactly 54 box-drawing ch
      [{ts}] "{quote, ≤40 chars}…"   — {short reason}
      [{ts}] "{quote, ≤40 chars}…"   — {short reason}
 
-  📄 ~/yt-reports/{date}-{slug}-{video_id}.md
+  📄 ~/youtube-reports/{date}-{slug}-{video_id}.md
 ```
 
 #### State glyph table
@@ -225,7 +229,7 @@ This is the contract any host agent implements via file tool use. There is no Py
 
 ### File layout
 
-All cache files live under `~/yt-reports/.cache/`:
+All cache files live under `~/youtube-reports/.cache/`:
 
 | Filename | Owner | Contents |
 |---|---|---|
@@ -293,7 +297,7 @@ The whole transcript object (including `fetched_at`) goes into Passes 1 and 2's 
 
 A cache file is a HIT if and only if **all** of the following are true:
 
-1. The file exists at `~/yt-reports/.cache/{video_id}-pass{N}.json` and parses as JSON.
+1. The file exists at `~/youtube-reports/.cache/{video_id}-pass{N}.json` and parses as JSON.
 2. The JSON contains all required fields: `video_id`, `pass`, `prompt_hash`, `inputs_hash`, `output`.
 3. `video_id` matches the request and `pass` equals N.
 4. `prompt_hash` equals the freshly computed hash of the corresponding prompt file.
@@ -309,7 +313,7 @@ Otherwise it's a MISS — re-run the pass and overwrite the file.
 - File corrupted (bad JSON, missing fields) → MISS.
 - Pass 1 output changes (re-run) → Pass 2's `inputs_hash` mismatches → cascades to Pass 3.
 
-You **never** overwrite `~/yt-reports/{video_id}.md` from cache. Step 6 only writes that file when Step 5 produces a Pass 3 result (whether from cache or fresh). The user's final report is always derived from a Pass 3 cache hit or a fresh Pass 3 run — never stale.
+You **never** overwrite `~/youtube-reports/{video_id}.md` from cache. Step 6 only writes that file when Step 5 produces a Pass 3 result (whether from cache or fresh). The user's final report is always derived from a Pass 3 cache hit or a fresh Pass 3 run — never stale.
 
 ## Cross-platform notes
 

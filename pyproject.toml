@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "youtube-inspector"
 version = "0.0.1"
-description = "Umbrella repo for YouTube analysis Claude Code skills (yt-verdict and siblings)."
+description = "Umbrella repo for YouTube analysis Claude Code skills (youtube-verdict and siblings)."
 readme = "README.md"
 requires-python = ">=3.11"
 license = { text = "MIT" }

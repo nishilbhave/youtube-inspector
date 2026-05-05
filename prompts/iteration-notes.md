@@ -75,7 +75,7 @@ This is a no-op on output quality (data was preserved by the workaround) but sto
 
 ### v1 — initial draft
 
-Drafted with explicit `FLAGS` section (departing from the spec sketch in `yt-worth-it-plan.md`) so the hard rule "every flag cites a timestamp + verbatim quote" can be satisfied without inline-citation clutter in WHO SHOULD WATCH / Gap / VERDICT lines. The `FLAGS` header is omitted entirely when verdict is WATCH and Gap is LOW.
+Drafted with explicit `FLAGS` section (departing from the spec sketch in `docs/yt-worth-it-plan.md`) so the hard rule "every flag cites a timestamp + verbatim quote" can be satisfied without inline-citation clutter in WHO SHOULD WATCH / Gap / VERDICT lines. The `FLAGS` header is omitted entirely when verdict is WATCH and Gap is LOW.
 
 Results — applied to the same 3 transcripts that completed Pass 2:
 

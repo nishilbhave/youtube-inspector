@@ -116,7 +116,7 @@ python3 scripts/doctor.py
 pytest -q
 ```
 
-Architecture spec: [`yt-worth-it-plan.md`](./yt-worth-it-plan.md). Publish prep tracker: [`PUBLISH.md`](./PUBLISH.md).
+Architecture spec: [`docs/yt-worth-it-plan.md`](./docs/yt-worth-it-plan.md). Publish prep tracker: [`docs/PUBLISH.md`](./docs/PUBLISH.md). Phase tracker (Phases 0–3 complete; Phase 4 superseded by `PUBLISH.md`): [`docs/PHASES.md`](./docs/PHASES.md).
 
 ## License
 

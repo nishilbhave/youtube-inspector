@@ -38,7 +38,7 @@ Reject playlist URLs (`/playlist`) — pass a specific video instead. If no URL 
 Run as a subprocess (no LLM call):
 
 ```
-python scripts/fetch.py <url-or-id> --cache
+python3 scripts/fetch.py <url-or-id> --cache
 ```
 
 The `--cache` flag reads/writes `~/youtube-reports/.cache/{video_id}.json` so a second run on the same video skips the network entirely.
@@ -106,7 +106,7 @@ For each section in Pass 1's `sections[]`, in order:
 
 1. Run as a subprocess (no LLM call):
    ```
-   python scripts/segments.py <video_id> <section.start> <section.end>
+   python3 scripts/segments.py <video_id> <section.start> <section.end>
    ```
    `<section.start>` and `<section.end>` are the `M:SS` (or `H:MM:SS`) strings from Pass 1 — pass them through unchanged. Stdout is a compact JSON object of the form:
    ```json
@@ -251,37 +251,30 @@ All cache files live under `~/youtube-reports/.cache/`:
 }
 ```
 
-### How to compute `prompt_hash`
+### How to compute `prompt_hash` and `inputs_hash`
 
-Hash the **raw bytes** of the prompt file. Any of these works (pick one consistent with your platform):
+**Always use `scripts/cache.py`.** Inline shell or `python3 -c` snippets drift across host implementations — different agents serialize JSON in subtly different ways, producing spurious cache misses on what is logically the same input. The `cache.py` helper locks one canonical algorithm so any host computing a hash on the same logical input gets the same digest.
 
 ```
-# macOS / Linux shell
-shasum -a 256 prompts/extract_structure.md | awk '{print $1}'
+# prompt_hash — SHA-256 hex of the prompt file's raw bytes
+python3 scripts/cache.py hash-file prompts/extract_structure.md
 
-# Or via Python (same result, more portable):
-python3 -c "import hashlib,sys; print(hashlib.sha256(open(sys.argv[1],'rb').read()).hexdigest())" prompts/extract_structure.md
+# inputs_hash — SHA-256 hex of canonical JSON read from stdin
+echo '<the canonical inputs object as JSON>' | python3 scripts/cache.py hash-json
 ```
 
-Mapping: Pass 1 → `prompts/extract_structure.md`; Pass 2 → `prompts/inventory_claims.md`; Pass 3 → `prompts/generate_verdict.md`.
+Mapping (which prompt for which pass): Pass 1 → `prompts/extract_structure.md`; Pass 2 → `prompts/inventory_claims.md`; Pass 3 → `prompts/generate_verdict.md`.
 
-### How to compute `inputs_hash`
-
-Build the inputs object for the pass (see each step), then hash its **canonical JSON** form. Canonical means:
+The locked canonicalization (documented for transparency and for alternative-host re-implementation) is:
 
 - Keys sorted lexicographically at every nesting level.
 - Compact separators (no spaces): `","` and `":"`.
 - `ensure_ascii=False` (UTF-8 output, non-ASCII characters preserved as-is).
 - No trailing newline before hashing.
 
-In Python (use this exact one-liner pattern when in doubt):
+Equivalent Python: `hashlib.sha256(json.dumps(obj, sort_keys=True, separators=(",", ":"), ensure_ascii=False).encode("utf-8")).hexdigest()`.
 
-```
-python3 -c "import json,hashlib,sys; \
-  obj=json.load(sys.stdin); \
-  s=json.dumps(obj, sort_keys=True, separators=(',', ':'), ensure_ascii=False).encode('utf-8'); \
-  print(hashlib.sha256(s).hexdigest())"
-```
+If your host cannot shell out, importing the module is equivalent: `from scripts import cache; cache.hash_file(path)` / `cache.hash_json(obj)`.
 
 Per pass:
 
@@ -320,7 +313,7 @@ You **never** overwrite `~/youtube-reports/{video_id}.md` from cache. Step 6 onl
 - Steps 3, 4, and 5 use your own LLM and auth. No `ANTHROPIC_API_KEY` / `OPENAI_API_KEY` / vendor key is required from the user.
 - Step 2 is the only subprocess call. If your host can't shell out, importing `scripts.fetch` as a Python module and calling `fetch(video_id, "en")` is equivalent.
 - Cache reads and writes use ordinary file tool use. The hashing instructions above are deterministic across hosts when followed exactly.
-- If you find that hash computation is brittle in your host environment (e.g. canonical JSON serialization disagrees between runs), a `scripts/cache.py` helper can be added to the repo to centralize the logic. None is shipped today.
+- Hash computation goes through `scripts/cache.py` (shipped). Both subcommands (`hash-file <path>` and `hash-json` reading stdin) are deterministic across hosts. Unit tests in `tests/test_cache.py` lock the canonical algorithm.
 
 ## Output format reminder
 

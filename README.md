@@ -18,7 +18,7 @@ The only system requirement is **Python 3.11+** (already on most developer machi
 
 | Skill | Status | What it does |
 |---|---|---|
-| `yt-verdict` | In development (V1) | Pre-watch decision: WATCH / SKIM / SKIP, with timestamped citations |
+| `yt-verdict` | In development (V1) | Pre-watch decision: WATCH / OKAY / SKIP, with timestamped citations |
 | `yt-claims` | Planned | Extract every concrete claim with timestamp + evidence (V2 adds web verification) |
 | `yt-tldr` | Planned | Fast summary of what was actually said, no verdict |
 | `yt-extract` | Planned | Pull links, code snippets, citations, book titles mentioned |

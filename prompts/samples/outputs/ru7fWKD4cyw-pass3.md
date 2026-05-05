@@ -4,7 +4,7 @@
   Jono Catliff · 1:16:42 · 2,207
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-VERDICT: SKIM   [5/10]
+VERDICT: OKAY   [5/10]
 
 WHAT IT ACTUALLY DELIVERS
 [0:00:00–0:04:00] Claims a 20% landing-page conversion rate that produced $1.2M, shares wedding-DJ backstory, previews coverage of page elements, heat maps, and split tests.

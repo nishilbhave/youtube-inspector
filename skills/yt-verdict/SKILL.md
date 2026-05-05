@@ -2,7 +2,7 @@
 name: yt-verdict
 description: |
   Pre-watch decision tool for YouTube. Given a video URL, produces a
-  WATCH/SKIM/SKIP verdict with a 0–10 score, what the video actually
+  WATCH/OKAY/SKIP verdict with a 0–10 score, what the video actually
   delivers vs what the title promises, substance density, who should
   watch or skip, and the best minutes if you must watch. Saves a full
   report to ~/yt-reports/ and prints a one-glance dashboard inline.
@@ -149,7 +149,7 @@ Same protocol as Step 3, but:
 - The model's response is markdown wrapped in a single fenced code block (the prompt enforces this format). Strip the outer ` ``` ` fence; what remains is the report text.
 - The `output` field of the cache wrapper is the **stripped** report **as a JSON string**.
 
-Tell the user: `Pass 3: cache hit` or `Pass 3: ran` plus the verdict line (e.g. `→ SKIM 5/10`).
+Tell the user: `Pass 3: cache hit` or `Pass 3: ran` plus the verdict line (e.g. `→ OKAY 5/10`).
 
 ### Step 6 — Write the final report
 
@@ -200,7 +200,7 @@ Print this dashboard directly to the user. Borders are exactly 54 box-drawing ch
 | `VERDICT` | `STATE_BADGE` | `STATE_PROSE_GLYPH` |
 | --------- | ------------- | ------------------- |
 | WATCH     | ✅            | ✨                  |
-| SKIM      | ⚠️             | ⏩                  |
+| OKAY      | ⚠️             | ⏩                  |
 | SKIP      | ❌            | 🚫                  |
 
 #### Field extraction

@@ -21,7 +21,7 @@ You will receive all three as one combined input.
 Every flag in the report cites a transcript timestamp + verbatim quote drawn from Pass 2. A flag is anything in these positions:
 
 - The **Gap** rating (when MEDIUM or HIGH)
-- The **VERDICT** reasoning (when SKIM or SKIP)
+- The **VERDICT** reasoning (when OKAY or SKIP)
 - The **WHO SHOULD SKIP** reasoning, when it implies a problem
 
 Citations live in a dedicated `FLAGS` section at the bottom. If you cannot back a flag with a Pass 2 entry, you cannot raise it. When in doubt, downgrade — Gap MEDIUM with citations is better than Gap HIGH without.
@@ -33,15 +33,15 @@ The `FLAGS` section is omitted entirely when Gap is LOW and verdict is WATCH.
 Assign one of three verdicts plus a score 0–10:
 
 - **WATCH** (score 7–10): title and content align; concrete claims dominate over vague ones; evidence is shown or cited; pitch density is low (one mid-roll sponsor at most, plus a brief end pitch is acceptable). Reader should watch start to finish.
-- **SKIM** (score 4–6): there's substance but it's mixed with significant overhead — moderate gap between title and content, OR meaningful pitch density, OR many vague claims diluting the concrete ones. Reader should jump to the BEST MINUTES range and skip the rest.
+- **OKAY** (score 4–6): there's substance but it's mixed with significant overhead — moderate gap between title and content, OR meaningful pitch density, OR many vague claims diluting the concrete ones. Reader should jump to the BEST MINUTES range and skip the rest.
 - **SKIP** (score 0–3): high gap, the content does not deliver the title's promise, OR pitch density dominates, OR vague claims swamp concrete ones with little evidence. Reader should not watch.
 
 Heuristic guidance (adapt; do not mechanically apply):
 
 - `concrete_claims` count > 2× `vague_claims` count, with `evidence_shown` ≥ 1 per content section, low pitch density → WATCH territory.
-- `vague_claims` count > `concrete_claims`, OR `pitches` count ≥ `concrete_claims` → SKIM or SKIP.
-- Title makes a specific numeric or outcome claim ("$1.2M", "in 30 days", "the best way") and Pass 2 has no concrete_claim or evidence_shown backing that specific number/outcome → Gap HIGH, verdict trends SKIM/SKIP.
-- Pure pitch sections occupy ≥30% of total duration → verdict trends SKIM/SKIP regardless of content quality elsewhere.
+- `vague_claims` count > `concrete_claims`, OR `pitches` count ≥ `concrete_claims` → OKAY or SKIP.
+- Title makes a specific numeric or outcome claim ("$1.2M", "in 30 days", "the best way") and Pass 2 has no concrete_claim or evidence_shown backing that specific number/outcome → Gap HIGH, verdict trends OKAY/SKIP.
+- Pure pitch sections occupy ≥30% of total duration → verdict trends OKAY/SKIP regardless of content quality elsewhere.
 
 ## Output format
 
@@ -56,7 +56,7 @@ Return one Markdown code block exactly as shown below. No prose before or after 
 EXECUTIVE VERDICT
 {2–3 sentences. Lead with the recommended action. State the gap and the strongest evidence. Plain prose — no emoji, no markdown.}
 
-VERDICT: {WATCH | SKIM | SKIP}   [{score}/10]
+VERDICT: {WATCH | OKAY | SKIP}   [{score}/10]
 
 WHAT IT ACTUALLY DELIVERS
 [{start}–{end}] {section summary, one line per content/hook section}
@@ -89,7 +89,7 @@ FLAGS
 
 ## Field rules
 
-- `EXECUTIVE VERDICT`: 2–3 sentences, ≤ 60 words total. The recommended action comes first. For WATCH, lead with what makes it worth the full runtime. For SKIM, lead with the best-minutes range and what's actually there. For SKIP, lead with what's missing vs. the title's promise. Plain prose only — no emoji, no markdown, no bold. The dashboard renderer adds the state glyph.
+- `EXECUTIVE VERDICT`: 2–3 sentences, ≤ 60 words total. The recommended action comes first. For WATCH, lead with what makes it worth the full runtime. For OKAY, lead with the best-minutes range and what's actually there. For SKIP, lead with what's missing vs. the title's promise. Plain prose only — no emoji, no markdown, no bold. The dashboard renderer adds the state glyph.
 - `duration_human`: `M:SS` if under 1 hour, `H:MM:SS` otherwise. Compute from `duration_seconds`.
 - `views_human`: format `view_count` with commas if under 1M, otherwise as `1.2M`, `15.3M`, etc. If view_count is 0 or missing, use `—`.
 - `WHAT IT ACTUALLY DELIVERS`: one line per `hook` and `content` section. Skip `pitch` and `outro` sections here. Use `[start–end]` time range from Pass 1. Summary is the section's `summary` field, lightly edited for brevity if needed. Aim for 2–6 lines total.
@@ -106,7 +106,7 @@ FLAGS
 ## Edge cases
 
 - **Verdict WATCH but a mid-roll sponsor exists:** include a flag for the sponsor with its timestamp + quote, and reflect this in the `BEST MINUTES` range (excluding the sponsor span).
-- **Empty Pass 2 (no quotes anywhere):** verdict cannot be SKIM or SKIP without flags. Default to WATCH/5 with `Gap: LOW` and a `FLAGS` section omitted.
+- **Empty Pass 2 (no quotes anywhere):** verdict cannot be OKAY or SKIP without flags. Default to WATCH/5 with `Gap: LOW` and a `FLAGS` section omitted.
 - **Title has no specific promise** (e.g. a podcast titled with the guest's name): Gap defaults to LOW. Verdict driven by substance density.
 - **Pass 1 has no `pitch` sections AND Pass 2 pitches list is empty:** Pitches/CTAs count = 0, and FLAGS bullets won't include any pitch lines.
 

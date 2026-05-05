@@ -82,15 +82,15 @@ Results — applied to the same 3 transcripts that completed Pass 2:
 | Video | Verdict | Score | Gap | Flags | Hard-rule audit |
 |---|---|---|---|---|---|
 | Fireship — 100+ Web Dev Things | WATCH | 9/10 | LOW | 0 (omitted) | n/a (no flags to cite) |
-| Travis Nicholson — Lazy Way I Make Money With AI | SKIM | 5/10 | MEDIUM | 6 | 6/6 verbatim against Pass 2 |
-| Jono Catliff — Claude Code Websites $1.2M | SKIM | 5/10 | MEDIUM | 6 | 6/6 verbatim against Pass 2 |
+| Travis Nicholson — Lazy Way I Make Money With AI | OKAY | 5/10 | MEDIUM | 6 | 6/6 verbatim against Pass 2 |
+| Jono Catliff — Claude Code Websites $1.2M | OKAY | 5/10 | MEDIUM | 6 | 6/6 verbatim against Pass 2 |
 
 Total 12 flags, 100% sourced from Pass 2 with exact `(timestamp, quote)` matches. Hard rule satisfied across the sample set.
 
 Verdict-rubric calibration check:
 - Fireship: 44 concrete vs 3 vague (≈14:1), 1 pitch, title delivers exactly what it promises → WATCH 9/10 with the score reduced one point for sparse evidence-shown. Reasonable.
-- Travis: title promises a "lazy" workflow with revenue; content delivers revenue claims plus a stack name-check but defers the actual how-to to future videos → SKIM with Gap MEDIUM. The flags cite the deferred-content quotes ("how to create your first digital product, how to drive...") that justify the Gap.
-- Jono: title makes a specific outcome claim ($1.2M, 20% conversions); content does deliver substantive landing-page tutoring (14 evidence_shown items including PostHog/Vercel demos), but the headline revenue number is asserted in the hook and only loosely demoed at 1:46. Pitch density (12 pitches across hook + content + closing pitch section) tilts it from WATCH → SKIM.
+- Travis: title promises a "lazy" workflow with revenue; content delivers revenue claims plus a stack name-check but defers the actual how-to to future videos → OKAY with Gap MEDIUM. The flags cite the deferred-content quotes ("how to create your first digital product, how to drive...") that justify the Gap.
+- Jono: title makes a specific outcome claim ($1.2M, 20% conversions); content does deliver substantive landing-page tutoring (14 evidence_shown items including PostHog/Vercel demos), but the headline revenue number is asserted in the hook and only loosely demoed at 1:46. Pitch density (12 pitches across hook + content + closing pitch section) tilts it from WATCH → OKAY.
 
 No iteration needed; Pass 3 v1 ships.
 

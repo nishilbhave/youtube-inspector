@@ -38,7 +38,7 @@ This single rule is what makes the skill defensible, auditable, and resistant to
   {Channel} · {Duration} · {Views}
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-VERDICT: {WATCH | SKIM | SKIP}            [{n}/10]
+VERDICT: {WATCH | OKAY | SKIP}            [{n}/10]
 
 WHAT IT ACTUALLY DELIVERS
 {section 1 with time range}
@@ -191,7 +191,7 @@ skills.sh indexes skills from public GitHub repos that follow the agent-skills c
    description: |
      Pre-watch decision tool for YouTube videos. Given a video URL, 
      produces a structured report showing what the video actually 
-     delivers vs. what its title promises, with a WATCH/SKIM/SKIP 
+     delivers vs. what its title promises, with a WATCH/OKAY/SKIP 
      verdict. Use when user pastes a YouTube URL and asks whether 
      it's worth watching, what's actually in a video, or asks for 
      a pre-watch summary.

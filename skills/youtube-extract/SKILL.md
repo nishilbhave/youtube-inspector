@@ -184,6 +184,7 @@ Per-pass canonical inputs:
 - Steps 3, 4, and 5 use your own LLM and auth. No `ANTHROPIC_API_KEY` / `OPENAI_API_KEY` / vendor key required.
 - Steps 2 and 4 are the only subprocess calls. If the host can't shell out, importing `scripts.fetch` / `scripts.segments` / `scripts.cache` as Python modules is equivalent.
 - Cache reads and writes use ordinary file tool use.
+- If `python3 scripts/fetch.py` fails with `ModuleNotFoundError`, run `python3 scripts/doctor.py` for the exact `pipx install` command to fix the deps prereq.
 
 ## Output format reminder
 

@@ -1,15 +1,17 @@
 ---
 name: youtube-verdict
 description: |
-  Pre-watch decision tool for YouTube videos. Use when the user pastes
-  a YouTube URL and asks "is this worth watching", "should I watch
-  this", "what's actually in this video", or wants a pre-watch summary.
-  Returns WATCH / OKAY / SKIP with a 0–10 score, a best-minutes range,
-  substance density (concrete vs vague claims, evidence shown, pitches),
-  and a who-should-watch / who-should-skip split. Every flag cites a
-  verbatim transcript quote with a timestamp — no hallucinated criticism.
-  Saves the full report to ~/youtube-reports/ and prints a one-glance
-  dashboard inline.
+  Pre-watch decision tool for YouTube videos. Use when the user pastes a
+  YouTube URL and asks "is this worth watching", "should I watch this",
+  "should I skip this", "watch or skip", "give me a verdict on this video",
+  "is this YouTube video any good", or wants a pre-watch summary that ends
+  in a recommendation. Returns WATCH / OKAY / SKIP with a 0–10 score, a
+  best-minutes range, substance density (concrete vs vague claims, evidence
+  shown, pitches), and a who-should-watch / who-should-skip split. Every
+  flag cites a verbatim transcript quote with a timestamp — no hallucinated
+  criticism. For neutral summaries with no judgment use `youtube-tldr`
+  instead. Saves the full report to ~/youtube-reports/ and prints a
+  one-glance dashboard inline.
 ---
 
 # youtube-verdict — pre-watch decision tool for YouTube videos
@@ -314,6 +316,7 @@ You **never** overwrite `~/youtube-reports/{video_id}.md` from cache. Step 6 onl
 - Step 2 is the only subprocess call. If your host can't shell out, importing `scripts.fetch` as a Python module and calling `fetch(video_id, "en")` is equivalent.
 - Cache reads and writes use ordinary file tool use. The hashing instructions above are deterministic across hosts when followed exactly.
 - Hash computation goes through `scripts/cache.py` (shipped). Both subcommands (`hash-file <path>` and `hash-json` reading stdin) are deterministic across hosts. Unit tests in `tests/test_cache.py` lock the canonical algorithm.
+- If `python3 scripts/fetch.py` fails with `ModuleNotFoundError`, run `python3 scripts/doctor.py` for the exact `pipx install` command to fix the deps prereq.
 
 ## Output format reminder
 

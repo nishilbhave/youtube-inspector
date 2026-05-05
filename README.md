@@ -1,54 +1,123 @@
+<div align="center">
+
+<img src="assets/banner.svg" alt="youtube-inspector — four skills, zero setup, vendor-neutral" width="900">
+
 # youtube-inspector
 
-Umbrella repo for YouTube analysis agent skills. Each skill answers a different question about a YouTube video, all built on a shared transcript + metadata pipeline.
+[![install](https://img.shields.io/badge/install-one--command-8b5cf6?style=flat-square)](#install)
+[![license](https://img.shields.io/badge/license-MIT-blue?style=flat-square)](#license)
+[![platform](https://img.shields.io/badge/platform-macOS%20%7C%20Linux%20%7C%20Windows-lightgrey?style=flat-square)](#install)
+[![agents](https://img.shields.io/badge/agents-Claude%20Code%20%7C%20Cursor%20%7C%20Antigravity%20%7C%20Codex-7c3aed?style=flat-square)](#how-it-works)
 
-**Works on Claude Code and Cursor (verified at publish time).** Antigravity, Codex, and any other agent that follows the agent-skills convention work via the same `npx skills add` install path.
+</div>
 
-## Zero setup
+Four [agent skills](https://skills.sh) that turn any YouTube URL into a watch-decision, a neutral summary, an artifact list, or a claim inventory — vendor-neutral, no API keys, with verbatim transcript citations on every flag and claim.
 
-- **No API keys.** No `ANTHROPIC_API_KEY`, `OPENAI_API_KEY`, `YOUTUBE_API_KEY` — none.
-- **No environment variables.** Nothing to export.
-- **No config files.** No `.env`, no `~/.config/`.
-- **No third-party accounts.** No Google Cloud project, no API console.
-- **No additional cost.** The host agent's existing LLM subscription does the work.
+- **Pre-watch verdict** — WATCH / OKAY / SKIP with a 0–10 score, best-minutes range, and who-should-watch / who-should-skip split.
+- **Section-by-section TL;DR** — 3–4 sentence summary, per-section breakdown, skippable-segment markers for pitches and outros.
+- **Categorized artifact extraction** — links, code, books, tools, and people referenced in the video, each with timestamp and verbatim mention.
+- **Research-grade claim inventory** — concrete claims, vague claims, evidence shown, and pitches, every entry timestamped and quoted verbatim.
+- **No hallucinated criticism** — every flag, claim, and reference cites a verbatim transcript quote with timestamp; if the model can't quote it, it can't write it.
+- **Shared transcript cache** — all four skills hit the same `~/youtube-reports/.cache/{video_id}.json`. Run any combination on the same video; the network call happens once.
 
-The only system requirement is **Python 3.11+** (already on most developer machines).
+## Sample Output
 
-## Skills
+```
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  ⚠️  OKAY  ·  5/10  ·  Gap MEDIUM
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-| Skill | Status | What it does |
-|---|---|---|
-| `youtube-verdict` | In development (V1) | Pre-watch decision: WATCH / OKAY / SKIP, with timestamped citations |
-| `youtube-claims` | Planned | Extract every concrete claim with timestamp + evidence (V2 adds web verification) |
-| `youtube-tldr` | Planned | Fast summary of what was actually said, no verdict |
-| `youtube-extract` | Planned | Pull links, code snippets, citations, book titles mentioned |
-| `youtube-channel` | Planned | Analyze a creator's pattern across N videos |
-| `youtube-quote` | Planned | Search transcript for verbatim quotes by topic |
-| `youtube-clip` | Planned | Find the best N-minute segment of a video |
+  ⏩ A short pitch wrapped around three real numbers and a vague stack
+     reveal. Useful as a beginner-level intro to digital-product income;
+     the actual workflow is deferred to upcoming videos.
 
-## Build status
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-See [`PHASES.md`](./PHASES.md) for the runbook (status checkboxes, copy-paste prompts per phase).
+  The Lazy Way I Make Money With AI (2026)
+  Travis Nicholson  ·  3:48
+
+  🎯 Best minutes   [1:10–2:25] — Stack reveal and revenue progression
+  📊 Substance      29 concrete · 11 vague · 4 evidence
+  👥 Watch if       Beginners curious about Canva + ChatGPT + Gumroad
+  👥 Skip if        Viewers wanting an actual step-by-step workflow
+
+  🚩 Flags (6)
+     [0:02] "I've made over $26,000…"          — Headline revenue, no proof
+     [0:04] "I work maybe 1 hour per week…"    — "Lazy" claim asserted only
+
+  📄 ~/youtube-reports/2026-05-05-the-lazy-way-...-n0phBDPz8z0.md
+```
+
+Saved to `~/youtube-reports/<date>-<slug>-<video_id>.md`. Same shape across all four skills (verdict adds `WATCH/OKAY/SKIP`; tldr/extract/claims swap in their own dashboards).
 
 ## Install
 
-_Install instructions will be added in Phase 4 once `youtube-verdict` is published to skills.sh._
+```bash
+# 1. Install Python deps once (skills.sh skills don't bundle pip deps)
+pipx install yt-dlp youtube-transcript-api
+# Or, if you don't have pipx:
+pip install --user yt-dlp youtube-transcript-api
 
-Planned form:
+# 2. Install all four skills
+npx skills add nishilbhave/youtube-inspector
+```
 
+That's it. No API keys, no env vars, no config files — the host agent's existing model subscription does the LLM work, and the only system requirement is **Python 3.11+**.
+
+Manage:
+
+```bash
+npx skills update nishilbhave/youtube-inspector
+npx skills remove nishilbhave/youtube-inspector
 ```
-npx skills add <owner>/youtube-inspector --skill youtube-verdict
+
+If install or first invocation fails with `ModuleNotFoundError`, run:
+
+```bash
+python3 scripts/doctor.py
 ```
+
+It prints the exact `pipx install` command to fix the deps prereq and exits 0 once both `yt-dlp` and `youtube-transcript-api` are importable.
+
+## Skills
+
+- **`youtube-verdict`** — *"is this worth watching?"* → WATCH / OKAY / SKIP, 0–10 score, best-minutes range, substance density, who-should-watch / who-should-skip split, every flag a timestamped verbatim quote.
+- **`youtube-tldr`** — *"summarize this video"* → 3–4 sentence TL;DR, section-by-section breakdown, top takeaways, skippable-section markers. Factual and neutral — never recommends watching or skipping.
+- **`youtube-extract`** — *"what tools / books / links did they mention?"* → categorized list of links, code, books, tools, and people, each with timestamp and verbatim mention.
+- **`youtube-claims`** — *"list every claim this video makes"* → research-grade chronological inventory of concrete claims, vague claims, evidence shown, and pitches, with timestamps and verbatim quotes. V1 is inventory-only; no external verification.
+
+## How It Works
+
+Three-pass pipeline shared across all four skills:
+
+- **Pass 1 — structure (shared by all 4)**: `python3 scripts/fetch.py <url> --cache` pulls metadata + transcript and writes `~/youtube-reports/.cache/{video_id}.json`. The host agent then runs `prompts/extract_structure.md` once over the transcript to segment it into hook / content / pitch / outro with timestamps. Output is cached at `{video_id}-pass1.json` and reused by every skill that runs on the same video.
+- **Pass 2 — per-skill inventory (partial sharing)**: `python3 scripts/segments.py <video_id> <start> <end>` slices the cached transcript per Pass 1 section, so the host agent's LLM only sees one section at a time. `youtube-verdict` and `youtube-claims` share `prompts/inventory_claims.md` and the same `{video_id}-pass2.json` cache; `youtube-tldr` uses `prompts/summarize_sections.md`; `youtube-extract` uses `prompts/extract_artifacts.md`.
+- **Pass 3 — per-skill synthesis**: each skill's own prompt (`prompts/generate_verdict.md`, `prompts/generate_tldr.md`, `prompts/generate_extract.md`, `prompts/generate_claims.md`) takes Pass 1 + Pass 2 + a small metadata subset and produces the final report — the transcript itself is never reloaded for Pass 3.
+
+**Cache protocol** is locked by `scripts/cache.py`: SHA-256 of the prompt file's raw bytes (`prompt_hash`) plus SHA-256 of the canonical-JSON form of the inputs (`inputs_hash`). Same logical input on any host produces the same digest; edits to a prompt or transcript automatically invalidate downstream passes. Unit tests in `tests/test_cache.py` lock the canonicalization (`sort_keys=True`, compact separators, UTF-8).
+
+**Vendor-neutral by construction**: no Anthropic, OpenAI, or other vendor SDK is imported anywhere in the repo. The host agent's existing LLM and auth do every model call. Skills work the same on Claude Code, Cursor, Antigravity, Codex, and any other agent that follows the [skills.sh](https://skills.sh) convention.
+
+## Roadmap
+
+- **`youtube-batch`** — apply any of the above to N videos at once. Planned for V2; pending cross-platform validation of V1.
 
 ## Local development
 
 ```bash
-python -m venv .venv
+python3 -m venv .venv
 source .venv/bin/activate
 pip install -e ".[dev]"
-pytest
+
+# Pre-flight: confirm yt-dlp + youtube-transcript-api importable
+python3 scripts/doctor.py
+
+# Test suite (fetch, segments, cache, slug, doctor)
+pytest -q
 ```
 
-## Architecture
+Architecture spec: [`yt-worth-it-plan.md`](./yt-worth-it-plan.md). Publish prep tracker: [`PUBLISH.md`](./PUBLISH.md).
 
-Architectural spec: [`yt-worth-it-plan.md`](./yt-worth-it-plan.md). Read it before working in this repo.
+## License
+
+MIT.

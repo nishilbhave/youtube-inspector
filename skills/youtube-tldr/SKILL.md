@@ -1,15 +1,17 @@
 ---
 name: youtube-tldr
 description: |
-  Fast summary tool for YouTube videos — no verdict, no judgment. Use when
-  the user pastes a YouTube URL and asks "summarize this video", "tl;dr",
-  "what does this video cover", "give me the gist", "what does this say",
-  "what's in here", or wants a 30-second read of what was actually said.
-  Returns a 3–4 sentence TL;DR, a section-by-section breakdown with
-  timestamps, top takeaways as bullets, and skippable-section markers so
-  the reader can fast-forward past pitches and outros. Factual and neutral
-  — never recommends watching or skipping. Saves the full summary to
-  ~/youtube-reports/ and prints a one-glance dashboard inline.
+  Fast neutral summary tool for YouTube videos — no verdict, no judgment.
+  Use when the user pastes a YouTube URL and asks "summarize this video",
+  "tl;dr", "what does this video cover", "what's actually in this video",
+  "give me the gist", "what does this say", "what's in here", or wants a
+  30-second read of what was actually said. Returns a 3–4 sentence TL;DR, a
+  section-by-section breakdown with timestamps, top takeaways as bullets,
+  and skippable-section markers so the reader can fast-forward past pitches
+  and outros. Factual and neutral — never recommends watching or skipping.
+  For a watch/skip recommendation use `youtube-verdict` instead. Saves the
+  full summary to ~/youtube-reports/ and prints a one-glance dashboard
+  inline.
 ---
 
 # youtube-tldr — fast summary tool for YouTube videos
@@ -215,6 +217,7 @@ Per-pass canonical inputs:
 - Steps 3, 4, and 5 use your own LLM and auth. No `ANTHROPIC_API_KEY` / `OPENAI_API_KEY` / vendor key required.
 - Step 2 is the only subprocess call. If the host can't shell out, importing `scripts.fetch` as a Python module and calling `fetch(video_id, "en")` is equivalent.
 - Cache reads and writes use ordinary file tool use.
+- If `python3 scripts/fetch.py` fails with `ModuleNotFoundError`, run `python3 scripts/doctor.py` for the exact `pipx install` command to fix the deps prereq.
 
 ## Output format reminder
 

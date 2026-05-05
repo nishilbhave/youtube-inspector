@@ -1,0 +1,33 @@
+{
+  "video_id": "W6NZfCO5SIk",
+  "sections": [
+    {
+      "id": "S1",
+      "type": "content",
+      "start": "0:00",
+      "end": "15:39",
+      "summary": "Answers four FAQs about JavaScript (what it is, what it does, where it runs, JS vs ECMAScript), then walks through installing VS Code and Node, setting up an HTML host file with Live Server, writing a first console.log, separating JS into its own file, and running the same script under Node."
+    },
+    {
+      "id": "S2",
+      "type": "pitch",
+      "start": "15:39",
+      "end": "16:13",
+      "summary": "Mosh interrupts to promote his complete JavaScript course on his site, mentioning exercises, solutions, a certificate of completion, and a link in the video description."
+    },
+    {
+      "id": "S3",
+      "type": "content",
+      "start": "16:13",
+      "end": "47:43",
+      "summary": "Covers core JavaScript fundamentals: declaring variables with let, naming rules and camelCase, constants with const, primitive types (string, number, boolean, undefined, null), dynamic typing and the typeof operator, reference types via object literals with dot and bracket notation, arrays and the length property, and functions including parameters, arguments, return values, and nested function calls."
+    },
+    {
+      "id": "S4",
+      "type": "pitch",
+      "start": "47:43",
+      "end": "48:17",
+      "summary": "Mosh closes by encouraging viewers to enroll in his paid JavaScript course, noting offline viewing, exercises, solutions, a certificate of completion, and a link in the description."
+    }
+  ]
+}

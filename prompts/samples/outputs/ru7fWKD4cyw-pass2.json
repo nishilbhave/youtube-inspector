@@ -1,0 +1,363 @@
+{
+  "video_id": "ru7fWKD4cyw",
+  "by_section": {
+    "S1": {
+      "concrete_claims": [
+        {
+          "timestamp": "0:00:14",
+          "quote": "can see I spent $171,000 here. And then",
+          "paraphrase": "He says he spent $171,000 on one ad campaign for his previous business."
+        },
+        {
+          "timestamp": "0:00:19",
+          "quote": "campaign where I generated $1,500 clicks",
+          "paraphrase": "He says an SEO campaign generated 1,500 clicks per day."
+        },
+        {
+          "timestamp": "0:01:21",
+          "quote": "today's video took me 7 years to",
+          "paraphrase": "He says the content of the video took him 7 years to develop."
+        },
+        {
+          "timestamp": "0:01:26",
+          "quote": "free. My experience was that I got a 20%",
+          "paraphrase": "He claims he achieved a 20% conversion rate on his landing pages."
+        },
+        {
+          "timestamp": "0:01:30",
+          "quote": "conversion rate. This is 10 times higher",
+          "paraphrase": "He claims his conversion rate is 10 times higher than the worldwide average."
+        },
+        {
+          "timestamp": "0:01:33",
+          "quote": "than the average worldwide, which is",
+          "paraphrase": "He says the worldwide average conversion rate is 2 to 4 percent."
+        },
+        {
+          "timestamp": "0:01:37",
+          "quote": "pages in the top 1%. And by doing this,",
+          "paraphrase": "He places his landing pages in the top 1% of converting pages."
+        },
+        {
+          "timestamp": "0:01:40",
+          "quote": "I made $1.2 million. We're covering all",
+          "paraphrase": "He claims his landing pages helped him make $1.2 million."
+        },
+        {
+          "timestamp": "0:02:47",
+          "quote": "business and I started with $10,000 in",
+          "paraphrase": "He says he started his DJ business with $10,000 in the bank."
+        },
+        {
+          "timestamp": "0:03:30",
+          "quote": "10 deals, made my first $10,000 off of",
+          "paraphrase": "He says he closed 10 deals and made his first $10,000 from Google Ads."
+        }
+      ],
+      "vague_claims": [
+        {
+          "timestamp": "0:00:07",
+          "quote": "real money. In front of me, I have one",
+          "paraphrase": "He claims his approach generates real money."
+        },
+        {
+          "timestamp": "0:01:24",
+          "quote": "perfect. I'm giving it all away for",
+          "paraphrase": "He claims he is giving away years of perfected expertise."
+        },
+        {
+          "timestamp": "0:02:01",
+          "quote": "data. This isn't a just trust me, bro.",
+          "paraphrase": "He frames the content as data-backed rather than anecdotal."
+        },
+        {
+          "timestamp": "0:03:38",
+          "quote": "you don't need to have 10 years of",
+          "paraphrase": "He claims viewers don't need a decade of marketing experience to succeed."
+        },
+        {
+          "timestamp": "0:03:57",
+          "quote": "the bottom. So, let's get into it. Before we",
+          "paraphrase": "He promises S-tier non-negotiables down to the bottom-tier items."
+        }
+      ],
+      "evidence_shown": [
+        {
+          "timestamp": "0:00:14",
+          "quote": "can see I spent $171,000 here. And then",
+          "evidence_type": "demo"
+        },
+        {
+          "timestamp": "0:01:46",
+          "quote": "my analytics. You can see the conversion",
+          "evidence_type": "demo"
+        },
+        {
+          "timestamp": "0:01:47",
+          "quote": "rate. You can see the clicks. You can",
+          "evidence_type": "demo"
+        },
+        {
+          "timestamp": "0:02:43",
+          "quote": "Um, I went into creating a wedding DJ",
+          "evidence_type": "anecdote"
+        },
+        {
+          "timestamp": "0:03:12",
+          "quote": "from 10,000 to 9,000 to 8,000 to 7,000",
+          "evidence_type": "anecdote"
+        }
+      ],
+      "pitches": []
+    },
+    "S2": {
+      "concrete_claims": [
+        {
+          "timestamp": "0:04:49",
+          "quote": "good to go. Claude does require a paid",
+          "paraphrase": "He says Claude Code requires a paid plan."
+        },
+        {
+          "timestamp": "0:09:20",
+          "quote": "impression in like 50 milliseconds,",
+          "paraphrase": "He cites that users form a first impression of a website in about 50 milliseconds."
+        },
+        {
+          "timestamp": "0:18:22",
+          "quote": "went from 10% to 15%. You might be like,",
+          "paraphrase": "He says conversions rose from 10% to 15% after adding the video."
+        },
+        {
+          "timestamp": "0:25:50",
+          "quote": "per conversion from $200 to $30. Meaning",
+          "paraphrase": "He says cost per conversion fell from $200 to $30 after adding video testimonials."
+        },
+        {
+          "timestamp": "0:25:57",
+          "quote": "out went from $200 to $30, a 7x decline",
+          "paraphrase": "He calls the cost-per-conversion change a 7x decline."
+        },
+        {
+          "timestamp": "0:26:55",
+          "quote": "people are it said 270% more likely to",
+          "paraphrase": "He cites a stat that businesses are 270% more likely to sell with at least five reviews."
+        },
+        {
+          "timestamp": "0:28:50",
+          "quote": "to say before it was a 3.1, we got it to",
+          "paraphrase": "He gives an example case-study metric of conversion rate going from 3.1 to 19.4."
+        },
+        {
+          "timestamp": "0:40:50",
+          "quote": "I think it's like Yeah, here we go. 64%",
+          "paraphrase": "He cites that 64% of website visitors are on mobile."
+        },
+        {
+          "timestamp": "0:42:05",
+          "quote": "your conversion rates 3.05%.",
+          "paraphrase": "He says 1-second load yields 3.05% conversion."
+        },
+        {
+          "timestamp": "0:51:22",
+          "quote": "tested like 40, 50, 60 landing pages. I",
+          "paraphrase": "He says he tested roughly 40 to 60 landing pages."
+        }
+      ],
+      "vague_claims": [
+        {
+          "timestamp": "0:08:26",
+          "quote": "that beautiful websites make you zero",
+          "paraphrase": "He claims pretty websites alone do not generate revenue."
+        },
+        {
+          "timestamp": "0:18:16",
+          "quote": "non-negotiable for me. I added this",
+          "paraphrase": "He calls a landing-page video the biggest non-negotiable element."
+        },
+        {
+          "timestamp": "0:25:30",
+          "quote": "absolute gamecher which is",
+          "paraphrase": "He calls video testimonials an absolute game-changer."
+        },
+        {
+          "timestamp": "0:25:32",
+          "quote": "non-negotiable is video testimonials.",
+          "paraphrase": "He calls video testimonials non-negotiable."
+        },
+        {
+          "timestamp": "0:46:52",
+          "quote": "you for it. You want to start slow, gradually",
+          "paraphrase": "He warns vaguely that aggressive page generation will be penalized."
+        },
+        {
+          "timestamp": "0:49:02",
+          "quote": "data because your data doesn't lie. Your",
+          "paraphrase": "He claims data is the only definitive guide to landing-page success."
+        },
+        {
+          "timestamp": "1:09:17",
+          "quote": "is one of the biggest game changers that",
+          "paraphrase": "He calls fast lead callbacks one of the biggest game-changers."
+        }
+      ],
+      "evidence_shown": [
+        {
+          "timestamp": "0:08:45",
+          "quote": "close you deals. This is my website that",
+          "evidence_type": "demo"
+        },
+        {
+          "timestamp": "0:18:20",
+          "quote": "immediately my landing page conversions",
+          "evidence_type": "anecdote"
+        },
+        {
+          "timestamp": "0:25:48",
+          "quote": "different account. It dropped the cost",
+          "evidence_type": "anecdote"
+        },
+        {
+          "timestamp": "0:26:55",
+          "quote": "people are it said 270% more likely to",
+          "evidence_type": "citation"
+        },
+        {
+          "timestamp": "0:42:00",
+          "quote": "online that I read, okay, where if your",
+          "evidence_type": "citation"
+        },
+        {
+          "timestamp": "0:43:51",
+          "quote": "a Google product that analyzes your page",
+          "evidence_type": "demo"
+        },
+        {
+          "timestamp": "0:49:21",
+          "quote": "works. We are going to use a tool called",
+          "evidence_type": "demo"
+        },
+        {
+          "timestamp": "0:27:13",
+          "quote": "just go to this website this person does",
+          "evidence_type": "demo"
+        },
+        {
+          "timestamp": "0:28:50",
+          "quote": "to say before it was a 3.1, we got it to",
+          "evidence_type": "anecdote"
+        }
+      ],
+      "pitches": [
+        {
+          "timestamp": "0:05:40",
+          "quote": "going to be a link to my free school",
+          "target": "other"
+        },
+        {
+          "timestamp": "0:07:44",
+          "quote": "out here that from within the free",
+          "target": "other"
+        },
+        {
+          "timestamp": "0:32:27",
+          "quote": "free 30-minute call, we'll show you how",
+          "target": "other"
+        },
+        {
+          "timestamp": "0:32:29",
+          "quote": "to make your business up to four times",
+          "target": "other"
+        },
+        {
+          "timestamp": "0:32:33",
+          "quote": "risk reversal. will pay you $200 just",
+          "target": "other"
+        }
+      ]
+    },
+    "S3": {
+      "concrete_claims": [
+        {
+          "timestamp": "1:16:10",
+          "quote": "along the way. There's seven calls in",
+          "paraphrase": "He says the paid community includes seven coaching calls."
+        },
+        {
+          "timestamp": "1:15:50",
+          "quote": "I'll give you the exact blueprints that",
+          "paraphrase": "He claims the paid community gives blueprints he used to scale to seven figures."
+        },
+        {
+          "timestamp": "1:15:51",
+          "quote": "allowed me to scale to seven figures and",
+          "paraphrase": "He says the blueprints helped him scale to seven figures and automate his business."
+        },
+        {
+          "timestamp": "1:16:31",
+          "quote": "look at my agency here. We can jump on a",
+          "paraphrase": "He offers a free 30-minute call with his agency."
+        },
+        {
+          "timestamp": "1:16:33",
+          "quote": "free 30-inute call and we'll show you",
+          "paraphrase": "He offers a free 30-minute agency call."
+        }
+      ],
+      "vague_claims": [
+        {
+          "timestamp": "1:15:53",
+          "quote": "automate pretty much the majority of my",
+          "paraphrase": "He claims to have automated most of his business."
+        },
+        {
+          "timestamp": "1:15:55",
+          "quote": "business. You can just copy and paste it",
+          "paraphrase": "He claims viewers can copy and paste his blueprint into their own business."
+        },
+        {
+          "timestamp": "1:16:01",
+          "quote": "you're going down the freelancing",
+          "paraphrase": "He says the path involves road bumps and setbacks."
+        }
+      ],
+      "evidence_shown": [],
+      "pitches": [
+        {
+          "timestamp": "1:15:21",
+          "quote": "are going to be down below in my free",
+          "target": "other"
+        },
+        {
+          "timestamp": "1:15:24",
+          "quote": "jumping in that. I also have a paid",
+          "target": "other"
+        },
+        {
+          "timestamp": "1:15:33",
+          "quote": "automation agency or AI agency or become",
+          "target": "other"
+        },
+        {
+          "timestamp": "1:15:49",
+          "quote": "of you who have an existing business.",
+          "target": "other"
+        },
+        {
+          "timestamp": "1:16:10",
+          "quote": "along the way. There's seven calls in",
+          "target": "other"
+        },
+        {
+          "timestamp": "1:16:23",
+          "quote": "I also have an agency. So, if you guys",
+          "target": "other"
+        },
+        {
+          "timestamp": "1:16:33",
+          "quote": "free 30-inute call and we'll show you",
+          "target": "other"
+        }
+      ]
+    }
+  }
+}

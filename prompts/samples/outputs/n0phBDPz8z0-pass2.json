@@ -1,0 +1,91 @@
+{
+  "video_id": "n0phBDPz8z0",
+  "by_section": {
+    "S1": {
+      "concrete_claims": [
+        { "timestamp": "0:02", "quote": "I've made over $26,000", "paraphrase": "Creator states he has earned more than $26,000." },
+        { "timestamp": "0:04", "quote": "selling digital products online and I work maybe 1 hour per week. The secret", "paraphrase": "Creator states the earnings come from digital products and roughly one hour of work per week." }
+      ],
+      "vague_claims": [
+        { "timestamp": "0:13", "quote": "they talk about spinning up agents and connecting APIs. It doesn't need to be", "paraphrase": "Creator characterizes other AI tutorials as overly complicated." },
+        { "timestamp": "0:16", "quote": "connecting APIs. It doesn't need to be that complicated. I'm going to show you", "paraphrase": "Creator promises to show a simpler approach." }
+      ],
+      "evidence_shown": [],
+      "pitches": []
+    },
+    "S2": {
+      "concrete_claims": [
+        { "timestamp": "0:33", "quote": "opened up Chat GPT one day and I said, \"How can I make money online?\" And that", "paraphrase": "Creator says he asked ChatGPT how to make money online." },
+        { "timestamp": "1:05", "quote": "do 80% of the grunt work and you do the 20% of work that only you can do.", "paraphrase": "Creator describes letting AI do 80% of the work and the user 20%." },
+        { "timestamp": "1:15", "quote": "digital product, it took me about 2 to 3 hours to create. I used a template from", "paraphrase": "Creator says his first digital product took 2 to 3 hours to create using a template." },
+        { "timestamp": "1:17", "quote": "hours to create. I used a template from Canva. I used Chat GPT to accelerate the", "paraphrase": "Creator used a Canva template and ChatGPT to make the product." },
+        { "timestamp": "1:20", "quote": "Canva. I used Chat GPT to accelerate the process, listed on Gumroad and got my", "paraphrase": "Creator used ChatGPT and listed the product on Gumroad." },
+        { "timestamp": "1:29", "quote": "first day, I had four sales, $20. It", "paraphrase": "Creator reports four sales totaling $20 on the first day." },
+        { "timestamp": "1:55", "quote": "me two or three hours to first few months I was making about $800 a", "paraphrase": "Creator reports about $800 per month in early months." },
+        { "timestamp": "1:57", "quote": "few months I was making about $800 a month and then it climbed to 1,000 and", "paraphrase": "Earnings climbed from $800 to $1,000 per month." },
+        { "timestamp": "1:59", "quote": "month and then it climbed to 1,000 and then 2,000 and now consistently I'm", "paraphrase": "Earnings then reached $2,000 monthly." },
+        { "timestamp": "2:01", "quote": "then 2,000 and now consistently I'm making over $3,000 a month, largely in", "paraphrase": "Creator now consistently makes over $3,000 a month, largely passive." },
+        { "timestamp": "2:13", "quote": "whole setup is ridiculously simple. I use AI to write articles, use AI to make", "paraphrase": "Creator uses AI to write articles and make digital products." },
+        { "timestamp": "2:16", "quote": "use AI to write articles, use AI to make digital products and I sell it on", "paraphrase": "Creator sells AI-made digital products via his described stack." },
+        { "timestamp": "2:17", "quote": "digital products and I sell it on Gumroad. That's the entire stack. No", "paraphrase": "Creator sells on Gumroad as the entire stack." },
+        { "timestamp": "2:20", "quote": "Gumroad. That's the entire stack. No agents, no APIs, no Zapier and I make", "paraphrase": "Creator says he makes money without agents, APIs, or Zapier." },
+        { "timestamp": "2:23", "quote": "agents, no APIs, no Zapier and I make $3,000 every month. So, what should you", "paraphrase": "Creator reaffirms making $3,000 every month with the stated stack." },
+        { "timestamp": "2:35", "quote": "specific audience. My first product was about Suno AI and how to make music on", "paraphrase": "Creator's first product was about making music with Suno AI." },
+        { "timestamp": "2:38", "quote": "about Suno AI and how to make music on Suno Suno AI and it was essentially just", "paraphrase": "First product was on making music with Suno AI." },
+        { "timestamp": "2:41", "quote": "Suno Suno AI and it was essentially just a list of prompts with a handful of tips", "paraphrase": "First product was a list of prompts with a few tips." }
+      ],
+      "vague_claims": [
+        { "timestamp": "0:50", "quote": "And that's when something clicked for me. AI is supposed to make our lives", "paraphrase": "Creator asserts AI is meant to make life easier." },
+        { "timestamp": "0:52", "quote": "me. AI is supposed to make our lives easier, not harder and more complicated.", "paraphrase": "Creator says AI should simplify life rather than complicate it." },
+        { "timestamp": "0:56", "quote": "If the system you're building feels overwhelming, you're on the wrong path.", "paraphrase": "Creator claims an overwhelming system signals a wrong approach." },
+        { "timestamp": "2:10", "quote": "products and drive more traffic. My whole setup is ridiculously simple. I", "paraphrase": "Creator characterizes his setup as extremely simple." },
+        { "timestamp": "2:28", "quote": "actually sell? The best products are simple products and the best products", "paraphrase": "Creator asserts the best products are simple products." },
+        { "timestamp": "2:30", "quote": "simple products and the best products are made for specific people in a", "paraphrase": "Creator asserts the best products are made for specific audiences." }
+      ],
+      "evidence_shown": [
+        { "timestamp": "1:15", "quote": "digital product, it took me about 2 to 3 hours to create. I used a template from", "evidence_type": "anecdote" },
+        { "timestamp": "1:29", "quote": "first day, I had four sales, $20. It", "evidence_type": "anecdote" },
+        { "timestamp": "2:35", "quote": "specific audience. My first product was about Suno AI and how to make music on", "evidence_type": "anecdote" }
+      ],
+      "pitches": []
+    },
+    "S3": {
+      "concrete_claims": [
+        { "timestamp": "2:47", "quote": "create, I put together a list of 20 digital products that are selling in", "paraphrase": "Creator references a list of 20 digital products that are selling." },
+        { "timestamp": "2:51", "quote": "digital products that are selling in 2026 with real examples. I'll link that", "paraphrase": "Creator says the list covers products selling in 2026 with examples." }
+      ],
+      "vague_claims": [],
+      "evidence_shown": [],
+      "pitches": [
+        { "timestamp": "2:55", "quote": "2026 with real examples. I'll link that below. Grab that and use it as", "target": "other" },
+        { "timestamp": "2:57", "quote": "below. Grab that and use it as inspiration. Use it as a launch point", "target": "other" }
+      ]
+    },
+    "S4": {
+      "concrete_claims": [
+        { "timestamp": "3:08", "quote": "take time. It does take effort. It took me 3 months to scale past $1,000, then 6", "paraphrase": "Creator states it took 3 months to surpass $1,000 monthly." },
+        { "timestamp": "3:11", "quote": "me 3 months to scale past $1,000, then 6 months to scale past $2,000 and now I'm", "paraphrase": "Creator states it took 6 months to surpass $2,000 monthly." },
+        { "timestamp": "3:14", "quote": "months to scale past $2,000 and now I'm growing and consistently over $3,000 a", "paraphrase": "Creator says he is now consistently over $3,000 per month." },
+        { "timestamp": "3:30", "quote": "share what platform I use to sell digital products, how to create your", "paraphrase": "Creator previews a video on the platform he uses to sell digital products." },
+        { "timestamp": "3:32", "quote": "digital products, how to create your first digital product, how to drive", "paraphrase": "Creator previews a video on creating a first digital product." },
+        { "timestamp": "3:33", "quote": "first digital product, how to drive traffic to that digital product and the", "paraphrase": "Creator previews a video on driving traffic." },
+        { "timestamp": "3:35", "quote": "traffic to that digital product and the AI workflow I use and much more. So, if", "paraphrase": "Creator previews a video on his AI workflow." }
+      ],
+      "vague_claims": [
+        { "timestamp": "3:03", "quote": "right, so quick reality check. This is not about getting rich quick. It does", "paraphrase": "Creator frames the approach as not a get-rich-quick scheme." },
+        { "timestamp": "3:19", "quote": "month. The longer you do it, the more successful you become. And most people", "paraphrase": "Creator asserts persistence yields more success." },
+        { "timestamp": "3:21", "quote": "successful you become. And most people quit right before it starts working. So,", "paraphrase": "Creator claims most people quit just before it starts working." }
+      ],
+      "evidence_shown": [
+        { "timestamp": "3:08", "quote": "take time. It does take effort. It took me 3 months to scale past $1,000, then 6", "evidence_type": "anecdote" }
+      ],
+      "pitches": []
+    },
+    "S5": {
+      "concrete_claims": [],
+      "vague_claims": [],
+      "evidence_shown": [],
+      "pitches": []
+    }
+  }
+}

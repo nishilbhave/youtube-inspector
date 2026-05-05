@@ -1,0 +1,5594 @@
+{
+  "video_id": "6TXvaWX5OFk",
+  "url": "https://www.youtube.com/watch?v=6TXvaWX5OFk",
+  "title": "I finally understood why quantum particles are uncertain! (My mind is blown)",
+  "channel": "FloatHeadPhysics",
+  "channel_id": "UCGfFUc6eWxfbtjYeun6r9xg",
+  "duration_seconds": 1282,
+  "view_count": 776331,
+  "upload_date": "2024-06-28",
+  "language": "en-orig",
+  "transcript": [
+    {
+      "start": 1.99,
+      "duration": 0.010000000000000009,
+      "text": "thank you brilliant for sponsoring this"
+    },
+    {
+      "start": 2.0,
+      "duration": 2.0700000000000003,
+      "text": "thank you brilliant for sponsoring this video this is the Heisenberg's"
+    },
+    {
+      "start": 4.07,
+      "duration": 0.009999999999999787,
+      "text": "video this is the Heisenberg's"
+    },
+    {
+      "start": 4.08,
+      "duration": 1.6689999999999996,
+      "text": "video this is the Heisenberg's uncertainty principle at least a version"
+    },
+    {
+      "start": 5.749,
+      "duration": 0.010000000000000675,
+      "text": "uncertainty principle at least a version"
+    },
+    {
+      "start": 5.759,
+      "duration": 2.0299999999999994,
+      "text": "uncertainty principle at least a version of it not only does it make the atom"
+    },
+    {
+      "start": 7.789,
+      "duration": 0.010000000000000675,
+      "text": "of it not only does it make the atom"
+    },
+    {
+      "start": 7.799,
+      "duration": 3.191,
+      "text": "of it not only does it make the atom stable but it allows you and me to exist"
+    },
+    {
+      "start": 10.99,
+      "duration": 0.009999999999999787,
+      "text": "stable but it allows you and me to exist"
+    },
+    {
+      "start": 11.0,
+      "duration": 1.6690000000000005,
+      "text": "stable but it allows you and me to exist but wait a second what exactly does it"
+    },
+    {
+      "start": 12.669,
+      "duration": 0.009999999999999787,
+      "text": "but wait a second what exactly does it"
+    },
+    {
+      "start": 12.679,
+      "duration": 2.0299999999999994,
+      "text": "but wait a second what exactly does it say well here's how my teacher explained"
+    },
+    {
+      "start": 14.709,
+      "duration": 0.009999999999999787,
+      "text": "say well here's how my teacher explained"
+    },
+    {
+      "start": 14.719,
+      "duration": 2.110999999999999,
+      "text": "say well here's how my teacher explained it to me if you look at this photo taken"
+    },
+    {
+      "start": 16.83,
+      "duration": 0.010000000000001563,
+      "text": "it to me if you look at this photo taken"
+    },
+    {
+      "start": 16.84,
+      "duration": 1.7899999999999991,
+      "text": "it to me if you look at this photo taken by a high-speed camera of a moving"
+    },
+    {
+      "start": 18.63,
+      "duration": 0.010000000000001563,
+      "text": "by a high-speed camera of a moving"
+    },
+    {
+      "start": 18.64,
+      "duration": 2.0700000000000003,
+      "text": "by a high-speed camera of a moving tennis ball you know exactly its"
+    },
+    {
+      "start": 20.71,
+      "duration": 0.00999999999999801,
+      "text": "tennis ball you know exactly its"
+    },
+    {
+      "start": 20.72,
+      "duration": 2.309000000000001,
+      "text": "tennis ball you know exactly its location but do you know where it's"
+    },
+    {
+      "start": 23.029,
+      "duration": 0.010000000000001563,
+      "text": "location but do you know where it's"
+    },
+    {
+      "start": 23.039,
+      "duration": 3.350999999999999,
+      "text": "location but do you know where it's going I'm like no it's a photo so it"
+    },
+    {
+      "start": 26.39,
+      "duration": 0.00999999999999801,
+      "text": "going I'm like no it's a photo so it"
+    },
+    {
+      "start": 26.4,
+      "duration": 1.75,
+      "text": "going I'm like no it's a photo so it could be going in any direction I have"
+    },
+    {
+      "start": 28.15,
+      "duration": 0.010000000000001563,
+      "text": "could be going in any direction I have"
+    },
+    {
+      "start": 28.16,
+      "duration": 2.789999999999999,
+      "text": "could be going in any direction I have no idea meaning I have no clue about its"
+    },
+    {
+      "start": 30.95,
+      "duration": 0.010000000000001563,
+      "text": "no idea meaning I have no clue about its"
+    },
+    {
+      "start": 30.96,
+      "duration": 2.5889999999999986,
+      "text": "no idea meaning I have no clue about its velocity but what if I took a long"
+    },
+    {
+      "start": 33.549,
+      "duration": 0.00999999999999801,
+      "text": "velocity but what if I took a long"
+    },
+    {
+      "start": 33.559,
+      "duration": 2.3910000000000053,
+      "text": "velocity but what if I took a long exposure photo of that same tennis ball"
+    },
+    {
+      "start": 35.95,
+      "duration": 0.00999999999999801,
+      "text": "exposure photo of that same tennis ball"
+    },
+    {
+      "start": 35.96,
+      "duration": 2.429000000000002,
+      "text": "exposure photo of that same tennis ball ooh ooh now I know it's going in this"
+    },
+    {
+      "start": 38.389,
+      "duration": 0.00999999999999801,
+      "text": "ooh ooh now I know it's going in this"
+    },
+    {
+      "start": 38.399,
+      "duration": 2.030999999999999,
+      "text": "ooh ooh now I know it's going in this direction and by looking at the blur I"
+    },
+    {
+      "start": 40.43,
+      "duration": 0.00999999999999801,
+      "text": "direction and by looking at the blur I"
+    },
+    {
+      "start": 40.44,
+      "duration": 1.8300000000000054,
+      "text": "direction and by looking at the blur I can estimate its speed as well which"
+    },
+    {
+      "start": 42.27,
+      "duration": 0.00999999999999801,
+      "text": "can estimate its speed as well which"
+    },
+    {
+      "start": 42.28,
+      "duration": 1.8299999999999983,
+      "text": "can estimate its speed as well which means now I have a much better estimate"
+    },
+    {
+      "start": 44.11,
+      "duration": 0.00999999999999801,
+      "text": "means now I have a much better estimate"
+    },
+    {
+      "start": 44.12,
+      "duration": 2.429000000000002,
+      "text": "means now I have a much better estimate of the Velocity but notice now I don't"
+    },
+    {
+      "start": 46.549,
+      "duration": 0.00999999999999801,
+      "text": "of the Velocity but notice now I don't"
+    },
+    {
+      "start": 46.559,
+      "duration": 1.1910000000000025,
+      "text": "of the Velocity but notice now I don't know where the location of the ball I"
+    },
+    {
+      "start": 47.75,
+      "duration": 0.00999999999999801,
+      "text": "know where the location of the ball I"
+    },
+    {
+      "start": 47.76,
+      "duration": 1.5100000000000051,
+      "text": "know where the location of the ball I don't know where the ball is so I've"
+    },
+    {
+      "start": 49.27,
+      "duration": 0.00999999999999801,
+      "text": "don't know where the ball is so I've"
+    },
+    {
+      "start": 49.28,
+      "duration": 2.948999999999998,
+      "text": "don't know where the ball is so I've lost the location um information of that"
+    },
+    {
+      "start": 52.229,
+      "duration": 0.00999999999999801,
+      "text": "lost the location um information of that"
+    },
+    {
+      "start": 52.239,
+      "duration": 2.2310000000000016,
+      "text": "lost the location um information of that ball in other words if the uncertainty"
+    },
+    {
+      "start": 54.47,
+      "duration": 0.00999999999999801,
+      "text": "ball in other words if the uncertainty"
+    },
+    {
+      "start": 54.48,
+      "duration": 1.990000000000002,
+      "text": "ball in other words if the uncertainty in finding the location of an object is"
+    },
+    {
+      "start": 56.47,
+      "duration": 0.00999999999999801,
+      "text": "in finding the location of an object is"
+    },
+    {
+      "start": 56.48,
+      "duration": 2.1500000000000057,
+      "text": "in finding the location of an object is very tiny then the uncertainty in"
+    },
+    {
+      "start": 58.63,
+      "duration": 0.00999999999999801,
+      "text": "very tiny then the uncertainty in"
+    },
+    {
+      "start": 58.64,
+      "duration": 2.3100000000000023,
+      "text": "very tiny then the uncertainty in finding the momentum of the object"
+    },
+    {
+      "start": 60.95,
+      "duration": 0.00999999999999801,
+      "text": "finding the momentum of the object"
+    },
+    {
+      "start": 60.96,
+      "duration": 1.1899999999999977,
+      "text": "finding the momentum of the object because the momentum is given by its"
+    },
+    {
+      "start": 62.15,
+      "duration": 0.00999999999999801,
+      "text": "because the momentum is given by its"
+    },
+    {
+      "start": 62.16,
+      "duration": 3.3490000000000038,
+      "text": "because the momentum is given by its velocity that is very large but if you"
+    },
+    {
+      "start": 65.509,
+      "duration": 0.010000000000005116,
+      "text": "velocity that is very large but if you"
+    },
+    {
+      "start": 65.519,
+      "duration": 2.0309999999999917,
+      "text": "velocity that is very large but if you know the velocity or the momentum very"
+    },
+    {
+      "start": 67.55,
+      "duration": 0.010000000000005116,
+      "text": "know the velocity or the momentum very"
+    },
+    {
+      "start": 67.56,
+      "duration": 2.5889999999999986,
+      "text": "know the velocity or the momentum very nicely its uncertainty is very small"
+    },
+    {
+      "start": 70.149,
+      "duration": 0.010000000000005116,
+      "text": "nicely its uncertainty is very small"
+    },
+    {
+      "start": 70.159,
+      "duration": 2.390999999999991,
+      "text": "nicely its uncertainty is very small then there will be huge uncertainty in"
+    },
+    {
+      "start": 72.55,
+      "duration": 0.010000000000005116,
+      "text": "then there will be huge uncertainty in"
+    },
+    {
+      "start": 72.56,
+      "duration": 2.8689999999999998,
+      "text": "then there will be huge uncertainty in the position of the ball and guess what"
+    },
+    {
+      "start": 75.429,
+      "duration": 0.009999999999990905,
+      "text": "the position of the ball and guess what"
+    },
+    {
+      "start": 75.439,
+      "duration": 1.3910000000000053,
+      "text": "the position of the ball and guess what elementary particles like electrons"
+    },
+    {
+      "start": 76.83,
+      "duration": 0.010000000000005116,
+      "text": "elementary particles like electrons"
+    },
+    {
+      "start": 76.84,
+      "duration": 2.3499999999999943,
+      "text": "elementary particles like electrons behave in a similar way if you find its"
+    },
+    {
+      "start": 79.19,
+      "duration": 0.010000000000005116,
+      "text": "behave in a similar way if you find its"
+    },
+    {
+      "start": 79.2,
+      "duration": 2.3100000000000023,
+      "text": "behave in a similar way if you find its position exactly you wouldn't know where"
+    },
+    {
+      "start": 81.51,
+      "duration": 0.009999999999990905,
+      "text": "position exactly you wouldn't know where"
+    },
+    {
+      "start": 81.52,
+      "duration": 1.3500000000000085,
+      "text": "position exactly you wouldn't know where it's going you wouldn't know anything"
+    },
+    {
+      "start": 82.87,
+      "duration": 0.009999999999990905,
+      "text": "it's going you wouldn't know anything"
+    },
+    {
+      "start": 82.88,
+      "duration": 1.710000000000008,
+      "text": "it's going you wouldn't know anything about its momentum on the other hand if"
+    },
+    {
+      "start": 84.59,
+      "duration": 0.009999999999990905,
+      "text": "about its momentum on the other hand if"
+    },
+    {
+      "start": 84.6,
+      "duration": 1.9500000000000028,
+      "text": "about its momentum on the other hand if you find its momentum exactly you"
+    },
+    {
+      "start": 86.55,
+      "duration": 0.010000000000005116,
+      "text": "you find its momentum exactly you"
+    },
+    {
+      "start": 86.56,
+      "duration": 1.2289999999999992,
+      "text": "you find its momentum exactly you wouldn't know anything about its"
+    },
+    {
+      "start": 87.789,
+      "duration": 0.010000000000005116,
+      "text": "wouldn't know anything about its"
+    },
+    {
+      "start": 87.799,
+      "duration": 1.9110000000000014,
+      "text": "wouldn't know anything about its position if you take the uncertainty in"
+    },
+    {
+      "start": 89.71000000000001,
+      "duration": 0.009999999999990905,
+      "text": "position if you take the uncertainty in"
+    },
+    {
+      "start": 89.72,
+      "duration": 2.789999999999992,
+      "text": "position if you take the uncertainty in the position and the momentum together"
+    },
+    {
+      "start": 92.50999999999999,
+      "duration": 0.010000000000019327,
+      "text": "the position and the momentum together"
+    },
+    {
+      "start": 92.52000000000001,
+      "duration": 2.789999999999992,
+      "text": "the position and the momentum together they must have a minimum value and that"
+    },
+    {
+      "start": 95.31,
+      "duration": 0.009999999999990905,
+      "text": "they must have a minimum value and that"
+    },
+    {
+      "start": 95.32,
+      "duration": 2.7890000000000157,
+      "text": "they must have a minimum value and that minimum value happens to be h/ 4 Pi"
+    },
+    {
+      "start": 98.10900000000001,
+      "duration": 0.009999999999990905,
+      "text": "minimum value happens to be h/ 4 Pi"
+    },
+    {
+      "start": 98.119,
+      "duration": 2.1910000000000025,
+      "text": "minimum value happens to be h/ 4 Pi which is the uncertainty principle now"
+    },
+    {
+      "start": 100.31,
+      "duration": 0.009999999999990905,
+      "text": "which is the uncertainty principle now"
+    },
+    {
+      "start": 100.32,
+      "duration": 1.2700000000000102,
+      "text": "which is the uncertainty principle now for a long time I thought that this"
+    },
+    {
+      "start": 101.59,
+      "duration": 0.009999999999990905,
+      "text": "for a long time I thought that this"
+    },
+    {
+      "start": 101.6,
+      "duration": 1.5900000000000034,
+      "text": "for a long time I thought that this makes so much sense like so much"
+    },
+    {
+      "start": 103.19,
+      "duration": 0.010000000000005116,
+      "text": "makes so much sense like so much"
+    },
+    {
+      "start": 103.2,
+      "duration": 2.3900000000000006,
+      "text": "makes so much sense like so much intuitive sense but then I realized"
+    },
+    {
+      "start": 105.59,
+      "duration": 0.009999999999990905,
+      "text": "intuitive sense but then I realized"
+    },
+    {
+      "start": 105.6,
+      "duration": 1.9500000000000028,
+      "text": "intuitive sense but then I realized there's a problem with the analogy you"
+    },
+    {
+      "start": 107.55,
+      "duration": 0.010000000000005116,
+      "text": "there's a problem with the analogy you"
+    },
+    {
+      "start": 107.56,
+      "duration": 2.75,
+      "text": "there's a problem with the analogy you see if you go back to that photo I can"
+    },
+    {
+      "start": 110.31,
+      "duration": 0.009999999999990905,
+      "text": "see if you go back to that photo I can"
+    },
+    {
+      "start": 110.32,
+      "duration": 1.7490000000000094,
+      "text": "see if you go back to that photo I can actually figure out the velocity of the"
+    },
+    {
+      "start": 112.069,
+      "duration": 0.010000000000005116,
+      "text": "actually figure out the velocity of the"
+    },
+    {
+      "start": 112.07900000000001,
+      "duration": 2.030000000000001,
+      "text": "actually figure out the velocity of the ball over here you know how instead of"
+    },
+    {
+      "start": 114.10900000000001,
+      "duration": 0.009999999999990905,
+      "text": "ball over here you know how instead of"
+    },
+    {
+      "start": 114.119,
+      "duration": 1.990000000000009,
+      "text": "ball over here you know how instead of using a still camera I use a high-speed"
+    },
+    {
+      "start": 116.10900000000001,
+      "duration": 0.009999999999990905,
+      "text": "using a still camera I use a high-speed"
+    },
+    {
+      "start": 116.119,
+      "duration": 2.2309999999999945,
+      "text": "using a still camera I use a high-speed video camera and then I just look at the"
+    },
+    {
+      "start": 118.35,
+      "duration": 0.010000000000005116,
+      "text": "video camera and then I just look at the"
+    },
+    {
+      "start": 118.36,
+      "duration": 2.1899999999999977,
+      "text": "video camera and then I just look at the next frame and by looking at the next"
+    },
+    {
+      "start": 120.55,
+      "duration": 0.010000000000005116,
+      "text": "next frame and by looking at the next"
+    },
+    {
+      "start": 120.56,
+      "duration": 1.3900000000000006,
+      "text": "next frame and by looking at the next frame I will know which direction the"
+    },
+    {
+      "start": 121.95,
+      "duration": 0.009999999999990905,
+      "text": "frame I will know which direction the"
+    },
+    {
+      "start": 121.96,
+      "duration": 2.189000000000007,
+      "text": "frame I will know which direction the ball is going and I can figure out this"
+    },
+    {
+      "start": 124.149,
+      "duration": 0.010000000000005116,
+      "text": "ball is going and I can figure out this"
+    },
+    {
+      "start": 124.159,
+      "duration": 2.4709999999999894,
+      "text": "ball is going and I can figure out this distance and calculate the velocity"
+    },
+    {
+      "start": 126.63,
+      "duration": 0.010000000000005116,
+      "text": "distance and calculate the velocity"
+    },
+    {
+      "start": 126.64,
+      "duration": 1.6300000000000097,
+      "text": "distance and calculate the velocity higher the frame rate better my"
+    },
+    {
+      "start": 128.27,
+      "duration": 0.009999999999990905,
+      "text": "higher the frame rate better my"
+    },
+    {
+      "start": 128.28,
+      "duration": 1.9099999999999966,
+      "text": "higher the frame rate better my calculation so this is just a"
+    },
+    {
+      "start": 130.19,
+      "duration": 0.009999999999990905,
+      "text": "calculation so this is just a"
+    },
+    {
+      "start": 130.2,
+      "duration": 2.469999999999999,
+      "text": "calculation so this is just a technological limitation I can figure"
+    },
+    {
+      "start": 132.67,
+      "duration": 0.010000000000019327,
+      "text": "technological limitation I can figure"
+    },
+    {
+      "start": 132.68,
+      "duration": 1.9089999999999918,
+      "text": "technological limitation I can figure out the velocity but Heisenberg's"
+    },
+    {
+      "start": 134.589,
+      "duration": 0.009999999999990905,
+      "text": "out the velocity but Heisenberg's"
+    },
+    {
+      "start": 134.599,
+      "duration": 1.990000000000009,
+      "text": "out the velocity but Heisenberg's uncertainty principle it is not a"
+    },
+    {
+      "start": 136.589,
+      "duration": 0.009999999999990905,
+      "text": "uncertainty principle it is not a"
+    },
+    {
+      "start": 136.599,
+      "duration": 1.990000000000009,
+      "text": "uncertainty principle it is not a technological limitation another"
+    },
+    {
+      "start": 138.589,
+      "duration": 0.009999999999990905,
+      "text": "technological limitation another"
+    },
+    {
+      "start": 138.599,
+      "duration": 2.2700000000000102,
+      "text": "technological limitation another explanation I heard was that hey if you"
+    },
+    {
+      "start": 140.869,
+      "duration": 0.009999999999990905,
+      "text": "explanation I heard was that hey if you"
+    },
+    {
+      "start": 140.879,
+      "duration": 1.9110000000000014,
+      "text": "explanation I heard was that hey if you try to figure out where the electron is"
+    },
+    {
+      "start": 142.79,
+      "duration": 0.010000000000019327,
+      "text": "try to figure out where the electron is"
+    },
+    {
+      "start": 142.8,
+      "duration": 2.4289999999999736,
+      "text": "try to figure out where the electron is you have to bounce off light on it and"
+    },
+    {
+      "start": 145.22899999999998,
+      "duration": 0.010000000000019327,
+      "text": "you have to bounce off light on it and"
+    },
+    {
+      "start": 145.239,
+      "duration": 1.5109999999999957,
+      "text": "you have to bounce off light on it and when you do that you're going to disturb"
+    },
+    {
+      "start": 146.75,
+      "duration": 0.009999999999990905,
+      "text": "when you do that you're going to disturb"
+    },
+    {
+      "start": 146.76,
+      "duration": 2.1500000000000057,
+      "text": "when you do that you're going to disturb the electron disturbing its momentum and"
+    },
+    {
+      "start": 148.91,
+      "duration": 0.010000000000019327,
+      "text": "the electron disturbing its momentum and"
+    },
+    {
+      "start": 148.92000000000002,
+      "duration": 1.4699999999999704,
+      "text": "the electron disturbing its momentum and that's why you'll have no idea about its"
+    },
+    {
+      "start": 150.39,
+      "duration": 0.010000000000019327,
+      "text": "that's why you'll have no idea about its"
+    },
+    {
+      "start": 150.4,
+      "duration": 1.75,
+      "text": "that's why you'll have no idea about its momentum when you learn about its"
+    },
+    {
+      "start": 152.15,
+      "duration": 0.009999999999990905,
+      "text": "momentum when you learn about its"
+    },
+    {
+      "start": 152.16,
+      "duration": 3.429000000000002,
+      "text": "momentum when you learn about its position but again the problem is the"
+    },
+    {
+      "start": 155.589,
+      "duration": 0.009999999999990905,
+      "text": "position but again the problem is the"
+    },
+    {
+      "start": 155.599,
+      "duration": 1.5510000000000161,
+      "text": "position but again the problem is the uncertainty principle has nothing to do"
+    },
+    {
+      "start": 157.15,
+      "duration": 0.009999999999990905,
+      "text": "uncertainty principle has nothing to do"
+    },
+    {
+      "start": 157.16,
+      "duration": 2.75,
+      "text": "uncertainty principle has nothing to do with measurement it is much more subtle"
+    },
+    {
+      "start": 159.91,
+      "duration": 0.010000000000019327,
+      "text": "with measurement it is much more subtle"
+    },
+    {
+      "start": 159.92000000000002,
+      "duration": 1.789999999999992,
+      "text": "with measurement it is much more subtle so for a long time I thought I will"
+    },
+    {
+      "start": 161.71,
+      "duration": 0.009999999999990905,
+      "text": "so for a long time I thought I will"
+    },
+    {
+      "start": 161.72,
+      "duration": 2.109999999999985,
+      "text": "so for a long time I thought I will never get a rigorous intuition behind"
+    },
+    {
+      "start": 163.82999999999998,
+      "duration": 0.010000000000019327,
+      "text": "never get a rigorous intuition behind"
+    },
+    {
+      "start": 163.84,
+      "duration": 2.2700000000000102,
+      "text": "never get a rigorous intuition behind what's really going on over there that"
+    },
+    {
+      "start": 166.11,
+      "duration": 0.009999999999990905,
+      "text": "what's really going on over there that"
+    },
+    {
+      "start": 166.12,
+      "duration": 2.5500000000000114,
+      "text": "what's really going on over there that is until I read five lectures and then"
+    },
+    {
+      "start": 168.67000000000002,
+      "duration": 0.009999999999990905,
+      "text": "is until I read five lectures and then"
+    },
+    {
+      "start": 168.68,
+      "duration": 2.990000000000009,
+      "text": "is until I read five lectures and then my mind was truly blown so the hope of"
+    },
+    {
+      "start": 171.67000000000002,
+      "duration": 0.009999999999990905,
+      "text": "my mind was truly blown so the hope of"
+    },
+    {
+      "start": 171.68,
+      "duration": 1.9089999999999918,
+      "text": "my mind was truly blown so the hope of this video if I do it right is not just"
+    },
+    {
+      "start": 173.589,
+      "duration": 0.009999999999990905,
+      "text": "this video if I do it right is not just"
+    },
+    {
+      "start": 173.599,
+      "duration": 1.6299999999999955,
+      "text": "this video if I do it right is not just to understand the principle but to"
+    },
+    {
+      "start": 175.22899999999998,
+      "duration": 0.010000000000019327,
+      "text": "to understand the principle but to"
+    },
+    {
+      "start": 175.239,
+      "duration": 2.4710000000000036,
+      "text": "to understand the principle but to actually ReDiscover it intuitively so"
+    },
+    {
+      "start": 177.71,
+      "duration": 0.009999999999990905,
+      "text": "actually ReDiscover it intuitively so"
+    },
+    {
+      "start": 177.72,
+      "duration": 1.990000000000009,
+      "text": "actually ReDiscover it intuitively so that we understand in our bones and guts"
+    },
+    {
+      "start": 179.71,
+      "duration": 0.009999999999990905,
+      "text": "that we understand in our bones and guts"
+    },
+    {
+      "start": 179.72,
+      "duration": 2.710000000000008,
+      "text": "that we understand in our bones and guts and will make perfect sense and I think"
+    },
+    {
+      "start": 182.43,
+      "duration": 0.009999999999990905,
+      "text": "and will make perfect sense and I think"
+    },
+    {
+      "start": 182.44,
+      "duration": 2.469999999999999,
+      "text": "and will make perfect sense and I think fan helped me do that so I'm sharing it"
+    },
+    {
+      "start": 184.91,
+      "duration": 0.009999999999990905,
+      "text": "fan helped me do that so I'm sharing it"
+    },
+    {
+      "start": 184.92,
+      "duration": 1.6690000000000111,
+      "text": "fan helped me do that so I'm sharing it with you so if you're ready for this"
+    },
+    {
+      "start": 186.589,
+      "duration": 0.009999999999990905,
+      "text": "with you so if you're ready for this"
+    },
+    {
+      "start": 186.599,
+      "duration": 2.5500000000000114,
+      "text": "with you so if you're ready for this let's begin so where do we start fan"
+    },
+    {
+      "start": 189.149,
+      "duration": 0.009999999999990905,
+      "text": "let's begin so where do we start fan"
+    },
+    {
+      "start": 189.159,
+      "duration": 1.311000000000007,
+      "text": "let's begin so where do we start fan says we need to First understand the"
+    },
+    {
+      "start": 190.47,
+      "duration": 0.009999999999990905,
+      "text": "says we need to First understand the"
+    },
+    {
+      "start": 190.48,
+      "duration": 2.2700000000000102,
+      "text": "says we need to First understand the idea of wave particle duality and I'm"
+    },
+    {
+      "start": 192.75,
+      "duration": 0.009999999999990905,
+      "text": "idea of wave particle duality and I'm"
+    },
+    {
+      "start": 192.76,
+      "duration": 1.3500000000000227,
+      "text": "idea of wave particle duality and I'm like wait a second I know what that"
+    },
+    {
+      "start": 194.11,
+      "duration": 0.009999999999990905,
+      "text": "like wait a second I know what that"
+    },
+    {
+      "start": 194.12,
+      "duration": 2.38900000000001,
+      "text": "like wait a second I know what that means right I mean electrons for example"
+    },
+    {
+      "start": 196.50900000000001,
+      "duration": 0.009999999999990905,
+      "text": "means right I mean electrons for example"
+    },
+    {
+      "start": 196.519,
+      "duration": 2.5109999999999957,
+      "text": "means right I mean electrons for example are both waves and particles at the same"
+    },
+    {
+      "start": 199.03,
+      "duration": 0.009999999999990905,
+      "text": "are both waves and particles at the same"
+    },
+    {
+      "start": 199.04,
+      "duration": 3.9090000000000202,
+      "text": "are both waves and particles at the same time right and fan says no not quite"
+    },
+    {
+      "start": 202.949,
+      "duration": 0.009999999999990905,
+      "text": "time right and fan says no not quite"
+    },
+    {
+      "start": 202.959,
+      "duration": 2.790999999999997,
+      "text": "time right and fan says no not quite mean what what what do you mean well fan"
+    },
+    {
+      "start": 205.75,
+      "duration": 0.009999999999990905,
+      "text": "mean what what what do you mean well fan"
+    },
+    {
+      "start": 205.76,
+      "duration": 2.5900000000000034,
+      "text": "mean what what what do you mean well fan asks mahes if you have an animal that"
+    },
+    {
+      "start": 208.35,
+      "duration": 0.010000000000019327,
+      "text": "asks mahes if you have an animal that"
+    },
+    {
+      "start": 208.36,
+      "duration": 3.0299999999999727,
+      "text": "asks mahes if you have an animal that flies like a pigeon but also has a face"
+    },
+    {
+      "start": 211.39,
+      "duration": 0.010000000000019327,
+      "text": "flies like a pigeon but also has a face"
+    },
+    {
+      "start": 211.4,
+      "duration": 1.4299999999999784,
+      "text": "flies like a pigeon but also has a face like that of a mouse and the fur that of"
+    },
+    {
+      "start": 212.82999999999998,
+      "duration": 0.010000000000019327,
+      "text": "like that of a mouse and the fur that of"
+    },
+    {
+      "start": 212.84,
+      "duration": 2.1500000000000057,
+      "text": "like that of a mouse and the fur that of a mouse would we say that animal is both"
+    },
+    {
+      "start": 214.99,
+      "duration": 0.009999999999990905,
+      "text": "a mouse would we say that animal is both"
+    },
+    {
+      "start": 215.0,
+      "duration": 3.829999999999984,
+      "text": "a mouse would we say that animal is both a pigeon and a mouse at the same time no"
+    },
+    {
+      "start": 218.82999999999998,
+      "duration": 0.010000000000019327,
+      "text": "a pigeon and a mouse at the same time no"
+    },
+    {
+      "start": 218.84,
+      "duration": 2.8700000000000045,
+      "text": "a pigeon and a mouse at the same time no no it's not it's a different animal alog"
+    },
+    {
+      "start": 221.71,
+      "duration": 0.009999999999990905,
+      "text": "no it's not it's a different animal alog"
+    },
+    {
+      "start": 221.72,
+      "duration": 1.990000000000009,
+      "text": "no it's not it's a different animal alog together it just shares some common"
+    },
+    {
+      "start": 223.71,
+      "duration": 0.009999999999990905,
+      "text": "together it just shares some common"
+    },
+    {
+      "start": 223.72,
+      "duration": 1.5889999999999986,
+      "text": "together it just shares some common properties with these two but it's a"
+    },
+    {
+      "start": 225.309,
+      "duration": 0.010000000000019327,
+      "text": "properties with these two but it's a"
+    },
+    {
+      "start": 225.31900000000002,
+      "duration": 1.7909999999999968,
+      "text": "properties with these two but it's a different animal Al together right"
+    },
+    {
+      "start": 227.11,
+      "duration": 0.009999999999990905,
+      "text": "different animal Al together right"
+    },
+    {
+      "start": 227.12,
+      "duration": 2.3499999999999943,
+      "text": "different animal Al together right similarly an electron has certain"
+    },
+    {
+      "start": 229.47,
+      "duration": 0.009999999999990905,
+      "text": "similarly an electron has certain"
+    },
+    {
+      "start": 229.48,
+      "duration": 2.2700000000000102,
+      "text": "similarly an electron has certain properties that are similar to that of"
+    },
+    {
+      "start": 231.75,
+      "duration": 0.009999999999990905,
+      "text": "properties that are similar to that of"
+    },
+    {
+      "start": 231.76,
+      "duration": 2.309000000000026,
+      "text": "properties that are similar to that of the traditional particles for example"
+    },
+    {
+      "start": 234.06900000000002,
+      "duration": 0.009999999999990905,
+      "text": "the traditional particles for example"
+    },
+    {
+      "start": 234.079,
+      "duration": 2.830999999999989,
+      "text": "the traditional particles for example they come in lumps he says so you will"
+    },
+    {
+      "start": 236.91,
+      "duration": 0.010000000000019327,
+      "text": "they come in lumps he says so you will"
+    },
+    {
+      "start": 236.92000000000002,
+      "duration": 1.9489999999999839,
+      "text": "they come in lumps he says so you will always find an electron in one"
+    },
+    {
+      "start": 238.869,
+      "duration": 0.009999999999990905,
+      "text": "always find an electron in one"
+    },
+    {
+      "start": 238.879,
+      "duration": 1.5109999999999957,
+      "text": "always find an electron in one particular location you can count one"
+    },
+    {
+      "start": 240.39,
+      "duration": 0.010000000000019327,
+      "text": "particular location you can count one"
+    },
+    {
+      "start": 240.4,
+      "duration": 1.5900000000000034,
+      "text": "particular location you can count one electron two electron three electron"
+    },
+    {
+      "start": 241.99,
+      "duration": 0.009999999999990905,
+      "text": "electron two electron three electron"
+    },
+    {
+      "start": 242.0,
+      "duration": 1.3089999999999975,
+      "text": "electron two electron three electron they're not spread out or anything like"
+    },
+    {
+      "start": 243.309,
+      "duration": 0.009999999999990905,
+      "text": "they're not spread out or anything like"
+    },
+    {
+      "start": 243.319,
+      "duration": 2.4310000000000116,
+      "text": "they're not spread out or anything like that okay which is very similar to how"
+    },
+    {
+      "start": 245.75,
+      "duration": 0.009999999999990905,
+      "text": "that okay which is very similar to how"
+    },
+    {
+      "start": 245.76,
+      "duration": 2.109000000000009,
+      "text": "that okay which is very similar to how particles are they come in lumps like"
+    },
+    {
+      "start": 247.869,
+      "duration": 0.009999999999990905,
+      "text": "particles are they come in lumps like"
+    },
+    {
+      "start": 247.879,
+      "duration": 1.7909999999999968,
+      "text": "particles are they come in lumps like the grain of grains of sand or a tennis"
+    },
+    {
+      "start": 249.67,
+      "duration": 0.010000000000019327,
+      "text": "the grain of grains of sand or a tennis"
+    },
+    {
+      "start": 249.68,
+      "duration": 2.3100000000000023,
+      "text": "the grain of grains of sand or a tennis ball or other things like that but the"
+    },
+    {
+      "start": 251.99,
+      "duration": 0.009999999999990905,
+      "text": "ball or other things like that but the"
+    },
+    {
+      "start": 252.0,
+      "duration": 3.9490000000000123,
+      "text": "ball or other things like that but the electrons are not particles why because"
+    },
+    {
+      "start": 255.949,
+      "duration": 0.009999999999990905,
+      "text": "electrons are not particles why because"
+    },
+    {
+      "start": 255.959,
+      "duration": 1.5500000000000114,
+      "text": "electrons are not particles why because they do certain things that normal"
+    },
+    {
+      "start": 257.509,
+      "duration": 0.009999999999990905,
+      "text": "they do certain things that normal"
+    },
+    {
+      "start": 257.519,
+      "duration": 2.9499999999999886,
+      "text": "they do certain things that normal particles don't do for example if you"
+    },
+    {
+      "start": 260.469,
+      "duration": 0.009999999999990905,
+      "text": "particles don't do for example if you"
+    },
+    {
+      "start": 260.479,
+      "duration": 2.2700000000000387,
+      "text": "particles don't do for example if you were to set up an experiment with the"
+    },
+    {
+      "start": 262.749,
+      "duration": 0.009999999999990905,
+      "text": "were to set up an experiment with the"
+    },
+    {
+      "start": 262.759,
+      "duration": 1.6309999999999718,
+      "text": "were to set up an experiment with the two holes which is the double SE"
+    },
+    {
+      "start": 264.39,
+      "duration": 0.009999999999990905,
+      "text": "two holes which is the double SE"
+    },
+    {
+      "start": 264.4,
+      "duration": 3.1100000000000136,
+      "text": "two holes which is the double SE experiment and shoot electrons through"
+    },
+    {
+      "start": 267.51,
+      "duration": 0.009999999999990905,
+      "text": "experiment and shoot electrons through"
+    },
+    {
+      "start": 267.52,
+      "duration": 2.5500000000000114,
+      "text": "experiment and shoot electrons through them you will get something which you"
+    },
+    {
+      "start": 270.07,
+      "duration": 0.009999999999990905,
+      "text": "them you will get something which you"
+    },
+    {
+      "start": 270.08,
+      "duration": 2.3500000000000227,
+      "text": "them you will get something which you wouldn't expect from grains of sand or"
+    },
+    {
+      "start": 272.43,
+      "duration": 0.009999999999990905,
+      "text": "wouldn't expect from grains of sand or"
+    },
+    {
+      "start": 272.44,
+      "duration": 1.8700000000000045,
+      "text": "wouldn't expect from grains of sand or tennis ball you'll get a pattern that"
+    },
+    {
+      "start": 274.31,
+      "duration": 0.009999999999990905,
+      "text": "tennis ball you'll get a pattern that"
+    },
+    {
+      "start": 274.32,
+      "duration": 2.9499999999999886,
+      "text": "tennis ball you'll get a pattern that looks like this think about it how does"
+    },
+    {
+      "start": 277.27,
+      "duration": 0.009999999999990905,
+      "text": "looks like this think about it how does"
+    },
+    {
+      "start": 277.28,
+      "duration": 1.7900000000000205,
+      "text": "looks like this think about it how does that make any sense normal particles"
+    },
+    {
+      "start": 279.07,
+      "duration": 0.009999999999990905,
+      "text": "that make any sense normal particles"
+    },
+    {
+      "start": 279.08,
+      "duration": 3.3100000000000023,
+      "text": "that make any sense normal particles don't do that therefore electrons are"
+    },
+    {
+      "start": 282.39,
+      "duration": 0.009999999999990905,
+      "text": "don't do that therefore electrons are"
+    },
+    {
+      "start": 282.4,
+      "duration": 3.75,
+      "text": "don't do that therefore electrons are not normal particles but this pattern is"
+    },
+    {
+      "start": 286.15,
+      "duration": 0.009999999999990905,
+      "text": "not normal particles but this pattern is"
+    },
+    {
+      "start": 286.15999999999997,
+      "duration": 1.8690000000000282,
+      "text": "not normal particles but this pattern is an interference pattern that you get"
+    },
+    {
+      "start": 288.029,
+      "duration": 0.009999999999990905,
+      "text": "an interference pattern that you get"
+    },
+    {
+      "start": 288.039,
+      "duration": 3.0710000000000264,
+      "text": "an interference pattern that you get from waves and therefore this means"
+    },
+    {
+      "start": 291.11,
+      "duration": 0.009999999999990905,
+      "text": "from waves and therefore this means"
+    },
+    {
+      "start": 291.12,
+      "duration": 3.3899999999999864,
+      "text": "from waves and therefore this means electrons also have properties like they"
+    },
+    {
+      "start": 294.51,
+      "duration": 0.009999999999990905,
+      "text": "electrons also have properties like they"
+    },
+    {
+      "start": 294.52,
+      "duration": 2.75,
+      "text": "electrons also have properties like they interfere they defract properties that"
+    },
+    {
+      "start": 297.27,
+      "duration": 0.009999999999990905,
+      "text": "interfere they defract properties that"
+    },
+    {
+      "start": 297.28,
+      "duration": 3.150000000000034,
+      "text": "interfere they defract properties that we associate with traditional wav"
+    },
+    {
+      "start": 300.43,
+      "duration": 0.009999999999990905,
+      "text": "we associate with traditional wav"
+    },
+    {
+      "start": 300.44,
+      "duration": 2.230000000000018,
+      "text": "we associate with traditional wav but does that mean they are waves no"
+    },
+    {
+      "start": 302.67,
+      "duration": 0.009999999999990905,
+      "text": "but does that mean they are waves no"
+    },
+    {
+      "start": 302.68,
+      "duration": 2.0299999999999727,
+      "text": "but does that mean they are waves no because remember waves do not come in"
+    },
+    {
+      "start": 304.71,
+      "duration": 0.010000000000047748,
+      "text": "because remember waves do not come in"
+    },
+    {
+      "start": 304.72,
+      "duration": 2.468999999999994,
+      "text": "because remember waves do not come in lumps they are continuous they are at"
+    },
+    {
+      "start": 307.189,
+      "duration": 0.009999999999990905,
+      "text": "lumps they are continuous they are at"
+    },
+    {
+      "start": 307.199,
+      "duration": 2.4710000000000036,
+      "text": "lumps they are continuous they are at multiple locations at the same time but"
+    },
+    {
+      "start": 309.67,
+      "duration": 0.009999999999990905,
+      "text": "multiple locations at the same time but"
+    },
+    {
+      "start": 309.68,
+      "duration": 3.0299999999999727,
+      "text": "multiple locations at the same time but electrons come in lumps which means they"
+    },
+    {
+      "start": 312.71,
+      "duration": 0.010000000000047748,
+      "text": "electrons come in lumps which means they"
+    },
+    {
+      "start": 312.72,
+      "duration": 3.1499999999999773,
+      "text": "electrons come in lumps which means they neither waves waves nor particles"
+    },
+    {
+      "start": 315.87,
+      "duration": 0.009999999999990905,
+      "text": "neither waves waves nor particles"
+    },
+    {
+      "start": 315.88,
+      "duration": 2.869000000000028,
+      "text": "neither waves waves nor particles they're their own things fan says they"
+    },
+    {
+      "start": 318.749,
+      "duration": 0.009999999999990905,
+      "text": "they're their own things fan says they"
+    },
+    {
+      "start": 318.759,
+      "duration": 2.990000000000009,
+      "text": "they're their own things fan says they act screwy in their own way which sounds"
+    },
+    {
+      "start": 321.749,
+      "duration": 0.009999999999990905,
+      "text": "act screwy in their own way which sounds"
+    },
+    {
+      "start": 321.759,
+      "duration": 2.269999999999982,
+      "text": "act screwy in their own way which sounds disappointing right but here's the good"
+    },
+    {
+      "start": 324.029,
+      "duration": 0.009999999999990905,
+      "text": "disappointing right but here's the good"
+    },
+    {
+      "start": 324.039,
+      "duration": 3.0710000000000264,
+      "text": "disappointing right but here's the good news electrons are screwy just like how"
+    },
+    {
+      "start": 327.11,
+      "duration": 0.009999999999990905,
+      "text": "news electrons are screwy just like how"
+    },
+    {
+      "start": 327.12,
+      "duration": 2.3100000000000023,
+      "text": "news electrons are screwy just like how protons neutrons or even photons and"
+    },
+    {
+      "start": 329.43,
+      "duration": 0.009999999999990905,
+      "text": "protons neutrons or even photons and"
+    },
+    {
+      "start": 329.44,
+      "duration": 2.0289999999999964,
+      "text": "protons neutrons or even photons and other other things are they're all"
+    },
+    {
+      "start": 331.469,
+      "duration": 0.009999999999990905,
+      "text": "other other things are they're all"
+    },
+    {
+      "start": 331.479,
+      "duration": 2.5500000000000114,
+      "text": "other other things are they're all screwy in the same way so the physics"
+    },
+    {
+      "start": 334.029,
+      "duration": 0.009999999999990905,
+      "text": "screwy in the same way so the physics"
+    },
+    {
+      "start": 334.039,
+      "duration": 1.990000000000009,
+      "text": "screwy in the same way so the physics for them is pretty much the same we call"
+    },
+    {
+      "start": 336.029,
+      "duration": 0.009999999999990905,
+      "text": "for them is pretty much the same we call"
+    },
+    {
+      "start": 336.039,
+      "duration": 3.350999999999999,
+      "text": "for them is pretty much the same we call them Quantum objects so they are neither"
+    },
+    {
+      "start": 339.39,
+      "duration": 0.009999999999990905,
+      "text": "them Quantum objects so they are neither"
+    },
+    {
+      "start": 339.4,
+      "duration": 2.1900000000000546,
+      "text": "them Quantum objects so they are neither particles nor waves they share certain"
+    },
+    {
+      "start": 341.59000000000003,
+      "duration": 0.009999999999990905,
+      "text": "particles nor waves they share certain"
+    },
+    {
+      "start": 341.6,
+      "duration": 1.829999999999984,
+      "text": "particles nor waves they share certain properties with particles or waves but"
+    },
+    {
+      "start": 343.43,
+      "duration": 0.009999999999990905,
+      "text": "properties with particles or waves but"
+    },
+    {
+      "start": 343.44,
+      "duration": 1.7900000000000205,
+      "text": "properties with particles or waves but they are neither of them this is the"
+    },
+    {
+      "start": 345.23,
+      "duration": 0.009999999999990905,
+      "text": "they are neither of them this is the"
+    },
+    {
+      "start": 345.24,
+      "duration": 2.8700000000000045,
+      "text": "they are neither of them this is the whole idea behind the W particle duality"
+    },
+    {
+      "start": 348.11,
+      "duration": 0.009999999999990905,
+      "text": "whole idea behind the W particle duality"
+    },
+    {
+      "start": 348.12,
+      "duration": 1.670000000000016,
+      "text": "whole idea behind the W particle duality okay so since Heisenberg's uncertainty"
+    },
+    {
+      "start": 349.79,
+      "duration": 0.009999999999990905,
+      "text": "okay so since Heisenberg's uncertainty"
+    },
+    {
+      "start": 349.8,
+      "duration": 2.5089999999999577,
+      "text": "okay so since Heisenberg's uncertainty principle applies to Quantum objects our"
+    },
+    {
+      "start": 352.30899999999997,
+      "duration": 0.010000000000047748,
+      "text": "principle applies to Quantum objects our"
+    },
+    {
+      "start": 352.319,
+      "duration": 1.4710000000000036,
+      "text": "principle applies to Quantum objects our next question would be how do we deal"
+    },
+    {
+      "start": 353.79,
+      "duration": 0.009999999999990905,
+      "text": "next question would be how do we deal"
+    },
+    {
+      "start": 353.8,
+      "duration": 2.75,
+      "text": "next question would be how do we deal with the momentum and the position of"
+    },
+    {
+      "start": 356.55,
+      "duration": 0.009999999999990905,
+      "text": "with the momentum and the position of"
+    },
+    {
+      "start": 356.56,
+      "duration": 1.629000000000019,
+      "text": "with the momentum and the position of quantum objects so let's start with the"
+    },
+    {
+      "start": 358.189,
+      "duration": 0.009999999999990905,
+      "text": "quantum objects so let's start with the"
+    },
+    {
+      "start": 358.199,
+      "duration": 2.3909999999999627,
+      "text": "quantum objects so let's start with the momentum fan ask do you want just a"
+    },
+    {
+      "start": 360.59,
+      "duration": 0.010000000000047748,
+      "text": "momentum fan ask do you want just a"
+    },
+    {
+      "start": 360.6,
+      "duration": 1.5499999999999545,
+      "text": "momentum fan ask do you want just a formula to calculate momentum of such"
+    },
+    {
+      "start": 362.15,
+      "duration": 0.010000000000047748,
+      "text": "formula to calculate momentum of such"
+    },
+    {
+      "start": 362.16,
+      "duration": 1.349999999999966,
+      "text": "formula to calculate momentum of such Quantum objects or do you want some"
+    },
+    {
+      "start": 363.51,
+      "duration": 0.009999999999990905,
+      "text": "Quantum objects or do you want some"
+    },
+    {
+      "start": 363.52,
+      "duration": 2.069999999999993,
+      "text": "Quantum objects or do you want some intuition behind it I'm like of course"
+    },
+    {
+      "start": 365.59,
+      "duration": 0.010000000000047748,
+      "text": "intuition behind it I'm like of course"
+    },
+    {
+      "start": 365.6,
+      "duration": 2.349999999999966,
+      "text": "intuition behind it I'm like of course give me the intuition right so for that"
+    },
+    {
+      "start": 367.95,
+      "duration": 0.009999999999990905,
+      "text": "give me the intuition right so for that"
+    },
+    {
+      "start": 367.96,
+      "duration": 1.629000000000019,
+      "text": "give me the intuition right so for that F says let's go back in time a little"
+    },
+    {
+      "start": 369.589,
+      "duration": 0.009999999999990905,
+      "text": "F says let's go back in time a little"
+    },
+    {
+      "start": 369.599,
+      "duration": 2.5509999999999877,
+      "text": "F says let's go back in time a little bit um around 1900s where we thought we"
+    },
+    {
+      "start": 372.15,
+      "duration": 0.010000000000047748,
+      "text": "bit um around 1900s where we thought we"
+    },
+    {
+      "start": 372.16,
+      "duration": 2.3899999999999864,
+      "text": "bit um around 1900s where we thought we understood what light was we celebrated"
+    },
+    {
+      "start": 374.55,
+      "duration": 0.009999999999990905,
+      "text": "understood what light was we celebrated"
+    },
+    {
+      "start": 374.56,
+      "duration": 1.3899999999999864,
+      "text": "understood what light was we celebrated thinking that light is an"
+    },
+    {
+      "start": 375.95,
+      "duration": 0.009999999999990905,
+      "text": "thinking that light is an"
+    },
+    {
+      "start": 375.96,
+      "duration": 1.830000000000041,
+      "text": "thinking that light is an electromagnetic wave we understand"
+    },
+    {
+      "start": 377.79,
+      "duration": 0.009999999999990905,
+      "text": "electromagnetic wave we understand"
+    },
+    {
+      "start": 377.8,
+      "duration": 1.6299999999999955,
+      "text": "electromagnetic wave we understand Optics is soled almost all the physics"
+    },
+    {
+      "start": 379.43,
+      "duration": 0.009999999999990905,
+      "text": "Optics is soled almost all the physics"
+    },
+    {
+      "start": 379.44,
+      "duration": 3.269999999999982,
+      "text": "Optics is soled almost all the physics is soled nothing else remains to do only"
+    },
+    {
+      "start": 382.71,
+      "duration": 0.010000000000047748,
+      "text": "is soled nothing else remains to do only"
+    },
+    {
+      "start": 382.72,
+      "duration": 1.9499999999999886,
+      "text": "is soled nothing else remains to do only to realize a little bit later that there"
+    },
+    {
+      "start": 384.67,
+      "duration": 0.009999999999990905,
+      "text": "to realize a little bit later that there"
+    },
+    {
+      "start": 384.68,
+      "duration": 1.1100000000000136,
+      "text": "to realize a little bit later that there were certain experiments like the"
+    },
+    {
+      "start": 385.79,
+      "duration": 0.009999999999990905,
+      "text": "were certain experiments like the"
+    },
+    {
+      "start": 385.8,
+      "duration": 1.7099999999999795,
+      "text": "were certain experiments like the photoelectric effect or the black body"
+    },
+    {
+      "start": 387.51,
+      "duration": 0.009999999999990905,
+      "text": "photoelectric effect or the black body"
+    },
+    {
+      "start": 387.52,
+      "duration": 2.3100000000000023,
+      "text": "photoelectric effect or the black body radiation where we could couldn't"
+    },
+    {
+      "start": 389.83,
+      "duration": 0.009999999999990905,
+      "text": "radiation where we could couldn't"
+    },
+    {
+      "start": 389.84,
+      "duration": 2.230000000000018,
+      "text": "radiation where we could couldn't explain what was going on using the wave"
+    },
+    {
+      "start": 392.07,
+      "duration": 0.009999999999990905,
+      "text": "explain what was going on using the wave"
+    },
+    {
+      "start": 392.08,
+      "duration": 2.38900000000001,
+      "text": "explain what was going on using the wave theory this is where folks like Mox plun"
+    },
+    {
+      "start": 394.469,
+      "duration": 0.009999999999990905,
+      "text": "theory this is where folks like Mox plun"
+    },
+    {
+      "start": 394.479,
+      "duration": 2.5500000000000114,
+      "text": "theory this is where folks like Mox plun and uh Einstein Albert Einstein came"
+    },
+    {
+      "start": 397.029,
+      "duration": 0.009999999999990905,
+      "text": "and uh Einstein Albert Einstein came"
+    },
+    {
+      "start": 397.039,
+      "duration": 3.350999999999999,
+      "text": "and uh Einstein Albert Einstein came along and they realized that light must"
+    },
+    {
+      "start": 400.39,
+      "duration": 0.009999999999990905,
+      "text": "along and they realized that light must"
+    },
+    {
+      "start": 400.4,
+      "duration": 2.229000000000042,
+      "text": "along and they realized that light must be coming in chunks as well must be"
+    },
+    {
+      "start": 402.629,
+      "duration": 0.009999999999990905,
+      "text": "be coming in chunks as well must be"
+    },
+    {
+      "start": 402.639,
+      "duration": 2.190999999999974,
+      "text": "be coming in chunks as well must be coming in lumps as well the quantum"
+    },
+    {
+      "start": 404.83,
+      "duration": 0.010000000000047748,
+      "text": "coming in lumps as well the quantum"
+    },
+    {
+      "start": 404.84000000000003,
+      "duration": 2.5499999999999545,
+      "text": "coming in lumps as well the quantum nature of light was discovered by these"
+    },
+    {
+      "start": 407.39,
+      "duration": 0.009999999999990905,
+      "text": "nature of light was discovered by these"
+    },
+    {
+      "start": 407.4,
+      "duration": 2.3100000000000023,
+      "text": "nature of light was discovered by these folks because of these experiments this"
+    },
+    {
+      "start": 409.71,
+      "duration": 0.010000000000047748,
+      "text": "folks because of these experiments this"
+    },
+    {
+      "start": 409.72,
+      "duration": 2.7099999999999795,
+      "text": "folks because of these experiments this is your photons and the energy of the"
+    },
+    {
+      "start": 412.43,
+      "duration": 0.009999999999990905,
+      "text": "is your photons and the energy of the"
+    },
+    {
+      "start": 412.44,
+      "duration": 2.1890000000000214,
+      "text": "is your photons and the energy of the photons they hypothesized has to be"
+    },
+    {
+      "start": 414.629,
+      "duration": 0.009999999999990905,
+      "text": "photons they hypothesized has to be"
+    },
+    {
+      "start": 414.639,
+      "duration": 2.669999999999959,
+      "text": "photons they hypothesized has to be given by this particular equation e"
+    },
+    {
+      "start": 417.30899999999997,
+      "duration": 0.010000000000047748,
+      "text": "given by this particular equation e"
+    },
+    {
+      "start": 417.319,
+      "duration": 2.3909999999999627,
+      "text": "given by this particular equation e equal to H new where is the energy of"
+    },
+    {
+      "start": 419.71,
+      "duration": 0.010000000000047748,
+      "text": "equal to H new where is the energy of"
+    },
+    {
+      "start": 419.72,
+      "duration": 2.829999999999984,
+      "text": "equal to H new where is the energy of the photon H is the Plank's constant and"
+    },
+    {
+      "start": 422.55,
+      "duration": 0.009999999999990905,
+      "text": "the photon H is the Plank's constant and"
+    },
+    {
+      "start": 422.56,
+      "duration": 2.7900000000000205,
+      "text": "the photon H is the Plank's constant and U represents the frequency of light well"
+    },
+    {
+      "start": 425.35,
+      "duration": 0.009999999999990905,
+      "text": "U represents the frequency of light well"
+    },
+    {
+      "start": 425.36,
+      "duration": 1.6689999999999827,
+      "text": "U represents the frequency of light well earlier it was just a hypothesis but"
+    },
+    {
+      "start": 427.029,
+      "duration": 0.009999999999990905,
+      "text": "earlier it was just a hypothesis but"
+    },
+    {
+      "start": 427.039,
+      "duration": 1.830000000000041,
+      "text": "earlier it was just a hypothesis but then experiments like photic effect"
+    },
+    {
+      "start": 428.869,
+      "duration": 0.009999999999990905,
+      "text": "then experiments like photic effect"
+    },
+    {
+      "start": 428.879,
+      "duration": 2.790999999999997,
+      "text": "then experiments like photic effect actually confirmed that this must be"
+    },
+    {
+      "start": 431.67,
+      "duration": 0.009999999999990905,
+      "text": "actually confirmed that this must be"
+    },
+    {
+      "start": 431.68,
+      "duration": 2.8700000000000045,
+      "text": "actually confirmed that this must be true okay now at this point fan asks"
+    },
+    {
+      "start": 434.55,
+      "duration": 0.009999999999990905,
+      "text": "true okay now at this point fan asks"
+    },
+    {
+      "start": 434.56,
+      "duration": 1.3489999999999895,
+      "text": "true okay now at this point fan asks smes do you see something interesting"
+    },
+    {
+      "start": 435.909,
+      "duration": 0.009999999999990905,
+      "text": "smes do you see something interesting"
+    },
+    {
+      "start": 435.919,
+      "duration": 2.6310000000000286,
+      "text": "smes do you see something interesting over here and I'm like no this is a"
+    },
+    {
+      "start": 438.55,
+      "duration": 0.009999999999990905,
+      "text": "over here and I'm like no this is a"
+    },
+    {
+      "start": 438.56,
+      "duration": 1.7900000000000205,
+      "text": "over here and I'm like no this is a usual equation I know about it what"
+    },
+    {
+      "start": 440.35,
+      "duration": 0.009999999999990905,
+      "text": "usual equation I know about it what"
+    },
+    {
+      "start": 440.36,
+      "duration": 3.4699999999999704,
+      "text": "usual equation I know about it what would I see fan says if you at De Bry"
+    },
+    {
+      "start": 443.83,
+      "duration": 0.009999999999990905,
+      "text": "would I see fan says if you at De Bry"
+    },
+    {
+      "start": 443.84,
+      "duration": 1.7490000000000236,
+      "text": "would I see fan says if you at De Bry okay or de brogle however you want to"
+    },
+    {
+      "start": 445.589,
+      "duration": 0.009999999999990905,
+      "text": "okay or de brogle however you want to"
+    },
+    {
+      "start": 445.599,
+      "duration": 3.2309999999999945,
+      "text": "okay or de brogle however you want to call him okay then you would notice that"
+    },
+    {
+      "start": 448.83,
+      "duration": 0.009999999999990905,
+      "text": "call him okay then you would notice that"
+    },
+    {
+      "start": 448.84,
+      "duration": 3.1890000000000214,
+      "text": "call him okay then you would notice that hey hey hey hey new is the frequency"
+    },
+    {
+      "start": 452.029,
+      "duration": 0.009999999999990905,
+      "text": "hey hey hey hey new is the frequency"
+    },
+    {
+      "start": 452.039,
+      "duration": 2.4710000000000036,
+      "text": "hey hey hey hey new is the frequency right frequency of any wave is given as"
+    },
+    {
+      "start": 454.51,
+      "duration": 0.009999999999990905,
+      "text": "right frequency of any wave is given as"
+    },
+    {
+      "start": 454.52,
+      "duration": 3.75,
+      "text": "right frequency of any wave is given as C / Lambda and I'm like yeah so what"
+    },
+    {
+      "start": 458.27,
+      "duration": 0.009999999999990905,
+      "text": "C / Lambda and I'm like yeah so what"
+    },
+    {
+      "start": 458.28,
+      "duration": 1.990000000000009,
+      "text": "C / Lambda and I'm like yeah so what well now if you bring the C on the other"
+    },
+    {
+      "start": 460.27,
+      "duration": 0.009999999999990905,
+      "text": "well now if you bring the C on the other"
+    },
+    {
+      "start": 460.28,
+      "duration": 3.0289999999999964,
+      "text": "well now if you bring the C on the other side you get e divided by C on the left"
+    },
+    {
+      "start": 463.30899999999997,
+      "duration": 0.010000000000047748,
+      "text": "side you get e divided by C on the left"
+    },
+    {
+      "start": 463.319,
+      "duration": 3.430000000000007,
+      "text": "side you get e divided by C on the left hand side and I'm like yeah so what well"
+    },
+    {
+      "start": 466.749,
+      "duration": 0.009999999999990905,
+      "text": "hand side and I'm like yeah so what well"
+    },
+    {
+      "start": 466.759,
+      "duration": 1.9110000000000014,
+      "text": "hand side and I'm like yeah so what well from the classical electromagnetic wave"
+    },
+    {
+      "start": 468.67,
+      "duration": 0.009999999999990905,
+      "text": "from the classical electromagnetic wave"
+    },
+    {
+      "start": 468.68,
+      "duration": 1.8700000000000045,
+      "text": "from the classical electromagnetic wave theory the momentum of an"
+    },
+    {
+      "start": 470.55,
+      "duration": 0.009999999999990905,
+      "text": "theory the momentum of an"
+    },
+    {
+      "start": 470.56,
+      "duration": 2.908999999999992,
+      "text": "theory the momentum of an electromagnetic wave is given by E"
+    },
+    {
+      "start": 473.469,
+      "duration": 0.009999999999990905,
+      "text": "electromagnetic wave is given by E"
+    },
+    {
+      "start": 473.479,
+      "duration": 3.511000000000024,
+      "text": "electromagnetic wave is given by E equals c sorry Eid by C do you remember"
+    },
+    {
+      "start": 476.99,
+      "duration": 0.009999999999990905,
+      "text": "equals c sorry Eid by C do you remember"
+    },
+    {
+      "start": 477.0,
+      "duration": 3.1100000000000136,
+      "text": "equals c sorry Eid by C do you remember this mahes I'm like yeah I kind of"
+    },
+    {
+      "start": 480.11,
+      "duration": 0.009999999999990905,
+      "text": "this mahes I'm like yeah I kind of"
+    },
+    {
+      "start": 480.12,
+      "duration": 2.430000000000007,
+      "text": "this mahes I'm like yeah I kind of remember this we did a video on it a"
+    },
+    {
+      "start": 482.55,
+      "duration": 0.009999999999990905,
+      "text": "remember this we did a video on it a"
+    },
+    {
+      "start": 482.56,
+      "duration": 1.509999999999991,
+      "text": "remember this we did a video on it a video where we showed why light has"
+    },
+    {
+      "start": 484.07,
+      "duration": 0.009999999999990905,
+      "text": "video where we showed why light has"
+    },
+    {
+      "start": 484.08,
+      "duration": 1.75,
+      "text": "video where we showed why light has momentum even without mass we showed"
+    },
+    {
+      "start": 485.83,
+      "duration": 0.009999999999990905,
+      "text": "momentum even without mass we showed"
+    },
+    {
+      "start": 485.84,
+      "duration": 1.830000000000041,
+      "text": "momentum even without mass we showed that uh the light's momentum comes from"
+    },
+    {
+      "start": 487.67,
+      "duration": 0.009999999999990905,
+      "text": "that uh the light's momentum comes from"
+    },
+    {
+      "start": 487.68,
+      "duration": 1.5500000000000114,
+      "text": "that uh the light's momentum comes from its energy you don't have to watch that"
+    },
+    {
+      "start": 489.23,
+      "duration": 0.009999999999990905,
+      "text": "its energy you don't have to watch that"
+    },
+    {
+      "start": 489.24,
+      "duration": 2.4699999999999704,
+      "text": "its energy you don't have to watch that video I'm not fishing for views but we"
+    },
+    {
+      "start": 491.71,
+      "duration": 0.010000000000047748,
+      "text": "video I'm not fishing for views but we"
+    },
+    {
+      "start": 491.72,
+      "duration": 1.829999999999984,
+      "text": "video I'm not fishing for views but we derived it intuitively over there so you"
+    },
+    {
+      "start": 493.55,
+      "duration": 0.009999999999990905,
+      "text": "derived it intuitively over there so you"
+    },
+    {
+      "start": 493.56,
+      "duration": 1.5500000000000114,
+      "text": "derived it intuitively over there so you can check it out if you need to do that"
+    },
+    {
+      "start": 495.11,
+      "duration": 0.009999999999990905,
+      "text": "can check it out if you need to do that"
+    },
+    {
+      "start": 495.12,
+      "duration": 1.7889999999999873,
+      "text": "can check it out if you need to do that but this comes from classical physics"
+    },
+    {
+      "start": 496.909,
+      "duration": 0.009999999999990905,
+      "text": "but this comes from classical physics"
+    },
+    {
+      "start": 496.919,
+      "duration": 3.8710000000000377,
+      "text": "but this comes from classical physics okay but anyways de Bry what he says"
+    },
+    {
+      "start": 500.79,
+      "duration": 0.009999999999990905,
+      "text": "okay but anyways de Bry what he says"
+    },
+    {
+      "start": 500.8,
+      "duration": 2.269999999999982,
+      "text": "okay but anyways de Bry what he says what he looks at it and says that hey"
+    },
+    {
+      "start": 503.07,
+      "duration": 0.009999999999990905,
+      "text": "what he looks at it and says that hey"
+    },
+    {
+      "start": 503.08,
+      "duration": 2.910000000000025,
+      "text": "what he looks at it and says that hey that means I Now understand that the"
+    },
+    {
+      "start": 505.99,
+      "duration": 0.009999999999990905,
+      "text": "that means I Now understand that the"
+    },
+    {
+      "start": 506.0,
+      "duration": 3.0289999999999964,
+      "text": "that means I Now understand that the momentum of these Quantum Light"
+    },
+    {
+      "start": 509.029,
+      "duration": 0.009999999999990905,
+      "text": "momentum of these Quantum Light"
+    },
+    {
+      "start": 509.039,
+      "duration": 2.2700000000000387,
+      "text": "momentum of these Quantum Light particles whatever you want to call them"
+    },
+    {
+      "start": 511.309,
+      "duration": 0.009999999999990905,
+      "text": "particles whatever you want to call them"
+    },
+    {
+      "start": 511.319,
+      "duration": 2.3109999999999786,
+      "text": "particles whatever you want to call them that should equal the planks constant"
+    },
+    {
+      "start": 513.63,
+      "duration": 0.009999999999990905,
+      "text": "that should equal the planks constant"
+    },
+    {
+      "start": 513.64,
+      "duration": 2.308999999999969,
+      "text": "that should equal the planks constant divided by the wavelength I have an"
+    },
+    {
+      "start": 515.949,
+      "duration": 0.010000000000104592,
+      "text": "divided by the wavelength I have an"
+    },
+    {
+      "start": 515.9590000000001,
+      "duration": 1.8699999999998909,
+      "text": "divided by the wavelength I have an expression that connects the momentum"
+    },
+    {
+      "start": 517.829,
+      "duration": 0.009999999999990905,
+      "text": "expression that connects the momentum"
+    },
+    {
+      "start": 517.8389999999999,
+      "duration": 2.911000000000058,
+      "text": "expression that connects the momentum and the wavelength why he got excited"
+    },
+    {
+      "start": 520.75,
+      "duration": 0.009999999999990905,
+      "text": "and the wavelength why he got excited"
+    },
+    {
+      "start": 520.76,
+      "duration": 2.909999999999968,
+      "text": "and the wavelength why he got excited was because he said look if light which"
+    },
+    {
+      "start": 523.67,
+      "duration": 0.009999999999990905,
+      "text": "was because he said look if light which"
+    },
+    {
+      "start": 523.68,
+      "duration": 2.9500000000000455,
+      "text": "was because he said look if light which we thought was a wave happens to have"
+    },
+    {
+      "start": 526.63,
+      "duration": 0.009999999999990905,
+      "text": "we thought was a wave happens to have"
+    },
+    {
+      "start": 526.64,
+      "duration": 2.629000000000019,
+      "text": "we thought was a wave happens to have particle properties maybe particles like"
+    },
+    {
+      "start": 529.269,
+      "duration": 0.009999999999990905,
+      "text": "particle properties maybe particles like"
+    },
+    {
+      "start": 529.279,
+      "duration": 1.2709999999999582,
+      "text": "particle properties maybe particles like electrons which we thought to be"
+    },
+    {
+      "start": 530.55,
+      "duration": 0.009999999999990905,
+      "text": "electrons which we thought to be"
+    },
+    {
+      "start": 530.56,
+      "duration": 2.7900000000000773,
+      "text": "electrons which we thought to be particles may also have wave properties"
+    },
+    {
+      "start": 533.35,
+      "duration": 0.009999999999990905,
+      "text": "particles may also have wave properties"
+    },
+    {
+      "start": 533.36,
+      "duration": 1.3500000000000227,
+      "text": "particles may also have wave properties and might also have wavelength"
+    },
+    {
+      "start": 534.71,
+      "duration": 0.009999999999990905,
+      "text": "and might also have wavelength"
+    },
+    {
+      "start": 534.72,
+      "duration": 2.228999999999928,
+      "text": "and might also have wavelength associated with it so maybe this"
+    },
+    {
+      "start": 536.949,
+      "duration": 0.010000000000104592,
+      "text": "associated with it so maybe this"
+    },
+    {
+      "start": 536.9590000000001,
+      "duration": 3.030999999999949,
+      "text": "associated with it so maybe this equation also works for electrons that"
+    },
+    {
+      "start": 539.99,
+      "duration": 0.009999999999990905,
+      "text": "equation also works for electrons that"
+    },
+    {
+      "start": 540.0,
+      "duration": 1.8700000000000045,
+      "text": "equation also works for electrons that was the hypothesis that de Bry put"
+    },
+    {
+      "start": 541.87,
+      "duration": 0.009999999999990905,
+      "text": "was the hypothesis that de Bry put"
+    },
+    {
+      "start": 541.88,
+      "duration": 2.269999999999982,
+      "text": "was the hypothesis that de Bry put forward again back then it was a"
+    },
+    {
+      "start": 544.15,
+      "duration": 0.009999999999990905,
+      "text": "forward again back then it was a"
+    },
+    {
+      "start": 544.16,
+      "duration": 2.4700000000000273,
+      "text": "forward again back then it was a hypothesis but today we have verified it"
+    },
+    {
+      "start": 546.63,
+      "duration": 0.009999999999990905,
+      "text": "hypothesis but today we have verified it"
+    },
+    {
+      "start": 546.64,
+      "duration": 2.9500000000000455,
+      "text": "hypothesis but today we have verified it that this is true so this works not only"
+    },
+    {
+      "start": 549.59,
+      "duration": 0.009999999999990905,
+      "text": "that this is true so this works not only"
+    },
+    {
+      "start": 549.6,
+      "duration": 4.309999999999945,
+      "text": "that this is true so this works not only for photons but all Quantum objects and"
+    },
+    {
+      "start": 553.91,
+      "duration": 0.009999999999990905,
+      "text": "for photons but all Quantum objects and"
+    },
+    {
+      "start": 553.92,
+      "duration": 2.1100000000000136,
+      "text": "for photons but all Quantum objects and that means if you want to find the"
+    },
+    {
+      "start": 556.03,
+      "duration": 0.009999999999990905,
+      "text": "that means if you want to find the"
+    },
+    {
+      "start": 556.04,
+      "duration": 1.7889999999999873,
+      "text": "that means if you want to find the momentum of any of these like say"
+    },
+    {
+      "start": 557.829,
+      "duration": 0.009999999999990905,
+      "text": "momentum of any of these like say"
+    },
+    {
+      "start": 557.8389999999999,
+      "duration": 2.6310000000000855,
+      "text": "momentum of any of these like say electrons this is how you find it you"
+    },
+    {
+      "start": 560.47,
+      "duration": 0.009999999999990905,
+      "text": "electrons this is how you find it you"
+    },
+    {
+      "start": 560.48,
+      "duration": 2.1100000000000136,
+      "text": "electrons this is how you find it you take the flanks constant and divide by"
+    },
+    {
+      "start": 562.59,
+      "duration": 0.009999999999990905,
+      "text": "take the flanks constant and divide by"
+    },
+    {
+      "start": 562.6,
+      "duration": 1.6689999999999827,
+      "text": "take the flanks constant and divide by the wavelength and that's how you"
+    },
+    {
+      "start": 564.269,
+      "duration": 0.009999999999990905,
+      "text": "the wavelength and that's how you"
+    },
+    {
+      "start": 564.279,
+      "duration": 2.4710000000000036,
+      "text": "the wavelength and that's how you calculate the momentum of the object at"
+    },
+    {
+      "start": 566.75,
+      "duration": 0.009999999999990905,
+      "text": "calculate the momentum of the object at"
+    },
+    {
+      "start": 566.76,
+      "duration": 1.4700000000000273,
+      "text": "calculate the momentum of the object at this point f is like mahes you could"
+    },
+    {
+      "start": 568.23,
+      "duration": 0.009999999999990905,
+      "text": "this point f is like mahes you could"
+    },
+    {
+      "start": 568.24,
+      "duration": 2.149000000000001,
+      "text": "this point f is like mahes you could have put in some simulation over here to"
+    },
+    {
+      "start": 570.389,
+      "duration": 0.009999999999990905,
+      "text": "have put in some simulation over here to"
+    },
+    {
+      "start": 570.399,
+      "duration": 2.270999999999958,
+      "text": "have put in some simulation over here to get the point across better right and"
+    },
+    {
+      "start": 572.67,
+      "duration": 0.009999999999990905,
+      "text": "get the point across better right and"
+    },
+    {
+      "start": 572.68,
+      "duration": 1.9500000000000455,
+      "text": "get the point across better right and I'm like yeah I could have but I don't"
+    },
+    {
+      "start": 574.63,
+      "duration": 0.009999999999990905,
+      "text": "I'm like yeah I could have but I don't"
+    },
+    {
+      "start": 574.64,
+      "duration": 1.4700000000000273,
+      "text": "I'm like yeah I could have but I don't need to because you can find those"
+    },
+    {
+      "start": 576.11,
+      "duration": 0.009999999999990905,
+      "text": "need to because you can find those"
+    },
+    {
+      "start": 576.12,
+      "duration": 2.828999999999951,
+      "text": "need to because you can find those simulations at brilliant.org the sponsor"
+    },
+    {
+      "start": 578.949,
+      "duration": 0.010000000000104592,
+      "text": "simulations at brilliant.org the sponsor"
+    },
+    {
+      "start": 578.9590000000001,
+      "duration": 2.5909999999998945,
+      "text": "simulations at brilliant.org the sponsor of this video I love brilliant mainly"
+    },
+    {
+      "start": 581.55,
+      "duration": 0.009999999999990905,
+      "text": "of this video I love brilliant mainly"
+    },
+    {
+      "start": 581.56,
+      "duration": 1.4300000000000637,
+      "text": "of this video I love brilliant mainly because just like what we're doing over"
+    },
+    {
+      "start": 582.99,
+      "duration": 0.009999999999990905,
+      "text": "because just like what we're doing over"
+    },
+    {
+      "start": 583.0,
+      "duration": 1.669999999999959,
+      "text": "because just like what we're doing over here you get to ReDiscover ideas"
+    },
+    {
+      "start": 584.67,
+      "duration": 0.009999999999990905,
+      "text": "here you get to ReDiscover ideas"
+    },
+    {
+      "start": 584.68,
+      "duration": 3.4700000000000273,
+      "text": "here you get to ReDiscover ideas intuitively in subjects like math data"
+    },
+    {
+      "start": 588.15,
+      "duration": 0.009999999999990905,
+      "text": "intuitively in subjects like math data"
+    },
+    {
+      "start": 588.16,
+      "duration": 1.990000000000009,
+      "text": "intuitively in subjects like math data programming and even Ai and I've been"
+    },
+    {
+      "start": 590.15,
+      "duration": 0.009999999999990905,
+      "text": "programming and even Ai and I've been"
+    },
+    {
+      "start": 590.16,
+      "duration": 1.2699999999999818,
+      "text": "programming and even Ai and I've been recommending brilliant to even my"
+    },
+    {
+      "start": 591.43,
+      "duration": 0.010000000000104592,
+      "text": "recommending brilliant to even my"
+    },
+    {
+      "start": 591.44,
+      "duration": 1.1499999999999773,
+      "text": "recommending brilliant to even my students way before they started"
+    },
+    {
+      "start": 592.59,
+      "duration": 0.009999999999990905,
+      "text": "students way before they started"
+    },
+    {
+      "start": 592.6,
+      "duration": 2.590000000000032,
+      "text": "students way before they started sponsoring me mainly because instead of"
+    },
+    {
+      "start": 595.19,
+      "duration": 0.009999999999990905,
+      "text": "sponsoring me mainly because instead of"
+    },
+    {
+      "start": 595.2,
+      "duration": 1.8689999999999145,
+      "text": "sponsoring me mainly because instead of just watching the videos passively you"
+    },
+    {
+      "start": 597.069,
+      "duration": 0.009999999999990905,
+      "text": "just watching the videos passively you"
+    },
+    {
+      "start": 597.079,
+      "duration": 3.0310000000000628,
+      "text": "just watching the videos passively you get to actively interact with it so even"
+    },
+    {
+      "start": 600.11,
+      "duration": 0.009999999999990905,
+      "text": "get to actively interact with it so even"
+    },
+    {
+      "start": 600.12,
+      "duration": 1.7089999999999463,
+      "text": "get to actively interact with it so even with about 15 to 20 minutes a day"
+    },
+    {
+      "start": 601.829,
+      "duration": 0.010000000000104592,
+      "text": "with about 15 to 20 minutes a day"
+    },
+    {
+      "start": 601.839,
+      "duration": 1.79099999999994,
+      "text": "with about 15 to 20 minutes a day because you're doing Active Learning"
+    },
+    {
+      "start": 603.63,
+      "duration": 0.009999999999990905,
+      "text": "because you're doing Active Learning"
+    },
+    {
+      "start": 603.64,
+      "duration": 1.5900000000000318,
+      "text": "because you're doing Active Learning you'll start gaining problem solving"
+    },
+    {
+      "start": 605.23,
+      "duration": 0.009999999999990905,
+      "text": "you'll start gaining problem solving"
+    },
+    {
+      "start": 605.24,
+      "duration": 1.5889999999999418,
+      "text": "you'll start gaining problem solving skills take their course on Quantum"
+    },
+    {
+      "start": 606.829,
+      "duration": 0.010000000000104592,
+      "text": "skills take their course on Quantum"
+    },
+    {
+      "start": 606.839,
+      "duration": 2.2299999999999045,
+      "text": "skills take their course on Quantum Mechanics for example you immediately"
+    },
+    {
+      "start": 609.069,
+      "duration": 0.009999999999990905,
+      "text": "Mechanics for example you immediately"
+    },
+    {
+      "start": 609.079,
+      "duration": 2.0710000000000264,
+      "text": "Mechanics for example you immediately start interacting with waves to"
+    },
+    {
+      "start": 611.15,
+      "duration": 0.009999999999990905,
+      "text": "start interacting with waves to"
+    },
+    {
+      "start": 611.16,
+      "duration": 1.9089999999999918,
+      "text": "start interacting with waves to understand superposition start making"
+    },
+    {
+      "start": 613.069,
+      "duration": 0.009999999999990905,
+      "text": "understand superposition start making"
+    },
+    {
+      "start": 613.079,
+      "duration": 1.5910000000000082,
+      "text": "understand superposition start making predictions for the single slit"
+    },
+    {
+      "start": 614.67,
+      "duration": 0.009999999999990905,
+      "text": "predictions for the single slit"
+    },
+    {
+      "start": 614.68,
+      "duration": 1.8700000000000045,
+      "text": "predictions for the single slit experiments and understand all about"
+    },
+    {
+      "start": 616.55,
+      "duration": 0.009999999999990905,
+      "text": "experiments and understand all about"
+    },
+    {
+      "start": 616.56,
+      "duration": 2.150000000000091,
+      "text": "experiments and understand all about wave particle duality and yeah that's"
+    },
+    {
+      "start": 618.71,
+      "duration": 0.009999999999990905,
+      "text": "wave particle duality and yeah that's"
+    },
+    {
+      "start": 618.72,
+      "duration": 2.0299999999999727,
+      "text": "wave particle duality and yeah that's just the first chapter I there's so much"
+    },
+    {
+      "start": 620.75,
+      "duration": 0.009999999999990905,
+      "text": "just the first chapter I there's so much"
+    },
+    {
+      "start": 620.76,
+      "duration": 2.3899999999999864,
+      "text": "just the first chapter I there's so much more lined up over there and if you"
+    },
+    {
+      "start": 623.15,
+      "duration": 0.009999999999990905,
+      "text": "more lined up over there and if you"
+    },
+    {
+      "start": 623.16,
+      "duration": 2.07000000000005,
+      "text": "more lined up over there and if you think this is cool then what's even"
+    },
+    {
+      "start": 625.23,
+      "duration": 0.009999999999990905,
+      "text": "think this is cool then what's even"
+    },
+    {
+      "start": 625.24,
+      "duration": 1.990000000000009,
+      "text": "think this is cool then what's even better is you can try everything Brant"
+    },
+    {
+      "start": 627.23,
+      "duration": 0.009999999999990905,
+      "text": "better is you can try everything Brant"
+    },
+    {
+      "start": 627.24,
+      "duration": 3.4700000000000273,
+      "text": "better is you can try everything Brant has to offer for free for a full 30 Days"
+    },
+    {
+      "start": 630.71,
+      "duration": 0.009999999999990905,
+      "text": "has to offer for free for a full 30 Days"
+    },
+    {
+      "start": 630.72,
+      "duration": 1.2699999999999818,
+      "text": "has to offer for free for a full 30 Days by just going to brilliant.org"
+    },
+    {
+      "start": 631.99,
+      "duration": 0.009999999999990905,
+      "text": "by just going to brilliant.org"
+    },
+    {
+      "start": 632.0,
+      "duration": 2.990000000000009,
+      "text": "by just going to brilliant.org floatheadphysics and of course you will"
+    },
+    {
+      "start": 634.99,
+      "duration": 0.009999999999990905,
+      "text": "floatheadphysics and of course you will"
+    },
+    {
+      "start": 635.0,
+      "duration": 2.5499999999999545,
+      "text": "floatheadphysics and of course you will also get a 20% off on the annual premium"
+    },
+    {
+      "start": 637.55,
+      "duration": 0.009999999999990905,
+      "text": "also get a 20% off on the annual premium"
+    },
+    {
+      "start": 637.56,
+      "duration": 1.9490000000000691,
+      "text": "also get a 20% off on the annual premium subscription if you decide to buy it the"
+    },
+    {
+      "start": 639.509,
+      "duration": 0.009999999999990905,
+      "text": "subscription if you decide to buy it the"
+    },
+    {
+      "start": 639.519,
+      "duration": 1.6309999999999718,
+      "text": "subscription if you decide to buy it the link is also in the description all"
+    },
+    {
+      "start": 641.15,
+      "duration": 0.009999999999990905,
+      "text": "link is also in the description all"
+    },
+    {
+      "start": 641.16,
+      "duration": 1.990000000000009,
+      "text": "link is also in the description all right Heisenberg is waiting for us so"
+    },
+    {
+      "start": 643.15,
+      "duration": 0.009999999999990905,
+      "text": "right Heisenberg is waiting for us so"
+    },
+    {
+      "start": 643.16,
+      "duration": 1.509999999999991,
+      "text": "right Heisenberg is waiting for us so this is how we think about momentum for"
+    },
+    {
+      "start": 644.67,
+      "duration": 0.009999999999990905,
+      "text": "this is how we think about momentum for"
+    },
+    {
+      "start": 644.68,
+      "duration": 2.1100000000000136,
+      "text": "this is how we think about momentum for Quantum objects but now comes the last"
+    },
+    {
+      "start": 646.79,
+      "duration": 0.009999999999990905,
+      "text": "Quantum objects but now comes the last"
+    },
+    {
+      "start": 646.8,
+      "duration": 2.0289999999999964,
+      "text": "Quantum objects but now comes the last question how do we think about position"
+    },
+    {
+      "start": 648.829,
+      "duration": 0.009999999999990905,
+      "text": "question how do we think about position"
+    },
+    {
+      "start": 648.8389999999999,
+      "duration": 2.0710000000000264,
+      "text": "question how do we think about position for the quantum objects that's the last"
+    },
+    {
+      "start": 650.91,
+      "duration": 0.009999999999990905,
+      "text": "for the quantum objects that's the last"
+    },
+    {
+      "start": 650.92,
+      "duration": 1.8700000000000045,
+      "text": "for the quantum objects that's the last piece of the puzzle and for that fman"
+    },
+    {
+      "start": 652.79,
+      "duration": 0.009999999999990905,
+      "text": "piece of the puzzle and for that fman"
+    },
+    {
+      "start": 652.8,
+      "duration": 1.75,
+      "text": "piece of the puzzle and for that fman says again we have to go back in time a"
+    },
+    {
+      "start": 654.55,
+      "duration": 0.009999999999990905,
+      "text": "says again we have to go back in time a"
+    },
+    {
+      "start": 654.56,
+      "duration": 2.38900000000001,
+      "text": "says again we have to go back in time a little bit okay once we put forward this"
+    },
+    {
+      "start": 656.949,
+      "duration": 0.010000000000104592,
+      "text": "little bit okay once we put forward this"
+    },
+    {
+      "start": 656.9590000000001,
+      "duration": 1.9109999999999445,
+      "text": "little bit okay once we put forward this hypothesis that these electrons for"
+    },
+    {
+      "start": 658.87,
+      "duration": 0.009999999999990905,
+      "text": "hypothesis that these electrons for"
+    },
+    {
+      "start": 658.88,
+      "duration": 2.5499999999999545,
+      "text": "hypothesis that these electrons for example can have wavelength a question"
+    },
+    {
+      "start": 661.43,
+      "duration": 0.010000000000104592,
+      "text": "example can have wavelength a question"
+    },
+    {
+      "start": 661.44,
+      "duration": 2.349999999999909,
+      "text": "example can have wavelength a question was asked if electrons have wavelength"
+    },
+    {
+      "start": 663.79,
+      "duration": 0.009999999999990905,
+      "text": "was asked if electrons have wavelength"
+    },
+    {
+      "start": 663.8,
+      "duration": 1.5500000000000682,
+      "text": "was asked if electrons have wavelength they should also have a wave equation"
+    },
+    {
+      "start": 665.35,
+      "duration": 0.009999999999990905,
+      "text": "they should also have a wave equation"
+    },
+    {
+      "start": 665.36,
+      "duration": 2.189999999999941,
+      "text": "they should also have a wave equation right where is the wave equation and"
+    },
+    {
+      "start": 667.55,
+      "duration": 0.009999999999990905,
+      "text": "right where is the wave equation and"
+    },
+    {
+      "start": 667.56,
+      "duration": 3.0300000000000864,
+      "text": "right where is the wave equation and that's where Irving shinger says hold my"
+    },
+    {
+      "start": 670.59,
+      "duration": 0.009999999999990905,
+      "text": "that's where Irving shinger says hold my"
+    },
+    {
+      "start": 670.6,
+      "duration": 3.5499999999999545,
+      "text": "that's where Irving shinger says hold my cat he comes back in a year with the"
+    },
+    {
+      "start": 674.15,
+      "duration": 0.009999999999990905,
+      "text": "cat he comes back in a year with the"
+    },
+    {
+      "start": 674.16,
+      "duration": 2.6689999999999827,
+      "text": "cat he comes back in a year with the wave equation which we call today the"
+    },
+    {
+      "start": 676.829,
+      "duration": 0.009999999999990905,
+      "text": "wave equation which we call today the"
+    },
+    {
+      "start": 676.8389999999999,
+      "duration": 2.4300000000000637,
+      "text": "wave equation which we call today the shinger wave equation this equation"
+    },
+    {
+      "start": 679.269,
+      "duration": 0.009999999999990905,
+      "text": "shinger wave equation this equation"
+    },
+    {
+      "start": 679.279,
+      "duration": 1.7899999999999636,
+      "text": "shinger wave equation this equation looks scary and maybe it's a topic for a"
+    },
+    {
+      "start": 681.069,
+      "duration": 0.009999999999990905,
+      "text": "looks scary and maybe it's a topic for a"
+    },
+    {
+      "start": 681.079,
+      "duration": 2.0710000000000264,
+      "text": "looks scary and maybe it's a topic for a future video but what's important is"
+    },
+    {
+      "start": 683.15,
+      "duration": 0.009999999999990905,
+      "text": "future video but what's important is"
+    },
+    {
+      "start": 683.16,
+      "duration": 2.1499999999999773,
+      "text": "future video but what's important is that it encapsulates all the properties"
+    },
+    {
+      "start": 685.31,
+      "duration": 0.010000000000104592,
+      "text": "that it encapsulates all the properties"
+    },
+    {
+      "start": 685.32,
+      "duration": 1.7899999999999636,
+      "text": "that it encapsulates all the properties of these Quantum objects actually not"
+    },
+    {
+      "start": 687.11,
+      "duration": 0.009999999999990905,
+      "text": "of these Quantum objects actually not"
+    },
+    {
+      "start": 687.12,
+      "duration": 1.6299999999999955,
+      "text": "of these Quantum objects actually not all some properties like spin was not"
+    },
+    {
+      "start": 688.75,
+      "duration": 0.009999999999990905,
+      "text": "all some properties like spin was not"
+    },
+    {
+      "start": 688.76,
+      "duration": 2.1889999999999645,
+      "text": "all some properties like spin was not captured very well anyways then comes"
+    },
+    {
+      "start": 690.949,
+      "duration": 0.009999999999990905,
+      "text": "captured very well anyways then comes"
+    },
+    {
+      "start": 690.959,
+      "duration": 2.191000000000031,
+      "text": "captured very well anyways then comes the big question what does that equation"
+    },
+    {
+      "start": 693.15,
+      "duration": 0.009999999999990905,
+      "text": "the big question what does that equation"
+    },
+    {
+      "start": 693.16,
+      "duration": 2.990000000000009,
+      "text": "the big question what does that equation even mean I mean think about it if you"
+    },
+    {
+      "start": 696.15,
+      "duration": 0.009999999999990905,
+      "text": "even mean I mean think about it if you"
+    },
+    {
+      "start": 696.16,
+      "duration": 3.1499999999999773,
+      "text": "even mean I mean think about it if you solve this wave equation and you get a"
+    },
+    {
+      "start": 699.31,
+      "duration": 0.010000000000104592,
+      "text": "solve this wave equation and you get a"
+    },
+    {
+      "start": 699.32,
+      "duration": 2.6289999999999054,
+      "text": "solve this wave equation and you get a wave say that looks like this for an"
+    },
+    {
+      "start": 701.949,
+      "duration": 0.010000000000104592,
+      "text": "wave say that looks like this for an"
+    },
+    {
+      "start": 701.9590000000001,
+      "duration": 3.42999999999995,
+      "text": "wave say that looks like this for an electron what does that wave represent"
+    },
+    {
+      "start": 705.389,
+      "duration": 0.009999999999990905,
+      "text": "electron what does that wave represent"
+    },
+    {
+      "start": 705.399,
+      "duration": 1.7509999999999764,
+      "text": "electron what does that wave represent right because it's not the electrons are"
+    },
+    {
+      "start": 707.15,
+      "duration": 0.009999999999990905,
+      "text": "right because it's not the electrons are"
+    },
+    {
+      "start": 707.16,
+      "duration": 1.990000000000009,
+      "text": "right because it's not the electrons are wiggling up and down no no no this"
+    },
+    {
+      "start": 709.15,
+      "duration": 0.009999999999990905,
+      "text": "wiggling up and down no no no this"
+    },
+    {
+      "start": 709.16,
+      "duration": 2.509999999999991,
+      "text": "wiggling up and down no no no this itself is the electron then what do"
+    },
+    {
+      "start": 711.67,
+      "duration": 0.009999999999990905,
+      "text": "itself is the electron then what do"
+    },
+    {
+      "start": 711.68,
+      "duration": 2.75,
+      "text": "itself is the electron then what do these Peaks and values even mean that"
+    },
+    {
+      "start": 714.43,
+      "duration": 0.010000000000104592,
+      "text": "these Peaks and values even mean that"
+    },
+    {
+      "start": 714.44,
+      "duration": 2.3099999999999454,
+      "text": "these Peaks and values even mean that was the big question well we call these"
+    },
+    {
+      "start": 716.75,
+      "duration": 0.009999999999990905,
+      "text": "was the big question well we call these"
+    },
+    {
+      "start": 716.76,
+      "duration": 1.7899999999999636,
+      "text": "was the big question well we call these Peaks and valleys we the symbol that we"
+    },
+    {
+      "start": 718.55,
+      "duration": 0.009999999999990905,
+      "text": "Peaks and valleys we the symbol that we"
+    },
+    {
+      "start": 718.56,
+      "duration": 1.3100000000000591,
+      "text": "Peaks and valleys we the symbol that we use to repres represent the Peaks and"
+    },
+    {
+      "start": 719.87,
+      "duration": 0.009999999999990905,
+      "text": "use to repres represent the Peaks and"
+    },
+    {
+      "start": 719.88,
+      "duration": 3.990000000000009,
+      "text": "use to repres represent the Peaks and valys is Sai and we realize that maybe"
+    },
+    {
+      "start": 723.87,
+      "duration": 0.009999999999990905,
+      "text": "valys is Sai and we realize that maybe"
+    },
+    {
+      "start": 723.88,
+      "duration": 2.06899999999996,
+      "text": "valys is Sai and we realize that maybe Sai doesn't the the Peaks and The"
+    },
+    {
+      "start": 725.949,
+      "duration": 0.009999999999990905,
+      "text": "Sai doesn't the the Peaks and The"
+    },
+    {
+      "start": 725.959,
+      "duration": 3.990000000000009,
+      "text": "Sai doesn't the the Peaks and The Valleys don't really mean anything but"
+    },
+    {
+      "start": 729.949,
+      "duration": 0.009999999999990905,
+      "text": "Valleys don't really mean anything but"
+    },
+    {
+      "start": 729.959,
+      "duration": 2.4710000000000036,
+      "text": "Valleys don't really mean anything but we also realize that if you take a"
+    },
+    {
+      "start": 732.43,
+      "duration": 0.010000000000104592,
+      "text": "we also realize that if you take a"
+    },
+    {
+      "start": 732.44,
+      "duration": 3.0299999999999727,
+      "text": "we also realize that if you take a square of these Peaks and valleys then"
+    },
+    {
+      "start": 735.47,
+      "duration": 0.009999999999990905,
+      "text": "square of these Peaks and valleys then"
+    },
+    {
+      "start": 735.48,
+      "duration": 2.588999999999942,
+      "text": "square of these Peaks and valleys then that gives you the probability of"
+    },
+    {
+      "start": 738.069,
+      "duration": 0.009999999999990905,
+      "text": "that gives you the probability of"
+    },
+    {
+      "start": 738.079,
+      "duration": 2.3910000000000764,
+      "text": "that gives you the probability of finding the quantum object at that"
+    },
+    {
+      "start": 740.47,
+      "duration": 0.009999999999990905,
+      "text": "finding the quantum object at that"
+    },
+    {
+      "start": 740.48,
+      "duration": 3.0699999999999363,
+      "text": "finding the quantum object at that particular location and I'm like but"
+    },
+    {
+      "start": 743.55,
+      "duration": 0.009999999999990905,
+      "text": "particular location and I'm like but"
+    },
+    {
+      "start": 743.56,
+      "duration": 1.75,
+      "text": "particular location and I'm like but what does that mean what do you mean"
+    },
+    {
+      "start": 745.31,
+      "duration": 0.010000000000104592,
+      "text": "what does that mean what do you mean"
+    },
+    {
+      "start": 745.32,
+      "duration": 2.9489999999999554,
+      "text": "what does that mean what do you mean fman okay fan says M look at these"
+    },
+    {
+      "start": 748.269,
+      "duration": 0.009999999999990905,
+      "text": "fman okay fan says M look at these"
+    },
+    {
+      "start": 748.279,
+      "duration": 2.1100000000000136,
+      "text": "fman okay fan says M look at these locations okay okay what's the value of"
+    },
+    {
+      "start": 750.389,
+      "duration": 0.009999999999990905,
+      "text": "locations okay okay what's the value of"
+    },
+    {
+      "start": 750.399,
+      "duration": 3.350999999999999,
+      "text": "locations okay okay what's the value of s over here the amplitude it's zero this"
+    },
+    {
+      "start": 753.75,
+      "duration": 0.009999999999990905,
+      "text": "s over here the amplitude it's zero this"
+    },
+    {
+      "start": 753.76,
+      "duration": 1.3500000000000227,
+      "text": "s over here the amplitude it's zero this means the probability of finding the"
+    },
+    {
+      "start": 755.11,
+      "duration": 0.009999999999990905,
+      "text": "means the probability of finding the"
+    },
+    {
+      "start": 755.12,
+      "duration": 3.149000000000001,
+      "text": "means the probability of finding the electrons over here is zero so if you"
+    },
+    {
+      "start": 758.269,
+      "duration": 0.009999999999990905,
+      "text": "electrons over here is zero so if you"
+    },
+    {
+      "start": 758.279,
+      "duration": 1.6309999999999718,
+      "text": "electrons over here is zero so if you were to shine light on this electron to"
+    },
+    {
+      "start": 759.91,
+      "duration": 0.009999999999990905,
+      "text": "were to shine light on this electron to"
+    },
+    {
+      "start": 759.92,
+      "duration": 2.3490000000000464,
+      "text": "were to shine light on this electron to try and locate it there's no chance that"
+    },
+    {
+      "start": 762.269,
+      "duration": 0.009999999999990905,
+      "text": "try and locate it there's no chance that"
+    },
+    {
+      "start": 762.279,
+      "duration": 1.7509999999999764,
+      "text": "try and locate it there's no chance that you would find the electrons in these"
+    },
+    {
+      "start": 764.03,
+      "duration": 0.009999999999990905,
+      "text": "you would find the electrons in these"
+    },
+    {
+      "start": 764.04,
+      "duration": 2.908999999999992,
+      "text": "you would find the electrons in these locations on the other hand look at"
+    },
+    {
+      "start": 766.949,
+      "duration": 0.010000000000104592,
+      "text": "locations on the other hand look at"
+    },
+    {
+      "start": 766.9590000000001,
+      "duration": 3.5499999999999545,
+      "text": "locations on the other hand look at these locations the S value is very high"
+    },
+    {
+      "start": 770.509,
+      "duration": 0.009999999999990905,
+      "text": "these locations the S value is very high"
+    },
+    {
+      "start": 770.519,
+      "duration": 1.42999999999995,
+      "text": "these locations the S value is very high so the probability of finding the"
+    },
+    {
+      "start": 771.949,
+      "duration": 0.010000000000104592,
+      "text": "so the probability of finding the"
+    },
+    {
+      "start": 771.9590000000001,
+      "duration": 1.47099999999989,
+      "text": "so the probability of finding the electron over there is very high so if"
+    },
+    {
+      "start": 773.43,
+      "duration": 0.010000000000104592,
+      "text": "electron over there is very high so if"
+    },
+    {
+      "start": 773.44,
+      "duration": 2.06899999999996,
+      "text": "electron over there is very high so if you were to shine light on this electron"
+    },
+    {
+      "start": 775.509,
+      "duration": 0.009999999999990905,
+      "text": "you were to shine light on this electron"
+    },
+    {
+      "start": 775.519,
+      "duration": 1.4710000000000036,
+      "text": "you were to shine light on this electron there's a very good chance you'll find"
+    },
+    {
+      "start": 776.99,
+      "duration": 0.009999999999990905,
+      "text": "there's a very good chance you'll find"
+    },
+    {
+      "start": 777.0,
+      "duration": 2.4700000000000273,
+      "text": "there's a very good chance you'll find the electrons over here and this is the"
+    },
+    {
+      "start": 779.47,
+      "duration": 0.009999999999990905,
+      "text": "the electrons over here and this is the"
+    },
+    {
+      "start": 779.48,
+      "duration": 1.9499999999999318,
+      "text": "the electrons over here and this is the weirdest thing about Quantum objects"
+    },
+    {
+      "start": 781.43,
+      "duration": 0.010000000000104592,
+      "text": "weirdest thing about Quantum objects"
+    },
+    {
+      "start": 781.44,
+      "duration": 3.1499999999999773,
+      "text": "weirdest thing about Quantum objects they don't really have a position until"
+    },
+    {
+      "start": 784.59,
+      "duration": 0.009999999999990905,
+      "text": "they don't really have a position until"
+    },
+    {
+      "start": 784.6,
+      "duration": 1.9499999999999318,
+      "text": "they don't really have a position until you measure it it's not like you don't"
+    },
+    {
+      "start": 786.55,
+      "duration": 0.009999999999990905,
+      "text": "you measure it it's not like you don't"
+    },
+    {
+      "start": 786.56,
+      "duration": 2.3500000000000227,
+      "text": "you measure it it's not like you don't know where the position is no no no we"
+    },
+    {
+      "start": 788.91,
+      "duration": 0.009999999999990905,
+      "text": "know where the position is no no no we"
+    },
+    {
+      "start": 788.92,
+      "duration": 2.310000000000059,
+      "text": "know where the position is no no no we know that the position can be anywhere"
+    },
+    {
+      "start": 791.23,
+      "duration": 0.009999999999990905,
+      "text": "know that the position can be anywhere"
+    },
+    {
+      "start": 791.24,
+      "duration": 2.9489999999999554,
+      "text": "know that the position can be anywhere here and here it's inherently"
+    },
+    {
+      "start": 794.189,
+      "duration": 0.009999999999990905,
+      "text": "here and here it's inherently"
+    },
+    {
+      "start": 794.199,
+      "duration": 1.511000000000081,
+      "text": "here and here it's inherently probabilistic it has nothing to do with"
+    },
+    {
+      "start": 795.71,
+      "duration": 0.009999999999990905,
+      "text": "probabilistic it has nothing to do with"
+    },
+    {
+      "start": 795.72,
+      "duration": 1.8700000000000045,
+      "text": "probabilistic it has nothing to do with our measuring tools they don't have a"
+    },
+    {
+      "start": 797.59,
+      "duration": 0.009999999999990905,
+      "text": "our measuring tools they don't have a"
+    },
+    {
+      "start": 797.6,
+      "duration": 2.42999999999995,
+      "text": "our measuring tools they don't have a position until you measure it okay so if"
+    },
+    {
+      "start": 800.03,
+      "duration": 0.009999999999990905,
+      "text": "position until you measure it okay so if"
+    },
+    {
+      "start": 800.04,
+      "duration": 2.07000000000005,
+      "text": "position until you measure it okay so if you put it all together we Now"
+    },
+    {
+      "start": 802.11,
+      "duration": 0.009999999999990905,
+      "text": "you put it all together we Now"
+    },
+    {
+      "start": 802.12,
+      "duration": 1.9489999999999554,
+      "text": "you put it all together we Now understand how to think about momentum"
+    },
+    {
+      "start": 804.069,
+      "duration": 0.009999999999990905,
+      "text": "understand how to think about momentum"
+    },
+    {
+      "start": 804.079,
+      "duration": 2.3910000000000764,
+      "text": "understand how to think about momentum of such Quantum objects and we Now"
+    },
+    {
+      "start": 806.47,
+      "duration": 0.009999999999990905,
+      "text": "of such Quantum objects and we Now"
+    },
+    {
+      "start": 806.48,
+      "duration": 1.2699999999999818,
+      "text": "of such Quantum objects and we Now understand how to think about position"
+    },
+    {
+      "start": 807.75,
+      "duration": 0.009999999999990905,
+      "text": "understand how to think about position"
+    },
+    {
+      "start": 807.76,
+      "duration": 1.9500000000000455,
+      "text": "understand how to think about position of such Quantum objects as well and now"
+    },
+    {
+      "start": 809.71,
+      "duration": 0.009999999999990905,
+      "text": "of such Quantum objects as well and now"
+    },
+    {
+      "start": 809.72,
+      "duration": 1.7099999999999227,
+      "text": "of such Quantum objects as well and now let's put these two together to build"
+    },
+    {
+      "start": 811.43,
+      "duration": 0.010000000000104592,
+      "text": "let's put these two together to build"
+    },
+    {
+      "start": 811.44,
+      "duration": 2.06899999999996,
+      "text": "let's put these two together to build the uncertain principles ourselves so"
+    },
+    {
+      "start": 813.509,
+      "duration": 0.009999999999990905,
+      "text": "the uncertain principles ourselves so"
+    },
+    {
+      "start": 813.519,
+      "duration": 3.270999999999958,
+      "text": "the uncertain principles ourselves so fan what do we do next fan asks mes can"
+    },
+    {
+      "start": 816.79,
+      "duration": 0.009999999999990905,
+      "text": "fan what do we do next fan asks mes can"
+    },
+    {
+      "start": 816.8,
+      "duration": 2.6299999999999955,
+      "text": "fan what do we do next fan asks mes can you imagine an electron which has a"
+    },
+    {
+      "start": 819.43,
+      "duration": 0.010000000000104592,
+      "text": "you imagine an electron which has a"
+    },
+    {
+      "start": 819.44,
+      "duration": 2.828999999999951,
+      "text": "you imagine an electron which has a specific value of momentum and I'm like"
+    },
+    {
+      "start": 822.269,
+      "duration": 0.009999999999990905,
+      "text": "specific value of momentum and I'm like"
+    },
+    {
+      "start": 822.279,
+      "duration": 1.1509999999999536,
+      "text": "specific value of momentum and I'm like yeah if it has a specific value of"
+    },
+    {
+      "start": 823.43,
+      "duration": 0.010000000000104592,
+      "text": "yeah if it has a specific value of"
+    },
+    {
+      "start": 823.44,
+      "duration": 1.4699999999999136,
+      "text": "yeah if it has a specific value of momentum it's moving at a constant"
+    },
+    {
+      "start": 824.91,
+      "duration": 0.009999999999990905,
+      "text": "momentum it's moving at a constant"
+    },
+    {
+      "start": 824.92,
+      "duration": 2.3490000000000464,
+      "text": "momentum it's moving at a constant velocity I'm imagining it like this and"
+    },
+    {
+      "start": 827.269,
+      "duration": 0.009999999999990905,
+      "text": "velocity I'm imagining it like this and"
+    },
+    {
+      "start": 827.279,
+      "duration": 1.3909999999999627,
+      "text": "velocity I'm imagining it like this and finally it's like no no no mahes you're"
+    },
+    {
+      "start": 828.67,
+      "duration": 0.009999999999990905,
+      "text": "finally it's like no no no mahes you're"
+    },
+    {
+      "start": 828.68,
+      "duration": 1.990000000000009,
+      "text": "finally it's like no no no mahes you're still thinking classically see these are"
+    },
+    {
+      "start": 830.67,
+      "duration": 0.009999999999990905,
+      "text": "still thinking classically see these are"
+    },
+    {
+      "start": 830.68,
+      "duration": 1.8290000000000646,
+      "text": "still thinking classically see these are quantum objects right so if they have a"
+    },
+    {
+      "start": 832.509,
+      "duration": 0.009999999999990905,
+      "text": "quantum objects right so if they have a"
+    },
+    {
+      "start": 832.519,
+      "duration": 1.7110000000000127,
+      "text": "quantum objects right so if they have a specific value of momentum they should"
+    },
+    {
+      "start": 834.23,
+      "duration": 0.009999999999990905,
+      "text": "specific value of momentum they should"
+    },
+    {
+      "start": 834.24,
+      "duration": 2.5090000000000146,
+      "text": "specific value of momentum they should have a specific value for wavelength so"
+    },
+    {
+      "start": 836.749,
+      "duration": 0.009999999999990905,
+      "text": "have a specific value for wavelength so"
+    },
+    {
+      "start": 836.759,
+      "duration": 3.030999999999949,
+      "text": "have a specific value for wavelength so a better way to imagine this is a wave"
+    },
+    {
+      "start": 839.79,
+      "duration": 0.009999999999990905,
+      "text": "a better way to imagine this is a wave"
+    },
+    {
+      "start": 839.8,
+      "duration": 2.310000000000059,
+      "text": "a better way to imagine this is a wave of a specific wavelength and this wave"
+    },
+    {
+      "start": 842.11,
+      "duration": 0.009999999999990905,
+      "text": "of a specific wavelength and this wave"
+    },
+    {
+      "start": 842.12,
+      "duration": 1.9489999999999554,
+      "text": "of a specific wavelength and this wave would extend all the way to infinity and"
+    },
+    {
+      "start": 844.069,
+      "duration": 0.009999999999990905,
+      "text": "would extend all the way to infinity and"
+    },
+    {
+      "start": 844.079,
+      "duration": 1.4300000000000637,
+      "text": "would extend all the way to infinity and I'm like wait a second wait a second I"
+    },
+    {
+      "start": 845.509,
+      "duration": 0.009999999999990905,
+      "text": "I'm like wait a second wait a second I"
+    },
+    {
+      "start": 845.519,
+      "duration": 2.230000000000018,
+      "text": "I'm like wait a second wait a second I get that electrons have wavelength so"
+    },
+    {
+      "start": 847.749,
+      "duration": 0.009999999999990905,
+      "text": "get that electrons have wavelength so"
+    },
+    {
+      "start": 847.759,
+      "duration": 2.11099999999999,
+      "text": "get that electrons have wavelength so we're drawing a wave but why does it"
+    },
+    {
+      "start": 849.87,
+      "duration": 0.009999999999990905,
+      "text": "we're drawing a wave but why does it"
+    },
+    {
+      "start": 849.88,
+      "duration": 2.9489999999999554,
+      "text": "we're drawing a wave but why does it extend to Infinity why can't I have why"
+    },
+    {
+      "start": 852.829,
+      "duration": 0.010000000000104592,
+      "text": "extend to Infinity why can't I have why"
+    },
+    {
+      "start": 852.839,
+      "duration": 2.1509999999999536,
+      "text": "extend to Infinity why can't I have why can't I represent it this way well"
+    },
+    {
+      "start": 854.99,
+      "duration": 0.009999999999990905,
+      "text": "can't I represent it this way well"
+    },
+    {
+      "start": 855.0,
+      "duration": 2.3099999999999454,
+      "text": "can't I represent it this way well because look the wavelength here and the"
+    },
+    {
+      "start": 857.31,
+      "duration": 0.010000000000104592,
+      "text": "because look the wavelength here and the"
+    },
+    {
+      "start": 857.32,
+      "duration": 1.8689999999999145,
+      "text": "because look the wavelength here and the wavelength here is different right the"
+    },
+    {
+      "start": 859.189,
+      "duration": 0.009999999999990905,
+      "text": "wavelength here is different right the"
+    },
+    {
+      "start": 859.199,
+      "duration": 1.3910000000000764,
+      "text": "wavelength here is different right the wavelength over here is infinity"
+    },
+    {
+      "start": 860.59,
+      "duration": 0.009999999999990905,
+      "text": "wavelength over here is infinity"
+    },
+    {
+      "start": 860.6,
+      "duration": 2.149000000000001,
+      "text": "wavelength over here is infinity actually but we said that this electron"
+    },
+    {
+      "start": 862.749,
+      "duration": 0.009999999999990905,
+      "text": "actually but we said that this electron"
+    },
+    {
+      "start": 862.759,
+      "duration": 3.3909999999999627,
+      "text": "actually but we said that this electron should have one value of wavelength"
+    },
+    {
+      "start": 866.15,
+      "duration": 0.009999999999990905,
+      "text": "should have one value of wavelength"
+    },
+    {
+      "start": 866.16,
+      "duration": 3.830000000000041,
+      "text": "should have one value of wavelength everywhere which means the Ron should"
+    },
+    {
+      "start": 869.99,
+      "duration": 0.009999999999990905,
+      "text": "everywhere which means the Ron should"
+    },
+    {
+      "start": 870.0,
+      "duration": 2.2690000000000055,
+      "text": "everywhere which means the Ron should look somewhat like this it should extend"
+    },
+    {
+      "start": 872.269,
+      "duration": 0.009999999999990905,
+      "text": "look somewhat like this it should extend"
+    },
+    {
+      "start": 872.279,
+      "duration": 2.870999999999981,
+      "text": "look somewhat like this it should extend all the way to Infinity everywhere in"
+    },
+    {
+      "start": 875.15,
+      "duration": 0.009999999999990905,
+      "text": "all the way to Infinity everywhere in"
+    },
+    {
+      "start": 875.16,
+      "duration": 2.509999999999991,
+      "text": "all the way to Infinity everywhere in the universe so now think about its"
+    },
+    {
+      "start": 877.67,
+      "duration": 0.009999999999990905,
+      "text": "the universe so now think about its"
+    },
+    {
+      "start": 877.68,
+      "duration": 2.6700000000000728,
+      "text": "the universe so now think about its momentum okay so since I know its"
+    },
+    {
+      "start": 880.35,
+      "duration": 0.009999999999990905,
+      "text": "momentum okay so since I know its"
+    },
+    {
+      "start": 880.36,
+      "duration": 1.9499999999999318,
+      "text": "momentum okay so since I know its momentum perfectly because it has one"
+    },
+    {
+      "start": 882.31,
+      "duration": 0.010000000000104592,
+      "text": "momentum perfectly because it has one"
+    },
+    {
+      "start": 882.32,
+      "duration": 2.3899999999999864,
+      "text": "momentum perfectly because it has one specific value of momentum Delta p is"
+    },
+    {
+      "start": 884.71,
+      "duration": 0.009999999999990905,
+      "text": "specific value of momentum Delta p is"
+    },
+    {
+      "start": 884.72,
+      "duration": 2.189999999999941,
+      "text": "specific value of momentum Delta p is zero there is no uncertainty in momentum"
+    },
+    {
+      "start": 886.91,
+      "duration": 0.009999999999990905,
+      "text": "zero there is no uncertainty in momentum"
+    },
+    {
+      "start": 886.92,
+      "duration": 2.550000000000068,
+      "text": "zero there is no uncertainty in momentum but what about its position where will"
+    },
+    {
+      "start": 889.47,
+      "duration": 0.009999999999990905,
+      "text": "but what about its position where will"
+    },
+    {
+      "start": 889.48,
+      "duration": 1.4689999999999372,
+      "text": "but what about its position where will you find this electron if you are to"
+    },
+    {
+      "start": 890.949,
+      "duration": 0.010000000000104592,
+      "text": "you find this electron if you are to"
+    },
+    {
+      "start": 890.9590000000001,
+      "duration": 3.030999999999949,
+      "text": "you find this electron if you are to measure it well for that the probability"
+    },
+    {
+      "start": 893.99,
+      "duration": 0.009999999999990905,
+      "text": "measure it well for that the probability"
+    },
+    {
+      "start": 894.0,
+      "duration": 1.7899999999999636,
+      "text": "measure it well for that the probability it depends on the amplitude square but"
+    },
+    {
+      "start": 895.79,
+      "duration": 0.009999999999990905,
+      "text": "it depends on the amplitude square but"
+    },
+    {
+      "start": 895.8,
+      "duration": 1.7900000000000773,
+      "text": "it depends on the amplitude square but look now the amplitude is the same"
+    },
+    {
+      "start": 897.59,
+      "duration": 0.009999999999990905,
+      "text": "look now the amplitude is the same"
+    },
+    {
+      "start": 897.6,
+      "duration": 1.6299999999999955,
+      "text": "look now the amplitude is the same everywhere"
+    },
+    {
+      "start": 899.23,
+      "duration": 0.009999999999990905,
+      "text": "everywhere"
+    },
+    {
+      "start": 899.24,
+      "duration": 1.2690000000000055,
+      "text": "everywhere which means the probability of this"
+    },
+    {
+      "start": 900.509,
+      "duration": 0.009999999999990905,
+      "text": "which means the probability of this"
+    },
+    {
+      "start": 900.519,
+      "duration": 1.5109999999999673,
+      "text": "which means the probability of this finding this electron is the same"
+    },
+    {
+      "start": 902.03,
+      "duration": 0.009999999999990905,
+      "text": "finding this electron is the same"
+    },
+    {
+      "start": 902.04,
+      "duration": 2.908999999999992,
+      "text": "finding this electron is the same anywhere in the universe in other words"
+    },
+    {
+      "start": 904.949,
+      "duration": 0.009999999999990905,
+      "text": "anywhere in the universe in other words"
+    },
+    {
+      "start": 904.959,
+      "duration": 2.990000000000009,
+      "text": "anywhere in the universe in other words the uncertainty in finding this electron"
+    },
+    {
+      "start": 907.949,
+      "duration": 0.009999999999990905,
+      "text": "the uncertainty in finding this electron"
+    },
+    {
+      "start": 907.959,
+      "duration": 1.7110000000000127,
+      "text": "the uncertainty in finding this electron is infinity because I can find it"
+    },
+    {
+      "start": 909.67,
+      "duration": 0.009999999999990905,
+      "text": "is infinity because I can find it"
+    },
+    {
+      "start": 909.68,
+      "duration": 2.6299999999999955,
+      "text": "is infinity because I can find it anywhere in the universe this is the key"
+    },
+    {
+      "start": 912.31,
+      "duration": 0.010000000000104592,
+      "text": "anywhere in the universe this is the key"
+    },
+    {
+      "start": 912.32,
+      "duration": 1.8689999999999145,
+      "text": "anywhere in the universe this is the key that Fineman says yes this is"
+    },
+    {
+      "start": 914.189,
+      "duration": 0.009999999999990905,
+      "text": "that Fineman says yes this is"
+    },
+    {
+      "start": 914.199,
+      "duration": 2.671000000000049,
+      "text": "that Fineman says yes this is nonsensical but if you try to create a"
+    },
+    {
+      "start": 916.87,
+      "duration": 0.009999999999990905,
+      "text": "nonsensical but if you try to create a"
+    },
+    {
+      "start": 916.88,
+      "duration": 2.0299999999999727,
+      "text": "nonsensical but if you try to create a quantum object which has one value of"
+    },
+    {
+      "start": 918.91,
+      "duration": 0.009999999999990905,
+      "text": "quantum object which has one value of"
+    },
+    {
+      "start": 918.92,
+      "duration": 2.7900000000000773,
+      "text": "quantum object which has one value of momentum so that there's no uncertainty"
+    },
+    {
+      "start": 921.71,
+      "duration": 0.009999999999990905,
+      "text": "momentum so that there's no uncertainty"
+    },
+    {
+      "start": 921.72,
+      "duration": 4.228999999999928,
+      "text": "momentum so that there's no uncertainty look you inevitably end up with having"
+    },
+    {
+      "start": 925.949,
+      "duration": 0.009999999999990905,
+      "text": "look you inevitably end up with having"
+    },
+    {
+      "start": 925.959,
+      "duration": 2.191000000000031,
+      "text": "look you inevitably end up with having infinite uncertainty in its position not"
+    },
+    {
+      "start": 928.15,
+      "duration": 0.009999999999990905,
+      "text": "infinite uncertainty in its position not"
+    },
+    {
+      "start": 928.16,
+      "duration": 2.0289999999999964,
+      "text": "infinite uncertainty in its position not because you don't know its position no"
+    },
+    {
+      "start": 930.189,
+      "duration": 0.009999999999990905,
+      "text": "because you don't know its position no"
+    },
+    {
+      "start": 930.199,
+      "duration": 3.6299999999999955,
+      "text": "because you don't know its position no no no now the probability of finding"
+    },
+    {
+      "start": 933.829,
+      "duration": 0.009999999999990905,
+      "text": "no no now the probability of finding"
+    },
+    {
+      "start": 933.8389999999999,
+      "duration": 2.8310000000000173,
+      "text": "no no now the probability of finding that you know electron is the same"
+    },
+    {
+      "start": 936.67,
+      "duration": 0.009999999999990905,
+      "text": "that you know electron is the same"
+    },
+    {
+      "start": 936.68,
+      "duration": 2.5090000000000146,
+      "text": "that you know electron is the same anywhere that's why the uncertainty goes"
+    },
+    {
+      "start": 939.189,
+      "duration": 0.009999999999990905,
+      "text": "anywhere that's why the uncertainty goes"
+    },
+    {
+      "start": 939.199,
+      "duration": 3.591000000000008,
+      "text": "anywhere that's why the uncertainty goes haywire and becomes Infinity right now"
+    },
+    {
+      "start": 942.79,
+      "duration": 0.009999999999990905,
+      "text": "haywire and becomes Infinity right now"
+    },
+    {
+      "start": 942.8,
+      "duration": 1.5500000000000682,
+      "text": "haywire and becomes Infinity right now let's try to think about a more"
+    },
+    {
+      "start": 944.35,
+      "duration": 0.009999999999990905,
+      "text": "let's try to think about a more"
+    },
+    {
+      "start": 944.36,
+      "duration": 2.0699999999999363,
+      "text": "let's try to think about a more realistic Quantum object so we need to"
+    },
+    {
+      "start": 946.43,
+      "duration": 0.010000000000104592,
+      "text": "realistic Quantum object so we need to"
+    },
+    {
+      "start": 946.44,
+      "duration": 2.1099999999999,
+      "text": "realistic Quantum object so we need to localize it a little bit more I need to"
+    },
+    {
+      "start": 948.55,
+      "duration": 0.009999999999990905,
+      "text": "localize it a little bit more I need to"
+    },
+    {
+      "start": 948.56,
+      "duration": 1.9100000000000819,
+      "text": "localize it a little bit more I need to narrow down its position which means I"
+    },
+    {
+      "start": 950.47,
+      "duration": 0.009999999999990905,
+      "text": "narrow down its position which means I"
+    },
+    {
+      "start": 950.48,
+      "duration": 1.990000000000009,
+      "text": "narrow down its position which means I have to decrease its uncertainty how do"
+    },
+    {
+      "start": 952.47,
+      "duration": 0.009999999999990905,
+      "text": "have to decrease its uncertainty how do"
+    },
+    {
+      "start": 952.48,
+      "duration": 2.42999999999995,
+      "text": "have to decrease its uncertainty how do I do that well again think about it if I"
+    },
+    {
+      "start": 954.91,
+      "duration": 0.009999999999990905,
+      "text": "I do that well again think about it if I"
+    },
+    {
+      "start": 954.92,
+      "duration": 2.149000000000001,
+      "text": "I do that well again think about it if I have to narrow it down I have to make"
+    },
+    {
+      "start": 957.069,
+      "duration": 0.009999999999990905,
+      "text": "have to narrow it down I have to make"
+    },
+    {
+      "start": 957.079,
+      "duration": 3.0710000000000264,
+      "text": "have to narrow it down I have to make sure the waves have zero amplitude at"
+    },
+    {
+      "start": 960.15,
+      "duration": 0.009999999999990905,
+      "text": "sure the waves have zero amplitude at"
+    },
+    {
+      "start": 960.16,
+      "duration": 3.4300000000000637,
+      "text": "sure the waves have zero amplitude at some places how do you do that well fan"
+    },
+    {
+      "start": 963.59,
+      "duration": 0.009999999999990905,
+      "text": "some places how do you do that well fan"
+    },
+    {
+      "start": 963.6,
+      "duration": 3.1100000000000136,
+      "text": "some places how do you do that well fan says just add more waves to it with"
+    },
+    {
+      "start": 966.71,
+      "duration": 0.009999999999990905,
+      "text": "says just add more waves to it with"
+    },
+    {
+      "start": 966.72,
+      "duration": 2.6299999999999955,
+      "text": "says just add more waves to it with slightly different wavelength wait why"
+    },
+    {
+      "start": 969.35,
+      "duration": 0.009999999999990905,
+      "text": "slightly different wavelength wait why"
+    },
+    {
+      "start": 969.36,
+      "duration": 2.509999999999991,
+      "text": "slightly different wavelength wait why what does that do well because it has"
+    },
+    {
+      "start": 971.87,
+      "duration": 0.009999999999990905,
+      "text": "what does that do well because it has"
+    },
+    {
+      "start": 971.88,
+      "duration": 1.5499999999999545,
+      "text": "what does that do well because it has slightly different wavelength there are"
+    },
+    {
+      "start": 973.43,
+      "duration": 0.010000000000104592,
+      "text": "slightly different wavelength there are"
+    },
+    {
+      "start": 973.44,
+      "duration": 1.9489999999999554,
+      "text": "slightly different wavelength there are certain locations where the waves of the"
+    },
+    {
+      "start": 975.389,
+      "duration": 0.009999999999990905,
+      "text": "certain locations where the waves of the"
+    },
+    {
+      "start": 975.399,
+      "duration": 1.7110000000000127,
+      "text": "certain locations where the waves of the Peaks and the W you know valleys will"
+    },
+    {
+      "start": 977.11,
+      "duration": 0.009999999999990905,
+      "text": "Peaks and the W you know valleys will"
+    },
+    {
+      "start": 977.12,
+      "duration": 2.9489999999999554,
+      "text": "Peaks and the W you know valleys will line up over here in these places the"
+    },
+    {
+      "start": 980.069,
+      "duration": 0.009999999999990905,
+      "text": "line up over here in these places the"
+    },
+    {
+      "start": 980.079,
+      "duration": 2.1900000000000546,
+      "text": "line up over here in these places the amplitude will be much higher but there"
+    },
+    {
+      "start": 982.269,
+      "duration": 0.009999999999990905,
+      "text": "amplitude will be much higher but there"
+    },
+    {
+      "start": 982.279,
+      "duration": 1.7110000000000127,
+      "text": "amplitude will be much higher but there will be also other places where the"
+    },
+    {
+      "start": 983.99,
+      "duration": 0.009999999999990905,
+      "text": "will be also other places where the"
+    },
+    {
+      "start": 984.0,
+      "duration": 2.9489999999999554,
+      "text": "will be also other places where the Peaks and The Valleys line up like this"
+    },
+    {
+      "start": 986.949,
+      "duration": 0.009999999999990905,
+      "text": "Peaks and The Valleys line up like this"
+    },
+    {
+      "start": 986.959,
+      "duration": 2.230000000000018,
+      "text": "Peaks and The Valleys line up like this in such cases they will destroy each"
+    },
+    {
+      "start": 989.189,
+      "duration": 0.009999999999990905,
+      "text": "in such cases they will destroy each"
+    },
+    {
+      "start": 989.199,
+      "duration": 3.1100000000000136,
+      "text": "in such cases they will destroy each other destructive interference and when"
+    },
+    {
+      "start": 992.309,
+      "duration": 0.009999999999990905,
+      "text": "other destructive interference and when"
+    },
+    {
+      "start": 992.319,
+      "duration": 2.310000000000059,
+      "text": "other destructive interference and when we do that we'll now end up with a new"
+    },
+    {
+      "start": 994.629,
+      "duration": 0.009999999999990905,
+      "text": "we do that we'll now end up with a new"
+    },
+    {
+      "start": 994.639,
+      "duration": 1.669999999999959,
+      "text": "we do that we'll now end up with a new wave that kind of sort of looks like"
+    },
+    {
+      "start": 996.309,
+      "duration": 0.009999999999990905,
+      "text": "wave that kind of sort of looks like"
+    },
+    {
+      "start": 996.319,
+      "duration": 3.2309999999999945,
+      "text": "wave that kind of sort of looks like this I know it looks ugly but look what"
+    },
+    {
+      "start": 999.55,
+      "duration": 0.009999999999990905,
+      "text": "this I know it looks ugly but look what"
+    },
+    {
+      "start": 999.56,
+      "duration": 2.38900000000001,
+      "text": "this I know it looks ugly but look what we have done because now there are"
+    },
+    {
+      "start": 1001.949,
+      "duration": 0.010000000000104592,
+      "text": "we have done because now there are"
+    },
+    {
+      "start": 1001.9590000000001,
+      "duration": 1.5909999999998945,
+      "text": "we have done because now there are places where the amplitude is very high"
+    },
+    {
+      "start": 1003.55,
+      "duration": 0.009999999999990905,
+      "text": "places where the amplitude is very high"
+    },
+    {
+      "start": 1003.56,
+      "duration": 1.3100000000000591,
+      "text": "places where the amplitude is very high and other places where the amplitude is"
+    },
+    {
+      "start": 1004.87,
+      "duration": 0.009999999999990905,
+      "text": "and other places where the amplitude is"
+    },
+    {
+      "start": 1004.88,
+      "duration": 3.1100000000000136,
+      "text": "and other places where the amplitude is low I have narrowed it down so this is"
+    },
+    {
+      "start": 1007.99,
+      "duration": 0.009999999999990905,
+      "text": "low I have narrowed it down so this is"
+    },
+    {
+      "start": 1008.0,
+      "duration": 2.230000000000018,
+      "text": "low I have narrowed it down so this is much better than before when it comes to"
+    },
+    {
+      "start": 1010.23,
+      "duration": 0.009999999999990905,
+      "text": "much better than before when it comes to"
+    },
+    {
+      "start": 1010.24,
+      "duration": 3.42999999999995,
+      "text": "much better than before when it comes to position but it comes at a cost you see"
+    },
+    {
+      "start": 1013.67,
+      "duration": 0.009999999999990905,
+      "text": "position but it comes at a cost you see"
+    },
+    {
+      "start": 1013.68,
+      "duration": 2.5890000000000555,
+      "text": "position but it comes at a cost you see because to narrow it down to narrow down"
+    },
+    {
+      "start": 1016.269,
+      "duration": 0.009999999999990905,
+      "text": "because to narrow it down to narrow down"
+    },
+    {
+      "start": 1016.279,
+      "duration": 2.230000000000018,
+      "text": "because to narrow it down to narrow down the position I had to add two waves of"
+    },
+    {
+      "start": 1018.509,
+      "duration": 0.009999999999990905,
+      "text": "the position I had to add two waves of"
+    },
+    {
+      "start": 1018.519,
+      "duration": 3.1100000000000136,
+      "text": "the position I had to add two waves of two different wavelengths that means now"
+    },
+    {
+      "start": 1021.629,
+      "duration": 0.009999999999990905,
+      "text": "two different wavelengths that means now"
+    },
+    {
+      "start": 1021.639,
+      "duration": 3.950999999999908,
+      "text": "two different wavelengths that means now this object has two values for momentum"
+    },
+    {
+      "start": 1025.59,
+      "duration": 0.009999999999990905,
+      "text": "this object has two values for momentum"
+    },
+    {
+      "start": 1025.6,
+      "duration": 1.509999999999991,
+      "text": "this object has two values for momentum what does that mean that means if you"
+    },
+    {
+      "start": 1027.11,
+      "duration": 0.009999999999990905,
+      "text": "what does that mean that means if you"
+    },
+    {
+      "start": 1027.12,
+      "duration": 2.7890000000002146,
+      "text": "what does that mean that means if you are to now measure this particular"
+    },
+    {
+      "start": 1029.909,
+      "duration": 0.009999999999990905,
+      "text": "are to now measure this particular"
+    },
+    {
+      "start": 1029.919,
+      "duration": 2.990000000000009,
+      "text": "are to now measure this particular electron's momentum there's a 50/50%"
+    },
+    {
+      "start": 1032.909,
+      "duration": 0.009999999999990905,
+      "text": "electron's momentum there's a 50/50%"
+    },
+    {
+      "start": 1032.919,
+      "duration": 2.6709999999998217,
+      "text": "electron's momentum there's a 50/50% chance of having it to be either one of"
+    },
+    {
+      "start": 1035.59,
+      "duration": 0.009999999999990905,
+      "text": "chance of having it to be either one of"
+    },
+    {
+      "start": 1035.6,
+      "duration": 3.469000000000051,
+      "text": "chance of having it to be either one of them in other words narrowing down the"
+    },
+    {
+      "start": 1039.069,
+      "duration": 0.009999999999990905,
+      "text": "them in other words narrowing down the"
+    },
+    {
+      "start": 1039.079,
+      "duration": 1.9500000000000455,
+      "text": "them in other words narrowing down the position decreasing the uncertain the"
+    },
+    {
+      "start": 1041.029,
+      "duration": 0.009999999999990905,
+      "text": "position decreasing the uncertain the"
+    },
+    {
+      "start": 1041.039,
+      "duration": 2.269999999999982,
+      "text": "position decreasing the uncertain the position automatically has now increase"
+    },
+    {
+      "start": 1043.309,
+      "duration": 0.009999999999990905,
+      "text": "position automatically has now increase"
+    },
+    {
+      "start": 1043.319,
+      "duration": 1.509999999999991,
+      "text": "position automatically has now increase the uncertainty in momentum it's no"
+    },
+    {
+      "start": 1044.829,
+      "duration": 0.009999999999990905,
+      "text": "the uncertainty in momentum it's no"
+    },
+    {
+      "start": 1044.839,
+      "duration": 2.5510000000001583,
+      "text": "the uncertainty in momentum it's no longer zero you can see right in front"
+    },
+    {
+      "start": 1047.39,
+      "duration": 0.009999999999990905,
+      "text": "longer zero you can see right in front"
+    },
+    {
+      "start": 1047.4,
+      "duration": 1.5090000000000146,
+      "text": "longer zero you can see right in front of your eyes it has nothing to do with"
+    },
+    {
+      "start": 1048.909,
+      "duration": 0.009999999999990905,
+      "text": "of your eyes it has nothing to do with"
+    },
+    {
+      "start": 1048.919,
+      "duration": 1.6299999999998818,
+      "text": "of your eyes it has nothing to do with measurement that's how the quantum"
+    },
+    {
+      "start": 1050.549,
+      "duration": 0.009999999999990905,
+      "text": "measurement that's how the quantum"
+    },
+    {
+      "start": 1050.559,
+      "duration": 2.7509999999999764,
+      "text": "measurement that's how the quantum objects work and if you want to narrow"
+    },
+    {
+      "start": 1053.31,
+      "duration": 0.009999999999990905,
+      "text": "objects work and if you want to narrow"
+    },
+    {
+      "start": 1053.32,
+      "duration": 1.5890000000001692,
+      "text": "objects work and if you want to narrow it down even further when it comes to"
+    },
+    {
+      "start": 1054.909,
+      "duration": 0.009999999999990905,
+      "text": "it down even further when it comes to"
+    },
+    {
+      "start": 1054.919,
+      "duration": 2.6709999999998217,
+      "text": "it down even further when it comes to position you add even more waves you can"
+    },
+    {
+      "start": 1057.59,
+      "duration": 0.009999999999990905,
+      "text": "position you add even more waves you can"
+    },
+    {
+      "start": 1057.6,
+      "duration": 2.75,
+      "text": "position you add even more waves you can do that but if you add more waves you're"
+    },
+    {
+      "start": 1060.35,
+      "duration": 0.009999999999990905,
+      "text": "do that but if you add more waves you're"
+    },
+    {
+      "start": 1060.36,
+      "duration": 1.6300000000001091,
+      "text": "do that but if you add more waves you're going to increase the uncertainty in the"
+    },
+    {
+      "start": 1061.99,
+      "duration": 0.009999999999990905,
+      "text": "going to increase the uncertainty in the"
+    },
+    {
+      "start": 1062.0,
+      "duration": 3.230000000000018,
+      "text": "going to increase the uncertainty in the momentum even further decreasing one"
+    },
+    {
+      "start": 1065.23,
+      "duration": 0.009999999999990905,
+      "text": "momentum even further decreasing one"
+    },
+    {
+      "start": 1065.24,
+      "duration": 3.1099999999999,
+      "text": "momentum even further decreasing one increases the other beautiful isn't it"
+    },
+    {
+      "start": 1068.35,
+      "duration": 0.009999999999990905,
+      "text": "increases the other beautiful isn't it"
+    },
+    {
+      "start": 1068.36,
+      "duration": 1.2300000000000182,
+      "text": "increases the other beautiful isn't it and by the way I know these are ugly"
+    },
+    {
+      "start": 1069.59,
+      "duration": 0.009999999999990905,
+      "text": "and by the way I know these are ugly"
+    },
+    {
+      "start": 1069.6,
+      "duration": 1.7100000000000364,
+      "text": "and by the way I know these are ugly drawings so here's an audacity"
+    },
+    {
+      "start": 1071.31,
+      "duration": 0.009999999999990905,
+      "text": "drawings so here's an audacity"
+    },
+    {
+      "start": 1071.32,
+      "duration": 2.3900000000001,
+      "text": "drawings so here's an audacity simulation over here if I add two waves"
+    },
+    {
+      "start": 1073.71,
+      "duration": 0.009999999999990905,
+      "text": "simulation over here if I add two waves"
+    },
+    {
+      "start": 1073.72,
+      "duration": 2.509999999999991,
+      "text": "simulation over here if I add two waves of slightly different wavelength look I"
+    },
+    {
+      "start": 1076.23,
+      "duration": 0.009999999999990905,
+      "text": "of slightly different wavelength look I"
+    },
+    {
+      "start": 1076.24,
+      "duration": 2.75,
+      "text": "of slightly different wavelength look I can find I can destructively interfere"
+    },
+    {
+      "start": 1078.99,
+      "duration": 0.009999999999990905,
+      "text": "can find I can destructively interfere"
+    },
+    {
+      "start": 1079.0,
+      "duration": 1.75,
+      "text": "can find I can destructively interfere them so that I can narrow down the"
+    },
+    {
+      "start": 1080.75,
+      "duration": 0.009999999999990905,
+      "text": "them so that I can narrow down the"
+    },
+    {
+      "start": 1080.76,
+      "duration": 1.8299999999999272,
+      "text": "them so that I can narrow down the positions high probability of finding"
+    },
+    {
+      "start": 1082.59,
+      "duration": 0.009999999999990905,
+      "text": "positions high probability of finding"
+    },
+    {
+      "start": 1082.6,
+      "duration": 2.1100000000001273,
+      "text": "positions high probability of finding the electrons here but if I add even"
+    },
+    {
+      "start": 1084.71,
+      "duration": 0.009999999999990905,
+      "text": "the electrons here but if I add even"
+    },
+    {
+      "start": 1084.72,
+      "duration": 2.1099999999999,
+      "text": "the electrons here but if I add even more waves see I'm narrowing it down"
+    },
+    {
+      "start": 1086.83,
+      "duration": 0.009999999999990905,
+      "text": "more waves see I'm narrowing it down"
+    },
+    {
+      "start": 1086.84,
+      "duration": 2.5900000000001455,
+      "text": "more waves see I'm narrowing it down even further in the limiting case I can"
+    },
+    {
+      "start": 1089.43,
+      "duration": 0.009999999999990905,
+      "text": "even further in the limiting case I can"
+    },
+    {
+      "start": 1089.44,
+      "duration": 2.3899999999998727,
+      "text": "even further in the limiting case I can add so many waves of different different"
+    },
+    {
+      "start": 1091.83,
+      "duration": 0.009999999999990905,
+      "text": "add so many waves of different different"
+    },
+    {
+      "start": 1091.84,
+      "duration": 4.029999999999973,
+      "text": "add so many waves of different different wavelengths such that I will get I will"
+    },
+    {
+      "start": 1095.87,
+      "duration": 0.010000000000218279,
+      "text": "wavelengths such that I will get I will"
+    },
+    {
+      "start": 1095.88,
+      "duration": 1.7889999999999873,
+      "text": "wavelengths such that I will get I will I will get one specific location where"
+    },
+    {
+      "start": 1097.669,
+      "duration": 0.009999999999990905,
+      "text": "I will get one specific location where"
+    },
+    {
+      "start": 1097.679,
+      "duration": 1.4699999999998,
+      "text": "I will get one specific location where there's a high amplitude and almost zero"
+    },
+    {
+      "start": 1099.149,
+      "duration": 0.010000000000218279,
+      "text": "there's a high amplitude and almost zero"
+    },
+    {
+      "start": 1099.159,
+      "duration": 2.3509999999998854,
+      "text": "there's a high amplitude and almost zero amplitude everywhere else now this is a"
+    },
+    {
+      "start": 1101.51,
+      "duration": 0.009999999999990905,
+      "text": "amplitude everywhere else now this is a"
+    },
+    {
+      "start": 1101.52,
+      "duration": 2.5499999999999545,
+      "text": "amplitude everywhere else now this is a highly localized electron the"
+    },
+    {
+      "start": 1104.07,
+      "duration": 0.009999999999990905,
+      "text": "highly localized electron the"
+    },
+    {
+      "start": 1104.08,
+      "duration": 1.469000000000051,
+      "text": "highly localized electron the probability of finding the electron is"
+    },
+    {
+      "start": 1105.549,
+      "duration": 0.009999999999990905,
+      "text": "probability of finding the electron is"
+    },
+    {
+      "start": 1105.559,
+      "duration": 1.831000000000131,
+      "text": "probability of finding the electron is super high in this region that means the"
+    },
+    {
+      "start": 1107.39,
+      "duration": 0.009999999999990905,
+      "text": "super high in this region that means the"
+    },
+    {
+      "start": 1107.4,
+      "duration": 2.709999999999809,
+      "text": "super high in this region that means the uncertainty has gone down down"
+    },
+    {
+      "start": 1110.11,
+      "duration": 0.009999999999990905,
+      "text": "uncertainty has gone down down"
+    },
+    {
+      "start": 1110.12,
+      "duration": 2.8700000000001182,
+      "text": "uncertainty has gone down down dramatically but because I've added so"
+    },
+    {
+      "start": 1112.99,
+      "duration": 0.009999999999990905,
+      "text": "dramatically but because I've added so"
+    },
+    {
+      "start": 1113.0,
+      "duration": 2.1099999999999,
+      "text": "dramatically but because I've added so many waves of different wavelength it"
+    },
+    {
+      "start": 1115.11,
+      "duration": 0.009999999999990905,
+      "text": "many waves of different wavelength it"
+    },
+    {
+      "start": 1115.12,
+      "duration": 2.5900000000001455,
+      "text": "many waves of different wavelength it has so many values of momenta that means"
+    },
+    {
+      "start": 1117.71,
+      "duration": 0.009999999999990905,
+      "text": "has so many values of momenta that means"
+    },
+    {
+      "start": 1117.72,
+      "duration": 1.990000000000009,
+      "text": "has so many values of momenta that means its uncertainty in the momentum has gone"
+    },
+    {
+      "start": 1119.71,
+      "duration": 0.009999999999990905,
+      "text": "its uncertainty in the momentum has gone"
+    },
+    {
+      "start": 1119.72,
+      "duration": 3.4700000000000273,
+      "text": "its uncertainty in the momentum has gone up so this is it this is the uncertainty"
+    },
+    {
+      "start": 1123.19,
+      "duration": 0.009999999999990905,
+      "text": "up so this is it this is the uncertainty"
+    },
+    {
+      "start": 1123.2,
+      "duration": 1.7899999999999636,
+      "text": "up so this is it this is the uncertainty principle nothing to do with the"
+    },
+    {
+      "start": 1124.99,
+      "duration": 0.009999999999990905,
+      "text": "principle nothing to do with the"
+    },
+    {
+      "start": 1125.0,
+      "duration": 1.7889999999999873,
+      "text": "principle nothing to do with the measurement nothing to do with our"
+    },
+    {
+      "start": 1126.789,
+      "duration": 0.009999999999990905,
+      "text": "measurement nothing to do with our"
+    },
+    {
+      "start": 1126.799,
+      "duration": 2.230000000000018,
+      "text": "measurement nothing to do with our instruments but inherently how Quantum"
+    },
+    {
+      "start": 1129.029,
+      "duration": 0.009999999999990905,
+      "text": "instruments but inherently how Quantum"
+    },
+    {
+      "start": 1129.039,
+      "duration": 2.7110000000000127,
+      "text": "instruments but inherently how Quantum objects work just think about this try"
+    },
+    {
+      "start": 1131.75,
+      "duration": 0.009999999999990905,
+      "text": "objects work just think about this try"
+    },
+    {
+      "start": 1131.76,
+      "duration": 1.5899999999999181,
+      "text": "objects work just think about this try to create a quantum object in your head"
+    },
+    {
+      "start": 1133.35,
+      "duration": 0.009999999999990905,
+      "text": "to create a quantum object in your head"
+    },
+    {
+      "start": 1133.36,
+      "duration": 2.0700000000001637,
+      "text": "to create a quantum object in your head which has a perfect value for momentum"
+    },
+    {
+      "start": 1135.43,
+      "duration": 0.009999999999990905,
+      "text": "which has a perfect value for momentum"
+    },
+    {
+      "start": 1135.44,
+      "duration": 2.3099999999999454,
+      "text": "which has a perfect value for momentum and a perfect value for position it's"
+    },
+    {
+      "start": 1137.75,
+      "duration": 0.009999999999990905,
+      "text": "and a perfect value for position it's"
+    },
+    {
+      "start": 1137.76,
+      "duration": 1.7889999999999873,
+      "text": "and a perfect value for position it's not possible"
+    },
+    {
+      "start": 1139.549,
+      "duration": 0.009999999999990905,
+      "text": "not possible"
+    },
+    {
+      "start": 1139.559,
+      "duration": 2.831000000000131,
+      "text": "not possible okay and that's the uncertainty"
+    },
+    {
+      "start": 1142.39,
+      "duration": 0.009999999999990905,
+      "text": "okay and that's the uncertainty"
+    },
+    {
+      "start": 1142.4,
+      "duration": 2.4699999999998,
+      "text": "okay and that's the uncertainty principle that's why if you take their"
+    },
+    {
+      "start": 1144.87,
+      "duration": 0.010000000000218279,
+      "text": "principle that's why if you take their"
+    },
+    {
+      "start": 1144.88,
+      "duration": 2.229999999999791,
+      "text": "principle that's why if you take their product it should have a minimum value"
+    },
+    {
+      "start": 1147.11,
+      "duration": 0.009999999999990905,
+      "text": "product it should have a minimum value"
+    },
+    {
+      "start": 1147.12,
+      "duration": 1.990000000000009,
+      "text": "product it should have a minimum value Heisenberg said and that minimum value"
+    },
+    {
+      "start": 1149.11,
+      "duration": 0.009999999999990905,
+      "text": "Heisenberg said and that minimum value"
+    },
+    {
+      "start": 1149.12,
+      "duration": 2.0289999999999964,
+      "text": "Heisenberg said and that minimum value happens to be H divid 4 Pi we can derive"
+    },
+    {
+      "start": 1151.149,
+      "duration": 0.010000000000218279,
+      "text": "happens to be H divid 4 Pi we can derive"
+    },
+    {
+      "start": 1151.159,
+      "duration": 1.4309999999998126,
+      "text": "happens to be H divid 4 Pi we can derive this as well intuitively which we'll"
+    },
+    {
+      "start": 1152.59,
+      "duration": 0.009999999999990905,
+      "text": "this as well intuitively which we'll"
+    },
+    {
+      "start": 1152.6,
+      "duration": 2.75,
+      "text": "this as well intuitively which we'll probably do in a separate video but at"
+    },
+    {
+      "start": 1155.35,
+      "duration": 0.009999999999990905,
+      "text": "probably do in a separate video but at"
+    },
+    {
+      "start": 1155.36,
+      "duration": 2.509999999999991,
+      "text": "probably do in a separate video but at least we got the essence of it right"
+    },
+    {
+      "start": 1157.87,
+      "duration": 0.010000000000218279,
+      "text": "least we got the essence of it right"
+    },
+    {
+      "start": 1157.88,
+      "duration": 1.9899999999997817,
+      "text": "least we got the essence of it right finally f one how does the uncertainty"
+    },
+    {
+      "start": 1159.87,
+      "duration": 0.010000000000218279,
+      "text": "finally f one how does the uncertainty"
+    },
+    {
+      "start": 1159.88,
+      "duration": 2.709999999999809,
+      "text": "finally f one how does the uncertainty principle stabilize the atom well if you"
+    },
+    {
+      "start": 1162.59,
+      "duration": 0.009999999999990905,
+      "text": "principle stabilize the atom well if you"
+    },
+    {
+      "start": 1162.6,
+      "duration": 1.790000000000191,
+      "text": "principle stabilize the atom well if you go back to the classical model of the"
+    },
+    {
+      "start": 1164.39,
+      "duration": 0.009999999999990905,
+      "text": "go back to the classical model of the"
+    },
+    {
+      "start": 1164.4,
+      "duration": 1.4699999999998,
+      "text": "go back to the classical model of the atom where the electron is going around"
+    },
+    {
+      "start": 1165.87,
+      "duration": 0.010000000000218279,
+      "text": "atom where the electron is going around"
+    },
+    {
+      "start": 1165.88,
+      "duration": 2.4299999999998363,
+      "text": "atom where the electron is going around the proton say in the hydrogen atom then"
+    },
+    {
+      "start": 1168.31,
+      "duration": 0.009999999999990905,
+      "text": "the proton say in the hydrogen atom then"
+    },
+    {
+      "start": 1168.32,
+      "duration": 1.469000000000051,
+      "text": "the proton say in the hydrogen atom then this can cannot work because the"
+    },
+    {
+      "start": 1169.789,
+      "duration": 0.009999999999990905,
+      "text": "this can cannot work because the"
+    },
+    {
+      "start": 1169.799,
+      "duration": 2.5109999999999673,
+      "text": "this can cannot work because the electrons are charged particles so"
+    },
+    {
+      "start": 1172.31,
+      "duration": 0.009999999999990905,
+      "text": "electrons are charged particles so"
+    },
+    {
+      "start": 1172.32,
+      "duration": 2.0700000000001637,
+      "text": "electrons are charged particles so charged particles when they accelerate"
+    },
+    {
+      "start": 1174.39,
+      "duration": 0.009999999999990905,
+      "text": "charged particles when they accelerate"
+    },
+    {
+      "start": 1174.4,
+      "duration": 2.0299999999999727,
+      "text": "charged particles when they accelerate they should lose energy to radiation"
+    },
+    {
+      "start": 1176.43,
+      "duration": 0.009999999999990905,
+      "text": "they should lose energy to radiation"
+    },
+    {
+      "start": 1176.44,
+      "duration": 2.229000000000042,
+      "text": "they should lose energy to radiation which means as it loses energy it should"
+    },
+    {
+      "start": 1178.669,
+      "duration": 0.009999999999990905,
+      "text": "which means as it loses energy it should"
+    },
+    {
+      "start": 1178.679,
+      "duration": 3.15099999999984,
+      "text": "which means as it loses energy it should plummet into the proton but that doesn't"
+    },
+    {
+      "start": 1181.83,
+      "duration": 0.009999999999990905,
+      "text": "plummet into the proton but that doesn't"
+    },
+    {
+      "start": 1181.84,
+      "duration": 3.189000000000078,
+      "text": "plummet into the proton but that doesn't happen why nobody had a real answer for"
+    },
+    {
+      "start": 1185.029,
+      "duration": 0.009999999999990905,
+      "text": "happen why nobody had a real answer for"
+    },
+    {
+      "start": 1185.039,
+      "duration": 1.7110000000000127,
+      "text": "happen why nobody had a real answer for this but Heisenberg's uncertainty"
+    },
+    {
+      "start": 1186.75,
+      "duration": 0.009999999999990905,
+      "text": "this but Heisenberg's uncertainty"
+    },
+    {
+      "start": 1186.76,
+      "duration": 1.5499999999999545,
+      "text": "this but Heisenberg's uncertainty principle can help us understand why"
+    },
+    {
+      "start": 1188.31,
+      "duration": 0.009999999999990905,
+      "text": "principle can help us understand why"
+    },
+    {
+      "start": 1188.32,
+      "duration": 1.9500000000000455,
+      "text": "principle can help us understand why that cannot happen the simple answer is"
+    },
+    {
+      "start": 1190.27,
+      "duration": 0.009999999999990905,
+      "text": "that cannot happen the simple answer is"
+    },
+    {
+      "start": 1190.28,
+      "duration": 2.6700000000000728,
+      "text": "that cannot happen the simple answer is electrons are not simple particles they"
+    },
+    {
+      "start": 1192.95,
+      "duration": 0.009999999999990905,
+      "text": "electrons are not simple particles they"
+    },
+    {
+      "start": 1192.96,
+      "duration": 2.188999999999851,
+      "text": "electrons are not simple particles they are quantum objects so think about it"
+    },
+    {
+      "start": 1195.149,
+      "duration": 0.010000000000218279,
+      "text": "are quantum objects so think about it"
+    },
+    {
+      "start": 1195.159,
+      "duration": 2.75,
+      "text": "are quantum objects so think about it this way the uncertainty in the position"
+    },
+    {
+      "start": 1197.909,
+      "duration": 0.009999999999990905,
+      "text": "this way the uncertainty in the position"
+    },
+    {
+      "start": 1197.919,
+      "duration": 2.0709999999999127,
+      "text": "this way the uncertainty in the position of the electron is pretty much the size"
+    },
+    {
+      "start": 1199.99,
+      "duration": 0.009999999999990905,
+      "text": "of the electron is pretty much the size"
+    },
+    {
+      "start": 1200.0,
+      "duration": 1.509999999999991,
+      "text": "of the electron is pretty much the size of the atom right if the atom is so big"
+    },
+    {
+      "start": 1201.51,
+      "duration": 0.009999999999990905,
+      "text": "of the atom right if the atom is so big"
+    },
+    {
+      "start": 1201.52,
+      "duration": 1.2300000000000182,
+      "text": "of the atom right if the atom is so big we know the electron has to be somewhere"
+    },
+    {
+      "start": 1202.75,
+      "duration": 0.009999999999990905,
+      "text": "we know the electron has to be somewhere"
+    },
+    {
+      "start": 1202.76,
+      "duration": 1.9500000000000455,
+      "text": "we know the electron has to be somewhere over here and not somewhere over here so"
+    },
+    {
+      "start": 1204.71,
+      "duration": 0.009999999999990905,
+      "text": "over here and not somewhere over here so"
+    },
+    {
+      "start": 1204.72,
+      "duration": 1.2699999999999818,
+      "text": "over here and not somewhere over here so there's a high chance of finding the"
+    },
+    {
+      "start": 1205.99,
+      "duration": 0.009999999999990905,
+      "text": "there's a high chance of finding the"
+    },
+    {
+      "start": 1206.0,
+      "duration": 2.0289999999999964,
+      "text": "there's a high chance of finding the electron over here so its uncertainty is"
+    },
+    {
+      "start": 1208.029,
+      "duration": 0.009999999999990905,
+      "text": "electron over here so its uncertainty is"
+    },
+    {
+      "start": 1208.039,
+      "duration": 1.9510000000000218,
+      "text": "electron over here so its uncertainty is over here now if there if the electron"
+    },
+    {
+      "start": 1209.99,
+      "duration": 0.009999999999990905,
+      "text": "over here now if there if the electron"
+    },
+    {
+      "start": 1210.0,
+      "duration": 1.8299999999999272,
+      "text": "over here now if there if the electron were to plummet towards the nucleus"
+    },
+    {
+      "start": 1211.83,
+      "duration": 0.009999999999990905,
+      "text": "were to plummet towards the nucleus"
+    },
+    {
+      "start": 1211.84,
+      "duration": 2.4300000000000637,
+      "text": "were to plummet towards the nucleus towards the proton then its uncertainty"
+    },
+    {
+      "start": 1214.27,
+      "duration": 0.009999999999990905,
+      "text": "towards the proton then its uncertainty"
+    },
+    {
+      "start": 1214.28,
+      "duration": 2.3099999999999454,
+      "text": "towards the proton then its uncertainty would reduce and if the uncertainty in"
+    },
+    {
+      "start": 1216.59,
+      "duration": 0.009999999999990905,
+      "text": "would reduce and if the uncertainty in"
+    },
+    {
+      "start": 1216.6,
+      "duration": 1.8700000000001182,
+      "text": "would reduce and if the uncertainty in the position becomes very small its"
+    },
+    {
+      "start": 1218.47,
+      "duration": 0.009999999999990905,
+      "text": "the position becomes very small its"
+    },
+    {
+      "start": 1218.48,
+      "duration": 1.8299999999999272,
+      "text": "the position becomes very small its uncertainty in the momentum would become"
+    },
+    {
+      "start": 1220.31,
+      "duration": 0.009999999999990905,
+      "text": "uncertainty in the momentum would become"
+    },
+    {
+      "start": 1220.32,
+      "duration": 1.9100000000000819,
+      "text": "uncertainty in the momentum would become very large meaning the electron would"
+    },
+    {
+      "start": 1222.23,
+      "duration": 0.009999999999990905,
+      "text": "very large meaning the electron would"
+    },
+    {
+      "start": 1222.24,
+      "duration": 2.230000000000018,
+      "text": "very large meaning the electron would now have much larger velocity which"
+    },
+    {
+      "start": 1224.47,
+      "duration": 0.009999999999990905,
+      "text": "now have much larger velocity which"
+    },
+    {
+      "start": 1224.48,
+      "duration": 2.75,
+      "text": "now have much larger velocity which could actually Propel it"
+    },
+    {
+      "start": 1227.23,
+      "duration": 0.009999999999990905,
+      "text": "could actually Propel it"
+    },
+    {
+      "start": 1227.24,
+      "duration": 2.589999999999918,
+      "text": "could actually Propel it outwards and that that's why because of"
+    },
+    {
+      "start": 1229.83,
+      "duration": 0.009999999999990905,
+      "text": "outwards and that that's why because of"
+    },
+    {
+      "start": 1229.84,
+      "duration": 2.5900000000001455,
+      "text": "outwards and that that's why because of that undefined very large momentum it"
+    },
+    {
+      "start": 1232.43,
+      "duration": 0.009999999999990905,
+      "text": "that undefined very large momentum it"
+    },
+    {
+      "start": 1232.44,
+      "duration": 2.1900000000000546,
+      "text": "that undefined very large momentum it will not be able to S it will not"
+    },
+    {
+      "start": 1234.63,
+      "duration": 0.009999999999990905,
+      "text": "will not be able to S it will not"
+    },
+    {
+      "start": 1234.64,
+      "duration": 1.990000000000009,
+      "text": "will not be able to S it will not actually fall into the nucleus it will"
+    },
+    {
+      "start": 1236.63,
+      "duration": 0.009999999999990905,
+      "text": "actually fall into the nucleus it will"
+    },
+    {
+      "start": 1236.64,
+      "duration": 2.3099999999999454,
+      "text": "actually fall into the nucleus it will come right back up so the uncertainty"
+    },
+    {
+      "start": 1238.95,
+      "duration": 0.009999999999990905,
+      "text": "come right back up so the uncertainty"
+    },
+    {
+      "start": 1238.96,
+      "duration": 2.269999999999982,
+      "text": "come right back up so the uncertainty principle ensures electrons do not lose"
+    },
+    {
+      "start": 1241.23,
+      "duration": 0.009999999999990905,
+      "text": "principle ensures electrons do not lose"
+    },
+    {
+      "start": 1241.24,
+      "duration": 2.869999999999891,
+      "text": "principle ensures electrons do not lose energy and fall into the nucleus it's"
+    },
+    {
+      "start": 1244.11,
+      "duration": 0.009999999999990905,
+      "text": "energy and fall into the nucleus it's"
+    },
+    {
+      "start": 1244.12,
+      "duration": 2.150000000000091,
+      "text": "energy and fall into the nucleus it's the principle because of which electron"
+    },
+    {
+      "start": 1246.27,
+      "duration": 0.009999999999990905,
+      "text": "the principle because of which electron"
+    },
+    {
+      "start": 1246.28,
+      "duration": 2.7490000000000236,
+      "text": "the principle because of which electron has to be having some energy and stay"
+    },
+    {
+      "start": 1249.029,
+      "duration": 0.009999999999990905,
+      "text": "has to be having some energy and stay"
+    },
+    {
+      "start": 1249.039,
+      "duration": 2.310999999999922,
+      "text": "has to be having some energy and stay away from the nucleus and that's the"
+    },
+    {
+      "start": 1251.35,
+      "duration": 0.009999999999990905,
+      "text": "away from the nucleus and that's the"
+    },
+    {
+      "start": 1251.36,
+      "duration": 2.3090000000001965,
+      "text": "away from the nucleus and that's the reason why today we think of it in terms"
+    },
+    {
+      "start": 1253.669,
+      "duration": 0.009999999999990905,
+      "text": "reason why today we think of it in terms"
+    },
+    {
+      "start": 1253.679,
+      "duration": 2.7110000000000127,
+      "text": "reason why today we think of it in terms of an electron cloud the uncertainty"
+    },
+    {
+      "start": 1256.39,
+      "duration": 0.009999999999990905,
+      "text": "of an electron cloud the uncertainty"
+    },
+    {
+      "start": 1256.4,
+      "duration": 2.2690000000000055,
+      "text": "of an electron cloud the uncertainty principle saves the atom it stabilizes"
+    },
+    {
+      "start": 1258.669,
+      "duration": 0.009999999999990905,
+      "text": "principle saves the atom it stabilizes"
+    },
+    {
+      "start": 1258.679,
+      "duration": 2.990000000000009,
+      "text": "principle saves the atom it stabilizes the atom and allows everything to exist"
+    },
+    {
+      "start": 1261.669,
+      "duration": 0.009999999999990905,
+      "text": "the atom and allows everything to exist"
+    },
+    {
+      "start": 1261.679,
+      "duration": 3.270999999999958,
+      "text": "the atom and allows everything to exist including you and me so what do you"
+    },
+    {
+      "start": 1264.95,
+      "duration": 0.009999999999990905,
+      "text": "including you and me so what do you"
+    },
+    {
+      "start": 1264.96,
+      "duration": 1.3899999999998727,
+      "text": "including you and me so what do you think about this do you think you now"
+    },
+    {
+      "start": 1266.35,
+      "duration": 0.009999999999990905,
+      "text": "think about this do you think you now"
+    },
+    {
+      "start": 1266.36,
+      "duration": 2.0300000000002,
+      "text": "think about this do you think you now have a much better intuition for the"
+    },
+    {
+      "start": 1268.39,
+      "duration": 0.009999999999990905,
+      "text": "have a much better intuition for the"
+    },
+    {
+      "start": 1268.4,
+      "duration": 1.990000000000009,
+      "text": "have a much better intuition for the uncertainty principal and much better"
+    },
+    {
+      "start": 1270.39,
+      "duration": 0.009999999999990905,
+      "text": "uncertainty principal and much better"
+    },
+    {
+      "start": 1270.4,
+      "duration": 2.7489999999997963,
+      "text": "uncertainty principal and much better appreciation for it as well if you did"
+    },
+    {
+      "start": 1273.149,
+      "duration": 0.010000000000218279,
+      "text": "appreciation for it as well if you did"
+    },
+    {
+      "start": 1273.159,
+      "duration": 2.3899999999998727,
+      "text": "appreciation for it as well if you did let me know and uh yeah stay tuned And"
+    },
+    {
+      "start": 1275.549,
+      "duration": 0.009999999999990905,
+      "text": "let me know and uh yeah stay tuned And"
+    },
+    {
+      "start": 1275.559,
+      "duration": 1.8710000000000946,
+      "text": "let me know and uh yeah stay tuned And subscribe if you want more Quantum"
+    },
+    {
+      "start": 1277.43,
+      "duration": 0.009999999999990905,
+      "text": "subscribe if you want more Quantum"
+    },
+    {
+      "start": 1277.44,
+      "duration": 5.0,
+      "text": "subscribe if you want more Quantum mechanic stuff it's coming soon see you"
+    }
+  ],
+  "fetched_at": "2026-05-04T20:45:51Z"
+}

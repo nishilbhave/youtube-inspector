@@ -1,0 +1,26 @@
+{
+  "video_id": "erEgovG9WBs",
+  "sections": [
+    {
+      "id": "S1",
+      "type": "hook",
+      "start": "0:00",
+      "end": "0:32",
+      "summary": "Frames web development as a high-impact, lucrative field and announces the video will cover 101 concepts needed to build full-stack web apps."
+    },
+    {
+      "id": "S2",
+      "type": "content",
+      "start": "0:32",
+      "end": "13:13",
+      "summary": "Rapid-fire walkthrough of foundational web development concepts spanning the internet and protocols, HTML, CSS, JavaScript and the DOM, frameworks, Node.js and npm, HTTP and APIs, SEO, build tooling, and hosting/deployment options."
+    },
+    {
+      "id": "S3",
+      "type": "outro",
+      "start": "13:13",
+      "end": "13:18",
+      "summary": "Congratulates viewers on completing 'web development 101', thanks them for watching, and signs off until the next video."
+    }
+  ]
+}

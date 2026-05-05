@@ -1,0 +1,78 @@
+{
+  "video_id": "erEgovG9WBs",
+  "by_section": {
+    "S1": {
+      "concrete_claims": [
+        { "timestamp": "0:03", "quote": "you build on a platform with nearly 5 billion daily active users", "paraphrase": "The web reaches roughly 5 billion daily active users." },
+        { "timestamp": "0:27", "quote": "different concepts that you'll need to know when building full stack web apps", "paraphrase": "The video will cover concepts needed for building full-stack web apps." }
+      ],
+      "vague_claims": [
+        { "timestamp": "0:01", "quote": "web development is the best job in the world", "paraphrase": "Web development is portrayed as the best job available." },
+        { "timestamp": "0:19", "quote": "make tons and tons of money", "paraphrase": "Web development can produce large amounts of income." }
+      ],
+      "evidence_shown": [
+        { "timestamp": "0:41", "quote": "Allison can you explain what internet is", "evidence_type": "anecdote" }
+      ],
+      "pitches": []
+    },
+    "S2": {
+      "concrete_claims": [
+        { "timestamp": "0:42", "quote": "officially born on January 1st 1983", "paraphrase": "The internet's official birth date is January 1, 1983." },
+        { "timestamp": "0:46", "quote": "establishment of the Internet Protocol Suite", "paraphrase": "The Internet Protocol Suite standardized computer-to-computer communication." },
+        { "timestamp": "0:59", "quote": "the transmission control protocol", "paraphrase": "TCP is named as the protocol that breaks data into packets." },
+        { "timestamp": "1:08", "quote": "fiber optic cables and modems", "paraphrase": "Data travels over physical components like fiber optic cables and modems." },
+        { "timestamp": "1:21", "quote": "hypertext transfer protocol", "paraphrase": "HTTP is named as the protocol used to access web pages." },
+        { "timestamp": "1:27", "quote": "uniform resource locator or URL", "paraphrase": "Each page is given a unique URL." },
+        { "timestamp": "1:53", "quote": "fireship doio or example.com", "paraphrase": "Examples of domain names include fireship.io and example.com." },
+        { "timestamp": "1:58", "quote": "registar whose accredit by ican", "paraphrase": "Domains are obtained from registrars accredited by ICANN." },
+        { "timestamp": "2:17", "quote": "the actual content you see is represented by hypertext markup language", "paraphrase": "Web page content is represented in HTML." },
+        { "timestamp": "2:19", "quote": "browsers have Dev tools", "paraphrase": "Most browsers ship with developer tools." },
+        { "timestamp": "3:04", "quote": "document object model or Dom", "paraphrase": "Nested HTML elements form the Document Object Model." },
+        { "timestamp": "3:50", "quote": "a web developer is cascading stylesheets", "paraphrase": "CSS is named as a core language for web developers." },
+        { "timestamp": "5:06", "quote": "wrapped with padding border and", "paraphrase": "Each element is wrapped with padding, border, and margin in the box model." },
+        { "timestamp": "6:11", "quote": "flexbox applying display Flex", "paraphrase": "Flexbox is activated by applying display: flex." },
+        { "timestamp": "6:23", "quote": "CSS is usually not considered a turing", "paraphrase": "CSS is generally not considered a Turing-complete language." },
+        { "timestamp": "6:39", "quote": "extend it with tools like SAS", "paraphrase": "Developers extend CSS with tools like Sass." },
+        { "timestamp": "7:13", "quote": "the defer attribute", "paraphrase": "The defer attribute can run scripts after DOM content has loaded." },
+        { "timestamp": "7:17", "quote": "is more formally known as ecmascript", "paraphrase": "JavaScript is formally known as ECMAScript." },
+        { "timestamp": "7:24", "quote": "be reassigned in the future uses the let", "paraphrase": "Variables that may be reassigned use the let keyword." },
+        { "timestamp": "7:35", "quote": "typescript as an alternative", "paraphrase": "TypeScript is presented as an alternative that adds static typing." },
+        { "timestamp": "7:57", "quote": "called query selector", "paraphrase": "document.querySelector retrieves elements by CSS selector." },
+        { "timestamp": "8:28", "quote": "prototypal inheritance", "paraphrase": "JavaScript objects rely on prototypal inheritance." },
+        { "timestamp": "8:54", "quote": "react view spelt angular and so on", "paraphrase": "Front-end frameworks named include React, Vue, Svelte, and Angular." },
+        { "timestamp": "9:22", "quote": "node.js which is a", "paraphrase": "Node.js is introduced as a server-side JavaScript runtime." },
+        { "timestamp": "9:35", "quote": "same V8 engine that powers the Chromium", "paraphrase": "Node uses the V8 engine that powers Chromium." },
+        { "timestamp": "9:39", "quote": "non-blocking event Loop", "paraphrase": "Node uses a non-blocking event loop for I/O." },
+        { "timestamp": "9:48", "quote": "node package manager", "paraphrase": "npm is the Node package manager." },
+        { "timestamp": "10:36", "quote": "404 status code", "paraphrase": "404 is named as an HTTP error status code." },
+        { "timestamp": "11:22", "quote": "Static site generation", "paraphrase": "Static site generation is named as a rendering pattern." },
+        { "timestamp": "11:39", "quote": "use tools like Lighthouse", "paraphrase": "Lighthouse is named as a performance optimization tool." },
+        { "timestamp": "11:41", "quote": "first contentful paint", "paraphrase": "First contentful paint is named as a performance metric." },
+        { "timestamp": "11:47", "quote": "use a full stack framework like nextjs", "paraphrase": "Next.js is named as a full-stack framework." },
+        { "timestamp": "11:49", "quote": "Ruby on Rails laravel and so on", "paraphrase": "Ruby on Rails and Laravel are named as full-stack frameworks." },
+        { "timestamp": "11:57", "quote": "tools like webpack", "paraphrase": "Webpack is named as a module bundler." },
+        { "timestamp": "12:05", "quote": "linter like es lint", "paraphrase": "ESLint is named as a JavaScript linter." },
+        { "timestamp": "12:23", "quote": "user authentication", "paraphrase": "User authentication is required to log users in." },
+        { "timestamp": "12:27", "quote": "tools like engine X", "paraphrase": "Nginx is named as a web server tool." },
+        { "timestamp": "12:40", "quote": "cloud provider like AWS", "paraphrase": "AWS is named as a major cloud provider for deployment." },
+        { "timestamp": "12:42", "quote": "containerized with Docker", "paraphrase": "Most apps are containerized with Docker." },
+        { "timestamp": "12:49", "quote": "platform as a service", "paraphrase": "Platform-as-a-service tools manage infrastructure for a fee." },
+        { "timestamp": "12:58", "quote": "decent calized blockchain with web 3", "paraphrase": "Web 3 deployment uses a decentralized blockchain." },
+        { "timestamp": "13:01", "quote": "1% of what you'll need", "paraphrase": "The video covers about 1% of what is needed to be a full-stack developer." }
+      ],
+      "vague_claims": [
+        { "timestamp": "13:06", "quote": "almost nobody knows", "paraphrase": "Almost nobody knows what they are doing in web development." }
+      ],
+      "evidence_shown": [],
+      "pitches": [
+        { "timestamp": "3:34", "quote": "smash that like button and subscribe one of", "target": "other" }
+      ]
+    },
+    "S3": {
+      "concrete_claims": [],
+      "vague_claims": [],
+      "evidence_shown": [],
+      "pitches": []
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "video_id": "6TXvaWX5OFk",
+  "sections": [
+    {
+      "id": "S1",
+      "type": "hook",
+      "start": "0:00",
+      "end": "3:08",
+      "summary": "Creator introduces Heisenberg's uncertainty principle, walks through the classic tennis-ball analogy and the measurement-disturbance explanation, dismisses both as inadequate, and promises a rigorous intuition rediscovered via Feynman's lectures."
+    },
+    {
+      "id": "S2",
+      "type": "content",
+      "start": "3:08",
+      "end": "9:36",
+      "summary": "Explains wave-particle duality as a distinct third category, traces the history of light as wave then quanta, and derives how momentum of quantum objects relates to wavelength via p = h/lambda."
+    },
+    {
+      "id": "S3",
+      "type": "pitch",
+      "start": "9:36",
+      "end": "10:43",
+      "summary": "Sponsor read for Brilliant.org, highlighting interactive simulations and a quantum mechanics course, with a 30-day free trial and discount link at brilliant.org/floatheadphysics."
+    },
+    {
+      "id": "S4",
+      "type": "content",
+      "start": "10:43",
+      "end": "21:04",
+      "summary": "Builds wave packets by superposing waves to localize position, shows that narrowing position spreads momentum and vice versa, derives the uncertainty relation, and applies it to explain why atoms are stable."
+    },
+    {
+      "id": "S5",
+      "type": "outro",
+      "start": "21:04",
+      "end": "21:22",
+      "summary": "Asks viewers if they now have better intuition for the principle, invites comments, and prompts them to subscribe for more quantum mechanics videos."
+    }
+  ]
+}

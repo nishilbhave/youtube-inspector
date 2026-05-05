@@ -1,0 +1,4144 @@
+{
+  "video_id": "erEgovG9WBs",
+  "url": "https://www.youtube.com/watch?v=erEgovG9WBs",
+  "title": "100+ Web Development Things you Should Know",
+  "channel": "Fireship",
+  "channel_id": "UCsBjURrPoezykLs9EqgamOA",
+  "duration_seconds": 798,
+  "view_count": 1919690,
+  "upload_date": "2022-06-14",
+  "language": "en-orig",
+  "transcript": [
+    {
+      "start": 1.949,
+      "duration": 0.010000000000000009,
+      "text": "web development is the best job in the"
+    },
+    {
+      "start": 1.959,
+      "duration": 1.5110000000000001,
+      "text": "web development is the best job in the world you build on a platform with"
+    },
+    {
+      "start": 3.47,
+      "duration": 0.009999999999999787,
+      "text": "world you build on a platform with"
+    },
+    {
+      "start": 3.48,
+      "duration": 2.11,
+      "text": "world you build on a platform with nearly 5 billion daily active users all"
+    },
+    {
+      "start": 5.59,
+      "duration": 0.009999999999999787,
+      "text": "nearly 5 billion daily active users all"
+    },
+    {
+      "start": 5.6,
+      "duration": 1.87,
+      "text": "nearly 5 billion daily active users all connected together like the neurons of a"
+    },
+    {
+      "start": 7.47,
+      "duration": 0.010000000000000675,
+      "text": "connected together like the neurons of a"
+    },
+    {
+      "start": 7.48,
+      "duration": 2.3499999999999996,
+      "text": "connected together like the neurons of a global super intelligent brain A system"
+    },
+    {
+      "start": 9.83,
+      "duration": 0.009999999999999787,
+      "text": "global super intelligent brain A system"
+    },
+    {
+      "start": 9.84,
+      "duration": 2.1099999999999994,
+      "text": "global super intelligent brain A system that can cure disease eliminate poverty"
+    },
+    {
+      "start": 11.95,
+      "duration": 0.010000000000001563,
+      "text": "that can cure disease eliminate poverty"
+    },
+    {
+      "start": 11.96,
+      "duration": 1.9899999999999984,
+      "text": "that can cure disease eliminate poverty Advance science and stuff like that but"
+    },
+    {
+      "start": 13.95,
+      "duration": 0.010000000000001563,
+      "text": "Advance science and stuff like that but"
+    },
+    {
+      "start": 13.96,
+      "duration": 1.5889999999999986,
+      "text": "Advance science and stuff like that but mostly it's used to share memes create"
+    },
+    {
+      "start": 15.549,
+      "duration": 0.009999999999999787,
+      "text": "mostly it's used to share memes create"
+    },
+    {
+      "start": 15.559,
+      "duration": 2.351000000000001,
+      "text": "mostly it's used to share memes create parasocial relationships amplify drama"
+    },
+    {
+      "start": 17.91,
+      "duration": 0.010000000000001563,
+      "text": "parasocial relationships amplify drama"
+    },
+    {
+      "start": 17.92,
+      "duration": 1.7899999999999991,
+      "text": "parasocial relationships amplify drama and most importantly make tons and tons"
+    },
+    {
+      "start": 19.71,
+      "duration": 0.00999999999999801,
+      "text": "and most importantly make tons and tons"
+    },
+    {
+      "start": 19.72,
+      "duration": 1.5489999999999995,
+      "text": "and most importantly make tons and tons of money if you want to get into it"
+    },
+    {
+      "start": 21.269,
+      "duration": 0.010000000000001563,
+      "text": "of money if you want to get into it"
+    },
+    {
+      "start": 21.279,
+      "duration": 1.431000000000001,
+      "text": "of money if you want to get into it you're going to need to know some stuff"
+    },
+    {
+      "start": 22.71,
+      "duration": 0.00999999999999801,
+      "text": "you're going to need to know some stuff"
+    },
+    {
+      "start": 22.72,
+      "duration": 1.6290000000000013,
+      "text": "you're going to need to know some stuff like a lot of stuff in web development"
+    },
+    {
+      "start": 24.349,
+      "duration": 0.010000000000001563,
+      "text": "like a lot of stuff in web development"
+    },
+    {
+      "start": 24.359,
+      "duration": 2.1499999999999986,
+      "text": "like a lot of stuff in web development 101 we'll take a look at 10 101"
+    },
+    {
+      "start": 26.509,
+      "duration": 0.00999999999999801,
+      "text": "101 we'll take a look at 10 101"
+    },
+    {
+      "start": 26.519,
+      "duration": 1.3910000000000018,
+      "text": "101 we'll take a look at 10 101 different concepts that you'll need to"
+    },
+    {
+      "start": 27.91,
+      "duration": 0.010000000000001563,
+      "text": "different concepts that you'll need to"
+    },
+    {
+      "start": 27.92,
+      "duration": 2.229999999999997,
+      "text": "different concepts that you'll need to know when building full stack web apps"
+    },
+    {
+      "start": 30.15,
+      "duration": 0.010000000000001563,
+      "text": "know when building full stack web apps"
+    },
+    {
+      "start": 30.16,
+      "duration": 1.7899999999999991,
+      "text": "know when building full stack web apps this is the Internet it's a network of"
+    },
+    {
+      "start": 31.95,
+      "duration": 0.010000000000001563,
+      "text": "this is the Internet it's a network of"
+    },
+    {
+      "start": 31.96,
+      "duration": 2.1899999999999977,
+      "text": "this is the Internet it's a network of billions of machines connected together"
+    },
+    {
+      "start": 34.15,
+      "duration": 0.00999999999999801,
+      "text": "billions of machines connected together"
+    },
+    {
+      "start": 34.16,
+      "duration": 1.8300000000000054,
+      "text": "billions of machines connected together what do you write to it like mail no a"
+    },
+    {
+      "start": 35.99,
+      "duration": 0.00999999999999801,
+      "text": "what do you write to it like mail no a"
+    },
+    {
+      "start": 36.0,
+      "duration": 1.75,
+      "text": "what do you write to it like mail no a lot of people use it and communicate I"
+    },
+    {
+      "start": 37.75,
+      "duration": 0.00999999999999801,
+      "text": "lot of people use it and communicate I"
+    },
+    {
+      "start": 37.76,
+      "duration": 1.5500000000000043,
+      "text": "lot of people use it and communicate I guess they can communicate with NBC"
+    },
+    {
+      "start": 39.31,
+      "duration": 0.00999999999999801,
+      "text": "guess they can communicate with NBC"
+    },
+    {
+      "start": 39.32,
+      "duration": 1.990000000000002,
+      "text": "guess they can communicate with NBC writers and producers Allison can you"
+    },
+    {
+      "start": 41.31,
+      "duration": 0.00999999999999801,
+      "text": "writers and producers Allison can you"
+    },
+    {
+      "start": 41.32,
+      "duration": 1.389000000000003,
+      "text": "writers and producers Allison can you explain what internet is it was"
+    },
+    {
+      "start": 42.709,
+      "duration": 0.00999999999999801,
+      "text": "explain what internet is it was"
+    },
+    {
+      "start": 42.719,
+      "duration": 2.7509999999999977,
+      "text": "explain what internet is it was officially born on January 1st 1983"
+    },
+    {
+      "start": 45.47,
+      "duration": 0.00999999999999801,
+      "text": "officially born on January 1st 1983"
+    },
+    {
+      "start": 45.48,
+      "duration": 1.470000000000006,
+      "text": "officially born on January 1st 1983 thanks to the establishment of the"
+    },
+    {
+      "start": 46.95,
+      "duration": 0.00999999999999801,
+      "text": "thanks to the establishment of the"
+    },
+    {
+      "start": 46.96,
+      "duration": 1.4699999999999989,
+      "text": "thanks to the establishment of the Internet Protocol Suite which"
+    },
+    {
+      "start": 48.43,
+      "duration": 0.00999999999999801,
+      "text": "Internet Protocol Suite which"
+    },
+    {
+      "start": 48.44,
+      "duration": 1.5500000000000043,
+      "text": "Internet Protocol Suite which standardized the way these computers"
+    },
+    {
+      "start": 49.99,
+      "duration": 0.00999999999999801,
+      "text": "standardized the way these computers"
+    },
+    {
+      "start": 50.0,
+      "duration": 1.75,
+      "text": "standardized the way these computers communicate the Internet Protocol is"
+    },
+    {
+      "start": 51.75,
+      "duration": 0.00999999999999801,
+      "text": "communicate the Internet Protocol is"
+    },
+    {
+      "start": 51.76,
+      "duration": 1.7890000000000015,
+      "text": "communicate the Internet Protocol is used to identify different computers on"
+    },
+    {
+      "start": 53.549,
+      "duration": 0.00999999999999801,
+      "text": "used to identify different computers on"
+    },
+    {
+      "start": 53.559,
+      "duration": 1.7899999999999991,
+      "text": "used to identify different computers on the network by assigning each one of"
+    },
+    {
+      "start": 55.349,
+      "duration": 0.010000000000005116,
+      "text": "the network by assigning each one of"
+    },
+    {
+      "start": 55.359,
+      "duration": 2.271000000000001,
+      "text": "the network by assigning each one of them a unique IP address these computers"
+    },
+    {
+      "start": 57.63,
+      "duration": 0.00999999999999801,
+      "text": "them a unique IP address these computers"
+    },
+    {
+      "start": 57.64,
+      "duration": 1.6700000000000017,
+      "text": "them a unique IP address these computers can then send data back and forth with"
+    },
+    {
+      "start": 59.31,
+      "duration": 0.00999999999999801,
+      "text": "can then send data back and forth with"
+    },
+    {
+      "start": 59.32,
+      "duration": 2.0690000000000026,
+      "text": "can then send data back and forth with the transmission control protocol it"
+    },
+    {
+      "start": 61.389,
+      "duration": 0.00999999999999801,
+      "text": "the transmission control protocol it"
+    },
+    {
+      "start": 61.399,
+      "duration": 1.7109999999999985,
+      "text": "the transmission control protocol it breaks data into a bunch of small"
+    },
+    {
+      "start": 63.11,
+      "duration": 0.00999999999999801,
+      "text": "breaks data into a bunch of small"
+    },
+    {
+      "start": 63.12,
+      "duration": 1.7899999999999991,
+      "text": "breaks data into a bunch of small packets kind of like puzzle pieces then"
+    },
+    {
+      "start": 64.91,
+      "duration": 0.010000000000005116,
+      "text": "packets kind of like puzzle pieces then"
+    },
+    {
+      "start": 64.92,
+      "duration": 1.3900000000000006,
+      "text": "packets kind of like puzzle pieces then sends them through a bunch of physical"
+    },
+    {
+      "start": 66.31,
+      "duration": 0.009999999999990905,
+      "text": "sends them through a bunch of physical"
+    },
+    {
+      "start": 66.32,
+      "duration": 1.9100000000000108,
+      "text": "sends them through a bunch of physical components like fiber optic cables and"
+    },
+    {
+      "start": 68.23,
+      "duration": 0.009999999999990905,
+      "text": "components like fiber optic cables and"
+    },
+    {
+      "start": 68.24,
+      "duration": 1.710000000000008,
+      "text": "components like fiber optic cables and modems before they're put back together"
+    },
+    {
+      "start": 69.95,
+      "duration": 0.010000000000005116,
+      "text": "modems before they're put back together"
+    },
+    {
+      "start": 69.96000000000001,
+      "duration": 1.5899999999999892,
+      "text": "modems before they're put back together by the receiving computer you can think"
+    },
+    {
+      "start": 71.55,
+      "duration": 0.010000000000005116,
+      "text": "by the receiving computer you can think"
+    },
+    {
+      "start": 71.56,
+      "duration": 1.9089999999999918,
+      "text": "by the receiving computer you can think of the internet as Hardware but the"
+    },
+    {
+      "start": 73.469,
+      "duration": 0.010000000000005116,
+      "text": "of the internet as Hardware but the"
+    },
+    {
+      "start": 73.479,
+      "duration": 1.7909999999999968,
+      "text": "of the internet as Hardware but the internet is not the same thing as the"
+    },
+    {
+      "start": 75.27,
+      "duration": 0.010000000000005116,
+      "text": "internet is not the same thing as the"
+    },
+    {
+      "start": 75.28,
+      "duration": 2.3100000000000023,
+      "text": "internet is not the same thing as the web the worldwide web is like software"
+    },
+    {
+      "start": 77.59,
+      "duration": 0.009999999999990905,
+      "text": "web the worldwide web is like software"
+    },
+    {
+      "start": 77.6,
+      "duration": 1.6700000000000017,
+      "text": "web the worldwide web is like software that sits on top of the internet where"
+    },
+    {
+      "start": 79.27,
+      "duration": 0.010000000000005116,
+      "text": "that sits on top of the internet where"
+    },
+    {
+      "start": 79.28,
+      "duration": 1.9899999999999949,
+      "text": "that sits on top of the internet where people can access web pages with the"
+    },
+    {
+      "start": 81.27,
+      "duration": 0.010000000000005116,
+      "text": "people can access web pages with the"
+    },
+    {
+      "start": 81.28,
+      "duration": 1.9500000000000028,
+      "text": "people can access web pages with the hypertext transfer protocol what's"
+    },
+    {
+      "start": 83.23,
+      "duration": 0.009999999999990905,
+      "text": "hypertext transfer protocol what's"
+    },
+    {
+      "start": 83.24,
+      "duration": 1.6300000000000097,
+      "text": "hypertext transfer protocol what's special about it is that it gives every"
+    },
+    {
+      "start": 84.87,
+      "duration": 0.009999999999990905,
+      "text": "special about it is that it gives every"
+    },
+    {
+      "start": 84.88,
+      "duration": 2.2290000000000134,
+      "text": "special about it is that it gives every page of content a uniform resource"
+    },
+    {
+      "start": 87.10900000000001,
+      "duration": 0.009999999999990905,
+      "text": "page of content a uniform resource"
+    },
+    {
+      "start": 87.119,
+      "duration": 2.551000000000002,
+      "text": "page of content a uniform resource locator or URL humans typically use a"
+    },
+    {
+      "start": 89.67,
+      "duration": 0.010000000000005116,
+      "text": "locator or URL humans typically use a"
+    },
+    {
+      "start": 89.68,
+      "duration": 2.0689999999999884,
+      "text": "locator or URL humans typically use a tool tool called a web browser to access"
+    },
+    {
+      "start": 91.749,
+      "duration": 0.010000000000005116,
+      "text": "tool tool called a web browser to access"
+    },
+    {
+      "start": 91.759,
+      "duration": 1.9510000000000076,
+      "text": "tool tool called a web browser to access a URL where it can be rendered visually"
+    },
+    {
+      "start": 93.71000000000001,
+      "duration": 0.009999999999990905,
+      "text": "a URL where it can be rendered visually"
+    },
+    {
+      "start": 93.72,
+      "duration": 1.9099999999999966,
+      "text": "a URL where it can be rendered visually on their screen the browser is called"
+    },
+    {
+      "start": 95.63,
+      "duration": 0.010000000000005116,
+      "text": "on their screen the browser is called"
+    },
+    {
+      "start": 95.64,
+      "duration": 1.6700000000000017,
+      "text": "on their screen the browser is called the client because it's consuming"
+    },
+    {
+      "start": 97.31,
+      "duration": 0.009999999999990905,
+      "text": "the client because it's consuming"
+    },
+    {
+      "start": 97.32,
+      "duration": 1.8700000000000045,
+      "text": "the client because it's consuming information but on the other end of that"
+    },
+    {
+      "start": 99.19,
+      "duration": 0.010000000000005116,
+      "text": "information but on the other end of that"
+    },
+    {
+      "start": 99.2,
+      "duration": 2.0700000000000074,
+      "text": "information but on the other end of that URL there's another computer called a"
+    },
+    {
+      "start": 101.27000000000001,
+      "duration": 0.009999999999990905,
+      "text": "URL there's another computer called a"
+    },
+    {
+      "start": 101.28,
+      "duration": 2.269999999999996,
+      "text": "URL there's another computer called a server it received an HTTP request from"
+    },
+    {
+      "start": 103.55,
+      "duration": 0.010000000000005116,
+      "text": "server it received an HTTP request from"
+    },
+    {
+      "start": 103.56,
+      "duration": 1.75,
+      "text": "server it received an HTTP request from the client then sent a response"
+    },
+    {
+      "start": 105.31,
+      "duration": 0.009999999999990905,
+      "text": "the client then sent a response"
+    },
+    {
+      "start": 105.32,
+      "duration": 1.8700000000000045,
+      "text": "the client then sent a response containing the webpage content these are"
+    },
+    {
+      "start": 107.19,
+      "duration": 0.010000000000005116,
+      "text": "containing the webpage content these are"
+    },
+    {
+      "start": 107.2,
+      "duration": 2.4299999999999926,
+      "text": "containing the webpage content these are called HTTP messages but more on that"
+    },
+    {
+      "start": 109.63,
+      "duration": 0.010000000000005116,
+      "text": "called HTTP messages but more on that"
+    },
+    {
+      "start": 109.64,
+      "duration": 1.6700000000000017,
+      "text": "called HTTP messages but more on that later what's interesting is that every"
+    },
+    {
+      "start": 111.31,
+      "duration": 0.009999999999990905,
+      "text": "later what's interesting is that every"
+    },
+    {
+      "start": 111.32,
+      "duration": 2.2700000000000102,
+      "text": "later what's interesting is that every web page has a unique domain name like"
+    },
+    {
+      "start": 113.59,
+      "duration": 0.009999999999990905,
+      "text": "web page has a unique domain name like"
+    },
+    {
+      "start": 113.6,
+      "duration": 3.0700000000000074,
+      "text": "web page has a unique domain name like fireship doio or example.com a domain"
+    },
+    {
+      "start": 116.67,
+      "duration": 0.010000000000005116,
+      "text": "fireship doio or example.com a domain"
+    },
+    {
+      "start": 116.68,
+      "duration": 1.9499999999999886,
+      "text": "fireship doio or example.com a domain name can be registered by anyone via a"
+    },
+    {
+      "start": 118.63,
+      "duration": 0.010000000000005116,
+      "text": "name can be registered by anyone via a"
+    },
+    {
+      "start": 118.64,
+      "duration": 2.3100000000000023,
+      "text": "name can be registered by anyone via a registar whose accredit by ican a"
+    },
+    {
+      "start": 120.95,
+      "duration": 0.009999999999990905,
+      "text": "registar whose accredit by ican a"
+    },
+    {
+      "start": 120.96,
+      "duration": 2.030000000000001,
+      "text": "registar whose accredit by ican a nonprofit responsible for overseeing"
+    },
+    {
+      "start": 122.99,
+      "duration": 0.010000000000005116,
+      "text": "nonprofit responsible for overseeing"
+    },
+    {
+      "start": 123.0,
+      "duration": 1.5900000000000034,
+      "text": "nonprofit responsible for overseeing name spaces on the internet when you"
+    },
+    {
+      "start": 124.59,
+      "duration": 0.009999999999990905,
+      "text": "name spaces on the internet when you"
+    },
+    {
+      "start": 124.6,
+      "duration": 1.9100000000000108,
+      "text": "name spaces on the internet when you navigate to a domain in a browser it"
+    },
+    {
+      "start": 126.51,
+      "duration": 0.009999999999990905,
+      "text": "navigate to a domain in a browser it"
+    },
+    {
+      "start": 126.52,
+      "duration": 1.4699999999999989,
+      "text": "navigate to a domain in a browser it gets routed through the domain name"
+    },
+    {
+      "start": 127.99,
+      "duration": 0.010000000000005116,
+      "text": "gets routed through the domain name"
+    },
+    {
+      "start": 128.0,
+      "duration": 1.8300000000000125,
+      "text": "gets routed through the domain name system that Maps these names to an"
+    },
+    {
+      "start": 129.83,
+      "duration": 0.009999999999990905,
+      "text": "system that Maps these names to an"
+    },
+    {
+      "start": 129.84,
+      "duration": 2.0289999999999964,
+      "text": "system that Maps these names to an actual IP address on a server somewhere"
+    },
+    {
+      "start": 131.869,
+      "duration": 0.009999999999990905,
+      "text": "actual IP address on a server somewhere"
+    },
+    {
+      "start": 131.879,
+      "duration": 1.5510000000000161,
+      "text": "actual IP address on a server somewhere DNS is like the phone book of the"
+    },
+    {
+      "start": 133.43,
+      "duration": 0.009999999999990905,
+      "text": "DNS is like the phone book of the"
+    },
+    {
+      "start": 133.44,
+      "duration": 1.9499999999999886,
+      "text": "DNS is like the phone book of the internet now when you look at a web page"
+    },
+    {
+      "start": 135.39,
+      "duration": 0.010000000000019327,
+      "text": "internet now when you look at a web page"
+    },
+    {
+      "start": 135.4,
+      "duration": 1.710000000000008,
+      "text": "internet now when you look at a web page the actual content you see is"
+    },
+    {
+      "start": 137.11,
+      "duration": 0.009999999999990905,
+      "text": "the actual content you see is"
+    },
+    {
+      "start": 137.12,
+      "duration": 2.5900000000000034,
+      "text": "the actual content you see is represented by hypertext markup language"
+    },
+    {
+      "start": 139.71,
+      "duration": 0.009999999999990905,
+      "text": "represented by hypertext markup language"
+    },
+    {
+      "start": 139.72,
+      "duration": 1.75,
+      "text": "represented by hypertext markup language most browsers have Dev tools where you"
+    },
+    {
+      "start": 141.47,
+      "duration": 0.009999999999990905,
+      "text": "most browsers have Dev tools where you"
+    },
+    {
+      "start": 141.48,
+      "duration": 2.109000000000009,
+      "text": "most browsers have Dev tools where you can inspect the structure of the HTML at"
+    },
+    {
+      "start": 143.589,
+      "duration": 0.009999999999990905,
+      "text": "can inspect the structure of the HTML at"
+    },
+    {
+      "start": 143.599,
+      "duration": 1.8710000000000093,
+      "text": "can inspect the structure of the HTML at any time to build your own web page"
+    },
+    {
+      "start": 145.47,
+      "duration": 0.009999999999990905,
+      "text": "any time to build your own web page"
+    },
+    {
+      "start": 145.48,
+      "duration": 2.1500000000000057,
+      "text": "any time to build your own web page you'll want a text editor like vs code"
+    },
+    {
+      "start": 147.63,
+      "duration": 0.009999999999990905,
+      "text": "you'll want a text editor like vs code"
+    },
+    {
+      "start": 147.64,
+      "duration": 2.7900000000000205,
+      "text": "you'll want a text editor like vs code an HTML document is just a collect of"
+    },
+    {
+      "start": 150.43,
+      "duration": 0.009999999999990905,
+      "text": "an HTML document is just a collect of"
+    },
+    {
+      "start": 150.44,
+      "duration": 1.990000000000009,
+      "text": "an HTML document is just a collect of elements where an element is an opening"
+    },
+    {
+      "start": 152.43,
+      "duration": 0.009999999999990905,
+      "text": "elements where an element is an opening"
+    },
+    {
+      "start": 152.44,
+      "duration": 2.030000000000001,
+      "text": "elements where an element is an opening and closing tag with some content in the"
+    },
+    {
+      "start": 154.47,
+      "duration": 0.009999999999990905,
+      "text": "and closing tag with some content in the"
+    },
+    {
+      "start": 154.48,
+      "duration": 1.8700000000000045,
+      "text": "and closing tag with some content in the middle like a paragraph and heading it"
+    },
+    {
+      "start": 156.35,
+      "duration": 0.010000000000019327,
+      "text": "middle like a paragraph and heading it"
+    },
+    {
+      "start": 156.36,
+      "duration": 2.109999999999985,
+      "text": "middle like a paragraph and heading it also has elements that handle user input"
+    },
+    {
+      "start": 158.47,
+      "duration": 0.009999999999990905,
+      "text": "also has elements that handle user input"
+    },
+    {
+      "start": 158.48,
+      "duration": 2.0700000000000216,
+      "text": "also has elements that handle user input like the select and input Elements which"
+    },
+    {
+      "start": 160.55,
+      "duration": 0.009999999999990905,
+      "text": "like the select and input Elements which"
+    },
+    {
+      "start": 160.56,
+      "duration": 2.0289999999999964,
+      "text": "like the select and input Elements which are used to build forms in addition"
+    },
+    {
+      "start": 162.589,
+      "duration": 0.009999999999990905,
+      "text": "are used to build forms in addition"
+    },
+    {
+      "start": 162.599,
+      "duration": 1.6710000000000207,
+      "text": "are used to build forms in addition elements can have one or more attributes"
+    },
+    {
+      "start": 164.27,
+      "duration": 0.009999999999990905,
+      "text": "elements can have one or more attributes"
+    },
+    {
+      "start": 164.28,
+      "duration": 2.1899999999999977,
+      "text": "elements can have one or more attributes to change their behavior for example an"
+    },
+    {
+      "start": 166.47,
+      "duration": 0.009999999999990905,
+      "text": "to change their behavior for example an"
+    },
+    {
+      "start": 166.48,
+      "duration": 1.990000000000009,
+      "text": "to change their behavior for example an input can have a type like text or"
+    },
+    {
+      "start": 168.47,
+      "duration": 0.009999999999990905,
+      "text": "input can have a type like text or"
+    },
+    {
+      "start": 168.48,
+      "duration": 1.6690000000000111,
+      "text": "input can have a type like text or number which the browser will render"
+    },
+    {
+      "start": 170.149,
+      "duration": 0.009999999999990905,
+      "text": "number which the browser will render"
+    },
+    {
+      "start": 170.159,
+      "duration": 1.710000000000008,
+      "text": "number which the browser will render differently to collect the appropriate"
+    },
+    {
+      "start": 171.869,
+      "duration": 0.009999999999990905,
+      "text": "differently to collect the appropriate"
+    },
+    {
+      "start": 171.879,
+      "duration": 1.8310000000000173,
+      "text": "differently to collect the appropriate value but the element that puts the"
+    },
+    {
+      "start": 173.71,
+      "duration": 0.009999999999990905,
+      "text": "value but the element that puts the"
+    },
+    {
+      "start": 173.72,
+      "duration": 2.8689999999999998,
+      "text": "value but the element that puts the hyper text in HTML is the a tag or"
+    },
+    {
+      "start": 176.589,
+      "duration": 0.009999999999990905,
+      "text": "hyper text in HTML is the a tag or"
+    },
+    {
+      "start": 176.599,
+      "duration": 2.3500000000000227,
+      "text": "hyper text in HTML is the a tag or anchor it's a link that allows one page"
+    },
+    {
+      "start": 178.949,
+      "duration": 0.009999999999990905,
+      "text": "anchor it's a link that allows one page"
+    },
+    {
+      "start": 178.959,
+      "duration": 1.9099999999999966,
+      "text": "anchor it's a link that allows one page to navigate to to a different page based"
+    },
+    {
+      "start": 180.869,
+      "duration": 0.009999999999990905,
+      "text": "to navigate to to a different page based"
+    },
+    {
+      "start": 180.879,
+      "duration": 2.1910000000000025,
+      "text": "to navigate to to a different page based on its URL these elements are nested"
+    },
+    {
+      "start": 183.07,
+      "duration": 0.010000000000019327,
+      "text": "on its URL these elements are nested"
+    },
+    {
+      "start": 183.08,
+      "duration": 1.8689999999999998,
+      "text": "on its URL these elements are nested together in a hierarchy to form the"
+    },
+    {
+      "start": 184.949,
+      "duration": 0.009999999999990905,
+      "text": "together in a hierarchy to form the"
+    },
+    {
+      "start": 184.959,
+      "duration": 2.1899999999999977,
+      "text": "together in a hierarchy to form the document object model or Dom from the"
+    },
+    {
+      "start": 187.149,
+      "duration": 0.009999999999990905,
+      "text": "document object model or Dom from the"
+    },
+    {
+      "start": 187.159,
+      "duration": 1.990000000000009,
+      "text": "document object model or Dom from the root element a web page is split into"
+    },
+    {
+      "start": 189.149,
+      "duration": 0.009999999999990905,
+      "text": "root element a web page is split into"
+    },
+    {
+      "start": 189.159,
+      "duration": 1.9510000000000218,
+      "text": "root element a web page is split into two parts the head contains invisible"
+    },
+    {
+      "start": 191.11,
+      "duration": 0.009999999999990905,
+      "text": "two parts the head contains invisible"
+    },
+    {
+      "start": 191.12,
+      "duration": 2.188999999999993,
+      "text": "two parts the head contains invisible content like metadata and a title then"
+    },
+    {
+      "start": 193.309,
+      "duration": 0.009999999999990905,
+      "text": "content like metadata and a title then"
+    },
+    {
+      "start": 193.319,
+      "duration": 1.7510000000000048,
+      "text": "content like metadata and a title then we have the body for the main content"
+    },
+    {
+      "start": 195.07,
+      "duration": 0.010000000000019327,
+      "text": "we have the body for the main content"
+    },
+    {
+      "start": 195.08,
+      "duration": 1.9499999999999886,
+      "text": "we have the body for the main content that the end user actually sees the"
+    },
+    {
+      "start": 197.03,
+      "duration": 0.009999999999990905,
+      "text": "that the end user actually sees the"
+    },
+    {
+      "start": 197.04,
+      "duration": 1.8700000000000045,
+      "text": "that the end user actually sees the reason we wrap everything in tags is to"
+    },
+    {
+      "start": 198.91,
+      "duration": 0.010000000000019327,
+      "text": "reason we wrap everything in tags is to"
+    },
+    {
+      "start": 198.92000000000002,
+      "duration": 1.9899999999999807,
+      "text": "reason we wrap everything in tags is to give browsers and Bots hints about the"
+    },
+    {
+      "start": 200.91,
+      "duration": 0.010000000000019327,
+      "text": "give browsers and Bots hints about the"
+    },
+    {
+      "start": 200.92000000000002,
+      "duration": 1.9899999999999807,
+      "text": "give browsers and Bots hints about the semantic meaning of the web page this"
+    },
+    {
+      "start": 202.91,
+      "duration": 0.010000000000019327,
+      "text": "semantic meaning of the web page this"
+    },
+    {
+      "start": 202.92000000000002,
+      "duration": 1.829999999999984,
+      "text": "semantic meaning of the web page this allows search engines to display results"
+    },
+    {
+      "start": 204.75,
+      "duration": 0.009999999999990905,
+      "text": "allows search engines to display results"
+    },
+    {
+      "start": 204.76,
+      "duration": 1.468999999999994,
+      "text": "allows search engines to display results properly and also helps with"
+    },
+    {
+      "start": 206.22899999999998,
+      "duration": 0.010000000000019327,
+      "text": "properly and also helps with"
+    },
+    {
+      "start": 206.239,
+      "duration": 1.7510000000000048,
+      "text": "properly and also helps with accessibility for devices like screen"
+    },
+    {
+      "start": 207.99,
+      "duration": 0.009999999999990905,
+      "text": "accessibility for devices like screen"
+    },
+    {
+      "start": 208.0,
+      "duration": 1.990000000000009,
+      "text": "accessibility for devices like screen readers that allow anybody regardless of"
+    },
+    {
+      "start": 209.99,
+      "duration": 0.009999999999990905,
+      "text": "readers that allow anybody regardless of"
+    },
+    {
+      "start": 210.0,
+      "duration": 1.990000000000009,
+      "text": "readers that allow anybody regardless of disability to enjoy the content my"
+    },
+    {
+      "start": 211.99,
+      "duration": 0.009999999999990905,
+      "text": "disability to enjoy the content my"
+    },
+    {
+      "start": 212.0,
+      "duration": 2.5889999999999986,
+      "text": "disability to enjoy the content my computer reads me the text Bro smash"
+    },
+    {
+      "start": 214.589,
+      "duration": 0.009999999999990905,
+      "text": "computer reads me the text Bro smash"
+    },
+    {
+      "start": 214.599,
+      "duration": 1.7909999999999968,
+      "text": "computer reads me the text Bro smash that like button and subscribe one of"
+    },
+    {
+      "start": 216.39,
+      "duration": 0.010000000000019327,
+      "text": "that like button and subscribe one of"
+    },
+    {
+      "start": 216.4,
+      "duration": 1.1090000000000089,
+      "text": "that like button and subscribe one of the most common elements you'll come"
+    },
+    {
+      "start": 217.50900000000001,
+      "duration": 0.009999999999990905,
+      "text": "the most common elements you'll come"
+    },
+    {
+      "start": 217.519,
+      "duration": 2.7510000000000048,
+      "text": "the most common elements you'll come across is div or division to define a"
+    },
+    {
+      "start": 220.27,
+      "duration": 0.009999999999990905,
+      "text": "across is div or division to define a"
+    },
+    {
+      "start": 220.28,
+      "duration": 2.390000000000015,
+      "text": "across is div or division to define a section of the web page on its own a div"
+    },
+    {
+      "start": 222.67000000000002,
+      "duration": 0.009999999999990905,
+      "text": "section of the web page on its own a div"
+    },
+    {
+      "start": 222.68,
+      "duration": 1.3899999999999864,
+      "text": "section of the web page on its own a div might not seem to do anything and"
+    },
+    {
+      "start": 224.07,
+      "duration": 0.009999999999990905,
+      "text": "might not seem to do anything and"
+    },
+    {
+      "start": 224.07999999999998,
+      "duration": 1.8690000000000282,
+      "text": "might not seem to do anything and currently produces this plain black and"
+    },
+    {
+      "start": 225.949,
+      "duration": 0.009999999999990905,
+      "text": "currently produces this plain black and"
+    },
+    {
+      "start": 225.959,
+      "duration": 1.829999999999984,
+      "text": "currently produces this plain black and white website that begs the question how"
+    },
+    {
+      "start": 227.789,
+      "duration": 0.010000000000019327,
+      "text": "white website that begs the question how"
+    },
+    {
+      "start": 227.799,
+      "duration": 1.8309999999999889,
+      "text": "white website that begs the question how do we make this website look cool the"
+    },
+    {
+      "start": 229.63,
+      "duration": 0.009999999999990905,
+      "text": "do we make this website look cool the"
+    },
+    {
+      "start": 229.64,
+      "duration": 1.309000000000026,
+      "text": "do we make this website look cool the second language you'll need to learn as"
+    },
+    {
+      "start": 230.949,
+      "duration": 0.009999999999990905,
+      "text": "second language you'll need to learn as"
+    },
+    {
+      "start": 230.959,
+      "duration": 2.5500000000000114,
+      "text": "second language you'll need to learn as a web developer is cascading stylesheets"
+    },
+    {
+      "start": 233.50900000000001,
+      "duration": 0.009999999999990905,
+      "text": "a web developer is cascading stylesheets"
+    },
+    {
+      "start": 233.519,
+      "duration": 2.11099999999999,
+      "text": "a web developer is cascading stylesheets or css which allows you to change the"
+    },
+    {
+      "start": 235.63,
+      "duration": 0.009999999999990905,
+      "text": "or css which allows you to change the"
+    },
+    {
+      "start": 235.64,
+      "duration": 2.2290000000000134,
+      "text": "or css which allows you to change the appearance of the HTML elements one way"
+    },
+    {
+      "start": 237.869,
+      "duration": 0.009999999999990905,
+      "text": "appearance of the HTML elements one way"
+    },
+    {
+      "start": 237.879,
+      "duration": 1.5500000000000114,
+      "text": "appearance of the HTML elements one way to accomplish that is with an inline"
+    },
+    {
+      "start": 239.429,
+      "duration": 0.009999999999990905,
+      "text": "to accomplish that is with an inline"
+    },
+    {
+      "start": 239.439,
+      "duration": 2.2309999999999945,
+      "text": "to accomplish that is with an inline Style using the style attribute on an"
+    },
+    {
+      "start": 241.67,
+      "duration": 0.010000000000019327,
+      "text": "Style using the style attribute on an"
+    },
+    {
+      "start": 241.68,
+      "duration": 1.9089999999999918,
+      "text": "Style using the style attribute on an element the style itself contains a"
+    },
+    {
+      "start": 243.589,
+      "duration": 0.009999999999990905,
+      "text": "element the style itself contains a"
+    },
+    {
+      "start": 243.599,
+      "duration": 2.1899999999999977,
+      "text": "element the style itself contains a collection of properties and values that"
+    },
+    {
+      "start": 245.789,
+      "duration": 0.010000000000019327,
+      "text": "collection of properties and values that"
+    },
+    {
+      "start": 245.799,
+      "duration": 1.5509999999999877,
+      "text": "collection of properties and values that change the appearance of the element"
+    },
+    {
+      "start": 247.35,
+      "duration": 0.010000000000019327,
+      "text": "change the appearance of the element"
+    },
+    {
+      "start": 247.36,
+      "duration": 1.5089999999999861,
+      "text": "change the appearance of the element like we might make the background color"
+    },
+    {
+      "start": 248.869,
+      "duration": 0.009999999999990905,
+      "text": "like we might make the background color"
+    },
+    {
+      "start": 248.879,
+      "duration": 1.990000000000009,
+      "text": "like we might make the background color black and the text color red what we've"
+    },
+    {
+      "start": 250.869,
+      "duration": 0.009999999999990905,
+      "text": "black and the text color red what we've"
+    },
+    {
+      "start": 250.879,
+      "duration": 1.8310000000000173,
+      "text": "black and the text color red what we've created here is an inline style that"
+    },
+    {
+      "start": 252.71,
+      "duration": 0.009999999999990905,
+      "text": "created here is an inline style that"
+    },
+    {
+      "start": 252.72,
+      "duration": 2.030000000000001,
+      "text": "created here is an inline style that will only be applied to this one element"
+    },
+    {
+      "start": 254.75,
+      "duration": 0.009999999999990905,
+      "text": "will only be applied to this one element"
+    },
+    {
+      "start": 254.76,
+      "duration": 2.069999999999993,
+      "text": "will only be applied to this one element however CSS Cascades which means it can"
+    },
+    {
+      "start": 256.83,
+      "duration": 0.009999999999990905,
+      "text": "however CSS Cascades which means it can"
+    },
+    {
+      "start": 256.84,
+      "duration": 1.830000000000041,
+      "text": "however CSS Cascades which means it can be applied to multiple elements at the"
+    },
+    {
+      "start": 258.67,
+      "duration": 0.009999999999990905,
+      "text": "be applied to multiple elements at the"
+    },
+    {
+      "start": 258.68,
+      "duration": 1.4699999999999704,
+      "text": "be applied to multiple elements at the same time providing better code"
+    },
+    {
+      "start": 260.15,
+      "duration": 0.010000000000047748,
+      "text": "same time providing better code"
+    },
+    {
+      "start": 260.16,
+      "duration": 1.8699999999999477,
+      "text": "same time providing better code reusability another option is to move"
+    },
+    {
+      "start": 262.03,
+      "duration": 0.010000000000047748,
+      "text": "reusability another option is to move"
+    },
+    {
+      "start": 262.04,
+      "duration": 2.2299999999999613,
+      "text": "reusability another option is to move our code into a style tag but to make"
+    },
+    {
+      "start": 264.27,
+      "duration": 0.009999999999990905,
+      "text": "our code into a style tag but to make"
+    },
+    {
+      "start": 264.28,
+      "duration": 1.5900000000000318,
+      "text": "our code into a style tag but to make the code work we'll first need to define"
+    },
+    {
+      "start": 265.87,
+      "duration": 0.009999999999990905,
+      "text": "the code work we'll first need to define"
+    },
+    {
+      "start": 265.88,
+      "duration": 2.1100000000000136,
+      "text": "the code work we'll first need to define a selector so it knows which elements to"
+    },
+    {
+      "start": 267.99,
+      "duration": 0.009999999999990905,
+      "text": "a selector so it knows which elements to"
+    },
+    {
+      "start": 268.0,
+      "duration": 2.430000000000007,
+      "text": "a selector so it knows which elements to Target a selector for example can Target"
+    },
+    {
+      "start": 270.43,
+      "duration": 0.009999999999990905,
+      "text": "Target a selector for example can Target"
+    },
+    {
+      "start": 270.44,
+      "duration": 1.670000000000016,
+      "text": "Target a selector for example can Target all of the paragraph elements on the"
+    },
+    {
+      "start": 272.11,
+      "duration": 0.009999999999990905,
+      "text": "all of the paragraph elements on the"
+    },
+    {
+      "start": 272.12,
+      "duration": 2.1499999999999773,
+      "text": "all of the paragraph elements on the page but that's too broad we can be more"
+    },
+    {
+      "start": 274.27,
+      "duration": 0.009999999999990905,
+      "text": "page but that's too broad we can be more"
+    },
+    {
+      "start": 274.28,
+      "duration": 2.430000000000007,
+      "text": "page but that's too broad we can be more granular by defining a class that style"
+    },
+    {
+      "start": 276.71,
+      "duration": 0.010000000000047748,
+      "text": "granular by defining a class that style"
+    },
+    {
+      "start": 276.72,
+      "duration": 1.3899999999999864,
+      "text": "granular by defining a class that style can then be applied to one or more"
+    },
+    {
+      "start": 278.11,
+      "duration": 0.009999999999990905,
+      "text": "can then be applied to one or more"
+    },
+    {
+      "start": 278.12,
+      "duration": 1.8700000000000045,
+      "text": "can then be applied to one or more elements with the class attribute what's"
+    },
+    {
+      "start": 279.99,
+      "duration": 0.009999999999990905,
+      "text": "elements with the class attribute what's"
+    },
+    {
+      "start": 280.0,
+      "duration": 1.468999999999994,
+      "text": "elements with the class attribute what's interesting though is that we now have"
+    },
+    {
+      "start": 281.469,
+      "duration": 0.009999999999990905,
+      "text": "interesting though is that we now have"
+    },
+    {
+      "start": 281.479,
+      "duration": 1.9110000000000014,
+      "text": "interesting though is that we now have classes that apply different styles to"
+    },
+    {
+      "start": 283.39,
+      "duration": 0.009999999999990905,
+      "text": "classes that apply different styles to"
+    },
+    {
+      "start": 283.4,
+      "duration": 2.390000000000043,
+      "text": "classes that apply different styles to the same element CSS contains a bunch of"
+    },
+    {
+      "start": 285.79,
+      "duration": 0.009999999999990905,
+      "text": "the same element CSS contains a bunch of"
+    },
+    {
+      "start": 285.8,
+      "duration": 1.7900000000000205,
+      "text": "the same element CSS contains a bunch of specificity rules that determine which"
+    },
+    {
+      "start": 287.59000000000003,
+      "duration": 0.009999999999990905,
+      "text": "specificity rules that determine which"
+    },
+    {
+      "start": 287.6,
+      "duration": 1.829999999999984,
+      "text": "specificity rules that determine which styles are relevant to an element in a"
+    },
+    {
+      "start": 289.43,
+      "duration": 0.009999999999990905,
+      "text": "styles are relevant to an element in a"
+    },
+    {
+      "start": 289.44,
+      "duration": 1.7490000000000236,
+      "text": "styles are relevant to an element in a way that's self-evident and elegant like"
+    },
+    {
+      "start": 291.189,
+      "duration": 0.009999999999990905,
+      "text": "way that's self-evident and elegant like"
+    },
+    {
+      "start": 291.199,
+      "duration": 1.990000000000009,
+      "text": "way that's self-evident and elegant like a benevolent elephant most often though"
+    },
+    {
+      "start": 293.189,
+      "duration": 0.009999999999990905,
+      "text": "a benevolent elephant most often though"
+    },
+    {
+      "start": 293.199,
+      "duration": 1.9110000000000014,
+      "text": "a benevolent elephant most often though we don't use style tags but instead use"
+    },
+    {
+      "start": 295.11,
+      "duration": 0.009999999999990905,
+      "text": "we don't use style tags but instead use"
+    },
+    {
+      "start": 295.12,
+      "duration": 1.8700000000000045,
+      "text": "we don't use style tags but instead use an external style sheet which is linked"
+    },
+    {
+      "start": 296.99,
+      "duration": 0.009999999999990905,
+      "text": "an external style sheet which is linked"
+    },
+    {
+      "start": 297.0,
+      "duration": 1.468999999999994,
+      "text": "an external style sheet which is linked to the web page in the head of the"
+    },
+    {
+      "start": 298.469,
+      "duration": 0.009999999999990905,
+      "text": "to the web page in the head of the"
+    },
+    {
+      "start": 298.479,
+      "duration": 1.7510000000000332,
+      "text": "to the web page in the head of the document when it comes to CS"
+    },
+    {
+      "start": 300.23,
+      "duration": 0.009999999999990905,
+      "text": "document when it comes to CS"
+    },
+    {
+      "start": 300.24,
+      "duration": 1.6299999999999955,
+      "text": "document when it comes to CS by far the most difficult thing to learn"
+    },
+    {
+      "start": 301.87,
+      "duration": 0.009999999999990905,
+      "text": "by far the most difficult thing to learn"
+    },
+    {
+      "start": 301.88,
+      "duration": 1.990000000000009,
+      "text": "by far the most difficult thing to learn is layout and positioning think of every"
+    },
+    {
+      "start": 303.87,
+      "duration": 0.009999999999990905,
+      "text": "is layout and positioning think of every"
+    },
+    {
+      "start": 303.88,
+      "duration": 2.149000000000001,
+      "text": "is layout and positioning think of every element like a box the outside of that"
+    },
+    {
+      "start": 306.029,
+      "duration": 0.009999999999990905,
+      "text": "element like a box the outside of that"
+    },
+    {
+      "start": 306.039,
+      "duration": 1.990000000000009,
+      "text": "element like a box the outside of that box is wrapped with padding border and"
+    },
+    {
+      "start": 308.029,
+      "duration": 0.009999999999990905,
+      "text": "box is wrapped with padding border and"
+    },
+    {
+      "start": 308.039,
+      "duration": 1.990000000000009,
+      "text": "box is wrapped with padding border and margin the boxes then take up space on"
+    },
+    {
+      "start": 310.029,
+      "duration": 0.009999999999990905,
+      "text": "margin the boxes then take up space on"
+    },
+    {
+      "start": 310.039,
+      "duration": 1.7510000000000332,
+      "text": "margin the boxes then take up space on the page from top to bottom some"
+    },
+    {
+      "start": 311.79,
+      "duration": 0.009999999999990905,
+      "text": "the page from top to bottom some"
+    },
+    {
+      "start": 311.8,
+      "duration": 2.069999999999993,
+      "text": "the page from top to bottom some elements like heading have a display of"
+    },
+    {
+      "start": 313.87,
+      "duration": 0.009999999999990905,
+      "text": "elements like heading have a display of"
+    },
+    {
+      "start": 313.88,
+      "duration": 1.8690000000000282,
+      "text": "elements like heading have a display of block by default which means they take"
+    },
+    {
+      "start": 315.749,
+      "duration": 0.009999999999990905,
+      "text": "block by default which means they take"
+    },
+    {
+      "start": 315.759,
+      "duration": 2.269999999999982,
+      "text": "block by default which means they take up all available horizontal space other"
+    },
+    {
+      "start": 318.029,
+      "duration": 0.009999999999990905,
+      "text": "up all available horizontal space other"
+    },
+    {
+      "start": 318.039,
+      "duration": 1.7510000000000332,
+      "text": "up all available horizontal space other elements like image are displayed in"
+    },
+    {
+      "start": 319.79,
+      "duration": 0.009999999999990905,
+      "text": "elements like image are displayed in"
+    },
+    {
+      "start": 319.8,
+      "duration": 1.349999999999966,
+      "text": "elements like image are displayed in line which means they can line up"
+    },
+    {
+      "start": 321.15,
+      "duration": 0.010000000000047748,
+      "text": "line which means they can line up"
+    },
+    {
+      "start": 321.16,
+      "duration": 2.2299999999999613,
+      "text": "line which means they can line up horizontally side by side the problem is"
+    },
+    {
+      "start": 323.39,
+      "duration": 0.009999999999990905,
+      "text": "horizontally side by side the problem is"
+    },
+    {
+      "start": 323.4,
+      "duration": 1.990000000000009,
+      "text": "horizontally side by side the problem is that the default position is usually not"
+    },
+    {
+      "start": 325.39,
+      "duration": 0.009999999999990905,
+      "text": "that the default position is usually not"
+    },
+    {
+      "start": 325.4,
+      "duration": 1.670000000000016,
+      "text": "that the default position is usually not desirable it can be changed by"
+    },
+    {
+      "start": 327.07,
+      "duration": 0.009999999999990905,
+      "text": "desirable it can be changed by"
+    },
+    {
+      "start": 327.08,
+      "duration": 1.8290000000000077,
+      "text": "desirable it can be changed by customizing the position property on an"
+    },
+    {
+      "start": 328.909,
+      "duration": 0.009999999999990905,
+      "text": "customizing the position property on an"
+    },
+    {
+      "start": 328.919,
+      "duration": 2.1510000000000105,
+      "text": "customizing the position property on an element relative positioning allows an"
+    },
+    {
+      "start": 331.07,
+      "duration": 0.009999999999990905,
+      "text": "element relative positioning allows an"
+    },
+    {
+      "start": 331.08,
+      "duration": 1.549000000000035,
+      "text": "element relative positioning allows an element to move a certain number of"
+    },
+    {
+      "start": 332.629,
+      "duration": 0.009999999999990905,
+      "text": "element to move a certain number of"
+    },
+    {
+      "start": 332.639,
+      "duration": 2.350999999999999,
+      "text": "element to move a certain number of pixels from its normal position absolute"
+    },
+    {
+      "start": 334.99,
+      "duration": 0.009999999999990905,
+      "text": "pixels from its normal position absolute"
+    },
+    {
+      "start": 335.0,
+      "duration": 2.069999999999993,
+      "text": "pixels from its normal position absolute positioning is similar but the position"
+    },
+    {
+      "start": 337.07,
+      "duration": 0.009999999999990905,
+      "text": "positioning is similar but the position"
+    },
+    {
+      "start": 337.08,
+      "duration": 1.9490000000000123,
+      "text": "positioning is similar but the position values are relative to its nearest"
+    },
+    {
+      "start": 339.029,
+      "duration": 0.009999999999990905,
+      "text": "values are relative to its nearest"
+    },
+    {
+      "start": 339.039,
+      "duration": 1.4300000000000068,
+      "text": "values are relative to its nearest ancestor and then we have fixed"
+    },
+    {
+      "start": 340.469,
+      "duration": 0.009999999999990905,
+      "text": "ancestor and then we have fixed"
+    },
+    {
+      "start": 340.479,
+      "duration": 1.7100000000000364,
+      "text": "ancestor and then we have fixed positioning which will keep an element"
+    },
+    {
+      "start": 342.189,
+      "duration": 0.009999999999990905,
+      "text": "positioning which will keep an element"
+    },
+    {
+      "start": 342.199,
+      "duration": 1.870999999999981,
+      "text": "positioning which will keep an element on the screen even as the user Scrolls"
+    },
+    {
+      "start": 344.07,
+      "duration": 0.009999999999990905,
+      "text": "on the screen even as the user Scrolls"
+    },
+    {
+      "start": 344.08,
+      "duration": 1.75,
+      "text": "on the screen even as the user Scrolls away from it because it's fixed to the"
+    },
+    {
+      "start": 345.83,
+      "duration": 0.010000000000047748,
+      "text": "away from it because it's fixed to the"
+    },
+    {
+      "start": 345.84000000000003,
+      "duration": 1.829999999999984,
+      "text": "away from it because it's fixed to the entire viewport changing the position of"
+    },
+    {
+      "start": 347.67,
+      "duration": 0.009999999999990905,
+      "text": "entire viewport changing the position of"
+    },
+    {
+      "start": 347.68,
+      "duration": 1.589999999999975,
+      "text": "entire viewport changing the position of an element is one thing but one of the"
+    },
+    {
+      "start": 349.27,
+      "duration": 0.009999999999990905,
+      "text": "an element is one thing but one of the"
+    },
+    {
+      "start": 349.28,
+      "duration": 1.830000000000041,
+      "text": "an element is one thing but one of the biggest challenges web developers face"
+    },
+    {
+      "start": 351.11,
+      "duration": 0.009999999999990905,
+      "text": "biggest challenges web developers face"
+    },
+    {
+      "start": 351.12,
+      "duration": 2.269999999999982,
+      "text": "biggest challenges web developers face is creating responsive layouts users can"
+    },
+    {
+      "start": 353.39,
+      "duration": 0.009999999999990905,
+      "text": "is creating responsive layouts users can"
+    },
+    {
+      "start": 353.4,
+      "duration": 1.7100000000000364,
+      "text": "is creating responsive layouts users can access your web page from all kinds of"
+    },
+    {
+      "start": 355.11,
+      "duration": 0.009999999999990905,
+      "text": "access your web page from all kinds of"
+    },
+    {
+      "start": 355.12,
+      "duration": 1.4300000000000068,
+      "text": "access your web page from all kinds of different screens and it should look"
+    },
+    {
+      "start": 356.55,
+      "duration": 0.009999999999990905,
+      "text": "different screens and it should look"
+    },
+    {
+      "start": 356.56,
+      "duration": 2.230000000000018,
+      "text": "different screens and it should look good on all of them CSS provides a bunch"
+    },
+    {
+      "start": 358.79,
+      "duration": 0.009999999999990905,
+      "text": "good on all of them CSS provides a bunch"
+    },
+    {
+      "start": 358.8,
+      "duration": 1.5090000000000146,
+      "text": "good on all of them CSS provides a bunch of different tools to to help make this"
+    },
+    {
+      "start": 360.309,
+      "duration": 0.009999999999990905,
+      "text": "of different tools to to help make this"
+    },
+    {
+      "start": 360.319,
+      "duration": 2.1499999999999773,
+      "text": "of different tools to to help make this happen one of which is Media queries a"
+    },
+    {
+      "start": 362.469,
+      "duration": 0.009999999999990905,
+      "text": "happen one of which is Media queries a"
+    },
+    {
+      "start": 362.479,
+      "duration": 1.6709999999999923,
+      "text": "happen one of which is Media queries a media query allows you to get"
+    },
+    {
+      "start": 364.15,
+      "duration": 0.010000000000047748,
+      "text": "media query allows you to get"
+    },
+    {
+      "start": 364.16,
+      "duration": 1.5499999999999545,
+      "text": "media query allows you to get information about the device that's"
+    },
+    {
+      "start": 365.71,
+      "duration": 0.010000000000047748,
+      "text": "information about the device that's"
+    },
+    {
+      "start": 365.72,
+      "duration": 1.5499999999999545,
+      "text": "information about the device that's rendering the web page and apply"
+    },
+    {
+      "start": 367.27,
+      "duration": 0.009999999999990905,
+      "text": "rendering the web page and apply"
+    },
+    {
+      "start": 367.28,
+      "duration": 1.9090000000000487,
+      "text": "rendering the web page and apply different styles accordingly but more"
+    },
+    {
+      "start": 369.189,
+      "duration": 0.009999999999990905,
+      "text": "different styles accordingly but more"
+    },
+    {
+      "start": 369.199,
+      "duration": 1.7909999999999968,
+      "text": "different styles accordingly but more importantly it provides layout tools"
+    },
+    {
+      "start": 370.99,
+      "duration": 0.009999999999990905,
+      "text": "importantly it provides layout tools"
+    },
+    {
+      "start": 371.0,
+      "duration": 2.309000000000026,
+      "text": "importantly it provides layout tools like flexbox applying display Flex"
+    },
+    {
+      "start": 373.309,
+      "duration": 0.009999999999990905,
+      "text": "like flexbox applying display Flex"
+    },
+    {
+      "start": 373.319,
+      "duration": 1.950999999999965,
+      "text": "like flexbox applying display Flex allows the parent to control the flow of"
+    },
+    {
+      "start": 375.27,
+      "duration": 0.009999999999990905,
+      "text": "allows the parent to control the flow of"
+    },
+    {
+      "start": 375.28,
+      "duration": 2.07000000000005,
+      "text": "allows the parent to control the flow of the children to easily create rows and"
+    },
+    {
+      "start": 377.35,
+      "duration": 0.009999999999990905,
+      "text": "the children to easily create rows and"
+    },
+    {
+      "start": 377.36,
+      "duration": 2.349999999999966,
+      "text": "the children to easily create rows and columns for more complex layouts display"
+    },
+    {
+      "start": 379.71,
+      "duration": 0.010000000000047748,
+      "text": "columns for more complex layouts display"
+    },
+    {
+      "start": 379.72,
+      "duration": 1.7899999999999636,
+      "text": "columns for more complex layouts display grid can be used to control multiple"
+    },
+    {
+      "start": 381.51,
+      "duration": 0.009999999999990905,
+      "text": "grid can be used to control multiple"
+    },
+    {
+      "start": 381.52,
+      "duration": 2.150000000000034,
+      "text": "grid can be used to control multiple rows and columns at the same time now"
+    },
+    {
+      "start": 383.67,
+      "duration": 0.009999999999990905,
+      "text": "rows and columns at the same time now"
+    },
+    {
+      "start": 383.68,
+      "duration": 2.228999999999985,
+      "text": "rows and columns at the same time now CSS is usually not considered a turing"
+    },
+    {
+      "start": 385.909,
+      "duration": 0.009999999999990905,
+      "text": "CSS is usually not considered a turing"
+    },
+    {
+      "start": 385.919,
+      "duration": 1.8710000000000377,
+      "text": "CSS is usually not considered a turing complete programming language on its own"
+    },
+    {
+      "start": 387.79,
+      "duration": 0.009999999999990905,
+      "text": "complete programming language on its own"
+    },
+    {
+      "start": 387.8,
+      "duration": 2.1499999999999773,
+      "text": "complete programming language on its own however it does have mechanisms like Cal"
+    },
+    {
+      "start": 389.95,
+      "duration": 0.009999999999990905,
+      "text": "however it does have mechanisms like Cal"
+    },
+    {
+      "start": 389.96,
+      "duration": 2.2700000000000387,
+      "text": "however it does have mechanisms like Cal to perform mathematical operations and"
+    },
+    {
+      "start": 392.23,
+      "duration": 0.009999999999990905,
+      "text": "to perform mathematical operations and"
+    },
+    {
+      "start": 392.24,
+      "duration": 1.3489999999999895,
+      "text": "to perform mathematical operations and custom properties which are like"
+    },
+    {
+      "start": 393.589,
+      "duration": 0.009999999999990905,
+      "text": "custom properties which are like"
+    },
+    {
+      "start": 393.599,
+      "duration": 2.150000000000034,
+      "text": "custom properties which are like variables that you can reuse in multiple"
+    },
+    {
+      "start": 395.749,
+      "duration": 0.009999999999990905,
+      "text": "variables that you can reuse in multiple"
+    },
+    {
+      "start": 395.759,
+      "duration": 2.2309999999999945,
+      "text": "variables that you can reuse in multiple places vanilla CSS is rarely enough"
+    },
+    {
+      "start": 397.99,
+      "duration": 0.009999999999990905,
+      "text": "places vanilla CSS is rarely enough"
+    },
+    {
+      "start": 398.0,
+      "duration": 1.509999999999991,
+      "text": "places vanilla CSS is rarely enough though and many developers choose to"
+    },
+    {
+      "start": 399.51,
+      "duration": 0.009999999999990905,
+      "text": "though and many developers choose to"
+    },
+    {
+      "start": 399.52,
+      "duration": 2.0300000000000296,
+      "text": "though and many developers choose to extend it with tools like SAS that add"
+    },
+    {
+      "start": 401.55,
+      "duration": 0.009999999999990905,
+      "text": "extend it with tools like SAS that add"
+    },
+    {
+      "start": 401.56,
+      "duration": 1.7900000000000205,
+      "text": "extend it with tools like SAS that add additional programmatic features on top"
+    },
+    {
+      "start": 403.35,
+      "duration": 0.009999999999990905,
+      "text": "additional programmatic features on top"
+    },
+    {
+      "start": 403.36,
+      "duration": 1.4300000000000068,
+      "text": "additional programmatic features on top of it and that brings us to the third"
+    },
+    {
+      "start": 404.79,
+      "duration": 0.009999999999990905,
+      "text": "of it and that brings us to the third"
+    },
+    {
+      "start": 404.8,
+      "duration": 1.5089999999999577,
+      "text": "of it and that brings us to the third language you'll need to know as a web"
+    },
+    {
+      "start": 406.30899999999997,
+      "duration": 0.010000000000047748,
+      "text": "language you'll need to know as a web"
+    },
+    {
+      "start": 406.319,
+      "duration": 2.2309999999999945,
+      "text": "language you'll need to know as a web developer JavaScript technically you"
+    },
+    {
+      "start": 408.55,
+      "duration": 0.009999999999990905,
+      "text": "developer JavaScript technically you"
+    },
+    {
+      "start": 408.56,
+      "duration": 1.829999999999984,
+      "text": "developer JavaScript technically you don't need JavaScript to build a website"
+    },
+    {
+      "start": 410.39,
+      "duration": 0.009999999999990905,
+      "text": "don't need JavaScript to build a website"
+    },
+    {
+      "start": 410.4,
+      "duration": 1.5500000000000114,
+      "text": "don't need JavaScript to build a website however most developers choose to use it"
+    },
+    {
+      "start": 411.95,
+      "duration": 0.009999999999990905,
+      "text": "however most developers choose to use it"
+    },
+    {
+      "start": 411.96,
+      "duration": 1.3489999999999895,
+      "text": "however most developers choose to use it to make the user interface more"
+    },
+    {
+      "start": 413.30899999999997,
+      "duration": 0.010000000000047748,
+      "text": "to make the user interface more"
+    },
+    {
+      "start": 413.319,
+      "duration": 1.9899999999999523,
+      "text": "to make the user interface more interactive to run JavaScript code on a"
+    },
+    {
+      "start": 415.30899999999997,
+      "duration": 0.010000000000047748,
+      "text": "interactive to run JavaScript code on a"
+    },
+    {
+      "start": 415.319,
+      "duration": 2.2309999999999945,
+      "text": "interactive to run JavaScript code on a web page open up a script tag then write"
+    },
+    {
+      "start": 417.55,
+      "duration": 0.009999999999990905,
+      "text": "web page open up a script tag then write"
+    },
+    {
+      "start": 417.56,
+      "duration": 1.589999999999975,
+      "text": "web page open up a script tag then write some JavaScript code inside of it the"
+    },
+    {
+      "start": 419.15,
+      "duration": 0.009999999999990905,
+      "text": "some JavaScript code inside of it the"
+    },
+    {
+      "start": 419.15999999999997,
+      "duration": 2.029000000000053,
+      "text": "some JavaScript code inside of it the browser interprets the HTML from top to"
+    },
+    {
+      "start": 421.189,
+      "duration": 0.009999999999990905,
+      "text": "browser interprets the HTML from top to"
+    },
+    {
+      "start": 421.199,
+      "duration": 1.4710000000000036,
+      "text": "browser interprets the HTML from top to bottom and runs this code when it"
+    },
+    {
+      "start": 422.67,
+      "duration": 0.009999999999990905,
+      "text": "bottom and runs this code when it"
+    },
+    {
+      "start": 422.68,
+      "duration": 2.069000000000017,
+      "text": "bottom and runs this code when it encounters it in the Dom in most cases"
+    },
+    {
+      "start": 424.749,
+      "duration": 0.009999999999990905,
+      "text": "encounters it in the Dom in most cases"
+    },
+    {
+      "start": 424.759,
+      "duration": 1.950999999999965,
+      "text": "encounters it in the Dom in most cases JavaScript is written in a separate file"
+    },
+    {
+      "start": 426.71,
+      "duration": 0.010000000000047748,
+      "text": "JavaScript is written in a separate file"
+    },
+    {
+      "start": 426.72,
+      "duration": 1.509999999999991,
+      "text": "JavaScript is written in a separate file then referenced as the source on the"
+    },
+    {
+      "start": 428.23,
+      "duration": 0.009999999999990905,
+      "text": "then referenced as the source on the"
+    },
+    {
+      "start": 428.24,
+      "duration": 1.75,
+      "text": "then referenced as the source on the script tag usually it's preferred that"
+    },
+    {
+      "start": 429.99,
+      "duration": 0.009999999999990905,
+      "text": "script tag usually it's preferred that"
+    },
+    {
+      "start": 430.0,
+      "duration": 1.829999999999984,
+      "text": "script tag usually it's preferred that this code runs after the Dom content has"
+    },
+    {
+      "start": 431.83,
+      "duration": 0.009999999999990905,
+      "text": "this code runs after the Dom content has"
+    },
+    {
+      "start": 431.84,
+      "duration": 1.629000000000019,
+      "text": "this code runs after the Dom content has loaded which can be accomplished with"
+    },
+    {
+      "start": 433.469,
+      "duration": 0.009999999999990905,
+      "text": "loaded which can be accomplished with"
+    },
+    {
+      "start": 433.479,
+      "duration": 2.350999999999999,
+      "text": "loaded which can be accomplished with the defer attribute JS is a big"
+    },
+    {
+      "start": 435.83,
+      "duration": 0.009999999999990905,
+      "text": "the defer attribute JS is a big"
+    },
+    {
+      "start": 435.84,
+      "duration": 1.5100000000000477,
+      "text": "the defer attribute JS is a big complicated programming language which"
+    },
+    {
+      "start": 437.35,
+      "duration": 0.009999999999990905,
+      "text": "complicated programming language which"
+    },
+    {
+      "start": 437.36,
+      "duration": 2.1499999999999773,
+      "text": "complicated programming language which is more formally known as ecmascript and"
+    },
+    {
+      "start": 439.51,
+      "duration": 0.009999999999990905,
+      "text": "is more formally known as ecmascript and"
+    },
+    {
+      "start": 439.52,
+      "duration": 2.1899999999999977,
+      "text": "is more formally known as ecmascript and is standardized in all major browsers"
+    },
+    {
+      "start": 441.71,
+      "duration": 0.010000000000047748,
+      "text": "is standardized in all major browsers"
+    },
+    {
+      "start": 441.72,
+      "duration": 1.149000000000001,
+      "text": "is standardized in all major browsers there are several different ways to"
+    },
+    {
+      "start": 442.869,
+      "duration": 0.009999999999990905,
+      "text": "there are several different ways to"
+    },
+    {
+      "start": 442.879,
+      "duration": 1.8309999999999604,
+      "text": "there are several different ways to declare a variable a variable that might"
+    },
+    {
+      "start": 444.71,
+      "duration": 0.010000000000047748,
+      "text": "declare a variable a variable that might"
+    },
+    {
+      "start": 444.72,
+      "duration": 1.9499999999999886,
+      "text": "declare a variable a variable that might be reassigned in the future uses the let"
+    },
+    {
+      "start": 446.67,
+      "duration": 0.009999999999990905,
+      "text": "be reassigned in the future uses the let"
+    },
+    {
+      "start": 446.68,
+      "duration": 1.75,
+      "text": "be reassigned in the future uses the let keyword while a variable that can't be"
+    },
+    {
+      "start": 448.43,
+      "duration": 0.009999999999990905,
+      "text": "keyword while a variable that can't be"
+    },
+    {
+      "start": 448.44,
+      "duration": 2.230000000000018,
+      "text": "keyword while a variable that can't be reassigned uses con it's a dynamically"
+    },
+    {
+      "start": 450.67,
+      "duration": 0.009999999999990905,
+      "text": "reassigned uses con it's a dynamically"
+    },
+    {
+      "start": 450.68,
+      "duration": 1.589999999999975,
+      "text": "reassigned uses con it's a dynamically typed language which means no type"
+    },
+    {
+      "start": 452.27,
+      "duration": 0.009999999999990905,
+      "text": "typed language which means no type"
+    },
+    {
+      "start": 452.28,
+      "duration": 1.7100000000000364,
+      "text": "typed language which means no type annotations are necessary that's not"
+    },
+    {
+      "start": 453.99,
+      "duration": 0.009999999999990905,
+      "text": "annotations are necessary that's not"
+    },
+    {
+      "start": 454.0,
+      "duration": 1.9089999999999918,
+      "text": "annotations are necessary that's not always ideal so many developers choose"
+    },
+    {
+      "start": 455.909,
+      "duration": 0.009999999999990905,
+      "text": "always ideal so many developers choose"
+    },
+    {
+      "start": 455.919,
+      "duration": 1.7909999999999968,
+      "text": "always ideal so many developers choose typescript as an alternative to add"
+    },
+    {
+      "start": 457.71,
+      "duration": 0.010000000000047748,
+      "text": "typescript as an alternative to add"
+    },
+    {
+      "start": 457.72,
+      "duration": 2.149000000000001,
+      "text": "typescript as an alternative to add static typing on top of JavaScript now"
+    },
+    {
+      "start": 459.869,
+      "duration": 0.009999999999990905,
+      "text": "static typing on top of JavaScript now"
+    },
+    {
+      "start": 459.879,
+      "duration": 1.2709999999999582,
+      "text": "static typing on top of JavaScript now one of the most common reasons you would"
+    },
+    {
+      "start": 461.15,
+      "duration": 0.009999999999990905,
+      "text": "one of the most common reasons you would"
+    },
+    {
+      "start": 461.15999999999997,
+      "duration": 1.9500000000000455,
+      "text": "one of the most common reasons you would use JavaScript in the first place is to"
+    },
+    {
+      "start": 463.11,
+      "duration": 0.009999999999990905,
+      "text": "use JavaScript in the first place is to"
+    },
+    {
+      "start": 463.12,
+      "duration": 1.7490000000000236,
+      "text": "use JavaScript in the first place is to handle events whenever the user does"
+    },
+    {
+      "start": 464.869,
+      "duration": 0.009999999999990905,
+      "text": "handle events whenever the user does"
+    },
+    {
+      "start": 464.879,
+      "duration": 1.8700000000000045,
+      "text": "handle events whenever the user does something on a web page the browser"
+    },
+    {
+      "start": 466.749,
+      "duration": 0.009999999999990905,
+      "text": "something on a web page the browser"
+    },
+    {
+      "start": 466.759,
+      "duration": 2.031000000000006,
+      "text": "something on a web page the browser emits an event that you can listen to"
+    },
+    {
+      "start": 468.79,
+      "duration": 0.009999999999990905,
+      "text": "emits an event that you can listen to"
+    },
+    {
+      "start": 468.8,
+      "duration": 2.3100000000000023,
+      "text": "emits an event that you can listen to like a click Mouse move form input"
+    },
+    {
+      "start": 471.11,
+      "duration": 0.009999999999990905,
+      "text": "like a click Mouse move form input"
+    },
+    {
+      "start": 471.12,
+      "duration": 1.9089999999999918,
+      "text": "like a click Mouse move form input change and so on we can tap into these"
+    },
+    {
+      "start": 473.029,
+      "duration": 0.009999999999990905,
+      "text": "change and so on we can tap into these"
+    },
+    {
+      "start": 473.039,
+      "duration": 2.511000000000024,
+      "text": "change and so on we can tap into these events using browser apis like document"
+    },
+    {
+      "start": 475.55,
+      "duration": 0.009999999999990905,
+      "text": "events using browser apis like document"
+    },
+    {
+      "start": 475.56,
+      "duration": 1.5500000000000114,
+      "text": "events using browser apis like document which in this case provides a method"
+    },
+    {
+      "start": 477.11,
+      "duration": 0.009999999999990905,
+      "text": "which in this case provides a method"
+    },
+    {
+      "start": 477.12,
+      "duration": 1.7889999999999873,
+      "text": "which in this case provides a method called query selector that allows us to"
+    },
+    {
+      "start": 478.909,
+      "duration": 0.009999999999990905,
+      "text": "called query selector that allows us to"
+    },
+    {
+      "start": 478.919,
+      "duration": 2.3110000000000355,
+      "text": "called query selector that allows us to grab an element El with a CSS selector"
+    },
+    {
+      "start": 481.23,
+      "duration": 0.009999999999990905,
+      "text": "grab an element El with a CSS selector"
+    },
+    {
+      "start": 481.24,
+      "duration": 1.4300000000000068,
+      "text": "grab an element El with a CSS selector once we have that element set as a"
+    },
+    {
+      "start": 482.67,
+      "duration": 0.009999999999990905,
+      "text": "once we have that element set as a"
+    },
+    {
+      "start": 482.68,
+      "duration": 1.7889999999999873,
+      "text": "once we have that element set as a variable we can then assign an event"
+    },
+    {
+      "start": 484.469,
+      "duration": 0.009999999999990905,
+      "text": "variable we can then assign an event"
+    },
+    {
+      "start": 484.479,
+      "duration": 1.990000000000009,
+      "text": "variable we can then assign an event listener to it an event listener is a"
+    },
+    {
+      "start": 486.469,
+      "duration": 0.009999999999990905,
+      "text": "listener to it an event listener is a"
+    },
+    {
+      "start": 486.479,
+      "duration": 1.670000000000016,
+      "text": "listener to it an event listener is a function that will be called or"
+    },
+    {
+      "start": 488.149,
+      "duration": 0.009999999999990905,
+      "text": "function that will be called or"
+    },
+    {
+      "start": 488.159,
+      "duration": 2.150000000000034,
+      "text": "function that will be called or re-executed anytime the button is"
+    },
+    {
+      "start": 490.309,
+      "duration": 0.009999999999990905,
+      "text": "re-executed anytime the button is"
+    },
+    {
+      "start": 490.319,
+      "duration": 1.7509999999999764,
+      "text": "re-executed anytime the button is clicked the language has a variety of"
+    },
+    {
+      "start": 492.07,
+      "duration": 0.009999999999990905,
+      "text": "clicked the language has a variety of"
+    },
+    {
+      "start": 492.08,
+      "duration": 2.069000000000017,
+      "text": "clicked the language has a variety of built-in data structures like an array"
+    },
+    {
+      "start": 494.149,
+      "duration": 0.009999999999990905,
+      "text": "built-in data structures like an array"
+    },
+    {
+      "start": 494.159,
+      "duration": 2.3910000000000196,
+      "text": "built-in data structures like an array to represent a collection of values but"
+    },
+    {
+      "start": 496.55,
+      "duration": 0.009999999999990905,
+      "text": "to represent a collection of values but"
+    },
+    {
+      "start": 496.56,
+      "duration": 1.7490000000000236,
+      "text": "to represent a collection of values but the most fundamental data structure is"
+    },
+    {
+      "start": 498.309,
+      "duration": 0.009999999999990905,
+      "text": "the most fundamental data structure is"
+    },
+    {
+      "start": 498.319,
+      "duration": 1.829999999999984,
+      "text": "the most fundamental data structure is the object also commonly called a"
+    },
+    {
+      "start": 500.149,
+      "duration": 0.009999999999990905,
+      "text": "the object also commonly called a"
+    },
+    {
+      "start": 500.159,
+      "duration": 1.8700000000000045,
+      "text": "the object also commonly called a dictionary or hashmap anything that's"
+    },
+    {
+      "start": 502.029,
+      "duration": 0.009999999999990905,
+      "text": "dictionary or hashmap anything that's"
+    },
+    {
+      "start": 502.039,
+      "duration": 1.8700000000000045,
+      "text": "dictionary or hashmap anything that's not a primitive type like a string or"
+    },
+    {
+      "start": 503.909,
+      "duration": 0.009999999999990905,
+      "text": "not a primitive type like a string or"
+    },
+    {
+      "start": 503.919,
+      "duration": 1.990000000000009,
+      "text": "not a primitive type like a string or number inherits its base functionality"
+    },
+    {
+      "start": 505.909,
+      "duration": 0.009999999999990905,
+      "text": "number inherits its base functionality"
+    },
+    {
+      "start": 505.919,
+      "duration": 2.0710000000000264,
+      "text": "number inherits its base functionality from the object class it relies on a"
+    },
+    {
+      "start": 507.99,
+      "duration": 0.009999999999990905,
+      "text": "from the object class it relies on a"
+    },
+    {
+      "start": 508.0,
+      "duration": 2.149000000000001,
+      "text": "from the object class it relies on a technique called prototypal inheritance"
+    },
+    {
+      "start": 510.149,
+      "duration": 0.009999999999990905,
+      "text": "technique called prototypal inheritance"
+    },
+    {
+      "start": 510.159,
+      "duration": 1.75,
+      "text": "technique called prototypal inheritance where an object can be cloned multiple"
+    },
+    {
+      "start": 511.909,
+      "duration": 0.009999999999990905,
+      "text": "where an object can be cloned multiple"
+    },
+    {
+      "start": 511.919,
+      "duration": 2.230000000000018,
+      "text": "where an object can be cloned multiple times to create a chain of ancestors"
+    },
+    {
+      "start": 514.149,
+      "duration": 0.009999999999990905,
+      "text": "times to create a chain of ancestors"
+    },
+    {
+      "start": 514.159,
+      "duration": 1.7110000000000127,
+      "text": "times to create a chain of ancestors where the child inherits the properties"
+    },
+    {
+      "start": 515.87,
+      "duration": 0.009999999999990905,
+      "text": "where the child inherits the properties"
+    },
+    {
+      "start": 515.88,
+      "duration": 1.9489999999999554,
+      "text": "where the child inherits the properties and methods of its ancestors this is"
+    },
+    {
+      "start": 517.829,
+      "duration": 0.009999999999990905,
+      "text": "and methods of its ancestors this is"
+    },
+    {
+      "start": 517.8389999999999,
+      "duration": 1.75,
+      "text": "and methods of its ancestors this is different from class-based inheritance"
+    },
+    {
+      "start": 519.5889999999999,
+      "duration": 0.010000000000104592,
+      "text": "different from class-based inheritance"
+    },
+    {
+      "start": 519.599,
+      "duration": 1.3909999999999627,
+      "text": "different from class-based inheritance which is kind of confusing because"
+    },
+    {
+      "start": 520.99,
+      "duration": 0.009999999999990905,
+      "text": "which is kind of confusing because"
+    },
+    {
+      "start": 521.0,
+      "duration": 2.469000000000051,
+      "text": "which is kind of confusing because JavaScript also supports classes however"
+    },
+    {
+      "start": 523.469,
+      "duration": 0.009999999999990905,
+      "text": "JavaScript also supports classes however"
+    },
+    {
+      "start": 523.479,
+      "duration": 2.0299999999999727,
+      "text": "JavaScript also supports classes however these classes are just syntactic sugar"
+    },
+    {
+      "start": 525.509,
+      "duration": 0.009999999999990905,
+      "text": "these classes are just syntactic sugar"
+    },
+    {
+      "start": 525.519,
+      "duration": 1.990000000000009,
+      "text": "these classes are just syntactic sugar for prototypal inheritance but now we're"
+    },
+    {
+      "start": 527.509,
+      "duration": 0.009999999999990905,
+      "text": "for prototypal inheritance but now we're"
+    },
+    {
+      "start": 527.519,
+      "duration": 1.5910000000000082,
+      "text": "for prototypal inheritance but now we're getting a little too low level most"
+    },
+    {
+      "start": 529.11,
+      "duration": 0.009999999999990905,
+      "text": "getting a little too low level most"
+    },
+    {
+      "start": 529.12,
+      "duration": 1.3099999999999454,
+      "text": "getting a little too low level most developers don't ever want to have to"
+    },
+    {
+      "start": 530.43,
+      "duration": 0.010000000000104592,
+      "text": "developers don't ever want to have to"
+    },
+    {
+      "start": 530.44,
+      "duration": 1.5899999999999181,
+      "text": "developers don't ever want to have to touch the word prototype so what we do"
+    },
+    {
+      "start": 532.03,
+      "duration": 0.009999999999990905,
+      "text": "touch the word prototype so what we do"
+    },
+    {
+      "start": 532.04,
+      "duration": 2.0300000000000864,
+      "text": "touch the word prototype so what we do instead is use a front-end framework"
+    },
+    {
+      "start": 534.07,
+      "duration": 0.009999999999990905,
+      "text": "instead is use a front-end framework"
+    },
+    {
+      "start": 534.08,
+      "duration": 2.5499999999999545,
+      "text": "instead is use a front-end framework like react view spelt angular and so on"
+    },
+    {
+      "start": 536.63,
+      "duration": 0.009999999999990905,
+      "text": "like react view spelt angular and so on"
+    },
+    {
+      "start": 536.64,
+      "duration": 1.3500000000000227,
+      "text": "like react view spelt angular and so on all of these Frameworks do the same"
+    },
+    {
+      "start": 537.99,
+      "duration": 0.009999999999990905,
+      "text": "all of these Frameworks do the same"
+    },
+    {
+      "start": 538.0,
+      "duration": 1.75,
+      "text": "all of these Frameworks do the same thing in a slightly different way which"
+    },
+    {
+      "start": 539.75,
+      "duration": 0.009999999999990905,
+      "text": "thing in a slightly different way which"
+    },
+    {
+      "start": 539.76,
+      "duration": 2.06899999999996,
+      "text": "thing in a slightly different way which is represent the UI as a tree of"
+    },
+    {
+      "start": 541.829,
+      "duration": 0.010000000000104592,
+      "text": "is represent the UI as a tree of"
+    },
+    {
+      "start": 541.839,
+      "duration": 2.030999999999949,
+      "text": "is represent the UI as a tree of components a component can encapsulate"
+    },
+    {
+      "start": 543.87,
+      "duration": 0.009999999999990905,
+      "text": "components a component can encapsulate"
+    },
+    {
+      "start": 543.88,
+      "duration": 2.830000000000041,
+      "text": "components a component can encapsulate HTML CSS and JavaScript into a format"
+    },
+    {
+      "start": 546.71,
+      "duration": 0.009999999999990905,
+      "text": "HTML CSS and JavaScript into a format"
+    },
+    {
+      "start": 546.72,
+      "duration": 1.9499999999999318,
+      "text": "HTML CSS and JavaScript into a format that looks like its own custom HTML"
+    },
+    {
+      "start": 548.67,
+      "duration": 0.009999999999990905,
+      "text": "that looks like its own custom HTML"
+    },
+    {
+      "start": 548.68,
+      "duration": 1.75,
+      "text": "that looks like its own custom HTML element most importantly they produce"
+    },
+    {
+      "start": 550.43,
+      "duration": 0.010000000000104592,
+      "text": "element most importantly they produce"
+    },
+    {
+      "start": 550.44,
+      "duration": 2.1499999999999773,
+      "text": "element most importantly they produce declarative code that describes exactly"
+    },
+    {
+      "start": 552.59,
+      "duration": 0.009999999999990905,
+      "text": "declarative code that describes exactly"
+    },
+    {
+      "start": 552.6,
+      "duration": 1.9499999999999318,
+      "text": "declarative code that describes exactly what the UI does and that's much easier"
+    },
+    {
+      "start": 554.55,
+      "duration": 0.009999999999990905,
+      "text": "what the UI does and that's much easier"
+    },
+    {
+      "start": 554.56,
+      "duration": 1.7900000000000773,
+      "text": "what the UI does and that's much easier to work with than imperative code that"
+    },
+    {
+      "start": 556.35,
+      "duration": 0.009999999999990905,
+      "text": "to work with than imperative code that"
+    },
+    {
+      "start": 556.36,
+      "duration": 1.509999999999991,
+      "text": "to work with than imperative code that you would normally get with just plain"
+    },
+    {
+      "start": 557.87,
+      "duration": 0.009999999999990905,
+      "text": "you would normally get with just plain"
+    },
+    {
+      "start": 557.88,
+      "duration": 1.629000000000019,
+      "text": "you would normally get with just plain vanilla JavaScript at this point we've"
+    },
+    {
+      "start": 559.509,
+      "duration": 0.009999999999990905,
+      "text": "vanilla JavaScript at this point we've"
+    },
+    {
+      "start": 559.519,
+      "duration": 1.6309999999999718,
+      "text": "vanilla JavaScript at this point we've taken a look at the front end stack but"
+    },
+    {
+      "start": 561.15,
+      "duration": 0.009999999999990905,
+      "text": "taken a look at the front end stack but"
+    },
+    {
+      "start": 561.16,
+      "duration": 1.5900000000000318,
+      "text": "taken a look at the front end stack but now we need to switch gears to the back"
+    },
+    {
+      "start": 562.75,
+      "duration": 0.009999999999990905,
+      "text": "now we need to switch gears to the back"
+    },
+    {
+      "start": 562.76,
+      "duration": 2.269999999999982,
+      "text": "now we need to switch gears to the back end starting with node.js which is a"
+    },
+    {
+      "start": 565.03,
+      "duration": 0.009999999999990905,
+      "text": "end starting with node.js which is a"
+    },
+    {
+      "start": 565.04,
+      "duration": 2.1100000000000136,
+      "text": "end starting with node.js which is a serers side runtime based on JavaScript"
+    },
+    {
+      "start": 567.15,
+      "duration": 0.009999999999990905,
+      "text": "serers side runtime based on JavaScript"
+    },
+    {
+      "start": 567.16,
+      "duration": 1.509999999999991,
+      "text": "serers side runtime based on JavaScript you can run serers side code for web"
+    },
+    {
+      "start": 568.67,
+      "duration": 0.009999999999990905,
+      "text": "you can run serers side code for web"
+    },
+    {
+      "start": 568.68,
+      "duration": 1.5100000000001046,
+      "text": "you can run serers side code for web applications and all kinds of different"
+    },
+    {
+      "start": 570.19,
+      "duration": 0.009999999999990905,
+      "text": "applications and all kinds of different"
+    },
+    {
+      "start": 570.2,
+      "duration": 2.0299999999999727,
+      "text": "applications and all kinds of different languages but node is the most popular"
+    },
+    {
+      "start": 572.23,
+      "duration": 0.009999999999990905,
+      "text": "languages but node is the most popular"
+    },
+    {
+      "start": 572.24,
+      "duration": 1.5889999999999418,
+      "text": "languages but node is the most popular because it relies on the same language"
+    },
+    {
+      "start": 573.829,
+      "duration": 0.009999999999990905,
+      "text": "because it relies on the same language"
+    },
+    {
+      "start": 573.8389999999999,
+      "duration": 1.75100000000009,
+      "text": "because it relies on the same language as the browser it's also based on the"
+    },
+    {
+      "start": 575.59,
+      "duration": 0.009999999999990905,
+      "text": "as the browser it's also based on the"
+    },
+    {
+      "start": 575.6,
+      "duration": 1.9089999999999918,
+      "text": "as the browser it's also based on the same V8 engine that powers the Chromium"
+    },
+    {
+      "start": 577.509,
+      "duration": 0.009999999999990905,
+      "text": "same V8 engine that powers the Chromium"
+    },
+    {
+      "start": 577.519,
+      "duration": 2.2309999999999945,
+      "text": "same V8 engine that powers the Chromium browser to run code in a single-threaded"
+    },
+    {
+      "start": 579.75,
+      "duration": 0.009999999999990905,
+      "text": "browser to run code in a single-threaded"
+    },
+    {
+      "start": 579.76,
+      "duration": 2.0299999999999727,
+      "text": "browser to run code in a single-threaded non-blocking event Loop this allows node"
+    },
+    {
+      "start": 581.79,
+      "duration": 0.009999999999990905,
+      "text": "non-blocking event Loop this allows node"
+    },
+    {
+      "start": 581.8,
+      "duration": 2.07000000000005,
+      "text": "non-blocking event Loop this allows node to handle many simultaneous connections"
+    },
+    {
+      "start": 583.87,
+      "duration": 0.009999999999990905,
+      "text": "to handle many simultaneous connections"
+    },
+    {
+      "start": 583.88,
+      "duration": 1.990000000000009,
+      "text": "to handle many simultaneous connections quickly and efficiently in addition it"
+    },
+    {
+      "start": 585.87,
+      "duration": 0.009999999999990905,
+      "text": "quickly and efficiently in addition it"
+    },
+    {
+      "start": 585.88,
+      "duration": 2.1499999999999773,
+      "text": "quickly and efficiently in addition it allows developers to share work remotely"
+    },
+    {
+      "start": 588.03,
+      "duration": 0.009999999999990905,
+      "text": "allows developers to share work remotely"
+    },
+    {
+      "start": 588.04,
+      "duration": 1.9089999999999918,
+      "text": "allows developers to share work remotely thanks to the node package manager a"
+    },
+    {
+      "start": 589.949,
+      "duration": 0.010000000000104592,
+      "text": "thanks to the node package manager a"
+    },
+    {
+      "start": 589.9590000000001,
+      "duration": 2.0709999999999127,
+      "text": "thanks to the node package manager a package is also called a module which is"
+    },
+    {
+      "start": 592.03,
+      "duration": 0.009999999999990905,
+      "text": "package is also called a module which is"
+    },
+    {
+      "start": 592.04,
+      "duration": 2.0289999999999964,
+      "text": "package is also called a module which is just a file that contains some code with"
+    },
+    {
+      "start": 594.069,
+      "duration": 0.009999999999990905,
+      "text": "just a file that contains some code with"
+    },
+    {
+      "start": 594.079,
+      "duration": 2.2309999999999945,
+      "text": "just a file that contains some code with an export statement so it can be used in"
+    },
+    {
+      "start": 596.31,
+      "duration": 0.010000000000104592,
+      "text": "an export statement so it can be used in"
+    },
+    {
+      "start": 596.32,
+      "duration": 1.8700000000000045,
+      "text": "an export statement so it can be used in another file the file can consume a"
+    },
+    {
+      "start": 598.19,
+      "duration": 0.009999999999990905,
+      "text": "another file the file can consume a"
+    },
+    {
+      "start": 598.2,
+      "duration": 2.509999999999991,
+      "text": "another file the file can consume a module with an import statement but now"
+    },
+    {
+      "start": 600.71,
+      "duration": 0.009999999999990905,
+      "text": "module with an import statement but now"
+    },
+    {
+      "start": 600.72,
+      "duration": 1.6689999999999827,
+      "text": "module with an import statement but now we need to think about how to deliver"
+    },
+    {
+      "start": 602.389,
+      "duration": 0.009999999999990905,
+      "text": "we need to think about how to deliver"
+    },
+    {
+      "start": 602.399,
+      "duration": 2.0710000000000264,
+      "text": "we need to think about how to deliver the actual website from the server to"
+    },
+    {
+      "start": 604.47,
+      "duration": 0.009999999999990905,
+      "text": "the actual website from the server to"
+    },
+    {
+      "start": 604.48,
+      "duration": 2.42999999999995,
+      "text": "the actual website from the server to the client the classic option is serers"
+    },
+    {
+      "start": 606.91,
+      "duration": 0.009999999999990905,
+      "text": "the client the classic option is serers"
+    },
+    {
+      "start": 606.92,
+      "duration": 1.6299999999999955,
+      "text": "the client the classic option is serers side rendering in this approach the"
+    },
+    {
+      "start": 608.55,
+      "duration": 0.009999999999990905,
+      "text": "side rendering in this approach the"
+    },
+    {
+      "start": 608.56,
+      "duration": 2.1900000000000546,
+      "text": "side rendering in this approach the client will make a get request for a"
+    },
+    {
+      "start": 610.75,
+      "duration": 0.009999999999990905,
+      "text": "client will make a get request for a"
+    },
+    {
+      "start": 610.76,
+      "duration": 2.629000000000019,
+      "text": "client will make a get request for a certain URL every request has an HTTP"
+    },
+    {
+      "start": 613.389,
+      "duration": 0.009999999999990905,
+      "text": "certain URL every request has an HTTP"
+    },
+    {
+      "start": 613.399,
+      "duration": 1.9510000000000218,
+      "text": "certain URL every request has an HTTP method and git means you want to"
+    },
+    {
+      "start": 615.35,
+      "duration": 0.009999999999990905,
+      "text": "method and git means you want to"
+    },
+    {
+      "start": 615.36,
+      "duration": 1.9089999999999918,
+      "text": "method and git means you want to retrieve data from a server as opposed"
+    },
+    {
+      "start": 617.269,
+      "duration": 0.009999999999990905,
+      "text": "retrieve data from a server as opposed"
+    },
+    {
+      "start": 617.279,
+      "duration": 2.030999999999949,
+      "text": "retrieve data from a server as opposed to methods like post and Patch where the"
+    },
+    {
+      "start": 619.31,
+      "duration": 0.010000000000104592,
+      "text": "to methods like post and Patch where the"
+    },
+    {
+      "start": 619.32,
+      "duration": 2.3099999999999454,
+      "text": "to methods like post and Patch where the intent is to modify data the server"
+    },
+    {
+      "start": 621.63,
+      "duration": 0.009999999999990905,
+      "text": "intent is to modify data the server"
+    },
+    {
+      "start": 621.64,
+      "duration": 1.7100000000000364,
+      "text": "intent is to modify data the server receives the request and then generates"
+    },
+    {
+      "start": 623.35,
+      "duration": 0.009999999999990905,
+      "text": "receives the request and then generates"
+    },
+    {
+      "start": 623.36,
+      "duration": 2.269999999999982,
+      "text": "receives the request and then generates all the HTML on the server and sends it"
+    },
+    {
+      "start": 625.63,
+      "duration": 0.009999999999990905,
+      "text": "all the HTML on the server and sends it"
+    },
+    {
+      "start": 625.64,
+      "duration": 1.8690000000000282,
+      "text": "all the HTML on the server and sends it back to the client as a response the"
+    },
+    {
+      "start": 627.509,
+      "duration": 0.009999999999990905,
+      "text": "back to the client as a response the"
+    },
+    {
+      "start": 627.519,
+      "duration": 2.42999999999995,
+      "text": "back to the client as a response the response contains a status code like 200"
+    },
+    {
+      "start": 629.949,
+      "duration": 0.009999999999990905,
+      "text": "response contains a status code like 200"
+    },
+    {
+      "start": 629.959,
+      "duration": 2.671000000000049,
+      "text": "response contains a status code like 200 for success or levels 4 and 500 for"
+    },
+    {
+      "start": 632.63,
+      "duration": 0.009999999999990905,
+      "text": "for success or levels 4 and 500 for"
+    },
+    {
+      "start": 632.64,
+      "duration": 1.9500000000000455,
+      "text": "for success or levels 4 and 500 for errors for example if the web page"
+    },
+    {
+      "start": 634.59,
+      "duration": 0.009999999999990905,
+      "text": "errors for example if the web page"
+    },
+    {
+      "start": 634.6,
+      "duration": 1.7889999999999873,
+      "text": "errors for example if the web page doesn't exist the server will return a"
+    },
+    {
+      "start": 636.389,
+      "duration": 0.009999999999990905,
+      "text": "doesn't exist the server will return a"
+    },
+    {
+      "start": 636.399,
+      "duration": 2.350999999999999,
+      "text": "doesn't exist the server will return a 404 status code which you've likely seen"
+    },
+    {
+      "start": 638.75,
+      "duration": 0.009999999999990905,
+      "text": "404 status code which you've likely seen"
+    },
+    {
+      "start": 638.76,
+      "duration": 2.4300000000000637,
+      "text": "404 status code which you've likely seen before as a web user SSR is extremely"
+    },
+    {
+      "start": 641.19,
+      "duration": 0.009999999999990905,
+      "text": "before as a web user SSR is extremely"
+    },
+    {
+      "start": 641.2,
+      "duration": 2.308999999999969,
+      "text": "before as a web user SSR is extremely popular but in some cases it may not be"
+    },
+    {
+      "start": 643.509,
+      "duration": 0.009999999999990905,
+      "text": "popular but in some cases it may not be"
+    },
+    {
+      "start": 643.519,
+      "duration": 2.030999999999949,
+      "text": "popular but in some cases it may not be fast enough another approach is the"
+    },
+    {
+      "start": 645.55,
+      "duration": 0.009999999999990905,
+      "text": "fast enough another approach is the"
+    },
+    {
+      "start": 645.56,
+      "duration": 1.6700000000000728,
+      "text": "fast enough another approach is the single page application with this"
+    },
+    {
+      "start": 647.23,
+      "duration": 0.009999999999990905,
+      "text": "single page application with this"
+    },
+    {
+      "start": 647.24,
+      "duration": 2.1100000000000136,
+      "text": "single page application with this approach the server only renders a shell"
+    },
+    {
+      "start": 649.35,
+      "duration": 0.009999999999990905,
+      "text": "approach the server only renders a shell"
+    },
+    {
+      "start": 649.36,
+      "duration": 2.3099999999999454,
+      "text": "approach the server only renders a shell for the root URL then JavaScript handles"
+    },
+    {
+      "start": 651.67,
+      "duration": 0.009999999999990905,
+      "text": "for the root URL then JavaScript handles"
+    },
+    {
+      "start": 651.68,
+      "duration": 1.9490000000000691,
+      "text": "for the root URL then JavaScript handles the rendering for all other pages on the"
+    },
+    {
+      "start": 653.629,
+      "duration": 0.009999999999990905,
+      "text": "the rendering for all other pages on the"
+    },
+    {
+      "start": 653.639,
+      "duration": 2.2309999999999945,
+      "text": "the rendering for all other pages on the website the HTML is generated almost"
+    },
+    {
+      "start": 655.87,
+      "duration": 0.009999999999990905,
+      "text": "website the HTML is generated almost"
+    },
+    {
+      "start": 655.88,
+      "duration": 1.7899999999999636,
+      "text": "website the HTML is generated almost entirely client side in the browser"
+    },
+    {
+      "start": 657.67,
+      "duration": 0.009999999999990905,
+      "text": "entirely client side in the browser"
+    },
+    {
+      "start": 657.68,
+      "duration": 1.6299999999999955,
+      "text": "entirely client side in the browser making the website feel more like a"
+    },
+    {
+      "start": 659.31,
+      "duration": 0.010000000000104592,
+      "text": "making the website feel more like a"
+    },
+    {
+      "start": 659.32,
+      "duration": 2.1499999999999773,
+      "text": "making the website feel more like a native iOS or Android app when the app"
+    },
+    {
+      "start": 661.47,
+      "duration": 0.009999999999990905,
+      "text": "native iOS or Android app when the app"
+    },
+    {
+      "start": 661.48,
+      "duration": 2.230000000000018,
+      "text": "native iOS or Android app when the app needs more data it still makes an HTTP"
+    },
+    {
+      "start": 663.71,
+      "duration": 0.009999999999990905,
+      "text": "needs more data it still makes an HTTP"
+    },
+    {
+      "start": 663.72,
+      "duration": 2.0299999999999727,
+      "text": "needs more data it still makes an HTTP request but only requests a minimal"
+    },
+    {
+      "start": 665.75,
+      "duration": 0.009999999999990905,
+      "text": "request but only requests a minimal"
+    },
+    {
+      "start": 665.76,
+      "duration": 2.308999999999969,
+      "text": "request but only requests a minimal amount of data as Json which is called a"
+    },
+    {
+      "start": 668.069,
+      "duration": 0.009999999999990905,
+      "text": "amount of data as Json which is called a"
+    },
+    {
+      "start": 668.079,
+      "duration": 1.6710000000000491,
+      "text": "amount of data as Json which is called a data interchange format that can be"
+    },
+    {
+      "start": 669.75,
+      "duration": 0.009999999999990905,
+      "text": "data interchange format that can be"
+    },
+    {
+      "start": 669.76,
+      "duration": 2.1100000000000136,
+      "text": "data interchange format that can be understood by any programming language"
+    },
+    {
+      "start": 671.87,
+      "duration": 0.009999999999990905,
+      "text": "understood by any programming language"
+    },
+    {
+      "start": 671.88,
+      "duration": 1.2699999999999818,
+      "text": "understood by any programming language this can result in a great user"
+    },
+    {
+      "start": 673.15,
+      "duration": 0.009999999999990905,
+      "text": "this can result in a great user"
+    },
+    {
+      "start": 673.16,
+      "duration": 1.8700000000000045,
+      "text": "this can result in a great user experience however it can be very"
+    },
+    {
+      "start": 675.03,
+      "duration": 0.009999999999990905,
+      "text": "experience however it can be very"
+    },
+    {
+      "start": 675.04,
+      "duration": 1.990000000000009,
+      "text": "experience however it can be very difficult for Bots like search engines"
+    },
+    {
+      "start": 677.03,
+      "duration": 0.009999999999990905,
+      "text": "difficult for Bots like search engines"
+    },
+    {
+      "start": 677.04,
+      "duration": 2.1900000000000546,
+      "text": "difficult for Bots like search engines and social media link previews to"
+    },
+    {
+      "start": 679.23,
+      "duration": 0.009999999999990905,
+      "text": "and social media link previews to"
+    },
+    {
+      "start": 679.24,
+      "duration": 1.8700000000000045,
+      "text": "and social media link previews to understand content on the page this led"
+    },
+    {
+      "start": 681.11,
+      "duration": 0.009999999999990905,
+      "text": "understand content on the page this led"
+    },
+    {
+      "start": 681.12,
+      "duration": 1.8289999999999509,
+      "text": "understand content on the page this led to another rendering strategy called"
+    },
+    {
+      "start": 682.949,
+      "duration": 0.009999999999990905,
+      "text": "to another rendering strategy called"
+    },
+    {
+      "start": 682.959,
+      "duration": 1.990000000000009,
+      "text": "to another rendering strategy called Static site generation in this case"
+    },
+    {
+      "start": 684.949,
+      "duration": 0.009999999999990905,
+      "text": "Static site generation in this case"
+    },
+    {
+      "start": 684.959,
+      "duration": 1.8700000000000045,
+      "text": "Static site generation in this case every web page on the site is uploaded"
+    },
+    {
+      "start": 686.829,
+      "duration": 0.009999999999990905,
+      "text": "every web page on the site is uploaded"
+    },
+    {
+      "start": 686.8389999999999,
+      "duration": 2.230000000000018,
+      "text": "every web page on the site is uploaded to a server in advance allowing Bots to"
+    },
+    {
+      "start": 689.069,
+      "duration": 0.009999999999990905,
+      "text": "to a server in advance allowing Bots to"
+    },
+    {
+      "start": 689.079,
+      "duration": 1.8700000000000045,
+      "text": "to a server in advance allowing Bots to get the information they need a frontend"
+    },
+    {
+      "start": 690.949,
+      "duration": 0.009999999999990905,
+      "text": "get the information they need a frontend"
+    },
+    {
+      "start": 690.959,
+      "duration": 1.8310000000000173,
+      "text": "get the information they need a frontend JavaScript framework usually takes over"
+    },
+    {
+      "start": 692.79,
+      "duration": 0.009999999999990905,
+      "text": "JavaScript framework usually takes over"
+    },
+    {
+      "start": 692.8,
+      "duration": 2.149000000000001,
+      "text": "JavaScript framework usually takes over to hydrate the HTML to make it fully"
+    },
+    {
+      "start": 694.949,
+      "duration": 0.010000000000104592,
+      "text": "to hydrate the HTML to make it fully"
+    },
+    {
+      "start": 694.9590000000001,
+      "duration": 2.0709999999999127,
+      "text": "to hydrate the HTML to make it fully interactive and behave like a single"
+    },
+    {
+      "start": 697.03,
+      "duration": 0.009999999999990905,
+      "text": "interactive and behave like a single"
+    },
+    {
+      "start": 697.04,
+      "duration": 1.5890000000000555,
+      "text": "interactive and behave like a single page application performance is"
+    },
+    {
+      "start": 698.629,
+      "duration": 0.009999999999990905,
+      "text": "page application performance is"
+    },
+    {
+      "start": 698.639,
+      "duration": 1.3099999999999454,
+      "text": "page application performance is extremely important and you'll want to"
+    },
+    {
+      "start": 699.949,
+      "duration": 0.010000000000104592,
+      "text": "extremely important and you'll want to"
+    },
+    {
+      "start": 699.9590000000001,
+      "duration": 1.8309999999999036,
+      "text": "extremely important and you'll want to use tools like Lighthouse to optimize"
+    },
+    {
+      "start": 701.79,
+      "duration": 0.009999999999990905,
+      "text": "use tools like Lighthouse to optimize"
+    },
+    {
+      "start": 701.8,
+      "duration": 1.9500000000000455,
+      "text": "use tools like Lighthouse to optimize metrics like first contentful paint and"
+    },
+    {
+      "start": 703.75,
+      "duration": 0.009999999999990905,
+      "text": "metrics like first contentful paint and"
+    },
+    {
+      "start": 703.76,
+      "duration": 1.9099999999999682,
+      "text": "metrics like first contentful paint and time to interactive now to implement one"
+    },
+    {
+      "start": 705.67,
+      "duration": 0.009999999999990905,
+      "text": "time to interactive now to implement one"
+    },
+    {
+      "start": 705.68,
+      "duration": 1.6299999999999955,
+      "text": "time to interactive now to implement one of these patterns most developers will"
+    },
+    {
+      "start": 707.31,
+      "duration": 0.010000000000104592,
+      "text": "of these patterns most developers will"
+    },
+    {
+      "start": 707.32,
+      "duration": 2.6289999999999054,
+      "text": "of these patterns most developers will use a full stack framework like nextjs"
+    },
+    {
+      "start": 709.949,
+      "duration": 0.010000000000104592,
+      "text": "use a full stack framework like nextjs"
+    },
+    {
+      "start": 709.9590000000001,
+      "duration": 2.5909999999998945,
+      "text": "use a full stack framework like nextjs Ruby on Rails laravel and so on they"
+    },
+    {
+      "start": 712.55,
+      "duration": 0.009999999999990905,
+      "text": "Ruby on Rails laravel and so on they"
+    },
+    {
+      "start": 712.56,
+      "duration": 1.6300000000001091,
+      "text": "Ruby on Rails laravel and so on they abstract away many of the more tedious"
+    },
+    {
+      "start": 714.19,
+      "duration": 0.009999999999990905,
+      "text": "abstract away many of the more tedious"
+    },
+    {
+      "start": 714.2,
+      "duration": 1.509999999999991,
+      "text": "abstract away many of the more tedious things developers don't want to deal"
+    },
+    {
+      "start": 715.71,
+      "duration": 0.009999999999990905,
+      "text": "things developers don't want to deal"
+    },
+    {
+      "start": 715.72,
+      "duration": 2.0299999999999727,
+      "text": "things developers don't want to deal with one of which is module bundlers"
+    },
+    {
+      "start": 717.75,
+      "duration": 0.009999999999990905,
+      "text": "with one of which is module bundlers"
+    },
+    {
+      "start": 717.76,
+      "duration": 1.8690000000000282,
+      "text": "with one of which is module bundlers which are tools like webpack and that"
+    },
+    {
+      "start": 719.629,
+      "duration": 0.009999999999990905,
+      "text": "which are tools like webpack and that"
+    },
+    {
+      "start": 719.639,
+      "duration": 2.6709999999999354,
+      "text": "which are tools like webpack and that take all of your JavaScript CSS and HTML"
+    },
+    {
+      "start": 722.31,
+      "duration": 0.010000000000104592,
+      "text": "take all of your JavaScript CSS and HTML"
+    },
+    {
+      "start": 722.32,
+      "duration": 1.3899999999999864,
+      "text": "take all of your JavaScript CSS and HTML and package it in a way that can"
+    },
+    {
+      "start": 723.71,
+      "duration": 0.009999999999990905,
+      "text": "and package it in a way that can"
+    },
+    {
+      "start": 723.72,
+      "duration": 1.6689999999999827,
+      "text": "and package it in a way that can actually work in a browser they might"
+    },
+    {
+      "start": 725.389,
+      "duration": 0.009999999999990905,
+      "text": "actually work in a browser they might"
+    },
+    {
+      "start": 725.399,
+      "duration": 2.230000000000018,
+      "text": "actually work in a browser they might also provide a linter like es lint to"
+    },
+    {
+      "start": 727.629,
+      "duration": 0.009999999999990905,
+      "text": "also provide a linter like es lint to"
+    },
+    {
+      "start": 727.639,
+      "duration": 1.42999999999995,
+      "text": "also provide a linter like es lint to warn you when your code doesn't follow"
+    },
+    {
+      "start": 729.069,
+      "duration": 0.009999999999990905,
+      "text": "warn you when your code doesn't follow"
+    },
+    {
+      "start": 729.079,
+      "duration": 1.8310000000000173,
+      "text": "warn you when your code doesn't follow the proper Style Guidelines oh and I"
+    },
+    {
+      "start": 730.91,
+      "duration": 0.009999999999990905,
+      "text": "the proper Style Guidelines oh and I"
+    },
+    {
+      "start": 730.92,
+      "duration": 1.4300000000000637,
+      "text": "the proper Style Guidelines oh and I almost forgot you are definitely going"
+    },
+    {
+      "start": 732.35,
+      "duration": 0.009999999999990905,
+      "text": "almost forgot you are definitely going"
+    },
+    {
+      "start": 732.36,
+      "duration": 2.0699999999999363,
+      "text": "almost forgot you are definitely going to need a database to build a full stack"
+    },
+    {
+      "start": 734.43,
+      "duration": 0.010000000000104592,
+      "text": "to need a database to build a full stack"
+    },
+    {
+      "start": 734.44,
+      "duration": 1.349999999999909,
+      "text": "to need a database to build a full stack web application because you need"
+    },
+    {
+      "start": 735.79,
+      "duration": 0.009999999999990905,
+      "text": "web application because you need"
+    },
+    {
+      "start": 735.8,
+      "duration": 2.07000000000005,
+      "text": "web application because you need somewhere to store your data like data"
+    },
+    {
+      "start": 737.87,
+      "duration": 0.009999999999990905,
+      "text": "somewhere to store your data like data"
+    },
+    {
+      "start": 737.88,
+      "duration": 1.7490000000000236,
+      "text": "somewhere to store your data like data about your users but in order to get"
+    },
+    {
+      "start": 739.629,
+      "duration": 0.009999999999990905,
+      "text": "about your users but in order to get"
+    },
+    {
+      "start": 739.639,
+      "duration": 1.5109999999999673,
+      "text": "about your users but in order to get that data you'll need to give users a"
+    },
+    {
+      "start": 741.15,
+      "duration": 0.009999999999990905,
+      "text": "that data you'll need to give users a"
+    },
+    {
+      "start": 741.16,
+      "duration": 2.4300000000000637,
+      "text": "that data you'll need to give users a way to log in Via a process called user"
+    },
+    {
+      "start": 743.59,
+      "duration": 0.009999999999990905,
+      "text": "way to log in Via a process called user"
+    },
+    {
+      "start": 743.6,
+      "duration": 1.8299999999999272,
+      "text": "way to log in Via a process called user authentication now before you deploy"
+    },
+    {
+      "start": 745.43,
+      "duration": 0.010000000000104592,
+      "text": "authentication now before you deploy"
+    },
+    {
+      "start": 745.44,
+      "duration": 1.5899999999999181,
+      "text": "authentication now before you deploy your code you'll need to test it with a"
+    },
+    {
+      "start": 747.03,
+      "duration": 0.009999999999990905,
+      "text": "your code you'll need to test it with a"
+    },
+    {
+      "start": 747.04,
+      "duration": 1.75,
+      "text": "your code you'll need to test it with a web server there are tools like engine X"
+    },
+    {
+      "start": 748.79,
+      "duration": 0.009999999999990905,
+      "text": "web server there are tools like engine X"
+    },
+    {
+      "start": 748.8,
+      "duration": 2.7900000000000773,
+      "text": "web server there are tools like engine X and A pchy to create an HTTP server but"
+    },
+    {
+      "start": 751.59,
+      "duration": 0.009999999999990905,
+      "text": "and A pchy to create an HTTP server but"
+    },
+    {
+      "start": 751.6,
+      "duration": 1.509999999999991,
+      "text": "and A pchy to create an HTTP server but your framework will likely do this for"
+    },
+    {
+      "start": 753.11,
+      "duration": 0.009999999999990905,
+      "text": "your framework will likely do this for"
+    },
+    {
+      "start": 753.12,
+      "duration": 2.06899999999996,
+      "text": "your framework will likely do this for you by serving the files on Local Host"
+    },
+    {
+      "start": 755.189,
+      "duration": 0.009999999999990905,
+      "text": "you by serving the files on Local Host"
+    },
+    {
+      "start": 755.199,
+      "duration": 1.7110000000000127,
+      "text": "you by serving the files on Local Host which makes your own IP address behave"
+    },
+    {
+      "start": 756.91,
+      "duration": 0.009999999999990905,
+      "text": "which makes your own IP address behave"
+    },
+    {
+      "start": 756.92,
+      "duration": 1.70900000000006,
+      "text": "which makes your own IP address behave like a remote web server when it comes"
+    },
+    {
+      "start": 758.629,
+      "duration": 0.009999999999990905,
+      "text": "like a remote web server when it comes"
+    },
+    {
+      "start": 758.639,
+      "duration": 1.79099999999994,
+      "text": "like a remote web server when it comes time to deploy you'll likely use a big"
+    },
+    {
+      "start": 760.43,
+      "duration": 0.010000000000104592,
+      "text": "time to deploy you'll likely use a big"
+    },
+    {
+      "start": 760.44,
+      "duration": 2.4699999999999136,
+      "text": "time to deploy you'll likely use a big cloud provider like AWS most apps are"
+    },
+    {
+      "start": 762.91,
+      "duration": 0.009999999999990905,
+      "text": "cloud provider like AWS most apps are"
+    },
+    {
+      "start": 762.92,
+      "duration": 1.8700000000000045,
+      "text": "cloud provider like AWS most apps are containerized with Docker making them"
+    },
+    {
+      "start": 764.79,
+      "duration": 0.009999999999990905,
+      "text": "containerized with Docker making them"
+    },
+    {
+      "start": 764.8,
+      "duration": 2.07000000000005,
+      "text": "containerized with Docker making them easy to scale Up and Down based on the"
+    },
+    {
+      "start": 766.87,
+      "duration": 0.009999999999990905,
+      "text": "easy to scale Up and Down based on the"
+    },
+    {
+      "start": 766.88,
+      "duration": 1.5900000000000318,
+      "text": "easy to scale Up and Down based on the amount of traffic that they receive"
+    },
+    {
+      "start": 768.47,
+      "duration": 0.009999999999990905,
+      "text": "amount of traffic that they receive"
+    },
+    {
+      "start": 768.48,
+      "duration": 1.3899999999999864,
+      "text": "amount of traffic that they receive there are many tools out there that"
+    },
+    {
+      "start": 769.87,
+      "duration": 0.009999999999990905,
+      "text": "there are many tools out there that"
+    },
+    {
+      "start": 769.88,
+      "duration": 2.1499999999999773,
+      "text": "there are many tools out there that function as a platform as a service to"
+    },
+    {
+      "start": 772.03,
+      "duration": 0.009999999999990905,
+      "text": "function as a platform as a service to"
+    },
+    {
+      "start": 772.04,
+      "duration": 1.7100000000000364,
+      "text": "function as a platform as a service to manage this infrastructure for you in"
+    },
+    {
+      "start": 773.75,
+      "duration": 0.009999999999990905,
+      "text": "manage this infrastructure for you in"
+    },
+    {
+      "start": 773.76,
+      "duration": 1.669999999999959,
+      "text": "manage this infrastructure for you in exchange for your money or if you don't"
+    },
+    {
+      "start": 775.43,
+      "duration": 0.010000000000104592,
+      "text": "exchange for your money or if you don't"
+    },
+    {
+      "start": 775.44,
+      "duration": 1.5899999999999181,
+      "text": "exchange for your money or if you don't want to get locked in with a giant Tech"
+    },
+    {
+      "start": 777.03,
+      "duration": 0.009999999999990905,
+      "text": "want to get locked in with a giant Tech"
+    },
+    {
+      "start": 777.04,
+      "duration": 1.7100000000000364,
+      "text": "want to get locked in with a giant Tech Corporation you might host your app on a"
+    },
+    {
+      "start": 778.75,
+      "duration": 0.009999999999990905,
+      "text": "Corporation you might host your app on a"
+    },
+    {
+      "start": 778.76,
+      "duration": 2.4700000000000273,
+      "text": "Corporation you might host your app on a decent calized blockchain with web 3 and"
+    },
+    {
+      "start": 781.23,
+      "duration": 0.009999999999990905,
+      "text": "decent calized blockchain with web 3 and"
+    },
+    {
+      "start": 781.24,
+      "duration": 1.5889999999999418,
+      "text": "decent calized blockchain with web 3 and that's about 1% of what you'll need to"
+    },
+    {
+      "start": 782.829,
+      "duration": 0.010000000000104592,
+      "text": "that's about 1% of what you'll need to"
+    },
+    {
+      "start": 782.839,
+      "duration": 2.1099999999999,
+      "text": "that's about 1% of what you'll need to know to call yourself a full stack web"
+    },
+    {
+      "start": 784.949,
+      "duration": 0.009999999999990905,
+      "text": "know to call yourself a full stack web"
+    },
+    {
+      "start": 784.959,
+      "duration": 1.7110000000000127,
+      "text": "know to call yourself a full stack web developer if that seems overwhelming"
+    },
+    {
+      "start": 786.67,
+      "duration": 0.009999999999990905,
+      "text": "developer if that seems overwhelming"
+    },
+    {
+      "start": 786.68,
+      "duration": 1.8290000000000646,
+      "text": "developer if that seems overwhelming don't worry too much almost nobody knows"
+    },
+    {
+      "start": 788.509,
+      "duration": 0.009999999999990905,
+      "text": "don't worry too much almost nobody knows"
+    },
+    {
+      "start": 788.519,
+      "duration": 1.1509999999999536,
+      "text": "don't worry too much almost nobody knows what the hell they're doing and we all"
+    },
+    {
+      "start": 789.67,
+      "duration": 0.009999999999990905,
+      "text": "what the hell they're doing and we all"
+    },
+    {
+      "start": 789.68,
+      "duration": 1.6700000000000728,
+      "text": "what the hell they're doing and we all just use Google to figure things out on"
+    },
+    {
+      "start": 791.35,
+      "duration": 0.009999999999990905,
+      "text": "just use Google to figure things out on"
+    },
+    {
+      "start": 791.36,
+      "duration": 2.3099999999999454,
+      "text": "just use Google to figure things out on the Fly congratulations you just passed"
+    },
+    {
+      "start": 793.67,
+      "duration": 0.009999999999990905,
+      "text": "the Fly congratulations you just passed"
+    },
+    {
+      "start": 793.68,
+      "duration": 2.3500000000000227,
+      "text": "the Fly congratulations you just passed web development 101 thanks for watching"
+    },
+    {
+      "start": 796.03,
+      "duration": 0.009999999999990905,
+      "text": "web development 101 thanks for watching"
+    },
+    {
+      "start": 796.04,
+      "duration": 3.759999999999991,
+      "text": "web development 101 thanks for watching and I will see you in the next one"
+    }
+  ],
+  "fetched_at": "2026-05-04T20:34:49Z"
+}

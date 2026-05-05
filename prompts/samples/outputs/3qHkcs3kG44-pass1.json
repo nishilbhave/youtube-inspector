@@ -1,0 +1,68 @@
+{
+  "video_id": "3qHkcs3kG44",
+  "sections": [
+    {
+      "id": "S1",
+      "type": "hook",
+      "start": "0:00:00",
+      "end": "0:01:50",
+      "summary": "Joe welcomes Naval and frames him as a tech investor with a balanced perspective on living life, setting up the conversation."
+    },
+    {
+      "id": "S2",
+      "type": "content",
+      "start": "0:01:50",
+      "end": "0:13:20",
+      "summary": "Naval argues against specialization, advocates a generalist arc of life, and discusses how he reads many books non-linearly to satisfy genuine curiosity."
+    },
+    {
+      "id": "S3",
+      "type": "content",
+      "start": "0:13:20",
+      "end": "0:30:00",
+      "summary": "They discuss happiness, inner peace, present-moment awareness, and the trap of chasing money or status without meaning."
+    },
+    {
+      "id": "S4",
+      "type": "content",
+      "start": "0:30:00",
+      "end": "0:46:00",
+      "summary": "Conversation on automation, AI, the future of jobs, universal basic income, capitalism vs socialism, and how the family unit is naturally socialist."
+    },
+    {
+      "id": "S5",
+      "type": "content",
+      "start": "0:46:00",
+      "end": "1:10:00",
+      "summary": "Naval and Joe critique social media outrage, Twitter mobs, journalism, doxing, and the perceived corruption of legacy media organizations."
+    },
+    {
+      "id": "S6",
+      "type": "content",
+      "start": "1:10:00",
+      "end": "1:30:00",
+      "summary": "Discussion of politics, tribalism, immigration debates, mental noise, meditation, psychedelic states, and learning to manage one's own mind."
+    },
+    {
+      "id": "S7",
+      "type": "content",
+      "start": "1:30:00",
+      "end": "1:50:00",
+      "summary": "They cover environmental concerns, nuclear power, wealth-building strategy, keeping a low burn rate, and judging life by suffering rather than resume."
+    },
+    {
+      "id": "S8",
+      "type": "content",
+      "start": "1:50:00",
+      "end": "2:11:21",
+      "summary": "Naval reflects on shifting from pessimism to optimism, ruthlessly guarding his time, and learning purely for understanding rather than to display knowledge."
+    },
+    {
+      "id": "S9",
+      "type": "outro",
+      "start": "2:11:21",
+      "end": "2:11:56",
+      "summary": "Closing reflection that desires fade once attained, followed by music and applause sign-off."
+    }
+  ]
+}

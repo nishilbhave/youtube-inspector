@@ -1,0 +1,26 @@
+{
+  "video_id": "ru7fWKD4cyw",
+  "sections": [
+    {
+      "id": "S1",
+      "type": "hook",
+      "start": "0:00:00",
+      "end": "0:04:00",
+      "summary": "Creator claims a 20% landing page conversion rate that generated $1.2M, shares his backstory of starting a wedding DJ business with $10K, and previews coverage of landing page elements, heat maps, and split tests."
+    },
+    {
+      "id": "S2",
+      "type": "content",
+      "start": "0:04:00",
+      "end": "1:15:18",
+      "summary": "Walks through setting up Anti-Gravity and Claude Code, building out a landing page using a claude.md file, then dissects landing page elements (headlines, video, case studies, B2B specifics, keyword/intent alignment), and demonstrates split testing and heat map tracking with PostHog and Vercel deployment."
+    },
+    {
+      "id": "S3",
+      "type": "pitch",
+      "start": "1:15:18",
+      "end": "1:16:42",
+      "summary": "Promotes his free Skool community for blueprints, his paid community offering training for starting an agency or scaling an existing business with seven coaching calls, and his agency offering a free 30-minute call."
+    }
+  ]
+}

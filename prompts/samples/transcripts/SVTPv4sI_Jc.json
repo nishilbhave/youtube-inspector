@@ -1,0 +1,2594 @@
+{
+  "video_id": "SVTPv4sI_Jc",
+  "url": "https://www.youtube.com/watch?v=SVTPv4sI_Jc",
+  "title": "Can a quantum sensor detect your heartbeat from 60 km away?",
+  "channel": "Veritasium",
+  "channel_id": "UCHnyfMqiRRG1u-2MsSQLbXA",
+  "duration_seconds": 1278,
+  "view_count": 984784,
+  "upload_date": "2026-05-03",
+  "language": "en-en",
+  "transcript": [
+    {
+      "start": 0.035,
+      "duration": 2.045,
+      "text": "- Could the CIA really track your heartbeat"
+    },
+    {
+      "start": 2.08,
+      "duration": 1.6799999999999997,
+      "text": "from kilometers away?"
+    },
+    {
+      "start": 3.76,
+      "duration": 1.8399999999999999,
+      "text": "On April 3rd, 2026,"
+    },
+    {
+      "start": 5.6,
+      "duration": 2.7200000000000006,
+      "text": "Iranian forces shot down an American fighter plane"
+    },
+    {
+      "start": 8.32,
+      "duration": 2.0,
+      "text": "just over Isfahan."
+    },
+    {
+      "start": 10.32,
+      "duration": 3.119999999999999,
+      "text": "Inside were a pilot and a weapon system officer,"
+    },
+    {
+      "start": 13.44,
+      "duration": 3.360000000000001,
+      "text": "and both ejected successfully."
+    },
+    {
+      "start": 16.8,
+      "duration": 2.16,
+      "text": "The US forces located the pilot quickly"
+    },
+    {
+      "start": 18.96,
+      "duration": 3.039999999999999,
+      "text": "and rescued him only seven hours after the crash,"
+    },
+    {
+      "start": 22.0,
+      "duration": 2.8000000000000007,
+      "text": "but they couldn't rescue the weapon system officer."
+    },
+    {
+      "start": 24.8,
+      "duration": 3.120000000000001,
+      "text": "He landed elsewhere deep within hostile territory."
+    },
+    {
+      "start": 27.92,
+      "duration": 2.3999999999999986,
+      "text": "And, worst of all, he was injured."
+    },
+    {
+      "start": 30.32,
+      "duration": 2.0799999999999983,
+      "text": "With the Iranian forces on his tail,"
+    },
+    {
+      "start": 32.4,
+      "duration": 1.4400000000000048,
+      "text": "the officer needed to hide quickly,"
+    },
+    {
+      "start": 33.84,
+      "duration": 2.479999999999997,
+      "text": "so he disappeared into the mountains."
+    },
+    {
+      "start": 39.957,
+      "duration": 3.3999999999999986,
+      "text": "to rescue an aviator buried deep behind enemy lines."
+    },
+    {
+      "start": 43.357,
+      "duration": 2.3599999999999994,
+      "text": "- Fortunately, the officer had a rescue beacon"
+    },
+    {
+      "start": 45.717,
+      "duration": 2.480000000000004,
+      "text": "that could signal his location to the US."
+    },
+    {
+      "start": 48.197,
+      "duration": 2.0799999999999983,
+      "text": "The problem was that he not only had to step out"
+    },
+    {
+      "start": 50.277,
+      "duration": 2.240000000000002,
+      "text": "of his hiding spot to transmit the signal,"
+    },
+    {
+      "start": 52.517,
+      "duration": 2.8799999999999955,
+      "text": "Iran could potentially intercept it and get to him first."
+    },
+    {
+      "start": 55.397,
+      "duration": 2.480000000000004,
+      "text": "So he could only use the beacon sparingly."
+    },
+    {
+      "start": 57.877,
+      "duration": 2.559999999999995,
+      "text": "With enemy forces getting closer every hour,"
+    },
+    {
+      "start": 60.437,
+      "duration": 2.6400000000000006,
+      "text": "how is the US going to pinpoint his location"
+    },
+    {
+      "start": 68.275,
+      "duration": 1.2689999999999912,
+      "text": "in the middle of a desert."
+    },
+    {
+      "start": 69.544,
+      "duration": 2.4110000000000014,
+      "text": "- [Gregor] A blind sweep of the entire area could take days"
+    },
+    {
+      "start": 71.955,
+      "duration": 1.4399999999999977,
+      "text": "or even weeks,"
+    },
+    {
+      "start": 73.395,
+      "duration": 2.5600000000000023,
+      "text": "but, surprisingly, just 40 hours after the crash,"
+    },
+    {
+      "start": 75.955,
+      "duration": 2.239999999999995,
+      "text": "the US announced the officer was rescued."
+    },
+    {
+      "start": 78.195,
+      "duration": 3.440000000000012,
+      "text": "- Still invisible to the enemy, but not to the CIA."
+    },
+    {
+      "start": 81.635,
+      "duration": 2.559999999999988,
+      "text": "- So how did they do it?"
+    },
+    {
+      "start": 84.195,
+      "duration": 1.8400000000000034,
+      "text": "Well, according to a New York Post article,"
+    },
+    {
+      "start": 86.035,
+      "duration": 3.0400000000000063,
+      "text": "the CIA deployed a futuristic device to rescue him."
+    },
+    {
+      "start": 89.075,
+      "duration": 2.319999999999993,
+      "text": "Reportedly they were able to detect the magnetic field"
+    },
+    {
+      "start": 91.395,
+      "duration": 3.680000000000007,
+      "text": "produced by his heartbeat from kilometers away."
+    },
+    {
+      "start": 95.075,
+      "duration": 2.6400000000000006,
+      "text": "Such a device would have to overcome the magnetic signatures"
+    },
+    {
+      "start": 97.715,
+      "duration": 3.1200000000000045,
+      "text": "from other soldiers, vehicles, and animals in the region,"
+    },
+    {
+      "start": 100.83500000000001,
+      "duration": 2.1599999999999966,
+      "text": "let alone Earth's magnetic field."
+    },
+    {
+      "start": 102.995,
+      "duration": 3.519999999999996,
+      "text": "It's like listening for a murmur in a crowd."
+    },
+    {
+      "start": 106.515,
+      "duration": 4.159999999999997,
+      "text": "So the technology was appropriately called Ghost Murmur."
+    },
+    {
+      "start": 111.475,
+      "duration": 2.240000000000009,
+      "text": "Immediately this kicked off a media frenzy."
+    },
+    {
+      "start": 113.715,
+      "duration": 1.0799999999999983,
+      "text": "- Ghost Murmur."
+    },
+    {
+      "start": 114.795,
+      "duration": 1.8399999999999892,
+      "text": "- This is science fiction. - Ghost Murmur."
+    },
+    {
+      "start": 116.63499999999999,
+      "duration": 2.3600000000000136,
+      "text": "- Did you hear about what the CIA tech that they have"
+    },
+    {
+      "start": 118.995,
+      "duration": 1.0799999999999983,
+      "text": "called the Ghost Murmur."
+    },
+    {
+      "start": 120.075,
+      "duration": 1.2000000000000028,
+      "text": "- Called the Ghost Murmur."
+    },
+    {
+      "start": 121.275,
+      "duration": 1.7199999999999989,
+      "text": "- All of this sounds too good to be true,"
+    },
+    {
+      "start": 122.995,
+      "duration": 1.759999999999991,
+      "text": "and there seemed to be no other sources"
+    },
+    {
+      "start": 124.755,
+      "duration": 2.0,
+      "text": "beyond this New York Post article."
+    },
+    {
+      "start": 126.755,
+      "duration": 3.3600000000000136,
+      "text": "So we dug deep to find out whether this supposed technology"
+    },
+    {
+      "start": 130.115,
+      "duration": 2.4399999999999977,
+      "text": "really exists and what its limits are."
+    },
+    {
+      "start": 132.555,
+      "duration": 4.751000000000005,
+      "text": "- I very rarely believe things I read in the New York Post."
+    },
+    {
+      "start": 137.306,
+      "duration": 0.0069999999999765805,
+      "text": "- Okay."
+    },
+    {
+      "start": 137.313,
+      "duration": 2.082000000000022,
+      "text": "- I find it extremely difficult to believe."
+    },
+    {
+      "start": 139.395,
+      "duration": 2.719999999999999,
+      "text": "- Many of these researchers in the NV diamond area,"
+    },
+    {
+      "start": 142.115,
+      "duration": 1.1999999999999886,
+      "text": "are having to sign NDAs."
+    },
+    {
+      "start": 143.315,
+      "duration": 2.5600000000000023,
+      "text": "- The fact that the CIA is involved"
+    },
+    {
+      "start": 145.875,
+      "duration": 1.920000000000016,
+      "text": "in leveraging technologies"
+    },
+    {
+      "start": 147.79500000000002,
+      "duration": 1.9599999999999795,
+      "text": "consistent with their mission and their charter."
+    },
+    {
+      "start": 149.755,
+      "duration": 4.360000000000014,
+      "text": "- So is Ghost Murmur fact or fiction?"
+    },
+    {
+      "start": 154.115,
+      "duration": 2.0,
+      "text": "There are two lines in this New York Post article"
+    },
+    {
+      "start": 156.115,
+      "duration": 2.3999999999999773,
+      "text": "that hint at what this device can be."
+    },
+    {
+      "start": 158.515,
+      "duration": 2.480000000000018,
+      "text": "First, normally this signal is so weak"
+    },
+    {
+      "start": 160.995,
+      "duration": 2.4000000000000057,
+      "text": "that it can only be measured in a hospital setting"
+    },
+    {
+      "start": 163.395,
+      "duration": 2.719999999999999,
+      "text": "with sensors pressed nearly against the chest,"
+    },
+    {
+      "start": 166.115,
+      "duration": 1.3599999999999852,
+      "text": "the source said."
+    },
+    {
+      "start": 167.475,
+      "duration": 3.3600000000000136,
+      "text": "But advances in a field known as quantum magnetometry,"
+    },
+    {
+      "start": 170.835,
+      "duration": 2.8799999999999955,
+      "text": "specifically sensors built around microscopic defects"
+    },
+    {
+      "start": 173.715,
+      "duration": 1.4399999999999977,
+      "text": "in synthetic diamonds,"
+    },
+    {
+      "start": 175.155,
+      "duration": 1.5200000000000102,
+      "text": "have apparently made it possible"
+    },
+    {
+      "start": 176.675,
+      "duration": 4.319999999999993,
+      "text": "to detect these signals at dramatically greater distances."
+    },
+    {
+      "start": 180.995,
+      "duration": 2.0,
+      "text": "We're gonna break this down bit by bit."
+    },
+    {
+      "start": 182.995,
+      "duration": 2.1599999999999966,
+      "text": "First, does the heart actually create"
+    },
+    {
+      "start": 185.155,
+      "duration": 1.9199999999999875,
+      "text": "detectable magnetic fields?"
+    },
+    {
+      "start": 187.075,
+      "duration": 2.160000000000025,
+      "text": "Second, what are these synthetic diamonds"
+    },
+    {
+      "start": 189.235,
+      "duration": 2.2399999999999807,
+      "text": "that could potentially detect them?"
+    },
+    {
+      "start": 191.475,
+      "duration": 3.5999999999999943,
+      "text": "And third, is it all possible at these distances?"
+    },
+    {
+      "start": 195.075,
+      "duration": 1.7600000000000193,
+      "text": "Let's start with a heart."
+    },
+    {
+      "start": 196.835,
+      "duration": 2.960000000000008,
+      "text": "Now, if you type heart magnetic field into Google Images,"
+    },
+    {
+      "start": 199.79500000000002,
+      "duration": 4.47999999999999,
+      "text": "you will get a bunch of questionable-looking graphs."
+    },
+    {
+      "start": 204.275,
+      "duration": 2.0,
+      "text": "So is it a real thing?"
+    },
+    {
+      "start": 206.275,
+      "duration": 2.4799999999999898,
+      "text": "Well, whenever current flows through a conductor,"
+    },
+    {
+      "start": 208.755,
+      "duration": 2.4000000000000057,
+      "text": "it generates a magnetic field around it."
+    },
+    {
+      "start": 211.155,
+      "duration": 2.4799999999999898,
+      "text": "And since our bodies run on electrical impulses"
+    },
+    {
+      "start": 213.635,
+      "duration": 1.5200000000000102,
+      "text": "traveling through neurons,"
+    },
+    {
+      "start": 215.155,
+      "duration": 3.5200000000000102,
+      "text": "our tissues and organs generate faint magnetic signals."
+    },
+    {
+      "start": 218.675,
+      "duration": 3.1999999999999886,
+      "text": "But because the heart muscles fire in a coordinated way,"
+    },
+    {
+      "start": 221.875,
+      "duration": 1.8400000000000034,
+      "text": "the magnetic field they produce is"
+    },
+    {
+      "start": 223.715,
+      "duration": 1.8400000000000034,
+      "text": "the strongest in the body."
+    },
+    {
+      "start": 225.555,
+      "duration": 3.039999999999992,
+      "text": "It's around 50 to 100 pico Teslas,"
+    },
+    {
+      "start": 228.595,
+      "duration": 1.3599999999999852,
+      "text": "10 to 100 times more"
+    },
+    {
+      "start": 229.95499999999998,
+      "duration": 3.0400000000000205,
+      "text": "than the next strongest field produced by the brain."
+    },
+    {
+      "start": 232.995,
+      "duration": 2.8000000000000114,
+      "text": "But even then, this is still a million times weaker"
+    },
+    {
+      "start": 235.79500000000002,
+      "duration": 1.5199999999999818,
+      "text": "than Earth's magnetic field."
+    },
+    {
+      "start": 237.315,
+      "duration": 1.8400000000000034,
+      "text": "So it's no surprise that we only detected"
+    },
+    {
+      "start": 239.155,
+      "duration": 4.0,
+      "text": "the magnetic field of the heart in 1963."
+    },
+    {
+      "start": 243.155,
+      "duration": 1.9199999999999875,
+      "text": "It had to be done in a remote field"
+    },
+    {
+      "start": 245.075,
+      "duration": 1.3600000000000136,
+      "text": "away from the magnetic noise"
+    },
+    {
+      "start": 246.435,
+      "duration": 2.960000000000008,
+      "text": "produced by lab equipment, elevators, and cars."
+    },
+    {
+      "start": 249.395,
+      "duration": 2.6399999999999864,
+      "text": "And the setup had to be incredibly still."
+    },
+    {
+      "start": 252.035,
+      "duration": 1.2800000000000011,
+      "text": "Even the slightest vibration"
+    },
+    {
+      "start": 253.315,
+      "duration": 2.319999999999993,
+      "text": "of the detector would corrupt the measurement,"
+    },
+    {
+      "start": 255.635,
+      "duration": 1.8400000000000318,
+      "text": "not something that could work on a helicopter"
+    },
+    {
+      "start": 257.475,
+      "duration": 2.4799999999999613,
+      "text": "or a military drone."
+    },
+    {
+      "start": 259.955,
+      "duration": 2.8000000000000114,
+      "text": "But, pretty soon, magnetometers got better."
+    },
+    {
+      "start": 262.755,
+      "duration": 1.2800000000000296,
+      "text": "By the 1970s,"
+    },
+    {
+      "start": 264.035,
+      "duration": 2.7999999999999545,
+      "text": "we got superconducting quantum interference devices,"
+    },
+    {
+      "start": 266.835,
+      "duration": 1.3600000000000136,
+      "text": "or SQUIDs."
+    },
+    {
+      "start": 268.195,
+      "duration": 2.480000000000018,
+      "text": "These magnetometers were incredibly sensitive,"
+    },
+    {
+      "start": 270.675,
+      "duration": 3.1999999999999886,
+      "text": "detecting fields as weak as a few femto Tesla."
+    },
+    {
+      "start": 273.875,
+      "duration": 0.9599999999999795,
+      "text": "To no surprise,"
+    },
+    {
+      "start": 274.835,
+      "duration": 2.480000000000018,
+      "text": "the US military quickly strapped these SQUIDs"
+    },
+    {
+      "start": 277.315,
+      "duration": 1.5199999999999818,
+      "text": "to planes and helicopters,"
+    },
+    {
+      "start": 278.835,
+      "duration": 1.1200000000000045,
+      "text": "and they tried to use them"
+    },
+    {
+      "start": 279.955,
+      "duration": 2.0,
+      "text": "to detect large magnetic signatures"
+    },
+    {
+      "start": 281.955,
+      "duration": 2.319999999999993,
+      "text": "like submarines in the ocean."
+    },
+    {
+      "start": 284.275,
+      "duration": 2.400000000000034,
+      "text": "But the project never really picked up."
+    },
+    {
+      "start": 286.675,
+      "duration": 2.319999999999993,
+      "text": "Nonetheless, SQUIDs also made it easier"
+    },
+    {
+      "start": 288.995,
+      "duration": 3.7200000000000273,
+      "text": "to detect the heart's magnetic field, but with a key caveat."
+    },
+    {
+      "start": 292.71500000000003,
+      "duration": 2.2799999999999727,
+      "text": "- They typically need to be operated"
+    },
+    {
+      "start": 294.995,
+      "duration": 3.4399999999999977,
+      "text": "under a very tightly controlled conditions,"
+    },
+    {
+      "start": 298.435,
+      "duration": 1.5199999999999818,
+      "text": "often inside of shielded rooms."
+    },
+    {
+      "start": 299.955,
+      "duration": 3.1999999999999886,
+      "text": "They can't handle large dynamic range of background fields"
+    },
+    {
+      "start": 303.155,
+      "duration": 1.7200000000000273,
+      "text": "and electromagnetic interference."
+    },
+    {
+      "start": 304.875,
+      "duration": 2.4399999999999977,
+      "text": "- Future magnetometers offered solutions,"
+    },
+    {
+      "start": 307.315,
+      "duration": 2.319999999999993,
+      "text": "but they also had their own drawbacks."
+    },
+    {
+      "start": 309.635,
+      "duration": 2.160000000000025,
+      "text": "There were always issues with either shielding"
+    },
+    {
+      "start": 311.795,
+      "duration": 3.4399999999999977,
+      "text": "or sensitivity or dynamic range that made them impractical"
+    },
+    {
+      "start": 315.235,
+      "duration": 2.8799999999999955,
+      "text": "for detecting heartbeats out in the field."
+    },
+    {
+      "start": 318.115,
+      "duration": 2.9599999999999795,
+      "text": "Until the 1990s when physicists started"
+    },
+    {
+      "start": 321.075,
+      "duration": 2.6399999999999864,
+      "text": "looking into diamonds that might eventually be able"
+    },
+    {
+      "start": 323.715,
+      "duration": 1.7600000000000477,
+      "text": "to sense magnetic fields"
+    },
+    {
+      "start": 325.475,
+      "duration": 3.1200000000000045,
+      "text": "while potentially getting around the drawbacks."
+    },
+    {
+      "start": 328.595,
+      "duration": 2.9599999999999795,
+      "text": "- These new quantum magnetometers work"
+    },
+    {
+      "start": 331.555,
+      "duration": 1.920000000000016,
+      "text": "at room temperature operation,"
+    },
+    {
+      "start": 333.475,
+      "duration": 2.079999999999984,
+      "text": "and that's what's really exciting about them."
+    },
+    {
+      "start": 335.555,
+      "duration": 1.920000000000016,
+      "text": "They're also a solid state sensor,"
+    },
+    {
+      "start": 337.475,
+      "duration": 4.479999999999961,
+      "text": "which, you know, can be very practical for some applications"
+    },
+    {
+      "start": 341.955,
+      "duration": 3.3600000000000136,
+      "text": "and can be made into like a more robust kind of sensor."
+    },
+    {
+      "start": 345.315,
+      "duration": 1.5199999999999818,
+      "text": "- These are the diamonds"
+    },
+    {
+      "start": 346.835,
+      "duration": 1.920000000000016,
+      "text": "mentioned in the New York Post article."
+    },
+    {
+      "start": 348.755,
+      "duration": 2.5600000000000023,
+      "text": "So how do they work?"
+    },
+    {
+      "start": 351.315,
+      "duration": 2.079999999999984,
+      "text": "Now, the overall coverage of the story is"
+    },
+    {
+      "start": 353.395,
+      "duration": 1.3600000000000136,
+      "text": "actually very interesting"
+    },
+    {
+      "start": 354.755,
+      "duration": 2.3999999999999773,
+      "text": "because this tech is supposedly classified."
+    },
+    {
+      "start": 357.155,
+      "duration": 0.8799999999999955,
+      "text": "There's a lot of uncertainty"
+    },
+    {
+      "start": 358.03499999999997,
+      "duration": 2.9600000000000364,
+      "text": "about whether what's being reported is actually real."
+    },
+    {
+      "start": 360.995,
+      "duration": 2.079999999999984,
+      "text": "And depending on which outlet you see first,"
+    },
+    {
+      "start": 363.075,
+      "duration": 2.5600000000000023,
+      "text": "you might arrive at completely different conclusions."
+    },
+    {
+      "start": 365.635,
+      "duration": 2.079999999999984,
+      "text": "For example, if you saw this headline first,"
+    },
+    {
+      "start": 367.715,
+      "duration": 2.400000000000034,
+      "text": "you might be really impressed with the technology,"
+    },
+    {
+      "start": 370.115,
+      "duration": 2.319999999999993,
+      "text": "but this one you'd be a bit more skeptical,"
+    },
+    {
+      "start": 372.435,
+      "duration": 2.319999999999993,
+      "text": "and the last one might not even make you care"
+    },
+    {
+      "start": 374.755,
+      "duration": 0.9599999999999795,
+      "text": "about the tech."
+    },
+    {
+      "start": 375.715,
+      "duration": 3.6000000000000227,
+      "text": "So three headlines, three completely different conclusions,"
+    },
+    {
+      "start": 379.315,
+      "duration": 2.5600000000000023,
+      "text": "and that's where today's sponsor Ground News comes in."
+    },
+    {
+      "start": 381.875,
+      "duration": 1.2799999999999727,
+      "text": "They're a website and an app"
+    },
+    {
+      "start": 383.155,
+      "duration": 1.8400000000000318,
+      "text": "designed to make reading the news easier"
+    },
+    {
+      "start": 384.995,
+      "duration": 1.2799999999999727,
+      "text": "and more data-driven."
+    },
+    {
+      "start": 386.275,
+      "duration": 2.8000000000000114,
+      "text": "Each day they round up stories from thousands of outlets"
+    },
+    {
+      "start": 389.075,
+      "duration": 0.8799999999999955,
+      "text": "all around the world"
+    },
+    {
+      "start": 389.955,
+      "duration": 2.5600000000000023,
+      "text": "and give you a visual breakdown of the story,"
+    },
+    {
+      "start": 392.515,
+      "duration": 3.0400000000000205,
+      "text": "including its political leaning, factuality rating,"
+    },
+    {
+      "start": 395.555,
+      "duration": 1.4399999999999977,
+      "text": "and even ownership,"
+    },
+    {
+      "start": 396.995,
+      "duration": 1.1200000000000045,
+      "text": "all backed by ratings"
+    },
+    {
+      "start": 398.115,
+      "duration": 3.2799999999999727,
+      "text": "from three independent media-monitoring organizations."
+    },
+    {
+      "start": 401.395,
+      "duration": 1.6800000000000068,
+      "text": "In case of this Ghost Murmur story,"
+    },
+    {
+      "start": 403.075,
+      "duration": 3.0400000000000205,
+      "text": "you can see that it's been reported on by 65 sources,"
+    },
+    {
+      "start": 406.115,
+      "duration": 1.919999999999959,
+      "text": "but the coverage is pretty lopsided."
+    },
+    {
+      "start": 408.03499999999997,
+      "duration": 2.7200000000000273,
+      "text": "So if you only get your news from right-leaning outlets,"
+    },
+    {
+      "start": 410.755,
+      "duration": 1.6000000000000227,
+      "text": "there's a chance you've seen the story."
+    },
+    {
+      "start": 412.355,
+      "duration": 1.67999999999995,
+      "text": "But if you only get it from the left,"
+    },
+    {
+      "start": 414.03499999999997,
+      "duration": 1.2000000000000455,
+      "text": "there's a chance you haven't."
+    },
+    {
+      "start": 415.235,
+      "duration": 2.3999999999999773,
+      "text": "And below that, you can also see the factuality rating"
+    },
+    {
+      "start": 417.635,
+      "duration": 2.160000000000025,
+      "text": "and the ownerships of the sources."
+    },
+    {
+      "start": 419.795,
+      "duration": 1.839999999999975,
+      "text": "They also have this blind spot feature,"
+    },
+    {
+      "start": 421.635,
+      "duration": 2.079999999999984,
+      "text": "which highlights stories like the Ghosts Murmur one"
+    },
+    {
+      "start": 423.715,
+      "duration": 1.3600000000000136,
+      "text": "that were under reported on"
+    },
+    {
+      "start": 425.075,
+      "duration": 2.079999999999984,
+      "text": "by either side of the political spectrum."
+    },
+    {
+      "start": 427.155,
+      "duration": 1.7600000000000477,
+      "text": "Staying up to date and well-informed"
+    },
+    {
+      "start": 428.915,
+      "duration": 3.359999999999957,
+      "text": "with accurate information has almost become a full-time job."
+    },
+    {
+      "start": 432.275,
+      "duration": 2.240000000000009,
+      "text": "And that's where Ground News's approach is so valuable."
+    },
+    {
+      "start": 434.515,
+      "duration": 2.7200000000000273,
+      "text": "They make reading the news more digestible and accessible,"
+    },
+    {
+      "start": 437.235,
+      "duration": 2.6399999999999864,
+      "text": "and you can see all of the information within moments,"
+    },
+    {
+      "start": 439.875,
+      "duration": 0.9599999999999795,
+      "text": "not hours."
+    },
+    {
+      "start": 440.835,
+      "duration": 2.080000000000041,
+      "text": "So if you, like us at Veritasium, care"
+    },
+    {
+      "start": 442.915,
+      "duration": 1.1999999999999886,
+      "text": "about getting to the truth,"
+    },
+    {
+      "start": 444.115,
+      "duration": 3.680000000000007,
+      "text": "you can go to ground.news/ve or scan this QR code"
+    },
+    {
+      "start": 447.795,
+      "duration": 2.7199999999999704,
+      "text": "and our link will get you 40% off their vantage plan."
+    },
+    {
+      "start": 450.515,
+      "duration": 1.1999999999999886,
+      "text": "So I wanna thank Ground News"
+    },
+    {
+      "start": 451.715,
+      "duration": 1.4399999999999977,
+      "text": "for sponsoring this part of the video,"
+    },
+    {
+      "start": 453.155,
+      "duration": 1.2000000000000455,
+      "text": "and now let's go figure out"
+    },
+    {
+      "start": 454.355,
+      "duration": 3.4399999999999977,
+      "text": "how those diamonds actually detect magnetic fields."
+    },
+    {
+      "start": 457.795,
+      "duration": 2.319999999999993,
+      "text": "Well, for something to function as a magnetometer,"
+    },
+    {
+      "start": 460.115,
+      "duration": 1.6800000000000068,
+      "text": "it needs to respond to a magnetic field"
+    },
+    {
+      "start": 461.795,
+      "duration": 1.839999999999975,
+      "text": "in a way that we can detect."
+    },
+    {
+      "start": 463.635,
+      "duration": 2.7200000000000273,
+      "text": "Now, a pure diamond is just an ordered lattice"
+    },
+    {
+      "start": 466.355,
+      "duration": 0.7999999999999545,
+      "text": "of carbon atoms,"
+    },
+    {
+      "start": 467.155,
+      "duration": 3.2800000000000296,
+      "text": "so it doesn't react to magnetic fields in a meaningful way."
+    },
+    {
+      "start": 470.435,
+      "duration": 0.9599999999999795,
+      "text": "But this changes"
+    },
+    {
+      "start": 471.395,
+      "duration": 3.0400000000000205,
+      "text": "when you start adding defects to the lattice."
+    },
+    {
+      "start": 474.435,
+      "duration": 2.319999999999993,
+      "text": "You can replace one of the carbon atoms in the lattice"
+    },
+    {
+      "start": 476.755,
+      "duration": 1.2799999999999727,
+      "text": "with, say, a nitrogen."
+    },
+    {
+      "start": 478.03499999999997,
+      "duration": 3.1200000000000045,
+      "text": "And if you remove one of the carbons next to it completely,"
+    },
+    {
+      "start": 481.155,
+      "duration": 2.7200000000000273,
+      "text": "well, that creates a vacancy."
+    },
+    {
+      "start": 483.875,
+      "duration": 4.240000000000009,
+      "text": "This defect is called a nitrogen vacancy or an NV center."
+    },
+    {
+      "start": 488.115,
+      "duration": 3.519999999999982,
+      "text": "And these NV centers become particularly useful"
+    },
+    {
+      "start": 491.635,
+      "duration": 3.2800000000000296,
+      "text": "when they trap two unpaired electrons."
+    },
+    {
+      "start": 494.915,
+      "duration": 1.3599999999999568,
+      "text": "That's because electrons have"
+    },
+    {
+      "start": 496.275,
+      "duration": 2.5600000000000023,
+      "text": "this intrinsic property called spin."
+    },
+    {
+      "start": 498.835,
+      "duration": 1.8400000000000318,
+      "text": "A simple and flawed analogy is"
+    },
+    {
+      "start": 500.675,
+      "duration": 2.159999999999968,
+      "text": "that spin is kind of like a tiny bar magnet"
+    },
+    {
+      "start": 502.835,
+      "duration": 2.480000000000018,
+      "text": "that gives electrons their own magnetic signature"
+    },
+    {
+      "start": 505.315,
+      "duration": 2.7200000000000273,
+      "text": "and it can point either up or down."
+    },
+    {
+      "start": 508.035,
+      "duration": 1.839999999999975,
+      "text": "So when an electron is exposed"
+    },
+    {
+      "start": 509.875,
+      "duration": 2.159999999999968,
+      "text": "to an external magnetic field,"
+    },
+    {
+      "start": 512.035,
+      "duration": 2.7200000000000273,
+      "text": "this magnetic signature will either align itself"
+    },
+    {
+      "start": 514.755,
+      "duration": 2.080000000000041,
+      "text": "with the field or against it."
+    },
+    {
+      "start": 516.835,
+      "duration": 2.7999999999999545,
+      "text": "Also note that particles that have no net spin"
+    },
+    {
+      "start": 519.635,
+      "duration": 3.4400000000000546,
+      "text": "will not respond to an external magnetic field."
+    },
+    {
+      "start": 523.075,
+      "duration": 2.6399999999999864,
+      "text": "Now, the two trapped electrons can arrange their spins"
+    },
+    {
+      "start": 525.715,
+      "duration": 1.8399999999999181,
+      "text": "in the following way."
+    },
+    {
+      "start": 527.555,
+      "duration": 1.4400000000000546,
+      "text": "They could both point up,"
+    },
+    {
+      "start": 528.995,
+      "duration": 3.67999999999995,
+      "text": "which would give you a spin magnetic number of 1."
+    },
+    {
+      "start": 532.675,
+      "duration": 3.5200000000000955,
+      "text": "They could both point down for a quantum number of -1,"
+    },
+    {
+      "start": 536.195,
+      "duration": 2.159999999999968,
+      "text": "or they could point in opposite directions"
+    },
+    {
+      "start": 538.355,
+      "duration": 2.159999999999968,
+      "text": "for a quantum number of 0."
+    },
+    {
+      "start": 540.515,
+      "duration": 3.6800000000000637,
+      "text": "We'll denote this spin magnetic quantum number with ms,"
+    },
+    {
+      "start": 544.195,
+      "duration": 2.3999999999999773,
+      "text": "and it essentially acts as a bar magnet"
+    },
+    {
+      "start": 546.595,
+      "duration": 2.0,
+      "text": "for the whole NV center."
+    },
+    {
+      "start": 548.595,
+      "duration": 2.3199999999999363,
+      "text": "And just like for individual electrons,"
+    },
+    {
+      "start": 550.915,
+      "duration": 2.080000000000041,
+      "text": "this bar magnet is also sensitive"
+    },
+    {
+      "start": 552.995,
+      "duration": 2.0,
+      "text": "to external magnetic fields."
+    },
+    {
+      "start": 554.995,
+      "duration": 2.159999999999968,
+      "text": "So now that we've created a diamond"
+    },
+    {
+      "start": 557.155,
+      "duration": 3.2799999999999727,
+      "text": "that responds to magnetic fields, the challenge is,"
+    },
+    {
+      "start": 560.435,
+      "duration": 5.040000000000077,
+      "text": "how do we measure this response to detect a heartbeat?"
+    },
+    {
+      "start": 565.475,
+      "duration": 2.0,
+      "text": "Okay, so I reached out to experts"
+    },
+    {
+      "start": 567.475,
+      "duration": 1.759999999999991,
+      "text": "to try and figure this out,"
+    },
+    {
+      "start": 569.235,
+      "duration": 2.3999999999999773,
+      "text": "but basically out of the 20 or so emails that I sent,"
+    },
+    {
+      "start": 571.635,
+      "duration": 1.2799999999999727,
+      "text": "I only got a few responses,"
+    },
+    {
+      "start": 572.915,
+      "duration": 2.6399999999999864,
+      "text": "but then I got an impromptu call from one of these experts"
+    },
+    {
+      "start": 575.555,
+      "duration": 1.9200000000000728,
+      "text": "who said that many of these researchers"
+    },
+    {
+      "start": 577.475,
+      "duration": 3.0399999999999636,
+      "text": "in the NV diamond area are having to sign NDAs."
+    },
+    {
+      "start": 580.515,
+      "duration": 1.5199999999999818,
+      "text": "This is getting a lot more interesting."
+    },
+    {
+      "start": 582.035,
+      "duration": 1.6800000000000637,
+      "text": "But with how secretive everyone was being,"
+    },
+    {
+      "start": 583.715,
+      "duration": 2.6399999999999864,
+      "text": "I had to use publicly available research."
+    },
+    {
+      "start": 586.355,
+      "duration": 2.8799999999999955,
+      "text": "And I think the key idea is to figure out"
+    },
+    {
+      "start": 589.235,
+      "duration": 2.240000000000009,
+      "text": "how diamonds respond to magnetic fields,"
+    },
+    {
+      "start": 591.475,
+      "duration": 2.0799999999999272,
+      "text": "you have to use light."
+    },
+    {
+      "start": 593.555,
+      "duration": 1.6000000000000227,
+      "text": "When you shine light at an atom,"
+    },
+    {
+      "start": 595.155,
+      "duration": 3.0400000000000773,
+      "text": "the atom can either absorb the light or ignore it."
+    },
+    {
+      "start": 598.195,
+      "duration": 2.5599999999999454,
+      "text": "An absorbed photon of light will excite an electron"
+    },
+    {
+      "start": 600.755,
+      "duration": 2.7200000000000273,
+      "text": "within the atom to a higher energy level."
+    },
+    {
+      "start": 603.475,
+      "duration": 2.6399999999999864,
+      "text": "You can think of these energy levels as discrete platforms"
+    },
+    {
+      "start": 606.115,
+      "duration": 1.8400000000000318,
+      "text": "that the electrons can jump between,"
+    },
+    {
+      "start": 607.955,
+      "duration": 1.67999999999995,
+      "text": "just like in a video game."
+    },
+    {
+      "start": 609.635,
+      "duration": 2.7999999999999545,
+      "text": "All atoms of the same element, for example, carbon,"
+    },
+    {
+      "start": 612.435,
+      "duration": 1.6000000000000227,
+      "text": "have the same energy levels"
+    },
+    {
+      "start": 614.035,
+      "duration": 2.7200000000000273,
+      "text": "when the atoms are far enough apart."
+    },
+    {
+      "start": 616.755,
+      "duration": 1.6000000000000227,
+      "text": "But when you bring them together,"
+    },
+    {
+      "start": 618.355,
+      "duration": 3.3600000000000136,
+      "text": "like inside a diamond lattice, their energy levels shift."
+    },
+    {
+      "start": 621.715,
+      "duration": 1.919999999999959,
+      "text": "They come together to form a series"
+    },
+    {
+      "start": 623.635,
+      "duration": 4.080000000000041,
+      "text": "of closely spaced energy levels or an energy band."
+    },
+    {
+      "start": 627.715,
+      "duration": 3.2799999999999727,
+      "text": "Now, an electron will only ever absorb a photon"
+    },
+    {
+      "start": 630.995,
+      "duration": 1.6000000000000227,
+      "text": "if the photon has enough energy"
+    },
+    {
+      "start": 632.595,
+      "duration": 3.67999999999995,
+      "text": "to move the electron across the gap to a higher band."
+    },
+    {
+      "start": 636.275,
+      "duration": 3.1200000000000045,
+      "text": "This gap between the last electron occupied band"
+    },
+    {
+      "start": 639.395,
+      "duration": 4.080000000000041,
+      "text": "and the first empty band above it is called the band gap."
+    },
+    {
+      "start": 643.475,
+      "duration": 1.759999999999991,
+      "text": "In a pure diamond, it's big."
+    },
+    {
+      "start": 645.235,
+      "duration": 2.5599999999999454,
+      "text": "It's around 5.5 electron volts,"
+    },
+    {
+      "start": 647.795,
+      "duration": 3.2800000000000864,
+      "text": "which means that only ultraviolet photons have enough energy"
+    },
+    {
+      "start": 651.075,
+      "duration": 1.919999999999959,
+      "text": "to excite the electrons."
+    },
+    {
+      "start": 652.995,
+      "duration": 2.480000000000018,
+      "text": "All lower energy light, including visible light,"
+    },
+    {
+      "start": 655.475,
+      "duration": 3.439999999999941,
+      "text": "will mostly be ignored by the diamond and just pass through."
+    },
+    {
+      "start": 658.915,
+      "duration": 3.1200000000000045,
+      "text": "This is why a perfect pure diamond is transparent."
+    },
+    {
+      "start": 662.035,
+      "duration": 1.8400000000000318,
+      "text": "It doesn't absorb any of the light,"
+    },
+    {
+      "start": 663.875,
+      "duration": 1.5199999999999818,
+      "text": "but if you start adding defects,"
+    },
+    {
+      "start": 665.395,
+      "duration": 2.6399999999999864,
+      "text": "they disrupt that organized lattice."
+    },
+    {
+      "start": 668.035,
+      "duration": 2.7200000000000273,
+      "text": "The defects unlock different energy levels."
+    },
+    {
+      "start": 670.755,
+      "duration": 2.159999999999968,
+      "text": "Secret platforms within this band gap"
+    },
+    {
+      "start": 672.915,
+      "duration": 2.400000000000091,
+      "text": "for nearby electrons to jump to."
+    },
+    {
+      "start": 675.315,
+      "duration": 1.5199999999999818,
+      "text": "A boron defect, for example,"
+    },
+    {
+      "start": 676.835,
+      "duration": 4.399999999999977,
+      "text": "creates a low energy level at only 0.37 electron volts."
+    },
+    {
+      "start": 681.235,
+      "duration": 2.0,
+      "text": "This is a platform that electrons can jump to"
+    },
+    {
+      "start": 683.235,
+      "duration": 2.480000000000018,
+      "text": "by absorbing infrared or red light."
+    },
+    {
+      "start": 685.715,
+      "duration": 1.8399999999999181,
+      "text": "And with enough boron defects,"
+    },
+    {
+      "start": 687.555,
+      "duration": 3.6000000000000227,
+      "text": "a significant amount of red light gets absorbed this way."
+    },
+    {
+      "start": 691.155,
+      "duration": 2.9600000000000364,
+      "text": "The rest of the visible spectrum mostly makes it through."
+    },
+    {
+      "start": 694.115,
+      "duration": 3.6000000000000227,
+      "text": "So without this red, the diamond appears blue."
+    },
+    {
+      "start": 697.715,
+      "duration": 2.9599999999999227,
+      "text": "Similarly, a nitrogen vacancy defect unlocks"
+    },
+    {
+      "start": 700.675,
+      "duration": 1.759999999999991,
+      "text": "other secret platforms."
+    },
+    {
+      "start": 702.435,
+      "duration": 1.5200000000000955,
+      "text": "And these can help us detect"
+    },
+    {
+      "start": 703.955,
+      "duration": 3.3600000000000136,
+      "text": "how the NV center responds to a magnetic field."
+    },
+    {
+      "start": 707.315,
+      "duration": 2.7199999999999136,
+      "text": "At first glance, it looks like the nitrogen vacancy"
+    },
+    {
+      "start": 710.035,
+      "duration": 1.8400000000000318,
+      "text": "generates a few unique levels,"
+    },
+    {
+      "start": 711.875,
+      "duration": 1.3600000000000136,
+      "text": "and these are exclusive"
+    },
+    {
+      "start": 713.235,
+      "duration": 3.6000000000000227,
+      "text": "to the two unpaired electrons trapped within the defect."
+    },
+    {
+      "start": 716.835,
+      "duration": 3.2799999999999727,
+      "text": "But if you look closer at, for example, the lowest level,"
+    },
+    {
+      "start": 720.115,
+      "duration": 2.0,
+      "text": "you'll notice that it actually contains"
+    },
+    {
+      "start": 722.115,
+      "duration": 3.759999999999991,
+      "text": "three closely spaced but separate energy levels."
+    },
+    {
+      "start": 725.875,
+      "duration": 2.7200000000000273,
+      "text": "The second and third levels are actually at the same height,"
+    },
+    {
+      "start": 728.595,
+      "duration": 2.0,
+      "text": "but will draw them separately."
+    },
+    {
+      "start": 730.595,
+      "duration": 3.2799999999999727,
+      "text": "And the fact that there are three isn't a coincidence."
+    },
+    {
+      "start": 733.875,
+      "duration": 3.6000000000000227,
+      "text": "Remember, the NV center can adopt one of three ms numbers,"
+    },
+    {
+      "start": 737.475,
+      "duration": 2.3999999999999773,
+      "text": "0, -1, or 1,"
+    },
+    {
+      "start": 739.875,
+      "duration": 1.2799999999999727,
+      "text": "depending on how the spins"
+    },
+    {
+      "start": 741.155,
+      "duration": 2.800000000000068,
+      "text": "of the two electrons inside are arranged."
+    },
+    {
+      "start": 743.955,
+      "duration": 2.7999999999999545,
+      "text": "If you think of the two spins as bar magnets,"
+    },
+    {
+      "start": 746.755,
+      "duration": 3.840000000000032,
+      "text": "the most relaxed, lowest energy way for them to sit is this,"
+    },
+    {
+      "start": 750.595,
+      "duration": 2.5599999999999454,
+      "text": "one pointing up and the other down."
+    },
+    {
+      "start": 753.155,
+      "duration": 2.7200000000000273,
+      "text": "This is analogous to the ms = 0 state,"
+    },
+    {
+      "start": 755.875,
+      "duration": 2.32000000000005,
+      "text": "which is why it has the lowest energy."
+    },
+    {
+      "start": 758.195,
+      "duration": 3.519999999999982,
+      "text": "Forcing both magnets to point down together or up together,"
+    },
+    {
+      "start": 761.715,
+      "duration": 4.159999999999968,
+      "text": "like the ms = 1 or -1 states requires more energy."
+    },
+    {
+      "start": 765.875,
+      "duration": 1.1200000000000045,
+      "text": "They oppose you."
+    },
+    {
+      "start": 766.995,
+      "duration": 1.2799999999999727,
+      "text": "So these two states are"
+    },
+    {
+      "start": 768.275,
+      "duration": 3.4400000000000546,
+      "text": "at an equal, slightly higher energy sub level."
+    },
+    {
+      "start": 771.715,
+      "duration": 1.2799999999999727,
+      "text": "These differences are tiny."
+    },
+    {
+      "start": 772.995,
+      "duration": 2.7200000000000273,
+      "text": "Jumping from the 0 to the +/-1 levels requires"
+    },
+    {
+      "start": 775.715,
+      "duration": 1.67999999999995,
+      "text": "only a small amount of energy."
+    },
+    {
+      "start": 777.395,
+      "duration": 4.32000000000005,
+      "text": "A microwave photon of 10.4 centimeters will be enough."
+    },
+    {
+      "start": 781.715,
+      "duration": 1.8399999999999181,
+      "text": "Now, these secret energy platforms"
+    },
+    {
+      "start": 783.555,
+      "duration": 3.2800000000000864,
+      "text": "of NV centers were mapped out by the '90s."
+    },
+    {
+      "start": 786.835,
+      "duration": 0.8799999999999955,
+      "text": "But for a long time,"
+    },
+    {
+      "start": 787.715,
+      "duration": 1.919999999999959,
+      "text": "no one thought to use them as magnetometers."
+    },
+    {
+      "start": 789.635,
+      "duration": 2.7999999999999545,
+      "text": "- There was a decade before the light bulb went on"
+    },
+    {
+      "start": 792.435,
+      "duration": 2.0,
+      "text": "for a bunch of us to think about them as sensors."
+    },
+    {
+      "start": 794.435,
+      "duration": 2.9600000000000364,
+      "text": "It takes a mindset switch to think differently."
+    },
+    {
+      "start": 797.395,
+      "duration": 1.3600000000000136,
+      "text": "And once you do, you realize,"
+    },
+    {
+      "start": 798.755,
+      "duration": 2.240000000000009,
+      "text": "\"Oh my goodness, this could be useful.\""
+    },
+    {
+      "start": 800.995,
+      "duration": 3.0399999999999636,
+      "text": "- So let's apply a magnetic field to this diamond"
+    },
+    {
+      "start": 804.035,
+      "duration": 1.9200000000000728,
+      "text": "and see what happens."
+    },
+    {
+      "start": 805.955,
+      "duration": 2.240000000000009,
+      "text": "If we slowly turn up the field strength,"
+    },
+    {
+      "start": 808.195,
+      "duration": 4.079999999999927,
+      "text": "you'll see that the +1 and -1 levels are starting to shift."
+    },
+    {
+      "start": 812.275,
+      "duration": 1.0400000000000773,
+      "text": "To understand why,"
+    },
+    {
+      "start": 813.315,
+      "duration": 3.0399999999999636,
+      "text": "we can use a compass needle as an analogy."
+    },
+    {
+      "start": 816.355,
+      "duration": 2.3999999999999773,
+      "text": "Naturally, a compass needle will align itself"
+    },
+    {
+      "start": 818.755,
+      "duration": 2.32000000000005,
+      "text": "with the magnetic field of the Earth."
+    },
+    {
+      "start": 821.075,
+      "duration": 3.1200000000000045,
+      "text": "And this is the lowest energy relaxed state"
+    },
+    {
+      "start": 824.195,
+      "duration": 1.919999999999959,
+      "text": "that the needle can be in."
+    },
+    {
+      "start": 826.115,
+      "duration": 2.7200000000000273,
+      "text": "And it's analogous to the behavior of the system"
+    },
+    {
+      "start": 828.835,
+      "duration": 2.3199999999999363,
+      "text": "in the ms = -1 state,"
+    },
+    {
+      "start": 831.155,
+      "duration": 2.9600000000000364,
+      "text": "which is why its energy level drops slightly."
+    },
+    {
+      "start": 834.115,
+      "duration": 3.759999999999991,
+      "text": "But if ms = 1, the system flips."
+    },
+    {
+      "start": 837.875,
+      "duration": 2.32000000000005,
+      "text": "This would be like taking an external magnet"
+    },
+    {
+      "start": 840.195,
+      "duration": 2.0799999999999272,
+      "text": "and applying it to this compass needle,"
+    },
+    {
+      "start": 842.275,
+      "duration": 2.159999999999968,
+      "text": "flipping it 180 degrees."
+    },
+    {
+      "start": 844.435,
+      "duration": 3.1200000000000045,
+      "text": "And then if I'm careful in retracting this magnet,"
+    },
+    {
+      "start": 847.555,
+      "duration": 4.160000000000082,
+      "text": "I can actually get the needle to stay in this place."
+    },
+    {
+      "start": 851.715,
+      "duration": 3.199999999999932,
+      "text": "And this is the highest energy this needle can have"
+    },
+    {
+      "start": 854.915,
+      "duration": 2.240000000000009,
+      "text": "sitting in this unstable position."
+    },
+    {
+      "start": 857.155,
+      "duration": 2.6399999999999864,
+      "text": "Now if I tap it, it will actually go back."
+    },
+    {
+      "start": 859.795,
+      "duration": 2.9600000000000364,
+      "text": "It's possible, but it's a higher energy state."
+    },
+    {
+      "start": 862.755,
+      "duration": 3.519999999999982,
+      "text": "So the ms = 1 level slightly rises."
+    },
+    {
+      "start": 866.275,
+      "duration": 2.560000000000059,
+      "text": "And if ms = 0, it doesn't react to the field,"
+    },
+    {
+      "start": 868.835,
+      "duration": 2.3999999999999773,
+      "text": "which is why this level hasn't changed."
+    },
+    {
+      "start": 871.235,
+      "duration": 2.7999999999999545,
+      "text": "Now, if you keep turning up the magnetic field strength,"
+    },
+    {
+      "start": 874.035,
+      "duration": 3.2000000000000455,
+      "text": "you'll notice that the levels get further and further apart."
+    },
+    {
+      "start": 877.235,
+      "duration": 2.3999999999999773,
+      "text": "This phenomenon is called Zeeman splitting."
+    },
+    {
+      "start": 879.635,
+      "duration": 1.759999999999991,
+      "text": "It's described by a simple formula"
+    },
+    {
+      "start": 881.395,
+      "duration": 2.7200000000000273,
+      "text": "that gives you a direct link between the energy split"
+    },
+    {
+      "start": 884.115,
+      "duration": 2.0,
+      "text": "and the magnetic field strength."
+    },
+    {
+      "start": 886.115,
+      "duration": 2.6399999999999864,
+      "text": "So in the presence of a periodic magnetic field"
+    },
+    {
+      "start": 888.755,
+      "duration": 1.919999999999959,
+      "text": "like that generated by the heart,"
+    },
+    {
+      "start": 890.675,
+      "duration": 3.0400000000000773,
+      "text": "we would theoretically see a rhythmic separation"
+    },
+    {
+      "start": 893.715,
+      "duration": 1.3600000000000136,
+      "text": "of these lines."
+    },
+    {
+      "start": 895.075,
+      "duration": 2.7199999999999136,
+      "text": "And these two energy levels absorb light"
+    },
+    {
+      "start": 897.795,
+      "duration": 2.560000000000059,
+      "text": "at two different microwave wavelengths,"
+    },
+    {
+      "start": 900.355,
+      "duration": 3.0399999999999636,
+      "text": "which change depending on the strength of the field."
+    },
+    {
+      "start": 903.395,
+      "duration": 2.159999999999968,
+      "text": "So what we can actually measure is"
+    },
+    {
+      "start": 905.555,
+      "duration": 3.0400000000000773,
+      "text": "which microwave wavelengths the diamond is absorbing."
+    },
+    {
+      "start": 908.595,
+      "duration": 1.3600000000000136,
+      "text": "When there's no magnetic field,"
+    },
+    {
+      "start": 909.955,
+      "duration": 2.7999999999999545,
+      "text": "the levels are fused and produce a single absorption line"
+    },
+    {
+      "start": 912.755,
+      "duration": 2.9600000000000364,
+      "text": "at the wavelength of 10.4 centimeters."
+    },
+    {
+      "start": 915.715,
+      "duration": 2.159999999999968,
+      "text": "But when there's an external magnetic field,"
+    },
+    {
+      "start": 917.875,
+      "duration": 2.8799999999999955,
+      "text": "they produce two separate absorption lines."
+    },
+    {
+      "start": 920.755,
+      "duration": 1.3600000000000136,
+      "text": "Now, we've simplified it a bit,"
+    },
+    {
+      "start": 922.115,
+      "duration": 3.3600000000000136,
+      "text": "but by measuring how spaced apart these lines are,"
+    },
+    {
+      "start": 925.475,
+      "duration": 2.0,
+      "text": "you get the field strength."
+    },
+    {
+      "start": 927.475,
+      "duration": 3.439999999999941,
+      "text": "This is how an NV diamond magnetometer works."
+    },
+    {
+      "start": 930.915,
+      "duration": 1.759999999999991,
+      "text": "Was the diamond magnetometer ever used"
+    },
+    {
+      "start": 932.675,
+      "duration": 0.9600000000000364,
+      "text": "to detect a heartbeat?"
+    },
+    {
+      "start": 933.635,
+      "duration": 2.0,
+      "text": "- So what has been done for sure is, you know,"
+    },
+    {
+      "start": 935.635,
+      "duration": 1.919999999999959,
+      "text": "for certain is detection"
+    },
+    {
+      "start": 937.555,
+      "duration": 2.400000000000091,
+      "text": "of magnetic fields generated by neurons."
+    },
+    {
+      "start": 939.955,
+      "duration": 2.7999999999999545,
+      "text": "Yeah, I mean, which is to some extent connected"
+    },
+    {
+      "start": 942.755,
+      "duration": 1.3600000000000136,
+      "text": "to the heartbeat question."
+    },
+    {
+      "start": 944.115,
+      "duration": 1.759999999999991,
+      "text": "Neuron activity, to my knowledge,"
+    },
+    {
+      "start": 945.875,
+      "duration": 2.32000000000005,
+      "text": "has been first seen in 2015."
+    },
+    {
+      "start": 948.195,
+      "duration": 4.0,
+      "text": "- Okay, well, that's, wow, that's impressive."
+    },
+    {
+      "start": 952.195,
+      "duration": 3.1200000000000045,
+      "text": "So could it pick up a heartbeat from kilometers away?"
+    },
+    {
+      "start": 955.315,
+      "duration": 2.3199999999999363,
+      "text": "Well, in 2022, researchers were able"
+    },
+    {
+      "start": 957.635,
+      "duration": 2.7999999999999545,
+      "text": "to pick up the magnetic field of a rat's heart,"
+    },
+    {
+      "start": 960.435,
+      "duration": 2.080000000000041,
+      "text": "but it was done using a thoracotomy,"
+    },
+    {
+      "start": 962.515,
+      "duration": 2.0,
+      "text": "which means the rat's chest was open"
+    },
+    {
+      "start": 964.515,
+      "duration": 2.32000000000005,
+      "text": "and the diamond was less than two millimeters away"
+    },
+    {
+      "start": 966.835,
+      "duration": 1.5199999999999818,
+      "text": "from the heart."
+    },
+    {
+      "start": 968.355,
+      "duration": 1.919999999999959,
+      "text": "Okay, but the human heart produces"
+    },
+    {
+      "start": 970.275,
+      "duration": 1.2799999999999727,
+      "text": "a stronger magnetic field."
+    },
+    {
+      "start": 971.555,
+      "duration": 2.160000000000082,
+      "text": "And the tech, the CIA might have deployed,"
+    },
+    {
+      "start": 973.715,
+      "duration": 2.5599999999999454,
+      "text": "could be decades ahead of what is publicly known."
+    },
+    {
+      "start": 976.275,
+      "duration": 2.480000000000018,
+      "text": "You're former CIA operations officer"
+    },
+    {
+      "start": 978.755,
+      "duration": 2.8799999999999955,
+      "text": "and you've worked in the Middle East, right?"
+    },
+    {
+      "start": 981.635,
+      "duration": 2.840000000000032,
+      "text": "So what was your first reaction to this news?"
+    },
+    {
+      "start": 984.475,
+      "duration": 3.3199999999999363,
+      "text": "- Well, the fact that the CIA's involved"
+    },
+    {
+      "start": 987.795,
+      "duration": 2.400000000000091,
+      "text": "in leveraging technology is consistent"
+    },
+    {
+      "start": 990.195,
+      "duration": 1.8399999999999181,
+      "text": "with their mission and their charter."
+    },
+    {
+      "start": 992.035,
+      "duration": 2.3999999999999773,
+      "text": "But I defer to smarter people in engineering"
+    },
+    {
+      "start": 994.435,
+      "duration": 1.2000000000000455,
+      "text": "and science like yourself"
+    },
+    {
+      "start": 995.635,
+      "duration": 3.6800000000000637,
+      "text": "to figure out the exact technique that might be used."
+    },
+    {
+      "start": 999.315,
+      "duration": 1.8399999999999181,
+      "text": "But the processes, of course, are consistent"
+    },
+    {
+      "start": 1001.155,
+      "duration": 0.9600000000000364,
+      "text": "for what we've done."
+    },
+    {
+      "start": 1002.115,
+      "duration": 2.9600000000000364,
+      "text": "- We can't say for sure whether the CIA has this tech,"
+    },
+    {
+      "start": 1005.075,
+      "duration": 1.599999999999909,
+      "text": "but we can use physics to estimate"
+    },
+    {
+      "start": 1006.675,
+      "duration": 2.0,
+      "text": "how sensitive it would need to be."
+    },
+    {
+      "start": 1009.235,
+      "duration": 2.5599999999999454,
+      "text": "Well, the strength of a magnetic field falls off"
+    },
+    {
+      "start": 1011.795,
+      "duration": 2.240000000000009,
+      "text": "with the cube of the distance from the source."
+    },
+    {
+      "start": 1014.035,
+      "duration": 1.6800000000000637,
+      "text": "So if the magnetic field of the heart"
+    },
+    {
+      "start": 1015.715,
+      "duration": 3.2799999999999727,
+      "text": "when measured at the chest is 50 pico Tesla,"
+    },
+    {
+      "start": 1018.995,
+      "duration": 2.7999999999999545,
+      "text": "or 5 times 10 to the -11 Tesla,"
+    },
+    {
+      "start": 1021.795,
+      "duration": 2.240000000000123,
+      "text": "well, then just 100 meters away,"
+    },
+    {
+      "start": 1024.035,
+      "duration": 2.3199999999999363,
+      "text": "this falls off by a factor of a billion"
+    },
+    {
+      "start": 1026.355,
+      "duration": 2.8799999999998818,
+      "text": "to 5 times 10 to the -20 Tesla."
+    },
+    {
+      "start": 1029.235,
+      "duration": 2.3200000000001637,
+      "text": "And at 50 to 100 kilometers,"
+    },
+    {
+      "start": 1031.555,
+      "duration": 4.0,
+      "text": "this could drop to as little as 10 to the -30 Tesla."
+    },
+    {
+      "start": 1035.555,
+      "duration": 3.0399999999999636,
+      "text": "- The most sensitive measurement ever made"
+    },
+    {
+      "start": 1038.595,
+      "duration": 3.4400000000000546,
+      "text": "at the frequencies that the human heartbeat work at is"
+    },
+    {
+      "start": 1042.035,
+      "duration": 3.199999999999818,
+      "text": "at the 10 to the -15 Tesla level."
+    },
+    {
+      "start": 1045.235,
+      "duration": 1.8400000000001455,
+      "text": "And that's in a shielded room."
+    },
+    {
+      "start": 1047.075,
+      "duration": 2.6399999999998727,
+      "text": "So you'd need a system"
+    },
+    {
+      "start": 1049.715,
+      "duration": 3.1200000000001182,
+      "text": "that is 15 orders of magnitude more sensitive"
+    },
+    {
+      "start": 1052.835,
+      "duration": 4.1599999999998545,
+      "text": "than the superconducting quantum interference devices"
+    },
+    {
+      "start": 1056.995,
+      "duration": 3.6800000000000637,
+      "text": "and 18 orders of magnitude more sensitive"
+    },
+    {
+      "start": 1060.675,
+      "duration": 2.5599999999999454,
+      "text": "than diamond NV sensors."
+    },
+    {
+      "start": 1063.235,
+      "duration": 4.480000000000018,
+      "text": "- 18 orders of magnitude is a lot, sounds quite unfeasible."
+    },
+    {
+      "start": 1067.715,
+      "duration": 4.800000000000182,
+      "text": "- It's not like the hills of Iran are devoid of animal life."
+    },
+    {
+      "start": 1072.515,
+      "duration": 1.5199999999999818,
+      "text": "They also have heartbeats"
+    },
+    {
+      "start": 1074.035,
+      "duration": 2.759999999999991,
+      "text": "and possibly larger hearts than humans."
+    },
+    {
+      "start": 1076.795,
+      "duration": 2.6799999999998363,
+      "text": "- There's also the magnetic field of the drone"
+    },
+    {
+      "start": 1079.475,
+      "duration": 2.560000000000173,
+      "text": "or the helicopter the device might be mounted on."
+    },
+    {
+      "start": 1082.035,
+      "duration": 1.3599999999999,
+      "text": "And, finally, there's the fact"
+    },
+    {
+      "start": 1083.395,
+      "duration": 4.240000000000009,
+      "text": "that a magnetic field of 10 to the -30 Tesla is weaker"
+    },
+    {
+      "start": 1087.635,
+      "duration": 2.6400000000001,
+      "text": "than a magnetic field an electron will give you"
+    },
+    {
+      "start": 1090.275,
+      "duration": 1.1199999999998909,
+      "text": "a meter away."
+    },
+    {
+      "start": 1091.395,
+      "duration": 4.079999999999927,
+      "text": "- The New York Post is notoriously a very good place"
+    },
+    {
+      "start": 1095.475,
+      "duration": 1.240000000000009,
+      "text": "for amusing fiction."
+    },
+    {
+      "start": 1096.715,
+      "duration": 3.3200000000001637,
+      "text": "- On the day before we saw this article,"
+    },
+    {
+      "start": 1100.035,
+      "duration": 1.599999999999909,
+      "text": "we also saw an article"
+    },
+    {
+      "start": 1101.635,
+      "duration": 4.240000000000009,
+      "text": "about how they had a technology where it was a beeper."
+    },
+    {
+      "start": 1108.949,
+      "duration": 5.119999999999891,
+      "text": "and that was one way that they were able to detect him."
+    },
+    {
+      "start": 1114.069,
+      "duration": 3.759999999999991,
+      "text": "And these are things that we know about already."
+    },
+    {
+      "start": 1117.829,
+      "duration": 2.5599999999999454,
+      "text": "We also know that there may well have been"
+    },
+    {
+      "start": 1120.389,
+      "duration": 3.9200000000000728,
+      "text": "other intelligence methods used,"
+    },
+    {
+      "start": 1124.309,
+      "duration": 1.6400000000001,
+      "text": "but this isn't really necessary."
+    },
+    {
+      "start": 1125.949,
+      "duration": 2.3599999999999,
+      "text": "- And then that brings you to the point of like,"
+    },
+    {
+      "start": 1128.309,
+      "duration": 2.076000000000022,
+      "text": "why would they make this up?"
+    },
+    {
+      "start": 1130.385,
+      "duration": 2.963999999999942,
+      "text": "- I think New York Post is known to print a lot of stuff."
+    },
+    {
+      "start": 1133.349,
+      "duration": 4.160000000000082,
+      "text": "- I'm not a real fan of the credibility"
+    },
+    {
+      "start": 1137.509,
+      "duration": 1.6800000000000637,
+      "text": "of the press to report things,"
+    },
+    {
+      "start": 1139.189,
+      "duration": 3.119999999999891,
+      "text": "having seen reality and then seeing what the press reports."
+    },
+    {
+      "start": 1142.309,
+      "duration": 2.240000000000009,
+      "text": "- How about deception stories"
+    },
+    {
+      "start": 1144.549,
+      "duration": 3.4400000000000546,
+      "text": "and like false narratives published by not only the CIA,"
+    },
+    {
+      "start": 1147.989,
+      "duration": 1.759999999999991,
+      "text": "but other agencies?"
+    },
+    {
+      "start": 1149.749,
+      "duration": 1.4400000000000546,
+      "text": "Is this often the case?"
+    },
+    {
+      "start": 1151.189,
+      "duration": 1.5199999999999818,
+      "text": "- If you look historically,"
+    },
+    {
+      "start": 1152.709,
+      "duration": 2.7200000000000273,
+      "text": "the idea of fooling your enemy,"
+    },
+    {
+      "start": 1155.429,
+      "duration": 3.599999999999909,
+      "text": "particularly when you have some vulnerability to protect,"
+    },
+    {
+      "start": 1159.029,
+      "duration": 1.7200000000000273,
+      "text": "goes back thousands of years."
+    },
+    {
+      "start": 1160.749,
+      "duration": 1.5599999999999454,
+      "text": "- During World War II,"
+    },
+    {
+      "start": 1162.309,
+      "duration": 2.7200000000000273,
+      "text": "German bombers frequently attacked Britain at night."
+    },
+    {
+      "start": 1165.029,
+      "duration": 2.7999999999999545,
+      "text": "And to retaliate, the British would fly up to intercept"
+    },
+    {
+      "start": 1167.829,
+      "duration": 2.7999999999999545,
+      "text": "and somehow kept finding these bombers in the dark"
+    },
+    {
+      "start": 1170.629,
+      "duration": 1.4400000000000546,
+      "text": "and would attack them."
+    },
+    {
+      "start": 1172.069,
+      "duration": 1.8400000000001455,
+      "text": "Now, UK officials told the press"
+    },
+    {
+      "start": 1173.909,
+      "duration": 1.599999999999909,
+      "text": "that the pilots were able to do this"
+    },
+    {
+      "start": 1175.509,
+      "duration": 1.5199999999999818,
+      "text": "because they ate a lot of carrots,"
+    },
+    {
+      "start": 1177.029,
+      "duration": 2.7200000000000273,
+      "text": "which was improving their vision at night."
+    },
+    {
+      "start": 1179.749,
+      "duration": 1.3599999999999,
+      "text": "But some experts believe"
+    },
+    {
+      "start": 1181.109,
+      "duration": 1.6800000000000637,
+      "text": "that this was actually a cover story"
+    },
+    {
+      "start": 1182.789,
+      "duration": 1.4400000000000546,
+      "text": "meant to distract the Germans"
+    },
+    {
+      "start": 1184.229,
+      "duration": 3.519999999999982,
+      "text": "from the fact the British installed radars on their planes."
+    },
+    {
+      "start": 1187.749,
+      "duration": 1.759999999999991,
+      "text": "- Is that where the idea"
+    },
+    {
+      "start": 1189.509,
+      "duration": 2.7200000000000273,
+      "text": "that carrots give you good eyesight comes from?"
+    },
+    {
+      "start": 1192.229,
+      "duration": 0.8799999999998818,
+      "text": "- I think so."
+    },
+    {
+      "start": 1193.109,
+      "duration": 2.400000000000091,
+      "text": "I think this is the original, yeah, the original myth."
+    },
+    {
+      "start": 1195.509,
+      "duration": 2.160000000000082,
+      "text": "- That is crazy. - Yeah."
+    },
+    {
+      "start": 1197.669,
+      "duration": 2.6399999999998727,
+      "text": "- But, okay, there's one thing that still bothers me."
+    },
+    {
+      "start": 1200.309,
+      "duration": 2.3199999999999363,
+      "text": "If this is likely fake,"
+    },
+    {
+      "start": 1202.629,
+      "duration": 2.240000000000009,
+      "text": "then why is everyone saying no comment"
+    },
+    {
+      "start": 1204.869,
+      "duration": 1.2000000000000455,
+      "text": "and declining to talk?"
+    },
+    {
+      "start": 1206.069,
+      "duration": 2.0599999999999454,
+      "text": "There must be something here, you know?"
+    },
+    {
+      "start": 1208.129,
+      "duration": 2.5800000000001546,
+      "text": "- Well, these NV centers and diamonds are also used"
+    },
+    {
+      "start": 1210.709,
+      "duration": 1.2799999999999727,
+      "text": "for quantum computing."
+    },
+    {
+      "start": 1211.989,
+      "duration": 1.2799999999999727,
+      "text": "But the more interesting,"
+    },
+    {
+      "start": 1213.269,
+      "duration": 3.119999999999891,
+      "text": "probably confidential way they could be used is"
+    },
+    {
+      "start": 1216.389,
+      "duration": 1.6000000000001364,
+      "text": "as navigation devices."
+    },
+    {
+      "start": 1217.989,
+      "duration": 3.0399999999999636,
+      "text": "The Earth's magnetic field creates a unique pattern"
+    },
+    {
+      "start": 1221.029,
+      "duration": 1.1199999999998909,
+      "text": "all across the globe."
+    },
+    {
+      "start": 1222.149,
+      "duration": 4.320000000000164,
+      "text": "- Then to place an object into this map,"
+    },
+    {
+      "start": 1226.469,
+      "duration": 3.9199999999998454,
+      "text": "and if you know all of these perturbations"
+    },
+    {
+      "start": 1230.389,
+      "duration": 1.3600000000001273,
+      "text": "and in homogeneities,"
+    },
+    {
+      "start": 1231.749,
+      "duration": 1.6800000000000637,
+      "text": "you can infer where you are"
+    },
+    {
+      "start": 1233.429,
+      "duration": 3.119999999999891,
+      "text": "without having any GPS reception anymore."
+    },
+    {
+      "start": 1236.549,
+      "duration": 2.7200000000000273,
+      "text": "- With the rise of GPS spoofing"
+    },
+    {
+      "start": 1239.269,
+      "duration": 1.759999999999991,
+      "text": "and jamming over the last couple of years,"
+    },
+    {
+      "start": 1241.029,
+      "duration": 2.0799999999999272,
+      "text": "that could be incredibly powerful."
+    },
+    {
+      "start": 1243.109,
+      "duration": 4.240000000000009,
+      "text": "So NV magnetometers do exist with these synthetic diamonds,"
+    },
+    {
+      "start": 1247.349,
+      "duration": 2.880000000000109,
+      "text": "and they do have potential military applications."
+    },
+    {
+      "start": 1250.229,
+      "duration": 2.9600000000000364,
+      "text": "It's just that detecting heartbeats kilometers away"
+    },
+    {
+      "start": 1253.189,
+      "duration": 5.3599999999999,
+      "text": "probably isn't one of them."
+    },
+    {
+      "start": 1258.549,
+      "duration": 0.8800000000001091,
+      "text": "I wanna give a shout-out"
+    },
+    {
+      "start": 1259.429,
+      "duration": 1.9199999999998454,
+      "text": "to a great Scientific American article"
+    },
+    {
+      "start": 1261.349,
+      "duration": 1.9200000000000728,
+      "text": "on this story by Deni Béchard"
+    },
+    {
+      "start": 1263.269,
+      "duration": 3.3599999999999,
+      "text": "that initially expressed skepticism in Ghost Murmur"
+    },
+    {
+      "start": 1266.629,
+      "duration": 1.6000000000001364,
+      "text": "as a potential technology."
+    },
+    {
+      "start": 1268.229,
+      "duration": 5.680000000000064,
+      "text": "It's a great read and you check it out."
+    }
+  ],
+  "fetched_at": "2026-05-04T20:40:18Z"
+}

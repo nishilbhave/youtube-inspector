@@ -1,0 +1,3104 @@
+{
+  "video_id": "ECOazagKKTo",
+  "url": "https://www.youtube.com/watch?v=ECOazagKKTo",
+  "title": "I killed every AI notetaker... and built my own (It's free)",
+  "channel": "Albert Olgaard",
+  "channel_id": "UCdrYxpEy-e8uVDWYzFK3dCA",
+  "duration_seconds": 661,
+  "view_count": 6401,
+  "upload_date": "2026-05-02",
+  "language": "en-orig",
+  "transcript": [
+    {
+      "start": 15.31,
+      "duration": 0.009999999999999787,
+      "text": "Mhm."
+    },
+    {
+      "start": 15.32,
+      "duration": 1.7899999999999991,
+      "text": "Mhm. How the [&nbsp;__&nbsp;] is it possible that a"
+    },
+    {
+      "start": 17.11,
+      "duration": 0.010000000000001563,
+      "text": "How the [&nbsp;__&nbsp;] is it possible that a"
+    },
+    {
+      "start": 17.12,
+      "duration": 2.1899999999999977,
+      "text": "How the [&nbsp;__&nbsp;] is it possible that a meeting recorder tool can do a hundred"
+    },
+    {
+      "start": 19.31,
+      "duration": 0.010000000000001563,
+      "text": "meeting recorder tool can do a hundred"
+    },
+    {
+      "start": 19.32,
+      "duration": 1.9899999999999984,
+      "text": "meeting recorder tool can do a hundred million dollars in annual recurring"
+    },
+    {
+      "start": 21.31,
+      "duration": 0.010000000000001563,
+      "text": "million dollars in annual recurring"
+    },
+    {
+      "start": 21.32,
+      "duration": 1.7100000000000009,
+      "text": "million dollars in annual recurring revenue? Will all of these AI note"
+    },
+    {
+      "start": 23.03,
+      "duration": 0.00999999999999801,
+      "text": "revenue? Will all of these AI note"
+    },
+    {
+      "start": 23.04,
+      "duration": 2.1900000000000013,
+      "text": "revenue? Will all of these AI note takers actually exist in the future?"
+    },
+    {
+      "start": 25.23,
+      "duration": 0.00999999999999801,
+      "text": "takers actually exist in the future?"
+    },
+    {
+      "start": 25.24,
+      "duration": 1.3100000000000023,
+      "text": "takers actually exist in the future? Probably not if we can build it in a"
+    },
+    {
+      "start": 26.55,
+      "duration": 0.00999999999999801,
+      "text": "Probably not if we can build it in a"
+    },
+    {
+      "start": 26.56,
+      "duration": 2.3900000000000006,
+      "text": "Probably not if we can build it in a couple of hours with AI. So, that's what"
+    },
+    {
+      "start": 28.95,
+      "duration": 0.010000000000001563,
+      "text": "couple of hours with AI. So, that's what"
+    },
+    {
+      "start": 28.96,
+      "duration": 1.3900000000000006,
+      "text": "couple of hours with AI. So, that's what we're going to do. Right now, I'm paying"
+    },
+    {
+      "start": 30.35,
+      "duration": 0.00999999999999801,
+      "text": "we're going to do. Right now, I'm paying"
+    },
+    {
+      "start": 30.36,
+      "duration": 1.7100000000000009,
+      "text": "we're going to do. Right now, I'm paying twenty dollars a month for Fathom. So,"
+    },
+    {
+      "start": 32.07,
+      "duration": 0.00999999999999801,
+      "text": "twenty dollars a month for Fathom. So,"
+    },
+    {
+      "start": 32.08,
+      "duration": 1.7100000000000009,
+      "text": "twenty dollars a month for Fathom. So, let me go in, cancel that, and let's"
+    },
+    {
+      "start": 33.79,
+      "duration": 0.00999999999999801,
+      "text": "let me go in, cancel that, and let's"
+    },
+    {
+      "start": 33.8,
+      "duration": 1.7900000000000063,
+      "text": "let me go in, cancel that, and let's build our own version even if it takes"
+    },
+    {
+      "start": 35.59,
+      "duration": 0.00999999999999801,
+      "text": "build our own version even if it takes"
+    },
+    {
+      "start": 35.6,
+      "duration": 1.509999999999998,
+      "text": "build our own version even if it takes hours. Let me go in, create a new"
+    },
+    {
+      "start": 37.11,
+      "duration": 0.00999999999999801,
+      "text": "hours. Let me go in, create a new"
+    },
+    {
+      "start": 37.12,
+      "duration": 1.5100000000000051,
+      "text": "hours. Let me go in, create a new folder. We're not going to call it"
+    },
+    {
+      "start": 38.63,
+      "duration": 0.00999999999999801,
+      "text": "folder. We're not going to call it"
+    },
+    {
+      "start": 38.64,
+      "duration": 2.469999999999999,
+      "text": "folder. We're not going to call it Otter, we're going to call it"
+    },
+    {
+      "start": 41.11,
+      "duration": 0.00999999999999801,
+      "text": "Otter, we're going to call it"
+    },
+    {
+      "start": 41.12,
+      "duration": 1.470000000000006,
+      "text": "Otter, we're going to call it Otter. And I know what you guys are"
+    },
+    {
+      "start": 42.59,
+      "duration": 0.00999999999999801,
+      "text": "Otter. And I know what you guys are"
+    },
+    {
+      "start": 42.6,
+      "duration": 2.1099999999999994,
+      "text": "Otter. And I know what you guys are saying about my desktop. Apparently, you"
+    },
+    {
+      "start": 44.71,
+      "duration": 0.00999999999999801,
+      "text": "saying about my desktop. Apparently, you"
+    },
+    {
+      "start": 44.72,
+      "duration": 1.3500000000000014,
+      "text": "saying about my desktop. Apparently, you guys are getting seizures out there from"
+    },
+    {
+      "start": 46.07,
+      "duration": 0.00999999999999801,
+      "text": "guys are getting seizures out there from"
+    },
+    {
+      "start": 46.08,
+      "duration": 2.190000000000005,
+      "text": "guys are getting seizures out there from looking at it. So, when we reach 25K"
+    },
+    {
+      "start": 48.27,
+      "duration": 0.00999999999999801,
+      "text": "looking at it. So, when we reach 25K"
+    },
+    {
+      "start": 48.28,
+      "duration": 1.4299999999999997,
+      "text": "looking at it. So, when we reach 25K subs, then I'm going to clean the entire"
+    },
+    {
+      "start": 49.71,
+      "duration": 0.00999999999999801,
+      "text": "subs, then I'm going to clean the entire"
+    },
+    {
+      "start": 49.72,
+      "duration": 2.230000000000004,
+      "text": "subs, then I'm going to clean the entire thing. So, remember to subscribe. Let's"
+    },
+    {
+      "start": 51.95,
+      "duration": 0.00999999999999801,
+      "text": "thing. So, remember to subscribe. Let's"
+    },
+    {
+      "start": 51.96,
+      "duration": 1.9099999999999966,
+      "text": "thing. So, remember to subscribe. Let's head on to Visual Studio Code, open the"
+    },
+    {
+      "start": 53.87,
+      "duration": 0.010000000000005116,
+      "text": "head on to Visual Studio Code, open the"
+    },
+    {
+      "start": 53.88,
+      "duration": 1.9899999999999949,
+      "text": "head on to Visual Studio Code, open the folder that we just created, click yes,"
+    },
+    {
+      "start": 55.87,
+      "duration": 0.010000000000005116,
+      "text": "folder that we just created, click yes,"
+    },
+    {
+      "start": 55.88,
+      "duration": 1.9099999999999966,
+      "text": "folder that we just created, click yes, I trust the authors, and open up Claude"
+    },
+    {
+      "start": 57.79,
+      "duration": 0.00999999999999801,
+      "text": "I trust the authors, and open up Claude"
+    },
+    {
+      "start": 57.8,
+      "duration": 2.230000000000004,
+      "text": "I trust the authors, and open up Claude Code so we can start building our own"
+    },
+    {
+      "start": 60.03,
+      "duration": 0.00999999999999801,
+      "text": "Code so we can start building our own"
+    },
+    {
+      "start": 60.04,
+      "duration": 1.6700000000000017,
+      "text": "Code so we can start building our own meeting recording software. I'm going to"
+    },
+    {
+      "start": 61.71,
+      "duration": 0.00999999999999801,
+      "text": "meeting recording software. I'm going to"
+    },
+    {
+      "start": 61.72,
+      "duration": 1.6300000000000026,
+      "text": "meeting recording software. I'm going to write a very, very long prompt, and then"
+    },
+    {
+      "start": 63.35,
+      "duration": 0.00999999999999801,
+      "text": "write a very, very long prompt, and then"
+    },
+    {
+      "start": 63.36,
+      "duration": 1.8289999999999935,
+      "text": "write a very, very long prompt, and then I'll be right back. After a lot of"
+    },
+    {
+      "start": 65.189,
+      "duration": 0.010000000000005116,
+      "text": "I'll be right back. After a lot of"
+    },
+    {
+      "start": 65.199,
+      "duration": 2.7109999999999985,
+      "text": "I'll be right back. After a lot of prompting later, we now have the prompt"
+    },
+    {
+      "start": 67.91,
+      "duration": 0.010000000000005116,
+      "text": "prompting later, we now have the prompt"
+    },
+    {
+      "start": 67.92,
+      "duration": 1.9500000000000028,
+      "text": "prompting later, we now have the prompt for creating Otter."
+    },
+    {
+      "start": 69.87,
+      "duration": 0.009999999999990905,
+      "text": "for creating Otter."
+    },
+    {
+      "start": 69.88,
+      "duration": 1.75,
+      "text": "for creating Otter. It'll consist of two things. One"
+    },
+    {
+      "start": 71.63,
+      "duration": 0.010000000000005116,
+      "text": "It'll consist of two things. One"
+    },
+    {
+      "start": 71.64,
+      "duration": 1.8299999999999983,
+      "text": "It'll consist of two things. One lightweight desktop app that's basically"
+    },
+    {
+      "start": 73.47,
+      "duration": 0.010000000000005116,
+      "text": "lightweight desktop app that's basically"
+    },
+    {
+      "start": 73.48,
+      "duration": 1.9500000000000028,
+      "text": "lightweight desktop app that's basically just going to record screen and audio"
+    },
+    {
+      "start": 75.43,
+      "duration": 0.009999999999990905,
+      "text": "just going to record screen and audio"
+    },
+    {
+      "start": 75.44,
+      "duration": 1.8700000000000045,
+      "text": "just going to record screen and audio from our meetings. And then two, an"
+    },
+    {
+      "start": 77.31,
+      "duration": 0.009999999999990905,
+      "text": "from our meetings. And then two, an"
+    },
+    {
+      "start": 77.32,
+      "duration": 2.5900000000000034,
+      "text": "from our meetings. And then two, an online website or a Next.js app where we"
+    },
+    {
+      "start": 79.91,
+      "duration": 0.010000000000005116,
+      "text": "online website or a Next.js app where we"
+    },
+    {
+      "start": 79.92,
+      "duration": 1.5499999999999972,
+      "text": "online website or a Next.js app where we can see all of the recordings and where"
+    },
+    {
+      "start": 81.47,
+      "duration": 0.010000000000005116,
+      "text": "can see all of the recordings and where"
+    },
+    {
+      "start": 81.48,
+      "duration": 1.9099999999999966,
+      "text": "can see all of the recordings and where we can ask AI about the transcript,"
+    },
+    {
+      "start": 83.39,
+      "duration": 0.010000000000005116,
+      "text": "we can ask AI about the transcript,"
+    },
+    {
+      "start": 83.4,
+      "duration": 1.1499999999999915,
+      "text": "we can ask AI about the transcript, about what was said in the meeting,"
+    },
+    {
+      "start": 84.55,
+      "duration": 0.010000000000005116,
+      "text": "about what was said in the meeting,"
+    },
+    {
+      "start": 84.56,
+      "duration": 1.6700000000000017,
+      "text": "about what was said in the meeting, about who said what, where we can create"
+    },
+    {
+      "start": 86.23,
+      "duration": 0.009999999999990905,
+      "text": "about who said what, where we can create"
+    },
+    {
+      "start": 86.24,
+      "duration": 1.8700000000000045,
+      "text": "about who said what, where we can create summaries, all of that. I'm going to set"
+    },
+    {
+      "start": 88.11,
+      "duration": 0.010000000000005116,
+      "text": "summaries, all of that. I'm going to set"
+    },
+    {
+      "start": 88.12,
+      "duration": 1.9099999999999966,
+      "text": "summaries, all of that. I'm going to set Claude to auto mode. I'm going to tell"
+    },
+    {
+      "start": 90.03,
+      "duration": 0.009999999999990905,
+      "text": "Claude to auto mode. I'm going to tell"
+    },
+    {
+      "start": 90.03999999999999,
+      "duration": 2.510000000000005,
+      "text": "Claude to auto mode. I'm going to tell it to use extra high and use the super"
+    },
+    {
+      "start": 92.55,
+      "duration": 0.010000000000005116,
+      "text": "it to use extra high and use the super"
+    },
+    {
+      "start": 92.56,
+      "duration": 2.1899999999999977,
+      "text": "it to use extra high and use the super power skill. And then we hit enter and"
+    },
+    {
+      "start": 94.75,
+      "duration": 0.009999999999990905,
+      "text": "power skill. And then we hit enter and"
+    },
+    {
+      "start": 94.75999999999999,
+      "duration": 1.3100000000000023,
+      "text": "power skill. And then we hit enter and Claude is now going to build an"
+    },
+    {
+      "start": 96.07,
+      "duration": 0.010000000000005116,
+      "text": "Claude is now going to build an"
+    },
+    {
+      "start": 96.08,
+      "duration": 1.4299999999999926,
+      "text": "Claude is now going to build an implementation plan for how we build"
+    },
+    {
+      "start": 97.50999999999999,
+      "duration": 0.010000000000019327,
+      "text": "implementation plan for how we build"
+    },
+    {
+      "start": 97.52000000000001,
+      "duration": 2.469999999999999,
+      "text": "implementation plan for how we build this. There we go. Using the front-end"
+    },
+    {
+      "start": 99.99000000000001,
+      "duration": 0.009999999999990905,
+      "text": "this. There we go. Using the front-end"
+    },
+    {
+      "start": 100.0,
+      "duration": 2.069999999999993,
+      "text": "this. There we go. Using the front-end design skill, it gave us a little"
+    },
+    {
+      "start": 102.07,
+      "duration": 0.010000000000005116,
+      "text": "design skill, it gave us a little"
+    },
+    {
+      "start": 102.08,
+      "duration": 1.9100000000000108,
+      "text": "design skill, it gave us a little mock-up right here of what it will look"
+    },
+    {
+      "start": 103.99000000000001,
+      "duration": 0.009999999999990905,
+      "text": "mock-up right here of what it will look"
+    },
+    {
+      "start": 104.0,
+      "duration": 1.4300000000000068,
+      "text": "mock-up right here of what it will look like, what it will look like when it's"
+    },
+    {
+      "start": 105.43,
+      "duration": 0.009999999999990905,
+      "text": "like, what it will look like when it's"
+    },
+    {
+      "start": 105.44,
+      "duration": 1.990000000000009,
+      "text": "like, what it will look like when it's recording, what our web app will look"
+    },
+    {
+      "start": 107.43,
+      "duration": 0.009999999999990905,
+      "text": "recording, what our web app will look"
+    },
+    {
+      "start": 107.44,
+      "duration": 1.5100000000000051,
+      "text": "recording, what our web app will look like."
+    },
+    {
+      "start": 108.95,
+      "duration": 0.010000000000005116,
+      "text": "like."
+    },
+    {
+      "start": 108.96000000000001,
+      "duration": 1.6299999999999955,
+      "text": "like. And what it will look like when we click"
+    },
+    {
+      "start": 110.59,
+      "duration": 0.009999999999990905,
+      "text": "And what it will look like when we click"
+    },
+    {
+      "start": 110.6,
+      "duration": 2.0700000000000074,
+      "text": "And what it will look like when we click in on it, here with the meeting notes on"
+    },
+    {
+      "start": 112.67,
+      "duration": 0.010000000000005116,
+      "text": "in on it, here with the meeting notes on"
+    },
+    {
+      "start": 112.68,
+      "duration": 1.4299999999999926,
+      "text": "in on it, here with the meeting notes on the right, what design we're going to"
+    },
+    {
+      "start": 114.11,
+      "duration": 0.010000000000005116,
+      "text": "the right, what design we're going to"
+    },
+    {
+      "start": 114.12,
+      "duration": 1.8700000000000045,
+      "text": "the right, what design we're going to use, the colors. This all looks very,"
+    },
+    {
+      "start": 115.99000000000001,
+      "duration": 0.009999999999990905,
+      "text": "use, the colors. This all looks very,"
+    },
+    {
+      "start": 116.0,
+      "duration": 1.990000000000009,
+      "text": "use, the colors. This all looks very, very clean. So, I'm going to tell it to"
+    },
+    {
+      "start": 117.99000000000001,
+      "duration": 0.009999999999990905,
+      "text": "very clean. So, I'm going to tell it to"
+    },
+    {
+      "start": 118.0,
+      "duration": 2.1500000000000057,
+      "text": "very clean. So, I'm going to tell it to continue, hit enter, and now Claude is"
+    },
+    {
+      "start": 120.15,
+      "duration": 0.009999999999990905,
+      "text": "continue, hit enter, and now Claude is"
+    },
+    {
+      "start": 120.16,
+      "duration": 1.710000000000008,
+      "text": "continue, hit enter, and now Claude is going to build out the implementation"
+    },
+    {
+      "start": 121.87,
+      "duration": 0.009999999999990905,
+      "text": "going to build out the implementation"
+    },
+    {
+      "start": 121.88,
+      "duration": 2.75,
+      "text": "going to build out the implementation plan. While Claude is cooking,"
+    },
+    {
+      "start": 124.63,
+      "duration": 0.010000000000005116,
+      "text": "plan. While Claude is cooking,"
+    },
+    {
+      "start": 124.64,
+      "duration": 4.108999999999995,
+      "text": "plan. While Claude is cooking, I've made half a watermelon."
+    },
+    {
+      "start": 131.11,
+      "duration": 0.009999999999990905,
+      "text": "I love my job. I'm not even joking this"
+    },
+    {
+      "start": 131.12,
+      "duration": 2.710000000000008,
+      "text": "I love my job. I'm not even joking this there's a half a watermelon here."
+    },
+    {
+      "start": 133.83,
+      "duration": 0.009999999999990905,
+      "text": "there's a half a watermelon here."
+    },
+    {
+      "start": 133.84,
+      "duration": 1.9099999999999966,
+      "text": "there's a half a watermelon here. [&nbsp;__&nbsp;] it got all over my desk. And there"
+    },
+    {
+      "start": 135.75,
+      "duration": 0.009999999999990905,
+      "text": "[&nbsp;__&nbsp;] it got all over my desk. And there"
+    },
+    {
+      "start": 135.76,
+      "duration": 1.910000000000025,
+      "text": "[&nbsp;__&nbsp;] it got all over my desk. And there we go, Claude is now done with the"
+    },
+    {
+      "start": 137.67000000000002,
+      "duration": 0.009999999999990905,
+      "text": "we go, Claude is now done with the"
+    },
+    {
+      "start": 137.68,
+      "duration": 2.430000000000007,
+      "text": "we go, Claude is now done with the initial build. You can see we have one"
+    },
+    {
+      "start": 140.11,
+      "duration": 0.009999999999990905,
+      "text": "initial build. You can see we have one"
+    },
+    {
+      "start": 140.12,
+      "duration": 1.6699999999999875,
+      "text": "initial build. You can see we have one desktop folder, which is the desktop"
+    },
+    {
+      "start": 141.79,
+      "duration": 0.010000000000019327,
+      "text": "desktop folder, which is the desktop"
+    },
+    {
+      "start": 141.8,
+      "duration": 1.9499999999999886,
+      "text": "desktop folder, which is the desktop app, and then one web folder, which is"
+    },
+    {
+      "start": 143.75,
+      "duration": 0.009999999999990905,
+      "text": "app, and then one web folder, which is"
+    },
+    {
+      "start": 143.76,
+      "duration": 2.069999999999993,
+      "text": "app, and then one web folder, which is the web app. And inside of here, we have"
+    },
+    {
+      "start": 145.82999999999998,
+      "duration": 0.010000000000019327,
+      "text": "the web app. And inside of here, we have"
+    },
+    {
+      "start": 145.84,
+      "duration": 1.6699999999999875,
+      "text": "the web app. And inside of here, we have two environmental values that we need to"
+    },
+    {
+      "start": 147.51,
+      "duration": 0.010000000000019327,
+      "text": "two environmental values that we need to"
+    },
+    {
+      "start": 147.52,
+      "duration": 1.2299999999999898,
+      "text": "two environmental values that we need to fill out."
+    },
+    {
+      "start": 148.75,
+      "duration": 0.009999999999990905,
+      "text": "fill out."
+    },
+    {
+      "start": 148.76,
+      "duration": 2.5360000000000014,
+      "text": "fill out. Let's start with the MongoDB"
+    },
+    {
+      "start": 151.296,
+      "duration": 0.010000000000019327,
+      "text": "Let's start with the MongoDB"
+    },
+    {
+      "start": 151.306,
+      "duration": 0.24399999999999977,
+      "text": "Let's start with the MongoDB &gt;&gt; [music]"
+    },
+    {
+      "start": 151.55,
+      "duration": 0.009999999999990905,
+      "text": "&gt;&gt; [music]"
+    },
+    {
+      "start": 151.56,
+      "duration": 1.5900000000000034,
+      "text": "&gt;&gt; [music] &gt;&gt; URI. We click connect,"
+    },
+    {
+      "start": 153.15,
+      "duration": 0.009999999999990905,
+      "text": "&gt;&gt; URI. We click connect,"
+    },
+    {
+      "start": 153.16,
+      "duration": 1.950000000000017,
+      "text": "&gt;&gt; URI. We click connect, and we click drivers, then we copy this"
+    },
+    {
+      "start": 155.11,
+      "duration": 0.009999999999990905,
+      "text": "and we click drivers, then we copy this"
+    },
+    {
+      "start": 155.12,
+      "duration": 2.5500000000000114,
+      "text": "and we click drivers, then we copy this connection string right here, paste that"
+    },
+    {
+      "start": 157.67000000000002,
+      "duration": 0.009999999999990905,
+      "text": "connection string right here, paste that"
+    },
+    {
+      "start": 157.68,
+      "duration": 2.1499999999999773,
+      "text": "connection string right here, paste that in. But I don't remember the user"
+    },
+    {
+      "start": 159.82999999999998,
+      "duration": 0.010000000000019327,
+      "text": "in. But I don't remember the user"
+    },
+    {
+      "start": 159.84,
+      "duration": 2.430000000000007,
+      "text": "in. But I don't remember the user password, so I go to So, I go to"
+    },
+    {
+      "start": 162.27,
+      "duration": 0.009999999999990905,
+      "text": "password, so I go to So, I go to"
+    },
+    {
+      "start": 162.28,
+      "duration": 4.150000000000006,
+      "text": "password, so I go to So, I go to database and network access, click edit,"
+    },
+    {
+      "start": 166.43,
+      "duration": 0.009999999999990905,
+      "text": "database and network access, click edit,"
+    },
+    {
+      "start": 166.44,
+      "duration": 1.8300000000000125,
+      "text": "database and network access, click edit, and edit the password, auto-generate a"
+    },
+    {
+      "start": 168.27,
+      "duration": 0.009999999999990905,
+      "text": "and edit the password, auto-generate a"
+    },
+    {
+      "start": 168.28,
+      "duration": 2.069999999999993,
+      "text": "and edit the password, auto-generate a new one, copy this one, and then I"
+    },
+    {
+      "start": 170.35,
+      "duration": 0.010000000000019327,
+      "text": "new one, copy this one, and then I"
+    },
+    {
+      "start": 170.36,
+      "duration": 2.7099999999999795,
+      "text": "new one, copy this one, and then I insert it right here."
+    },
+    {
+      "start": 173.07,
+      "duration": 0.009999999999990905,
+      "text": "insert it right here."
+    },
+    {
+      "start": 173.07999999999998,
+      "duration": 2.2700000000000102,
+      "text": "insert it right here. A session string for now in development,"
+    },
+    {
+      "start": 175.35,
+      "duration": 0.010000000000019327,
+      "text": "A session string for now in development,"
+    },
+    {
+      "start": 175.36,
+      "duration": 2.549999999999983,
+      "text": "A session string for now in development, I'm just going to make one long string"
+    },
+    {
+      "start": 177.91,
+      "duration": 0.010000000000019327,
+      "text": "I'm just going to make one long string"
+    },
+    {
+      "start": 177.92000000000002,
+      "duration": 3.509999999999991,
+      "text": "I'm just going to make one long string like this."
+    },
+    {
+      "start": 182.95,
+      "duration": 0.010000000000019327,
+      "text": "Admin username is just going to be"
+    },
+    {
+      "start": 182.96,
+      "duration": 2.7099999999999795,
+      "text": "Admin username is just going to be admin. Admin password for now, let's"
+    },
+    {
+      "start": 185.67,
+      "duration": 0.010000000000019327,
+      "text": "admin. Admin password for now, let's"
+    },
+    {
+      "start": 185.68,
+      "duration": 2.9099999999999966,
+      "text": "admin. Admin password for now, let's make it test123. That is the MongoDB"
+    },
+    {
+      "start": 188.59,
+      "duration": 0.009999999999990905,
+      "text": "make it test123. That is the MongoDB"
+    },
+    {
+      "start": 188.6,
+      "duration": 2.950000000000017,
+      "text": "make it test123. That is the MongoDB URI. Now we need the R2 credentials. So,"
+    },
+    {
+      "start": 191.55,
+      "duration": 0.009999999999990905,
+      "text": "URI. Now we need the R2 credentials. So,"
+    },
+    {
+      "start": 191.56,
+      "duration": 1.1899999999999977,
+      "text": "URI. Now we need the R2 credentials. So, the first thing we need to do is go to"
+    },
+    {
+      "start": 192.75,
+      "duration": 0.009999999999990905,
+      "text": "the first thing we need to do is go to"
+    },
+    {
+      "start": 192.76,
+      "duration": 2.950000000000017,
+      "text": "the first thing we need to do is go to Cloudflare, click login, then search for"
+    },
+    {
+      "start": 195.71,
+      "duration": 0.009999999999990905,
+      "text": "Cloudflare, click login, then search for"
+    },
+    {
+      "start": 195.72,
+      "duration": 2.950000000000017,
+      "text": "Cloudflare, click login, then search for R2 R2 object storage, then click create"
+    },
+    {
+      "start": 198.67000000000002,
+      "duration": 0.009999999999990905,
+      "text": "R2 R2 object storage, then click create"
+    },
+    {
+      "start": 198.68,
+      "duration": 2.269999999999982,
+      "text": "R2 R2 object storage, then click create bucket. I'm going to call this one"
+    },
+    {
+      "start": 200.95,
+      "duration": 0.010000000000019327,
+      "text": "bucket. I'm going to call this one"
+    },
+    {
+      "start": 200.96,
+      "duration": 1.549999999999983,
+      "text": "bucket. I'm going to call this one Otter. We have it on automatic, we have"
+    },
+    {
+      "start": 202.51,
+      "duration": 0.010000000000019327,
+      "text": "Otter. We have it on automatic, we have"
+    },
+    {
+      "start": 202.52,
+      "duration": 2.789999999999992,
+      "text": "Otter. We have it on automatic, we have it on standard, we create the bucket."
+    },
+    {
+      "start": 205.31,
+      "duration": 0.009999999999990905,
+      "text": "it on standard, we create the bucket."
+    },
+    {
+      "start": 205.32,
+      "duration": 2.469999999999999,
+      "text": "it on standard, we create the bucket. There we go. Now I go to settings. So,"
+    },
+    {
+      "start": 207.79,
+      "duration": 0.010000000000019327,
+      "text": "There we go. Now I go to settings. So,"
+    },
+    {
+      "start": 207.8,
+      "duration": 2.4299999999999784,
+      "text": "There we go. Now I go to settings. So, the first thing we can fill out is the"
+    },
+    {
+      "start": 210.23,
+      "duration": 0.010000000000019327,
+      "text": "the first thing we can fill out is the"
+    },
+    {
+      "start": 210.24,
+      "duration": 2.789999999999992,
+      "text": "the first thing we can fill out is the R2 bucket, which is called Otter. Now we"
+    },
+    {
+      "start": 213.03,
+      "duration": 0.009999999999990905,
+      "text": "R2 bucket, which is called Otter. Now we"
+    },
+    {
+      "start": 213.04,
+      "duration": 2.1100000000000136,
+      "text": "R2 bucket, which is called Otter. Now we need the account ID, we find that in the"
+    },
+    {
+      "start": 215.15,
+      "duration": 0.009999999999990905,
+      "text": "need the account ID, we find that in the"
+    },
+    {
+      "start": 215.16,
+      "duration": 1.990000000000009,
+      "text": "need the account ID, we find that in the bottom right corner, account ID right"
+    },
+    {
+      "start": 217.15,
+      "duration": 0.009999999999990905,
+      "text": "bottom right corner, account ID right"
+    },
+    {
+      "start": 217.16,
+      "duration": 2.1500000000000057,
+      "text": "bottom right corner, account ID right here. And now we need the access key ID"
+    },
+    {
+      "start": 219.31,
+      "duration": 0.009999999999990905,
+      "text": "here. And now we need the access key ID"
+    },
+    {
+      "start": 219.32,
+      "duration": 1.9099999999999966,
+      "text": "here. And now we need the access key ID and the secret access key. We get that"
+    },
+    {
+      "start": 221.23,
+      "duration": 0.010000000000019327,
+      "text": "and the secret access key. We get that"
+    },
+    {
+      "start": 221.24,
+      "duration": 1.6299999999999955,
+      "text": "and the secret access key. We get that by clicking manage in the bottom right"
+    },
+    {
+      "start": 222.87,
+      "duration": 0.009999999999990905,
+      "text": "by clicking manage in the bottom right"
+    },
+    {
+      "start": 222.88,
+      "duration": 2.390000000000015,
+      "text": "by clicking manage in the bottom right corner, and then go to account API"
+    },
+    {
+      "start": 225.27,
+      "duration": 0.009999999999990905,
+      "text": "corner, and then go to account API"
+    },
+    {
+      "start": 225.28,
+      "duration": 3.1899999999999977,
+      "text": "corner, and then go to account API tokens, click on admin read and write,"
+    },
+    {
+      "start": 228.47,
+      "duration": 0.009999999999990905,
+      "text": "tokens, click on admin read and write,"
+    },
+    {
+      "start": 228.48,
+      "duration": 2.7900000000000205,
+      "text": "tokens, click on admin read and write, TTL forever, create API token. And here"
+    },
+    {
+      "start": 231.27,
+      "duration": 0.009999999999990905,
+      "text": "TTL forever, create API token. And here"
+    },
+    {
+      "start": 231.28,
+      "duration": 2.9499999999999886,
+      "text": "TTL forever, create API token. And here we have the access key ID and the secret"
+    },
+    {
+      "start": 234.23,
+      "duration": 0.010000000000019327,
+      "text": "we have the access key ID and the secret"
+    },
+    {
+      "start": 234.24,
+      "duration": 2.430000000000007,
+      "text": "we have the access key ID and the secret access key. Now we've set up MongoDB, we"
+    },
+    {
+      "start": 236.67000000000002,
+      "duration": 0.009999999999990905,
+      "text": "access key. Now we've set up MongoDB, we"
+    },
+    {
+      "start": 236.68,
+      "duration": 2.549999999999983,
+      "text": "access key. Now we've set up MongoDB, we have an R2 bucket to store the videos."
+    },
+    {
+      "start": 239.23,
+      "duration": 0.010000000000019327,
+      "text": "have an R2 bucket to store the videos."
+    },
+    {
+      "start": 239.24,
+      "duration": 2.3499999999999943,
+      "text": "have an R2 bucket to store the videos. Now we need an Anthropic API key. We get"
+    },
+    {
+      "start": 241.59,
+      "duration": 0.009999999999990905,
+      "text": "Now we need an Anthropic API key. We get"
+    },
+    {
+      "start": 241.6,
+      "duration": 2.390000000000015,
+      "text": "Now we need an Anthropic API key. We get that by going to platform.claude.com,"
+    },
+    {
+      "start": 243.99,
+      "duration": 0.009999999999990905,
+      "text": "that by going to platform.claude.com,"
+    },
+    {
+      "start": 244.0,
+      "duration": 2.1899999999999977,
+      "text": "that by going to platform.claude.com, then we go to API keys, we create a new"
+    },
+    {
+      "start": 246.19,
+      "duration": 0.009999999999990905,
+      "text": "then we go to API keys, we create a new"
+    },
+    {
+      "start": 246.2,
+      "duration": 2.5900000000000034,
+      "text": "then we go to API keys, we create a new API key, call this Otter, paste in this"
+    },
+    {
+      "start": 248.79,
+      "duration": 0.010000000000019327,
+      "text": "API key, call this Otter, paste in this"
+    },
+    {
+      "start": 248.8,
+      "duration": 2.3100000000000023,
+      "text": "API key, call this Otter, paste in this key. The last thing we need is a Groq"
+    },
+    {
+      "start": 251.11,
+      "duration": 0.009999999999990905,
+      "text": "key. The last thing we need is a Groq"
+    },
+    {
+      "start": 251.12,
+      "duration": 2.2299999999999898,
+      "text": "key. The last thing we need is a Groq API key for transcription. So, we get"
+    },
+    {
+      "start": 253.35,
+      "duration": 0.010000000000019327,
+      "text": "API key for transcription. So, we get"
+    },
+    {
+      "start": 253.36,
+      "duration": 2.269999999999982,
+      "text": "API key for transcription. So, we get that by going to Groq, and then we"
+    },
+    {
+      "start": 255.63,
+      "duration": 0.009999999999990905,
+      "text": "that by going to Groq, and then we"
+    },
+    {
+      "start": 255.64,
+      "duration": 2.0300000000000296,
+      "text": "that by going to Groq, and then we create an API key by going into API"
+    },
+    {
+      "start": 257.67,
+      "duration": 0.009999999999990905,
+      "text": "create an API key by going into API"
+    },
+    {
+      "start": 257.68,
+      "duration": 2.38900000000001,
+      "text": "create an API key by going into API keys, create a new one, call it Otter,"
+    },
+    {
+      "start": 260.069,
+      "duration": 0.009999999999990905,
+      "text": "keys, create a new one, call it Otter,"
+    },
+    {
+      "start": 260.079,
+      "duration": 1.7099999999999795,
+      "text": "keys, create a new one, call it Otter, and paste it in right here where it says"
+    },
+    {
+      "start": 261.789,
+      "duration": 0.009999999999990905,
+      "text": "and paste it in right here where it says"
+    },
+    {
+      "start": 261.799,
+      "duration": 2.4710000000000036,
+      "text": "and paste it in right here where it says Groq API key. Probably also need some of"
+    },
+    {
+      "start": 264.27,
+      "duration": 0.009999999999990905,
+      "text": "Groq API key. Probably also need some of"
+    },
+    {
+      "start": 264.28,
+      "duration": 2.0300000000000296,
+      "text": "Groq API key. Probably also need some of the same values inside of the desktop"
+    },
+    {
+      "start": 266.31,
+      "duration": 0.009999999999990905,
+      "text": "the same values inside of the desktop"
+    },
+    {
+      "start": 266.32,
+      "duration": 1.910000000000025,
+      "text": "the same values inside of the desktop version. So, I'm going to open up and"
+    },
+    {
+      "start": 268.23,
+      "duration": 0.009999999999990905,
+      "text": "version. So, I'm going to open up and"
+    },
+    {
+      "start": 268.24,
+      "duration": 2.069999999999993,
+      "text": "version. So, I'm going to open up and desktop. Here we need the admin and then"
+    },
+    {
+      "start": 270.31,
+      "duration": 0.009999999999990905,
+      "text": "desktop. Here we need the admin and then"
+    },
+    {
+      "start": 270.32,
+      "duration": 1.5500000000000114,
+      "text": "desktop. Here we need the admin and then the admin password. So, username is"
+    },
+    {
+      "start": 271.87,
+      "duration": 0.009999999999990905,
+      "text": "the admin password. So, username is"
+    },
+    {
+      "start": 271.88,
+      "duration": 2.1499999999999773,
+      "text": "the admin password. So, username is still going to be admin. Admin password"
+    },
+    {
+      "start": 274.03,
+      "duration": 0.010000000000047748,
+      "text": "still going to be admin. Admin password"
+    },
+    {
+      "start": 274.04,
+      "duration": 2.349999999999966,
+      "text": "still going to be admin. Admin password is going to be test123. Need the MongoDB"
+    },
+    {
+      "start": 276.39,
+      "duration": 0.009999999999990905,
+      "text": "is going to be test123. Need the MongoDB"
+    },
+    {
+      "start": 276.4,
+      "duration": 5.670000000000016,
+      "text": "is going to be test123. Need the MongoDB token."
+    },
+    {
+      "start": 288.87,
+      "duration": 0.009999999999990905,
+      "text": "And also the Groq API key. But here we"
+    },
+    {
+      "start": 288.88,
+      "duration": 2.430000000000007,
+      "text": "And also the Groq API key. But here we don't need the Anthropic API key. Let's"
+    },
+    {
+      "start": 291.31,
+      "duration": 0.009999999999990905,
+      "text": "don't need the Anthropic API key. Let's"
+    },
+    {
+      "start": 291.32,
+      "duration": 1.2700000000000387,
+      "text": "don't need the Anthropic API key. Let's see if it works. I'm going to open up a"
+    },
+    {
+      "start": 292.59000000000003,
+      "duration": 0.009999999999990905,
+      "text": "see if it works. I'm going to open up a"
+    },
+    {
+      "start": 292.6,
+      "duration": 1.9099999999999682,
+      "text": "see if it works. I'm going to open up a new terminal, and I'm going into the web"
+    },
+    {
+      "start": 294.51,
+      "duration": 0.009999999999990905,
+      "text": "new terminal, and I'm going into the web"
+    },
+    {
+      "start": 294.52,
+      "duration": 1.1100000000000136,
+      "text": "new terminal, and I'm going into the web version,"
+    },
+    {
+      "start": 295.63,
+      "duration": 0.009999999999990905,
+      "text": "version,"
+    },
+    {
+      "start": 295.64,
+      "duration": 2.069999999999993,
+      "text": "version, and then I'm going to write npm run dev."
+    },
+    {
+      "start": 297.71,
+      "duration": 0.010000000000047748,
+      "text": "and then I'm going to write npm run dev."
+    },
+    {
+      "start": 297.72,
+      "duration": 2.0299999999999727,
+      "text": "and then I'm going to write npm run dev. It's going to run it on localhost. Let's"
+    },
+    {
+      "start": 299.75,
+      "duration": 0.009999999999990905,
+      "text": "It's going to run it on localhost. Let's"
+    },
+    {
+      "start": 299.76,
+      "duration": 1.5500000000000114,
+      "text": "It's going to run it on localhost. Let's see how it looks. It says, \"Welcome"
+    },
+    {
+      "start": 301.31,
+      "duration": 0.009999999999990905,
+      "text": "see how it looks. It says, \"Welcome"
+    },
+    {
+      "start": 301.32,
+      "duration": 2.1899999999999977,
+      "text": "see how it looks. It says, \"Welcome back.\" And we write"
+    },
+    {
+      "start": 303.51,
+      "duration": 0.009999999999990905,
+      "text": "back.\" And we write"
+    },
+    {
+      "start": 303.52,
+      "duration": 5.189999999999998,
+      "text": "back.\" And we write admin as the username, test123."
+    },
+    {
+      "start": 310.95,
+      "duration": 0.009999999999990905,
+      "text": "That logs us in. We have recordings, we"
+    },
+    {
+      "start": 310.96,
+      "duration": 2.670000000000016,
+      "text": "That logs us in. We have recordings, we have shared. Nothing is shared here. The"
+    },
+    {
+      "start": 313.63,
+      "duration": 0.009999999999990905,
+      "text": "have shared. Nothing is shared here. The"
+    },
+    {
+      "start": 313.64,
+      "duration": 0.9499999999999886,
+      "text": "have shared. Nothing is shared here. The recording you're looking for doesn't"
+    },
+    {
+      "start": 314.59,
+      "duration": 0.010000000000047748,
+      "text": "recording you're looking for doesn't"
+    },
+    {
+      "start": 314.6,
+      "duration": 1.8700000000000045,
+      "text": "recording you're looking for doesn't exist or was revoked. I'll keep vibing a"
+    },
+    {
+      "start": 316.47,
+      "duration": 0.009999999999990905,
+      "text": "exist or was revoked. I'll keep vibing a"
+    },
+    {
+      "start": 316.48,
+      "duration": 1.2299999999999613,
+      "text": "exist or was revoked. I'll keep vibing a little bit and then fixing all of these"
+    },
+    {
+      "start": 317.71,
+      "duration": 0.010000000000047748,
+      "text": "little bit and then fixing all of these"
+    },
+    {
+      "start": 317.72,
+      "duration": 2.75,
+      "text": "little bit and then fixing all of these bugs. Seems like we have to set this in"
+    },
+    {
+      "start": 320.47,
+      "duration": 0.009999999999990905,
+      "text": "bugs. Seems like we have to set this in"
+    },
+    {
+      "start": 320.48,
+      "duration": 1.2299999999999613,
+      "text": "bugs. Seems like we have to set this in our"
+    },
+    {
+      "start": 321.71,
+      "duration": 0.010000000000047748,
+      "text": "our"
+    },
+    {
+      "start": 321.72,
+      "duration": 2.829999999999984,
+      "text": "our Cloudflare bucket, the CORS policy."
+    },
+    {
+      "start": 324.55,
+      "duration": 0.009999999999990905,
+      "text": "Cloudflare bucket, the CORS policy."
+    },
+    {
+      "start": 324.56,
+      "duration": 2.4699999999999704,
+      "text": "Cloudflare bucket, the CORS policy. Click add, delete this, paste in this"
+    },
+    {
+      "start": 327.03,
+      "duration": 0.010000000000047748,
+      "text": "Click add, delete this, paste in this"
+    },
+    {
+      "start": 327.04,
+      "duration": 2.75,
+      "text": "Click add, delete this, paste in this instead. Click save. There we go. A"
+    },
+    {
+      "start": 329.79,
+      "duration": 0.009999999999990905,
+      "text": "instead. Click save. There we go. A"
+    },
+    {
+      "start": 329.8,
+      "duration": 2.829999999999984,
+      "text": "instead. Click save. There we go. A little bit of vibing later, and we end"
+    },
+    {
+      "start": 332.63,
+      "duration": 0.009999999999990905,
+      "text": "little bit of vibing later, and we end"
+    },
+    {
+      "start": 332.64,
+      "duration": 3.3899999999999864,
+      "text": "little bit of vibing later, and we end up with this. Both a desktop app and"
+    },
+    {
+      "start": 336.03,
+      "duration": 0.010000000000047748,
+      "text": "up with this. Both a desktop app and"
+    },
+    {
+      "start": 336.04,
+      "duration": 2.430000000000007,
+      "text": "up with this. Both a desktop app and Otter online where we can share and see"
+    },
+    {
+      "start": 338.47,
+      "duration": 0.009999999999990905,
+      "text": "Otter online where we can share and see"
+    },
+    {
+      "start": 338.48,
+      "duration": 1.4699999999999704,
+      "text": "Otter online where we can share and see recordings. Let me show you guys how"
+    },
+    {
+      "start": 339.95,
+      "duration": 0.009999999999990905,
+      "text": "recordings. Let me show you guys how"
+    },
+    {
+      "start": 339.96,
+      "duration": 1.4300000000000068,
+      "text": "recordings. Let me show you guys how this works, but before I do that, I"
+    },
+    {
+      "start": 341.39,
+      "duration": 0.009999999999990905,
+      "text": "this works, but before I do that, I"
+    },
+    {
+      "start": 341.4,
+      "duration": 2.150000000000034,
+      "text": "this works, but before I do that, I wanted to show you guys my usage. I am"
+    },
+    {
+      "start": 343.55,
+      "duration": 0.009999999999990905,
+      "text": "wanted to show you guys my usage. I am"
+    },
+    {
+      "start": 343.56,
+      "duration": 1.589999999999975,
+      "text": "wanted to show you guys my usage. I am on the two hundred dollar a month plan,"
+    },
+    {
+      "start": 345.15,
+      "duration": 0.009999999999990905,
+      "text": "on the two hundred dollar a month plan,"
+    },
+    {
+      "start": 345.15999999999997,
+      "duration": 2.1100000000000136,
+      "text": "on the two hundred dollar a month plan, and this is what my usage looks like."
+    },
+    {
+      "start": 347.27,
+      "duration": 0.009999999999990905,
+      "text": "and this is what my usage looks like."
+    },
+    {
+      "start": 347.28,
+      "duration": 2.230000000000018,
+      "text": "and this is what my usage looks like. You can see I've used 14% in my current"
+    },
+    {
+      "start": 349.51,
+      "duration": 0.009999999999990905,
+      "text": "You can see I've used 14% in my current"
+    },
+    {
+      "start": 349.52,
+      "duration": 3.3100000000000023,
+      "text": "You can see I've used 14% in my current session, and since Sunday, I've used"
+    },
+    {
+      "start": 352.83,
+      "duration": 0.010000000000047748,
+      "text": "session, and since Sunday, I've used"
+    },
+    {
+      "start": 352.84000000000003,
+      "duration": 2.9899999999999523,
+      "text": "session, and since Sunday, I've used 14%. So, I am well below my usage. I had"
+    },
+    {
+      "start": 355.83,
+      "duration": 0.010000000000047748,
+      "text": "14%. So, I am well below my usage. I had"
+    },
+    {
+      "start": 355.84000000000003,
+      "duration": 1.42999999999995,
+      "text": "14%. So, I am well below my usage. I had a question about how many credits I'm"
+    },
+    {
+      "start": 357.27,
+      "duration": 0.009999999999990905,
+      "text": "a question about how many credits I'm"
+    },
+    {
+      "start": 357.28,
+      "duration": 1.5500000000000114,
+      "text": "a question about how many credits I'm actually using."
+    },
+    {
+      "start": 358.83,
+      "duration": 0.010000000000047748,
+      "text": "actually using."
+    },
+    {
+      "start": 358.84000000000003,
+      "duration": 1.829999999999984,
+      "text": "actually using. Cool. Let me show you guys how this"
+    },
+    {
+      "start": 360.67,
+      "duration": 0.009999999999990905,
+      "text": "Cool. Let me show you guys how this"
+    },
+    {
+      "start": 360.68,
+      "duration": 2.230000000000018,
+      "text": "Cool. Let me show you guys how this works. I can create a new meeting inside"
+    },
+    {
+      "start": 362.91,
+      "duration": 0.009999999999990905,
+      "text": "works. I can create a new meeting inside"
+    },
+    {
+      "start": 362.92,
+      "duration": 2.509999999999991,
+      "text": "works. I can create a new meeting inside of Zoom. I just click join with computer"
+    },
+    {
+      "start": 365.43,
+      "duration": 0.009999999999990905,
+      "text": "of Zoom. I just click join with computer"
+    },
+    {
+      "start": 365.44,
+      "duration": 1.6299999999999955,
+      "text": "of Zoom. I just click join with computer audio. Now it's picking up on my"
+    },
+    {
+      "start": 367.07,
+      "duration": 0.009999999999990905,
+      "text": "audio. Now it's picking up on my"
+    },
+    {
+      "start": 367.08,
+      "duration": 1.9499999999999886,
+      "text": "audio. Now it's picking up on my computer camera right here. Then I can"
+    },
+    {
+      "start": 369.03,
+      "duration": 0.010000000000047748,
+      "text": "computer camera right here. Then I can"
+    },
+    {
+      "start": 369.04,
+      "duration": 2.3100000000000023,
+      "text": "computer camera right here. Then I can choose if I want mic only, mic plus"
+    },
+    {
+      "start": 371.35,
+      "duration": 0.009999999999990905,
+      "text": "choose if I want mic only, mic plus"
+    },
+    {
+      "start": 371.36,
+      "duration": 2.1100000000000136,
+      "text": "choose if I want mic only, mic plus system, or the system only. I'm going to"
+    },
+    {
+      "start": 373.47,
+      "duration": 0.009999999999990905,
+      "text": "system, or the system only. I'm going to"
+    },
+    {
+      "start": 373.48,
+      "duration": 2.1499999999999773,
+      "text": "system, or the system only. I'm going to choose mic plus system, and then I'm"
+    },
+    {
+      "start": 375.63,
+      "duration": 0.009999999999990905,
+      "text": "choose mic plus system, and then I'm"
+    },
+    {
+      "start": 375.64,
+      "duration": 1.7900000000000205,
+      "text": "choose mic plus system, and then I'm going to click start recording,"
+    },
+    {
+      "start": 377.43,
+      "duration": 0.009999999999990905,
+      "text": "going to click start recording,"
+    },
+    {
+      "start": 377.44,
+      "duration": 1.5500000000000114,
+      "text": "going to click start recording, and then I can choose what window I want"
+    },
+    {
+      "start": 378.99,
+      "duration": 0.009999999999990905,
+      "text": "and then I can choose what window I want"
+    },
+    {
+      "start": 379.0,
+      "duration": 1.7900000000000205,
+      "text": "and then I can choose what window I want to share. So, I want to share this Zoom"
+    },
+    {
+      "start": 380.79,
+      "duration": 0.009999999999990905,
+      "text": "to share. So, I want to share this Zoom"
+    },
+    {
+      "start": 380.8,
+      "duration": 1.349999999999966,
+      "text": "to share. So, I want to share this Zoom window right here, which includes my"
+    },
+    {
+      "start": 382.15,
+      "duration": 0.010000000000047748,
+      "text": "window right here, which includes my"
+    },
+    {
+      "start": 382.16,
+      "duration": 2.109999999999957,
+      "text": "window right here, which includes my face. So, I'm going to click on this."
+    },
+    {
+      "start": 384.27,
+      "duration": 0.009999999999990905,
+      "text": "face. So, I'm going to click on this."
+    },
+    {
+      "start": 384.28,
+      "duration": 1.670000000000016,
+      "text": "face. So, I'm going to click on this. And if you go back, it's recording our"
+    },
+    {
+      "start": 385.95,
+      "duration": 0.009999999999990905,
+      "text": "And if you go back, it's recording our"
+    },
+    {
+      "start": 385.96,
+      "duration": 1.4300000000000068,
+      "text": "And if you go back, it's recording our Zoom meeting in the background right"
+    },
+    {
+      "start": 387.39,
+      "duration": 0.009999999999990905,
+      "text": "Zoom meeting in the background right"
+    },
+    {
+      "start": 387.4,
+      "duration": 1.4300000000000068,
+      "text": "Zoom meeting in the background right here."
+    },
+    {
+      "start": 388.83,
+      "duration": 0.009999999999990905,
+      "text": "here."
+    },
+    {
+      "start": 388.84,
+      "duration": 1.8700000000000045,
+      "text": "here. And I can say, \"One, two, three, this is"
+    },
+    {
+      "start": 390.71,
+      "duration": 0.010000000000047748,
+      "text": "And I can say, \"One, two, three, this is"
+    },
+    {
+      "start": 390.72,
+      "duration": 2.069999999999993,
+      "text": "And I can say, \"One, two, three, this is a test. Do you hear me all right? Blah,"
+    },
+    {
+      "start": 392.79,
+      "duration": 0.009999999999990905,
+      "text": "a test. Do you hear me all right? Blah,"
+    },
+    {
+      "start": 392.8,
+      "duration": 1.4300000000000068,
+      "text": "a test. Do you hear me all right? Blah, blah, blah, blah.\""
+    },
+    {
+      "start": 394.23,
+      "duration": 0.009999999999990905,
+      "text": "blah, blah, blah.\""
+    },
+    {
+      "start": 394.24,
+      "duration": 2.3899999999999864,
+      "text": "blah, blah, blah.\" Then I can go back and click stop. It"
+    },
+    {
+      "start": 396.63,
+      "duration": 0.009999999999990905,
+      "text": "Then I can go back and click stop. It"
+    },
+    {
+      "start": 396.64,
+      "duration": 2.230000000000018,
+      "text": "Then I can go back and click stop. It will then transcribe the entire meeting"
+    },
+    {
+      "start": 398.87,
+      "duration": 0.009999999999990905,
+      "text": "will then transcribe the entire meeting"
+    },
+    {
+      "start": 398.88,
+      "duration": 2.590000000000032,
+      "text": "will then transcribe the entire meeting with Groq, and it's very fast. You can"
+    },
+    {
+      "start": 401.47,
+      "duration": 0.009999999999990905,
+      "text": "with Groq, and it's very fast. You can"
+    },
+    {
+      "start": 401.48,
+      "duration": 1.4699999999999704,
+      "text": "with Groq, and it's very fast. You can see it's already done. And in the right"
+    },
+    {
+      "start": 402.95,
+      "duration": 0.009999999999990905,
+      "text": "see it's already done. And in the right"
+    },
+    {
+      "start": 402.96,
+      "duration": 1.5100000000000477,
+      "text": "see it's already done. And in the right side right here, you can see it is"
+    },
+    {
+      "start": 404.47,
+      "duration": 0.009999999999990905,
+      "text": "side right here, you can see it is"
+    },
+    {
+      "start": 404.48,
+      "duration": 1.990000000000009,
+      "text": "side right here, you can see it is ready. If I click on this, it's going to"
+    },
+    {
+      "start": 406.47,
+      "duration": 0.009999999999990905,
+      "text": "ready. If I click on this, it's going to"
+    },
+    {
+      "start": 406.48,
+      "duration": 2.269999999999982,
+      "text": "ready. If I click on this, it's going to open up our browser, and I can close"
+    },
+    {
+      "start": 408.75,
+      "duration": 0.009999999999990905,
+      "text": "open up our browser, and I can close"
+    },
+    {
+      "start": 408.76,
+      "duration": 1.3500000000000227,
+      "text": "open up our browser, and I can close this Zoom meeting, we don't need that"
+    },
+    {
+      "start": 410.11,
+      "duration": 0.009999999999990905,
+      "text": "this Zoom meeting, we don't need that"
+    },
+    {
+      "start": 410.12,
+      "duration": 1.9499999999999886,
+      "text": "this Zoom meeting, we don't need that anymore. And now we have our recording"
+    },
+    {
+      "start": 412.07,
+      "duration": 0.009999999999990905,
+      "text": "anymore. And now we have our recording"
+    },
+    {
+      "start": 412.08,
+      "duration": 1.910000000000025,
+      "text": "anymore. And now we have our recording uploaded to the web. recording our Zoom"
+    },
+    {
+      "start": 413.99,
+      "duration": 0.009999999999990905,
+      "text": "uploaded to the web. recording our Zoom"
+    },
+    {
+      "start": 414.0,
+      "duration": 1.3899999999999864,
+      "text": "uploaded to the web. recording our Zoom meeting in the background. I can say,"
+    },
+    {
+      "start": 415.39,
+      "duration": 0.009999999999990905,
+      "text": "meeting in the background. I can say,"
+    },
+    {
+      "start": 415.4,
+      "duration": 2.7100000000000364,
+      "text": "meeting in the background. I can say, \"One, two, three, this is a test call."
+    },
+    {
+      "start": 418.11,
+      "duration": 0.009999999999990905,
+      "text": "\"One, two, three, this is a test call."
+    },
+    {
+      "start": 418.12,
+      "duration": 1.589999999999975,
+      "text": "\"One, two, three, this is a test call. Do you hear me all right? Blah, blah,"
+    },
+    {
+      "start": 419.71,
+      "duration": 0.010000000000047748,
+      "text": "Do you hear me all right? Blah, blah,"
+    },
+    {
+      "start": 419.72,
+      "duration": 1.3099999999999454,
+      "text": "Do you hear me all right? Blah, blah, blah, blah.\" I think you get the point."
+    },
+    {
+      "start": 421.03,
+      "duration": 0.010000000000047748,
+      "text": "blah, blah.\" I think you get the point."
+    },
+    {
+      "start": 421.04,
+      "duration": 1.2299999999999613,
+      "text": "blah, blah.\" I think you get the point. And then below this, we have the"
+    },
+    {
+      "start": 422.27,
+      "duration": 0.009999999999990905,
+      "text": "And then below this, we have the"
+    },
+    {
+      "start": 422.28,
+      "duration": 1.9500000000000455,
+      "text": "And then below this, we have the transcript. And I can then ask Claude"
+    },
+    {
+      "start": 424.23,
+      "duration": 0.009999999999990905,
+      "text": "transcript. And I can then ask Claude"
+    },
+    {
+      "start": 424.24,
+      "duration": 1.990000000000009,
+      "text": "transcript. And I can then ask Claude any questions that I want. I could ask,"
+    },
+    {
+      "start": 426.23,
+      "duration": 0.009999999999990905,
+      "text": "any questions that I want. I could ask,"
+    },
+    {
+      "start": 426.24,
+      "duration": 4.110000000000014,
+      "text": "any questions that I want. I could ask, \"What is this call about?\""
+    },
+    {
+      "start": 431.91,
+      "duration": 0.009999999999990905,
+      "text": "And because we have it connected to an"
+    },
+    {
+      "start": 431.92,
+      "duration": 1.990000000000009,
+      "text": "And because we have it connected to an Anthropic API key, you can see Claude"
+    },
+    {
+      "start": 433.91,
+      "duration": 0.009999999999990905,
+      "text": "Anthropic API key, you can see Claude"
+    },
+    {
+      "start": 433.92,
+      "duration": 1.3100000000000023,
+      "text": "Anthropic API key, you can see Claude says, \"This doesn't appear to be a"
+    },
+    {
+      "start": 435.23,
+      "duration": 0.009999999999990905,
+      "text": "says, \"This doesn't appear to be a"
+    },
+    {
+      "start": 435.24,
+      "duration": 1.8700000000000045,
+      "text": "says, \"This doesn't appear to be a substantial call. It's a brief test"
+    },
+    {
+      "start": 437.11,
+      "duration": 0.009999999999990905,
+      "text": "substantial call. It's a brief test"
+    },
+    {
+      "start": 437.12,
+      "duration": 1.670000000000016,
+      "text": "substantial call. It's a brief test recording. Blah, blah, blah, blah.\" And"
+    },
+    {
+      "start": 438.79,
+      "duration": 0.009999999999990905,
+      "text": "recording. Blah, blah, blah, blah.\" And"
+    },
+    {
+      "start": 438.8,
+      "duration": 1.990000000000009,
+      "text": "recording. Blah, blah, blah, blah.\" And it even gives timestamps of when I say"
+    },
+    {
+      "start": 440.79,
+      "duration": 0.009999999999990905,
+      "text": "it even gives timestamps of when I say"
+    },
+    {
+      "start": 440.8,
+      "duration": 1.1899999999999977,
+      "text": "it even gives timestamps of when I say things. When I actually click on this,"
+    },
+    {
+      "start": 441.99,
+      "duration": 0.009999999999990905,
+      "text": "things. When I actually click on this,"
+    },
+    {
+      "start": 442.0,
+      "duration": 1.509999999999991,
+      "text": "things. When I actually click on this, it actually changes the right time in"
+    },
+    {
+      "start": 443.51,
+      "duration": 0.009999999999990905,
+      "text": "it actually changes the right time in"
+    },
+    {
+      "start": 443.52,
+      "duration": 1.75,
+      "text": "it actually changes the right time in the recording. And the great thing about"
+    },
+    {
+      "start": 445.27,
+      "duration": 0.009999999999990905,
+      "text": "the recording. And the great thing about"
+    },
+    {
+      "start": 445.28,
+      "duration": 1.9500000000000455,
+      "text": "the recording. And the great thing about this is that I'm giving you the code, so"
+    },
+    {
+      "start": 447.23,
+      "duration": 0.009999999999990905,
+      "text": "this is that I'm giving you the code, so"
+    },
+    {
+      "start": 447.24,
+      "duration": 1.5500000000000114,
+      "text": "this is that I'm giving you the code, so you can go in and you can change it to"
+    },
+    {
+      "start": 448.79,
+      "duration": 0.009999999999990905,
+      "text": "you can go in and you can change it to"
+    },
+    {
+      "start": 448.8,
+      "duration": 1.8700000000000045,
+      "text": "you can go in and you can change it to whatever icon you want right here. On"
+    },
+    {
+      "start": 450.67,
+      "duration": 0.009999999999990905,
+      "text": "whatever icon you want right here. On"
+    },
+    {
+      "start": 450.68,
+      "duration": 1.4300000000000068,
+      "text": "whatever icon you want right here. On Mac, we're using something called"
+    },
+    {
+      "start": 452.11,
+      "duration": 0.009999999999990905,
+      "text": "Mac, we're using something called"
+    },
+    {
+      "start": 452.12,
+      "duration": 2.069999999999993,
+      "text": "Mac, we're using something called BlackHole, which is open source, which"
+    },
+    {
+      "start": 454.19,
+      "duration": 0.009999999999990905,
+      "text": "BlackHole, which is open source, which"
+    },
+    {
+      "start": 454.2,
+      "duration": 1.2300000000000182,
+      "text": "BlackHole, which is open source, which is basically something you download to"
+    },
+    {
+      "start": 455.43,
+      "duration": 0.009999999999990905,
+      "text": "is basically something you download to"
+    },
+    {
+      "start": 455.44,
+      "duration": 1.3899999999999864,
+      "text": "is basically something you download to make this work. So, if you're on Mac,"
+    },
+    {
+      "start": 456.83,
+      "duration": 0.010000000000047748,
+      "text": "make this work. So, if you're on Mac,"
+    },
+    {
+      "start": 456.84000000000003,
+      "duration": 0.8699999999999477,
+      "text": "make this work. So, if you're on Mac, you're going to have a little button"
+    },
+    {
+      "start": 457.71,
+      "duration": 0.010000000000047748,
+      "text": "you're going to have a little button"
+    },
+    {
+      "start": 457.72,
+      "duration": 1.7099999999999795,
+      "text": "you're going to have a little button right here that says download BlackHole."
+    },
+    {
+      "start": 459.43,
+      "duration": 0.009999999999990905,
+      "text": "right here that says download BlackHole."
+    },
+    {
+      "start": 459.44,
+      "duration": 1.670000000000016,
+      "text": "right here that says download BlackHole. Cool. We just built an AI note taker"
+    },
+    {
+      "start": 461.11,
+      "duration": 0.009999999999990905,
+      "text": "Cool. We just built an AI note taker"
+    },
+    {
+      "start": 461.12,
+      "duration": 2.0299999999999727,
+      "text": "Cool. We just built an AI note taker that can do everything that I want when"
+    },
+    {
+      "start": 463.15,
+      "duration": 0.009999999999990905,
+      "text": "that can do everything that I want when"
+    },
+    {
+      "start": 463.15999999999997,
+      "duration": 2.0300000000000296,
+      "text": "that can do everything that I want when I record my meetings. And we can even"
+    },
+    {
+      "start": 465.19,
+      "duration": 0.009999999999990905,
+      "text": "I record my meetings. And we can even"
+    },
+    {
+      "start": 465.2,
+      "duration": 2.3100000000000023,
+      "text": "I record my meetings. And we can even click create share link. It creates a"
+    },
+    {
+      "start": 467.51,
+      "duration": 0.009999999999990905,
+      "text": "click create share link. It creates a"
+    },
+    {
+      "start": 467.52,
+      "duration": 1.910000000000025,
+      "text": "click create share link. It creates a shareable link that we can copy, and"
+    },
+    {
+      "start": 469.43,
+      "duration": 0.009999999999990905,
+      "text": "shareable link that we can copy, and"
+    },
+    {
+      "start": 469.44,
+      "duration": 1.4699999999999704,
+      "text": "shareable link that we can copy, and then we can send to anyone. Right now,"
+    },
+    {
+      "start": 470.90999999999997,
+      "duration": 0.010000000000047748,
+      "text": "then we can send to anyone. Right now,"
+    },
+    {
+      "start": 470.92,
+      "duration": 1.75,
+      "text": "then we can send to anyone. Right now, it's still on localhost:3000, but I'm"
+    },
+    {
+      "start": 472.67,
+      "duration": 0.009999999999990905,
+      "text": "it's still on localhost:3000, but I'm"
+    },
+    {
+      "start": 472.68,
+      "duration": 1.2699999999999818,
+      "text": "it's still on localhost:3000, but I'm going to show you in a second how you"
+    },
+    {
+      "start": 473.95,
+      "duration": 0.009999999999990905,
+      "text": "going to show you in a second how you"
+    },
+    {
+      "start": 473.96,
+      "duration": 2.3500000000000227,
+      "text": "going to show you in a second how you deploy this to the web. Now you know how"
+    },
+    {
+      "start": 476.31,
+      "duration": 0.009999999999990905,
+      "text": "deploy this to the web. Now you know how"
+    },
+    {
+      "start": 476.32,
+      "duration": 1.7900000000000205,
+      "text": "deploy this to the web. Now you know how it works. Right below this video, I've"
+    },
+    {
+      "start": 478.11,
+      "duration": 0.009999999999990905,
+      "text": "it works. Right below this video, I've"
+    },
+    {
+      "start": 478.12,
+      "duration": 2.0299999999999727,
+      "text": "it works. Right below this video, I've shared Otter public with you, which"
+    },
+    {
+      "start": 480.15,
+      "duration": 0.010000000000047748,
+      "text": "shared Otter public with you, which"
+    },
+    {
+      "start": 480.16,
+      "duration": 2.5499999999999545,
+      "text": "shared Otter public with you, which includes both the desktop and web code."
+    },
+    {
+      "start": 482.71,
+      "duration": 0.010000000000047748,
+      "text": "includes both the desktop and web code."
+    },
+    {
+      "start": 482.72,
+      "duration": 1.3899999999999864,
+      "text": "includes both the desktop and web code. Let me show you how to actually publish"
+    },
+    {
+      "start": 484.11,
+      "duration": 0.009999999999990905,
+      "text": "Let me show you how to actually publish"
+    },
+    {
+      "start": 484.12,
+      "duration": 1.829999999999984,
+      "text": "Let me show you how to actually publish this and get it on Vercel, so we not"
+    },
+    {
+      "start": 485.95,
+      "duration": 0.009999999999990905,
+      "text": "this and get it on Vercel, so we not"
+    },
+    {
+      "start": 485.96,
+      "duration": 1.3500000000000227,
+      "text": "this and get it on Vercel, so we not only run it on localhost, but we can"
+    },
+    {
+      "start": 487.31,
+      "duration": 0.009999999999990905,
+      "text": "only run it on localhost, but we can"
+    },
+    {
+      "start": 487.32,
+      "duration": 1.4300000000000068,
+      "text": "only run it on localhost, but we can actually get it and share these"
+    },
+    {
+      "start": 488.75,
+      "duration": 0.009999999999990905,
+      "text": "actually get it and share these"
+    },
+    {
+      "start": 488.76,
+      "duration": 1.829999999999984,
+      "text": "actually get it and share these recordings on the web. So, to do that,"
+    },
+    {
+      "start": 490.59,
+      "duration": 0.010000000000047748,
+      "text": "recordings on the web. So, to do that,"
+    },
+    {
+      "start": 490.6,
+      "duration": 1.7099999999999795,
+      "text": "recordings on the web. So, to do that, you need to fork and download this to"
+    },
+    {
+      "start": 492.31,
+      "duration": 0.009999999999990905,
+      "text": "you need to fork and download this to"
+    },
+    {
+      "start": 492.32,
+      "duration": 1.4300000000000068,
+      "text": "you need to fork and download this to your computer, this folder right here"
+    },
+    {
+      "start": 493.75,
+      "duration": 0.009999999999990905,
+      "text": "your computer, this folder right here"
+    },
+    {
+      "start": 493.76,
+      "duration": 1.5500000000000114,
+      "text": "your computer, this folder right here that's called Otter public, and that's"
+    },
+    {
+      "start": 495.31,
+      "duration": 0.009999999999990905,
+      "text": "that's called Otter public, and that's"
+    },
+    {
+      "start": 495.32,
+      "duration": 1.3100000000000023,
+      "text": "that's called Otter public, and that's going to look like this, right? This is"
+    },
+    {
+      "start": 496.63,
+      "duration": 0.009999999999990905,
+      "text": "going to look like this, right? This is"
+    },
+    {
+      "start": 496.64,
+      "duration": 2.150000000000034,
+      "text": "going to look like this, right? This is what I have on my my computer right now."
+    },
+    {
+      "start": 498.79,
+      "duration": 0.009999999999990905,
+      "text": "what I have on my my computer right now."
+    },
+    {
+      "start": 498.8,
+      "duration": 1.1499999999999773,
+      "text": "what I have on my my computer right now. Then of course, you need to set your"
+    },
+    {
+      "start": 499.95,
+      "duration": 0.009999999999990905,
+      "text": "Then of course, you need to set your"
+    },
+    {
+      "start": 499.96,
+      "duration": 1.8700000000000045,
+      "text": "Then of course, you need to set your environmental values exactly like we did"
+    },
+    {
+      "start": 501.83,
+      "duration": 0.009999999999990905,
+      "text": "environmental values exactly like we did"
+    },
+    {
+      "start": 501.84,
+      "duration": 1.910000000000025,
+      "text": "environmental values exactly like we did previously in this video, so you can go"
+    },
+    {
+      "start": 503.75,
+      "duration": 0.009999999999990905,
+      "text": "previously in this video, so you can go"
+    },
+    {
+      "start": 503.76,
+      "duration": 2.1100000000000136,
+      "text": "previously in this video, so you can go back and [music] check. And now you open"
+    },
+    {
+      "start": 505.87,
+      "duration": 0.009999999999990905,
+      "text": "back and [music] check. And now you open"
+    },
+    {
+      "start": 505.88,
+      "duration": 2.910000000000025,
+      "text": "back and [music] check. And now you open up Vercel to host it. Go inside of"
+    },
+    {
+      "start": 508.79,
+      "duration": 0.009999999999990905,
+      "text": "up Vercel to host it. Go inside of"
+    },
+    {
+      "start": 508.8,
+      "duration": 3.6690000000000396,
+      "text": "up Vercel to host it. Go inside of GitHub, then click new, call it Otter,"
+    },
+    {
+      "start": 512.469,
+      "duration": 0.009999999999990905,
+      "text": "GitHub, then click new, call it Otter,"
+    },
+    {
+      "start": 512.479,
+      "duration": 1.0359999999999445,
+      "text": "GitHub, then click new, call it Otter, whatever you call it."
+    },
+    {
+      "start": 513.515,
+      "duration": 0.009999999999990905,
+      "text": "whatever you call it."
+    },
+    {
+      "start": 513.525,
+      "duration": 0.1449999999999818,
+      "text": "whatever you call it. &gt;&gt; [music]"
+    },
+    {
+      "start": 513.67,
+      "duration": 0.009999999999990905,
+      "text": "&gt;&gt; [music]"
+    },
+    {
+      "start": 513.68,
+      "duration": 2.990000000000009,
+      "text": "&gt;&gt; [music] &gt;&gt; I'll call it web version."
+    },
+    {
+      "start": 516.67,
+      "duration": 0.009999999999990905,
+      "text": "&gt;&gt; I'll call it web version."
+    },
+    {
+      "start": 516.68,
+      "duration": 2.1900000000000546,
+      "text": "&gt;&gt; I'll call it web version. Set it to private, and then click create"
+    },
+    {
+      "start": 518.87,
+      "duration": 0.009999999999990905,
+      "text": "Set it to private, and then click create"
+    },
+    {
+      "start": 518.88,
+      "duration": 2.149000000000001,
+      "text": "Set it to private, and then click create repository, then copy this, give it to"
+    },
+    {
+      "start": 521.029,
+      "duration": 0.009999999999990905,
+      "text": "repository, then copy this, give it to"
+    },
+    {
+      "start": 521.039,
+      "duration": 3.1100000000000136,
+      "text": "repository, then copy this, give it to Claude, say push"
+    },
+    {
+      "start": 524.149,
+      "duration": 0.009999999999990905,
+      "text": "Claude, say push"
+    },
+    {
+      "start": 524.159,
+      "duration": 3.671000000000049,
+      "text": "Claude, say push the /web to this"
+    },
+    {
+      "start": 527.83,
+      "duration": 0.009999999999990905,
+      "text": "the /web to this"
+    },
+    {
+      "start": 527.84,
+      "duration": 2.7899999999999636,
+      "text": "the /web to this repo, please. This is going to push only"
+    },
+    {
+      "start": 530.63,
+      "duration": 0.009999999999990905,
+      "text": "repo, please. This is going to push only"
+    },
+    {
+      "start": 530.64,
+      "duration": 2.1900000000000546,
+      "text": "repo, please. This is going to push only the web version. It's going to push that"
+    },
+    {
+      "start": 532.83,
+      "duration": 0.009999999999990905,
+      "text": "the web version. It's going to push that"
+    },
+    {
+      "start": 532.84,
+      "duration": 1.669999999999959,
+      "text": "the web version. It's going to push that to GitHub, and we're going to use that"
+    },
+    {
+      "start": 534.51,
+      "duration": 0.009999999999990905,
+      "text": "to GitHub, and we're going to use that"
+    },
+    {
+      "start": 534.52,
+      "duration": 1.6299999999999955,
+      "text": "to GitHub, and we're going to use that when hosting on Vercel. Then give it a"
+    },
+    {
+      "start": 536.15,
+      "duration": 0.009999999999990905,
+      "text": "when hosting on Vercel. Then give it a"
+    },
+    {
+      "start": 536.16,
+      "duration": 1.3100000000000591,
+      "text": "when hosting on Vercel. Then give it a refresh, and you should see all of the"
+    },
+    {
+      "start": 537.47,
+      "duration": 0.009999999999990905,
+      "text": "refresh, and you should see all of the"
+    },
+    {
+      "start": 537.48,
+      "duration": 2.990000000000009,
+      "text": "refresh, and you should see all of the code from the web version. Go to Vercel,"
+    },
+    {
+      "start": 540.47,
+      "duration": 0.009999999999990905,
+      "text": "code from the web version. Go to Vercel,"
+    },
+    {
+      "start": 540.48,
+      "duration": 2.509999999999991,
+      "text": "code from the web version. Go to Vercel, paste in this URL to Vercel, click"
+    },
+    {
+      "start": 542.99,
+      "duration": 0.009999999999990905,
+      "text": "paste in this URL to Vercel, click"
+    },
+    {
+      "start": 543.0,
+      "duration": 2.1499999999999773,
+      "text": "paste in this URL to Vercel, click deploy, and this will now deploy it to"
+    },
+    {
+      "start": 545.15,
+      "duration": 0.009999999999990905,
+      "text": "deploy, and this will now deploy it to"
+    },
+    {
+      "start": 545.16,
+      "duration": 1.4300000000000637,
+      "text": "deploy, and this will now deploy it to the web. There we go, we now have it"
+    },
+    {
+      "start": 546.59,
+      "duration": 0.009999999999990905,
+      "text": "the web. There we go, we now have it"
+    },
+    {
+      "start": 546.6,
+      "duration": 1.3500000000000227,
+      "text": "the web. There we go, we now have it deployed. We need to set the"
+    },
+    {
+      "start": 547.95,
+      "duration": 0.009999999999990905,
+      "text": "deployed. We need to set the"
+    },
+    {
+      "start": 547.96,
+      "duration": 1.990000000000009,
+      "text": "deployed. We need to set the environmental values as well. We do that"
+    },
+    {
+      "start": 549.95,
+      "duration": 0.009999999999990905,
+      "text": "environmental values as well. We do that"
+    },
+    {
+      "start": 549.96,
+      "duration": 1.75,
+      "text": "environmental values as well. We do that by going into environmental values,"
+    },
+    {
+      "start": 551.71,
+      "duration": 0.009999999999990905,
+      "text": "by going into environmental values,"
+    },
+    {
+      "start": 551.72,
+      "duration": 2.269999999999982,
+      "text": "by going into environmental values, clicking add environmental values,"
+    },
+    {
+      "start": 553.99,
+      "duration": 0.009999999999990905,
+      "text": "clicking add environmental values,"
+    },
+    {
+      "start": 554.0,
+      "duration": 1.5900000000000318,
+      "text": "clicking add environmental values, and then we need to set all of these"
+    },
+    {
+      "start": 555.59,
+      "duration": 0.009999999999990905,
+      "text": "and then we need to set all of these"
+    },
+    {
+      "start": 555.6,
+      "duration": 2.4700000000000273,
+      "text": "and then we need to set all of these values"
+    },
+    {
+      "start": 558.07,
+      "duration": 0.009999999999990905,
+      "text": "values"
+    },
+    {
+      "start": 558.08,
+      "duration": 2.269999999999982,
+      "text": "values just like this. The admin username, the"
+    },
+    {
+      "start": 560.35,
+      "duration": 0.009999999999990905,
+      "text": "just like this. The admin username, the"
+    },
+    {
+      "start": 560.36,
+      "duration": 1.8700000000000045,
+      "text": "just like this. The admin username, the admin password, the session secret, the"
+    },
+    {
+      "start": 562.23,
+      "duration": 0.009999999999990905,
+      "text": "admin password, the session secret, the"
+    },
+    {
+      "start": 562.24,
+      "duration": 2.590000000000032,
+      "text": "admin password, the session secret, the MongoDB URI. Click save, and then we're"
+    },
+    {
+      "start": 564.83,
+      "duration": 0.009999999999990905,
+      "text": "MongoDB URI. Click save, and then we're"
+    },
+    {
+      "start": 564.84,
+      "duration": 2.0699999999999363,
+      "text": "MongoDB URI. Click save, and then we're going to have to do a quick redeploy."
+    },
+    {
+      "start": 566.91,
+      "duration": 0.009999999999990905,
+      "text": "going to have to do a quick redeploy."
+    },
+    {
+      "start": 566.92,
+      "duration": 2.150000000000091,
+      "text": "going to have to do a quick redeploy. And while this is being added, you need"
+    },
+    {
+      "start": 569.07,
+      "duration": 0.009999999999990905,
+      "text": "And while this is being added, you need"
+    },
+    {
+      "start": 569.08,
+      "duration": 3.1499999999999773,
+      "text": "And while this is being added, you need to go in and copy the URL right here,"
+    },
+    {
+      "start": 572.23,
+      "duration": 0.009999999999990905,
+      "text": "to go in and copy the URL right here,"
+    },
+    {
+      "start": 572.24,
+      "duration": 2.3899999999999864,
+      "text": "to go in and copy the URL right here, the domain, the Vercel domain right"
+    },
+    {
+      "start": 574.63,
+      "duration": 0.009999999999990905,
+      "text": "the domain, the Vercel domain right"
+    },
+    {
+      "start": 574.64,
+      "duration": 0.9900000000000091,
+      "text": "the domain, the Vercel domain right here."
+    },
+    {
+      "start": 575.63,
+      "duration": 0.009999999999990905,
+      "text": "here."
+    },
+    {
+      "start": 575.64,
+      "duration": 2.8700000000000045,
+      "text": "here. Copy this, go back into where you're"
+    },
+    {
+      "start": 578.51,
+      "duration": 0.009999999999990905,
+      "text": "Copy this, go back into where you're"
+    },
+    {
+      "start": 578.52,
+      "duration": 1.7899999999999636,
+      "text": "Copy this, go back into where you're running the desktop app from, and then"
+    },
+    {
+      "start": 580.31,
+      "duration": 0.010000000000104592,
+      "text": "running the desktop app from, and then"
+    },
+    {
+      "start": 580.32,
+      "duration": 1.9499999999999318,
+      "text": "running the desktop app from, and then you need to insert it as the web app"
+    },
+    {
+      "start": 582.27,
+      "duration": 0.009999999999990905,
+      "text": "you need to insert it as the web app"
+    },
+    {
+      "start": 582.28,
+      "duration": 1.990000000000009,
+      "text": "you need to insert it as the web app URL, very important. And there [music]"
+    },
+    {
+      "start": 584.27,
+      "duration": 0.009999999999990905,
+      "text": "URL, very important. And there [music]"
+    },
+    {
+      "start": 584.28,
+      "duration": 1.5500000000000682,
+      "text": "URL, very important. And there [music] we go."
+    },
+    {
+      "start": 585.83,
+      "duration": 0.009999999999990905,
+      "text": "we go."
+    },
+    {
+      "start": 585.84,
+      "duration": 2.3099999999999454,
+      "text": "we go. Now let's test it. When we log in on the"
+    },
+    {
+      "start": 588.15,
+      "duration": 0.009999999999990905,
+      "text": "Now let's test it. When we log in on the"
+    },
+    {
+      "start": 588.16,
+      "duration": 1.7900000000000773,
+      "text": "Now let's test it. When we log in on the web now, we can now see all of our"
+    },
+    {
+      "start": 589.95,
+      "duration": 0.009999999999990905,
+      "text": "web now, we can now see all of our"
+    },
+    {
+      "start": 589.96,
+      "duration": 2.269999999999982,
+      "text": "web now, we can now see all of our recordings. And now when we generate a"
+    },
+    {
+      "start": 592.23,
+      "duration": 0.009999999999990905,
+      "text": "recordings. And now when we generate a"
+    },
+    {
+      "start": 592.24,
+      "duration": 1.509999999999991,
+      "text": "recordings. And now when we generate a shareable link, we can send this to"
+    },
+    {
+      "start": 593.75,
+      "duration": 0.009999999999990905,
+      "text": "shareable link, we can send this to"
+    },
+    {
+      "start": 593.76,
+      "duration": 1.5900000000000318,
+      "text": "shareable link, we can send this to anyone we want because it can can be"
+    },
+    {
+      "start": 595.35,
+      "duration": 0.009999999999990905,
+      "text": "anyone we want because it can can be"
+    },
+    {
+      "start": 595.36,
+      "duration": 1.830000000000041,
+      "text": "anyone we want because it can can be accessed by the web. Again, if you want"
+    },
+    {
+      "start": 597.19,
+      "duration": 0.009999999999990905,
+      "text": "accessed by the web. Again, if you want"
+    },
+    {
+      "start": 597.2,
+      "duration": 1.509999999999991,
+      "text": "accessed by the web. Again, if you want to set this up for yourself, you can"
+    },
+    {
+      "start": 598.71,
+      "duration": 0.009999999999990905,
+      "text": "to set this up for yourself, you can"
+    },
+    {
+      "start": 598.72,
+      "duration": 1.669999999999959,
+      "text": "to set this up for yourself, you can grab the code right below this video."
+    },
+    {
+      "start": 600.39,
+      "duration": 0.009999999999990905,
+      "text": "grab the code right below this video."
+    },
+    {
+      "start": 600.4,
+      "duration": 1.75,
+      "text": "grab the code right below this video. And there we go. Now we have our own"
+    },
+    {
+      "start": 602.15,
+      "duration": 0.009999999999990905,
+      "text": "And there we go. Now we have our own"
+    },
+    {
+      "start": 602.16,
+      "duration": 1.9100000000000819,
+      "text": "And there we go. Now we have our own personal note taker. Something I wanted"
+    },
+    {
+      "start": 604.07,
+      "duration": 0.009999999999990905,
+      "text": "personal note taker. Something I wanted"
+    },
+    {
+      "start": 604.08,
+      "duration": 1.5899999999999181,
+      "text": "personal note taker. Something I wanted your opinion on. It seems like you guys"
+    },
+    {
+      "start": 605.67,
+      "duration": 0.009999999999990905,
+      "text": "your opinion on. It seems like you guys"
+    },
+    {
+      "start": 605.68,
+      "duration": 1.6299999999999955,
+      "text": "your opinion on. It seems like you guys are really enjoying these videos, and"
+    },
+    {
+      "start": 607.31,
+      "duration": 0.010000000000104592,
+      "text": "are really enjoying these videos, and"
+    },
+    {
+      "start": 607.32,
+      "duration": 1.8700000000000045,
+      "text": "are really enjoying these videos, and I've received some comments about the"
+    },
+    {
+      "start": 609.19,
+      "duration": 0.009999999999990905,
+      "text": "I've received some comments about the"
+    },
+    {
+      "start": 609.2,
+      "duration": 2.189999999999941,
+      "text": "I've received some comments about the idea of creating an app with all of"
+    },
+    {
+      "start": 611.39,
+      "duration": 0.009999999999990905,
+      "text": "idea of creating an app with all of"
+    },
+    {
+      "start": 611.4,
+      "duration": 2.269999999999982,
+      "text": "idea of creating an app with all of these softwares combined. Imagine one"
+    },
+    {
+      "start": 613.67,
+      "duration": 0.009999999999990905,
+      "text": "these softwares combined. Imagine one"
+    },
+    {
+      "start": 613.68,
+      "duration": 2.830000000000041,
+      "text": "these softwares combined. Imagine one app that is free, or at least very, very"
+    },
+    {
+      "start": 616.51,
+      "duration": 0.009999999999990905,
+      "text": "app that is free, or at least very, very"
+    },
+    {
+      "start": 616.52,
+      "duration": 2.7100000000000364,
+      "text": "app that is free, or at least very, very low cost. You would have a bunch of apps"
+    },
+    {
+      "start": 619.23,
+      "duration": 0.009999999999990905,
+      "text": "low cost. You would have a bunch of apps"
+    },
+    {
+      "start": 619.24,
+      "duration": 2.7899999999999636,
+      "text": "low cost. You would have a bunch of apps included, [music] like screen recording,"
+    },
+    {
+      "start": 622.03,
+      "duration": 0.009999999999990905,
+      "text": "included, [music] like screen recording,"
+    },
+    {
+      "start": 622.04,
+      "duration": 2.75,
+      "text": "included, [music] like screen recording, like the AI note taker, like forms"
+    },
+    {
+      "start": 624.79,
+      "duration": 0.009999999999990905,
+      "text": "like the AI note taker, like forms"
+    },
+    {
+      "start": 624.8,
+      "duration": 2.910000000000082,
+      "text": "like the AI note taker, like forms similar to type form or tally, and"
+    },
+    {
+      "start": 627.71,
+      "duration": 0.009999999999990905,
+      "text": "similar to type form or tally, and"
+    },
+    {
+      "start": 627.72,
+      "duration": 2.3099999999999454,
+      "text": "similar to type form or tally, and calendar booking similar to Calendly."
+    },
+    {
+      "start": 630.03,
+      "duration": 0.009999999999990905,
+      "text": "calendar booking similar to Calendly."
+    },
+    {
+      "start": 630.04,
+      "duration": 3.3500000000000227,
+      "text": "calendar booking similar to Calendly. Basically, a bunch of apps inside of one"
+    },
+    {
+      "start": 633.39,
+      "duration": 0.009999999999990905,
+      "text": "Basically, a bunch of apps inside of one"
+    },
+    {
+      "start": 633.4,
+      "duration": 1.6700000000000728,
+      "text": "Basically, a bunch of apps inside of one mega app. That way, you could save"
+    },
+    {
+      "start": 635.07,
+      "duration": 0.009999999999990905,
+      "text": "mega app. That way, you could save"
+    },
+    {
+      "start": 635.08,
+      "duration": 1.75,
+      "text": "mega app. That way, you could save hundreds of dollars every single month"
+    },
+    {
+      "start": 636.83,
+      "duration": 0.009999999999990905,
+      "text": "hundreds of dollars every single month"
+    },
+    {
+      "start": 636.84,
+      "duration": 1.990000000000009,
+      "text": "hundreds of dollars every single month from paying from from paying from all of"
+    },
+    {
+      "start": 638.83,
+      "duration": 0.009999999999990905,
+      "text": "from paying from from paying from all of"
+    },
+    {
+      "start": 638.84,
+      "duration": 2.0299999999999727,
+      "text": "from paying from from paying from all of these crazy subscriptions. And the crazy"
+    },
+    {
+      "start": 640.87,
+      "duration": 0.009999999999990905,
+      "text": "these crazy subscriptions. And the crazy"
+    },
+    {
+      "start": 640.88,
+      "duration": 1.7100000000000364,
+      "text": "these crazy subscriptions. And the crazy thing is that I could document building"
+    },
+    {
+      "start": 642.59,
+      "duration": 0.009999999999990905,
+      "text": "thing is that I could document building"
+    },
+    {
+      "start": 642.6,
+      "duration": 2.3099999999999454,
+      "text": "thing is that I could document building everything, even live stream it if you"
+    },
+    {
+      "start": 644.91,
+      "duration": 0.009999999999990905,
+      "text": "everything, even live stream it if you"
+    },
+    {
+      "start": 644.92,
+      "duration": 1.3500000000000227,
+      "text": "everything, even live stream it if you guys want to. If that sounds"
+    },
+    {
+      "start": 646.27,
+      "duration": 0.009999999999990905,
+      "text": "guys want to. If that sounds"
+    },
+    {
+      "start": 646.28,
+      "duration": 1.3500000000000227,
+      "text": "guys want to. If that sounds interesting, then leave a comment right"
+    },
+    {
+      "start": 647.63,
+      "duration": 0.009999999999990905,
+      "text": "interesting, then leave a comment right"
+    },
+    {
+      "start": 647.64,
+      "duration": 1.6299999999999955,
+      "text": "interesting, then leave a comment right below this video, telling me that you"
+    },
+    {
+      "start": 649.27,
+      "duration": 0.009999999999990905,
+      "text": "below this video, telling me that you"
+    },
+    {
+      "start": 649.28,
+      "duration": 1.8700000000000045,
+      "text": "below this video, telling me that you want to see this, and then I'll see if I"
+    },
+    {
+      "start": 651.15,
+      "duration": 0.009999999999990905,
+      "text": "want to see this, and then I'll see if I"
+    },
+    {
+      "start": 651.16,
+      "duration": 1.5900000000000318,
+      "text": "want to see this, and then I'll see if I can make it happen. Thank you guys so"
+    },
+    {
+      "start": 652.75,
+      "duration": 0.009999999999990905,
+      "text": "can make it happen. Thank you guys so"
+    },
+    {
+      "start": 652.76,
+      "duration": 1.6299999999999955,
+      "text": "can make it happen. Thank you guys so much for watching. Remember to like and"
+    },
+    {
+      "start": 654.39,
+      "duration": 0.009999999999990905,
+      "text": "much for watching. Remember to like and"
+    },
+    {
+      "start": 654.4,
+      "duration": 1.5900000000000318,
+      "text": "much for watching. Remember to like and subscribe. If you enjoyed this video,"
+    },
+    {
+      "start": 655.99,
+      "duration": 0.009999999999990905,
+      "text": "subscribe. If you enjoyed this video,"
+    },
+    {
+      "start": 656.0,
+      "duration": 1.1100000000000136,
+      "text": "subscribe. If you enjoyed this video, then YouTube thinks that you're going to"
+    },
+    {
+      "start": 657.11,
+      "duration": 0.009999999999990905,
+      "text": "then YouTube thinks that you're going to"
+    },
+    {
+      "start": 657.12,
+      "duration": 2.07000000000005,
+      "text": "then YouTube thinks that you're going to like this one. And as always, have a"
+    },
+    {
+      "start": 659.19,
+      "duration": 0.009999999999990905,
+      "text": "like this one. And as always, have a"
+    },
+    {
+      "start": 659.2,
+      "duration": 4.279999999999973,
+      "text": "like this one. And as always, have a wonderful rest of your day. Albert out."
+    }
+  ],
+  "fetched_at": "2026-05-04T20:45:52Z"
+}

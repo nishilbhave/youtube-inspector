@@ -1,0 +1,40 @@
+{
+  "video_id": "eRS3CmvrOvA",
+  "sections": [
+    {
+      "id": "S1",
+      "type": "hook",
+      "start": "0:00",
+      "end": "0:24",
+      "summary": "Creator claims six simple, boring-but-effective Claude Code skills are what businesses actually pay for and promises to show what they are and how to use them to sell AI automations."
+    },
+    {
+      "id": "S2",
+      "type": "content",
+      "start": "0:24",
+      "end": "11:54",
+      "summary": "Walks through six Claude Code skills/plugins one by one with install commands and use cases: Skill Creator, Superpowers, GSD, the built-in /review and /ultra review commands, Context Mode, and ClaudeMem."
+    },
+    {
+      "id": "S3",
+      "type": "content",
+      "start": "11:54",
+      "end": "13:16",
+      "summary": "Covers a bonus seventh skill (Anthropic's front-end design skill) and gives advice on how to sell these skills to business owners by focusing on outcomes rather than workflows."
+    },
+    {
+      "id": "S4",
+      "type": "pitch",
+      "start": "13:16",
+      "end": "13:30",
+      "summary": "Promotes a free resource guide inside his Skool community via the description link and points viewers to another video about how he makes money in 2026."
+    },
+    {
+      "id": "S5",
+      "type": "outro",
+      "start": "13:30",
+      "end": "13:39",
+      "summary": "Asks for a like, thanks viewers for watching to the end, and signs off until the next video."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "video_id": "n0phBDPz8z0",
+  "sections": [
+    {
+      "id": "S1",
+      "type": "hook",
+      "start": "0:00",
+      "end": "0:21",
+      "summary": "Creator claims $26,000 from selling digital products working one hour per week and promises a simpler AI approach than agents and APIs."
+    },
+    {
+      "id": "S2",
+      "type": "content",
+      "start": "0:21",
+      "end": "2:50",
+      "summary": "Walks through his origin story with ChatGPT, his 80/20 AI philosophy, his first Canva and Gumroad product earning $20 day one, his climb to $3,000 a month, and advice that the best digital products are simple and made for a specific audience."
+    },
+    {
+      "id": "S3",
+      "type": "pitch",
+      "start": "2:50",
+      "end": "3:01",
+      "summary": "Promotes a free linked list of 20 digital products selling in 2026 as a lead magnet for viewers to use as a launch point."
+    },
+    {
+      "id": "S4",
+      "type": "content",
+      "start": "3:01",
+      "end": "3:41",
+      "summary": "Gives a reality check that scaling took months, says most people quit too early, and previews upcoming videos in the series covering platforms, product creation, traffic, and AI workflow."
+    },
+    {
+      "id": "S5",
+      "type": "outro",
+      "start": "3:41",
+      "end": "3:48",
+      "summary": "Asks viewers to subscribe and signs off until next week."
+    }
+  ]
+}

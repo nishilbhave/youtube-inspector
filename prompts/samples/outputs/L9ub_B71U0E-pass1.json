@@ -1,0 +1,26 @@
+{
+  "video_id": "L9ub_B71U0E",
+  "sections": [
+    {
+      "id": "S1",
+      "type": "hook",
+      "start": "0:00",
+      "end": "0:22",
+      "summary": "Cold-open teaser where Tyson tells Charles Liu he has an issue with the wave-particle duality, setting up the topic."
+    },
+    {
+      "id": "S2",
+      "type": "content",
+      "start": "0:22",
+      "end": "12:23",
+      "summary": "Tyson and Charles Liu discuss quantum physics, covering Liu's new book, the history of Planck and de Broglie, the double-slit experiment, why wave-particle duality is misleading, and propose viewing all matter as simultaneously wave and particle."
+    },
+    {
+      "id": "S3",
+      "type": "outro",
+      "start": "12:23",
+      "end": "12:59",
+      "summary": "Tyson thanks Charles Liu, recaps the conversation as being about quantum physics, and signs off with 'keep looking up.'"
+    }
+  ]
+}

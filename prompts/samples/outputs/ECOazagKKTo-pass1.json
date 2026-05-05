@@ -1,0 +1,33 @@
+{
+  "video_id": "ECOazagKKTo",
+  "sections": [
+    {
+      "id": "S1",
+      "type": "hook",
+      "start": "0:00",
+      "end": "1:05",
+      "summary": "Frames the video around replacing his paid Fathom subscription by building a free AI notetaker clone with Claude Code in a couple of hours."
+    },
+    {
+      "id": "S2",
+      "type": "content",
+      "start": "1:05",
+      "end": "9:59",
+      "summary": "Walks through prompting Claude Code to build a desktop recorder plus Next.js web app, configures MongoDB, Cloudflare R2, Anthropic and Groq API keys, demos recording a Zoom meeting and querying the transcript, then deploys the web app to Vercel via GitHub."
+    },
+    {
+      "id": "S3",
+      "type": "pitch",
+      "start": "9:59",
+      "end": "10:52",
+      "summary": "Asks viewers to comment if they want him to build a combined mega-app including screen recording, notetaker, forms and calendar booking, and offers to live stream the build."
+    },
+    {
+      "id": "S4",
+      "type": "outro",
+      "start": "10:52",
+      "end": "11:01",
+      "summary": "Thanks viewers, asks them to like and subscribe, recommends another video, and signs off."
+    }
+  ]
+}

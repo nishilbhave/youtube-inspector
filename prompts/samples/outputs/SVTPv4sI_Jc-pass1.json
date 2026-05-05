@@ -1,0 +1,40 @@
+{
+  "video_id": "SVTPv4sI_Jc",
+  "sections": [
+    {
+      "id": "S1",
+      "type": "hook",
+      "start": "0:00",
+      "end": "2:34",
+      "summary": "Dramatizes a downed US officer rescue scenario tied to a reported CIA 'Ghost Murmur' heartbeat-detection device, shows the media frenzy, and sets up the question of whether the technology is real."
+    },
+    {
+      "id": "S2",
+      "type": "content",
+      "start": "2:34",
+      "end": "6:19",
+      "summary": "Lays out three investigative questions, explains that the heart's magnetic field exists but is extremely weak, and reviews how SQUIDs and newer diamond-based magnetometers have been used to measure it."
+    },
+    {
+      "id": "S3",
+      "type": "pitch",
+      "start": "6:19",
+      "end": "7:34",
+      "summary": "Sponsor read for Ground News, pitching its news-aggregation app and a 40% discount link tied to the Ghost Murmur story's lopsided coverage."
+    },
+    {
+      "id": "S4",
+      "type": "content",
+      "start": "7:34",
+      "end": "20:58",
+      "summary": "Explains nitrogen-vacancy defects in diamond, electron spin states, Zeeman splitting, and how these enable magnetic-field detection, then uses physics estimates and expert interviews to argue the heart signal at kilometers is many orders of magnitude beyond current sensitivity, while noting plausible military uses like GPS-free magnetic navigation."
+    },
+    {
+      "id": "S5",
+      "type": "outro",
+      "start": "20:58",
+      "end": "21:18",
+      "summary": "Credits a Scientific American article by Deni Bechard that initially expressed skepticism about Ghost Murmur and recommends viewers read it."
+    }
+  ]
+}

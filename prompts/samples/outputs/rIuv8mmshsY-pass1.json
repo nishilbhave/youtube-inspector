@@ -1,0 +1,40 @@
+{
+  "video_id": "rIuv8mmshsY",
+  "sections": [
+    {
+      "id": "S1",
+      "type": "hook",
+      "start": "0:00",
+      "end": "0:54",
+      "summary": "Sahil claims a paper notebook helped him land a Google job and promises four notebook coding techniques, supporting neuroscience, and an AI integration tip."
+    },
+    {
+      "id": "S2",
+      "type": "content",
+      "start": "0:54",
+      "end": "3:50",
+      "summary": "Argues laptops are distraction factories, explains how notebooks force deep work and how handwriting engages the brain more than typing, illustrated with an Amazon debugging anecdote."
+    },
+    {
+      "id": "S3",
+      "type": "pitch",
+      "start": "3:50",
+      "end": "4:31",
+      "summary": "Reads a Supabase sponsor segment covering its Postgres backend, Python SDK, and pgvector support, with a free signup link in the description."
+    },
+    {
+      "id": "S4",
+      "type": "content",
+      "start": "4:31",
+      "end": "8:32",
+      "summary": "Walks through architectural sketching on paper, photographing notes into Claude or ChatGPT for code generation, keeping a learning-loop reflection section, and a recap of thinking before coding."
+    },
+    {
+      "id": "S5",
+      "type": "outro",
+      "start": "8:32",
+      "end": "8:42",
+      "summary": "Points viewers to a related study-efficiency video and signs off."
+    }
+  ]
+}

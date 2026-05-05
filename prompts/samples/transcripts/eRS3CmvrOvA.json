@@ -1,0 +1,5064 @@
+{
+  "video_id": "eRS3CmvrOvA",
+  "url": "https://www.youtube.com/watch?v=eRS3CmvrOvA",
+  "title": "I Tried 100+ Claude Code Skills. These 6 Are The Best",
+  "channel": "Nate Herk | AI Automation",
+  "channel_id": "UC2ojq-nuP8ceeHqiroeKhBA",
+  "duration_seconds": 819,
+  "view_count": 85090,
+  "upload_date": "2026-05-03",
+  "language": "en-orig",
+  "transcript": [
+    {
+      "start": 1.95,
+      "duration": 0.010000000000000009,
+      "text": "After spending 400 hours in CloudCode, I"
+    },
+    {
+      "start": 1.96,
+      "duration": 1.3900000000000001,
+      "text": "After spending 400 hours in CloudCode, I noticed something. Most people online"
+    },
+    {
+      "start": 3.35,
+      "duration": 0.009999999999999787,
+      "text": "noticed something. Most people online"
+    },
+    {
+      "start": 3.36,
+      "duration": 1.5100000000000002,
+      "text": "noticed something. Most people online are developing fancy skills for the sake"
+    },
+    {
+      "start": 4.87,
+      "duration": 0.009999999999999787,
+      "text": "are developing fancy skills for the sake"
+    },
+    {
+      "start": 4.88,
+      "duration": 1.4699999999999998,
+      "text": "are developing fancy skills for the sake of a cool video, but businesses don't"
+    },
+    {
+      "start": 6.35,
+      "duration": 0.010000000000000675,
+      "text": "of a cool video, but businesses don't"
+    },
+    {
+      "start": 6.36,
+      "duration": 1.7499999999999991,
+      "text": "of a cool video, but businesses don't actually want that. They want six types"
+    },
+    {
+      "start": 8.11,
+      "duration": 0.009999999999999787,
+      "text": "actually want that. They want six types"
+    },
+    {
+      "start": 8.12,
+      "duration": 1.2700000000000014,
+      "text": "actually want that. They want six types of skills. They're simple, they're"
+    },
+    {
+      "start": 9.39,
+      "duration": 0.009999999999999787,
+      "text": "of skills. They're simple, they're"
+    },
+    {
+      "start": 9.4,
+      "duration": 1.709999999999999,
+      "text": "of skills. They're simple, they're boring, but they are effective. Skills"
+    },
+    {
+      "start": 11.11,
+      "duration": 0.009999999999999787,
+      "text": "boring, but they are effective. Skills"
+    },
+    {
+      "start": 11.12,
+      "duration": 1.870000000000001,
+      "text": "boring, but they are effective. Skills that save time, save money, or remove"
+    },
+    {
+      "start": 12.99,
+      "duration": 0.009999999999999787,
+      "text": "that save time, save money, or remove"
+    },
+    {
+      "start": 13.0,
+      "duration": 1.67,
+      "text": "that save time, save money, or remove mistakes. And the crazy part is, these"
+    },
+    {
+      "start": 14.67,
+      "duration": 0.009999999999999787,
+      "text": "mistakes. And the crazy part is, these"
+    },
+    {
+      "start": 14.68,
+      "duration": 1.1899999999999995,
+      "text": "mistakes. And the crazy part is, these six skills are the ones that clients"
+    },
+    {
+      "start": 15.87,
+      "duration": 0.010000000000001563,
+      "text": "six skills are the ones that clients"
+    },
+    {
+      "start": 15.88,
+      "duration": 1.4700000000000006,
+      "text": "six skills are the ones that clients will pay the most for because they allow"
+    },
+    {
+      "start": 17.35,
+      "duration": 0.00999999999999801,
+      "text": "will pay the most for because they allow"
+    },
+    {
+      "start": 17.36,
+      "duration": 1.4699999999999989,
+      "text": "will pay the most for because they allow you to build the best agents at the"
+    },
+    {
+      "start": 18.83,
+      "duration": 0.010000000000001563,
+      "text": "you to build the best agents at the"
+    },
+    {
+      "start": 18.84,
+      "duration": 1.5500000000000007,
+      "text": "you to build the best agents at the lowest cost. So, in this video, I'll"
+    },
+    {
+      "start": 20.39,
+      "duration": 0.00999999999999801,
+      "text": "lowest cost. So, in this video, I'll"
+    },
+    {
+      "start": 20.4,
+      "duration": 1.4700000000000024,
+      "text": "lowest cost. So, in this video, I'll show you what they are, why they sell,"
+    },
+    {
+      "start": 21.87,
+      "duration": 0.00999999999999801,
+      "text": "show you what they are, why they sell,"
+    },
+    {
+      "start": 21.88,
+      "duration": 1.4700000000000024,
+      "text": "show you what they are, why they sell, and how you can use them to sell AI"
+    },
+    {
+      "start": 23.35,
+      "duration": 0.00999999999999801,
+      "text": "and how you can use them to sell AI"
+    },
+    {
+      "start": 23.36,
+      "duration": 1.5100000000000016,
+      "text": "and how you can use them to sell AI automations. But before we jump into the"
+    },
+    {
+      "start": 24.87,
+      "duration": 0.00999999999999801,
+      "text": "automations. But before we jump into the"
+    },
+    {
+      "start": 24.88,
+      "duration": 1.6300000000000026,
+      "text": "automations. But before we jump into the first one, let me show you how I figured"
+    },
+    {
+      "start": 26.51,
+      "duration": 0.00999999999999801,
+      "text": "first one, let me show you how I figured"
+    },
+    {
+      "start": 26.52,
+      "duration": 1.1900000000000013,
+      "text": "first one, let me show you how I figured all of this out. I've worked with real"
+    },
+    {
+      "start": 27.71,
+      "duration": 0.00999999999999801,
+      "text": "all of this out. I've worked with real"
+    },
+    {
+      "start": 27.72,
+      "duration": 1.5899999999999999,
+      "text": "all of this out. I've worked with real estate agencies, HVAC companies,"
+    },
+    {
+      "start": 29.31,
+      "duration": 0.010000000000001563,
+      "text": "estate agencies, HVAC companies,"
+    },
+    {
+      "start": 29.32,
+      "duration": 1.870000000000001,
+      "text": "estate agencies, HVAC companies, coaches, marketing agencies, and more."
+    },
+    {
+      "start": 31.19,
+      "duration": 0.00999999999999801,
+      "text": "coaches, marketing agencies, and more."
+    },
+    {
+      "start": 31.2,
+      "duration": 1.4700000000000024,
+      "text": "coaches, marketing agencies, and more. And I've seen the same patterns across"
+    },
+    {
+      "start": 32.67,
+      "duration": 0.00999999999999801,
+      "text": "And I've seen the same patterns across"
+    },
+    {
+      "start": 32.68,
+      "duration": 1.1499999999999986,
+      "text": "And I've seen the same patterns across every business. They're different"
+    },
+    {
+      "start": 33.83,
+      "duration": 0.010000000000005116,
+      "text": "every business. They're different"
+    },
+    {
+      "start": 33.84,
+      "duration": 1.5499999999999972,
+      "text": "every business. They're different industries, sure, but they face the same"
+    },
+    {
+      "start": 35.39,
+      "duration": 0.00999999999999801,
+      "text": "industries, sure, but they face the same"
+    },
+    {
+      "start": 35.4,
+      "duration": 1.5900000000000034,
+      "text": "industries, sure, but they face the same problems. And these skills keep showing"
+    },
+    {
+      "start": 36.99,
+      "duration": 0.00999999999999801,
+      "text": "problems. And these skills keep showing"
+    },
+    {
+      "start": 37.0,
+      "duration": 1.4699999999999989,
+      "text": "problems. And these skills keep showing up again and again. So, if you're"
+    },
+    {
+      "start": 38.47,
+      "duration": 0.00999999999999801,
+      "text": "up again and again. So, if you're"
+    },
+    {
+      "start": 38.48,
+      "duration": 1.2700000000000031,
+      "text": "up again and again. So, if you're watching this and you want to make money"
+    },
+    {
+      "start": 39.75,
+      "duration": 0.00999999999999801,
+      "text": "watching this and you want to make money"
+    },
+    {
+      "start": 39.76,
+      "duration": 2.030000000000001,
+      "text": "watching this and you want to make money selling AI in 2026, don't overthink it."
+    },
+    {
+      "start": 41.79,
+      "duration": 0.00999999999999801,
+      "text": "selling AI in 2026, don't overthink it."
+    },
+    {
+      "start": 41.8,
+      "duration": 1.230000000000004,
+      "text": "selling AI in 2026, don't overthink it. Just start with what the businesses are"
+    },
+    {
+      "start": 43.03,
+      "duration": 0.00999999999999801,
+      "text": "Just start with what the businesses are"
+    },
+    {
+      "start": 43.04,
+      "duration": 1.3900000000000006,
+      "text": "Just start with what the businesses are already paying for. All right, let's get"
+    },
+    {
+      "start": 44.43,
+      "duration": 0.00999999999999801,
+      "text": "already paying for. All right, let's get"
+    },
+    {
+      "start": 44.44,
+      "duration": 1.0700000000000003,
+      "text": "already paying for. All right, let's get into the first skill. So, the first"
+    },
+    {
+      "start": 45.51,
+      "duration": 0.010000000000005116,
+      "text": "into the first skill. So, the first"
+    },
+    {
+      "start": 45.52,
+      "duration": 1.4699999999999989,
+      "text": "into the first skill. So, the first skill that I install is the one that"
+    },
+    {
+      "start": 46.99,
+      "duration": 0.00999999999999801,
+      "text": "skill that I install is the one that"
+    },
+    {
+      "start": 47.0,
+      "duration": 1.4699999999999989,
+      "text": "skill that I install is the one that builds every other skill, and it's"
+    },
+    {
+      "start": 48.47,
+      "duration": 0.00999999999999801,
+      "text": "builds every other skill, and it's"
+    },
+    {
+      "start": 48.48,
+      "duration": 1.6300000000000026,
+      "text": "builds every other skill, and it's called the skill creator. It's one of"
+    },
+    {
+      "start": 50.11,
+      "duration": 0.00999999999999801,
+      "text": "called the skill creator. It's one of"
+    },
+    {
+      "start": 50.12,
+      "duration": 1.7100000000000009,
+      "text": "called the skill creator. It's one of the official skills from Anthropic. You"
+    },
+    {
+      "start": 51.83,
+      "duration": 0.010000000000005116,
+      "text": "the official skills from Anthropic. You"
+    },
+    {
+      "start": 51.84,
+      "duration": 1.509999999999998,
+      "text": "the official skills from Anthropic. You basically just describe what you want in"
+    },
+    {
+      "start": 53.35,
+      "duration": 0.00999999999999801,
+      "text": "basically just describe what you want in"
+    },
+    {
+      "start": 53.36,
+      "duration": 1.7100000000000009,
+      "text": "basically just describe what you want in plain English, Claude drafts the skill,"
+    },
+    {
+      "start": 55.07,
+      "duration": 0.00999999999999801,
+      "text": "plain English, Claude drafts the skill,"
+    },
+    {
+      "start": 55.08,
+      "duration": 1.3500000000000014,
+      "text": "plain English, Claude drafts the skill, tests it, iterates on it, and it"
+    },
+    {
+      "start": 56.43,
+      "duration": 0.00999999999999801,
+      "text": "tests it, iterates on it, and it"
+    },
+    {
+      "start": 56.44,
+      "duration": 1.6300000000000026,
+      "text": "tests it, iterates on it, and it packages it into something that you can"
+    },
+    {
+      "start": 58.07,
+      "duration": 0.00999999999999801,
+      "text": "packages it into something that you can"
+    },
+    {
+      "start": 58.08,
+      "duration": 1.4299999999999997,
+      "text": "packages it into something that you can use forever. You don't have to manually"
+    },
+    {
+      "start": 59.51,
+      "duration": 0.010000000000005116,
+      "text": "use forever. You don't have to manually"
+    },
+    {
+      "start": 59.52,
+      "duration": 2.309999999999995,
+      "text": "use forever. You don't have to manually touch or edit a skill.md5. You don't"
+    },
+    {
+      "start": 61.83,
+      "duration": 0.010000000000005116,
+      "text": "touch or edit a skill.md5. You don't"
+    },
+    {
+      "start": 61.84,
+      "duration": 1.3099999999999952,
+      "text": "touch or edit a skill.md5. You don't have to figure out the formatting. You"
+    },
+    {
+      "start": 63.15,
+      "duration": 0.00999999999999801,
+      "text": "have to figure out the formatting. You"
+    },
+    {
+      "start": 63.16,
+      "duration": 0.9500000000000028,
+      "text": "have to figure out the formatting. You just talk to Claude like you're"
+    },
+    {
+      "start": 64.11,
+      "duration": 0.010000000000005116,
+      "text": "just talk to Claude like you're"
+    },
+    {
+      "start": 64.12,
+      "duration": 1.5899999999999892,
+      "text": "just talk to Claude like you're explaining the job to a co-worker, and"
+    },
+    {
+      "start": 65.71,
+      "duration": 0.010000000000005116,
+      "text": "explaining the job to a co-worker, and"
+    },
+    {
+      "start": 65.72,
+      "duration": 1.5900000000000034,
+      "text": "explaining the job to a co-worker, and you walk away with a skill that runs the"
+    },
+    {
+      "start": 67.31,
+      "duration": 0.009999999999990905,
+      "text": "you walk away with a skill that runs the"
+    },
+    {
+      "start": 67.32,
+      "duration": 1.990000000000009,
+      "text": "you walk away with a skill that runs the same every time. You can even drop in"
+    },
+    {
+      "start": 69.31,
+      "duration": 0.009999999999990905,
+      "text": "same every time. You can even drop in"
+    },
+    {
+      "start": 69.32,
+      "duration": 1.3500000000000085,
+      "text": "same every time. You can even drop in like an SOP, and it would be able to"
+    },
+    {
+      "start": 70.67,
+      "duration": 0.010000000000005116,
+      "text": "like an SOP, and it would be able to"
+    },
+    {
+      "start": 70.68,
+      "duration": 1.9099999999999966,
+      "text": "like an SOP, and it would be able to turn that into a reusable skill. So, the"
+    },
+    {
+      "start": 72.59,
+      "duration": 0.009999999999990905,
+      "text": "turn that into a reusable skill. So, the"
+    },
+    {
+      "start": 72.6,
+      "duration": 1.5900000000000034,
+      "text": "turn that into a reusable skill. So, the problem it solves is very simple. Most"
+    },
+    {
+      "start": 74.19,
+      "duration": 0.010000000000005116,
+      "text": "problem it solves is very simple. Most"
+    },
+    {
+      "start": 74.2,
+      "duration": 1.6299999999999955,
+      "text": "problem it solves is very simple. Most people who get into ClaudeCode try to"
+    },
+    {
+      "start": 75.83,
+      "duration": 0.010000000000005116,
+      "text": "people who get into ClaudeCode try to"
+    },
+    {
+      "start": 75.84,
+      "duration": 1.3499999999999943,
+      "text": "people who get into ClaudeCode try to write skills manually, and they"
+    },
+    {
+      "start": 77.19,
+      "duration": 0.010000000000005116,
+      "text": "write skills manually, and they"
+    },
+    {
+      "start": 77.2,
+      "duration": 1.230000000000004,
+      "text": "write skills manually, and they immediately hit a wall. They don't know"
+    },
+    {
+      "start": 78.43,
+      "duration": 0.009999999999990905,
+      "text": "immediately hit a wall. They don't know"
+    },
+    {
+      "start": 78.44,
+      "duration": 1.5100000000000051,
+      "text": "immediately hit a wall. They don't know the structure, they don't know what"
+    },
+    {
+      "start": 79.95,
+      "duration": 0.010000000000005116,
+      "text": "the structure, they don't know what"
+    },
+    {
+      "start": 79.96000000000001,
+      "duration": 2.2299999999999898,
+      "text": "the structure, they don't know what makes a skill reliable versus flaky. So,"
+    },
+    {
+      "start": 82.19,
+      "duration": 0.010000000000005116,
+      "text": "makes a skill reliable versus flaky. So,"
+    },
+    {
+      "start": 82.2,
+      "duration": 1.1899999999999977,
+      "text": "makes a skill reliable versus flaky. So, they either give up or they cobble"
+    },
+    {
+      "start": 83.39,
+      "duration": 0.010000000000005116,
+      "text": "they either give up or they cobble"
+    },
+    {
+      "start": 83.4,
+      "duration": 1.1099999999999994,
+      "text": "they either give up or they cobble something together that breaks the"
+    },
+    {
+      "start": 84.51,
+      "duration": 0.009999999999990905,
+      "text": "something together that breaks the"
+    },
+    {
+      "start": 84.52,
+      "duration": 1.5499999999999972,
+      "text": "something together that breaks the second a client touches it. So, the"
+    },
+    {
+      "start": 86.07,
+      "duration": 0.010000000000005116,
+      "text": "second a client touches it. So, the"
+    },
+    {
+      "start": 86.08,
+      "duration": 1.4699999999999989,
+      "text": "second a client touches it. So, the skill creator removes all of that"
+    },
+    {
+      "start": 87.55,
+      "duration": 0.010000000000005116,
+      "text": "skill creator removes all of that"
+    },
+    {
+      "start": 87.56,
+      "duration": 1.269999999999996,
+      "text": "skill creator removes all of that headache. Now, honestly, the skill"
+    },
+    {
+      "start": 88.83,
+      "duration": 0.010000000000005116,
+      "text": "headache. Now, honestly, the skill"
+    },
+    {
+      "start": 88.84,
+      "duration": 2.1899999999999977,
+      "text": "headache. Now, honestly, the skill itself isn't what a client pays for, but"
+    },
+    {
+      "start": 91.03,
+      "duration": 0.009999999999990905,
+      "text": "itself isn't what a client pays for, but"
+    },
+    {
+      "start": 91.03999999999999,
+      "duration": 1.3500000000000085,
+      "text": "itself isn't what a client pays for, but every single skill that you're going to"
+    },
+    {
+      "start": 92.39,
+      "duration": 0.010000000000005116,
+      "text": "every single skill that you're going to"
+    },
+    {
+      "start": 92.4,
+      "duration": 1.9099999999999966,
+      "text": "every single skill that you're going to sell to an HVAC company, a real estate"
+    },
+    {
+      "start": 94.31,
+      "duration": 0.009999999999990905,
+      "text": "sell to an HVAC company, a real estate"
+    },
+    {
+      "start": 94.32,
+      "duration": 2.3100000000000023,
+      "text": "sell to an HVAC company, a real estate agency, a coach, whatever, they all come"
+    },
+    {
+      "start": 96.63,
+      "duration": 0.010000000000005116,
+      "text": "agency, a coach, whatever, they all come"
+    },
+    {
+      "start": 96.64,
+      "duration": 1.5100000000000051,
+      "text": "agency, a coach, whatever, they all come out of this one. It's the factory that"
+    },
+    {
+      "start": 98.15,
+      "duration": 0.009999999999990905,
+      "text": "out of this one. It's the factory that"
+    },
+    {
+      "start": 98.16,
+      "duration": 1.990000000000009,
+      "text": "out of this one. It's the factory that builds the product. So, indirectly, this"
+    },
+    {
+      "start": 100.15,
+      "duration": 0.009999999999990905,
+      "text": "builds the product. So, indirectly, this"
+    },
+    {
+      "start": 100.16,
+      "duration": 1.75,
+      "text": "builds the product. So, indirectly, this is the skill that can help make all of"
+    },
+    {
+      "start": 101.91,
+      "duration": 0.010000000000005116,
+      "text": "is the skill that can help make all of"
+    },
+    {
+      "start": 101.92,
+      "duration": 1.4699999999999989,
+      "text": "is the skill that can help make all of the other dollars possible. So, here's a"
+    },
+    {
+      "start": 103.39,
+      "duration": 0.010000000000005116,
+      "text": "the other dollars possible. So, here's a"
+    },
+    {
+      "start": 103.4,
+      "duration": 1.5499999999999972,
+      "text": "the other dollars possible. So, here's a simple example. Let's say a real estate"
+    },
+    {
+      "start": 104.95,
+      "duration": 0.010000000000005116,
+      "text": "simple example. Let's say a real estate"
+    },
+    {
+      "start": 104.96000000000001,
+      "duration": 1.8699999999999903,
+      "text": "simple example. Let's say a real estate agency tells you they waste hours every"
+    },
+    {
+      "start": 106.83,
+      "duration": 0.010000000000005116,
+      "text": "agency tells you they waste hours every"
+    },
+    {
+      "start": 106.84,
+      "duration": 1.75,
+      "text": "agency tells you they waste hours every week writing property descriptions."
+    },
+    {
+      "start": 108.59,
+      "duration": 0.009999999999990905,
+      "text": "week writing property descriptions."
+    },
+    {
+      "start": 108.6,
+      "duration": 1.3900000000000148,
+      "text": "week writing property descriptions. Without Skill Creator, you'd be writing"
+    },
+    {
+      "start": 109.99000000000001,
+      "duration": 0.009999999999990905,
+      "text": "Without Skill Creator, you'd be writing"
+    },
+    {
+      "start": 110.0,
+      "duration": 1.789999999999992,
+      "text": "Without Skill Creator, you'd be writing out the whole skill.md5, figuring out"
+    },
+    {
+      "start": 111.78999999999999,
+      "duration": 0.010000000000005116,
+      "text": "out the whole skill.md5, figuring out"
+    },
+    {
+      "start": 111.8,
+      "duration": 1.230000000000004,
+      "text": "out the whole skill.md5, figuring out the trigger conditions, testing it over"
+    },
+    {
+      "start": 113.03,
+      "duration": 0.009999999999990905,
+      "text": "the trigger conditions, testing it over"
+    },
+    {
+      "start": 113.03999999999999,
+      "duration": 1.1100000000000136,
+      "text": "the trigger conditions, testing it over and over, and it would probably break a"
+    },
+    {
+      "start": 114.15,
+      "duration": 0.009999999999990905,
+      "text": "and over, and it would probably break a"
+    },
+    {
+      "start": 114.16,
+      "duration": 1.3100000000000023,
+      "text": "and over, and it would probably break a few times, and you could obviously get"
+    },
+    {
+      "start": 115.47,
+      "duration": 0.009999999999990905,
+      "text": "few times, and you could obviously get"
+    },
+    {
+      "start": 115.47999999999999,
+      "duration": 1.6300000000000097,
+      "text": "few times, and you could obviously get to a spot where you have a good working"
+    },
+    {
+      "start": 117.11,
+      "duration": 0.010000000000005116,
+      "text": "to a spot where you have a good working"
+    },
+    {
+      "start": 117.12,
+      "duration": 1.3899999999999864,
+      "text": "to a spot where you have a good working skill. But with the Skill Creator, you"
+    },
+    {
+      "start": 118.50999999999999,
+      "duration": 0.010000000000019327,
+      "text": "skill. But with the Skill Creator, you"
+    },
+    {
+      "start": 118.52000000000001,
+      "duration": 1.4699999999999989,
+      "text": "skill. But with the Skill Creator, you can just explain it more naturally, and"
+    },
+    {
+      "start": 119.99000000000001,
+      "duration": 0.009999999999990905,
+      "text": "can just explain it more naturally, and"
+    },
+    {
+      "start": 120.0,
+      "duration": 1.3900000000000006,
+      "text": "can just explain it more naturally, and it will help you build, test, and"
+    },
+    {
+      "start": 121.39,
+      "duration": 0.010000000000005116,
+      "text": "it will help you build, test, and"
+    },
+    {
+      "start": 121.4,
+      "duration": 1.3900000000000006,
+      "text": "it will help you build, test, and package it. So, it just compresses that"
+    },
+    {
+      "start": 122.79,
+      "duration": 0.009999999999990905,
+      "text": "package it. So, it just compresses that"
+    },
+    {
+      "start": 122.8,
+      "duration": 1.4699999999999989,
+      "text": "package it. So, it just compresses that learning curve. To install this, you can"
+    },
+    {
+      "start": 124.27,
+      "duration": 0.010000000000005116,
+      "text": "learning curve. To install this, you can"
+    },
+    {
+      "start": 124.28,
+      "duration": 1.9899999999999949,
+      "text": "learning curve. To install this, you can run /plugin install skill creator. I'll"
+    },
+    {
+      "start": 126.27,
+      "duration": 0.010000000000005116,
+      "text": "run /plugin install skill creator. I'll"
+    },
+    {
+      "start": 126.28,
+      "duration": 1.5100000000000051,
+      "text": "run /plugin install skill creator. I'll put the full command right up here and"
+    },
+    {
+      "start": 127.79,
+      "duration": 0.009999999999990905,
+      "text": "put the full command right up here and"
+    },
+    {
+      "start": 127.8,
+      "duration": 1.3090000000000117,
+      "text": "put the full command right up here and in the description. And I'll include all"
+    },
+    {
+      "start": 129.109,
+      "duration": 0.009999999999990905,
+      "text": "in the description. And I'll include all"
+    },
+    {
+      "start": 129.119,
+      "duration": 1.3499999999999943,
+      "text": "in the description. And I'll include all of the actual commands that you'll need"
+    },
+    {
+      "start": 130.469,
+      "duration": 0.009999999999990905,
+      "text": "of the actual commands that you'll need"
+    },
+    {
+      "start": 130.47899999999998,
+      "duration": 1.1110000000000184,
+      "text": "of the actual commands that you'll need in the description so you can just copy"
+    },
+    {
+      "start": 131.59,
+      "duration": 0.009999999999990905,
+      "text": "in the description so you can just copy"
+    },
+    {
+      "start": 131.6,
+      "duration": 1.3499999999999943,
+      "text": "in the description so you can just copy and paste them. I personally installed"
+    },
+    {
+      "start": 132.95,
+      "duration": 0.010000000000019327,
+      "text": "and paste them. I personally installed"
+    },
+    {
+      "start": 132.96,
+      "duration": 1.6699999999999875,
+      "text": "and paste them. I personally installed this skill globally on a user scope, so"
+    },
+    {
+      "start": 134.63,
+      "duration": 0.009999999999990905,
+      "text": "this skill globally on a user scope, so"
+    },
+    {
+      "start": 134.64,
+      "duration": 1.2700000000000102,
+      "text": "this skill globally on a user scope, so no matter what product that I'm actually"
+    },
+    {
+      "start": 135.91,
+      "duration": 0.009999999999990905,
+      "text": "no matter what product that I'm actually"
+    },
+    {
+      "start": 135.92,
+      "duration": 1.3100000000000023,
+      "text": "no matter what product that I'm actually working in, if I ever need to build a"
+    },
+    {
+      "start": 137.23,
+      "duration": 0.010000000000019327,
+      "text": "working in, if I ever need to build a"
+    },
+    {
+      "start": 137.24,
+      "duration": 1.549999999999983,
+      "text": "working in, if I ever need to build a skill, it just automatically invokes"
+    },
+    {
+      "start": 138.79,
+      "duration": 0.010000000000019327,
+      "text": "skill, it just automatically invokes"
+    },
+    {
+      "start": 138.8,
+      "duration": 1.0699999999999932,
+      "text": "skill, it just automatically invokes this, and I don't even have to think"
+    },
+    {
+      "start": 139.87,
+      "duration": 0.009999999999990905,
+      "text": "this, and I don't even have to think"
+    },
+    {
+      "start": 139.88,
+      "duration": 1.2700000000000102,
+      "text": "this, and I don't even have to think about it at all. All right, so quick"
+    },
+    {
+      "start": 141.15,
+      "duration": 0.009999999999990905,
+      "text": "about it at all. All right, so quick"
+    },
+    {
+      "start": 141.16,
+      "duration": 1.2700000000000102,
+      "text": "about it at all. All right, so quick thing before we get into the rest."
+    },
+    {
+      "start": 142.43,
+      "duration": 0.009999999999990905,
+      "text": "thing before we get into the rest."
+    },
+    {
+      "start": 142.44,
+      "duration": 1.1100000000000136,
+      "text": "thing before we get into the rest. You're going to hear me use the word"
+    },
+    {
+      "start": 143.55,
+      "duration": 0.009999999999990905,
+      "text": "You're going to hear me use the word"
+    },
+    {
+      "start": 143.56,
+      "duration": 1.3499999999999943,
+      "text": "You're going to hear me use the word skill throughout this video, but"
+    },
+    {
+      "start": 144.91,
+      "duration": 0.010000000000019327,
+      "text": "skill throughout this video, but"
+    },
+    {
+      "start": 144.92000000000002,
+      "duration": 1.549999999999983,
+      "text": "skill throughout this video, but technically some of these are plugins. A"
+    },
+    {
+      "start": 146.47,
+      "duration": 0.009999999999990905,
+      "text": "technically some of these are plugins. A"
+    },
+    {
+      "start": 146.48,
+      "duration": 1.1900000000000261,
+      "text": "technically some of these are plugins. A skill is basically a package that you"
+    },
+    {
+      "start": 147.67000000000002,
+      "duration": 0.009999999999990905,
+      "text": "skill is basically a package that you"
+    },
+    {
+      "start": 147.68,
+      "duration": 1.829999999999984,
+      "text": "skill is basically a package that you install that teaches Claude how to do a"
+    },
+    {
+      "start": 149.51,
+      "duration": 0.010000000000019327,
+      "text": "install that teaches Claude how to do a"
+    },
+    {
+      "start": 149.52,
+      "duration": 1.829999999999984,
+      "text": "install that teaches Claude how to do a specific job better. It is the markdown"
+    },
+    {
+      "start": 151.35,
+      "duration": 0.010000000000019327,
+      "text": "specific job better. It is the markdown"
+    },
+    {
+      "start": 151.36,
+      "duration": 2.109999999999985,
+      "text": "specific job better. It is the markdown file, but a plugin is a bigger package"
+    },
+    {
+      "start": 153.47,
+      "duration": 0.009999999999990905,
+      "text": "file, but a plugin is a bigger package"
+    },
+    {
+      "start": 153.48,
+      "duration": 1.950000000000017,
+      "text": "file, but a plugin is a bigger package around that skill because it can contain"
+    },
+    {
+      "start": 155.43,
+      "duration": 0.009999999999990905,
+      "text": "around that skill because it can contain"
+    },
+    {
+      "start": 155.44,
+      "duration": 1.5900000000000034,
+      "text": "around that skill because it can contain multiple other skills, plus extra things"
+    },
+    {
+      "start": 157.03,
+      "duration": 0.009999999999990905,
+      "text": "multiple other skills, plus extra things"
+    },
+    {
+      "start": 157.04,
+      "duration": 1.9099999999999966,
+      "text": "multiple other skills, plus extra things like hooks or MCP servers. And all of"
+    },
+    {
+      "start": 158.95,
+      "duration": 0.010000000000019327,
+      "text": "like hooks or MCP servers. And all of"
+    },
+    {
+      "start": 158.96,
+      "duration": 1.549999999999983,
+      "text": "like hooks or MCP servers. And all of that changes how ClaudeCode behaves"
+    },
+    {
+      "start": 160.51,
+      "duration": 0.010000000000019327,
+      "text": "that changes how ClaudeCode behaves"
+    },
+    {
+      "start": 160.52,
+      "duration": 1.8699999999999761,
+      "text": "that changes how ClaudeCode behaves under the hood because of that plugin."
+    },
+    {
+      "start": 162.39,
+      "duration": 0.010000000000019327,
+      "text": "under the hood because of that plugin."
+    },
+    {
+      "start": 162.4,
+      "duration": 1.1899999999999977,
+      "text": "under the hood because of that plugin. Also, because I know you guys are going"
+    },
+    {
+      "start": 163.59,
+      "duration": 0.009999999999990905,
+      "text": "Also, because I know you guys are going"
+    },
+    {
+      "start": 163.6,
+      "duration": 1.5100000000000193,
+      "text": "Also, because I know you guys are going to say so in the comments, I'm not an AI"
+    },
+    {
+      "start": 165.11,
+      "duration": 0.009999999999990905,
+      "text": "to say so in the comments, I'm not an AI"
+    },
+    {
+      "start": 165.12,
+      "duration": 1.789999999999992,
+      "text": "to say so in the comments, I'm not an AI avatar. This is really me here to speak"
+    },
+    {
+      "start": 166.91,
+      "duration": 0.010000000000019327,
+      "text": "avatar. This is really me here to speak"
+    },
+    {
+      "start": 166.92000000000002,
+      "duration": 1.509999999999991,
+      "text": "avatar. This is really me here to speak to you guys. But anyways, for this"
+    },
+    {
+      "start": 168.43,
+      "duration": 0.009999999999990905,
+      "text": "to you guys. But anyways, for this"
+    },
+    {
+      "start": 168.44,
+      "duration": 1.0699999999999932,
+      "text": "to you guys. But anyways, for this video, I'm going to be calling some of"
+    },
+    {
+      "start": 169.51,
+      "duration": 0.010000000000019327,
+      "text": "video, I'm going to be calling some of"
+    },
+    {
+      "start": 169.52,
+      "duration": 1.509999999999991,
+      "text": "video, I'm going to be calling some of these [music] skills because the point"
+    },
+    {
+      "start": 171.03,
+      "duration": 0.009999999999990905,
+      "text": "these [music] skills because the point"
+    },
+    {
+      "start": 171.04,
+      "duration": 1.5900000000000034,
+      "text": "these [music] skills because the point isn't the technical category, it's that"
+    },
+    {
+      "start": 172.63,
+      "duration": 0.009999999999990905,
+      "text": "isn't the technical category, it's that"
+    },
+    {
+      "start": 172.64,
+      "duration": 1.1899999999999977,
+      "text": "isn't the technical category, it's that each one of these makes Claude"
+    },
+    {
+      "start": 173.82999999999998,
+      "duration": 0.010000000000019327,
+      "text": "each one of these makes Claude"
+    },
+    {
+      "start": 173.84,
+      "duration": 1.710000000000008,
+      "text": "each one of these makes Claude noticeably better at its job. Anyways,"
+    },
+    {
+      "start": 175.55,
+      "duration": 0.009999999999990905,
+      "text": "noticeably better at its job. Anyways,"
+    },
+    {
+      "start": 175.56,
+      "duration": 1.9099999999999966,
+      "text": "noticeably better at its job. Anyways, the next skill is called superpowers,"
+    },
+    {
+      "start": 177.47,
+      "duration": 0.009999999999990905,
+      "text": "the next skill is called superpowers,"
+    },
+    {
+      "start": 177.48,
+      "duration": 1.4300000000000068,
+      "text": "the next skill is called superpowers, and this one literally gives Claude"
+    },
+    {
+      "start": 178.91,
+      "duration": 0.010000000000019327,
+      "text": "and this one literally gives Claude"
+    },
+    {
+      "start": 178.92000000000002,
+      "duration": 1.3899999999999864,
+      "text": "and this one literally gives Claude superpowers. It's a great name. It"
+    },
+    {
+      "start": 180.31,
+      "duration": 0.009999999999990905,
+      "text": "superpowers. It's a great name. It"
+    },
+    {
+      "start": 180.32,
+      "duration": 1.3100000000000023,
+      "text": "superpowers. It's a great name. It forces Claude to work the way that a"
+    },
+    {
+      "start": 181.63,
+      "duration": 0.009999999999990905,
+      "text": "forces Claude to work the way that a"
+    },
+    {
+      "start": 181.64,
+      "duration": 2.030000000000001,
+      "text": "forces Claude to work the way that a senior developer works, meaning instead"
+    },
+    {
+      "start": 183.67,
+      "duration": 0.010000000000019327,
+      "text": "senior developer works, meaning instead"
+    },
+    {
+      "start": 183.68,
+      "duration": 1.509999999999991,
+      "text": "senior developer works, meaning instead of jumping in and writing code right"
+    },
+    {
+      "start": 185.19,
+      "duration": 0.009999999999990905,
+      "text": "of jumping in and writing code right"
+    },
+    {
+      "start": 185.2,
+      "duration": 1.7900000000000205,
+      "text": "of jumping in and writing code right away, Claude will now step back and plan"
+    },
+    {
+      "start": 186.99,
+      "duration": 0.009999999999990905,
+      "text": "away, Claude will now step back and plan"
+    },
+    {
+      "start": 187.0,
+      "duration": 1.3899999999999864,
+      "text": "away, Claude will now step back and plan the whole thing first. It works in an"
+    },
+    {
+      "start": 188.39,
+      "duration": 0.010000000000019327,
+      "text": "the whole thing first. It works in an"
+    },
+    {
+      "start": 188.4,
+      "duration": 1.549999999999983,
+      "text": "the whole thing first. It works in an isolated environment, so nothing breaks"
+    },
+    {
+      "start": 189.95,
+      "duration": 0.010000000000019327,
+      "text": "isolated environment, so nothing breaks"
+    },
+    {
+      "start": 189.96,
+      "duration": 1.509999999999991,
+      "text": "isolated environment, so nothing breaks your main project. It writes tests"
+    },
+    {
+      "start": 191.47,
+      "duration": 0.009999999999990905,
+      "text": "your main project. It writes tests"
+    },
+    {
+      "start": 191.48,
+      "duration": 1.950000000000017,
+      "text": "your main project. It writes tests before it writes code. It brainstorms,"
+    },
+    {
+      "start": 193.43,
+      "duration": 0.009999999999990905,
+      "text": "before it writes code. It brainstorms,"
+    },
+    {
+      "start": 193.44,
+      "duration": 1.5500000000000114,
+      "text": "before it writes code. It brainstorms, and it reviews its own work in two"
+    },
+    {
+      "start": 194.99,
+      "duration": 0.009999999999990905,
+      "text": "and it reviews its own work in two"
+    },
+    {
+      "start": 195.0,
+      "duration": 1.4300000000000068,
+      "text": "and it reviews its own work in two stages. Once for whether it actually"
+    },
+    {
+      "start": 196.43,
+      "duration": 0.009999999999990905,
+      "text": "stages. Once for whether it actually"
+    },
+    {
+      "start": 196.44,
+      "duration": 1.3899999999999864,
+      "text": "stages. Once for whether it actually matches the spec, and once for code"
+    },
+    {
+      "start": 197.82999999999998,
+      "duration": 0.010000000000019327,
+      "text": "matches the spec, and once for code"
+    },
+    {
+      "start": 197.84,
+      "duration": 1.6299999999999955,
+      "text": "matches the spec, and once for code quality. The problem it solves is the"
+    },
+    {
+      "start": 199.47,
+      "duration": 0.009999999999990905,
+      "text": "quality. The problem it solves is the"
+    },
+    {
+      "start": 199.48,
+      "duration": 1.950000000000017,
+      "text": "quality. The problem it solves is the number one failure mode when people use"
+    },
+    {
+      "start": 201.43,
+      "duration": 0.009999999999990905,
+      "text": "number one failure mode when people use"
+    },
+    {
+      "start": 201.44,
+      "duration": 1.9499999999999886,
+      "text": "number one failure mode when people use ClaudeCode, which is rushed or sloppy"
+    },
+    {
+      "start": 203.39,
+      "duration": 0.010000000000019327,
+      "text": "ClaudeCode, which is rushed or sloppy"
+    },
+    {
+      "start": 203.4,
+      "duration": 1.4699999999999989,
+      "text": "ClaudeCode, which is rushed or sloppy code. You ask for something, Claude"
+    },
+    {
+      "start": 204.87,
+      "duration": 0.009999999999990905,
+      "text": "code. You ask for something, Claude"
+    },
+    {
+      "start": 204.88,
+      "duration": 1.3499999999999943,
+      "text": "code. You ask for something, Claude sprints to write it, and on the surface"
+    },
+    {
+      "start": 206.23,
+      "duration": 0.010000000000019327,
+      "text": "sprints to write it, and on the surface"
+    },
+    {
+      "start": 206.24,
+      "duration": 1.4699999999999989,
+      "text": "sprints to write it, and on the surface it looks fine, but then when you start"
+    },
+    {
+      "start": 207.71,
+      "duration": 0.009999999999990905,
+      "text": "it looks fine, but then when you start"
+    },
+    {
+      "start": 207.72,
+      "duration": 1.710000000000008,
+      "text": "it looks fine, but then when you start to run it and use it, it falls apart. Or"
+    },
+    {
+      "start": 209.43,
+      "duration": 0.009999999999990905,
+      "text": "to run it and use it, it falls apart. Or"
+    },
+    {
+      "start": 209.44,
+      "duration": 1.6299999999999955,
+      "text": "to run it and use it, it falls apart. Or worse, your client runs it, and it falls"
+    },
+    {
+      "start": 211.07,
+      "duration": 0.009999999999990905,
+      "text": "worse, your client runs it, and it falls"
+    },
+    {
+      "start": 211.07999999999998,
+      "duration": 1.990000000000009,
+      "text": "worse, your client runs it, and it falls apart. So, Superpowers slows Claude down"
+    },
+    {
+      "start": 213.07,
+      "duration": 0.009999999999990905,
+      "text": "apart. So, Superpowers slows Claude down"
+    },
+    {
+      "start": 213.07999999999998,
+      "duration": 1.1100000000000136,
+      "text": "apart. So, Superpowers slows Claude down just enough to actually think the"
+    },
+    {
+      "start": 214.19,
+      "duration": 0.009999999999990905,
+      "text": "just enough to actually think the"
+    },
+    {
+      "start": 214.2,
+      "duration": 1.1500000000000057,
+      "text": "just enough to actually think the problem through, and it doesn't let"
+    },
+    {
+      "start": 215.35,
+      "duration": 0.010000000000019327,
+      "text": "problem through, and it doesn't let"
+    },
+    {
+      "start": 215.36,
+      "duration": 1.829999999999984,
+      "text": "problem through, and it doesn't let Claude skip steps. So, really any"
+    },
+    {
+      "start": 217.19,
+      "duration": 0.009999999999990905,
+      "text": "Claude skip steps. So, really any"
+    },
+    {
+      "start": 217.2,
+      "duration": 1.3100000000000023,
+      "text": "Claude skip steps. So, really any project where you're building software"
+    },
+    {
+      "start": 218.51,
+      "duration": 0.010000000000019327,
+      "text": "project where you're building software"
+    },
+    {
+      "start": 218.52,
+      "duration": 1.6699999999999875,
+      "text": "project where you're building software or automations that will actually be put"
+    },
+    {
+      "start": 220.19,
+      "duration": 0.009999999999990905,
+      "text": "or automations that will actually be put"
+    },
+    {
+      "start": 220.2,
+      "duration": 1.5900000000000034,
+      "text": "or automations that will actually be put into production needs this skill. An"
+    },
+    {
+      "start": 221.79,
+      "duration": 0.010000000000019327,
+      "text": "into production needs this skill. An"
+    },
+    {
+      "start": 221.8,
+      "duration": 1.4699999999999989,
+      "text": "into production needs this skill. An HVAC company paying for a dispatch"
+    },
+    {
+      "start": 223.27,
+      "duration": 0.009999999999990905,
+      "text": "HVAC company paying for a dispatch"
+    },
+    {
+      "start": 223.28,
+      "duration": 1.5900000000000034,
+      "text": "HVAC company paying for a dispatch system, a marketing agency paying for a"
+    },
+    {
+      "start": 224.87,
+      "duration": 0.009999999999990905,
+      "text": "system, a marketing agency paying for a"
+    },
+    {
+      "start": 224.88,
+      "duration": 1.3900000000000148,
+      "text": "system, a marketing agency paying for a custom reporting tool. These clients"
+    },
+    {
+      "start": 226.27,
+      "duration": 0.009999999999990905,
+      "text": "custom reporting tool. These clients"
+    },
+    {
+      "start": 226.28,
+      "duration": 1.549999999999983,
+      "text": "custom reporting tool. These clients don't care how many lines of code you"
+    },
+    {
+      "start": 227.82999999999998,
+      "duration": 0.010000000000019327,
+      "text": "don't care how many lines of code you"
+    },
+    {
+      "start": 227.84,
+      "duration": 1.549999999999983,
+      "text": "don't care how many lines of code you wrote, they care that the system works"
+    },
+    {
+      "start": 229.39,
+      "duration": 0.010000000000019327,
+      "text": "wrote, they care that the system works"
+    },
+    {
+      "start": 229.4,
+      "duration": 1.2700000000000102,
+      "text": "wrote, they care that the system works when their business depends on it."
+    },
+    {
+      "start": 230.67000000000002,
+      "duration": 0.009999999999990905,
+      "text": "when their business depends on it."
+    },
+    {
+      "start": 230.68,
+      "duration": 1.3499999999999943,
+      "text": "when their business depends on it. Without a framework like Superpowers,"
+    },
+    {
+      "start": 232.03,
+      "duration": 0.009999999999990905,
+      "text": "Without a framework like Superpowers,"
+    },
+    {
+      "start": 232.04,
+      "duration": 1.3499999999999943,
+      "text": "Without a framework like Superpowers, Claude might write the whole automation"
+    },
+    {
+      "start": 233.39,
+      "duration": 0.010000000000019327,
+      "text": "Claude might write the whole automation"
+    },
+    {
+      "start": 233.4,
+      "duration": 1.6299999999999955,
+      "text": "Claude might write the whole automation in one shot and miss an edge case. But"
+    },
+    {
+      "start": 235.03,
+      "duration": 0.009999999999990905,
+      "text": "in one shot and miss an edge case. But"
+    },
+    {
+      "start": 235.04,
+      "duration": 1.4300000000000068,
+      "text": "in one shot and miss an edge case. But with Superpowers, Claude can plan it"
+    },
+    {
+      "start": 236.47,
+      "duration": 0.009999999999990905,
+      "text": "with Superpowers, Claude can plan it"
+    },
+    {
+      "start": 236.48,
+      "duration": 1.950000000000017,
+      "text": "with Superpowers, Claude can plan it out, it can write the tests, it can find"
+    },
+    {
+      "start": 238.43,
+      "duration": 0.009999999999990905,
+      "text": "out, it can write the tests, it can find"
+    },
+    {
+      "start": 238.44,
+      "duration": 1.4300000000000068,
+      "text": "out, it can write the tests, it can find edge case scenarios, and it can catch"
+    },
+    {
+      "start": 239.87,
+      "duration": 0.009999999999990905,
+      "text": "edge case scenarios, and it can catch"
+    },
+    {
+      "start": 239.88,
+      "duration": 1.8300000000000125,
+      "text": "edge case scenarios, and it can catch those gaps before ever reaches your"
+    },
+    {
+      "start": 241.71,
+      "duration": 0.009999999999990905,
+      "text": "those gaps before ever reaches your"
+    },
+    {
+      "start": 241.72,
+      "duration": 1.8700000000000045,
+      "text": "those gaps before ever reaches your client. Now, it's not realistic to say"
+    },
+    {
+      "start": 243.59,
+      "duration": 0.009999999999990905,
+      "text": "client. Now, it's not realistic to say"
+    },
+    {
+      "start": 243.6,
+      "duration": 1.1899999999999977,
+      "text": "client. Now, it's not realistic to say that it's still going to be able to"
+    },
+    {
+      "start": 244.79,
+      "duration": 0.010000000000019327,
+      "text": "that it's still going to be able to"
+    },
+    {
+      "start": 244.8,
+      "duration": 1.3899999999999864,
+      "text": "that it's still going to be able to one-shot everything. Ultimately, when"
+    },
+    {
+      "start": 246.19,
+      "duration": 0.009999999999990905,
+      "text": "one-shot everything. Ultimately, when"
+    },
+    {
+      "start": 246.2,
+      "duration": 1.1899999999999977,
+      "text": "one-shot everything. Ultimately, when you're building, a large part of your"
+    },
+    {
+      "start": 247.39,
+      "duration": 0.010000000000019327,
+      "text": "you're building, a large part of your"
+    },
+    {
+      "start": 247.4,
+      "duration": 2.069999999999993,
+      "text": "you're building, a large part of your job is QA, quality assurance. And on"
+    },
+    {
+      "start": 249.47,
+      "duration": 0.009999999999990905,
+      "text": "job is QA, quality assurance. And on"
+    },
+    {
+      "start": 249.48,
+      "duration": 1.1500000000000057,
+      "text": "job is QA, quality assurance. And on your first pass, if you can get"
+    },
+    {
+      "start": 250.63,
+      "duration": 0.009999999999990905,
+      "text": "your first pass, if you can get"
+    },
+    {
+      "start": 250.64,
+      "duration": 1.710000000000008,
+      "text": "your first pass, if you can get somewhere like 80% of the way there"
+    },
+    {
+      "start": 252.35,
+      "duration": 0.010000000000019327,
+      "text": "somewhere like 80% of the way there"
+    },
+    {
+      "start": 252.36,
+      "duration": 1.4699999999999989,
+      "text": "somewhere like 80% of the way there rather than just like 60% of the way"
+    },
+    {
+      "start": 253.83,
+      "duration": 0.009999999999990905,
+      "text": "rather than just like 60% of the way"
+    },
+    {
+      "start": 253.84,
+      "duration": 1.4699999999999989,
+      "text": "rather than just like 60% of the way there, that's a win. Fewer debugging"
+    },
+    {
+      "start": 255.31,
+      "duration": 0.009999999999990905,
+      "text": "there, that's a win. Fewer debugging"
+    },
+    {
+      "start": 255.32,
+      "duration": 1.7490000000000236,
+      "text": "there, that's a win. Fewer debugging cycles means less time spent fixing"
+    },
+    {
+      "start": 257.069,
+      "duration": 0.009999999999990905,
+      "text": "cycles means less time spent fixing"
+    },
+    {
+      "start": 257.079,
+      "duration": 2.269999999999982,
+      "text": "cycles means less time spent fixing things and lower token costs. This is"
+    },
+    {
+      "start": 259.349,
+      "duration": 0.009999999999990905,
+      "text": "things and lower token costs. This is"
+    },
+    {
+      "start": 259.359,
+      "duration": 1.7510000000000332,
+      "text": "things and lower token costs. This is also why Superpowers is one of the most"
+    },
+    {
+      "start": 261.11,
+      "duration": 0.009999999999990905,
+      "text": "also why Superpowers is one of the most"
+    },
+    {
+      "start": 261.12,
+      "duration": 1.589999999999975,
+      "text": "also why Superpowers is one of the most popular community skills out there with"
+    },
+    {
+      "start": 262.71,
+      "duration": 0.010000000000047748,
+      "text": "popular community skills out there with"
+    },
+    {
+      "start": 262.72,
+      "duration": 2.269999999999982,
+      "text": "popular community skills out there with over 150,000 stars on GitHub. So, to"
+    },
+    {
+      "start": 264.99,
+      "duration": 0.009999999999990905,
+      "text": "over 150,000 stars on GitHub. So, to"
+    },
+    {
+      "start": 265.0,
+      "duration": 1.509999999999991,
+      "text": "over 150,000 stars on GitHub. So, to install it, just run this command right"
+    },
+    {
+      "start": 266.51,
+      "duration": 0.009999999999990905,
+      "text": "install it, just run this command right"
+    },
+    {
+      "start": 266.52,
+      "duration": 0.9500000000000455,
+      "text": "install it, just run this command right up here. I'll put this in the"
+    },
+    {
+      "start": 267.47,
+      "duration": 0.009999999999990905,
+      "text": "up here. I'll put this in the"
+    },
+    {
+      "start": 267.48,
+      "duration": 1.4300000000000068,
+      "text": "up here. I'll put this in the description. And by the way, I also made"
+    },
+    {
+      "start": 268.91,
+      "duration": 0.009999999999990905,
+      "text": "description. And by the way, I also made"
+    },
+    {
+      "start": 268.92,
+      "duration": 1.829999999999984,
+      "text": "description. And by the way, I also made a full YouTube video breaking down this"
+    },
+    {
+      "start": 270.75,
+      "duration": 0.009999999999990905,
+      "text": "a full YouTube video breaking down this"
+    },
+    {
+      "start": 270.76,
+      "duration": 1.3899999999999864,
+      "text": "a full YouTube video breaking down this Superpower skill and talking about the"
+    },
+    {
+      "start": 272.15,
+      "duration": 0.009999999999990905,
+      "text": "Superpower skill and talking about the"
+    },
+    {
+      "start": 272.15999999999997,
+      "duration": 1.990000000000009,
+      "text": "Superpower skill and talking about the tokens that it actually spends. So, you"
+    },
+    {
+      "start": 274.15,
+      "duration": 0.009999999999990905,
+      "text": "tokens that it actually spends. So, you"
+    },
+    {
+      "start": 274.15999999999997,
+      "duration": 1.4300000000000637,
+      "text": "tokens that it actually spends. So, you can check that out right up here. All"
+    },
+    {
+      "start": 275.59000000000003,
+      "duration": 0.009999999999990905,
+      "text": "can check that out right up here. All"
+    },
+    {
+      "start": 275.6,
+      "duration": 2.069999999999993,
+      "text": "can check that out right up here. All right, skill number three is called GSD,"
+    },
+    {
+      "start": 277.67,
+      "duration": 0.009999999999990905,
+      "text": "right, skill number three is called GSD,"
+    },
+    {
+      "start": 277.68,
+      "duration": 1.670000000000016,
+      "text": "right, skill number three is called GSD, which stands for get done. And if"
+    },
+    {
+      "start": 279.35,
+      "duration": 0.009999999999990905,
+      "text": "which stands for get done. And if"
+    },
+    {
+      "start": 279.36,
+      "duration": 1.829999999999984,
+      "text": "which stands for get done. And if Superpowers is about how Claude writes"
+    },
+    {
+      "start": 281.19,
+      "duration": 0.009999999999990905,
+      "text": "Superpowers is about how Claude writes"
+    },
+    {
+      "start": 281.2,
+      "duration": 2.1100000000000136,
+      "text": "Superpowers is about how Claude writes code, then GSD is about the environment"
+    },
+    {
+      "start": 283.31,
+      "duration": 0.009999999999990905,
+      "text": "code, then GSD is about the environment"
+    },
+    {
+      "start": 283.32,
+      "duration": 1.509999999999991,
+      "text": "code, then GSD is about the environment that Claude actually writes that code"
+    },
+    {
+      "start": 284.83,
+      "duration": 0.010000000000047748,
+      "text": "that Claude actually writes that code"
+    },
+    {
+      "start": 284.84000000000003,
+      "duration": 1.6299999999999955,
+      "text": "that Claude actually writes that code in. Every ClaudeCode user eventually"
+    },
+    {
+      "start": 286.47,
+      "duration": 0.009999999999990905,
+      "text": "in. Every ClaudeCode user eventually"
+    },
+    {
+      "start": 286.48,
+      "duration": 1.2299999999999613,
+      "text": "in. Every ClaudeCode user eventually hits that wall, right? You start a"
+    },
+    {
+      "start": 287.71,
+      "duration": 0.010000000000047748,
+      "text": "hits that wall, right? You start a"
+    },
+    {
+      "start": 287.72,
+      "duration": 0.9899999999999523,
+      "text": "hits that wall, right? You start a session, things are going great,"
+    },
+    {
+      "start": 288.71,
+      "duration": 0.010000000000047748,
+      "text": "session, things are going great,"
+    },
+    {
+      "start": 288.72,
+      "duration": 1.1899999999999409,
+      "text": "session, things are going great, Claude's nailing everything, and"
+    },
+    {
+      "start": 289.90999999999997,
+      "duration": 0.010000000000047748,
+      "text": "Claude's nailing everything, and"
+    },
+    {
+      "start": 289.92,
+      "duration": 1.589999999999975,
+      "text": "Claude's nailing everything, and somewhere around halfway through your"
+    },
+    {
+      "start": 291.51,
+      "duration": 0.009999999999990905,
+      "text": "somewhere around halfway through your"
+    },
+    {
+      "start": 291.52,
+      "duration": 1.9500000000000455,
+      "text": "somewhere around halfway through your context window, it starts to fall apart."
+    },
+    {
+      "start": 293.47,
+      "duration": 0.009999999999990905,
+      "text": "context window, it starts to fall apart."
+    },
+    {
+      "start": 293.48,
+      "duration": 1.5499999999999545,
+      "text": "context window, it starts to fall apart. You know, code gets sloppy, Claude"
+    },
+    {
+      "start": 295.03,
+      "duration": 0.010000000000047748,
+      "text": "You know, code gets sloppy, Claude"
+    },
+    {
+      "start": 295.04,
+      "duration": 1.6679999999999495,
+      "text": "You know, code gets sloppy, Claude forgets requirements that you set at"
+    },
+    {
+      "start": 296.70799999999997,
+      "duration": 0.010000000000047748,
+      "text": "forgets requirements that you set at"
+    },
+    {
+      "start": 296.718,
+      "duration": 0.9519999999999982,
+      "text": "forgets requirements that you set at [music] the beginning of the session. It"
+    },
+    {
+      "start": 297.67,
+      "duration": 0.009999999999990905,
+      "text": "[music] the beginning of the session. It"
+    },
+    {
+      "start": 297.68,
+      "duration": 1.910000000000025,
+      "text": "[music] the beginning of the session. It starts skipping steps, and it actually"
+    },
+    {
+      "start": 299.59000000000003,
+      "duration": 0.009999999999990905,
+      "text": "starts skipping steps, and it actually"
+    },
+    {
+      "start": 299.6,
+      "duration": 1.2699999999999818,
+      "text": "starts skipping steps, and it actually cuts corners, and it might tell you"
+    },
+    {
+      "start": 300.87,
+      "duration": 0.009999999999990905,
+      "text": "cuts corners, and it might tell you"
+    },
+    {
+      "start": 300.88,
+      "duration": 1.3100000000000023,
+      "text": "cuts corners, and it might tell you things are done when they're not. And"
+    },
+    {
+      "start": 302.19,
+      "duration": 0.009999999999990905,
+      "text": "things are done when they're not. And"
+    },
+    {
+      "start": 302.2,
+      "duration": 1.5500000000000114,
+      "text": "things are done when they're not. And this is essentially called context rot."
+    },
+    {
+      "start": 303.75,
+      "duration": 0.009999999999990905,
+      "text": "this is essentially called context rot."
+    },
+    {
+      "start": 303.76,
+      "duration": 1.910000000000025,
+      "text": "this is essentially called context rot. Now, GSD fixes this with context"
+    },
+    {
+      "start": 305.67,
+      "duration": 0.009999999999990905,
+      "text": "Now, GSD fixes this with context"
+    },
+    {
+      "start": 305.68,
+      "duration": 1.990000000000009,
+      "text": "Now, GSD fixes this with context engineering. Instead of letting one big"
+    },
+    {
+      "start": 307.67,
+      "duration": 0.009999999999990905,
+      "text": "engineering. Instead of letting one big"
+    },
+    {
+      "start": 307.68,
+      "duration": 1.990000000000009,
+      "text": "engineering. Instead of letting one big session slowly degrade, it spawns fresh"
+    },
+    {
+      "start": 309.67,
+      "duration": 0.009999999999990905,
+      "text": "session slowly degrade, it spawns fresh"
+    },
+    {
+      "start": 309.68,
+      "duration": 1.990000000000009,
+      "text": "session slowly degrade, it spawns fresh sub-agents for each task, and each one"
+    },
+    {
+      "start": 311.67,
+      "duration": 0.009999999999990905,
+      "text": "sub-agents for each task, and each one"
+    },
+    {
+      "start": 311.68,
+      "duration": 1.7099999999999795,
+      "text": "sub-agents for each task, and each one has a clean context window focused on"
+    },
+    {
+      "start": 313.39,
+      "duration": 0.009999999999990905,
+      "text": "has a clean context window focused on"
+    },
+    {
+      "start": 313.4,
+      "duration": 1.3900000000000432,
+      "text": "has a clean context window focused on only what they need to know. So, your"
+    },
+    {
+      "start": 314.79,
+      "duration": 0.009999999999990905,
+      "text": "only what they need to know. So, your"
+    },
+    {
+      "start": 314.8,
+      "duration": 2.069999999999993,
+      "text": "only what they need to know. So, your main session stays clean, each task gets"
+    },
+    {
+      "start": 316.87,
+      "duration": 0.009999999999990905,
+      "text": "main session stays clean, each task gets"
+    },
+    {
+      "start": 316.88,
+      "duration": 1.5500000000000114,
+      "text": "main session stays clean, each task gets the full power of Claude's context"
+    },
+    {
+      "start": 318.43,
+      "duration": 0.009999999999990905,
+      "text": "the full power of Claude's context"
+    },
+    {
+      "start": 318.44,
+      "duration": 2.0300000000000296,
+      "text": "the full power of Claude's context window instead of just the leftovers. It"
+    },
+    {
+      "start": 320.47,
+      "duration": 0.009999999999990905,
+      "text": "window instead of just the leftovers. It"
+    },
+    {
+      "start": 320.48,
+      "duration": 1.4699999999999704,
+      "text": "window instead of just the leftovers. It also has built-in quality gates that"
+    },
+    {
+      "start": 321.95,
+      "duration": 0.009999999999990905,
+      "text": "also has built-in quality gates that"
+    },
+    {
+      "start": 321.96,
+      "duration": 1.910000000000025,
+      "text": "also has built-in quality gates that catch real problems during execution."
+    },
+    {
+      "start": 323.87,
+      "duration": 0.009999999999990905,
+      "text": "catch real problems during execution."
+    },
+    {
+      "start": 323.88,
+      "duration": 1.6299999999999955,
+      "text": "catch real problems during execution. Scope production detection catches the"
+    },
+    {
+      "start": 325.51,
+      "duration": 0.009999999999990905,
+      "text": "Scope production detection catches the"
+    },
+    {
+      "start": 325.52,
+      "duration": 1.4700000000000273,
+      "text": "Scope production detection catches the planner when it silently drops a"
+    },
+    {
+      "start": 326.99,
+      "duration": 0.009999999999990905,
+      "text": "planner when it silently drops a"
+    },
+    {
+      "start": 327.0,
+      "duration": 1.509999999999991,
+      "text": "planner when it silently drops a requirement that you asked for. Security"
+    },
+    {
+      "start": 328.51,
+      "duration": 0.009999999999990905,
+      "text": "requirement that you asked for. Security"
+    },
+    {
+      "start": 328.52,
+      "duration": 1.670000000000016,
+      "text": "requirement that you asked for. Security enforcement anchors verification to your"
+    },
+    {
+      "start": 330.19,
+      "duration": 0.009999999999990905,
+      "text": "enforcement anchors verification to your"
+    },
+    {
+      "start": 330.2,
+      "duration": 1.2300000000000182,
+      "text": "enforcement anchors verification to your threat model. These aren't things that"
+    },
+    {
+      "start": 331.43,
+      "duration": 0.009999999999990905,
+      "text": "threat model. These aren't things that"
+    },
+    {
+      "start": 331.44,
+      "duration": 1.3500000000000227,
+      "text": "threat model. These aren't things that you'd manually think to go check"
+    },
+    {
+      "start": 332.79,
+      "duration": 0.009999999999990905,
+      "text": "you'd manually think to go check"
+    },
+    {
+      "start": 332.8,
+      "duration": 1.4699999999999704,
+      "text": "you'd manually think to go check through, especially if you're not coming"
+    },
+    {
+      "start": 334.27,
+      "duration": 0.009999999999990905,
+      "text": "through, especially if you're not coming"
+    },
+    {
+      "start": 334.28,
+      "duration": 1.4300000000000068,
+      "text": "through, especially if you're not coming from a software engineering background,"
+    },
+    {
+      "start": 335.71,
+      "duration": 0.010000000000047748,
+      "text": "from a software engineering background,"
+    },
+    {
+      "start": 335.72,
+      "duration": 1.509999999999991,
+      "text": "from a software engineering background, which is exactly why having them"
+    },
+    {
+      "start": 337.23,
+      "duration": 0.009999999999990905,
+      "text": "which is exactly why having them"
+    },
+    {
+      "start": 337.24,
+      "duration": 1.75,
+      "text": "which is exactly why having them automated really matters. There's also"
+    },
+    {
+      "start": 338.99,
+      "duration": 0.009999999999990905,
+      "text": "automated really matters. There's also"
+    },
+    {
+      "start": 339.0,
+      "duration": 1.4700000000000273,
+      "text": "automated really matters. There's also an autonomous mode if you want to hand"
+    },
+    {
+      "start": 340.47,
+      "duration": 0.009999999999990905,
+      "text": "an autonomous mode if you want to hand"
+    },
+    {
+      "start": 340.48,
+      "duration": 1.4699999999999704,
+      "text": "an autonomous mode if you want to hand Claude a spec and just walk away. It'll"
+    },
+    {
+      "start": 341.95,
+      "duration": 0.009999999999990905,
+      "text": "Claude a spec and just walk away. It'll"
+    },
+    {
+      "start": 341.96,
+      "duration": 1.670000000000016,
+      "text": "Claude a spec and just walk away. It'll plan, execute, commit, and work through"
+    },
+    {
+      "start": 343.63,
+      "duration": 0.009999999999990905,
+      "text": "plan, execute, commit, and work through"
+    },
+    {
+      "start": 343.64,
+      "duration": 1.3899999999999864,
+      "text": "plan, execute, commit, and work through the whole project without you having to"
+    },
+    {
+      "start": 345.03,
+      "duration": 0.010000000000047748,
+      "text": "the whole project without you having to"
+    },
+    {
+      "start": 345.04,
+      "duration": 1.4699999999999704,
+      "text": "the whole project without you having to babysit it as much. Now, one thing I"
+    },
+    {
+      "start": 346.51,
+      "duration": 0.009999999999990905,
+      "text": "babysit it as much. Now, one thing I"
+    },
+    {
+      "start": 346.52,
+      "duration": 1.7900000000000205,
+      "text": "babysit it as much. Now, one thing I want to be up front about is that GSD"
+    },
+    {
+      "start": 348.31,
+      "duration": 0.009999999999990905,
+      "text": "want to be up front about is that GSD"
+    },
+    {
+      "start": 348.32,
+      "duration": 2.3500000000000227,
+      "text": "want to be up front about is that GSD isn't really a token saving plugin. All"
+    },
+    {
+      "start": 350.67,
+      "duration": 0.009999999999990905,
+      "text": "isn't really a token saving plugin. All"
+    },
+    {
+      "start": 350.68,
+      "duration": 2.069999999999993,
+      "text": "isn't really a token saving plugin. All of these sub-agents cost tokens, but"
+    },
+    {
+      "start": 352.75,
+      "duration": 0.009999999999990905,
+      "text": "of these sub-agents cost tokens, but"
+    },
+    {
+      "start": 352.76,
+      "duration": 1.670000000000016,
+      "text": "of these sub-agents cost tokens, but what it saves you is the hours you'd"
+    },
+    {
+      "start": 354.43,
+      "duration": 0.009999999999990905,
+      "text": "what it saves you is the hours you'd"
+    },
+    {
+      "start": 354.44,
+      "duration": 1.990000000000009,
+      "text": "what it saves you is the hours you'd otherwise spend redoing work that Claude"
+    },
+    {
+      "start": 356.43,
+      "duration": 0.009999999999990905,
+      "text": "otherwise spend redoing work that Claude"
+    },
+    {
+      "start": 356.44,
+      "duration": 1.3899999999999864,
+      "text": "otherwise spend redoing work that Claude broke because it forgot what you asked"
+    },
+    {
+      "start": 357.83,
+      "duration": 0.010000000000047748,
+      "text": "broke because it forgot what you asked"
+    },
+    {
+      "start": 357.84000000000003,
+      "duration": 1.509999999999991,
+      "text": "broke because it forgot what you asked in the first place. So, Superpowers"
+    },
+    {
+      "start": 359.35,
+      "duration": 0.009999999999990905,
+      "text": "in the first place. So, Superpowers"
+    },
+    {
+      "start": 359.36,
+      "duration": 1.5389999999999873,
+      "text": "in the first place. So, Superpowers gives Claude the process, plan,"
+    },
+    {
+      "start": 360.899,
+      "duration": 0.009999999999990905,
+      "text": "gives Claude the process, plan,"
+    },
+    {
+      "start": 360.909,
+      "duration": 0.16100000000000136,
+      "text": "gives Claude the process, plan, &gt;&gt; [music]"
+    },
+    {
+      "start": 361.07,
+      "duration": 0.009999999999990905,
+      "text": "&gt;&gt; [music]"
+    },
+    {
+      "start": 361.08,
+      "duration": 2.3100000000000023,
+      "text": "&gt;&gt; [music] &gt;&gt; test, review, repeat. GSD gives Claude"
+    },
+    {
+      "start": 363.39,
+      "duration": 0.009999999999990905,
+      "text": "&gt;&gt; test, review, repeat. GSD gives Claude"
+    },
+    {
+      "start": 363.4,
+      "duration": 1.6299999999999955,
+      "text": "&gt;&gt; test, review, repeat. GSD gives Claude the clean context so that processing"
+    },
+    {
+      "start": 365.03,
+      "duration": 0.010000000000047748,
+      "text": "the clean context so that processing"
+    },
+    {
+      "start": 365.04,
+      "duration": 1.4699999999999704,
+      "text": "the clean context so that processing actually works every time. So, to"
+    },
+    {
+      "start": 366.51,
+      "duration": 0.009999999999990905,
+      "text": "actually works every time. So, to"
+    },
+    {
+      "start": 366.52,
+      "duration": 1.7900000000000205,
+      "text": "actually works every time. So, to install this one, just run this command"
+    },
+    {
+      "start": 368.31,
+      "duration": 0.009999999999990905,
+      "text": "install this one, just run this command"
+    },
+    {
+      "start": 368.32,
+      "duration": 1.150000000000034,
+      "text": "install this one, just run this command in your terminal, and then you can also"
+    },
+    {
+      "start": 369.47,
+      "duration": 0.009999999999990905,
+      "text": "in your terminal, and then you can also"
+    },
+    {
+      "start": 369.48,
+      "duration": 1.9099999999999682,
+      "text": "in your terminal, and then you can also type /gsd-help"
+    },
+    {
+      "start": 371.39,
+      "duration": 0.009999999999990905,
+      "text": "type /gsd-help"
+    },
+    {
+      "start": 371.4,
+      "duration": 1.4700000000000273,
+      "text": "type /gsd-help inside of ClaudeCode to see what other"
+    },
+    {
+      "start": 372.87,
+      "duration": 0.009999999999990905,
+      "text": "inside of ClaudeCode to see what other"
+    },
+    {
+      "start": 372.88,
+      "duration": 1.4300000000000068,
+      "text": "inside of ClaudeCode to see what other commands are available within that"
+    },
+    {
+      "start": 374.31,
+      "duration": 0.009999999999990905,
+      "text": "commands are available within that"
+    },
+    {
+      "start": 374.32,
+      "duration": 1.829999999999984,
+      "text": "commands are available within that plugin. Okay, so the fourth one isn't"
+    },
+    {
+      "start": 376.15,
+      "duration": 0.010000000000047748,
+      "text": "plugin. Okay, so the fourth one isn't"
+    },
+    {
+      "start": 376.16,
+      "duration": 1.3899999999999864,
+      "text": "plugin. Okay, so the fourth one isn't actually a skill that you install, it's"
+    },
+    {
+      "start": 377.55,
+      "duration": 0.009999999999990905,
+      "text": "actually a skill that you install, it's"
+    },
+    {
+      "start": 377.56,
+      "duration": 1.589999999999975,
+      "text": "actually a skill that you install, it's already built into ClaudeCode, and most"
+    },
+    {
+      "start": 379.15,
+      "duration": 0.010000000000047748,
+      "text": "already built into ClaudeCode, and most"
+    },
+    {
+      "start": 379.16,
+      "duration": 1.42999999999995,
+      "text": "already built into ClaudeCode, and most people just aren't using it. It's the"
+    },
+    {
+      "start": 380.59,
+      "duration": 0.010000000000047748,
+      "text": "people just aren't using it. It's the"
+    },
+    {
+      "start": 380.6,
+      "duration": 1.8700000000000045,
+      "text": "people just aren't using it. It's the /review command and its more powerful"
+    },
+    {
+      "start": 382.47,
+      "duration": 0.009999999999990905,
+      "text": "/review command and its more powerful"
+    },
+    {
+      "start": 382.48,
+      "duration": 1.9099999999999682,
+      "text": "/review command and its more powerful cousin /ultra review. So, when you"
+    },
+    {
+      "start": 384.39,
+      "duration": 0.009999999999990905,
+      "text": "cousin /ultra review. So, when you"
+    },
+    {
+      "start": 384.4,
+      "duration": 1.3100000000000023,
+      "text": "cousin /ultra review. So, when you finish writing code and you type"
+    },
+    {
+      "start": 385.71,
+      "duration": 0.010000000000047748,
+      "text": "finish writing code and you type"
+    },
+    {
+      "start": 385.72,
+      "duration": 1.9499999999999886,
+      "text": "finish writing code and you type /review, Claude does a structured code"
+    },
+    {
+      "start": 387.67,
+      "duration": 0.009999999999990905,
+      "text": "/review, Claude does a structured code"
+    },
+    {
+      "start": 387.68,
+      "duration": 1.670000000000016,
+      "text": "/review, Claude does a structured code review on what you just built. It looks"
+    },
+    {
+      "start": 389.35,
+      "duration": 0.009999999999990905,
+      "text": "review on what you just built. It looks"
+    },
+    {
+      "start": 389.36,
+      "duration": 2.1899999999999977,
+      "text": "review on what you just built. It looks for bugs, edge cases, and design issues,"
+    },
+    {
+      "start": 391.55,
+      "duration": 0.009999999999990905,
+      "text": "for bugs, edge cases, and design issues,"
+    },
+    {
+      "start": 391.56,
+      "duration": 1.8700000000000045,
+      "text": "for bugs, edge cases, and design issues, all of the stuff that a careful reviewer"
+    },
+    {
+      "start": 393.43,
+      "duration": 0.009999999999990905,
+      "text": "all of the stuff that a careful reviewer"
+    },
+    {
+      "start": 393.44,
+      "duration": 1.589999999999975,
+      "text": "all of the stuff that a careful reviewer would be flagging. It runs locally, it's"
+    },
+    {
+      "start": 395.03,
+      "duration": 0.010000000000047748,
+      "text": "would be flagging. It runs locally, it's"
+    },
+    {
+      "start": 395.04,
+      "duration": 1.9099999999999682,
+      "text": "would be flagging. It runs locally, it's fast, it costs you nothing beyond your"
+    },
+    {
+      "start": 396.95,
+      "duration": 0.009999999999990905,
+      "text": "fast, it costs you nothing beyond your"
+    },
+    {
+      "start": 396.96,
+      "duration": 2.2700000000000387,
+      "text": "fast, it costs you nothing beyond your usual usage tokens. And then we have"
+    },
+    {
+      "start": 399.23,
+      "duration": 0.009999999999990905,
+      "text": "usual usage tokens. And then we have"
+    },
+    {
+      "start": 399.24,
+      "duration": 2.0299999999999727,
+      "text": "usual usage tokens. And then we have /ultra review, which launched alongside"
+    },
+    {
+      "start": 401.27,
+      "duration": 0.009999999999990905,
+      "text": "/ultra review, which launched alongside"
+    },
+    {
+      "start": 401.28,
+      "duration": 2.07000000000005,
+      "text": "/ultra review, which launched alongside Opus 4.7. Now, this one, instead of"
+    },
+    {
+      "start": 403.35,
+      "duration": 0.009999999999990905,
+      "text": "Opus 4.7. Now, this one, instead of"
+    },
+    {
+      "start": 403.36,
+      "duration": 1.829999999999984,
+      "text": "Opus 4.7. Now, this one, instead of running locally, it uploads your branch"
+    },
+    {
+      "start": 405.19,
+      "duration": 0.009999999999990905,
+      "text": "running locally, it uploads your branch"
+    },
+    {
+      "start": 405.2,
+      "duration": 1.9499999999999886,
+      "text": "running locally, it uploads your branch to a cloud sandbox and spins up a fleet"
+    },
+    {
+      "start": 407.15,
+      "duration": 0.009999999999990905,
+      "text": "to a cloud sandbox and spins up a fleet"
+    },
+    {
+      "start": 407.15999999999997,
+      "duration": 1.7900000000000205,
+      "text": "to a cloud sandbox and spins up a fleet of reviewer agents in parallel. Each"
+    },
+    {
+      "start": 408.95,
+      "duration": 0.009999999999990905,
+      "text": "of reviewer agents in parallel. Each"
+    },
+    {
+      "start": 408.96,
+      "duration": 1.5100000000000477,
+      "text": "of reviewer agents in parallel. Each agent will attack your code base from a"
+    },
+    {
+      "start": 410.47,
+      "duration": 0.009999999999990905,
+      "text": "agent will attack your code base from a"
+    },
+    {
+      "start": 410.48,
+      "duration": 1.75,
+      "text": "agent will attack your code base from a different angle, logic, security,"
+    },
+    {
+      "start": 412.23,
+      "duration": 0.009999999999990905,
+      "text": "different angle, logic, security,"
+    },
+    {
+      "start": 412.24,
+      "duration": 1.6299999999999955,
+      "text": "different angle, logic, security, performance, edge cases. And here's the"
+    },
+    {
+      "start": 413.87,
+      "duration": 0.009999999999990905,
+      "text": "performance, edge cases. And here's the"
+    },
+    {
+      "start": 413.88,
+      "duration": 1.670000000000016,
+      "text": "performance, edge cases. And here's the part that's really cool, before any bug"
+    },
+    {
+      "start": 415.55,
+      "duration": 0.009999999999990905,
+      "text": "part that's really cool, before any bug"
+    },
+    {
+      "start": 415.56,
+      "duration": 1.75,
+      "text": "part that's really cool, before any bug shows up on your list, it has to be"
+    },
+    {
+      "start": 417.31,
+      "duration": 0.009999999999990905,
+      "text": "shows up on your list, it has to be"
+    },
+    {
+      "start": 417.32,
+      "duration": 1.8700000000000045,
+      "text": "shows up on your list, it has to be independently reproduced and verified."
+    },
+    {
+      "start": 419.19,
+      "duration": 0.009999999999990905,
+      "text": "independently reproduced and verified."
+    },
+    {
+      "start": 419.2,
+      "duration": 1.670000000000016,
+      "text": "independently reproduced and verified. So, you're not going to get a pile of"
+    },
+    {
+      "start": 420.87,
+      "duration": 0.009999999999990905,
+      "text": "So, you're not going to get a pile of"
+    },
+    {
+      "start": 420.88,
+      "duration": 1.670000000000016,
+      "text": "So, you're not going to get a pile of style nitpicks or false positives,"
+    },
+    {
+      "start": 422.55,
+      "duration": 0.009999999999990905,
+      "text": "style nitpicks or false positives,"
+    },
+    {
+      "start": 422.56,
+      "duration": 1.1899999999999977,
+      "text": "style nitpicks or false positives, you're going to be getting confirmed"
+    },
+    {
+      "start": 423.75,
+      "duration": 0.009999999999990905,
+      "text": "you're going to be getting confirmed"
+    },
+    {
+      "start": 423.76,
+      "duration": 1.7100000000000364,
+      "text": "you're going to be getting confirmed bugs. Practically, I mean, this fits at"
+    },
+    {
+      "start": 425.47,
+      "duration": 0.009999999999990905,
+      "text": "bugs. Practically, I mean, this fits at"
+    },
+    {
+      "start": 425.48,
+      "duration": 2.109999999999957,
+      "text": "bugs. Practically, I mean, this fits at the end of any ClaudeCode workflow. You"
+    },
+    {
+      "start": 427.59,
+      "duration": 0.010000000000047748,
+      "text": "the end of any ClaudeCode workflow. You"
+    },
+    {
+      "start": 427.6,
+      "duration": 1.509999999999991,
+      "text": "the end of any ClaudeCode workflow. You plan with Superpowers, you execute with"
+    },
+    {
+      "start": 429.11,
+      "duration": 0.009999999999990905,
+      "text": "plan with Superpowers, you execute with"
+    },
+    {
+      "start": 429.12,
+      "duration": 1.9099999999999682,
+      "text": "plan with Superpowers, you execute with clean context using GSD, and then before"
+    },
+    {
+      "start": 431.03,
+      "duration": 0.010000000000047748,
+      "text": "clean context using GSD, and then before"
+    },
+    {
+      "start": 431.04,
+      "duration": 1.3899999999999864,
+      "text": "clean context using GSD, and then before you merge anything important, you run"
+    },
+    {
+      "start": 432.43,
+      "duration": 0.009999999999990905,
+      "text": "you merge anything important, you run"
+    },
+    {
+      "start": 432.44,
+      "duration": 1.670000000000016,
+      "text": "you merge anything important, you run /ultra review to catch the bugs that"
+    },
+    {
+      "start": 434.11,
+      "duration": 0.009999999999990905,
+      "text": "/ultra review to catch the bugs that"
+    },
+    {
+      "start": 434.12,
+      "duration": 1.829999999999984,
+      "text": "/ultra review to catch the bugs that Claude missed on its own. A few things"
+    },
+    {
+      "start": 435.95,
+      "duration": 0.009999999999990905,
+      "text": "Claude missed on its own. A few things"
+    },
+    {
+      "start": 435.96,
+      "duration": 1.75,
+      "text": "Claude missed on its own. A few things to know before you run it, you need"
+    },
+    {
+      "start": 437.71,
+      "duration": 0.010000000000047748,
+      "text": "to know before you run it, you need"
+    },
+    {
+      "start": 437.72,
+      "duration": 2.42999999999995,
+      "text": "to know before you run it, you need ClaudeCode version 2.1.86"
+    },
+    {
+      "start": 440.15,
+      "duration": 0.010000000000047748,
+      "text": "ClaudeCode version 2.1.86"
+    },
+    {
+      "start": 440.16,
+      "duration": 1.4699999999999704,
+      "text": "ClaudeCode version 2.1.86 or later, you need to be signed in with"
+    },
+    {
+      "start": 441.63,
+      "duration": 0.009999999999990905,
+      "text": "or later, you need to be signed in with"
+    },
+    {
+      "start": 441.64,
+      "duration": 2.2700000000000387,
+      "text": "or later, you need to be signed in with a Claude account, an API key alone won't"
+    },
+    {
+      "start": 443.91,
+      "duration": 0.009999999999990905,
+      "text": "a Claude account, an API key alone won't"
+    },
+    {
+      "start": 443.92,
+      "duration": 1.509999999999991,
+      "text": "a Claude account, an API key alone won't work. And when you run the /ultra"
+    },
+    {
+      "start": 445.43,
+      "duration": 0.009999999999990905,
+      "text": "work. And when you run the /ultra"
+    },
+    {
+      "start": 445.44,
+      "duration": 1.3899999999999864,
+      "text": "work. And when you run the /ultra review, it could take, you know, 10 to"
+    },
+    {
+      "start": 446.83,
+      "duration": 0.009999999999990905,
+      "text": "review, it could take, you know, 10 to"
+    },
+    {
+      "start": 446.84,
+      "duration": 1.1899999999999977,
+      "text": "review, it could take, you know, 10 to 20 minutes, but it runs in the"
+    },
+    {
+      "start": 448.03,
+      "duration": 0.010000000000047748,
+      "text": "20 minutes, but it runs in the"
+    },
+    {
+      "start": 448.04,
+      "duration": 1.4699999999999704,
+      "text": "20 minutes, but it runs in the background so that you can keep working."
+    },
+    {
+      "start": 449.51,
+      "duration": 0.009999999999990905,
+      "text": "background so that you can keep working."
+    },
+    {
+      "start": 449.52,
+      "duration": 1.6299999999999955,
+      "text": "background so that you can keep working. You'll want to use /review for fast"
+    },
+    {
+      "start": 451.15,
+      "duration": 0.010000000000047748,
+      "text": "You'll want to use /review for fast"
+    },
+    {
+      "start": 451.16,
+      "duration": 1.6299999999999955,
+      "text": "You'll want to use /review for fast feedback on everything, and you can use"
+    },
+    {
+      "start": 452.79,
+      "duration": 0.009999999999990905,
+      "text": "feedback on everything, and you can use"
+    },
+    {
+      "start": 452.8,
+      "duration": 1.829999999999984,
+      "text": "feedback on everything, and you can use /ultra review when you're about to merge"
+    },
+    {
+      "start": 454.63,
+      "duration": 0.009999999999990905,
+      "text": "/ultra review when you're about to merge"
+    },
+    {
+      "start": 454.64,
+      "duration": 1.150000000000034,
+      "text": "/ultra review when you're about to merge something that actually matters, like a"
+    },
+    {
+      "start": 455.79,
+      "duration": 0.009999999999990905,
+      "text": "something that actually matters, like a"
+    },
+    {
+      "start": 455.8,
+      "duration": 1.589999999999975,
+      "text": "something that actually matters, like a big refactor or anything touching"
+    },
+    {
+      "start": 457.39,
+      "duration": 0.009999999999990905,
+      "text": "big refactor or anything touching"
+    },
+    {
+      "start": 457.4,
+      "duration": 1.6299999999999955,
+      "text": "big refactor or anything touching payments or auth or a database"
+    },
+    {
+      "start": 459.03,
+      "duration": 0.010000000000047748,
+      "text": "payments or auth or a database"
+    },
+    {
+      "start": 459.04,
+      "duration": 1.3100000000000023,
+      "text": "payments or auth or a database migration. The kind of commit where a"
+    },
+    {
+      "start": 460.35,
+      "duration": 0.009999999999990905,
+      "text": "migration. The kind of commit where a"
+    },
+    {
+      "start": 460.36,
+      "duration": 1.829999999999984,
+      "text": "migration. The kind of commit where a production bug costs way more than the"
+    },
+    {
+      "start": 462.19,
+      "duration": 0.009999999999990905,
+      "text": "production bug costs way more than the"
+    },
+    {
+      "start": 462.2,
+      "duration": 1.670000000000016,
+      "text": "production bug costs way more than the time and the tokens that ultra review"
+    },
+    {
+      "start": 463.87,
+      "duration": 0.009999999999990905,
+      "text": "time and the tokens that ultra review"
+    },
+    {
+      "start": 463.88,
+      "duration": 1.5500000000000114,
+      "text": "time and the tokens that ultra review may cost you. And also, quick heads-up,"
+    },
+    {
+      "start": 465.43,
+      "duration": 0.009999999999990905,
+      "text": "may cost you. And also, quick heads-up,"
+    },
+    {
+      "start": 465.44,
+      "duration": 1.670000000000016,
+      "text": "may cost you. And also, quick heads-up, ultra review isn't free. Pro and max"
+    },
+    {
+      "start": 467.11,
+      "duration": 0.009999999999990905,
+      "text": "ultra review isn't free. Pro and max"
+    },
+    {
+      "start": 467.12,
+      "duration": 1.9499999999999886,
+      "text": "ultra review isn't free. Pro and max plans get three free runs to try, it"
+    },
+    {
+      "start": 469.07,
+      "duration": 0.009999999999990905,
+      "text": "plans get three free runs to try, it"
+    },
+    {
+      "start": 469.08,
+      "duration": 0.910000000000025,
+      "text": "plans get three free runs to try, it might have changed by the time you're"
+    },
+    {
+      "start": 469.99,
+      "duration": 0.009999999999990905,
+      "text": "might have changed by the time you're"
+    },
+    {
+      "start": 470.0,
+      "duration": 1.2699999999999818,
+      "text": "might have changed by the time you're watching this, but after that, it might"
+    },
+    {
+      "start": 471.27,
+      "duration": 0.009999999999990905,
+      "text": "watching this, but after that, it might"
+    },
+    {
+      "start": 471.28,
+      "duration": 2.4700000000000273,
+      "text": "watching this, but after that, it might cost five to 20 bucks per run depending"
+    },
+    {
+      "start": 473.75,
+      "duration": 0.009999999999990905,
+      "text": "cost five to 20 bucks per run depending"
+    },
+    {
+      "start": 473.76,
+      "duration": 1.8700000000000045,
+      "text": "cost five to 20 bucks per run depending on size. Once again, you don't need to"
+    },
+    {
+      "start": 475.63,
+      "duration": 0.009999999999990905,
+      "text": "on size. Once again, you don't need to"
+    },
+    {
+      "start": 475.64,
+      "duration": 1.830000000000041,
+      "text": "on size. Once again, you don't need to go install this if you're on ClaudeCode"
+    },
+    {
+      "start": 477.47,
+      "duration": 0.009999999999990905,
+      "text": "go install this if you're on ClaudeCode"
+    },
+    {
+      "start": 477.48,
+      "duration": 2.990000000000009,
+      "text": "go install this if you're on ClaudeCode 2.1.86 or later, just type /review or"
+    },
+    {
+      "start": 480.47,
+      "duration": 0.009999999999990905,
+      "text": "2.1.86 or later, just type /review or"
+    },
+    {
+      "start": 480.48,
+      "duration": 1.9099999999999682,
+      "text": "2.1.86 or later, just type /review or /ultra review in your terminal, and it"
+    },
+    {
+      "start": 482.39,
+      "duration": 0.009999999999990905,
+      "text": "/ultra review in your terminal, and it"
+    },
+    {
+      "start": 482.4,
+      "duration": 1.0300000000000296,
+      "text": "/ultra review in your terminal, and it should work. All right, this fifth"
+    },
+    {
+      "start": 483.43,
+      "duration": 0.009999999999990905,
+      "text": "should work. All right, this fifth"
+    },
+    {
+      "start": 483.44,
+      "duration": 2.0300000000000296,
+      "text": "should work. All right, this fifth plugin is context mode. So, here is the"
+    },
+    {
+      "start": 485.47,
+      "duration": 0.009999999999990905,
+      "text": "plugin is context mode. So, here is the"
+    },
+    {
+      "start": 485.48,
+      "duration": 1.5499999999999545,
+      "text": "plugin is context mode. So, here is the problem. Every tool call that you make,"
+    },
+    {
+      "start": 487.03,
+      "duration": 0.010000000000047748,
+      "text": "problem. Every tool call that you make,"
+    },
+    {
+      "start": 487.04,
+      "duration": 2.109999999999957,
+      "text": "problem. Every tool call that you make, Claude dumps raw data into your context"
+    },
+    {
+      "start": 489.15,
+      "duration": 0.010000000000047748,
+      "text": "Claude dumps raw data into your context"
+    },
+    {
+      "start": 489.16,
+      "duration": 1.6299999999999955,
+      "text": "Claude dumps raw data into your context window. So, a Playwright snapshot might"
+    },
+    {
+      "start": 490.79,
+      "duration": 0.009999999999990905,
+      "text": "window. So, a Playwright snapshot might"
+    },
+    {
+      "start": 490.8,
+      "duration": 2.349999999999966,
+      "text": "window. So, a Playwright snapshot might be 56 kilobytes, 20 GitHub issues might"
+    },
+    {
+      "start": 493.15,
+      "duration": 0.010000000000047748,
+      "text": "be 56 kilobytes, 20 GitHub issues might"
+    },
+    {
+      "start": 493.16,
+      "duration": 1.9499999999999886,
+      "text": "be 56 kilobytes, 20 GitHub issues might be 59 kilobytes. And after about 30"
+    },
+    {
+      "start": 495.11,
+      "duration": 0.009999999999990905,
+      "text": "be 59 kilobytes. And after about 30"
+    },
+    {
+      "start": 495.12,
+      "duration": 1.5500000000000114,
+      "text": "be 59 kilobytes. And after about 30 minutes of real work, 40% of your"
+    },
+    {
+      "start": 496.67,
+      "duration": 0.009999999999990905,
+      "text": "minutes of real work, 40% of your"
+    },
+    {
+      "start": 496.68,
+      "duration": 1.829999999999984,
+      "text": "minutes of real work, 40% of your context window is just garbage, log"
+    },
+    {
+      "start": 498.51,
+      "duration": 0.009999999999990905,
+      "text": "context window is just garbage, log"
+    },
+    {
+      "start": 498.52,
+      "duration": 1.7900000000000205,
+      "text": "context window is just garbage, log output, raw data, you know, stuff that"
+    },
+    {
+      "start": 500.31,
+      "duration": 0.009999999999990905,
+      "text": "output, raw data, you know, stuff that"
+    },
+    {
+      "start": 500.32,
+      "duration": 1.9499999999999886,
+      "text": "output, raw data, you know, stuff that you never actually need Claude to look"
+    },
+    {
+      "start": 502.27,
+      "duration": 0.009999999999990905,
+      "text": "you never actually need Claude to look"
+    },
+    {
+      "start": 502.28,
+      "duration": 1.7900000000000205,
+      "text": "you never actually need Claude to look at. And when Claude runs out of space"
+    },
+    {
+      "start": 504.07,
+      "duration": 0.009999999999990905,
+      "text": "at. And when Claude runs out of space"
+    },
+    {
+      "start": 504.08,
+      "duration": 1.4300000000000068,
+      "text": "at. And when Claude runs out of space and compacts the conversation, it"
+    },
+    {
+      "start": 505.51,
+      "duration": 0.009999999999990905,
+      "text": "and compacts the conversation, it"
+    },
+    {
+      "start": 505.52,
+      "duration": 1.670000000000016,
+      "text": "and compacts the conversation, it forgets what files it was editing, what"
+    },
+    {
+      "start": 507.19,
+      "duration": 0.009999999999990905,
+      "text": "forgets what files it was editing, what"
+    },
+    {
+      "start": 507.2,
+      "duration": 1.509999999999991,
+      "text": "forgets what files it was editing, what tasks were in progress, and what you"
+    },
+    {
+      "start": 508.71,
+      "duration": 0.010000000000047748,
+      "text": "tasks were in progress, and what you"
+    },
+    {
+      "start": 508.72,
+      "duration": 1.9899999999999523,
+      "text": "tasks were in progress, and what you last asked it to do. So, Context Mode's"
+    },
+    {
+      "start": 510.71,
+      "duration": 0.010000000000047748,
+      "text": "last asked it to do. So, Context Mode's"
+    },
+    {
+      "start": 510.72,
+      "duration": 2.1889999999999645,
+      "text": "last asked it to do. So, Context Mode's job is to fix both halves of these"
+    },
+    {
+      "start": 512.909,
+      "duration": 0.009999999999990905,
+      "text": "job is to fix both halves of these"
+    },
+    {
+      "start": 512.919,
+      "duration": 2.0310000000000628,
+      "text": "job is to fix both halves of these problems. First, it keeps the garbage"
+    },
+    {
+      "start": 514.95,
+      "duration": 0.009999999999990905,
+      "text": "problems. First, it keeps the garbage"
+    },
+    {
+      "start": 514.96,
+      "duration": 1.42999999999995,
+      "text": "problems. First, it keeps the garbage out. When Claude runs a command or"
+    },
+    {
+      "start": 516.39,
+      "duration": 0.009999999999990905,
+      "text": "out. When Claude runs a command or"
+    },
+    {
+      "start": 516.4,
+      "duration": 1.9099999999999682,
+      "text": "out. When Claude runs a command or fetches a URL, Context Mode routes that"
+    },
+    {
+      "start": 518.31,
+      "duration": 0.010000000000104592,
+      "text": "fetches a URL, Context Mode routes that"
+    },
+    {
+      "start": 518.32,
+      "duration": 1.509999999999991,
+      "text": "fetches a URL, Context Mode routes that call through a sandbox. So, your code"
+    },
+    {
+      "start": 519.83,
+      "duration": 0.009999999999990905,
+      "text": "call through a sandbox. So, your code"
+    },
+    {
+      "start": 519.84,
+      "duration": 2.1499999999999773,
+      "text": "call through a sandbox. So, your code runs in an isolated sub-process, the raw"
+    },
+    {
+      "start": 521.99,
+      "duration": 0.009999999999990905,
+      "text": "runs in an isolated sub-process, the raw"
+    },
+    {
+      "start": 522.0,
+      "duration": 1.5499999999999545,
+      "text": "runs in an isolated sub-process, the raw output gets captured, and only the part"
+    },
+    {
+      "start": 523.55,
+      "duration": 0.009999999999990905,
+      "text": "output gets captured, and only the part"
+    },
+    {
+      "start": 523.56,
+      "duration": 1.5500000000000682,
+      "text": "output gets captured, and only the part that Claude actually needs comes back"
+    },
+    {
+      "start": 525.11,
+      "duration": 0.009999999999990905,
+      "text": "that Claude actually needs comes back"
+    },
+    {
+      "start": 525.12,
+      "duration": 1.42999999999995,
+      "text": "that Claude actually needs comes back into the context window. Now, according"
+    },
+    {
+      "start": 526.55,
+      "duration": 0.009999999999990905,
+      "text": "into the context window. Now, according"
+    },
+    {
+      "start": 526.56,
+      "duration": 2.3900000000001,
+      "text": "into the context window. Now, according to their own benchmarks, a 56 kilobyte"
+    },
+    {
+      "start": 528.95,
+      "duration": 0.009999999999990905,
+      "text": "to their own benchmarks, a 56 kilobyte"
+    },
+    {
+      "start": 528.96,
+      "duration": 2.269999999999982,
+      "text": "to their own benchmarks, a 56 kilobyte Playwright snapshot becomes 299 bytes, a"
+    },
+    {
+      "start": 531.23,
+      "duration": 0.009999999999990905,
+      "text": "Playwright snapshot becomes 299 bytes, a"
+    },
+    {
+      "start": 531.24,
+      "duration": 2.7100000000000364,
+      "text": "Playwright snapshot becomes 299 bytes, a 46 kilobyte access log becomes 155"
+    },
+    {
+      "start": 533.95,
+      "duration": 0.009999999999990905,
+      "text": "46 kilobyte access log becomes 155"
+    },
+    {
+      "start": 533.96,
+      "duration": 2.189999999999941,
+      "text": "46 kilobyte access log becomes 155 bytes. So, over a full session, 315"
+    },
+    {
+      "start": 536.15,
+      "duration": 0.009999999999990905,
+      "text": "bytes. So, over a full session, 315"
+    },
+    {
+      "start": 536.16,
+      "duration": 2.0300000000000864,
+      "text": "bytes. So, over a full session, 315 kilobytes of raw output becomes 5"
+    },
+    {
+      "start": 538.19,
+      "duration": 0.009999999999990905,
+      "text": "kilobytes of raw output becomes 5"
+    },
+    {
+      "start": 538.2,
+      "duration": 1.3899999999999864,
+      "text": "kilobytes of raw output becomes 5 kilobytes total. That's obviously from"
+    },
+    {
+      "start": 539.59,
+      "duration": 0.009999999999990905,
+      "text": "kilobytes total. That's obviously from"
+    },
+    {
+      "start": 539.6,
+      "duration": 1.4700000000000273,
+      "text": "kilobytes total. That's obviously from their published benchmarks, and you can"
+    },
+    {
+      "start": 541.07,
+      "duration": 0.009999999999990905,
+      "text": "their published benchmarks, and you can"
+    },
+    {
+      "start": 541.08,
+      "duration": 1.1499999999999773,
+      "text": "their published benchmarks, and you can see your own numbers by running"
+    },
+    {
+      "start": 542.23,
+      "duration": 0.009999999999990905,
+      "text": "see your own numbers by running"
+    },
+    {
+      "start": 542.24,
+      "duration": 2.75,
+      "text": "see your own numbers by running /contextmode:ctx-stats"
+    },
+    {
+      "start": 544.99,
+      "duration": 0.009999999999990905,
+      "text": "/contextmode:ctx-stats"
+    },
+    {
+      "start": 545.0,
+      "duration": 1.75,
+      "text": "/contextmode:ctx-stats at any point. Now, second, and this is"
+    },
+    {
+      "start": 546.75,
+      "duration": 0.009999999999990905,
+      "text": "at any point. Now, second, and this is"
+    },
+    {
+      "start": 546.76,
+      "duration": 1.0299999999999727,
+      "text": "at any point. Now, second, and this is the part that I didn't even know I"
+    },
+    {
+      "start": 547.79,
+      "duration": 0.009999999999990905,
+      "text": "the part that I didn't even know I"
+    },
+    {
+      "start": 547.8,
+      "duration": 1.75,
+      "text": "the part that I didn't even know I needed until I had it, Context Mode"
+    },
+    {
+      "start": 549.55,
+      "duration": 0.009999999999990905,
+      "text": "needed until I had it, Context Mode"
+    },
+    {
+      "start": 549.56,
+      "duration": 1.6300000000001091,
+      "text": "needed until I had it, Context Mode tracks every meaningful event in your"
+    },
+    {
+      "start": 551.19,
+      "duration": 0.009999999999990905,
+      "text": "tracks every meaningful event in your"
+    },
+    {
+      "start": 551.2,
+      "duration": 2.42999999999995,
+      "text": "tracks every meaningful event in your session in a local SQL database. Every"
+    },
+    {
+      "start": 553.63,
+      "duration": 0.009999999999990905,
+      "text": "session in a local SQL database. Every"
+    },
+    {
+      "start": 553.64,
+      "duration": 1.830000000000041,
+      "text": "session in a local SQL database. Every file you edit, every task you create,"
+    },
+    {
+      "start": 555.47,
+      "duration": 0.009999999999990905,
+      "text": "file you edit, every task you create,"
+    },
+    {
+      "start": 555.48,
+      "duration": 1.7100000000000364,
+      "text": "file you edit, every task you create, every decision you make, every error"
+    },
+    {
+      "start": 557.19,
+      "duration": 0.009999999999990905,
+      "text": "every decision you make, every error"
+    },
+    {
+      "start": 557.2,
+      "duration": 1.5899999999999181,
+      "text": "every decision you make, every error that comes up. When Claude compacts the"
+    },
+    {
+      "start": 558.79,
+      "duration": 0.009999999999990905,
+      "text": "that comes up. When Claude compacts the"
+    },
+    {
+      "start": 558.8,
+      "duration": 1.509999999999991,
+      "text": "that comes up. When Claude compacts the conversation, it doesn't lose any of"
+    },
+    {
+      "start": 560.31,
+      "duration": 0.010000000000104592,
+      "text": "conversation, it doesn't lose any of"
+    },
+    {
+      "start": 560.32,
+      "duration": 1.509999999999991,
+      "text": "conversation, it doesn't lose any of that. Context Mode rebuilds a session"
+    },
+    {
+      "start": 561.83,
+      "duration": 0.009999999999990905,
+      "text": "that. Context Mode rebuilds a session"
+    },
+    {
+      "start": 561.84,
+      "duration": 1.75,
+      "text": "that. Context Mode rebuilds a session snapshot and injects it back in. So, the"
+    },
+    {
+      "start": 563.59,
+      "duration": 0.009999999999990905,
+      "text": "snapshot and injects it back in. So, the"
+    },
+    {
+      "start": 563.6,
+      "duration": 1.6299999999999955,
+      "text": "snapshot and injects it back in. So, the model picks up exactly where you left"
+    },
+    {
+      "start": 565.23,
+      "duration": 0.009999999999990905,
+      "text": "model picks up exactly where you left"
+    },
+    {
+      "start": 565.24,
+      "duration": 1.830000000000041,
+      "text": "model picks up exactly where you left off with your files, your tasks, and"
+    },
+    {
+      "start": 567.07,
+      "duration": 0.009999999999990905,
+      "text": "off with your files, your tasks, and"
+    },
+    {
+      "start": 567.08,
+      "duration": 1.5899999999999181,
+      "text": "off with your files, your tasks, and your last prompt [music] intact."
+    },
+    {
+      "start": 568.67,
+      "duration": 0.009999999999990905,
+      "text": "your last prompt [music] intact."
+    },
+    {
+      "start": 568.68,
+      "duration": 1.2700000000000955,
+      "text": "your last prompt [music] intact. Practically, what does this mean for"
+    },
+    {
+      "start": 569.95,
+      "duration": 0.009999999999990905,
+      "text": "Practically, what does this mean for"
+    },
+    {
+      "start": 569.96,
+      "duration": 1.5499999999999545,
+      "text": "Practically, what does this mean for your ClaudeCode projects? Sessions that"
+    },
+    {
+      "start": 571.51,
+      "duration": 0.009999999999990905,
+      "text": "your ClaudeCode projects? Sessions that"
+    },
+    {
+      "start": 571.52,
+      "duration": 1.3500000000000227,
+      "text": "your ClaudeCode projects? Sessions that used to fall apart around the 30-minute"
+    },
+    {
+      "start": 572.87,
+      "duration": 0.009999999999990905,
+      "text": "used to fall apart around the 30-minute"
+    },
+    {
+      "start": 572.88,
+      "duration": 1.990000000000009,
+      "text": "used to fall apart around the 30-minute mark now run for 3 hours because you"
+    },
+    {
+      "start": 574.87,
+      "duration": 0.009999999999990905,
+      "text": "mark now run for 3 hours because you"
+    },
+    {
+      "start": 574.88,
+      "duration": 2.1100000000000136,
+      "text": "mark now run for 3 hours because you don't hit any slowdown. You stop wasting"
+    },
+    {
+      "start": 576.99,
+      "duration": 0.009999999999990905,
+      "text": "don't hit any slowdown. You stop wasting"
+    },
+    {
+      "start": 577.0,
+      "duration": 1.75,
+      "text": "don't hit any slowdown. You stop wasting prompts reminding Claude of the context"
+    },
+    {
+      "start": 578.75,
+      "duration": 0.009999999999990905,
+      "text": "prompts reminding Claude of the context"
+    },
+    {
+      "start": 578.76,
+      "duration": 1.5900000000000318,
+      "text": "prompts reminding Claude of the context it already had. So, to install this one"
+    },
+    {
+      "start": 580.35,
+      "duration": 0.009999999999990905,
+      "text": "it already had. So, to install this one"
+    },
+    {
+      "start": 580.36,
+      "duration": 1.3500000000000227,
+      "text": "it already had. So, to install this one on ClaudeCode, just type in these two"
+    },
+    {
+      "start": 581.71,
+      "duration": 0.009999999999990905,
+      "text": "on ClaudeCode, just type in these two"
+    },
+    {
+      "start": 581.72,
+      "duration": 1.3099999999999454,
+      "text": "on ClaudeCode, just type in these two commands right here, and then you"
+    },
+    {
+      "start": 583.03,
+      "duration": 0.009999999999990905,
+      "text": "commands right here, and then you"
+    },
+    {
+      "start": 583.04,
+      "duration": 1.7100000000000364,
+      "text": "commands right here, and then you restart ClaudeCode, and that's basically"
+    },
+    {
+      "start": 584.75,
+      "duration": 0.009999999999990905,
+      "text": "restart ClaudeCode, and that's basically"
+    },
+    {
+      "start": 584.76,
+      "duration": 1.6299999999999955,
+      "text": "restart ClaudeCode, and that's basically it. The plugin auto-installs the MCP"
+    },
+    {
+      "start": 586.39,
+      "duration": 0.009999999999990905,
+      "text": "it. The plugin auto-installs the MCP"
+    },
+    {
+      "start": 586.4,
+      "duration": 1.1900000000000546,
+      "text": "it. The plugin auto-installs the MCP server, the hooks, and the routing"
+    },
+    {
+      "start": 587.59,
+      "duration": 0.009999999999990905,
+      "text": "server, the hooks, and the routing"
+    },
+    {
+      "start": 587.6,
+      "duration": 1.42999999999995,
+      "text": "server, the hooks, and the routing instructions. All right, and now this"
+    },
+    {
+      "start": 589.03,
+      "duration": 0.009999999999990905,
+      "text": "instructions. All right, and now this"
+    },
+    {
+      "start": 589.04,
+      "duration": 2.3899999999999864,
+      "text": "instructions. All right, and now this last skill is called ClaudeMem. And if"
+    },
+    {
+      "start": 591.43,
+      "duration": 0.010000000000104592,
+      "text": "last skill is called ClaudeMem. And if"
+    },
+    {
+      "start": 591.44,
+      "duration": 1.5899999999999181,
+      "text": "last skill is called ClaudeMem. And if Context Mode keeps your current session"
+    },
+    {
+      "start": 593.03,
+      "duration": 0.009999999999990905,
+      "text": "Context Mode keeps your current session"
+    },
+    {
+      "start": 593.04,
+      "duration": 1.830000000000041,
+      "text": "Context Mode keeps your current session clean, then ClaudeMem is what carries"
+    },
+    {
+      "start": 594.87,
+      "duration": 0.009999999999990905,
+      "text": "clean, then ClaudeMem is what carries"
+    },
+    {
+      "start": 594.88,
+      "duration": 1.830000000000041,
+      "text": "clean, then ClaudeMem is what carries knowledge across all of your future"
+    },
+    {
+      "start": 596.71,
+      "duration": 0.009999999999990905,
+      "text": "knowledge across all of your future"
+    },
+    {
+      "start": 596.72,
+      "duration": 1.8299999999999272,
+      "text": "knowledge across all of your future sessions. ClaudeCode starts every new"
+    },
+    {
+      "start": 598.55,
+      "duration": 0.009999999999990905,
+      "text": "sessions. ClaudeCode starts every new"
+    },
+    {
+      "start": 598.56,
+      "duration": 1.3900000000001,
+      "text": "sessions. ClaudeCode starts every new session from scratch. So, you open up a"
+    },
+    {
+      "start": 599.95,
+      "duration": 0.009999999999990905,
+      "text": "session from scratch. So, you open up a"
+    },
+    {
+      "start": 599.96,
+      "duration": 1.509999999999991,
+      "text": "session from scratch. So, you open up a session and you're explaining the"
+    },
+    {
+      "start": 601.47,
+      "duration": 0.009999999999990905,
+      "text": "session and you're explaining the"
+    },
+    {
+      "start": 601.48,
+      "duration": 1.8299999999999272,
+      "text": "session and you're explaining the project for the fifth time this month"
+    },
+    {
+      "start": 603.31,
+      "duration": 0.010000000000104592,
+      "text": "project for the fifth time this month"
+    },
+    {
+      "start": 603.32,
+      "duration": 1.7099999999999227,
+      "text": "project for the fifth time this month because every new conversation costs you"
+    },
+    {
+      "start": 605.03,
+      "duration": 0.009999999999990905,
+      "text": "because every new conversation costs you"
+    },
+    {
+      "start": 605.04,
+      "duration": 1.8700000000000045,
+      "text": "because every new conversation costs you maybe 10 minutes and thousands of tokens"
+    },
+    {
+      "start": 606.91,
+      "duration": 0.009999999999990905,
+      "text": "maybe 10 minutes and thousands of tokens"
+    },
+    {
+      "start": 606.92,
+      "duration": 1.9500000000000455,
+      "text": "maybe 10 minutes and thousands of tokens just getting Claude caught up. Now, you"
+    },
+    {
+      "start": 608.87,
+      "duration": 0.009999999999990905,
+      "text": "just getting Claude caught up. Now, you"
+    },
+    {
+      "start": 608.88,
+      "duration": 1.1900000000000546,
+      "text": "just getting Claude caught up. Now, you can try to solve this with things like"
+    },
+    {
+      "start": 610.07,
+      "duration": 0.009999999999990905,
+      "text": "can try to solve this with things like"
+    },
+    {
+      "start": 610.08,
+      "duration": 1.509999999999991,
+      "text": "can try to solve this with things like your Claude.md files and your memory"
+    },
+    {
+      "start": 611.59,
+      "duration": 0.009999999999990905,
+      "text": "your Claude.md files and your memory"
+    },
+    {
+      "start": 611.6,
+      "duration": 1.42999999999995,
+      "text": "your Claude.md files and your memory files, which obviously are important."
+    },
+    {
+      "start": 613.03,
+      "duration": 0.009999999999990905,
+      "text": "files, which obviously are important."
+    },
+    {
+      "start": 613.04,
+      "duration": 1.75,
+      "text": "files, which obviously are important. And these are plain text files that you"
+    },
+    {
+      "start": 614.79,
+      "duration": 0.009999999999990905,
+      "text": "And these are plain text files that you"
+    },
+    {
+      "start": 614.8,
+      "duration": 2.0300000000000864,
+      "text": "And these are plain text files that you write to give Claude persistent project"
+    },
+    {
+      "start": 616.83,
+      "duration": 0.009999999999990905,
+      "text": "write to give Claude persistent project"
+    },
+    {
+      "start": 616.84,
+      "duration": 1.7099999999999227,
+      "text": "write to give Claude persistent project instructions. And those work, but you do"
+    },
+    {
+      "start": 618.55,
+      "duration": 0.009999999999990905,
+      "text": "instructions. And those work, but you do"
+    },
+    {
+      "start": 618.56,
+      "duration": 1.5100000000001046,
+      "text": "instructions. And those work, but you do have to kind of think about maintaining"
+    },
+    {
+      "start": 620.07,
+      "duration": 0.009999999999990905,
+      "text": "have to kind of think about maintaining"
+    },
+    {
+      "start": 620.08,
+      "duration": 1.7099999999999227,
+      "text": "have to kind of think about maintaining them by hand. So, if you miss an update"
+    },
+    {
+      "start": 621.79,
+      "duration": 0.009999999999990905,
+      "text": "them by hand. So, if you miss an update"
+    },
+    {
+      "start": 621.8,
+      "duration": 1.6700000000000728,
+      "text": "them by hand. So, if you miss an update on one of those files, then Claude will"
+    },
+    {
+      "start": 623.47,
+      "duration": 0.009999999999990905,
+      "text": "on one of those files, then Claude will"
+    },
+    {
+      "start": 623.48,
+      "duration": 1.9499999999999318,
+      "text": "on one of those files, then Claude will also miss that context. So, Claude Mem"
+    },
+    {
+      "start": 625.43,
+      "duration": 0.010000000000104592,
+      "text": "also miss that context. So, Claude Mem"
+    },
+    {
+      "start": 625.44,
+      "duration": 1.7899999999999636,
+      "text": "also miss that context. So, Claude Mem basically takes this completely over. It"
+    },
+    {
+      "start": 627.23,
+      "duration": 0.009999999999990905,
+      "text": "basically takes this completely over. It"
+    },
+    {
+      "start": 627.24,
+      "duration": 1.42999999999995,
+      "text": "basically takes this completely over. It hooks into Claude's session life cycle"
+    },
+    {
+      "start": 628.67,
+      "duration": 0.009999999999990905,
+      "text": "hooks into Claude's session life cycle"
+    },
+    {
+      "start": 628.68,
+      "duration": 1.2700000000000955,
+      "text": "hooks into Claude's session life cycle and it automatically captures what"
+    },
+    {
+      "start": 629.95,
+      "duration": 0.009999999999990905,
+      "text": "and it automatically captures what"
+    },
+    {
+      "start": 629.96,
+      "duration": 1.2699999999999818,
+      "text": "and it automatically captures what happened during your session. It'll look"
+    },
+    {
+      "start": 631.23,
+      "duration": 0.009999999999990905,
+      "text": "happened during your session. It'll look"
+    },
+    {
+      "start": 631.24,
+      "duration": 1.509999999999991,
+      "text": "happened during your session. It'll look at the file edits, the decisions, the"
+    },
+    {
+      "start": 632.75,
+      "duration": 0.009999999999990905,
+      "text": "at the file edits, the decisions, the"
+    },
+    {
+      "start": 632.76,
+      "duration": 1.8700000000000045,
+      "text": "at the file edits, the decisions, the bug fixes, the commands, things like"
+    },
+    {
+      "start": 634.63,
+      "duration": 0.009999999999990905,
+      "text": "bug fixes, the commands, things like"
+    },
+    {
+      "start": 634.64,
+      "duration": 1.7899999999999636,
+      "text": "bug fixes, the commands, things like that. And then, it will use Claude's own"
+    },
+    {
+      "start": 636.43,
+      "duration": 0.010000000000104592,
+      "text": "that. And then, it will use Claude's own"
+    },
+    {
+      "start": 636.44,
+      "duration": 1.9899999999998954,
+      "text": "that. And then, it will use Claude's own agent SDK to compress all of that"
+    },
+    {
+      "start": 638.43,
+      "duration": 0.010000000000104592,
+      "text": "agent SDK to compress all of that"
+    },
+    {
+      "start": 638.44,
+      "duration": 1.8299999999999272,
+      "text": "agent SDK to compress all of that semantic summaries and stores everything"
+    },
+    {
+      "start": 640.27,
+      "duration": 0.009999999999990905,
+      "text": "semantic summaries and stores everything"
+    },
+    {
+      "start": 640.28,
+      "duration": 2.8700000000000045,
+      "text": "semantic summaries and stores everything into a local SQLite database with vector"
+    },
+    {
+      "start": 643.15,
+      "duration": 0.009999999999990905,
+      "text": "into a local SQLite database with vector"
+    },
+    {
+      "start": 643.16,
+      "duration": 1.2699999999999818,
+      "text": "into a local SQLite database with vector search. So, when you open up a new"
+    },
+    {
+      "start": 644.43,
+      "duration": 0.010000000000104592,
+      "text": "search. So, when you open up a new"
+    },
+    {
+      "start": 644.44,
+      "duration": 1.75,
+      "text": "search. So, when you open up a new session, the relevant parts get injected"
+    },
+    {
+      "start": 646.19,
+      "duration": 0.009999999999990905,
+      "text": "session, the relevant parts get injected"
+    },
+    {
+      "start": 646.2,
+      "duration": 1.990000000000009,
+      "text": "session, the relevant parts get injected back in automatically. And it also auto"
+    },
+    {
+      "start": 648.19,
+      "duration": 0.009999999999990905,
+      "text": "back in automatically. And it also auto"
+    },
+    {
+      "start": 648.2,
+      "duration": 2.269999999999982,
+      "text": "back in automatically. And it also auto generates folder-level Claude.md files"
+    },
+    {
+      "start": 650.47,
+      "duration": 0.009999999999990905,
+      "text": "generates folder-level Claude.md files"
+    },
+    {
+      "start": 650.48,
+      "duration": 1.6299999999999955,
+      "text": "generates folder-level Claude.md files and updates them as you work. So, your"
+    },
+    {
+      "start": 652.11,
+      "duration": 0.009999999999990905,
+      "text": "and updates them as you work. So, your"
+    },
+    {
+      "start": 652.12,
+      "duration": 1.669999999999959,
+      "text": "and updates them as you work. So, your project documentation literally writes"
+    },
+    {
+      "start": 653.79,
+      "duration": 0.009999999999990905,
+      "text": "project documentation literally writes"
+    },
+    {
+      "start": 653.8,
+      "duration": 1.5900000000000318,
+      "text": "project documentation literally writes itself while you code and it's"
+    },
+    {
+      "start": 655.39,
+      "duration": 0.009999999999990905,
+      "text": "itself while you code and it's"
+    },
+    {
+      "start": 655.4,
+      "duration": 1.0299999999999727,
+      "text": "itself while you code and it's automated. Now, the part that actually"
+    },
+    {
+      "start": 656.43,
+      "duration": 0.010000000000104592,
+      "text": "automated. Now, the part that actually"
+    },
+    {
+      "start": 656.44,
+      "duration": 1.6299999999999955,
+      "text": "automated. Now, the part that actually saves tokens is the retrieval. So,"
+    },
+    {
+      "start": 658.07,
+      "duration": 0.009999999999990905,
+      "text": "saves tokens is the retrieval. So,"
+    },
+    {
+      "start": 658.08,
+      "duration": 1.42999999999995,
+      "text": "saves tokens is the retrieval. So, instead of dumping every past"
+    },
+    {
+      "start": 659.51,
+      "duration": 0.009999999999990905,
+      "text": "instead of dumping every past"
+    },
+    {
+      "start": 659.52,
+      "duration": 1.990000000000009,
+      "text": "instead of dumping every past observation into your context, Claude"
+    },
+    {
+      "start": 661.51,
+      "duration": 0.009999999999990905,
+      "text": "observation into your context, Claude"
+    },
+    {
+      "start": 661.52,
+      "duration": 1.990000000000009,
+      "text": "observation into your context, Claude Mem uses a three-layer search system. It"
+    },
+    {
+      "start": 663.51,
+      "duration": 0.009999999999990905,
+      "text": "Mem uses a three-layer search system. It"
+    },
+    {
+      "start": 663.52,
+      "duration": 1.6299999999999955,
+      "text": "Mem uses a three-layer search system. It first returns a compact index of"
+    },
+    {
+      "start": 665.15,
+      "duration": 0.009999999999990905,
+      "text": "first returns a compact index of"
+    },
+    {
+      "start": 665.16,
+      "duration": 1.6299999999999955,
+      "text": "first returns a compact index of observations and then, you can pull a"
+    },
+    {
+      "start": 666.79,
+      "duration": 0.009999999999990905,
+      "text": "observations and then, you can pull a"
+    },
+    {
+      "start": 666.8,
+      "duration": 1.5900000000000318,
+      "text": "observations and then, you can pull a timeline around the ones that matter."
+    },
+    {
+      "start": 668.39,
+      "duration": 0.009999999999990905,
+      "text": "timeline around the ones that matter."
+    },
+    {
+      "start": 668.4,
+      "duration": 1.9500000000000455,
+      "text": "timeline around the ones that matter. And only then does it fetch the full"
+    },
+    {
+      "start": 670.35,
+      "duration": 0.009999999999990905,
+      "text": "And only then does it fetch the full"
+    },
+    {
+      "start": 670.36,
+      "duration": 1.830000000000041,
+      "text": "And only then does it fetch the full details for the handoff that you need."
+    },
+    {
+      "start": 672.19,
+      "duration": 0.009999999999990905,
+      "text": "details for the handoff that you need."
+    },
+    {
+      "start": 672.2,
+      "duration": 1.7099999999999227,
+      "text": "details for the handoff that you need. So, this repo reports about 10 times"
+    },
+    {
+      "start": 673.91,
+      "duration": 0.009999999999990905,
+      "text": "So, this repo reports about 10 times"
+    },
+    {
+      "start": 673.92,
+      "duration": 1.9500000000000455,
+      "text": "So, this repo reports about 10 times token savings on retrieval compared to"
+    },
+    {
+      "start": 675.87,
+      "duration": 0.009999999999990905,
+      "text": "token savings on retrieval compared to"
+    },
+    {
+      "start": 675.88,
+      "duration": 1.6299999999999955,
+      "text": "token savings on retrieval compared to dumping everything in at the session"
+    },
+    {
+      "start": 677.51,
+      "duration": 0.009999999999990905,
+      "text": "dumping everything in at the session"
+    },
+    {
+      "start": 677.52,
+      "duration": 1.509999999999991,
+      "text": "dumping everything in at the session start. So, practically, all of your"
+    },
+    {
+      "start": 679.03,
+      "duration": 0.009999999999990905,
+      "text": "start. So, practically, all of your"
+    },
+    {
+      "start": 679.04,
+      "duration": 1.5500000000000682,
+      "text": "start. So, practically, all of your Claude Code projects, you stop paying"
+    },
+    {
+      "start": 680.59,
+      "duration": 0.009999999999990905,
+      "text": "Claude Code projects, you stop paying"
+    },
+    {
+      "start": 680.6,
+      "duration": 1.7099999999999227,
+      "text": "Claude Code projects, you stop paying the startup tax on every new session."
+    },
+    {
+      "start": 682.31,
+      "duration": 0.010000000000104592,
+      "text": "the startup tax on every new session."
+    },
+    {
+      "start": 682.32,
+      "duration": 1.42999999999995,
+      "text": "the startup tax on every new session. You stop repeating yourself. You pick up"
+    },
+    {
+      "start": 683.75,
+      "duration": 0.009999999999990905,
+      "text": "You stop repeating yourself. You pick up"
+    },
+    {
+      "start": 683.76,
+      "duration": 1.830000000000041,
+      "text": "You stop repeating yourself. You pick up a project where you haven't touched in 2"
+    },
+    {
+      "start": 685.59,
+      "duration": 0.009999999999990905,
+      "text": "a project where you haven't touched in 2"
+    },
+    {
+      "start": 685.6,
+      "duration": 1.9499999999999318,
+      "text": "a project where you haven't touched in 2 weeks and Claude already knows exactly"
+    },
+    {
+      "start": 687.55,
+      "duration": 0.009999999999990905,
+      "text": "weeks and Claude already knows exactly"
+    },
+    {
+      "start": 687.56,
+      "duration": 0.9900000000000091,
+      "text": "weeks and Claude already knows exactly what you're working on and what you've"
+    },
+    {
+      "start": 688.55,
+      "duration": 0.009999999999990905,
+      "text": "what you're working on and what you've"
+    },
+    {
+      "start": 688.56,
+      "duration": 1.5100000000001046,
+      "text": "what you're working on and what you've decided and where you left off. And"
+    },
+    {
+      "start": 690.07,
+      "duration": 0.009999999999990905,
+      "text": "decided and where you left off. And"
+    },
+    {
+      "start": 690.08,
+      "duration": 1.3899999999999864,
+      "text": "decided and where you left off. And because everything runs locally on your"
+    },
+    {
+      "start": 691.47,
+      "duration": 0.009999999999990905,
+      "text": "because everything runs locally on your"
+    },
+    {
+      "start": 691.48,
+      "duration": 1.3899999999999864,
+      "text": "because everything runs locally on your machine with a web viewer, you can"
+    },
+    {
+      "start": 692.87,
+      "duration": 0.009999999999990905,
+      "text": "machine with a web viewer, you can"
+    },
+    {
+      "start": 692.88,
+      "duration": 1.3899999999999864,
+      "text": "machine with a web viewer, you can actually see what Claude remembers about"
+    },
+    {
+      "start": 694.27,
+      "duration": 0.009999999999990905,
+      "text": "actually see what Claude remembers about"
+    },
+    {
+      "start": 694.28,
+      "duration": 1.2300000000000182,
+      "text": "actually see what Claude remembers about your project and you can look through it"
+    },
+    {
+      "start": 695.51,
+      "duration": 0.009999999999990905,
+      "text": "your project and you can look through it"
+    },
+    {
+      "start": 695.52,
+      "duration": 1.509999999999991,
+      "text": "your project and you can look through it yourself. Now, inside of Claude Code,"
+    },
+    {
+      "start": 697.03,
+      "duration": 0.009999999999990905,
+      "text": "yourself. Now, inside of Claude Code,"
+    },
+    {
+      "start": 697.04,
+      "duration": 1.4300000000000637,
+      "text": "yourself. Now, inside of Claude Code, you can install this using the plugin"
+    },
+    {
+      "start": 698.47,
+      "duration": 0.009999999999990905,
+      "text": "you can install this using the plugin"
+    },
+    {
+      "start": 698.48,
+      "duration": 1.5900000000000318,
+      "text": "you can install this using the plugin marketplace with the commands right here"
+    },
+    {
+      "start": 700.07,
+      "duration": 0.009999999999990905,
+      "text": "marketplace with the commands right here"
+    },
+    {
+      "start": 700.08,
+      "duration": 1.5899999999999181,
+      "text": "marketplace with the commands right here on screen. Now, one quick warning from"
+    },
+    {
+      "start": 701.67,
+      "duration": 0.009999999999990905,
+      "text": "on screen. Now, one quick warning from"
+    },
+    {
+      "start": 701.68,
+      "duration": 1.4300000000000637,
+      "text": "on screen. Now, one quick warning from the repo itself, you don't have to run"
+    },
+    {
+      "start": 703.11,
+      "duration": 0.009999999999990905,
+      "text": "the repo itself, you don't have to run"
+    },
+    {
+      "start": 703.12,
+      "duration": 1.830000000000041,
+      "text": "the repo itself, you don't have to run this npm install command. That installs"
+    },
+    {
+      "start": 704.95,
+      "duration": 0.009999999999990905,
+      "text": "this npm install command. That installs"
+    },
+    {
+      "start": 704.96,
+      "duration": 1.9499999999999318,
+      "text": "this npm install command. That installs the SDK library only and nothing"
+    },
+    {
+      "start": 706.91,
+      "duration": 0.009999999999990905,
+      "text": "the SDK library only and nothing"
+    },
+    {
+      "start": 706.92,
+      "duration": 1.3899999999999864,
+      "text": "the SDK library only and nothing actually works because the hooks never"
+    },
+    {
+      "start": 708.31,
+      "duration": 0.010000000000104592,
+      "text": "actually works because the hooks never"
+    },
+    {
+      "start": 708.32,
+      "duration": 1.1899999999999409,
+      "text": "actually works because the hooks never register. So, stick with the two"
+    },
+    {
+      "start": 709.51,
+      "duration": 0.009999999999990905,
+      "text": "register. So, stick with the two"
+    },
+    {
+      "start": 709.52,
+      "duration": 1.5900000000000318,
+      "text": "register. So, stick with the two commands above and that, ladies and"
+    },
+    {
+      "start": 711.11,
+      "duration": 0.009999999999990905,
+      "text": "commands above and that, ladies and"
+    },
+    {
+      "start": 711.12,
+      "duration": 1.7089999999999463,
+      "text": "commands above and that, ladies and gentlemen, was number six on our list"
+    },
+    {
+      "start": 712.829,
+      "duration": 0.009999999999990905,
+      "text": "gentlemen, was number six on our list"
+    },
+    {
+      "start": 712.8389999999999,
+      "duration": 1.6710000000000491,
+      "text": "gentlemen, was number six on our list today. But real quick, because I know a"
+    },
+    {
+      "start": 714.51,
+      "duration": 0.009999999999990905,
+      "text": "today. But real quick, because I know a"
+    },
+    {
+      "start": 714.52,
+      "duration": 1.308999999999969,
+      "text": "today. But real quick, because I know a lot of you guys are doing things with"
+    },
+    {
+      "start": 715.829,
+      "duration": 0.009999999999990905,
+      "text": "lot of you guys are doing things with"
+    },
+    {
+      "start": 715.8389999999999,
+      "duration": 1.3910000000000764,
+      "text": "lot of you guys are doing things with website design or, you know, building"
+    },
+    {
+      "start": 717.23,
+      "duration": 0.009999999999990905,
+      "text": "website design or, you know, building"
+    },
+    {
+      "start": 717.24,
+      "duration": 1.9500000000000455,
+      "text": "website design or, you know, building out slide decks and whatnot, bonus skill"
+    },
+    {
+      "start": 719.19,
+      "duration": 0.009999999999990905,
+      "text": "out slide decks and whatnot, bonus skill"
+    },
+    {
+      "start": 719.2,
+      "duration": 2.1099999999999,
+      "text": "out slide decks and whatnot, bonus skill number seven is the official front-end"
+    },
+    {
+      "start": 721.31,
+      "duration": 0.010000000000104592,
+      "text": "number seven is the official front-end"
+    },
+    {
+      "start": 721.32,
+      "duration": 1.6299999999999955,
+      "text": "number seven is the official front-end design skill from Anthropic. You just"
+    },
+    {
+      "start": 722.95,
+      "duration": 0.009999999999990905,
+      "text": "design skill from Anthropic. You just"
+    },
+    {
+      "start": 722.96,
+      "duration": 1.5499999999999545,
+      "text": "design skill from Anthropic. You just install it using the command on screen"
+    },
+    {
+      "start": 724.51,
+      "duration": 0.009999999999990905,
+      "text": "install it using the command on screen"
+    },
+    {
+      "start": 724.52,
+      "duration": 1.308999999999969,
+      "text": "install it using the command on screen and I would go ahead and just install"
+    },
+    {
+      "start": 725.829,
+      "duration": 0.010000000000104592,
+      "text": "and I would go ahead and just install"
+    },
+    {
+      "start": 725.839,
+      "duration": 1.47099999999989,
+      "text": "and I would go ahead and just install that globally. So, whenever you're doing"
+    },
+    {
+      "start": 727.31,
+      "duration": 0.010000000000104592,
+      "text": "that globally. So, whenever you're doing"
+    },
+    {
+      "start": 727.32,
+      "duration": 1.7099999999999227,
+      "text": "that globally. So, whenever you're doing things like actually designing things in"
+    },
+    {
+      "start": 729.03,
+      "duration": 0.009999999999990905,
+      "text": "things like actually designing things in"
+    },
+    {
+      "start": 729.04,
+      "duration": 1.4700000000000273,
+      "text": "things like actually designing things in Claude Code, it will make them look a"
+    },
+    {
+      "start": 730.51,
+      "duration": 0.009999999999990905,
+      "text": "Claude Code, it will make them look a"
+    },
+    {
+      "start": 730.52,
+      "duration": 1.9099999999999682,
+      "text": "Claude Code, it will make them look a lot less AI-generated because of that"
+    },
+    {
+      "start": 732.43,
+      "duration": 0.010000000000104592,
+      "text": "lot less AI-generated because of that"
+    },
+    {
+      "start": 732.44,
+      "duration": 1.5499999999999545,
+      "text": "lot less AI-generated because of that front-end design skill. Now, this type"
+    },
+    {
+      "start": 733.99,
+      "duration": 0.009999999999990905,
+      "text": "front-end design skill. Now, this type"
+    },
+    {
+      "start": 734.0,
+      "duration": 2.3899999999999864,
+      "text": "front-end design skill. Now, this type of stuff also is natively baked into"
+    },
+    {
+      "start": 736.39,
+      "duration": 0.009999999999990905,
+      "text": "of stuff also is natively baked into"
+    },
+    {
+      "start": 736.4,
+      "duration": 1.3100000000000591,
+      "text": "of stuff also is natively baked into Anthropic Labs' new product called"
+    },
+    {
+      "start": 737.71,
+      "duration": 0.009999999999990905,
+      "text": "Anthropic Labs' new product called"
+    },
+    {
+      "start": 737.72,
+      "duration": 1.6299999999999955,
+      "text": "Anthropic Labs' new product called Claude Design. But if you do bring that"
+    },
+    {
+      "start": 739.35,
+      "duration": 0.009999999999990905,
+      "text": "Claude Design. But if you do bring that"
+    },
+    {
+      "start": 739.36,
+      "duration": 1.3899999999999864,
+      "text": "Claude Design. But if you do bring that project back into Claude Code, you're"
+    },
+    {
+      "start": 740.75,
+      "duration": 0.009999999999990905,
+      "text": "project back into Claude Code, you're"
+    },
+    {
+      "start": 740.76,
+      "duration": 1.3899999999999864,
+      "text": "project back into Claude Code, you're going to want to use this skill. Okay."
+    },
+    {
+      "start": 742.15,
+      "duration": 0.009999999999990905,
+      "text": "going to want to use this skill. Okay."
+    },
+    {
+      "start": 742.16,
+      "duration": 1.6689999999999827,
+      "text": "going to want to use this skill. Okay. So, now that you know the skills and"
+    },
+    {
+      "start": 743.829,
+      "duration": 0.009999999999990905,
+      "text": "So, now that you know the skills and"
+    },
+    {
+      "start": 743.8389999999999,
+      "duration": 1.191000000000031,
+      "text": "So, now that you know the skills and what they do, here's how to actually"
+    },
+    {
+      "start": 745.03,
+      "duration": 0.009999999999990905,
+      "text": "what they do, here's how to actually"
+    },
+    {
+      "start": 745.04,
+      "duration": 1.3500000000000227,
+      "text": "what they do, here's how to actually sell them. Because I see so many people"
+    },
+    {
+      "start": 746.39,
+      "duration": 0.009999999999990905,
+      "text": "sell them. Because I see so many people"
+    },
+    {
+      "start": 746.4,
+      "duration": 1.4289999999999736,
+      "text": "sell them. Because I see so many people starting out trying to sell the actual"
+    },
+    {
+      "start": 747.829,
+      "duration": 0.009999999999990905,
+      "text": "starting out trying to sell the actual"
+    },
+    {
+      "start": 747.8389999999999,
+      "duration": 1.4710000000000036,
+      "text": "starting out trying to sell the actual workflow, but you need to be selling"
+    },
+    {
+      "start": 749.31,
+      "duration": 0.010000000000104592,
+      "text": "workflow, but you need to be selling"
+    },
+    {
+      "start": 749.32,
+      "duration": 1.3099999999999454,
+      "text": "workflow, but you need to be selling something else. You need to be selling"
+    },
+    {
+      "start": 750.63,
+      "duration": 0.009999999999990905,
+      "text": "something else. You need to be selling"
+    },
+    {
+      "start": 750.64,
+      "duration": 1.509999999999991,
+      "text": "something else. You need to be selling the outcome. You need to be selling"
+    },
+    {
+      "start": 752.15,
+      "duration": 0.009999999999990905,
+      "text": "the outcome. You need to be selling"
+    },
+    {
+      "start": 752.16,
+      "duration": 1.2300000000000182,
+      "text": "the outcome. You need to be selling saving the business owner 10 hours a"
+    },
+    {
+      "start": 753.39,
+      "duration": 0.009999999999990905,
+      "text": "saving the business owner 10 hours a"
+    },
+    {
+      "start": 753.4,
+      "duration": 1.75,
+      "text": "saving the business owner 10 hours a week or cutting their admin mistakes and"
+    },
+    {
+      "start": 755.15,
+      "duration": 0.009999999999990905,
+      "text": "week or cutting their admin mistakes and"
+    },
+    {
+      "start": 755.16,
+      "duration": 1.1100000000000136,
+      "text": "week or cutting their admin mistakes and their human error. You need to be"
+    },
+    {
+      "start": 756.27,
+      "duration": 0.009999999999990905,
+      "text": "their human error. You need to be"
+    },
+    {
+      "start": 756.28,
+      "duration": 1.9100000000000819,
+      "text": "their human error. You need to be selling the results like speeding up"
+    },
+    {
+      "start": 758.19,
+      "duration": 0.009999999999990905,
+      "text": "selling the results like speeding up"
+    },
+    {
+      "start": 758.2,
+      "duration": 1.349999999999909,
+      "text": "selling the results like speeding up their leads or getting them more leads."
+    },
+    {
+      "start": 759.55,
+      "duration": 0.009999999999990905,
+      "text": "their leads or getting them more leads."
+    },
+    {
+      "start": 759.56,
+      "duration": 0.9100000000000819,
+      "text": "their leads or getting them more leads. That's what they actually want to pay"
+    },
+    {
+      "start": 760.47,
+      "duration": 0.009999999999990905,
+      "text": "That's what they actually want to pay"
+    },
+    {
+      "start": 760.48,
+      "duration": 1.5900000000000318,
+      "text": "That's what they actually want to pay for. So, instead of offering to build an"
+    },
+    {
+      "start": 762.07,
+      "duration": 0.009999999999990905,
+      "text": "for. So, instead of offering to build an"
+    },
+    {
+      "start": 762.08,
+      "duration": 1.1499999999999773,
+      "text": "for. So, instead of offering to build an AI workflow, you're actually just"
+    },
+    {
+      "start": 763.23,
+      "duration": 0.009999999999990905,
+      "text": "AI workflow, you're actually just"
+    },
+    {
+      "start": 763.24,
+      "duration": 1.9099999999999682,
+      "text": "AI workflow, you're actually just offering to save time, cut costs, and"
+    },
+    {
+      "start": 765.15,
+      "duration": 0.009999999999990905,
+      "text": "offering to save time, cut costs, and"
+    },
+    {
+      "start": 765.16,
+      "duration": 1.9500000000000455,
+      "text": "offering to save time, cut costs, and help them focus on making more profit"
+    },
+    {
+      "start": 767.11,
+      "duration": 0.009999999999990905,
+      "text": "help them focus on making more profit"
+    },
+    {
+      "start": 767.12,
+      "duration": 1.1100000000000136,
+      "text": "help them focus on making more profit for their business. And there's actually"
+    },
+    {
+      "start": 768.23,
+      "duration": 0.009999999999990905,
+      "text": "for their business. And there's actually"
+    },
+    {
+      "start": 768.24,
+      "duration": 1.3899999999999864,
+      "text": "for their business. And there's actually a simple way to start doing this. If"
+    },
+    {
+      "start": 769.63,
+      "duration": 0.009999999999990905,
+      "text": "a simple way to start doing this. If"
+    },
+    {
+      "start": 769.64,
+      "duration": 1.4300000000000637,
+      "text": "a simple way to start doing this. If you're brand new, don't try to use all"
+    },
+    {
+      "start": 771.07,
+      "duration": 0.009999999999990905,
+      "text": "you're brand new, don't try to use all"
+    },
+    {
+      "start": 771.08,
+      "duration": 1.9099999999999682,
+      "text": "you're brand new, don't try to use all six of these right away. Just pick one,"
+    },
+    {
+      "start": 772.99,
+      "duration": 0.009999999999990905,
+      "text": "six of these right away. Just pick one,"
+    },
+    {
+      "start": 773.0,
+      "duration": 1.3099999999999454,
+      "text": "six of these right away. Just pick one, learn it, build out a few workflows"
+    },
+    {
+      "start": 774.31,
+      "duration": 0.010000000000104592,
+      "text": "learn it, build out a few workflows"
+    },
+    {
+      "start": 774.32,
+      "duration": 1.3899999999999864,
+      "text": "learn it, build out a few workflows using it, and show business owner a"
+    },
+    {
+      "start": 775.71,
+      "duration": 0.009999999999990905,
+      "text": "using it, and show business owner a"
+    },
+    {
+      "start": 775.72,
+      "duration": 1.1899999999999409,
+      "text": "using it, and show business owner a demo. They won't really care about your"
+    },
+    {
+      "start": 776.91,
+      "duration": 0.009999999999990905,
+      "text": "demo. They won't really care about your"
+    },
+    {
+      "start": 776.92,
+      "duration": 1.830000000000041,
+      "text": "demo. They won't really care about your experience, they'll care about the value"
+    },
+    {
+      "start": 778.75,
+      "duration": 0.009999999999990905,
+      "text": "experience, they'll care about the value"
+    },
+    {
+      "start": 778.76,
+      "duration": 1.2300000000000182,
+      "text": "experience, they'll care about the value of what you're showing them. And once"
+    },
+    {
+      "start": 779.99,
+      "duration": 0.009999999999990905,
+      "text": "of what you're showing them. And once"
+    },
+    {
+      "start": 780.0,
+      "duration": 1.2300000000000182,
+      "text": "of what you're showing them. And once you start to understand how these skills"
+    },
+    {
+      "start": 781.23,
+      "duration": 0.009999999999990905,
+      "text": "you start to understand how these skills"
+    },
+    {
+      "start": 781.24,
+      "duration": 1.3899999999999864,
+      "text": "you start to understand how these skills work and how they piece together, you're"
+    },
+    {
+      "start": 782.63,
+      "duration": 0.009999999999990905,
+      "text": "work and how they piece together, you're"
+    },
+    {
+      "start": 782.64,
+      "duration": 1.6299999999999955,
+      "text": "work and how they piece together, you're able to build better automations quicker"
+    },
+    {
+      "start": 784.27,
+      "duration": 0.009999999999990905,
+      "text": "able to build better automations quicker"
+    },
+    {
+      "start": 784.28,
+      "duration": 1.4300000000000637,
+      "text": "able to build better automations quicker and hopefully for cheaper, which means"
+    },
+    {
+      "start": 785.71,
+      "duration": 0.009999999999990905,
+      "text": "and hopefully for cheaper, which means"
+    },
+    {
+      "start": 785.72,
+      "duration": 1.7099999999999227,
+      "text": "and hopefully for cheaper, which means you can make more demos. You can make"
+    },
+    {
+      "start": 787.43,
+      "duration": 0.010000000000104592,
+      "text": "you can make more demos. You can make"
+    },
+    {
+      "start": 787.44,
+      "duration": 1.2699999999999818,
+      "text": "you can make more demos. You can make more content. You can automate more"
+    },
+    {
+      "start": 788.71,
+      "duration": 0.009999999999990905,
+      "text": "more content. You can automate more"
+    },
+    {
+      "start": 788.72,
+      "duration": 1.5499999999999545,
+      "text": "more content. You can automate more parts of your own business. All of that"
+    },
+    {
+      "start": 790.27,
+      "duration": 0.009999999999990905,
+      "text": "parts of your own business. All of that"
+    },
+    {
+      "start": 790.28,
+      "duration": 0.9500000000000455,
+      "text": "parts of your own business. All of that experience is going to help you"
+    },
+    {
+      "start": 791.23,
+      "duration": 0.009999999999990905,
+      "text": "experience is going to help you"
+    },
+    {
+      "start": 791.24,
+      "duration": 1.9099999999999682,
+      "text": "experience is going to help you communicate the value of what you know"
+    },
+    {
+      "start": 793.15,
+      "duration": 0.009999999999990905,
+      "text": "communicate the value of what you know"
+    },
+    {
+      "start": 793.16,
+      "duration": 1.8700000000000045,
+      "text": "communicate the value of what you know to business owners much better. So, I"
+    },
+    {
+      "start": 795.03,
+      "duration": 0.009999999999990905,
+      "text": "to business owners much better. So, I"
+    },
+    {
+      "start": 795.04,
+      "duration": 0.9900000000000091,
+      "text": "to business owners much better. So, I know that we covered a ton of"
+    },
+    {
+      "start": 796.03,
+      "duration": 0.009999999999990905,
+      "text": "know that we covered a ton of"
+    },
+    {
+      "start": 796.04,
+      "duration": 1.3899999999999864,
+      "text": "know that we covered a ton of information in this video. So, what I"
+    },
+    {
+      "start": 797.43,
+      "duration": 0.010000000000104592,
+      "text": "information in this video. So, what I"
+    },
+    {
+      "start": 797.44,
+      "duration": 1.6299999999999955,
+      "text": "information in this video. So, what I did is I threw all of this into a"
+    },
+    {
+      "start": 799.07,
+      "duration": 0.009999999999990905,
+      "text": "did is I threw all of this into a"
+    },
+    {
+      "start": 799.08,
+      "duration": 1.2699999999999818,
+      "text": "did is I threw all of this into a resource guide that you can access for"
+    },
+    {
+      "start": 800.35,
+      "duration": 0.009999999999990905,
+      "text": "resource guide that you can access for"
+    },
+    {
+      "start": 800.36,
+      "duration": 1.7100000000000364,
+      "text": "resource guide that you can access for completely free inside of my free school"
+    },
+    {
+      "start": 802.07,
+      "duration": 0.009999999999990905,
+      "text": "completely free inside of my free school"
+    },
+    {
+      "start": 802.08,
+      "duration": 1.2299999999999045,
+      "text": "completely free inside of my free school community. You can check that out using"
+    },
+    {
+      "start": 803.31,
+      "duration": 0.010000000000104592,
+      "text": "community. You can check that out using"
+    },
+    {
+      "start": 803.32,
+      "duration": 1.5089999999999009,
+      "text": "community. You can check that out using the link in the description. And if you"
+    },
+    {
+      "start": 804.829,
+      "duration": 0.009999999999990905,
+      "text": "the link in the description. And if you"
+    },
+    {
+      "start": 804.8389999999999,
+      "duration": 1.3910000000000764,
+      "text": "the link in the description. And if you want to see exactly how I make money in"
+    },
+    {
+      "start": 806.23,
+      "duration": 0.009999999999990905,
+      "text": "want to see exactly how I make money in"
+    },
+    {
+      "start": 806.24,
+      "duration": 0.8300000000000409,
+      "text": "want to see exactly how I make money in 2026,"
+    },
+    {
+      "start": 807.07,
+      "duration": 0.009999999999990905,
+      "text": "2026,"
+    },
+    {
+      "start": 807.08,
+      "duration": 1.9099999999999682,
+      "text": "2026, then check out this video right up here."
+    },
+    {
+      "start": 808.99,
+      "duration": 0.009999999999990905,
+      "text": "then check out this video right up here."
+    },
+    {
+      "start": 809.0,
+      "duration": 1.1499999999999773,
+      "text": "then check out this video right up here. But anyways, that is going to do it for"
+    },
+    {
+      "start": 810.15,
+      "duration": 0.009999999999990905,
+      "text": "But anyways, that is going to do it for"
+    },
+    {
+      "start": 810.16,
+      "duration": 1.509999999999991,
+      "text": "But anyways, that is going to do it for today. So, if you guys enjoyed or you"
+    },
+    {
+      "start": 811.67,
+      "duration": 0.009999999999990905,
+      "text": "today. So, if you guys enjoyed or you"
+    },
+    {
+      "start": 811.68,
+      "duration": 1.1100000000000136,
+      "text": "today. So, if you guys enjoyed or you learned something new, then please give"
+    },
+    {
+      "start": 812.79,
+      "duration": 0.009999999999990905,
+      "text": "learned something new, then please give"
+    },
+    {
+      "start": 812.8,
+      "duration": 1.4700000000000273,
+      "text": "learned something new, then please give a like. It helps me out a ton. And as"
+    },
+    {
+      "start": 814.27,
+      "duration": 0.009999999999990905,
+      "text": "a like. It helps me out a ton. And as"
+    },
+    {
+      "start": 814.28,
+      "duration": 1.3500000000000227,
+      "text": "a like. It helps me out a ton. And as always, I appreciate you guys made it to"
+    },
+    {
+      "start": 815.63,
+      "duration": 0.009999999999990905,
+      "text": "always, I appreciate you guys made it to"
+    },
+    {
+      "start": 815.64,
+      "duration": 1.1499999999999773,
+      "text": "always, I appreciate you guys made it to the end of the video and I'll see you"
+    },
+    {
+      "start": 816.79,
+      "duration": 0.009999999999990905,
+      "text": "the end of the video and I'll see you"
+    },
+    {
+      "start": 816.8,
+      "duration": 3.6400000000001,
+      "text": "the end of the video and I'll see you all in the next one. Thanks, everyone."
+    }
+  ],
+  "fetched_at": "2026-05-04T20:40:17Z"
+}

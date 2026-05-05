@@ -1,0 +1,54 @@
+{
+  "video_id": "4Qw4kyW8Ux8",
+  "sections": [
+    {
+      "id": "S1",
+      "type": "hook",
+      "start": "0:00",
+      "end": "0:42",
+      "summary": "Opens with a $150M-per-year app claim and promises to show how to build a similar app from scratch with no coding using one AI tool."
+    },
+    {
+      "id": "S2",
+      "type": "content",
+      "start": "0:42",
+      "end": "3:30",
+      "summary": "Frames why subscription apps beat one-time digital products like ebooks and PDFs, and shares his background of $30M in digital product sales and a $500K/month AI software business."
+    },
+    {
+      "id": "S3",
+      "type": "pitch",
+      "start": "3:30",
+      "end": "4:06",
+      "summary": "Sponsor read for Base 44 with a 30% discount available through the first link in the description."
+    },
+    {
+      "id": "S4",
+      "type": "content",
+      "start": "4:06",
+      "end": "13:35",
+      "summary": "Walks through building a MyFitnessPal-style calorie tracking app in Base 44 from a single prompt, then iterates with prompts to add a landing page, raise the pricing tier, and add a paywall and Stripe-ready subscription gate."
+    },
+    {
+      "id": "S5",
+      "type": "content",
+      "start": "13:35",
+      "end": "15:58",
+      "summary": "Zooms out to other subscription niches the same process could target (workout, habit, meditation, meal planning, finance) and contrasts the four-prompt build against his own months-long developer-hired build."
+    },
+    {
+      "id": "S6",
+      "type": "pitch",
+      "start": "15:58",
+      "end": "19:25",
+      "summary": "Walks step-by-step through signing up for Base 44 via his affiliate link to claim the discount and a free $497 masterclass, plus a VIP ticket to a live AI master class with student case studies."
+    },
+    {
+      "id": "S7",
+      "type": "outro",
+      "start": "19:25",
+      "end": "20:14",
+      "summary": "Returns to the MyFitnessPal framing and closes with a motivational message that the difference is the decision to start now."
+    }
+  ]
+}

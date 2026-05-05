@@ -53,6 +53,9 @@ Return one Markdown code block exactly as shown below. No prose before or after 
   {channel} · {duration_human} · {views_human}
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
+EXECUTIVE VERDICT
+{2–3 sentences. Lead with the recommended action. State the gap and the strongest evidence. Plain prose — no emoji, no markdown.}
+
 VERDICT: {WATCH | SKIM | SKIP}   [{score}/10]
 
 WHAT IT ACTUALLY DELIVERS
@@ -86,6 +89,7 @@ FLAGS
 
 ## Field rules
 
+- `EXECUTIVE VERDICT`: 2–3 sentences, ≤ 60 words total. The recommended action comes first. For WATCH, lead with what makes it worth the full runtime. For SKIM, lead with the best-minutes range and what's actually there. For SKIP, lead with what's missing vs. the title's promise. Plain prose only — no emoji, no markdown, no bold. The dashboard renderer adds the state glyph.
 - `duration_human`: `M:SS` if under 1 hour, `H:MM:SS` otherwise. Compute from `duration_seconds`.
 - `views_human`: format `view_count` with commas if under 1M, otherwise as `1.2M`, `15.3M`, etc. If view_count is 0 or missing, use `—`.
 - `WHAT IT ACTUALLY DELIVERS`: one line per `hook` and `content` section. Skip `pitch` and `outro` sections here. Use `[start–end]` time range from Pass 1. Summary is the section's `summary` field, lightly edited for brevity if needed. Aim for 2–6 lines total.

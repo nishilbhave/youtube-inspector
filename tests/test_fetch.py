@@ -197,6 +197,7 @@ class TestCache:
             "video_id": "dQw4w9WgXcQ",
             "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
             "title": "Cached",
+            "slug": "cached",
             "channel": "x",
             "channel_id": "y",
             "duration_seconds": 600,
@@ -217,6 +218,52 @@ class TestCache:
         mock_tr.assert_not_called()
         out = capsys.readouterr().out
         assert json.loads(out)["title"] == "Cached"
+
+    def test_cached_without_slug_field_re_fetches(
+        self, tmp_path, monkeypatch, capsys
+    ):
+        """Old cache entries (pre-slug-field) must be invalidated and re-fetched."""
+        monkeypatch.setattr(fetch, "CACHE_DIR", tmp_path / "cache")
+        legacy_cached = {
+            "video_id": "dQw4w9WgXcQ",
+            "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+            "title": "Legacy Cached Title",
+            "channel": "x",
+            "channel_id": "y",
+            "duration_seconds": 600,
+            "view_count": 1,
+            "upload_date": "2026-01-01",
+            "language": "en",
+            "transcript": [{"start": 0.0, "duration": 1.0, "text": "old"}],
+            "fetched_at": "2026-05-05T00:00:00Z",
+        }
+        fetch.cache_write("dQw4w9WgXcQ", legacy_cached)
+
+        fresh_meta = {
+            "video_id": "dQw4w9WgXcQ",
+            "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+            "title": "Legacy Cached Title",
+            "channel": "x",
+            "channel_id": "y",
+            "duration_seconds": 600,
+            "view_count": 1,
+            "upload_date": "2026-01-01",
+        }
+        with patch.object(
+            fetch, "fetch_metadata", return_value=fresh_meta
+        ) as mock_meta, patch.object(
+            fetch,
+            "fetch_transcript",
+            return_value=([{"start": 0.0, "duration": 1.0, "text": "fresh"}], "en"),
+        ) as mock_tr:
+            exit_code = fetch.main(["dQw4w9WgXcQ", "--cache"])
+
+        assert exit_code == 0
+        mock_meta.assert_called_once()
+        mock_tr.assert_called_once()
+        payload = json.loads(capsys.readouterr().out)
+        assert payload["slug"] == "legacy-cached-title"
+        assert payload["transcript"][0]["text"] == "fresh"
 
     def test_cached_rejection_re_emits_error(self, tmp_path, monkeypatch, capsys):
         monkeypatch.setattr(fetch, "CACHE_DIR", tmp_path / "cache")
@@ -262,7 +309,7 @@ class TestMainIntegration:
         meta = {
             "video_id": "dQw4w9WgXcQ",
             "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-            "title": "T",
+            "title": "Hello, World!",
             "channel": "C",
             "channel_id": "CID",
             "duration_seconds": 600,
@@ -278,6 +325,7 @@ class TestMainIntegration:
         payload = json.loads(capsys.readouterr().out)
         assert payload["video_id"] == "dQw4w9WgXcQ"
         assert payload["language"] == "en"
+        assert payload["slug"] == "hello-world"
         assert payload["transcript"] == [
             {"start": 0.0, "duration": 1.0, "text": "hi"}
         ]

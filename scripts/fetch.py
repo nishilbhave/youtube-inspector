@@ -19,6 +19,7 @@ import json
 import re
 import sys
 import tempfile
+import unicodedata
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any, NoReturn
@@ -27,6 +28,8 @@ from urllib.parse import parse_qs, urlparse
 CACHE_DIR = Path.home() / "yt-reports" / ".cache"
 MIN_DURATION_SECONDS = 180
 VIDEO_ID_RE = re.compile(r"^[A-Za-z0-9_-]{11}$")
+SLUG_MAX_LEN = 60
+_NON_SLUG_RE = re.compile(r"[^a-z0-9]+")
 VALID_HOSTS = {
     "youtube.com",
     "www.youtube.com",
@@ -153,6 +156,23 @@ def _format_upload_date(yyyymmdd: str) -> str:
     if yyyymmdd and len(yyyymmdd) == 8 and yyyymmdd.isdigit():
         return f"{yyyymmdd[:4]}-{yyyymmdd[4:6]}-{yyyymmdd[6:8]}"
     return ""
+
+
+def _slug(title: str) -> str:
+    """Title → filename-safe slug: lowercase ASCII, dash-separated, ≤60 chars.
+
+    Empty or all-non-ASCII titles yield ``"untitled"``.
+    """
+    s = (title or "").lower()
+    s = unicodedata.normalize("NFKD", s)
+    s = "".join(c for c in s if not unicodedata.combining(c))
+    s = s.encode("ascii", "ignore").decode("ascii")
+    s = _NON_SLUG_RE.sub("-", s).strip("-")
+    if len(s) > SLUG_MAX_LEN:
+        cut = s[:SLUG_MAX_LEN]
+        last_dash = cut.rfind("-")
+        s = (cut[:last_dash] if last_dash > 0 else cut).strip("-")
+    return s or "untitled"
 
 
 def fetch_transcript(video_id: str, language: str) -> tuple[list[dict[str, Any]], str]:
@@ -348,6 +368,7 @@ def fetch(video_id: str, language: str) -> dict[str, Any]:
     segments, detected = fetch_transcript(video_id, language)
     return {
         **metadata,
+        "slug": _slug(metadata.get("title", "")),
         "language": detected or language,
         "transcript": segments,
         "fetched_at": datetime.now(timezone.utc)
@@ -399,8 +420,10 @@ def main(argv: list[str] | None = None) -> int:
                         cached.get("video_id") or video_id,
                     )
                 )
-            _emit(cached, args.out)
-            return 0
+            if "slug" in cached:
+                _emit(cached, args.out)
+                return 0
+            # Older cache predates the `slug` field — fall through to re-fetch.
 
     try:
         payload = fetch(video_id, args.language)

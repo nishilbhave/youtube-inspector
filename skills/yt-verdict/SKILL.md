@@ -1,10 +1,11 @@
 ---
 name: yt-verdict
 description: |
-  PLACEHOLDER — tuned in Phase 4. One-line gist: pre-watch decision tool
-  for YouTube. Given a video URL, produces a structured WATCH/SKIM/SKIP
-  report with a 0–10 score, what the video actually delivers vs what the
-  title promises, substance density, and best minutes if you must watch.
+  Pre-watch decision tool for YouTube. Given a video URL, produces a
+  WATCH/SKIM/SKIP verdict with a 0–10 score, what the video actually
+  delivers vs what the title promises, substance density, who should
+  watch or skip, and the best minutes if you must watch. Saves a full
+  report to ~/yt-reports/ and prints a one-glance dashboard inline.
 ---
 
 # yt-verdict — pre-watch decision tool for YouTube videos
@@ -152,32 +153,71 @@ Tell the user: `Pass 3: cache hit` or `Pass 3: ran` plus the verdict line (e.g. 
 
 ### Step 6 — Write the final report
 
+Build the filename from the Step 2 fetch JSON:
+
+- `{date}` — first 10 characters of `fetched_at` (UTC, `YYYY-MM-DD`).
+- `{slug}` — the `slug` field from the fetch JSON (already deterministic, lowercase, ≤ 60 chars; falls back to `untitled` for non-Latin titles).
+- `{video_id}` — the 11-char ID, kept at the end so cache lookups and re-runs match unambiguously.
+
 Write the unwrapped Pass 3 report (the markdown text from the cache `output`) to:
 
 ```
-~/yt-reports/{video_id}.md
+~/yt-reports/{date}-{slug}-{video_id}.md
 ```
 
-Always overwrite if it exists. Do **not** print the full report inline — it's a structured document meant for the file. Terminal output is the summary in Step 7.
+Always overwrite if it exists. Re-running on the same video produces an identical filename — `--cache` keeps `fetched_at` stable, so no orphan files accumulate. Do **not** print the full report inline — it's a structured document meant for the file. Terminal output is the dashboard in Step 7.
 
-### Step 7 — Show a one-glance summary inline
+### Step 7 — Show the verdict dashboard inline
 
-Print exactly three lines extracted from the Pass 3 report and the Step 2 metadata:
+Print this dashboard directly to the user. Borders are exactly 54 box-drawing characters `━`. Two-space indent on every content line. Soft-wrap the executive verdict around column 60.
 
 ```
-{VERDICT} {score}/10  ·  Gap {LOW|MEDIUM|HIGH}  ·  {n} flags
-{title} — {channel} · {duration_human}
-→ ~/yt-reports/{video_id}.md
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  {STATE_BADGE}  {VERDICT}  ·  {score}/10  ·  Gap {LOW|MEDIUM|HIGH}
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  {STATE_PROSE_GLYPH} {executive_verdict — 2–3 sentences, soft-wrapped}
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  {title}
+  {channel}  ·  {duration_human}
+
+  🎯 Best minutes   [{start}–{end}] — {one-line description}
+  📊 Substance      {concrete} concrete · {vague} vague · {evidence} evidence
+  👥 Watch if       {audience}
+  👥 Skip if        {audience}
+
+  🚩 Flags ({n})
+     [{ts}] "{quote, ≤40 chars}…"   — {short reason}
+     [{ts}] "{quote, ≤40 chars}…"   — {short reason}
+
+  📄 ~/yt-reports/{date}-{slug}-{video_id}.md
 ```
 
-How to populate each field:
+#### State glyph table
 
-- `VERDICT`, `score`, `Gap`: parse from the Pass 3 report (the `VERDICT:` line and the `Gap:` line under `TITLE vs CONTENT`).
-- `n flags`: count bullet lines under the `FLAGS` header in the Pass 3 report (lines starting with `- [`). If the report omits the `FLAGS` header (verdict WATCH, Gap LOW), use `0 flags`.
+| `VERDICT` | `STATE_BADGE` | `STATE_PROSE_GLYPH` |
+| --------- | ------------- | ------------------- |
+| WATCH     | ✅            | ✨                  |
+| SKIM      | ⚠️             | ⏩                  |
+| SKIP      | ❌            | 🚫                  |
+
+#### Field extraction
+
+- `VERDICT`, `score`: parse from the Pass 3 report's `VERDICT: …` line.
+- `Gap`: parse from the `Gap:` line under `TITLE vs CONTENT`.
+- `executive_verdict`: the prose paragraph(s) under the new `EXECUTIVE VERDICT` header in the Pass 3 report. Strip any leading/trailing whitespace. Soft-wrap to ~60 columns by inserting newlines at word boundaries; indent wrapped lines to align under the prose glyph (3 spaces).
 - `title`, `channel`: from the Step 2 fetch JSON.
 - `duration_human`: `M:SS` if `duration_seconds` < 3600, else `H:MM:SS`.
+- `Best minutes`: parse the `BEST {n} MINUTES (if you must watch)` block; show the `[start–end]` range and the one-line description on a single line. **Omit this entire line** when the report says `Nothing — full skip recommended.`
+- `Substance`: integer counts from `SUBSTANCE DENSITY` — `Concrete claims`, `Vague claims`, `Evidence shown`.
+- `Watch if`: copy the line under `WHO SHOULD WATCH` verbatim (one line; if it's `Nobody`, render the value as `Nobody`).
+- `Skip if`: copy the line under `WHO SHOULD SKIP` verbatim.
+- `Flags`: count = total bullets in the `FLAGS` section. Show the **first two bullets only**. Each bullet's `quote` is truncated to 40 chars + `…` if longer; the timestamp and reason are kept verbatim. **Omit the entire Flags block** (header + bullets) when the report omits its `FLAGS` section (verdict WATCH, Gap LOW); the `Flags` line and bullets are dropped together.
+- File path footer: literal `📄 ` + the path you wrote in Step 6.
 
-The user gets the verdict at a glance and opens the file only if they want the full breakdown (sections, substance density, who-should-watch/skip, best minutes, flags with quotes).
+The user gets the verdict at a glance and opens the file only for the full breakdown (sections, substance density details, all flags with full quotes).
 
 ## Cache protocol — exact contract
 

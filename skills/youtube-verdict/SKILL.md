@@ -9,7 +9,7 @@ description: |
   best-minutes range, substance density (concrete vs vague claims, evidence
   shown, pitches), and a who-should-watch / who-should-skip split. Every
   flag cites a verbatim transcript quote with a timestamp — no hallucinated
-  criticism. For neutral summaries with no judgment use `youtube-tldr`
+  criticism. For neutral summaries with no judgment use `youtube-summary`
   instead. Saves the full report to ~/youtube-reports/ and prints a
   one-glance dashboard inline.
 ---

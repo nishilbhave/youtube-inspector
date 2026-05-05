@@ -38,7 +38,7 @@ python3 scripts/fetch.py <url-or-id> --cache
 
 Standard exit-code interpretation: 0 success, 2 documented rejection (`INVALID_URL`, `PLAYLIST`, `LIVE_STREAM`, `TOO_SHORT`, `NO_TRANSCRIPT`, `NON_ENGLISH`), 1 unexpected error. Surface rejections verbatim and stop.
 
-### Step 3 — Pass 1: Structure extraction (shared with verdict, tldr, extract)
+### Step 3 — Pass 1: Structure extraction (shared with verdict, summary, extract)
 
 Cache file: `~/youtube-reports/.cache/{video_id}-pass1.json`. Pass 1 is **shared infrastructure** — same prompt, same input, same output across all four skills. Likely a free cache hit.
 
@@ -137,7 +137,7 @@ Skill-specific cache files:
 | Filename | Owner | Contents |
 |---|---|---|
 | `{video_id}.json` | `scripts/fetch.py` | Transcript JSON (shared) |
-| `{video_id}-pass1.json` | shared (verdict + tldr + extract + claims) | Pass 1 cache wrapper |
+| `{video_id}-pass1.json` | shared (verdict + summary + extract + claims) | Pass 1 cache wrapper |
 | `{video_id}-pass2.json` | shared (verdict + claims) | Pass 2 cache wrapper |
 | `{video_id}-claims-pass3.json` | this skill | Pass 3 cache wrapper |
 
@@ -158,7 +158,7 @@ Per-pass canonical inputs:
 
 ## Output format reminder
 
-- Pass 1 output: shared with verdict/tldr/extract, see `prompts/extract_structure.md`.
+- Pass 1 output: shared with verdict/summary/extract, see `prompts/extract_structure.md`.
 - Pass 2 output: shared with verdict, see `prompts/inventory_claims.md` (4 arrays per section: `concrete_claims`, `vague_claims`, `evidence_shown`, `pitches`, every entry timestamp + verbatim quote).
 - Pass 3 output: a single fenced markdown block following the chronological-inventory layout in `prompts/generate_claims.md`. **Inventory only** — no truth verdicts, no fact-checks, no recommendations.
 

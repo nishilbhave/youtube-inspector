@@ -82,7 +82,7 @@ It prints the exact `pipx install` command to fix the deps prereq and exits 0 on
 ## Skills
 
 - **`youtube-verdict`** — *"is this worth watching?"* → WATCH / OKAY / SKIP, 0–10 score, best-minutes range, substance density, who-should-watch / who-should-skip split, every flag a timestamped verbatim quote.
-- **`youtube-tldr`** — *"summarize this video"* → 3–4 sentence TL;DR, section-by-section breakdown, top takeaways, skippable-section markers. Factual and neutral — never recommends watching or skipping.
+- **`youtube-summary`** — *"summarize this video"* / *"tl;dr"* → 3–4 sentence TL;DR, section-by-section breakdown, top takeaways, skippable-section markers. Factual and neutral — never recommends watching or skipping.
 - **`youtube-extract`** — *"what tools / books / links did they mention?"* → categorized list of links, code, books, tools, and people, each with timestamp and verbatim mention.
 - **`youtube-claims`** — *"list every claim this video makes"* → research-grade chronological inventory of concrete claims, vague claims, evidence shown, and pitches, with timestamps and verbatim quotes. V1 is inventory-only; no external verification.
 
@@ -91,8 +91,8 @@ It prints the exact `pipx install` command to fix the deps prereq and exits 0 on
 Three-pass pipeline shared across all four skills:
 
 - **Pass 1 — structure (shared by all 4)**: `python3 scripts/fetch.py <url> --cache` pulls metadata + transcript and writes `~/youtube-reports/.cache/{video_id}.json`. The host agent then runs `prompts/extract_structure.md` once over the transcript to segment it into hook / content / pitch / outro with timestamps. Output is cached at `{video_id}-pass1.json` and reused by every skill that runs on the same video.
-- **Pass 2 — per-skill inventory (partial sharing)**: `python3 scripts/segments.py <video_id> <start> <end>` slices the cached transcript per Pass 1 section, so the host agent's LLM only sees one section at a time. `youtube-verdict` and `youtube-claims` share `prompts/inventory_claims.md` and the same `{video_id}-pass2.json` cache; `youtube-tldr` uses `prompts/summarize_sections.md`; `youtube-extract` uses `prompts/extract_artifacts.md`.
-- **Pass 3 — per-skill synthesis**: each skill's own prompt (`prompts/generate_verdict.md`, `prompts/generate_tldr.md`, `prompts/generate_extract.md`, `prompts/generate_claims.md`) takes Pass 1 + Pass 2 + a small metadata subset and produces the final report — the transcript itself is never reloaded for Pass 3.
+- **Pass 2 — per-skill inventory (partial sharing)**: `python3 scripts/segments.py <video_id> <start> <end>` slices the cached transcript per Pass 1 section, so the host agent's LLM only sees one section at a time. `youtube-verdict` and `youtube-claims` share `prompts/inventory_claims.md` and the same `{video_id}-pass2.json` cache; `youtube-summary` uses `prompts/summarize_sections.md`; `youtube-extract` uses `prompts/extract_artifacts.md`.
+- **Pass 3 — per-skill synthesis**: each skill's own prompt (`prompts/generate_verdict.md`, `prompts/generate_summary.md`, `prompts/generate_extract.md`, `prompts/generate_claims.md`) takes Pass 1 + Pass 2 + a small metadata subset and produces the final report — the transcript itself is never reloaded for Pass 3.
 
 **Cache protocol** is locked by `scripts/cache.py`: SHA-256 of the prompt file's raw bytes (`prompt_hash`) plus SHA-256 of the canonical-JSON form of the inputs (`inputs_hash`). Same logical input on any host produces the same digest; edits to a prompt or transcript automatically invalidate downstream passes. Unit tests in `tests/test_cache.py` lock the canonicalization (`sort_keys=True`, compact separators, UTF-8).
 

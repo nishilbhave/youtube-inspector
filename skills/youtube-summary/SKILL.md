@@ -1,5 +1,5 @@
 ---
-name: youtube-tldr
+name: youtube-summary
 description: |
   Fast neutral summary tool for YouTube videos — no verdict, no judgment.
   Use when the user pastes a YouTube URL and asks "summarize this video",
@@ -14,9 +14,9 @@ description: |
   inline.
 ---
 
-# youtube-tldr — fast summary tool for YouTube videos
+# youtube-summary — fast summary tool for YouTube videos
 
-You are the host agent running this skill. The user has asked for a summary, TL;DR, or "what's in this video" without asking for a verdict. Your job is to produce a structured summary at `~/youtube-reports/{date}-{slug}-{video_id}-tldr.md`.
+You are the host agent running this skill. The user has asked for a summary, TL;DR, or "what's in this video" without asking for a verdict. Your job is to produce a structured summary at `~/youtube-reports/{date}-{slug}-{video_id}-summary.md`.
 
 This skill never says "watch" or "skip" — that's `youtube-verdict`'s job. If the user is asking for a verdict, hand off; otherwise produce a neutral factual summary.
 
@@ -83,7 +83,7 @@ Tell the user one short line: `Pass 1: cache hit` or `Pass 1: ran (N sections ex
 
 ### Step 4 — Pass 2: Per-section summarization
 
-Cache file: `~/youtube-reports/.cache/{video_id}-tldr-pass2.json`.
+Cache file: `~/youtube-reports/.cache/{video_id}-summary-pass2.json`.
 
 The cache wrapper schema is identical to Pass 1 (`video_id`, `pass: 2`, `prompt_hash`, `inputs_hash`, `output`, `produced_at`). What differs:
 
@@ -130,11 +130,11 @@ If `scripts/segments.py` is unavailable, the inline fallback documented in `yout
 
 ### Step 5 — Pass 3: Synthesis into TL;DR report
 
-Cache file: `~/youtube-reports/.cache/{video_id}-tldr-pass3.json`.
+Cache file: `~/youtube-reports/.cache/{video_id}-summary-pass3.json`.
 
 Same wrapper schema. Differences:
 
-- Prompt: `prompts/generate_tldr.md`.
+- Prompt: `prompts/generate_summary.md`.
 - Canonical inputs: `{"metadata": <metadata subset>, "pass1": <Pass 1 output>, "pass2": <Pass 2 output>}`.
 - Metadata subset: `{title, channel, duration_seconds, view_count, upload_date}` from the Step 2 fetch JSON.
 - **Pass 3 does not need the transcript at all.** Pass 2 already contains every section's summary and key points. Do not Read `~/youtube-reports/.cache/{video_id}.json` for this pass.
@@ -154,10 +154,10 @@ Build the filename from the Step 2 fetch JSON:
 Write the unwrapped Pass 3 report (the markdown text from the cache `output`) to:
 
 ```
-~/youtube-reports/{date}-{slug}-{video_id}-tldr.md
+~/youtube-reports/{date}-{slug}-{video_id}-summary.md
 ```
 
-The `-tldr` suffix differentiates this from `youtube-verdict`'s output for the same video. Always overwrite if it exists. Do not print the full report inline — terminal output is the dashboard in Step 7.
+The `-summary` suffix differentiates this from `youtube-verdict`'s output for the same video. Always overwrite if it exists. Do not print the full report inline — terminal output is the dashboard in Step 7.
 
 ### Step 7 — Show the TL;DR dashboard inline
 
@@ -177,7 +177,7 @@ Print this dashboard directly to the user. Borders are exactly 54 box-drawing ch
 
   ⏭️  Skippable     {comma-separated [start–end] ranges, or "—"}
 
-  📄 ~/youtube-reports/{date}-{slug}-{video_id}-tldr.md
+  📄 ~/youtube-reports/{date}-{slug}-{video_id}-summary.md
 ```
 
 #### Field extraction
@@ -200,9 +200,9 @@ Skill-specific cache files:
 | Filename | Owner | Contents |
 |---|---|---|
 | `{video_id}.json` | `scripts/fetch.py` | Transcript JSON (shared) |
-| `{video_id}-pass1.json` | shared (verdict + tldr) | Pass 1 cache wrapper |
-| `{video_id}-tldr-pass2.json` | this skill | Pass 2 cache wrapper |
-| `{video_id}-tldr-pass3.json` | this skill | Pass 3 cache wrapper |
+| `{video_id}-pass1.json` | shared (verdict + summary) | Pass 1 cache wrapper |
+| `{video_id}-summary-pass2.json` | this skill | Pass 2 cache wrapper |
+| `{video_id}-summary-pass3.json` | this skill | Pass 3 cache wrapper |
 
 Per-pass canonical inputs:
 
@@ -210,7 +210,7 @@ Per-pass canonical inputs:
 |---|---|---|
 | 1 | `prompts/extract_structure.md` | `{"transcript": <full fetch.py JSON>}` |
 | 2 | `prompts/summarize_sections.md` | `{"pass1": <Pass 1 output>, "transcript": <full fetch.py JSON>}` |
-| 3 | `prompts/generate_tldr.md` | `{"metadata": {"title":…, "channel":…, "duration_seconds":…, "view_count":…, "upload_date":…}, "pass1": <Pass 1 output>, "pass2": <Pass 2 output>}` |
+| 3 | `prompts/generate_summary.md` | `{"metadata": {"title":…, "channel":…, "duration_seconds":…, "view_count":…, "upload_date":…}, "pass1": <Pass 1 output>, "pass2": <Pass 2 output>}` |
 
 ## Cross-platform notes
 
@@ -223,4 +223,4 @@ Per-pass canonical inputs:
 
 - Pass 1 output: shared with verdict, see `prompts/extract_structure.md`.
 - Pass 2 output: JSON object `{video_id, by_section}` where each section has `summary` (2–4 sentences) and `key_points` (array of short strings) — see `prompts/summarize_sections.md`.
-- Pass 3 output: a single fenced markdown block following the report layout in `prompts/generate_tldr.md`. Tone is **factual and neutral** — no recommendations, no judgments, no "you should watch this". The output answers "what was actually said?" and nothing more.
+- Pass 3 output: a single fenced markdown block following the report layout in `prompts/generate_summary.md`. Tone is **factual and neutral** — no recommendations, no judgments, no "you should watch this". The output answers "what was actually said?" and nothing more.

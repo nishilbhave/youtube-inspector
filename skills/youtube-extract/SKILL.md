@@ -46,11 +46,11 @@ python3 scripts/fetch.py <url-or-id> --cache
 
 Interpret the exit code per the standard mapping (0 success, 2 documented rejection, 1 unexpected error). Documented rejection codes (exit 2): `INVALID_URL`, `PLAYLIST`, `LIVE_STREAM`, `TOO_SHORT` (under 180s), `NO_TRANSCRIPT`, `NON_ENGLISH`. Surface rejections verbatim and stop — do not attempt the LLM passes.
 
-### Step 3 — Pass 1: Structure extraction (shared with youtube-verdict and youtube-tldr)
+### Step 3 — Pass 1: Structure extraction (shared with youtube-verdict and youtube-summary)
 
 Cache file: `~/youtube-reports/.cache/{video_id}-pass1.json`.
 
-Pass 1 is **shared infrastructure** — same prompt, same input, same output regardless of which skill is asking. Hits cache for free if `youtube-verdict` or `youtube-tldr` previously ran on this video.
+Pass 1 is **shared infrastructure** — same prompt, same input, same output regardless of which skill is asking. Hits cache for free if `youtube-verdict` or `youtube-summary` previously ran on this video.
 
 1. Compute `prompt_hash`: `python3 scripts/cache.py hash-file prompts/extract_structure.md`.
 2. Compute `inputs_hash`: pipe the canonical inputs JSON `{"transcript": <full fetch.py output>}` to `python3 scripts/cache.py hash-json`.
@@ -167,7 +167,7 @@ Skill-specific cache files:
 | Filename | Owner | Contents |
 |---|---|---|
 | `{video_id}.json` | `scripts/fetch.py` | Transcript JSON (shared) |
-| `{video_id}-pass1.json` | shared (verdict + tldr + extract) | Pass 1 cache wrapper |
+| `{video_id}-pass1.json` | shared (verdict + summary + extract) | Pass 1 cache wrapper |
 | `{video_id}-extract-pass2.json` | this skill | Pass 2 cache wrapper |
 | `{video_id}-extract-pass3.json` | this skill | Pass 3 cache wrapper |
 
@@ -188,7 +188,7 @@ Per-pass canonical inputs:
 
 ## Output format reminder
 
-- Pass 1 output: shared with verdict and tldr, see `prompts/extract_structure.md`.
+- Pass 1 output: shared with verdict and summary, see `prompts/extract_structure.md`.
 - Pass 2 output: JSON object `{video_id, by_section}` where each section has five arrays (`links`, `code`, `books`, `tools`, `people`), every entry with timestamp + verbatim quote — see `prompts/extract_artifacts.md`.
 - Pass 3 output: a single fenced markdown block following the report layout in `prompts/generate_extract.md`. Tone is **factual reference extraction** — no recommendations, no rankings beyond the small `Notable` shortlist, no judgments about whether the resources are good.
 

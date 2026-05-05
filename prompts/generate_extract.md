@@ -6,7 +6,7 @@ You are producing a categorized reference list from a YouTube video. The report 
 
 This report is a **factual reference list**. No recommendations, no rankings of which artifact is "best", no quality judgments. The reader uses this as a lookup index for the resources mentioned, with timestamps so they can jump back to the source.
 
-If the user wanted a verdict, they would have asked `youtube-verdict`. If they wanted a summary, they would have asked `youtube-tldr`. They asked for the artifacts.
+If the user wanted a verdict, they would have asked `youtube-verdict`. If they wanted a summary, they would have asked `youtube-summary`. They asked for the artifacts.
 
 ## Inputs
 

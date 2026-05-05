@@ -1,6 +1,6 @@
 # Publish Punchlist — youtube-inspector suite
 
-Tracker for shipping the four built skills (verdict, tldr, extract, claims) to skills.sh.
+Tracker for shipping the four built skills (verdict, summary, extract, claims) to skills.sh.
 This is **not** the verdict-V1-only Phase 4 from `PHASES.md` — the suite scope subsumes it.
 
 **Status legend:** `[ ]` pending · `[~]` in progress · `[x]` done · `[-]` deferred / out of scope
@@ -13,7 +13,8 @@ This is **not** the verdict-V1-only Phase 4 from `PHASES.md` — the suite scope
 - `[x]` Working tree clean (latest commit `abad007` — fix #3 + cache.py mandate)
 - `[x]` Vendor-purity grep clean across all skills + scripts + prompts
 - `[x]` 121 tests passing (35 fetch + 30 segments + 22 cache + 34 slug)
-- `[x]` Four SKILL.md files written, three smoke-tested (verdict in Phase 3, tldr/extract/claims this session)
+- `[x]` Four SKILL.md files written, three smoke-tested (verdict in Phase 3, summary/extract/claims this session)
+- `[x]` `youtube-tldr` renamed to `youtube-summary` for naming-register consistency with verdict/extract/claims (formal English nouns instead of internet shorthand). All cross-references, prompt paths (`generate_tldr.md` → `generate_summary.md`), report-filename suffix (`-tldr.md` → `-summary.md`), and cache filenames (`-tldr-pass2.json`/`-tldr-pass3.json` → `-summary-pass*.json`) updated. "tl;dr" preserved as a trigger phrase; "TL;DR" preserved as the report's section header (it's the format, not the skill name).
 - `[x]` `scripts/cache.py` shipped — deterministic hashing, eliminates the cross-host cache-miss drift documented in fix #1
 - `[x]` `python` → `python3` in all SKILL.md subprocess calls (fix #3)
 - **No skills.sh registration step needed — skills.sh indexes `npx skills add <owner>/<repo>` automatically once the repo is public.** This drops what was item #11 of the Phase 4 punchlist.
@@ -61,15 +62,15 @@ Read all four `description:` frontmatter blocks side-by-side. Risk areas:
 
 | Phrase | Should route to | Risk |
 |---|---|---|
-| "summarize this video" | tldr | Could trigger tldr OR verdict (verdict has "what's actually in this video") |
-| "what's in this video" | tldr or verdict (tied) | Both currently claim it |
+| "summarize this video" | summary | Could trigger summary OR verdict (verdict has "what's actually in this video") |
+| "what's in this video" | summary or verdict (tied) | Both currently claim it |
 | "is this worth watching" | verdict | Should be exclusive |
 | "extract links" / "what tools did they mention" | extract | Should be exclusive |
 | "what claims did they make" | claims | Should be exclusive |
 | "list every claim" / "fact-check material" | claims | Should be exclusive |
 | "best 5 minutes of this video" | verdict (already has BEST N MINUTES output) | Currently fine |
 
-Action: rewrite each description so trigger phrases are exclusive to one skill. Move overlapping phrases to the most specific owner. Update `youtube-verdict/SKILL.md` description to drop "what's actually in this video" → that should belong to tldr.
+Action: rewrite each description so trigger phrases are exclusive to one skill. Move overlapping phrases to the most specific owner. Update `youtube-verdict/SKILL.md` description to drop "what's actually in this video" → that should belong to summary.
 
 ### `[ ]` 5. Pull the existing build status out of `README.md`'s "Build status" section
 
@@ -79,7 +80,7 @@ Currently points at PHASES.md (verdict-V1-only tracker). Replace with a link to 
 
 Two cleanup tasks:
 - Mark Phase 4's verdict-only deliverables as **superseded by PUBLISH.md** (the suite publish path subsumes them).
-- Add a Change log entry summarizing this session: 3 sister skills built (tldr, extract, claims), `scripts/cache.py` + 22 tests added, fix #3 (python→python3), publish punchlist scoped.
+- Add a Change log entry summarizing this session: 3 sister skills built (summary, extract, claims), `scripts/cache.py` + 22 tests added, fix #3 (python→python3), publish punchlist scoped.
 
 ### `[ ]` 7. Run full test suite once more before any push
 
@@ -96,7 +97,7 @@ For each of the 4 skills, 5 fresh sessions, 5 distinct natural-language phrasing
 Suggested phrasings per skill (pick 5 each before running):
 
 - **verdict:** "is this worth watching", "should I skip this", "give me a verdict on this video", "is this YouTube video any good", "watch or skip"
-- **tldr:** "summarize this video", "tl;dr", "what does this video cover", "give me the gist", "what does this say"
+- **summary:** "summarize this video", "tl;dr", "what does this video cover", "give me the gist", "what does this say"
 - **extract:** "extract links from this video", "what tools did they mention", "pull the code snippets", "what books did they reference", "list the resources"
 - **claims:** "what claims does this video make", "list every claim", "show me the evidence", "extract testable claims", "what does this person assert"
 
@@ -117,7 +118,7 @@ Per the "zero-setup hard rule" already locked into `yt-worth-it-plan.md` Hard co
 
 ### `[ ]` 11. Output parity check — Claude Code vs Cursor
 
-Run the same skill on the same URL on both hosts. Acceptance: same WATCH/OKAY/SKIP (for verdict), same flag count ± 1, same evidence quality (verbatim quotes + timestamps). Repeat for one tldr, one extract, one claims invocation each.
+Run the same skill on the same URL on both hosts. Acceptance: same WATCH/OKAY/SKIP (for verdict), same flag count ± 1, same evidence quality (verbatim quotes + timestamps). Repeat for one summary, one extract, one claims invocation each.
 
 ### `[ ]` 12. Commit + push
 
@@ -127,7 +128,7 @@ skills.sh will auto-index the repo on next crawl — no separate registration ca
 
 ### `[ ]` 13. (Post-publish) Verify install flow end-to-end
 
-After skills.sh has indexed the repo, run `npx skills add nishilbhave/youtube-inspector` on a fresh machine (or container). Paste a URL. Confirm verdict, tldr, extract, claims all trigger and produce reports.
+After skills.sh has indexed the repo, run `npx skills add nishilbhave/youtube-inspector` on a fresh machine (or container). Paste a URL. Confirm verdict, summary, extract, claims all trigger and produce reports.
 
 ---
 
@@ -177,6 +178,6 @@ When you continue:
 
 - `PHASES.md` — verdict-V1 phase tracker (Phases 0–3 complete, Phase 4 superseded by this file)
 - `yt-worth-it-plan.md` — original architecture spec (read first if context-loading from cold)
-- `/Users/nishil/.claude/plans/image-4-what-all-dreamy-turing.md` — strategic plan from this session that decided which skills to build (tldr, extract, claims, batch) and which to drop
-- `~/youtube-reports/` — actual reports from smoke tests (verdict, tldr, extract, claims all have at least one report each on disk)
+- `/Users/nishil/.claude/plans/image-4-what-all-dreamy-turing.md` — strategic plan from this session that decided which skills to build (summary, extract, claims, batch) and which to drop
+- `~/youtube-reports/` — actual reports from smoke tests (verdict, summary, extract, claims all have at least one report each on disk; some legacy `-tldr.md` files remain from before the rename and can be cleared at smoke-test time)
 - `~/youtube-reports/.cache/` — full cache state across all skills, validates the shared-cache architecture is working

@@ -10,7 +10,7 @@ This is **inventory only, not verification**. The report does not say a claim is
 - **No editorializing.** Do not write "boldly claims", "vaguely asserts", "dubious", "questionable", "supported", "unsupported".
 - **No recommendations.** Do not say "skip this video", "watch this part", "trust this".
 
-If the user wanted a verdict, they would have asked `youtube-verdict`. If they wanted a summary, they would have asked `youtube-tldr`. They asked for the claim inventory.
+If the user wanted a verdict, they would have asked `youtube-verdict`. If they wanted a summary, they would have asked `youtube-summary`. They asked for the claim inventory.
 
 ## Inputs
 

@@ -20,5 +20,5 @@
         font-size="20" font-weight="400" fill="#9ca3af">four skills · zero setup · vendor-neutral</text>
   <text x="60" y="190"
         font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace"
-        font-size="14" font-weight="400" fill="#6b7280">verdict · tldr · extract · claims</text>
+        font-size="14" font-weight="400" fill="#6b7280">verdict · summary · extract · claims</text>
 </svg>

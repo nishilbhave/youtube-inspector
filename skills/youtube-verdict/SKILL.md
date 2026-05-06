@@ -16,13 +16,23 @@ description: |
 
 # youtube-verdict — pre-watch decision tool for YouTube videos
 
-You are the host agent running this skill. The user has asked whether a YouTube video is worth watching, what's actually in it, or for a pre-watch summary. Your job is to produce a structured report at `~/youtube-reports/{video_id}.md`.
+You are the host agent running this skill. The user has asked whether a YouTube video is worth watching, what's actually in it, or for a pre-watch summary. Your job is to produce a structured report at `~/youtube-reports/{date}-{slug}-{video_id}.md`.
 
-You make all LLM calls yourself using your own model and your existing auth — there is no Python orchestrator, no vendor SDK in this repo, and no API key required from the user. The only system requirement is **Python 3.11+** for the bundled `scripts/fetch.py`.
-
-The skill assumes the working directory is the root of the `youtube-inspector` repo (where `scripts/`, `prompts/`, and `skills/` all live as siblings).
+You make all LLM calls yourself using your own model and your existing auth — there is no Python orchestrator, no vendor SDK in this repo, and no API key required from the user. The only system requirement is **Python 3.11+** with `yt-dlp` and `youtube-transcript-api` installed (Step 1.5 verifies this).
 
 ## Workflow — follow these steps in order
+
+### Step 0 — Resolve skill paths
+
+All `scripts/…` and `prompts/…` references in this document are **relative to the directory containing this SKILL.md file** — not the user's working directory. Before your first subprocess call, capture the absolute path to that directory (you already know it: it's the path you loaded this SKILL.md from). Use it as `<SKILL_DIR>` for every script and prompt path below.
+
+In every shell call, pass quoted absolute paths:
+
+```
+python3 "<SKILL_DIR>/scripts/fetch.py" "<url>" --cache
+```
+
+Do **not** assume the user's working directory is the repo root. Do **not** rely on a `.venv` being activated.
 
 ### Step 1 — Extract the video URL or 11-char ID from the user's input
 
@@ -35,12 +45,24 @@ Accepted forms (each is recognized by `scripts/fetch.py`):
 
 Reject playlist URLs (`/playlist`) — pass a specific video instead. If no URL is found in the user's message, ask them for one and stop.
 
+**Always pass the URL inside double quotes** when shelling out — zsh and other shells will treat the `?` in `?v=…` as a glob otherwise (`no matches found` errors).
+
+### Step 1.5 — Pre-flight dependency check
+
+Run once, before the first fetch:
+
+```
+python3 "<SKILL_DIR>/scripts/doctor.py"
+```
+
+If it exits non-zero, surface the printed `pipx install` command verbatim to the user, ask them to run it, and **stop**. Do not retry the fetch until the user confirms the install succeeded. This converts what would otherwise be a `ModuleNotFoundError: yt_dlp` mid-run into a single guided remediation.
+
 ### Step 2 — Fetch transcript and metadata
 
 Run as a subprocess (no LLM call):
 
 ```
-python3 scripts/fetch.py <url-or-id> --cache
+python3 "<SKILL_DIR>/scripts/fetch.py" "<url-or-id>" --cache
 ```
 
 The `--cache` flag reads/writes `~/youtube-reports/.cache/{video_id}.json` so a second run on the same video skips the network entirely.
@@ -61,28 +83,25 @@ The success JSON has these keys (you'll need them later):
 video_id, url, title, channel, channel_id,
 duration_seconds, view_count, upload_date, language,
 transcript[]      // each segment: {start, duration, text}
-fetched_at
+fetched_at, slug
 ```
 
 ### Step 3 — Pass 1: Structure extraction
 
-Cache file: `~/youtube-reports/.cache/{video_id}-pass1.json`.
+Cache file: `~/youtube-reports/.cache/{video_id}-pass1.json`. The cache wrapper schema is documented under "Cache protocol" below.
 
-1. Compute `prompt_hash` for `prompts/extract_structure.md` (see "Cache protocol" below).
-2. Compute `inputs_hash` for the canonical JSON `{"transcript": <full fetch.py output from Step 2>}`.
-3. Try to read the cache file. If it exists, parses cleanly, has every required field, and both hashes match → **cache HIT**: load the `output` field as the Pass 1 result and continue to Step 4.
-4. Otherwise → **cache MISS**: read `prompts/extract_structure.md`, apply it to the transcript JSON as a single LLM pass following the prompt's instructions exactly, parse the model response as JSON (it must be a single JSON object — no preamble, no markdown fences), and write the cache wrapper file:
+1. Try a cache read in one subprocess call (canonical inputs piped in via stdin):
+   ```
+   echo '{"transcript": <full Step 2 fetch JSON>}' | \
+     python3 "<SKILL_DIR>/scripts/cache.py" read 1 <video_id> "<SKILL_DIR>/prompts/extract_structure.md"
+   ```
+   Exit 0 means **cache HIT** — stdout is the Pass 1 output JSON; parse it and continue to Step 4. Exit 1 means **MISS** (stderr says why: `not-found` / `prompt-mismatch` / `inputs-mismatch` / `corrupt` / `field-missing`).
 
-```json
-{
-  "video_id": "<11-char id>",
-  "pass": 1,
-  "prompt_hash": "<sha256 hex>",
-  "inputs_hash": "<sha256 hex>",
-  "output": <the Pass 1 JSON object you just produced>,
-  "produced_at": "<ISO 8601 UTC, e.g. 2026-05-05T14:32:08Z>"
-}
-```
+2. On a MISS, read `prompts/extract_structure.md`, apply it to the transcript JSON as a single LLM pass following the prompt's instructions exactly, parse the model response as JSON (it must be a single JSON object — no preamble, no markdown fences). Then write the cache wrapper:
+   ```
+   echo '{"inputs": {"transcript": <full Step 2 fetch JSON>}, "output": <Pass 1 JSON>}' | \
+     python3 "<SKILL_DIR>/scripts/cache.py" write 1 <video_id> "<SKILL_DIR>/prompts/extract_structure.md"
+   ```
 
 Tell the user one short line: `Pass 1: cache hit` or `Pass 1: ran (N sections extracted)`.
 
@@ -90,27 +109,26 @@ Tell the user one short line: `Pass 1: cache hit` or `Pass 1: ran (N sections ex
 
 Cache file: `~/youtube-reports/.cache/{video_id}-pass2.json`.
 
-The Pass 2 cache protocol is the same as Step 3 (prompt-hash + inputs-hash check, then write the wrapper file on a miss). What's different is **how a cache miss is executed**: do not load the full transcript into your context. Process the transcript section by section instead.
-
-#### Cache hit/miss decision
-
-- Prompt: `prompts/inventory_claims.md`.
-- Canonical inputs (used **only** for `inputs_hash`): `{"pass1": <full Pass 1 output>, "transcript": <full fetch.py output>}`. This is the same canonical hash input as before — a cache written by an older version of this skill is still a hit.
-- The `output` field of the cache wrapper is the merged Pass 2 JSON object (`{video_id, by_section}`).
-
-If the hash check produces a HIT → skip to "Tell the user" below.
+1. Try a cache read:
+   ```
+   echo '{"pass1": <Pass 1 output>, "transcript": <full fetch.py output>}' | \
+     python3 "<SKILL_DIR>/scripts/cache.py" read 2 <video_id> "<SKILL_DIR>/prompts/inventory_claims.md"
+   ```
+   Exit 0 = HIT (parse the output JSON, continue to "Tell the user"). Exit 1 = MISS, run per-section processing.
 
 #### On a cache miss — per-section execution
 
-Loading the entire transcript into context burns ~17 K tokens for a 15-min video and ~120 K for a 75-min one. Do this instead:
+Loading the entire transcript into context burns ~17 K tokens for a 15-min video and ~120 K for a 75-min one. Process the transcript section by section instead.
+
+The Pass 1 timestamps (`section.start`, `section.end`) are **authoritative** — pass them straight to `segments.py`. Do **not** search the transcript to "verify" or "snap" boundaries; that's not part of the protocol and wastes tool calls.
 
 For each section in Pass 1's `sections[]`, in order:
 
-1. Run as a subprocess (no LLM call):
+1. Slice the transcript via subprocess (no LLM call):
    ```
-   python3 scripts/segments.py <video_id> <section.start> <section.end>
+   python3 "<SKILL_DIR>/scripts/segments.py" <video_id> <section.start> <section.end>
    ```
-   `<section.start>` and `<section.end>` are the `M:SS` (or `H:MM:SS`) strings from Pass 1 — pass them through unchanged. Stdout is a compact JSON object of the form:
+   Stdout is a compact JSON object of the form:
    ```json
    {"video_id":"…","title":"…","duration_seconds":N,"transcript":[<segments in [start,end)>]}
    ```
@@ -125,35 +143,41 @@ For each section in Pass 1's `sections[]`, in order:
    ```
    The model returns a JSON object `{"video_id":"<id>","by_section":{"<this section's id>": {...}}}` (one key in `by_section`).
 
-3. Merge that one `by_section` entry into a running merged dict. Keep the cumulative dict, drop the section's transcript slice from your context before moving to the next section.
+3. Merge that one `by_section` entry into a running merged dict. Drop the section's transcript slice from your context before moving to the next section.
 
-After all sections are processed, the final Pass 2 output is `{"video_id": "<id>", "by_section": <merged dict>}`. Write the cache wrapper using this output and the `inputs_hash` computed over the FULL canonical inputs (full Pass 1 + full fetch.py JSON), not the per-section slices.
+After all sections are processed, the final Pass 2 output is `{"video_id": "<id>", "by_section": <merged dict>}`. Write the cache wrapper:
+```
+echo '{"inputs": {"pass1": <Pass 1>, "transcript": <fetch.py output>}, "output": <merged Pass 2>}' | \
+  python3 "<SKILL_DIR>/scripts/cache.py" write 2 <video_id> "<SKILL_DIR>/prompts/inventory_claims.md"
+```
 
-If `scripts/segments.py` is unavailable for any reason, an inline fallback is:
+Optionally verify every quote substring-matches the transcript (the prompt enforces this, but verification catches model drift):
 ```
-python3 -c "import json,sys; d=json.load(open(sys.argv[1])); s,e=<start_sec>,<end_sec>; \
-  print(json.dumps({k:d[k] for k in ['video_id','title','duration_seconds']} | \
-  {'transcript':[x for x in d['transcript'] if s<=x['start']<e]}, separators=(',',':')))" \
-  ~/youtube-reports/.cache/<video_id>.json
+echo '<merged Pass 2 output>' | \
+  python3 "<SKILL_DIR>/scripts/cache.py" verify-quotes <video_id>
 ```
-Convert the Pass 1 `M:SS` boundaries to seconds yourself in this fallback.
+Exit 0 = clean. Exit 1 = at least one quote isn't verbatim; stderr lists each mismatch. Re-run the offending section if any.
 
 #### Tell the user
 
-`Pass 2: cache hit` or `Pass 2: ran (N items inventoried)` (where N is the total of all `concrete_claims`/`vague_claims`/`evidence_shown`/`pitches` across sections).
+`Pass 2: cache hit` or `Pass 2: ran (N items inventoried)` (where N is the total of all `concrete_claims` / `vague_claims` / `evidence_shown` / `pitches` across sections).
 
 ### Step 5 — Pass 3: Synthesis
 
 Cache file: `~/youtube-reports/.cache/{video_id}-pass3.json`.
 
-Same protocol as Step 3, but:
+1. Try a cache read with the canonical Pass 3 inputs:
+   ```
+   echo '{"metadata": {title,channel,duration_seconds,view_count,upload_date}, "pass1": <Pass 1>, "pass2": <Pass 2>}' | \
+     python3 "<SKILL_DIR>/scripts/cache.py" read 3 <video_id> "<SKILL_DIR>/prompts/generate_verdict.md"
+   ```
+   Exit 0 = HIT (stdout is the report markdown). Exit 1 = MISS.
 
-- Prompt: `prompts/generate_verdict.md`.
-- Canonical inputs: `{"metadata": <metadata subset>, "pass1": <Pass 1 output>, "pass2": <Pass 2 output>}`.
-- The metadata subset is exactly: `{title, channel, duration_seconds, view_count, upload_date}` from the Step 2 fetch JSON.
-- **Pass 3 does not need the transcript at all.** Every flag in the verdict cites a quote from Pass 2 (which already substring-matches the transcript). Do not Read `~/youtube-reports/.cache/{video_id}.json` for this pass.
-- The model's response is markdown wrapped in a single fenced code block (the prompt enforces this format). Strip the outer ` ``` ` fence; what remains is the report text.
-- The `output` field of the cache wrapper is the **stripped** report **as a JSON string**.
+2. On MISS, read `prompts/generate_verdict.md`, apply it to the canonical inputs as a single LLM pass. **Pass 3 does not need the transcript at all** — every flag cites a quote already substring-matched by Pass 2. Do not Read `~/youtube-reports/.cache/{video_id}.json` for this pass. The model's response is markdown wrapped in a single fenced code block; strip the outer ` ``` ` fence — the inner text is the report. Then write the cache wrapper with the stripped report as a JSON string:
+   ```
+   echo '{"inputs": <same canonical inputs>, "output": "<stripped report markdown as JSON string>"}' | \
+     python3 "<SKILL_DIR>/scripts/cache.py" write 3 <video_id> "<SKILL_DIR>/prompts/generate_verdict.md"
+   ```
 
 Tell the user: `Pass 3: cache hit` or `Pass 3: ran` plus the verdict line (e.g. `→ OKAY 5/10`).
 
@@ -163,7 +187,7 @@ Build the filename from the Step 2 fetch JSON:
 
 - `{date}` — first 10 characters of `fetched_at` (UTC, `YYYY-MM-DD`).
 - `{slug}` — the `slug` field from the fetch JSON (already deterministic, lowercase, ≤ 60 chars; falls back to `untitled` for non-Latin titles).
-- `{video_id}` — the 11-char ID, kept at the end so cache lookups and re-runs match unambiguously.
+- `{video_id}` — the 11-char ID.
 
 Write the unwrapped Pass 3 report (the markdown text from the cache `output`) to:
 
@@ -175,33 +199,16 @@ Always overwrite if it exists. Re-running on the same video produces an identica
 
 ### Step 7 — Show the verdict dashboard inline
 
-Print this dashboard directly to the user. Borders are exactly 54 box-drawing characters `━`. Two-space indent on every content line. Soft-wrap the executive verdict around column 60.
+Render the dashboard via the bundled renderer — do not format it by hand. The renderer handles all the layout details (54-char ━ borders, soft-wrap at 60 cols, badge selection, omit-Best-minutes / omit-Flags logic, 40-char quote truncation):
 
 ```
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-  {STATE_BADGE}  {VERDICT}  ·  {score}/10  ·  Gap {LOW|MEDIUM|HIGH}
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
-  {STATE_PROSE_GLYPH} {executive_verdict — 2–3 sentences, soft-wrapped}
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
-  {title}
-  {channel}  ·  {duration_human}
-
-  🎯 Best minutes   [{start}–{end}] — {one-line description}
-  📊 Substance      {concrete} concrete · {vague} vague · {evidence} evidence
-  👥 Watch if       {audience}
-  👥 Skip if        {audience}
-
-  🚩 Flags ({n})
-     [{ts}] "{quote, ≤40 chars}…"   — {short reason}
-     [{ts}] "{quote, ≤40 chars}…"   — {short reason}
-
-  📄 ~/youtube-reports/{date}-{slug}-{video_id}.md
+echo '<the unwrapped Pass 3 report markdown>' | \
+  python3 "<SKILL_DIR>/scripts/dashboard.py" <video_id> --report-path "<the path you wrote in Step 6>"
 ```
 
-#### State glyph table
+The renderer reads `~/youtube-reports/.cache/{video_id}.json` for title/channel/duration. Print its stdout directly to the user.
+
+The renderer enforces the dashboard format below. State badges and prose glyphs come from the verdict:
 
 | `VERDICT` | `STATE_BADGE` | `STATE_PROSE_GLYPH` |
 | --------- | ------------- | ------------------- |
@@ -209,25 +216,11 @@ Print this dashboard directly to the user. Borders are exactly 54 box-drawing ch
 | OKAY      | ⚠️             | ⏩                  |
 | SKIP      | ❌            | 🚫                  |
 
-#### Field extraction
-
-- `VERDICT`, `score`: parse from the Pass 3 report's `VERDICT: …` line.
-- `Gap`: parse from the `Gap:` line under `TITLE vs CONTENT`.
-- `executive_verdict`: the prose paragraph(s) under the new `EXECUTIVE VERDICT` header in the Pass 3 report. Strip any leading/trailing whitespace. Soft-wrap to ~60 columns by inserting newlines at word boundaries; indent wrapped lines to align under the prose glyph (3 spaces).
-- `title`, `channel`: from the Step 2 fetch JSON.
-- `duration_human`: `M:SS` if `duration_seconds` < 3600, else `H:MM:SS`.
-- `Best minutes`: parse the `BEST {n} MINUTES (if you must watch)` block; show the `[start–end]` range and the one-line description on a single line. **Omit this entire line** when the report says `Nothing — full skip recommended.`
-- `Substance`: integer counts from `SUBSTANCE DENSITY` — `Concrete claims`, `Vague claims`, `Evidence shown`.
-- `Watch if`: copy the line under `WHO SHOULD WATCH` verbatim (one line; if it's `Nobody`, render the value as `Nobody`).
-- `Skip if`: copy the line under `WHO SHOULD SKIP` verbatim.
-- `Flags`: count = total bullets in the `FLAGS` section. Show the **first two bullets only**. Each bullet's `quote` is truncated to 40 chars + `…` if longer; the timestamp and reason are kept verbatim. **Omit the entire Flags block** (header + bullets) when the report omits its `FLAGS` section (verdict WATCH, Gap LOW); the `Flags` line and bullets are dropped together.
-- File path footer: literal `📄 ` + the path you wrote in Step 6.
-
-The user gets the verdict at a glance and opens the file only for the full breakdown (sections, substance density details, all flags with full quotes).
+The user gets the verdict at a glance and opens the file only for the full breakdown.
 
 ## Cache protocol — exact contract
 
-This is the contract any host agent implements via file tool use. There is no Python helper; all hashing and JSON read/write is done with the host's standard tools.
+This is the contract any host agent implements via `scripts/cache.py`. Hashing is deterministic across hosts (locked by `tests/test_cache.py`).
 
 ### File layout
 
@@ -253,21 +246,17 @@ All cache files live under `~/youtube-reports/.cache/`:
 }
 ```
 
-### How to compute `prompt_hash` and `inputs_hash`
+Use `cache.py read` and `cache.py write` (Steps 3–5) — they handle wrapper construction, hashing, hit detection, and atomic writes for you.
 
-**Always use `scripts/cache.py`.** Inline shell or `python3 -c` snippets drift across host implementations — different agents serialize JSON in subtly different ways, producing spurious cache misses on what is logically the same input. The `cache.py` helper locks one canonical algorithm so any host computing a hash on the same logical input gets the same digest.
+### How the `cache.py` subcommands map to the protocol
 
-```
-# prompt_hash — SHA-256 hex of the prompt file's raw bytes
-python3 scripts/cache.py hash-file prompts/extract_structure.md
+| Step | Command | What it does |
+|---|---|---|
+| Hit check | `cache.py read <pass> <video_id> <prompt-path>` (stdin = canonical inputs JSON) | Reads cache file, recomputes both hashes, exits 0 + stdout = `output` on hit; exit 1 + stderr reason on miss (`not-found` / `prompt-mismatch` / `inputs-mismatch` / `corrupt` / `field-missing`) |
+| Write | `cache.py write <pass> <video_id> <prompt-path>` (stdin = `{inputs, output}`) | Computes both hashes, writes wrapper file with `produced_at` set to current UTC |
+| Pass 2 quote audit | `cache.py verify-quotes <video_id>` (stdin = Pass 2 output) | Substring-checks every `quote` field across `concrete_claims` / `vague_claims` / `evidence_shown` / `pitches`; exit 0 if clean, exit 1 + stderr listing mismatches |
 
-# inputs_hash — SHA-256 hex of canonical JSON read from stdin
-echo '<the canonical inputs object as JSON>' | python3 scripts/cache.py hash-json
-```
-
-Mapping (which prompt for which pass): Pass 1 → `prompts/extract_structure.md`; Pass 2 → `prompts/inventory_claims.md`; Pass 3 → `prompts/generate_verdict.md`.
-
-The locked canonicalization (documented for transparency and for alternative-host re-implementation) is:
+The locked canonicalization (so any host agent producing the same logical input gets the same digest):
 
 - Keys sorted lexicographically at every nesting level.
 - Compact separators (no spaces): `","` and `":"`.
@@ -276,9 +265,9 @@ The locked canonicalization (documented for transparency and for alternative-hos
 
 Equivalent Python: `hashlib.sha256(json.dumps(obj, sort_keys=True, separators=(",", ":"), ensure_ascii=False).encode("utf-8")).hexdigest()`.
 
-If your host cannot shell out, importing the module is equivalent: `from scripts import cache; cache.hash_file(path)` / `cache.hash_json(obj)`.
+If your host cannot shell out, importing the module is equivalent: `from scripts import cache; cache.read_cache(...)` / `cache.write_cache(...)`.
 
-Per pass:
+Per-pass canonical inputs:
 
 | Pass | Canonical inputs |
 |---|---|
@@ -288,19 +277,7 @@ Per pass:
 
 The whole transcript object (including `fetched_at`) goes into Passes 1 and 2's input. In practice `--cache` keeps `fetched_at` stable across re-runs so this doesn't cause spurious misses.
 
-### Cache hit decision
-
-A cache file is a HIT if and only if **all** of the following are true:
-
-1. The file exists at `~/youtube-reports/.cache/{video_id}-pass{N}.json` and parses as JSON.
-2. The JSON contains all required fields: `video_id`, `pass`, `prompt_hash`, `inputs_hash`, `output`.
-3. `video_id` matches the request and `pass` equals N.
-4. `prompt_hash` equals the freshly computed hash of the corresponding prompt file.
-5. `inputs_hash` equals the freshly computed hash of the canonical inputs.
-
-Otherwise it's a MISS — re-run the pass and overwrite the file.
-
-### Invalidation events (all handled automatically by the hash check)
+### Invalidation events (all handled automatically by `cache.py read`)
 
 - Prompt file edited → `prompt_hash` mismatch → MISS.
 - Transcript re-fetched with different segments → `inputs_hash` mismatch on Pass 1 → cascades through Pass 2 and Pass 3.
@@ -308,15 +285,14 @@ Otherwise it's a MISS — re-run the pass and overwrite the file.
 - File corrupted (bad JSON, missing fields) → MISS.
 - Pass 1 output changes (re-run) → Pass 2's `inputs_hash` mismatches → cascades to Pass 3.
 
-You **never** overwrite `~/youtube-reports/{video_id}.md` from cache. Step 6 only writes that file when Step 5 produces a Pass 3 result (whether from cache or fresh). The user's final report is always derived from a Pass 3 cache hit or a fresh Pass 3 run — never stale.
+You **never** overwrite `~/youtube-reports/{date}-{slug}-{video_id}.md` from cache. Step 6 only writes that file when Step 5 produces a Pass 3 result (whether from cache or fresh). The user's final report is always derived from a Pass 3 cache hit or a fresh Pass 3 run — never stale.
 
 ## Cross-platform notes
 
 - Steps 3, 4, and 5 use your own LLM and auth. No `ANTHROPIC_API_KEY` / `OPENAI_API_KEY` / vendor key is required from the user.
-- Step 2 is the only subprocess call. If your host can't shell out, importing `scripts.fetch` as a Python module and calling `fetch(video_id, "en")` is equivalent.
-- Cache reads and writes use ordinary file tool use. The hashing instructions above are deterministic across hosts when followed exactly.
-- Hash computation goes through `scripts/cache.py` (shipped). Both subcommands (`hash-file <path>` and `hash-json` reading stdin) are deterministic across hosts. Unit tests in `tests/test_cache.py` lock the canonical algorithm.
-- If `python3 scripts/fetch.py` fails with `ModuleNotFoundError`, run `python3 scripts/doctor.py` for the exact `pipx install` command to fix the deps prereq.
+- The subprocess calls are: `doctor.py` (Step 1.5), `fetch.py` (Step 2), `cache.py read` / `cache.py write` (Steps 3–5), `segments.py` (Step 4 inside the per-section loop), `cache.py verify-quotes` (optional, Step 4), `dashboard.py` (Step 7). If your host can't shell out, importing each module from `<SKILL_DIR>/scripts/` is equivalent.
+- All cache wrapper construction goes through `cache.py write` so per-host JSON quirks (key ordering, whitespace, escaping) cannot produce a spurious miss on the next run.
+- If `python3 "<SKILL_DIR>/scripts/fetch.py"` ever fails with `ModuleNotFoundError`, run `python3 "<SKILL_DIR>/scripts/doctor.py"` for the exact `pipx install` command (Step 1.5 should have caught this already).
 
 ## Output format reminder
 

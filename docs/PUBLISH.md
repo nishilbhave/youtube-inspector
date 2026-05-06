@@ -12,12 +12,24 @@ This is **not** the verdict-V1-only Phase 4 from `PHASES.md` — the suite scope
 - `[x]` Public GitHub repo at `github.com/nishilbhave/youtube-inspector`
 - `[x]` Working tree clean (latest commit `abad007` — fix #3 + cache.py mandate)
 - `[x]` Vendor-purity grep clean across all skills + scripts + prompts
-- `[x]` 121 tests passing (35 fetch + 30 segments + 22 cache + 34 slug)
+- `[x]` 189 tests passing (35 fetch + 30 segments + 22 cache + 34 slug + 5 doctor + 22 packaging + 28 cache-subcommands + 13 dashboard)
 - `[x]` Four SKILL.md files written, three smoke-tested (verdict in Phase 3, summary/extract/claims this session)
 - `[x]` `youtube-tldr` renamed to `youtube-summary` for naming-register consistency with verdict/extract/claims (formal English nouns instead of internet shorthand). All cross-references, prompt paths (`generate_tldr.md` → `generate_summary.md`), report-filename suffix (`-tldr.md` → `-summary.md`), and cache filenames (`-tldr-pass2.json`/`-tldr-pass3.json` → `-summary-pass*.json`) updated. "tl;dr" preserved as a trigger phrase; "TL;DR" preserved as the report's section header (it's the format, not the skill name).
 - `[x]` `scripts/cache.py` shipped — deterministic hashing, eliminates the cross-host cache-miss drift documented in fix #1
 - `[x]` `python` → `python3` in all SKILL.md subprocess calls (fix #3)
+- `[x]` **Self-contained skill packaging.** `scripts/build_skills.py` syncs canonical `scripts/` and per-skill `prompts/` into each `skills/<name>/` so `npx skills add` ships everything. Each SKILL.md uses `<SKILL_DIR>`-prefixed paths and runs `doctor.py` as Step 1.5. `tests/test_skill_packaging.py` catches drift if a developer edits canonical files without re-running `build_skills.py`. Fixes the install-time failure where `npx skills add` shipped only `SKILL.md` and the agent couldn't find `scripts/fetch.py`.
+- `[x]` **`cache.py` subcommands.** `cache.py read` / `write` / `verify-quotes` collapse the per-pass `python3 -c` heredocs the agent had to write inline. Each pass goes from ~3 inline Python heredocs to ~2 subprocess calls + the LLM call.
+- `[x]` **`dashboard.py` renderer.** Verdict-only; takes Pass 3 markdown + video_id, renders the WATCH/OKAY/SKIP dashboard with proper border integrity, soft-wrapping, badge selection, omit-Best-minutes / omit-Flags logic, and 40-char flag-quote truncation. Eliminates the manual-rendering display bugs (collided borders, truncated lines).
 - **No skills.sh registration step needed — skills.sh indexes `npx skills add <owner>/<repo>` automatically once the repo is public.** This drops what was item #11 of the Phase 4 punchlist.
+
+### Pre-publish build + test step (run before every release tag)
+
+```bash
+python3 scripts/build_skills.py    # sync per-skill scripts/ + prompts/ from canonical source
+pytest -q                          # all 189 tests must pass, packaging drift especially
+```
+
+The packaging test (`tests/test_skill_packaging.py`) fails if the per-skill copies in `skills/<name>/scripts/` and `skills/<name>/prompts/` aren't byte-identical to the canonical source at the repo root — exactly the scenario where a developer edits `scripts/cache.py` and forgets to re-run the build, leading to mysterious cache-miss drift on installed skills.
 
 ---
 

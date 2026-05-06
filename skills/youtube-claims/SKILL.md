@@ -20,31 +20,62 @@ You are the host agent running this skill. The user has asked for the claims a v
 
 This skill is **inventory only, not verification**. It captures what was said with timestamps and verbatim quotes. It does not check whether claims are true. The report header states this explicitly so readers don't mistake a high concrete-claim count for "the video is accurate".
 
-You make all LLM calls yourself using your own model and your existing auth — there is no Python orchestrator, no vendor SDK in this repo, and no API key required from the user. The only system requirement is **Python 3.11+** for the bundled `scripts/fetch.py`, `scripts/segments.py`, and `scripts/cache.py`.
-
-The skill assumes the working directory is the root of the `youtube-inspector` repo.
+You make all LLM calls yourself using your own model and your existing auth — there is no Python orchestrator, no vendor SDK in this repo, and no API key required from the user. The only system requirement is **Python 3.11+** with `yt-dlp` and `youtube-transcript-api` installed (Step 1.5 verifies this).
 
 ## Workflow — follow these steps in order
+
+### Step 0 — Resolve skill paths
+
+All `scripts/…` and `prompts/…` references in this document are **relative to the directory containing this SKILL.md file** — not the user's working directory. Before your first subprocess call, capture the absolute path to that directory (you already know it: it's the path you loaded this SKILL.md from). Use it as `<SKILL_DIR>` for every script and prompt path below.
+
+In every shell call, pass quoted absolute paths:
+
+```
+python3 "<SKILL_DIR>/scripts/fetch.py" "<url>" --cache
+```
+
+Do **not** assume the user's working directory is the repo root. Do **not** rely on a `.venv` being activated.
 
 ### Step 1 — Extract the video URL or 11-char ID from the user's input
 
 Same as the other skills. Plain ID, `youtube.com/watch?v=…`, `youtu.be/…`, `/shorts/…`, `/embed/…`, `/live/…` are all accepted. Reject playlist URLs. If no URL is found, ask the user and stop.
 
+**Always pass the URL inside double quotes** when shelling out — zsh and other shells will treat the `?` in `?v=…` as a glob otherwise.
+
+### Step 1.5 — Pre-flight dependency check
+
+Run once, before the first fetch:
+
+```
+python3 "<SKILL_DIR>/scripts/doctor.py"
+```
+
+If it exits non-zero, surface the printed `pipx install` command verbatim to the user, ask them to run it, and **stop**.
+
 ### Step 2 — Fetch transcript and metadata
 
 ```
-python3 scripts/fetch.py <url-or-id> --cache
+python3 "<SKILL_DIR>/scripts/fetch.py" "<url-or-id>" --cache
 ```
 
 Standard exit-code interpretation: 0 success, 2 documented rejection (`INVALID_URL`, `PLAYLIST`, `LIVE_STREAM`, `TOO_SHORT`, `NO_TRANSCRIPT`, `NON_ENGLISH`), 1 unexpected error. Surface rejections verbatim and stop.
 
 ### Step 3 — Pass 1: Structure extraction (shared with verdict, summary, extract)
 
-Cache file: `~/youtube-reports/.cache/{video_id}-pass1.json`. Pass 1 is **shared infrastructure** — same prompt, same input, same output across all four skills. Likely a free cache hit.
+Cache file: `~/youtube-reports/.cache/{video_id}-pass1.json`. Pass 1 is **shared infrastructure** — same prompt, same input, same output across all four skills. Likely a free cache hit if any sister skill ran first.
 
-1. `prompt_hash`: `python3 scripts/cache.py hash-file prompts/extract_structure.md`.
-2. `inputs_hash`: pipe `{"transcript": <full fetch.py output>}` to `python3 scripts/cache.py hash-json`.
-3. Read the cache file. If both hashes match → HIT, load the `output` field. Else MISS, apply `prompts/extract_structure.md` and write the wrapper.
+1. Try a cache read:
+   ```
+   echo '{"transcript": <full Step 2 fetch JSON>}' | \
+     python3 "<SKILL_DIR>/scripts/cache.py" read 1 <video_id> "<SKILL_DIR>/prompts/extract_structure.md"
+   ```
+   Exit 0 = HIT (parse stdout JSON). Exit 1 = MISS.
+
+2. On MISS, apply `prompts/extract_structure.md` as a single LLM pass and write the wrapper:
+   ```
+   echo '{"inputs": {"transcript": <full fetch JSON>}, "output": <Pass 1 JSON>}' | \
+     python3 "<SKILL_DIR>/scripts/cache.py" write 1 <video_id> "<SKILL_DIR>/prompts/extract_structure.md"
+   ```
 
 Tell the user: `Pass 1: cache hit` or `Pass 1: ran (N sections extracted)`.
 
@@ -52,19 +83,35 @@ Tell the user: `Pass 1: cache hit` or `Pass 1: ran (N sections extracted)`.
 
 Cache file: `~/youtube-reports/.cache/{video_id}-pass2.json`. **Shared with `youtube-verdict`** — same prompt (`prompts/inventory_claims.md`), same canonical inputs, same cache file. Running verdict first then claims (or vice versa) yields a free Pass 2 cache hit.
 
-1. `prompt_hash`: `python3 scripts/cache.py hash-file prompts/inventory_claims.md`.
-2. `inputs_hash`: pipe `{"pass1": <Pass 1 output>, "transcript": <full fetch.py output>}` to `python3 scripts/cache.py hash-json`.
-3. Read the cache file. If both hashes match → HIT, load `output`. Else MISS, run per-section processing.
+The Pass 1 timestamps (`section.start`, `section.end`) are **authoritative** — pass them straight to `segments.py`. Do not search the transcript to "verify" or "snap" boundaries.
+
+1. Try a cache read:
+   ```
+   echo '{"pass1": <Pass 1>, "transcript": <fetch.py output>}' | \
+     python3 "<SKILL_DIR>/scripts/cache.py" read 2 <video_id> "<SKILL_DIR>/prompts/inventory_claims.md"
+   ```
+   Exit 0 = HIT (parse stdout JSON, skip to "Tell the user"). Exit 1 = MISS, run per-section processing.
 
 #### On a cache miss — per-section execution
 
 For each section in Pass 1's `sections[]`, in order:
 
-1. `python3 scripts/segments.py <video_id> <section.start> <section.end>` — capture stdout JSON.
+1. `python3 "<SKILL_DIR>/scripts/segments.py" <video_id> <section.start> <section.end>` — capture stdout JSON.
 2. Apply `prompts/inventory_claims.md` as a single LLM pass with input `{"pass1": {"video_id":"<id>","sections":[<just this one section>]}, "transcript": <stdout>}`. The model returns `{"video_id":"<id>","by_section":{"<this section's id>":{...}}}`.
 3. Merge the one `by_section` entry into a running merged dict. Drop the section's transcript slice from your context.
 
-After all sections processed: final Pass 2 output is `{"video_id":"<id>","by_section":<merged dict>}`. Write the wrapper using `inputs_hash` over the FULL canonical inputs.
+After all sections processed, write the wrapper:
+```
+echo '{"inputs": {"pass1": <Pass 1>, "transcript": <fetch.py output>}, "output": <merged Pass 2>}' | \
+  python3 "<SKILL_DIR>/scripts/cache.py" write 2 <video_id> "<SKILL_DIR>/prompts/inventory_claims.md"
+```
+
+Optionally verify every quote substring-matches the transcript:
+```
+echo '<merged Pass 2 output>' | \
+  python3 "<SKILL_DIR>/scripts/cache.py" verify-quotes <video_id>
+```
+Exit 0 = clean. Exit 1 = at least one quote isn't verbatim; stderr lists each mismatch.
 
 Tell the user: `Pass 2: cache hit` or `Pass 2: ran (N items inventoried)` (where N is the total of `concrete_claims`/`vague_claims`/`evidence_shown`/`pitches` across sections).
 
@@ -73,11 +120,21 @@ Tell the user: `Pass 2: cache hit` or `Pass 2: ran (N items inventoried)` (where
 Cache file: `~/youtube-reports/.cache/{video_id}-claims-pass3.json`.
 
 - Prompt: `prompts/generate_claims.md`.
-- Canonical inputs: `{"metadata": <metadata subset>, "pass1": <Pass 1 output>, "pass2": <Pass 2 output>}`.
-- Metadata subset: `{title, channel, duration_seconds, view_count, upload_date}` from the Step 2 fetch JSON.
+- Canonical inputs: `{"metadata": {title,channel,duration_seconds,view_count,upload_date}, "pass1": <Pass 1>, "pass2": <Pass 2>}`.
 - **Pass 3 does not need the transcript at all** — every quote in the report comes from Pass 2 (which already substring-matches the transcript).
-- Model response: markdown wrapped in a single fenced code block. Strip the outer ` ``` ` fence; the remainder is the report text.
-- The `output` field of the cache wrapper is the **stripped** report **as a JSON string**.
+
+1. Try a cache read:
+   ```
+   echo '{"metadata": {...}, "pass1": <Pass 1>, "pass2": <Pass 2>}' | \
+     python3 "<SKILL_DIR>/scripts/cache.py" read 3 <video_id> "<SKILL_DIR>/prompts/generate_claims.md"
+   ```
+   Exit 0 = HIT (stdout is the report markdown). Exit 1 = MISS.
+
+2. On MISS, apply `prompts/generate_claims.md` as a single LLM pass. Strip the outer ``` ``` ``` fence; the inner text is the report. Then write the cache wrapper:
+   ```
+   echo '{"inputs": <same canonical inputs>, "output": "<stripped report markdown>"}' | \
+     python3 "<SKILL_DIR>/scripts/cache.py" write 3 <video_id> "<SKILL_DIR>/prompts/generate_claims.md"
+   ```
 
 Tell the user: `Pass 3: cache hit` or `Pass 3: ran`.
 
@@ -130,7 +187,7 @@ The user gets a one-glance picture of substance density and the top concrete cla
 
 Identical to `youtube-verdict`'s. See `skills/youtube-verdict/SKILL.md` → "Cache protocol — exact contract" for the full spec.
 
-**Always compute hashes via `scripts/cache.py`** — `python3 scripts/cache.py hash-file <prompt-path>` for `prompt_hash`, and `python3 scripts/cache.py hash-json` (canonical inputs JSON on stdin) for `inputs_hash`.
+**Always use `cache.py read` and `cache.py write`** (Steps 3–5) — they handle wrapper construction, hashing, hit detection, and atomic writes. Inline shell or `python3 -c` snippets drift across host agents and produce spurious cache misses.
 
 Skill-specific cache files:
 
@@ -147,14 +204,14 @@ Per-pass canonical inputs:
 |---|---|---|
 | 1 | `prompts/extract_structure.md` | `{"transcript": <full fetch.py JSON>}` |
 | 2 | `prompts/inventory_claims.md` | `{"pass1": <Pass 1 output>, "transcript": <full fetch.py JSON>}` |
-| 3 | `prompts/generate_claims.md` | `{"metadata": {"title":…, "channel":…, "duration_seconds":…, "view_count":…, "upload_date":…}, "pass1": <Pass 1 output>, "pass2": <Pass 2 output>}` |
+| 3 | `prompts/generate_claims.md` | `{"metadata": {title,channel,duration_seconds,view_count,upload_date}, "pass1": <Pass 1>, "pass2": <Pass 2>}` |
 
 ## Cross-platform notes
 
 - All LLM calls use the host's own model and auth. No `ANTHROPIC_API_KEY` / `OPENAI_API_KEY` / vendor key required.
-- Steps 2 and 4 are the only subprocess calls. Importing `scripts.fetch` / `scripts.segments` / `scripts.cache` as Python modules is equivalent if shelling out is not available.
-- Cache reads and writes use ordinary file tool use.
-- If `python3 scripts/fetch.py` fails with `ModuleNotFoundError`, run `python3 scripts/doctor.py` for the exact `pipx install` command to fix the deps prereq.
+- Subprocess calls: `doctor.py` (Step 1.5), `fetch.py` (Step 2), `cache.py read` / `cache.py write` / `cache.py verify-quotes` (Steps 3–5), `segments.py` (Step 4 inside per-section loop). Importing each module from `<SKILL_DIR>/scripts/` is equivalent if shelling out is not available.
+- All cache wrapper construction goes through `cache.py write` so per-host JSON quirks cannot produce a spurious miss.
+- If `python3 "<SKILL_DIR>/scripts/fetch.py"` ever fails with `ModuleNotFoundError`, run `python3 "<SKILL_DIR>/scripts/doctor.py"` for the exact `pipx install` command.
 
 ## Output format reminder
 

@@ -64,6 +64,8 @@ npx skills add nishilbhave/youtube-inspector
 
 That's it. No API keys, no env vars, no config files — the host agent's existing model subscription does the LLM work, and the only system requirement is **Python 3.11+**.
 
+Each skill is **self-contained**. `npx skills add` ships `SKILL.md` plus `scripts/` (fetch, segments, cache, doctor — and `dashboard.py` for verdict) and `prompts/` to the host's skill directory (e.g. `~/.claude/skills/youtube-verdict/`). No working-directory assumptions: SKILL.md uses `<SKILL_DIR>`-prefixed paths so the skill works wherever your shell happens to be when you invoke it.
+
 Manage:
 
 ```bash
@@ -71,13 +73,7 @@ npx skills update nishilbhave/youtube-inspector
 npx skills remove nishilbhave/youtube-inspector
 ```
 
-If install or first invocation fails with `ModuleNotFoundError`, run:
-
-```bash
-python3 scripts/doctor.py
-```
-
-It prints the exact `pipx install` command to fix the deps prereq and exits 0 once both `yt-dlp` and `youtube-transcript-api` are importable.
+Each skill runs `scripts/doctor.py` automatically before its first fetch (Step 1.5 of every SKILL.md). If your Python environment is missing `yt-dlp` or `youtube-transcript-api`, the skill stops with the exact `pipx install` command to copy-paste — no mid-run `ModuleNotFoundError` surprises.
 
 ## Skills
 

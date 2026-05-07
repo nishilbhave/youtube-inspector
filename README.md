@@ -54,15 +54,22 @@ Saved to `~/youtube-reports/<date>-<slug>-<video_id>.md`. Same shape across all 
 
 ```bash
 # 1. Install Python deps once (skills.sh skills don't bundle pip deps)
-pipx install yt-dlp youtube-transcript-api
-# Or, if you don't have pipx:
-pip install --user yt-dlp youtube-transcript-api
+
+# macOS Homebrew Python — or any externally-managed Python (PEP 668):
+pip3 install --user --break-system-packages yt-dlp youtube-transcript-api
+
+# pyenv, python.org, or Linux without PEP 668 lock:
+pip3 install --user yt-dlp youtube-transcript-api
 
 # 2. Install all four skills
 npx skills add nishilbhave/youtube-inspector
 ```
 
 That's it. No API keys, no env vars, no config files — the host agent's existing model subscription does the LLM work, and the only system requirement is **Python 3.11+**.
+
+**Why `--break-system-packages` on macOS?** Homebrew's Python ships PEP 668's `EXTERNALLY-MANAGED` marker, which makes `pip` refuse to install anything by default. The flag bypasses that single upfront check; the `--user` flag — which the PEP 668 error message itself recommends pairing with it — then writes the install to `~/Library/Python/3.X/site-packages/`, leaving Homebrew's own Python directories untouched. Worst case: `rm -rf ~/Library/Python/3.X` and you're back to factory state.
+
+**Don't use `pipx` for these deps**, even if you already have it. `pipx install yt-dlp` puts the package in a private venv that exposes the `yt-dlp` CLI on your `$PATH`, but it does NOT make `import yt_dlp` work from your default `python3` — and the skill's `scripts/fetch.py` imports both packages directly from Python. Use `pip --user` so the deps land on your default `python3`'s import path.
 
 Each skill is **self-contained**. `npx skills add` ships `SKILL.md` plus `scripts/` (fetch, segments, cache, doctor — and `dashboard.py` for verdict) and `prompts/` to the host's skill directory (e.g. `~/.claude/skills/youtube-verdict/`). No working-directory assumptions: SKILL.md uses `<SKILL_DIR>`-prefixed paths so the skill works wherever your shell happens to be when you invoke it.
 
@@ -73,7 +80,7 @@ npx skills update nishilbhave/youtube-inspector
 npx skills remove nishilbhave/youtube-inspector
 ```
 
-Each skill runs `scripts/doctor.py` automatically before its first fetch (Step 1.5 of every SKILL.md). If your Python environment is missing `yt-dlp` or `youtube-transcript-api`, the skill stops with the exact `pipx install` command to copy-paste — no mid-run `ModuleNotFoundError` surprises.
+Each skill runs `scripts/doctor.py` automatically before its first fetch (Step 1.5 of every SKILL.md). If your Python environment is missing `yt-dlp` or `youtube-transcript-api`, the skill stops with the exact `pip3 install` command for your environment (PEP 668-aware) — no mid-run `ModuleNotFoundError` surprises, and no need to remember whether you need `--break-system-packages`.
 
 ## Skills
 

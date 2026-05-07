@@ -56,7 +56,7 @@ Run once, before the first fetch:
 python3 "<SKILL_DIR>/scripts/doctor.py"
 ```
 
-If it exits non-zero, surface the printed `pipx install` command verbatim to the user, ask them to run it, and **stop**.
+If it exits non-zero, surface the printed `pip3 install` command verbatim to the user (doctor.py tailors it to the user's Python — adding `--break-system-packages` for PEP 668 environments like Homebrew Python on macOS), ask them to run it, and **stop**.
 
 ### Step 2 — Fetch transcript and metadata
 
@@ -225,7 +225,7 @@ Per-pass canonical inputs:
 - Steps 3, 4, and 5 use your own LLM and auth. No `ANTHROPIC_API_KEY` / `OPENAI_API_KEY` / vendor key required.
 - Subprocess calls: `doctor.py` (Step 1.5), `fetch.py` (Step 2), `cache.py read` / `cache.py write` (Steps 3–5), `segments.py` (Step 4 inside per-section loop). If your host can't shell out, importing each module from `<SKILL_DIR>/scripts/` is equivalent.
 - All cache wrapper construction goes through `cache.py write` so per-host JSON quirks cannot produce a spurious miss.
-- If `python3 "<SKILL_DIR>/scripts/fetch.py"` ever fails with `ModuleNotFoundError`, run `python3 "<SKILL_DIR>/scripts/doctor.py"` for the exact `pipx install` command.
+- If `python3 "<SKILL_DIR>/scripts/fetch.py"` ever fails with `ModuleNotFoundError`, run `python3 "<SKILL_DIR>/scripts/doctor.py"` for the exact `pip3 install` command for the user's Python.
 
 ## Output format reminder
 

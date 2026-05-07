@@ -55,7 +55,7 @@ Run once, before the first fetch:
 python3 "<SKILL_DIR>/scripts/doctor.py"
 ```
 
-If it exits non-zero, surface the printed `pipx install` command verbatim to the user, ask them to run it, and **stop**. Do not retry the fetch until the user confirms the install succeeded. This converts what would otherwise be a `ModuleNotFoundError: yt_dlp` mid-run into a single guided remediation.
+If it exits non-zero, surface the printed `pip3 install` command verbatim to the user (doctor.py tailors it to the user's Python — adding `--break-system-packages` for PEP 668 environments like Homebrew Python on macOS), ask them to run it, and **stop**. Do not retry the fetch until the user confirms the install succeeded. This converts what would otherwise be a `ModuleNotFoundError: yt_dlp` mid-run into a single guided remediation.
 
 ### Step 2 — Fetch transcript and metadata
 
@@ -292,7 +292,7 @@ You **never** overwrite `~/youtube-reports/{date}-{slug}-{video_id}.md` from cac
 - Steps 3, 4, and 5 use your own LLM and auth. No `ANTHROPIC_API_KEY` / `OPENAI_API_KEY` / vendor key is required from the user.
 - The subprocess calls are: `doctor.py` (Step 1.5), `fetch.py` (Step 2), `cache.py read` / `cache.py write` (Steps 3–5), `segments.py` (Step 4 inside the per-section loop), `cache.py verify-quotes` (optional, Step 4), `dashboard.py` (Step 7). If your host can't shell out, importing each module from `<SKILL_DIR>/scripts/` is equivalent.
 - All cache wrapper construction goes through `cache.py write` so per-host JSON quirks (key ordering, whitespace, escaping) cannot produce a spurious miss on the next run.
-- If `python3 "<SKILL_DIR>/scripts/fetch.py"` ever fails with `ModuleNotFoundError`, run `python3 "<SKILL_DIR>/scripts/doctor.py"` for the exact `pipx install` command (Step 1.5 should have caught this already).
+- If `python3 "<SKILL_DIR>/scripts/fetch.py"` ever fails with `ModuleNotFoundError`, run `python3 "<SKILL_DIR>/scripts/doctor.py"` for the exact `pip3 install` command for the user's Python (Step 1.5 should have caught this already).
 
 ## Output format reminder
 

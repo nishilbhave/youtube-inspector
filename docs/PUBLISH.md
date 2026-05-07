@@ -60,12 +60,14 @@ Codeprobe has one. Optional but elevates the README. Width 900, project name + t
 **The biggest open cross-platform gap.** Smoke test on `n0phBDPz8z0` revealed bare `python3 scripts/fetch.py` fails with `ModuleNotFoundError: yt_dlp` on a default Mac (only `.venv/bin/python` has the deps).
 
 Plan:
-- README "Install" section: explicit one-liner `pipx install yt-dlp youtube-transcript-api` as a prerequisite. `pipx` keeps each tool isolated and is the modern Python-app install path; works on Mac (Homebrew) and most Linux. Document `pip install --user yt-dlp youtube-transcript-api` as a fallback for users without pipx.
-- `scripts/doctor.py` — a ~60-LOC stdlib script that:
+- README "Install" section: lead with `pip3 install --user --break-system-packages yt-dlp youtube-transcript-api` for macOS Homebrew Python (the default on Apple Silicon). Document `pip3 install --user yt-dlp youtube-transcript-api` as the equivalent for non-PEP 668 Pythons (pyenv, python.org, most Linux). **Do not recommend pipx** — it isolates each package in a private venv, but the skill's `scripts/fetch.py` does `import yt_dlp` from the default `python3`, so the install needs to land on python3's import path (which pipx's venvs are not).
+- `scripts/doctor.py` — a ~80-LOC stdlib script that:
   - Imports `yt_dlp` and `youtube_transcript_api`
-  - Prints `✓ all deps present` on success or the exact `pipx install ...` command on `ModuleNotFoundError`
+  - Detects PEP 668 via `EXTERNALLY-MANAGED` marker in `sysconfig.get_path("stdlib")`
+  - Prints `✓ all deps present` on success, or `✗ missing: <module>` + the env-tailored `pip3 install --user [--break-system-packages]` command on `ModuleNotFoundError`
+  - Warns explicitly against pipx (so the user doesn't waste time trying it)
   - Exits 0 / 1 accordingly
-  - Has `tests/test_doctor.py` to lock the contract
+  - Has `tests/test_doctor.py` to lock the contract (8 tests, including monkeypatched coverage of both PEP 668 branches)
 - Document in each SKILL.md "Cross-platform notes" section: "If fetch.py fails with `ModuleNotFoundError`, run `python3 scripts/doctor.py` for the exact install command."
 
 ### `[ ]` 4. SKILL.md description audit — trigger collisions across 4 skills
@@ -122,7 +124,7 @@ Same 5 × 4 = 20 phrasings, fresh Cursor sessions. ≥ 4/5 per skill.
 Per the "zero-setup hard rule" already locked into `yt-worth-it-plan.md` Hard constraint #3a:
 1. Uninstall any prior install of the suite from Cursor.
 2. Clear `~/youtube-reports/` (rename it aside if you want to keep current reports).
-3. Run `pipx install yt-dlp youtube-transcript-api` (per #3).
+3. Run `pip3 install --user --break-system-packages yt-dlp youtube-transcript-api` (or omit `--break-system-packages` on non-PEP 668 Python; see #3).
 4. Run `npx skills add nishilbhave/youtube-inspector`.
 5. Paste a Phase 2 sample URL with a natural ask ("is this worth watching?").
 6. Capture a transcript of every prompt the agent emits from install to verdict output.

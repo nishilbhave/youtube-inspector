@@ -24,10 +24,10 @@ SAMPLE_REPORT = """\
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 EXECUTIVE VERDICT
-Skip to 1:38–7:30 for the strongest stretch — three named anecdotes.
-The rest is generic self-help framing with unsourced figures and aphorisms.
+The eight "billionaire rules" frame collapses into three named anecdotes plus a stack of unsourced figures and aphorisms.
+Half the runtime restates self-help truisms; one mid-roll DM pitch interrupts the only stretch worth keeping.
 
-VERDICT: OKAY   [5/10]
+VERDICT: SKIP   [4/10]
 
 WHAT IT ACTUALLY DELIVERS
 [0:00–0:37] Hook
@@ -50,7 +50,7 @@ Founders new to billionaire content who want a fast sampler.
 WHO SHOULD SKIP
 Anyone already familiar with Naval, Musk, or Bezos talking points.
 
-BEST 6 MINUTES (if you must watch)
+BEST 6 MINUTES
 [1:38–7:30] Rules 1–4 with the four most concrete anecdotes.
 
 FLAGS
@@ -126,7 +126,7 @@ Nobody.
 WHO SHOULD SKIP
 Everyone.
 
-BEST 0 MINUTES (if you must watch)
+BEST 0 MINUTES
 Nothing — full skip recommended.
 
 FLAGS
@@ -158,8 +158,8 @@ def _run_cli(*args, stdin: str = ""):
 class TestParseReport:
     def test_extracts_verdict_and_score(self):
         parsed = dashboard.parse_report(SAMPLE_REPORT)
-        assert parsed["verdict"] == "OKAY"
-        assert parsed["score"] == 5
+        assert parsed["verdict"] == "SKIP"
+        assert parsed["score"] == 4
 
     def test_extracts_gap(self):
         parsed = dashboard.parse_report(SAMPLE_REPORT)
@@ -167,7 +167,7 @@ class TestParseReport:
 
     def test_extracts_executive_verdict(self):
         parsed = dashboard.parse_report(SAMPLE_REPORT)
-        assert parsed["executive_verdict"].startswith("Skip to 1:38–7:30")
+        assert parsed["executive_verdict"].startswith("The eight \"billionaire rules\"")
         # Must NOT bleed into the next section
         assert "VERDICT:" not in parsed["executive_verdict"]
 
@@ -219,12 +219,12 @@ class TestRender:
             if line.startswith("━"):
                 assert len(line) == 54
 
-    def test_okay_uses_warning_badge(self):
+    def test_sample_skip_uses_x_badge(self):
         parsed = dashboard.parse_report(SAMPLE_REPORT)
         out = dashboard.render(parsed, METADATA)
-        assert "⚠️" in out
-        assert "OKAY" in out
-        assert "5/10" in out
+        assert "❌" in out
+        assert "SKIP" in out
+        assert "4/10" in out
 
     def test_watch_uses_check_badge(self):
         parsed = dashboard.parse_report(WATCH_REPORT_NO_FLAGS)
@@ -245,7 +245,7 @@ class TestRender:
         # Each prose line should be ≤ 60 cols of content.
         prose_lines = [
             line for line in out.splitlines()
-            if line.startswith("  ⏩") or line.startswith("     ")
+            if line.startswith("  🚫") or line.startswith("     ")
         ]
         assert len(prose_lines) >= 2  # multi-line wrap for this fixture
 
@@ -328,7 +328,7 @@ class TestCli:
             stdin=SAMPLE_REPORT,
         )
         assert result.returncode == 0
-        assert "OKAY" in result.stdout
+        assert "SKIP" in result.stdout
         assert "Sample Video Title" in result.stdout
         assert "━" * 54 in result.stdout
 

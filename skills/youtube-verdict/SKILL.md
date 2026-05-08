@@ -5,7 +5,7 @@ description: |
   YouTube URL and asks "is this worth watching", "should I watch this",
   "should I skip this", "watch or skip", "give me a verdict on this video",
   "is this YouTube video any good", or wants a pre-watch summary that ends
-  in a recommendation. Returns WATCH / OKAY / SKIP with a 0–10 score, a
+  in a recommendation. Returns WATCH or SKIP with a 0–10 score (5 and 6 disallowed — the tool commits), a
   best-minutes range, substance density (concrete vs vague claims, evidence
   shown, pitches), and a who-should-watch / who-should-skip split. Every
   flag cites a verbatim transcript quote with a timestamp — no hallucinated
@@ -179,7 +179,7 @@ Cache file: `~/youtube-reports/.cache/{video_id}-pass3.json`.
      python3 "<SKILL_DIR>/scripts/cache.py" write 3 <video_id> "<SKILL_DIR>/prompts/generate_verdict.md"
    ```
 
-Tell the user: `Pass 3: cache hit` or `Pass 3: ran` plus the verdict line (e.g. `→ OKAY 5/10`).
+Tell the user: `Pass 3: cache hit` or `Pass 3: ran` plus the verdict line (e.g. `→ SKIP 3/10` or `→ WATCH 8/10`).
 
 ### Step 6 — Write the final report
 
@@ -213,7 +213,6 @@ The renderer enforces the dashboard format below. State badges and prose glyphs 
 | `VERDICT` | `STATE_BADGE` | `STATE_PROSE_GLYPH` |
 | --------- | ------------- | ------------------- |
 | WATCH     | ✅            | ✨                  |
-| OKAY      | ⚠️             | ⏩                  |
 | SKIP      | ❌            | 🚫                  |
 
 The user gets the verdict at a glance and opens the file only for the full breakdown.

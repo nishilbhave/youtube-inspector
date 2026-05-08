@@ -10,7 +10,7 @@ Prints the formatted dashboard to stdout exactly per SKILL.md Step 7:
     - 54-char ━ borders
     - Two-space indent on every content line
     - Soft-wrap the EXECUTIVE VERDICT prose at ~60 columns at word boundaries
-    - State badge selection from VERDICT (WATCH/OKAY/SKIP)
+    - State badge selection from VERDICT (WATCH/SKIP)
     - Omit the "Best minutes" line when the report says "Nothing — full skip
       recommended."
     - Omit the entire FLAGS block when the report has no FLAGS section
@@ -41,14 +41,14 @@ BORDER = "━" * 54
 INDENT = "  "
 WRAP_WIDTH = 60
 
-STATE_BADGE = {"WATCH": "✅", "OKAY": "⚠️", "SKIP": "❌"}
-STATE_PROSE_GLYPH = {"WATCH": "✨", "OKAY": "⏩", "SKIP": "🚫"}
+STATE_BADGE = {"WATCH": "✅", "SKIP": "❌"}
+STATE_PROSE_GLYPH = {"WATCH": "✨", "SKIP": "🚫"}
 
 # Pass 3 report headers, in document order. Used both as terminators when
 # slicing one section's body and as the lookup keys for `_section_block`.
 # `BEST` and `VERDICT` are matched as line prefixes since their headers
 # include variable suffixes (`BEST 6 MINUTES (if you must watch)`,
-# `VERDICT: OKAY   [5/10]`).
+# `VERDICT: SKIP   [3/10]`).
 KNOWN_HEADERS = (
     "EXECUTIVE VERDICT",
     "VERDICT:",
@@ -217,8 +217,10 @@ def render(parsed: dict, metadata: dict, report_path: str | None = None) -> str:
     out.append(
         f"{INDENT}📊 Substance      {sd['concrete']} concrete · {sd['vague']} vague · {sd['evidence']} evidence"
     )
-    out.append(f"{INDENT}👥 Watch if       {parsed.get('watch_if', '—')}")
-    out.append(f"{INDENT}👥 Skip if        {parsed.get('skip_if', '—')}")
+    if parsed.get("watch_if"):
+        out.append(f"{INDENT}👥 Watch if       {parsed['watch_if']}")
+    if parsed.get("skip_if"):
+        out.append(f"{INDENT}👥 Skip if        {parsed['skip_if']}")
 
     flags = parsed.get("flags") or []
     if flags:

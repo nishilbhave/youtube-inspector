@@ -233,14 +233,16 @@ Always overwrite if it exists. Re-running on the same video produces an identica
 
 ### Step 8 — Show the verdict dashboard inline
 
-Render the dashboard via the bundled renderer — do not format it by hand. The renderer handles all the layout details (54-char ━ borders, soft-wrap at 60 cols, badge selection, omit-Best-minutes / omit-Flags logic, 40-char quote truncation, thumbnail-gap line when present, prioritizing one `[thumb]` flag in the truncated 2-flag list):
+Render the dashboard via the bundled renderer — do not format it by hand. The renderer handles all the layout details (54-char ━ borders, soft-wrap at 60 cols, badge selection, omit-Best-minutes / omit-Flags logic, 60-char quote truncation, dual title/thumb gap line when thumbnail axis is present, prioritizing one `[thumb]` flag in the truncated 3-flag list, conditional Title-says/Delivers and Thumbnail/Delivers blocks when the corresponding gap is MEDIUM/HIGH, and the `❓ Ask next` follow-up questions block):
 
 ```
 echo '<the unwrapped Pass 4 report markdown>' | \
   python3 "<SKILL_DIR>/scripts/dashboard.py" <video_id> --report-path "<the path you wrote in Step 7>"
 ```
 
-The renderer reads `~/youtube-reports/.cache/{video_id}.json` for title/channel/duration. Print its stdout directly to the user.
+The renderer reads `~/youtube-reports/.cache/{video_id}.json` for title/channel/duration/view_count. Capture its stdout.
+
+**Display rule — important.** Many hosts (Claude Code, Cursor, etc.) collapse long bash output in chat. Reproduce the dashboard stdout **verbatim as your chat message text** (not only as bash output) so the user sees the full ~30-line dashboard inline without expanding a collapsed block. Do **not** paraphrase, summarize, or add prose around it. The dashboard is the user-facing output. After the dashboard is shown, stop — do not append your own executive summary; the renderer already includes one (`🚫`/`✨` glyph line). The follow-up questions in the `❓ Ask next` block are the only thing the user should see prompting next steps.
 
 The renderer enforces the dashboard format below. State badges and prose glyphs come from the verdict:
 

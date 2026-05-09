@@ -117,6 +117,11 @@ BEST {n} MINUTES
 FLAGS
 - [{timestamp}] "{verbatim quote}" — {one-sentence reason this drives the verdict}
 - [{timestamp}] "{verbatim quote}" — {one-sentence reason}
+
+FOLLOW-UP QUESTIONS
+- {one-line question 1}
+- {one-line question 2}
+- {one-line question 3}
 ```
 
 ## Field rules
@@ -139,6 +144,12 @@ FLAGS
     - `- [thumb] "$10K/DAY" — Headline number on the thumbnail is not substantiated by any concrete claim or evidence in the transcript.`
     - `- [thumb] "stack of cash on desk" — Cash imagery implies a payoff the video never demonstrates.`
   - When Pass 3's `deception_signals` contains a HIGH-severity entry, at least one `[thumb]` flag is mandatory and should cite the overlay or visual element that triggered the signal.
+- `FOLLOW-UP QUESTIONS`: exactly **3 bullets**, each ≤ 120 chars, **required for every report**. Mix two flavors across the three slots:
+  - **Claude-prompt** — an action the user can paste back to the assistant. Reference a specific quote, timestamp, section, named claim, channel, or thumbnail overlay from THIS video. Examples: `Pull the verbatim quotes for the $5,219 case study at 17:00–22:00`, `Compare the lookalike-audience advice here against {channel}'s teardown of the same funnel`, `Fact-check the claim that NASA paid $380M per launch at [3:24]`.
+  - **Research question** — an open question the user can investigate independently, tied to a specific gap or claim in this video. Examples: `What's documented CAC for sub-$100 course funnels using 5% lookalike audiences?`, `Has any independent source verified Tesla's $19.8% Musk-ownership figure?`.
+  - For **WATCH** verdicts, lean toward *deepen* — go further into the strongest concrete claim, find adjacent videos on the same topic, fact-check the standout number that justified the recommendation.
+  - For **SKIP** verdicts, lean toward *probe the gap* — verify the unsubstantiated claim, find an honest alternative on the same topic, surface counter-evidence to the title's or thumbnail's headline promise.
+  - **Banned**: questions that would apply to any video in the genre. No `Is this a good strategy?`, `Should I trust this creator?`, `Is this trustworthy?`, `What are the takeaways?`. Every bullet must reference at least one specific element of this video.
 
 ## Edge cases
 
@@ -167,6 +178,7 @@ Before returning, self-check:
 4. `FLAGS` section has at least 2 bullets, each citing a verbatim Pass 2 quote (with timestamp) or a verbatim Pass 3 string (with `[thumb]` slot).
 5. `THUMBNAIL vs CONTENT` block is present iff Pass 3's `vision_available` is true.
 6. If any HIGH-severity entry exists in Pass 3 `deception_signals`, at least one `[thumb]` flag is present.
+7. `FOLLOW-UP QUESTIONS` has exactly 3 bullets. Each references a specific element of this video (a verbatim quote, timestamp, section, claim, channel, or thumbnail overlay). None reads as a generic "any video" question.
 
 If any check fails, rewrite before returning.
 

@@ -4,17 +4,24 @@
 Part of the youtube-verdict skill. No LLM calls. No network calls.
 
 Reads the Pass 4 markdown report from stdin (the unwrapped report — no outer
-``` fence) and reads the fetch.py transcript cache for title/channel/duration.
-Prints the formatted dashboard to stdout exactly per SKILL.md Step 8:
+``` fence) and reads the fetch.py transcript cache for title/channel/duration
+/view_count. Prints the formatted dashboard to stdout exactly per SKILL.md
+Step 8:
 
     - 54-char ━ borders
     - Two-space indent on every content line
     - Soft-wrap the EXECUTIVE VERDICT prose at ~60 columns at word boundaries
     - State badge selection from VERDICT (WATCH/SKIP)
+    - Channel line includes view_count when known (e.g. `… · 14:44 · 445,168 views`)
+    - Substance line shows 4 counts: concrete · vague · evidence · pitches
+    - Conditional `📐 Title says / Delivers` pair when title gap is MEDIUM/HIGH
+    - Conditional `🖼️ Thumbnail / Delivers` pair when thumb gap is MEDIUM/HIGH
     - Omit the "Best minutes" line when the report says "Nothing — full skip
       recommended."
     - Omit the entire FLAGS block when the report has no FLAGS section
-    - First two flag bullets only; quote truncated to 40 chars + …
+    - First three flag bullets only; quote truncated to 60 chars + …
+    - `❓ Ask next` block — up to 3 numbered follow-up questions, soft-wrapped
+      with hanging indent
     - File path footer
 
 CLI:
@@ -60,6 +67,7 @@ KNOWN_HEADERS = (
     "WHO SHOULD SKIP",
     "BEST",
     "FLAGS",
+    "FOLLOW-UP QUESTIONS",
 )
 
 
@@ -133,6 +141,20 @@ def _select_dashboard_flags(flags: list[dict], limit: int = 2) -> list[dict]:
     return (thumb_flags + other_flags)[:limit]
 
 
+def _extract_compare(block: str, promise_label: str = "Title promises") -> dict | None:
+    """Extract `<promise_label>:` and `Content delivers:` from a TITLE/THUMBNAIL
+    vs CONTENT block. Returns None when either line is missing."""
+    if not block:
+        return None
+    promise_re = rf"^{re.escape(promise_label)}:\s*(.+?)\s*$"
+    delivers_re = r"^Content delivers:\s*(.+?)\s*$"
+    pm = re.search(promise_re, block, re.MULTILINE)
+    dm = re.search(delivers_re, block, re.MULTILINE)
+    if not pm or not dm:
+        return None
+    return {"promises": pm.group(1).strip(), "delivers": dm.group(1).strip()}
+
+
 def parse_report(report: str) -> dict:
     """Extract fields from the Pass 4 markdown report."""
     fields: dict = {}
@@ -146,13 +168,16 @@ def parse_report(report: str) -> dict:
     title_block = _section_block(report, "TITLE vs CONTENT")
     title_gap = re.search(r"^Gap:\s+(\w+)", title_block, re.MULTILINE)
     fields["gap"] = title_gap.group(1).upper() if title_gap else "LOW"
+    fields["title_compare"] = _extract_compare(title_block)
 
     thumb_block = _section_block(report, "THUMBNAIL vs CONTENT")
     if thumb_block:
         thumb_gap = re.search(r"^Gap:\s+(\w+)", thumb_block, re.MULTILINE)
         fields["thumb_gap"] = thumb_gap.group(1).upper() if thumb_gap else "LOW"
+        fields["thumb_compare"] = _extract_compare(thumb_block, promise_label="Thumbnail promises")
     else:
         fields["thumb_gap"] = None
+        fields["thumb_compare"] = None
 
     fields["executive_verdict"] = _section_block(report, "EXECUTIVE VERDICT")
 
@@ -176,6 +201,7 @@ def parse_report(report: str) -> dict:
         ("Concrete claims", "concrete"),
         ("Vague claims", "vague"),
         ("Evidence shown", "evidence"),
+        ("Pitches/CTAs", "pitches"),
     ):
         cm = re.search(rf"{re.escape(label)}:\s*(\d+)", sd)
         counts[key] = int(cm.group(1)) if cm else 0
@@ -198,7 +224,29 @@ def parse_report(report: str) -> dict:
                     }
                 )
 
+    fields["followups"] = []
+    fu_block = _section_block(report, "FOLLOW-UP QUESTIONS")
+    if fu_block:
+        for line in fu_block.splitlines():
+            stripped = line.strip()
+            if stripped.startswith("- "):
+                question = stripped[2:].strip()
+                if question:
+                    fields["followups"].append(question)
+            if len(fields["followups"]) >= 3:
+                break
+
     return fields
+
+
+def _human_views(view_count: int | None) -> str:
+    """Mirror generate_verdict.md's views_human rule: <1M = comma-separated,
+    else `1.2M`/`15.3M`. Missing or zero → em-dash."""
+    if not view_count:
+        return "—"
+    if view_count < 1_000_000:
+        return f"{view_count:,}"
+    return f"{view_count / 1_000_000:.1f}M"
 
 
 def render(parsed: dict, metadata: dict, report_path: str | None = None) -> str:
@@ -211,6 +259,7 @@ def render(parsed: dict, metadata: dict, report_path: str | None = None) -> str:
     duration = _human_duration(metadata.get("duration_seconds", 0))
     title = metadata.get("title", "(unknown title)")
     channel = metadata.get("channel", "(unknown channel)")
+    views = _human_views(metadata.get("view_count"))
 
     out: list[str] = []
     out.append(BORDER)
@@ -240,7 +289,10 @@ def render(parsed: dict, metadata: dict, report_path: str | None = None) -> str:
     out.append(BORDER)
     out.append("")
     out.append(f"{INDENT}{title}")
-    out.append(f"{INDENT}{channel}  ·  {duration}")
+    if views == "—":
+        out.append(f"{INDENT}{channel}  ·  {duration}")
+    else:
+        out.append(f"{INDENT}{channel}  ·  {duration}  ·  {views} views")
     out.append("")
 
     if parsed.get("best_minutes"):
@@ -250,8 +302,20 @@ def render(parsed: dict, metadata: dict, report_path: str | None = None) -> str:
         )
     sd = parsed["substance"]
     out.append(
-        f"{INDENT}📊 Substance      {sd['concrete']} concrete · {sd['vague']} vague · {sd['evidence']} evidence"
+        f"{INDENT}📊 Substance      {sd['concrete']} concrete · {sd['vague']} vague"
+        f" · {sd['evidence']} evidence · {sd['pitches']} pitches"
     )
+
+    title_compare = parsed.get("title_compare")
+    if title_compare and gap in ("MEDIUM", "HIGH"):
+        out.append(f"{INDENT}📐 Title says     {title_compare['promises']}")
+        out.append(f"{INDENT}   Delivers      {title_compare['delivers']}")
+
+    thumb_compare = parsed.get("thumb_compare")
+    if thumb_compare and thumb_gap in ("MEDIUM", "HIGH"):
+        out.append(f"{INDENT}🖼️  Thumbnail     {thumb_compare['promises']}")
+        out.append(f"{INDENT}   Delivers      {thumb_compare['delivers']}")
+
     if parsed.get("watch_if"):
         out.append(f"{INDENT}👥 Watch if       {parsed['watch_if']}")
     if parsed.get("skip_if"):
@@ -261,9 +325,26 @@ def render(parsed: dict, metadata: dict, report_path: str | None = None) -> str:
     if flags:
         out.append("")
         out.append(f"{INDENT}🚩 Flags ({len(flags)})")
-        for flag in _select_dashboard_flags(flags, limit=2):
-            quote = _truncate(flag["quote"], 40)
+        for flag in _select_dashboard_flags(flags, limit=3):
+            quote = _truncate(flag["quote"], 60)
             out.append(f'{INDENT}   [{flag["timestamp"]}] "{quote}"   — {flag["reason"]}')
+
+    followups = parsed.get("followups") or []
+    if followups:
+        out.append("")
+        out.append(f"{INDENT}❓ Ask next")
+        for idx, question in enumerate(followups[:3], start=1):
+            wrapped = textwrap.wrap(
+                question,
+                width=WRAP_WIDTH,
+                break_long_words=False,
+                break_on_hyphens=False,
+            )
+            if not wrapped:
+                continue
+            out.append(f"{INDENT}   {idx}. {wrapped[0]}")
+            for cont in wrapped[1:]:
+                out.append(f"{INDENT}      {cont}")
 
     if report_path:
         out.append("")

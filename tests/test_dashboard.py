@@ -56,6 +56,11 @@ BEST 6 MINUTES
 FLAGS
 - [7:01] "in business make. Elon Musk only owns $19.8% of Tesla and that business makes" — Stat is mis-stated.
 - [3:24] "laws of physics, it should work. See, NASA paid roughly 380 million per launch" — Round-number cost claim, no citation.
+
+FOLLOW-UP QUESTIONS
+- Verify the Tesla ownership figure cited at [7:01] against an SEC filing.
+- Pull the verbatim quotes for buckets 1–4 between [1:38] and [7:30].
+- What's the documented per-launch cost NASA reported in 2010 vs the $380M claim at [3:24]?
 """
 
 
@@ -92,6 +97,11 @@ Experts.
 
 BEST 8 MINUTES (if you must watch)
 [0:00–8:30] The whole thing.
+
+FOLLOW-UP QUESTIONS
+- Find a follow-up tutorial on TutChan that builds on this beginner walkthrough.
+- Compare the approach in this tutorial against the one in {linked-channel}'s deep dive.
+- What's the canonical reference doc for the API methods shown at [3:00–6:00]?
 """
 
 
@@ -141,6 +151,11 @@ FLAGS
 - [0:30] "best system ever" — Vague claim with no methodology.
 - [thumb] "stack of cash on desk" — Cash imagery implies a payoff the video never demonstrates.
 - [4:12] "act now before the price goes up" — Urgency pitch.
+
+FOLLOW-UP QUESTIONS
+- Search YouTube for an honest teardown of the "$10K/day passive income" claim shown on this thumbnail.
+- Find a video on the same topic that shows verifiable income receipts instead of stock cash imagery.
+- What does ScammyTube's course cost, and is there a documented refund-rate complaint thread?
 """
 
 
@@ -182,6 +197,11 @@ FLAGS
 - [0:01] "best system ever" — vague.
 - [0:30] "act now" — pitch.
 - [1:00] "limited time" — pitch.
+
+FOLLOW-UP QUESTIONS
+- Find a credible tutorial covering the workflow PitchTube only teases here.
+- Pull the verbatim CTA quotes between [0:00–5:00] for an aggregate pitch ratio.
+- Has anyone reviewed PitchTube's other uploads to check whether substance ever appears?
 """
 
 
@@ -222,7 +242,12 @@ class TestParseReport:
 
     def test_extracts_substance_counts(self):
         parsed = dashboard.parse_report(SAMPLE_REPORT)
-        assert parsed["substance"] == {"concrete": 25, "vague": 12, "evidence": 10}
+        assert parsed["substance"] == {
+            "concrete": 25,
+            "vague": 12,
+            "evidence": 10,
+            "pitches": 4,
+        }
 
     def test_extracts_best_minutes(self):
         parsed = dashboard.parse_report(SAMPLE_REPORT)
@@ -284,6 +309,43 @@ class TestParseReport:
         assert len(thumb_flags) == 2
         assert thumb_flags[0]["quote"] == "$10K/DAY"
 
+    def test_extracts_title_compare(self):
+        parsed = dashboard.parse_report(SAMPLE_REPORT)
+        assert parsed["title_compare"] == {"promises": "X", "delivers": "Y"}
+
+    def test_extracts_thumb_compare_when_block_present(self):
+        parsed = dashboard.parse_report(THUMBNAIL_REPORT)
+        compare = parsed["thumb_compare"]
+        assert compare is not None
+        assert "passive income" in compare["promises"]
+        assert "pitch" in compare["delivers"]
+
+    def test_thumb_compare_none_when_no_thumbnail_block(self):
+        parsed = dashboard.parse_report(SAMPLE_REPORT)
+        assert parsed["thumb_compare"] is None
+
+    def test_extracts_followups(self):
+        parsed = dashboard.parse_report(SAMPLE_REPORT)
+        assert len(parsed["followups"]) == 3
+        assert parsed["followups"][0].startswith("Verify the Tesla ownership figure")
+
+    def test_followups_empty_when_section_missing(self):
+        # Build a report stripped of the FOLLOW-UP QUESTIONS section.
+        report = SAMPLE_REPORT.split("FOLLOW-UP QUESTIONS")[0].rstrip() + "\n"
+        parsed = dashboard.parse_report(report)
+        assert parsed["followups"] == []
+
+    def test_followups_capped_at_three(self):
+        # If a malformed report has 5 follow-ups, only first 3 are kept.
+        injected = SAMPLE_REPORT.replace(
+            "What's the documented per-launch cost NASA reported in 2010 vs the $380M claim at [3:24]?",
+            "What's the documented per-launch cost NASA reported in 2010 vs the $380M claim at [3:24]?\n"
+            "- bonus four\n- bonus five",
+        )
+        parsed = dashboard.parse_report(injected)
+        assert len(parsed["followups"]) == 3
+        assert "bonus four" not in parsed["followups"]
+
 
 # ----------------------------------------------------------------------------
 # render
@@ -328,29 +390,31 @@ class TestRender:
         ]
         assert len(prose_lines) >= 2  # multi-line wrap for this fixture
 
-    def test_flag_quote_truncated_to_40_chars(self):
+    def test_flag_quote_truncated_to_60_chars(self):
         parsed = dashboard.parse_report(SAMPLE_REPORT)
         out = dashboard.render(parsed, METADATA)
-        # The Musk quote is way over 40 chars; should appear truncated.
+        # The Musk quote is way over 60 chars; should appear truncated.
         for line in out.splitlines():
             if "Elon Musk" in line:
                 # Extract the inner quoted text
                 start = line.index('"') + 1
                 end = line.index('"', start)
-                assert end - start <= 40
+                assert end - start <= 60
 
-    def test_only_first_two_flags_rendered(self):
-        # Build a report with 4 flags; only 2 should appear.
+    def test_first_three_flags_rendered(self):
+        # Build a report with 5 flags; only the first 3 should appear.
         parsed = dashboard.parse_report(SAMPLE_REPORT)
-        # Sample has 2 flags; add fake extras for this test
+        # Sample has 2 flags; add fake extras for this test.
         parsed["flags"].extend([
-            {"timestamp": "8:00", "quote": "third", "reason": "third"},
-            {"timestamp": "9:00", "quote": "fourth", "reason": "fourth"},
+            {"timestamp": "8:00", "quote": "third-quote-text", "reason": "r3"},
+            {"timestamp": "9:00", "quote": "fourth-quote-text", "reason": "r4"},
+            {"timestamp": "10:00", "quote": "fifth-quote-text", "reason": "r5"},
         ])
         out = dashboard.render(parsed, METADATA)
-        assert "Flags (4)" in out
-        assert "third" not in out
-        assert "fourth" not in out
+        assert "Flags (5)" in out
+        assert "third-quote-text" in out
+        assert "fourth-quote-text" not in out
+        assert "fifth-quote-text" not in out
 
     def test_omit_flags_block_when_no_flags(self):
         parsed = dashboard.parse_report(WATCH_REPORT_NO_FLAGS)
@@ -440,6 +504,96 @@ class TestRender:
         picked = dashboard._select_dashboard_flags(flags, limit=2)
         assert len(picked) == 2
         assert all(f["timestamp"] == "thumb" for f in picked)
+
+    def test_render_substance_includes_pitches(self):
+        parsed = dashboard.parse_report(SAMPLE_REPORT)
+        out = dashboard.render(parsed, METADATA)
+        assert "25 concrete · 12 vague · 10 evidence · 4 pitches" in out
+
+    def test_render_views_when_present(self):
+        parsed = dashboard.parse_report(SAMPLE_REPORT)
+        out = dashboard.render(parsed, {**METADATA, "view_count": 445_168})
+        assert "445,168 views" in out
+
+    def test_render_views_in_millions(self):
+        parsed = dashboard.parse_report(SAMPLE_REPORT)
+        out = dashboard.render(parsed, {**METADATA, "view_count": 1_500_000})
+        assert "1.5M views" in out
+
+    def test_render_omits_views_when_missing(self):
+        parsed = dashboard.parse_report(SAMPLE_REPORT)
+        out = dashboard.render(parsed, METADATA)  # no view_count
+        assert "views" not in out
+
+    def test_render_title_says_block_when_gap_medium(self):
+        parsed = dashboard.parse_report(SAMPLE_REPORT)  # gap MEDIUM
+        out = dashboard.render(parsed, METADATA)
+        assert "📐 Title says" in out
+        assert "Delivers" in out
+
+    def test_render_title_says_block_when_gap_high(self):
+        parsed = dashboard.parse_report(THUMBNAIL_REPORT)  # title gap HIGH
+        out = dashboard.render(
+            parsed,
+            {"title": "x", "channel": "y", "duration_seconds": 720},
+        )
+        assert "📐 Title says" in out
+        assert "$10K/day" in out  # promise text appears
+
+    def test_render_omits_title_says_when_gap_low(self):
+        parsed = dashboard.parse_report(WATCH_REPORT_NO_FLAGS)  # gap LOW
+        out = dashboard.render(
+            parsed,
+            {"title": "Solid Tutorial", "channel": "TutChan", "duration_seconds": 510},
+        )
+        assert "📐 Title says" not in out
+
+    def test_render_thumbnail_block_when_thumb_gap_high(self):
+        parsed = dashboard.parse_report(THUMBNAIL_REPORT)
+        out = dashboard.render(
+            parsed,
+            {"title": "x", "channel": "y", "duration_seconds": 720},
+        )
+        assert "🖼️" in out
+        assert "Thumbnail" in out
+        assert "passive income" in out  # thumb promise text
+
+    def test_render_omits_thumbnail_block_when_no_thumbnail_axis(self):
+        parsed = dashboard.parse_report(SAMPLE_REPORT)
+        out = dashboard.render(parsed, METADATA)
+        assert "🖼️" not in out
+
+    def test_render_ask_next_block_with_three_followups(self):
+        parsed = dashboard.parse_report(SAMPLE_REPORT)
+        out = dashboard.render(parsed, METADATA)
+        assert "❓ Ask next" in out
+        assert "1." in out and "2." in out and "3." in out
+        assert "Tesla ownership" in out
+
+    def test_render_omits_ask_next_when_no_followups(self):
+        parsed = dashboard.parse_report(SAMPLE_REPORT)
+        parsed["followups"] = []
+        out = dashboard.render(parsed, METADATA)
+        assert "❓ Ask next" not in out
+
+    def test_render_followup_long_question_wraps(self):
+        parsed = dashboard.parse_report(SAMPLE_REPORT)
+        long_q = "A" * 80 + " " + "B" * 80  # 161 chars; must wrap at 60
+        parsed["followups"] = [long_q, "short two", "short three"]
+        out = dashboard.render(parsed, METADATA)
+        # The first follow-up should be split across multiple lines.
+        ask_idx = next(
+            i for i, line in enumerate(out.splitlines()) if "❓ Ask next" in line
+        )
+        # Lines after "❓ Ask next" up to the next blank should contain the
+        # wrapped continuation indented under the digit.
+        lines_after = out.splitlines()[ask_idx + 1 : ask_idx + 6]
+        assert any("1. " in line for line in lines_after)
+        # At least one continuation line indented beyond the "1. " prefix.
+        continuation = [
+            line for line in lines_after if line.startswith("        ")  # 6 hang spaces + 2-indent
+        ]
+        assert continuation, "expected wrapped continuation under follow-up #1"
 
 
 # ----------------------------------------------------------------------------

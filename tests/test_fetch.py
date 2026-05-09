@@ -1,8 +1,11 @@
 """Unit tests for scripts/fetch.py — no real network calls."""
 from __future__ import annotations
 
+import hashlib
 import json
 import sys
+import urllib.error
+from io import BytesIO
 from pathlib import Path
 from unittest.mock import MagicMock, patch
 
@@ -150,6 +153,12 @@ class TestFetchMetadataRejections:
             "view_count": 10000,
             "upload_date": "20260101",
             "is_live": False,
+            "thumbnails": [
+                {"url": "https://i.ytimg.com/vi/dQw4w9WgXcQ/hqdefault.jpg",
+                 "width": 480, "height": 360},
+                {"url": "https://i.ytimg.com/vi/dQw4w9WgXcQ/maxresdefault.jpg",
+                 "width": 1920, "height": 1080},
+            ],
         }
         with self._patch_ydl(info):
             meta = fetch.fetch_metadata("dQw4w9WgXcQ")
@@ -162,6 +171,7 @@ class TestFetchMetadataRejections:
             "duration_seconds": 600,
             "view_count": 10000,
             "upload_date": "2026-01-01",
+            "thumbnail_url": "https://i.ytimg.com/vi/dQw4w9WgXcQ/hqdefault.jpg",
         }
 
 
@@ -204,6 +214,7 @@ class TestCache:
             "view_count": 1,
             "upload_date": "2026-01-01",
             "language": "en",
+            "thumbnail_url": "https://i.ytimg.com/vi/dQw4w9WgXcQ/hqdefault.jpg",
             "transcript": [{"start": 0.0, "duration": 1.0, "text": "cached"}],
             "fetched_at": "2026-05-05T00:00:00Z",
         }
@@ -374,3 +385,200 @@ This is a test
             == "en-US"
         )
         assert fetch._vtt_language_from_filename("other.vtt", "dQw4w9WgXcQ") == ""
+
+
+# ----------------------------------------------------------------------------
+# Thumbnail extraction & download
+# ----------------------------------------------------------------------------
+
+
+class TestSelectThumbnailUrl:
+    def test_picks_largest_under_1280_width(self):
+        thumbs = [
+            {"url": "https://x/sd.jpg", "width": 640, "height": 480},
+            {"url": "https://x/hq.jpg", "width": 1280, "height": 720},
+            {"url": "https://x/maxres.jpg", "width": 1920, "height": 1080},
+        ]
+        assert fetch._select_thumbnail_url(thumbs, "fallback") == "https://x/hq.jpg"
+
+    def test_skips_oversized_variants(self):
+        thumbs = [
+            {"url": "https://x/sd.jpg", "width": 480, "height": 360},
+            {"url": "https://x/maxres.jpg", "width": 1920, "height": 1080},
+        ]
+        # 480 ≤ 1280; 1920 > 1280. Picks the 480 one.
+        assert fetch._select_thumbnail_url(thumbs, "") == "https://x/sd.jpg"
+
+    def test_no_width_falls_back_to_last_candidate(self):
+        # yt-dlp orders thumbnails ascending by quality — last is highest.
+        thumbs = [
+            {"url": "https://x/a.jpg"},
+            {"url": "https://x/b.jpg"},
+        ]
+        assert fetch._select_thumbnail_url(thumbs, "fallback") == "https://x/b.jpg"
+
+    def test_empty_list_uses_fallback(self):
+        assert fetch._select_thumbnail_url([], "https://x/single.jpg") == "https://x/single.jpg"
+
+    def test_empty_everything_returns_empty_string(self):
+        assert fetch._select_thumbnail_url([], "") == ""
+
+    def test_skips_entries_without_url(self):
+        thumbs = [
+            {"width": 640, "height": 480},  # no url — drop
+            {"url": "https://x/a.jpg", "width": 1280, "height": 720},
+        ]
+        assert fetch._select_thumbnail_url(thumbs, "") == "https://x/a.jpg"
+
+
+class TestDownloadThumbnail:
+    def test_writes_jpg_and_returns_sha(self, tmp_path):
+        payload = b"fake-jpg-bytes"
+        fake_resp = MagicMock()
+        fake_resp.__enter__ = MagicMock(return_value=fake_resp)
+        fake_resp.__exit__ = MagicMock(return_value=False)
+        fake_resp.read = MagicMock(return_value=payload)
+        with patch("urllib.request.urlopen", return_value=fake_resp):
+            result = fetch.download_thumbnail(
+                "abc11charsxx", "https://x/thumb.jpg", cache_dir=tmp_path
+            )
+        assert result is not None
+        path, sha = result
+        assert path == tmp_path / "abc11charsxx.jpg"
+        assert path.read_bytes() == payload
+        assert sha == hashlib.sha256(payload).hexdigest()
+
+    def test_empty_url_returns_none_without_io(self, tmp_path):
+        with patch("urllib.request.urlopen") as mocked:
+            assert fetch.download_thumbnail("abc11charsxx", "", cache_dir=tmp_path) is None
+        mocked.assert_not_called()
+
+    def test_network_error_returns_none(self, tmp_path, capsys):
+        with patch(
+            "urllib.request.urlopen",
+            side_effect=urllib.error.URLError("boom"),
+        ):
+            result = fetch.download_thumbnail(
+                "abc11charsxx", "https://x/thumb.jpg", cache_dir=tmp_path
+            )
+        assert result is None
+        # No file created
+        assert not (tmp_path / "abc11charsxx.jpg").exists()
+        # Warning surfaced to stderr
+        assert "thumbnail download failed" in capsys.readouterr().err
+
+    def test_empty_body_returns_none(self, tmp_path, capsys):
+        fake_resp = MagicMock()
+        fake_resp.__enter__ = MagicMock(return_value=fake_resp)
+        fake_resp.__exit__ = MagicMock(return_value=False)
+        fake_resp.read = MagicMock(return_value=b"")
+        with patch("urllib.request.urlopen", return_value=fake_resp):
+            result = fetch.download_thumbnail(
+                "abc11charsxx", "https://x/thumb.jpg", cache_dir=tmp_path
+            )
+        assert result is None
+        assert "empty body" in capsys.readouterr().err
+
+
+class TestThumbnailIntegration:
+    """Verify thumbnail fields flow through main() with --cache."""
+
+    def test_main_with_cache_populates_thumbnail_fields(
+        self, tmp_path, monkeypatch, capsys
+    ):
+        cache_dir = tmp_path / "cache"
+        monkeypatch.setattr(fetch, "CACHE_DIR", cache_dir)
+        meta = {
+            "video_id": "dQw4w9WgXcQ",
+            "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+            "title": "Hello",
+            "channel": "C",
+            "channel_id": "CID",
+            "duration_seconds": 600,
+            "view_count": 0,
+            "upload_date": "2026-01-01",
+            "thumbnail_url": "https://i.ytimg.com/x.jpg",
+        }
+        segs = ([{"start": 0.0, "duration": 1.0, "text": "hi"}], "en")
+        payload_bytes = b"jpg-bytes-here"
+        fake_resp = MagicMock()
+        fake_resp.__enter__ = MagicMock(return_value=fake_resp)
+        fake_resp.__exit__ = MagicMock(return_value=False)
+        fake_resp.read = MagicMock(return_value=payload_bytes)
+        with patch.object(fetch, "fetch_metadata", return_value=meta), patch.object(
+            fetch, "fetch_transcript", return_value=segs
+        ), patch("urllib.request.urlopen", return_value=fake_resp):
+            assert fetch.main(["dQw4w9WgXcQ", "--cache"]) == 0
+
+        out = json.loads(capsys.readouterr().out)
+        assert out["thumbnail_url"] == "https://i.ytimg.com/x.jpg"
+        assert out["thumbnail_path"] == str(cache_dir / "dQw4w9WgXcQ.jpg")
+        assert out["thumbnail_sha256"] == hashlib.sha256(payload_bytes).hexdigest()
+        # JPG actually written
+        assert (cache_dir / "dQw4w9WgXcQ.jpg").read_bytes() == payload_bytes
+
+    def test_main_with_cache_skips_thumbnail_when_url_empty(
+        self, tmp_path, monkeypatch, capsys
+    ):
+        cache_dir = tmp_path / "cache"
+        monkeypatch.setattr(fetch, "CACHE_DIR", cache_dir)
+        meta = {
+            "video_id": "dQw4w9WgXcQ",
+            "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+            "title": "Hello",
+            "channel": "C",
+            "channel_id": "CID",
+            "duration_seconds": 600,
+            "view_count": 0,
+            "upload_date": "2026-01-01",
+            "thumbnail_url": "",
+        }
+        segs = ([{"start": 0.0, "duration": 1.0, "text": "hi"}], "en")
+        with patch.object(fetch, "fetch_metadata", return_value=meta), patch.object(
+            fetch, "fetch_transcript", return_value=segs
+        ), patch("urllib.request.urlopen") as mocked:
+            assert fetch.main(["dQw4w9WgXcQ", "--cache"]) == 0
+        mocked.assert_not_called()
+        out = json.loads(capsys.readouterr().out)
+        assert out["thumbnail_url"] == ""
+        assert "thumbnail_path" not in out
+        assert "thumbnail_sha256" not in out
+
+    def test_legacy_cache_without_thumbnail_url_triggers_refetch(
+        self, tmp_path, monkeypatch, capsys
+    ):
+        """Pre-thumbnail-feature caches must invalidate so users get the new axis."""
+        cache_dir = tmp_path / "cache"
+        monkeypatch.setattr(fetch, "CACHE_DIR", cache_dir)
+        legacy = {
+            "video_id": "dQw4w9WgXcQ",
+            "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+            "title": "Old", "slug": "old",
+            "channel": "x", "channel_id": "y",
+            "duration_seconds": 600, "view_count": 1,
+            "upload_date": "2026-01-01", "language": "en",
+            "transcript": [{"start": 0.0, "duration": 1.0, "text": "old"}],
+            "fetched_at": "2026-05-05T00:00:00Z",
+            # Note: no thumbnail_url — pre-feature cache.
+        }
+        fetch.cache_write("dQw4w9WgXcQ", legacy)
+        fresh_meta = {**legacy, "thumbnail_url": "https://i.ytimg.com/new.jpg"}
+        fresh_meta.pop("language", None)
+        fresh_meta.pop("transcript", None)
+        fresh_meta.pop("slug", None)
+        fresh_meta.pop("fetched_at", None)
+        with patch.object(
+            fetch, "fetch_metadata", return_value=fresh_meta
+        ) as mock_meta, patch.object(
+            fetch, "fetch_transcript",
+            return_value=([{"start": 0.0, "duration": 1.0, "text": "fresh"}], "en"),
+        ) as mock_tr, patch.object(
+            fetch, "download_thumbnail", return_value=None
+        ):
+            assert fetch.main(["dQw4w9WgXcQ", "--cache"]) == 0
+
+        mock_meta.assert_called_once()
+        mock_tr.assert_called_once()
+        payload = json.loads(capsys.readouterr().out)
+        assert payload["thumbnail_url"] == "https://i.ytimg.com/new.jpg"
+        assert payload["transcript"][0]["text"] == "fresh"

@@ -1,4 +1,4 @@
-# Pass 3 — Generate Verdict Report
+# Pass 4 — Generate Verdict Report
 
 You are producing a pre-watch decision report for a YouTube video. The report answers one question for the reader: should I spend time on this video? Read in under 30 seconds. Cite every flag.
 
@@ -8,27 +8,33 @@ You are deciding on behalf of the reader's time. They want a call: WATCH or SKIP
 
 If the call is genuinely close, lean SKIP — they can always go watch it; they can't unspend the runtime. A close-call SKIP with a salvageable `BEST MINUTES` range serves the reader better than a hedged middle verdict that tells them nothing.
 
-This report rates the **fit between the title's promise and the content delivered**, not the creator's morality. Don't attack the creator — no "scam", "fake guru", "deceptive", "BS". Judge the artifact. Strong language is fine when the evidence supports it ("the title's $900K outcome is not substantiated anywhere in the video"); ad-hominem is not.
+This report rates the **fit between what the video promises (title + thumbnail) and the content delivered**, not the creator's morality. Don't attack the creator — no "scam", "fake guru", "deceptive", "BS". Judge the artifact. Strong language is fine when the evidence supports it ("the title's $900K outcome is not substantiated anywhere in the video"); ad-hominem is not.
 
 ## Inputs
 
-Three JSON documents:
+Four JSON documents:
 
 1. **Metadata** — `title`, `channel`, `duration_seconds`, `view_count`, `upload_date` from the fetched video record.
 2. **Pass 1 output** — section structure: `sections[]` with `id`, `type`, `start`, `end`, `summary`.
 3. **Pass 2 output** — claim inventory: `by_section[]` with `concrete_claims`, `vague_claims`, `evidence_shown`, `pitches`. Every entry has `timestamp` + verbatim `quote`.
+4. **Pass 3 output** (thumbnail) — `vision_available`, plus when true: `text_overlays`, `visual_elements`, `deception_signals`, `thumbnail_summary`, `implicit_promise`. When `vision_available` is false **or Pass 3 is missing entirely**, treat the thumbnail axis as unavailable: omit the `THUMBNAIL vs CONTENT` block from the output and produce no `[thumb]` flags.
 
-You will receive all three as one combined input.
+You will receive all four as one combined input.
 
 ## Hard rule — every flag cites a verbatim quote
 
-Every flag in the report cites a transcript timestamp + verbatim quote drawn from Pass 2. This applies symmetrically:
+Every flag in the report cites either:
+- a transcript timestamp + verbatim quote drawn from Pass 2, **or**
+- the slot `[thumb]` + a verbatim string from Pass 3's `text_overlays` or `visual_elements[].element` (for thumbnail-driven flags).
+
+This applies symmetrically:
 
 - **WATCH verdicts** must cite at least 2 positive evidence quotes in `FLAGS` — the strongest concrete claims or evidence_shown items that justify the runtime.
-- **SKIP verdicts** must cite at least 2 problem quotes in `FLAGS` — the vague claims, missing-evidence moments, or pitches that drove the verdict.
-- The **Gap** rating, when MEDIUM or HIGH, must be backed by a quote.
+- **SKIP verdicts** must cite at least 2 problem quotes in `FLAGS` — the vague claims, missing-evidence moments, pitches, or thumbnail mismatches that drove the verdict.
+- Both Gap ratings (Title and Thumbnail), when MEDIUM or HIGH, must be backed by at least one flag.
+- If Pass 3's `deception_signals` contains any HIGH-severity entry, **at least one `[thumb]` flag is required**.
 
-If you cannot back a claim with a Pass 2 entry, you cannot raise it. The `FLAGS` section is required for every report.
+If you cannot back a claim with a Pass 2 entry or a Pass 3 string, you cannot raise it. The `FLAGS` section is required for every report.
 
 ## Verdict rubric — binary, with anchored scores
 
@@ -47,11 +53,14 @@ Runtime clearly justified by substance. Concrete claims ≥ 2× vague claims, `e
 
 Runtime not justified. Triggered by **any** of:
 
-- Gap HIGH (title's specific promise is not delivered or contradicted)
+- Title Gap HIGH (title's specific promise is not delivered or contradicted)
+- Thumbnail Gap HIGH (thumbnail's implicit promise is not delivered or contradicted by transcript)
 - `vague_claims` count ≥ `concrete_claims` count
 - `pitches` count ≥ `concrete_claims` count
 - Pure pitch sections occupy ≥ 30% of total duration
 - Title makes a specific numeric/outcome claim ("$1.2M", "in 30 days", "the best way") and Pass 2 has no concrete_claim or evidence_shown backing that specific number/outcome
+- A thumbnail `text_overlay` states a specific numeric/outcome claim ("$10K/DAY", "$1M IN 30 DAYS") and Pass 2 has no concrete_claim or evidence_shown backing that number/outcome
+- Pass 3 `deception_signals` contains two or more HIGH-severity entries
 
 Score:
 
@@ -85,6 +94,11 @@ Title promises:  {one-line paraphrase of what the title implies the video will d
 Content delivers: {one-line factual summary of what the video actually covered}
 Gap: {LOW | MEDIUM | HIGH}
 
+THUMBNAIL vs CONTENT
+Thumbnail promises:  {one-line paraphrase derived from Pass 3's implicit_promise}
+Content delivers:    {one-line factual summary of what the video actually covered}
+Gap: {LOW | MEDIUM | HIGH}
+
 SUBSTANCE DENSITY
 Concrete claims: {n}
 Vague claims:    {n}
@@ -113,18 +127,27 @@ FLAGS
 - `WHAT IT ACTUALLY DELIVERS`: one line per `hook` and `content` section. Skip `pitch` and `outro` sections here. Use `[start–end]` time range from Pass 1. Summary is the section's `summary` field, lightly edited for brevity if needed. Aim for 2–6 lines total.
 - `Title promises`: paraphrase the **implicit** promise of the title, not the title verbatim. Example title "I Earned $1.2M with Claude Code" → promises: "a workflow that produced $1.2M in revenue with reproducible steps."
 - `Content delivers`: one factual line summarizing what the video actually covered, drawn from Pass 1 section summaries.
-- `Gap` LOW: title and content match. MEDIUM: partial mismatch (e.g. tutorial delivered but specific outcome claim unsupported). HIGH: title's promise is not delivered or is contradicted by content.
+- `Gap` (Title) LOW: title and content match. MEDIUM: partial mismatch (e.g. tutorial delivered but specific outcome claim unsupported). HIGH: title's promise is not delivered or is contradicted by content.
+- `THUMBNAIL vs CONTENT`: **conditional section**. Include only when Pass 3's `vision_available` is true. Omit the entire block — header and all — when `vision_available` is false or Pass 3 is missing.
+- `Thumbnail promises`: copy or lightly edit Pass 3's `implicit_promise`. Keep it specific enough that "transcript substantiates this" is a falsifiable claim. If Pass 3's `implicit_promise` is generic (e.g. "watching this video"), the gap defaults to LOW regardless of other signals.
+- `Gap` (Thumbnail) LOW: thumbnail's implicit promise matches content, or the thumbnail makes no specific promise. MEDIUM: thumbnail elements imply outcomes the video only partially substantiates (e.g. dollar overlay matches one anecdote but not the headline number). HIGH: thumbnail makes a specific numeric/outcome promise that Pass 2 does not back, **or** Pass 3's `deception_signals` contains 2+ HIGH-severity entries.
 - `SUBSTANCE DENSITY` counts: total each list across all sections in Pass 2. Counts are integers.
 - `WHO SHOULD WATCH` / `WHO SHOULD SKIP`: **conditional sections**. Include only if the answer is specific and useful (e.g. "intermediate React developers who haven't seen Server Components", "anyone past JS basics", "viewers wanting actual revenue evidence"). **Omit the entire section** — header and all — if the only answer would be generic ("anyone interested in AI", "beginners"). Better to say nothing than to say something the reader could have guessed.
 - `BEST {n} MINUTES`: pick the highest-density content range — the section(s) with the most concrete_claims and evidence_shown per minute. The `{n}` is the duration of that range in minutes (rounded). The parenthetical `(if you must watch)` is **removed** — it's a banned phrase. If the entire video is BEST (verdict WATCH and short duration), set `{n}` to the full duration in minutes and span `[0:00–{end}]`. If verdict is SKIP and there's no salvage, set the line to `Nothing — full skip recommended.`
-- `FLAGS` section: 2–6 bullets, **required for every report**. For WATCH, cite the strongest positive evidence (concrete_claims or evidence_shown). For SKIP, cite the items that drove the SKIP (vague_claims, pitches, missing-evidence). Each bullet uses the exact `timestamp` and `quote` from Pass 2. Quote must be verbatim — do not edit.
+- `FLAGS` section: 2–6 bullets, **required for every report**. For WATCH, cite the strongest positive evidence (concrete_claims or evidence_shown). For SKIP, cite the items that drove the SKIP (vague_claims, pitches, missing-evidence, thumbnail mismatches). Each transcript-derived bullet uses the exact `timestamp` and `quote` from Pass 2; the timestamp goes in the `[…]` slot. Each thumbnail-derived bullet uses the literal slot `[thumb]` and a verbatim string from Pass 3 (`text_overlays` entry or `visual_elements[].element`). Quote must be verbatim — do not edit.
+  - Thumbnail flag examples:
+    - `- [thumb] "$10K/DAY" — Headline number on the thumbnail is not substantiated by any concrete claim or evidence in the transcript.`
+    - `- [thumb] "stack of cash on desk" — Cash imagery implies a payoff the video never demonstrates.`
+  - When Pass 3's `deception_signals` contains a HIGH-severity entry, at least one `[thumb]` flag is mandatory and should cite the overlay or visual element that triggered the signal.
 
 ## Edge cases
 
 - **Verdict WATCH but a mid-roll sponsor exists:** include a flag for the sponsor with its timestamp + quote, and reflect this in the `BEST MINUTES` range (excluding the sponsor span).
 - **Empty Pass 2 (no quotes anywhere):** the video has no extractable substance. Default to **SKIP/0** with `Gap: HIGH` and a `FLAGS` section noting "Pass 2 surfaced no substantive claims" (you may cite the empty inventory as the structural finding). A video with no extractable substance is not a WATCH.
-- **Title has no specific promise** (e.g. a podcast titled with the guest's name): Gap defaults to LOW. Verdict driven entirely by substance density and pitch ratio.
+- **Title has no specific promise** (e.g. a podcast titled with the guest's name): Title Gap defaults to LOW. Verdict driven entirely by substance density and pitch ratio (and thumbnail axis if Pass 3 is available).
 - **Pass 1 has no `pitch` sections AND Pass 2 pitches list is empty:** Pitches/CTAs count = 0; FLAGS bullets won't include any pitch lines.
+- **Pass 3 `vision_available` is false (or Pass 3 missing):** omit the `THUMBNAIL vs CONTENT` block entirely and produce no `[thumb]` flags. The verdict falls back to the transcript+title-only rubric. Do not add a placeholder line saying the thumbnail wasn't analyzed.
+- **Thumbnail is bland (Pass 3 returns empty `deception_signals`):** Thumbnail Gap LOW. Don't reach for a `[thumb]` flag just to use the axis — the value of this report depends on `[thumb]` flags meaning something.
 
 ## Banned phrasing
 
@@ -141,7 +164,9 @@ Before returning, self-check:
 1. Verdict is WATCH or SKIP, never anything else.
 2. Score is in `[0,1,2,3,4,7,8,9,10]` — never 5 or 6.
 3. First sentence of `EXECUTIVE VERDICT` does not start with any banned opener.
-4. `FLAGS` section has at least 2 bullets with verbatim Pass 2 quotes.
+4. `FLAGS` section has at least 2 bullets, each citing a verbatim Pass 2 quote (with timestamp) or a verbatim Pass 3 string (with `[thumb]` slot).
+5. `THUMBNAIL vs CONTENT` block is present iff Pass 3's `vision_available` is true.
+6. If any HIGH-severity entry exists in Pass 3 `deception_signals`, at least one `[thumb]` flag is present.
 
 If any check fails, rewrite before returning.
 

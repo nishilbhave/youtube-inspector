@@ -15,11 +15,14 @@ Exit codes:
 from __future__ import annotations
 
 import argparse
+import hashlib
 import json
 import re
 import sys
 import tempfile
 import unicodedata
+import urllib.error
+import urllib.request
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any, NoReturn
@@ -149,7 +152,59 @@ def fetch_metadata(video_id: str) -> dict[str, Any]:
         "duration_seconds": duration,
         "view_count": int(info.get("view_count") or 0),
         "upload_date": _format_upload_date(info.get("upload_date", "") or ""),
+        "thumbnail_url": _select_thumbnail_url(
+            info.get("thumbnails") or [], info.get("thumbnail") or ""
+        ),
     }
+
+
+def _select_thumbnail_url(thumbnails: list[dict], fallback: str) -> str:
+    """Pick the highest-resolution thumbnail variant with width ≤ 1280.
+
+    yt-dlp's `info["thumbnails"]` is a list of `{url, width, height, id}`.
+    Maxres variants (1920×1080) inflate vision-LLM payloads without adding
+    enough resolution to matter for OCR or visual element detection — 1280
+    is the sweet spot.
+    """
+    candidates = [t for t in thumbnails if isinstance(t, dict) and t.get("url")]
+    sized = [
+        t for t in candidates
+        if isinstance(t.get("width"), int) and t["width"] <= 1280
+    ]
+    if sized:
+        return max(sized, key=lambda t: t.get("width", 0))["url"]
+    if candidates:
+        return candidates[-1]["url"]
+    return fallback or ""
+
+
+def download_thumbnail(
+    video_id: str, url: str, cache_dir: Path | None = None
+) -> tuple[Path, str] | None:
+    """Download thumbnail to ``{cache_dir}/{video_id}.jpg``.
+
+    Returns ``(path, sha256_hex)`` on success or ``None`` on any failure
+    (network error, empty body, non-2xx). Failures are logged to stderr —
+    the caller continues without thumbnail data and the verdict skill's
+    Pass 3 falls back to ``vision_available: false``.
+    """
+    if not url:
+        return None
+    target_dir = cache_dir if cache_dir is not None else CACHE_DIR
+    try:
+        req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
+        with urllib.request.urlopen(req, timeout=10) as resp:
+            data = resp.read()
+    except (urllib.error.URLError, TimeoutError, OSError) as e:
+        sys.stderr.write(f"fetch.py: thumbnail download failed: {e}\n")
+        return None
+    if not data:
+        sys.stderr.write("fetch.py: thumbnail download returned empty body\n")
+        return None
+    target_dir.mkdir(parents=True, exist_ok=True, mode=0o700)
+    path = target_dir / f"{video_id}.jpg"
+    path.write_bytes(data)
+    return path, hashlib.sha256(data).hexdigest()
 
 
 def _format_upload_date(yyyymmdd: str) -> str:
@@ -420,10 +475,11 @@ def main(argv: list[str] | None = None) -> int:
                         cached.get("video_id") or video_id,
                     )
                 )
-            if "slug" in cached:
+            if "slug" in cached and "thumbnail_url" in cached:
                 _emit(cached, args.out)
                 return 0
-            # Older cache predates the `slug` field — fall through to re-fetch.
+            # Older cache predates the `slug` or `thumbnail_url` field —
+            # fall through to re-fetch (transcript fetch is still cheap).
 
     try:
         payload = fetch(video_id, args.language)
@@ -440,6 +496,11 @@ def main(argv: list[str] | None = None) -> int:
         emit_error(e)
 
     if args.cache:
+        result = download_thumbnail(video_id, payload.get("thumbnail_url", ""))
+        if result is not None:
+            path, sha = result
+            payload["thumbnail_path"] = str(path)
+            payload["thumbnail_sha256"] = sha
         cache_write(video_id, payload)
 
     _emit(payload, args.out)

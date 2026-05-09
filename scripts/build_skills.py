@@ -41,6 +41,7 @@ PROMPT_SETS = {
     "youtube-verdict": (
         "extract_structure.md",
         "inventory_claims.md",
+        "extract_thumbnail.md",
         "generate_verdict.md",
     ),
     "youtube-summary": (

@@ -95,6 +95,55 @@ BEST 8 MINUTES (if you must watch)
 """
 
 
+THUMBNAIL_REPORT = """\
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  Make $10K/Day With This One Trick
+  ScammyTube · 12:00 · 1,000,000
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+EXECUTIVE VERDICT
+The thumbnail headlines a $10K/day outcome that the transcript never substantiates.
+The video is mostly a pitch for a paid course with no concrete numbers shown.
+
+VERDICT: SKIP   [2/10]
+
+WHAT IT ACTUALLY DELIVERS
+[0:00–1:00] Hook
+[1:00–10:00] Pitch loop
+
+TITLE vs CONTENT
+Title promises:  $10K/day from one trick.
+Content delivers: A pitch for a course.
+Gap: HIGH
+
+THUMBNAIL vs CONTENT
+Thumbnail promises:  $10K/day in passive income from a method shown in this video.
+Content delivers:    A pitch for a paid course; no method shown.
+Gap: HIGH
+
+SUBSTANCE DENSITY
+Concrete claims: 0
+Vague claims:    18
+Evidence shown:  0
+Pitches/CTAs:    9
+
+WHO SHOULD WATCH
+Nobody.
+
+WHO SHOULD SKIP
+Anyone valuing their time.
+
+BEST 0 MINUTES
+Nothing — full skip recommended.
+
+FLAGS
+- [thumb] "$10K/DAY" — Headline number on thumbnail is unsupported by any concrete claim or evidence in the transcript.
+- [0:30] "best system ever" — Vague claim with no methodology.
+- [thumb] "stack of cash on desk" — Cash imagery implies a payoff the video never demonstrates.
+- [4:12] "act now before the price goes up" — Urgency pitch.
+"""
+
+
 SKIP_REPORT_NO_BEST = """\
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
   Empty Pitch
@@ -205,6 +254,36 @@ class TestParseReport:
         with pytest.raises(ValueError, match="VERDICT"):
             dashboard.parse_report("no verdict here")
 
+    def test_thumb_gap_absent_when_no_thumbnail_block(self):
+        parsed = dashboard.parse_report(SAMPLE_REPORT)
+        assert parsed["thumb_gap"] is None
+
+    def test_thumb_gap_extracted_when_block_present(self):
+        parsed = dashboard.parse_report(THUMBNAIL_REPORT)
+        assert parsed["gap"] == "HIGH"          # title gap
+        assert parsed["thumb_gap"] == "HIGH"    # thumbnail gap
+
+    def test_thumbnail_block_does_not_bleed_into_title_gap(self):
+        """Title-gap regex must scope to TITLE vs CONTENT block only."""
+        report = SAMPLE_REPORT.replace("Gap: MEDIUM", "Gap: LOW")
+        # Build a report where TITLE gap is LOW and THUMBNAIL gap is HIGH.
+        # The bare `^Gap:\s+(\w+)` regex would have grabbed whichever came
+        # first; the scoped extraction must pick TITLE = LOW.
+        spliced = report.replace(
+            "SUBSTANCE DENSITY",
+            "THUMBNAIL vs CONTENT\nThumbnail promises: x\n"
+            "Content delivers: y\nGap: HIGH\n\nSUBSTANCE DENSITY",
+        )
+        parsed = dashboard.parse_report(spliced)
+        assert parsed["gap"] == "LOW"
+        assert parsed["thumb_gap"] == "HIGH"
+
+    def test_thumb_flag_extracted(self):
+        parsed = dashboard.parse_report(THUMBNAIL_REPORT)
+        thumb_flags = [f for f in parsed["flags"] if f["timestamp"] == "thumb"]
+        assert len(thumb_flags) == 2
+        assert thumb_flags[0]["quote"] == "$10K/DAY"
+
 
 # ----------------------------------------------------------------------------
 # render
@@ -303,6 +382,64 @@ class TestRender:
         parsed = dashboard.parse_report(SAMPLE_REPORT)
         out = dashboard.render(parsed, METADATA)
         assert "📄" not in out
+
+    def test_thumb_gap_line_rendered_when_thumbnail_block_present(self):
+        parsed = dashboard.parse_report(THUMBNAIL_REPORT)
+        out = dashboard.render(
+            parsed,
+            {"title": "Make $10K/Day With This One Trick",
+             "channel": "ScammyTube", "duration_seconds": 720},
+        )
+        assert "Title gap HIGH" in out
+        assert "Thumb gap HIGH" in out
+
+    def test_thumb_gap_line_omitted_when_no_thumbnail_block(self):
+        """Silent fallback: dashboard layout unchanged when thumbnail axis absent."""
+        parsed = dashboard.parse_report(SAMPLE_REPORT)
+        out = dashboard.render(parsed, METADATA)
+        assert "Thumb gap" not in out
+        assert "Gap MEDIUM" in out  # original single-axis line preserved
+
+    def test_dashboard_prioritizes_thumb_flag_in_top_two(self):
+        """When [thumb] flags exist, surface one in the truncated 2-flag slot."""
+        parsed = dashboard.parse_report(THUMBNAIL_REPORT)
+        out = dashboard.render(
+            parsed,
+            {"title": "x", "channel": "y", "duration_seconds": 720},
+        )
+        # 4 flags total — first two rendered should be one [thumb] then one transcript.
+        thumb_lines = [
+            line for line in out.splitlines()
+            if "[thumb]" in line and "$" in line
+        ]
+        assert len(thumb_lines) == 1
+        # And one transcript-flag bullet is present.
+        transcript_lines = [
+            line for line in out.splitlines()
+            if "[0:30]" in line and "vague claim" in line.lower()
+        ]
+        assert len(transcript_lines) == 1
+        # The 4th flag (act now) should NOT appear.
+        assert "act now" not in out
+
+    def test_select_dashboard_flags_with_no_thumb(self):
+        flags = [
+            {"timestamp": "0:01", "quote": "a", "reason": "r1"},
+            {"timestamp": "0:02", "quote": "b", "reason": "r2"},
+            {"timestamp": "0:03", "quote": "c", "reason": "r3"},
+        ]
+        # Falls back to first 2 in original order.
+        picked = dashboard._select_dashboard_flags(flags, limit=2)
+        assert [f["timestamp"] for f in picked] == ["0:01", "0:02"]
+
+    def test_select_dashboard_flags_only_thumb(self):
+        flags = [
+            {"timestamp": "thumb", "quote": "a", "reason": "r1"},
+            {"timestamp": "thumb", "quote": "b", "reason": "r2"},
+        ]
+        picked = dashboard._select_dashboard_flags(flags, limit=2)
+        assert len(picked) == 2
+        assert all(f["timestamp"] == "thumb" for f in picked)
 
 
 # ----------------------------------------------------------------------------

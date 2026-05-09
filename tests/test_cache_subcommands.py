@@ -50,19 +50,51 @@ class TestReadWriteRoundTrip:
         assert read_result.returncode == 0
         assert json.loads(read_result.stdout) == output
 
-    def test_write_pass3_string_output_roundtrips(self, tmp_path):
-        inputs = {"metadata": {"title": "x"}, "pass1": {}, "pass2": {}}
+    def test_write_pass3_thumbnail_json_roundtrips(self, tmp_path):
+        inputs = {"metadata": {"title": "x", "channel": "y", "thumbnail_sha256": "abc"}}
+        output = {
+            "video_id": "thumb11charsx",
+            "vision_available": True,
+            "text_overlays": ["$10K/DAY"],
+            "deception_signals": [{"signal": "extreme number", "severity": "HIGH"}],
+        }
+        prompt_path = REPO_ROOT / "prompts" / "extract_thumbnail.md"
+        wr = _run_cli(
+            "write", "3", "thumb11charsx", str(prompt_path),
+            "--cache-dir", str(tmp_path),
+            stdin=json.dumps({"inputs": inputs, "output": output}),
+        )
+        assert wr.returncode == 0
+        written = Path(wr.stdout.strip())
+        assert written == tmp_path / "thumb11charsx-pass3.json"
+
+        rr = _run_cli(
+            "read", "3", "thumb11charsx", str(prompt_path),
+            "--cache-dir", str(tmp_path), stdin=json.dumps(inputs),
+        )
+        assert rr.returncode == 0
+        assert json.loads(rr.stdout) == output
+
+    def test_write_pass4_string_output_roundtrips(self, tmp_path):
+        inputs = {
+            "metadata": {"title": "x"},
+            "pass1": {},
+            "pass2": {},
+            "passthumb": {"vision_available": False},
+        }
         output = "VERDICT: WATCH [9/10]\n\nfull report markdown"
         payload = json.dumps({"inputs": inputs, "output": output})
         prompt_path = REPO_ROOT / "prompts" / "generate_verdict.md"
         wr = _run_cli(
-            "write", "3", "verdict11xxx", str(prompt_path),
+            "write", "4", "verdict11xxx", str(prompt_path),
             "--cache-dir", str(tmp_path), stdin=payload,
         )
         assert wr.returncode == 0
+        written = Path(wr.stdout.strip())
+        assert written == tmp_path / "verdict11xxx-pass4.json"
 
         rr = _run_cli(
-            "read", "3", "verdict11xxx", str(prompt_path),
+            "read", "4", "verdict11xxx", str(prompt_path),
             "--cache-dir", str(tmp_path), stdin=json.dumps(inputs),
         )
         assert rr.returncode == 0

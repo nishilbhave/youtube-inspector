@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
-"""dashboard.py — render the verdict dashboard from a Pass 3 report.
+"""dashboard.py — render the verdict dashboard from a Pass 4 report.
 
 Part of the youtube-verdict skill. No LLM calls. No network calls.
 
-Reads the Pass 3 markdown report from stdin (the unwrapped report — no outer
+Reads the Pass 4 markdown report from stdin (the unwrapped report — no outer
 ``` fence) and reads the fetch.py transcript cache for title/channel/duration.
-Prints the formatted dashboard to stdout exactly per SKILL.md Step 7:
+Prints the formatted dashboard to stdout exactly per SKILL.md Step 8:
 
     - 54-char ━ borders
     - Two-space indent on every content line
@@ -19,7 +19,7 @@ Prints the formatted dashboard to stdout exactly per SKILL.md Step 7:
 
 CLI:
     python3 scripts/dashboard.py <video_id> [--cache-dir DIR] [--report-path PATH]
-        Stdin = the Pass 3 report markdown (no outer fence).
+        Stdin = the Pass 4 report markdown (no outer fence).
         --report-path is optional and only used to fill in the file footer
         path; if omitted the footer line is omitted.
 
@@ -44,7 +44,7 @@ WRAP_WIDTH = 60
 STATE_BADGE = {"WATCH": "✅", "SKIP": "❌"}
 STATE_PROSE_GLYPH = {"WATCH": "✨", "SKIP": "🚫"}
 
-# Pass 3 report headers, in document order. Used both as terminators when
+# Pass 4 report headers, in document order. Used both as terminators when
 # slicing one section's body and as the lookup keys for `_section_block`.
 # `BEST` and `VERDICT` are matched as line prefixes since their headers
 # include variable suffixes (`BEST 6 MINUTES (if you must watch)`,
@@ -54,6 +54,7 @@ KNOWN_HEADERS = (
     "VERDICT:",
     "WHAT IT ACTUALLY DELIVERS",
     "TITLE vs CONTENT",
+    "THUMBNAIL vs CONTENT",
     "SUBSTANCE DENSITY",
     "WHO SHOULD WATCH",
     "WHO SHOULD SKIP",
@@ -113,8 +114,27 @@ def _truncate(text: str, limit: int) -> str:
     return text if len(text) <= limit else text[: limit - 1].rstrip() + "…"
 
 
+def _select_dashboard_flags(flags: list[dict], limit: int = 2) -> list[dict]:
+    """Pick which flags to surface in the truncated dashboard slot.
+
+    The dashboard only fits ``limit`` flag bullets. If the report has any
+    ``[thumb]`` flags, surface one of them first so both deception axes
+    (transcript + thumbnail) show in the inline summary. Within each
+    bucket, preserve the report's original order.
+    """
+    if not flags:
+        return []
+    thumb_flags = [f for f in flags if f.get("timestamp") == "thumb"]
+    other_flags = [f for f in flags if f.get("timestamp") != "thumb"]
+    if thumb_flags and other_flags and limit >= 2:
+        return [thumb_flags[0], other_flags[0]] + (
+            thumb_flags[1:] + other_flags[1:]
+        )[: limit - 2]
+    return (thumb_flags + other_flags)[:limit]
+
+
 def parse_report(report: str) -> dict:
-    """Extract fields from the Pass 3 markdown report."""
+    """Extract fields from the Pass 4 markdown report."""
     fields: dict = {}
 
     m = re.search(r"^VERDICT:\s+(\w+)\s+\[(\d+)/10\]", report, re.MULTILINE)
@@ -123,8 +143,16 @@ def parse_report(report: str) -> dict:
     fields["verdict"] = m.group(1).upper()
     fields["score"] = int(m.group(2))
 
-    m = re.search(r"^Gap:\s+(\w+)", report, re.MULTILINE)
-    fields["gap"] = m.group(1).upper() if m else "LOW"
+    title_block = _section_block(report, "TITLE vs CONTENT")
+    title_gap = re.search(r"^Gap:\s+(\w+)", title_block, re.MULTILINE)
+    fields["gap"] = title_gap.group(1).upper() if title_gap else "LOW"
+
+    thumb_block = _section_block(report, "THUMBNAIL vs CONTENT")
+    if thumb_block:
+        thumb_gap = re.search(r"^Gap:\s+(\w+)", thumb_block, re.MULTILINE)
+        fields["thumb_gap"] = thumb_gap.group(1).upper() if thumb_gap else "LOW"
+    else:
+        fields["thumb_gap"] = None
 
     fields["executive_verdict"] = _section_block(report, "EXECUTIVE VERDICT")
 
@@ -179,13 +207,20 @@ def render(parsed: dict, metadata: dict, report_path: str | None = None) -> str:
     glyph = STATE_PROSE_GLYPH.get(verdict, "•")
     score = parsed["score"]
     gap = parsed["gap"]
+    thumb_gap = parsed.get("thumb_gap")
     duration = _human_duration(metadata.get("duration_seconds", 0))
     title = metadata.get("title", "(unknown title)")
     channel = metadata.get("channel", "(unknown channel)")
 
     out: list[str] = []
     out.append(BORDER)
-    out.append(f"{INDENT}{badge}  {verdict}  ·  {score}/10  ·  Gap {gap}")
+    if thumb_gap:
+        out.append(
+            f"{INDENT}{badge}  {verdict}  ·  {score}/10  ·  "
+            f"Title gap {gap}  ·  Thumb gap {thumb_gap}"
+        )
+    else:
+        out.append(f"{INDENT}{badge}  {verdict}  ·  {score}/10  ·  Gap {gap}")
     out.append(BORDER)
     out.append("")
 
@@ -226,7 +261,7 @@ def render(parsed: dict, metadata: dict, report_path: str | None = None) -> str:
     if flags:
         out.append("")
         out.append(f"{INDENT}🚩 Flags ({len(flags)})")
-        for flag in flags[:2]:
+        for flag in _select_dashboard_flags(flags, limit=2):
             quote = _truncate(flag["quote"], 40)
             out.append(f'{INDENT}   [{flag["timestamp"]}] "{quote}"   — {flag["reason"]}')
 

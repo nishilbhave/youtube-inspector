@@ -7,11 +7,15 @@ description: |
   "is this YouTube video any good", or wants a pre-watch summary that ends
   in a recommendation. Returns WATCH or SKIP with a 0–10 score (5 and 6 disallowed — the tool commits), a
   best-minutes range, substance density (concrete vs vague claims, evidence
-  shown, pitches), and a who-should-watch / who-should-skip split. Every
-  flag cites a verbatim transcript quote with a timestamp — no hallucinated
-  criticism. For neutral summaries with no judgment use `youtube-summary`
-  instead. Saves the full report to ~/youtube-reports/ and prints a
-  one-glance dashboard inline.
+  shown, pitches), and a who-should-watch / who-should-skip split. Also
+  catches **clickbait thumbnails** — when the host LLM has vision capability,
+  the skill extracts text overlays and visual elements from the thumbnail
+  and flags any specific outcome promise (e.g. "$10K/DAY") that the
+  transcript doesn't substantiate. Every flag cites a verbatim quote — from
+  the transcript with a timestamp, or from the thumbnail with the slot
+  `[thumb]`. No hallucinated criticism. For neutral summaries with no
+  judgment use `youtube-summary` instead. Saves the full report to
+  ~/youtube-reports/ and prints a one-glance dashboard inline.
 ---
 
 # youtube-verdict — pre-watch decision tool for YouTube videos
@@ -83,8 +87,13 @@ The success JSON has these keys (you'll need them later):
 video_id, url, title, channel, channel_id,
 duration_seconds, view_count, upload_date, language,
 transcript[]      // each segment: {start, duration, text}
-fetched_at, slug
+fetched_at, slug,
+thumbnail_url,                          // best variant ≤ 1280 px wide
+thumbnail_path?, thumbnail_sha256?      // present only when --cache succeeded
+                                        // in downloading the JPG to .cache/{video_id}.jpg
 ```
+
+The two `thumbnail_*` fields are populated by `--cache`: fetch.py downloads the JPG to `~/youtube-reports/.cache/{video_id}.jpg` and adds `thumbnail_path` (absolute path) and `thumbnail_sha256` (hex of the bytes) to the cached JSON. On any download failure (404, timeout, network error) fetch.py logs a warning to stderr and the two fields are simply absent — Pass 3 detects this and sets `vision_available: false`.
 
 ### Step 3 — Pass 1: Structure extraction
 
@@ -162,26 +171,51 @@ Exit 0 = clean. Exit 1 = at least one quote isn't verbatim; stderr lists each mi
 
 `Pass 2: cache hit` or `Pass 2: ran (N items inventoried)` (where N is the total of all `concrete_claims` / `vague_claims` / `evidence_shown` / `pitches` across sections).
 
-### Step 5 — Pass 3: Synthesis
+### Step 5 — Pass 3: Thumbnail analysis
 
 Cache file: `~/youtube-reports/.cache/{video_id}-pass3.json`.
 
-1. Try a cache read with the canonical Pass 3 inputs:
+This pass extracts the structured "promise" of the thumbnail — text overlays, visual elements, deception signals — so Pass 4 can compare it against what Pass 2 found in the transcript.
+
+**Vision capability gate.** If your host LLM cannot interpret images, the prompt instructs you to return `{"vision_available": false}` as the entire output. The skill detects this sentinel in Pass 4 and silently omits the thumbnail block from the report.
+
+**No `thumbnail_path` in the fetch JSON?** If `thumbnail_path` is absent (download failed in Step 2) or `thumbnail_url` is empty, skip the LLM call entirely and use `{"video_id":"<id>","vision_available":false}` as the Pass 3 output. Still write it to the cache so re-runs are stable.
+
+1. Try a cache read with the canonical Pass 3 inputs (the `thumbnail_sha256` is the cache stability key — same image bytes across re-runs → same hash → cache hit; if the creator changes the thumbnail, the bytes change and the cache invalidates):
    ```
-   echo '{"metadata": {title,channel,duration_seconds,view_count,upload_date}, "pass1": <Pass 1>, "pass2": <Pass 2>}' | \
-     python3 "<SKILL_DIR>/scripts/cache.py" read 3 <video_id> "<SKILL_DIR>/prompts/generate_verdict.md"
+   echo '{"metadata": {"title": <title>, "channel": <channel>, "thumbnail_sha256": <sha256-or-empty-string>}}' | \
+     python3 "<SKILL_DIR>/scripts/cache.py" read 3 <video_id> "<SKILL_DIR>/prompts/extract_thumbnail.md"
+   ```
+   Exit 0 = HIT (parse output JSON, continue to Step 6). Exit 1 = MISS.
+
+2. On MISS, read `prompts/extract_thumbnail.md`. The prompt's input is `{"video_id": <id>, "title": <title>, "channel": <channel>, "thumbnail_path": <absolute path to the .jpg>}`. Apply it as a single LLM pass — your host's vision capability reads the image at `thumbnail_path`. The model returns one JSON object matching the schema in the prompt (or just `{"vision_available": false}`). Then write the cache wrapper:
+   ```
+   echo '{"inputs": <same canonical inputs>, "output": <Pass 3 JSON>}' | \
+     python3 "<SKILL_DIR>/scripts/cache.py" write 3 <video_id> "<SKILL_DIR>/prompts/extract_thumbnail.md"
+   ```
+
+Tell the user one short line: `Pass 3: cache hit`, `Pass 3: ran (N overlays, M signals)`, or `Pass 3: skipped (no thumbnail / no vision)`.
+
+### Step 6 — Pass 4: Synthesis
+
+Cache file: `~/youtube-reports/.cache/{video_id}-pass4.json`.
+
+1. Try a cache read with the canonical Pass 4 inputs:
+   ```
+   echo '{"metadata": {title,channel,duration_seconds,view_count,upload_date}, "pass1": <Pass 1>, "pass2": <Pass 2>, "passthumb": <Pass 3>}' | \
+     python3 "<SKILL_DIR>/scripts/cache.py" read 4 <video_id> "<SKILL_DIR>/prompts/generate_verdict.md"
    ```
    Exit 0 = HIT (stdout is the report markdown). Exit 1 = MISS.
 
-2. On MISS, read `prompts/generate_verdict.md`, apply it to the canonical inputs as a single LLM pass. **Pass 3 does not need the transcript at all** — every flag cites a quote already substring-matched by Pass 2. Do not Read `~/youtube-reports/.cache/{video_id}.json` for this pass. The model's response is markdown wrapped in a single fenced code block; strip the outer ` ``` ` fence — the inner text is the report. Then write the cache wrapper with the stripped report as a JSON string:
+2. On MISS, read `prompts/generate_verdict.md`, apply it to the canonical inputs as a single LLM pass. **Pass 4 does not need the transcript at all** — every flag cites a quote already substring-matched by Pass 2 or a string from Pass 3. Do not Read `~/youtube-reports/.cache/{video_id}.json` for this pass. The model's response is markdown wrapped in a single fenced code block; strip the outer ` ``` ` fence — the inner text is the report. Then write the cache wrapper with the stripped report as a JSON string:
    ```
    echo '{"inputs": <same canonical inputs>, "output": "<stripped report markdown as JSON string>"}' | \
-     python3 "<SKILL_DIR>/scripts/cache.py" write 3 <video_id> "<SKILL_DIR>/prompts/generate_verdict.md"
+     python3 "<SKILL_DIR>/scripts/cache.py" write 4 <video_id> "<SKILL_DIR>/prompts/generate_verdict.md"
    ```
 
-Tell the user: `Pass 3: cache hit` or `Pass 3: ran` plus the verdict line (e.g. `→ SKIP 3/10` or `→ WATCH 8/10`).
+Tell the user: `Pass 4: cache hit` or `Pass 4: ran` plus the verdict line (e.g. `→ SKIP 3/10` or `→ WATCH 8/10`).
 
-### Step 6 — Write the final report
+### Step 7 — Write the final report
 
 Build the filename from the Step 2 fetch JSON:
 
@@ -189,21 +223,21 @@ Build the filename from the Step 2 fetch JSON:
 - `{slug}` — the `slug` field from the fetch JSON (already deterministic, lowercase, ≤ 60 chars; falls back to `untitled` for non-Latin titles).
 - `{video_id}` — the 11-char ID.
 
-Write the unwrapped Pass 3 report (the markdown text from the cache `output`) to:
+Write the unwrapped Pass 4 report (the markdown text from the cache `output`) to:
 
 ```
 ~/youtube-reports/{date}-{slug}-{video_id}.md
 ```
 
-Always overwrite if it exists. Re-running on the same video produces an identical filename — `--cache` keeps `fetched_at` stable, so no orphan files accumulate. Do **not** print the full report inline — it's a structured document meant for the file. Terminal output is the dashboard in Step 7.
+Always overwrite if it exists. Re-running on the same video produces an identical filename — `--cache` keeps `fetched_at` stable, so no orphan files accumulate. Do **not** print the full report inline — it's a structured document meant for the file. Terminal output is the dashboard in Step 8.
 
-### Step 7 — Show the verdict dashboard inline
+### Step 8 — Show the verdict dashboard inline
 
-Render the dashboard via the bundled renderer — do not format it by hand. The renderer handles all the layout details (54-char ━ borders, soft-wrap at 60 cols, badge selection, omit-Best-minutes / omit-Flags logic, 40-char quote truncation):
+Render the dashboard via the bundled renderer — do not format it by hand. The renderer handles all the layout details (54-char ━ borders, soft-wrap at 60 cols, badge selection, omit-Best-minutes / omit-Flags logic, 40-char quote truncation, thumbnail-gap line when present, prioritizing one `[thumb]` flag in the truncated 2-flag list):
 
 ```
-echo '<the unwrapped Pass 3 report markdown>' | \
-  python3 "<SKILL_DIR>/scripts/dashboard.py" <video_id> --report-path "<the path you wrote in Step 6>"
+echo '<the unwrapped Pass 4 report markdown>' | \
+  python3 "<SKILL_DIR>/scripts/dashboard.py" <video_id> --report-path "<the path you wrote in Step 7>"
 ```
 
 The renderer reads `~/youtube-reports/.cache/{video_id}.json` for title/channel/duration. Print its stdout directly to the user.
@@ -228,24 +262,26 @@ All cache files live under `~/youtube-reports/.cache/`:
 | Filename | Owner | Contents |
 |---|---|---|
 | `{video_id}.json` | `scripts/fetch.py` | Transcript JSON (or rejection JSON with `error` key) |
-| `{video_id}-pass1.json` | this skill | Pass 1 cache wrapper |
-| `{video_id}-pass2.json` | this skill | Pass 2 cache wrapper |
-| `{video_id}-pass3.json` | this skill | Pass 3 cache wrapper |
+| `{video_id}.jpg` | `scripts/fetch.py` | Downloaded thumbnail bytes (when `--cache` succeeds) |
+| `{video_id}-pass1.json` | this skill | Pass 1 cache wrapper (structure) |
+| `{video_id}-pass2.json` | this skill | Pass 2 cache wrapper (claims/evidence) |
+| `{video_id}-pass3.json` | this skill | Pass 3 cache wrapper (thumbnail analysis) |
+| `{video_id}-pass4.json` | this skill | Pass 4 cache wrapper (synthesis / verdict report) |
 
-### Cache wrapper schema (Pass N, N ∈ {1, 2, 3})
+### Cache wrapper schema (Pass N, N ∈ {1, 2, 3, 4})
 
 ```json
 {
   "video_id": "<11-char id>",
-  "pass": <1 | 2 | 3>,
+  "pass": <1 | 2 | 3 | 4>,
   "prompt_hash": "<sha256 hex string, lowercase, 64 chars>",
   "inputs_hash": "<sha256 hex string, lowercase, 64 chars>",
-  "output": <object for pass 1 & 2; string for pass 3>,
+  "output": <object for pass 1, 2, & 3; string for pass 4>,
   "produced_at": "<ISO 8601 UTC, ending in Z>"
 }
 ```
 
-Use `cache.py read` and `cache.py write` (Steps 3–5) — they handle wrapper construction, hashing, hit detection, and atomic writes for you.
+Use `cache.py read` and `cache.py write` (Steps 3–6) — they handle wrapper construction, hashing, hit detection, and atomic writes for you.
 
 ### How the `cache.py` subcommands map to the protocol
 
@@ -272,24 +308,27 @@ Per-pass canonical inputs:
 |---|---|
 | 1 | `{"transcript": <full fetch.py JSON>}` |
 | 2 | `{"pass1": <Pass 1 output>, "transcript": <full fetch.py JSON>}` |
-| 3 | `{"metadata": {"title":…, "channel":…, "duration_seconds":…, "view_count":…, "upload_date":…}, "pass1": <Pass 1 output>, "pass2": <Pass 2 output>}` |
+| 3 | `{"metadata": {"title": <title>, "channel": <channel>, "thumbnail_sha256": <sha256-or-empty-string>}}` |
+| 4 | `{"metadata": {"title":…, "channel":…, "duration_seconds":…, "view_count":…, "upload_date":…}, "pass1": <Pass 1 output>, "pass2": <Pass 2 output>, "passthumb": <Pass 3 output>}` |
 
-The whole transcript object (including `fetched_at`) goes into Passes 1 and 2's input. In practice `--cache` keeps `fetched_at` stable across re-runs so this doesn't cause spurious misses.
+The whole transcript object (including `fetched_at`) goes into Passes 1 and 2's input. In practice `--cache` keeps `fetched_at` stable across re-runs so this doesn't cause spurious misses. For Pass 3, `thumbnail_sha256` is the stability key: same image bytes → same hash → cache hit; if the creator updates the thumbnail, the bytes change and Pass 3 re-extracts (and Pass 4 cascades).
 
 ### Invalidation events (all handled automatically by `cache.py read`)
 
 - Prompt file edited → `prompt_hash` mismatch → MISS.
-- Transcript re-fetched with different segments → `inputs_hash` mismatch on Pass 1 → cascades through Pass 2 and Pass 3.
+- Transcript re-fetched with different segments → `inputs_hash` mismatch on Pass 1 → cascades through Pass 2 and Pass 4.
+- Thumbnail bytes change (creator updated thumbnail) → Pass 3 `inputs_hash` mismatch → cascades to Pass 4.
 - File deleted by hand → MISS.
 - File corrupted (bad JSON, missing fields) → MISS.
-- Pass 1 output changes (re-run) → Pass 2's `inputs_hash` mismatches → cascades to Pass 3.
+- Pass 1 output changes (re-run) → Pass 2's `inputs_hash` mismatches → cascades to Pass 4.
 
-You **never** overwrite `~/youtube-reports/{date}-{slug}-{video_id}.md` from cache. Step 6 only writes that file when Step 5 produces a Pass 3 result (whether from cache or fresh). The user's final report is always derived from a Pass 3 cache hit or a fresh Pass 3 run — never stale.
+You **never** overwrite `~/youtube-reports/{date}-{slug}-{video_id}.md` from cache. Step 7 only writes that file when Step 6 produces a Pass 4 result (whether from cache or fresh). The user's final report is always derived from a Pass 4 cache hit or a fresh Pass 4 run — never stale.
 
 ## Cross-platform notes
 
-- Steps 3, 4, and 5 use your own LLM and auth. No `ANTHROPIC_API_KEY` / `OPENAI_API_KEY` / vendor key is required from the user.
-- The subprocess calls are: `doctor.py` (Step 1.5), `fetch.py` (Step 2), `cache.py read` / `cache.py write` (Steps 3–5), `segments.py` (Step 4 inside the per-section loop), `cache.py verify-quotes` (optional, Step 4), `dashboard.py` (Step 7). If your host can't shell out, importing each module from `<SKILL_DIR>/scripts/` is equivalent.
+- Steps 3, 4, 5, and 6 use your own LLM and auth. No `ANTHROPIC_API_KEY` / `OPENAI_API_KEY` / vendor key is required from the user.
+- **Pass 3 (thumbnail) needs vision capability.** Most coding-agent hosts (Claude Code, Cursor, Codex, Antigravity, Gemini CLI) route through vision-capable models and can read the JPG at `thumbnail_path`. If your host genuinely cannot interpret images, the prompt instructs you to return `{"vision_available": false}` — Pass 4 detects this and silently omits the thumbnail block from the report. Don't fabricate thumbnail content.
+- The subprocess calls are: `doctor.py` (Step 1.5), `fetch.py` (Step 2), `cache.py read` / `cache.py write` (Steps 3–6), `segments.py` (Step 4 inside the per-section loop), `cache.py verify-quotes` (optional, Step 4), `dashboard.py` (Step 8). If your host can't shell out, importing each module from `<SKILL_DIR>/scripts/` is equivalent.
 - All cache wrapper construction goes through `cache.py write` so per-host JSON quirks (key ordering, whitespace, escaping) cannot produce a spurious miss on the next run.
 - If `python3 "<SKILL_DIR>/scripts/fetch.py"` ever fails with `ModuleNotFoundError`, run `python3 "<SKILL_DIR>/scripts/doctor.py"` for the exact `pip3 install` command for the user's Python (Step 1.5 should have caught this already).
 
@@ -297,4 +336,5 @@ You **never** overwrite `~/youtube-reports/{date}-{slug}-{video_id}.md` from cac
 
 - Pass 1 output: JSON object `{video_id, sections[]}` — see `prompts/extract_structure.md`.
 - Pass 2 output: JSON object `{video_id, by_section}` — see `prompts/inventory_claims.md`.
-- Pass 3 output: a single fenced markdown block following the report layout in `prompts/generate_verdict.md`. Every flag MUST cite a transcript timestamp + verbatim quote drawn from Pass 2 — this is the skill's hard rule. If the model can't quote it, it can't flag it.
+- Pass 3 output: JSON object `{video_id, vision_available, …}` — see `prompts/extract_thumbnail.md`. Returns `{"vision_available": false}` when the host has no vision capability or the thumbnail download failed.
+- Pass 4 output: a single fenced markdown block following the report layout in `prompts/generate_verdict.md`. Every flag MUST cite either a transcript timestamp + verbatim quote drawn from Pass 2, or the slot `[thumb]` + a verbatim string from Pass 3 (`text_overlays` or `visual_elements[].element`). If the model can't quote it, it can't flag it.

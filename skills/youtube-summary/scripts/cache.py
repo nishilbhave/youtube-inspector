@@ -29,7 +29,7 @@ CLI:
     python3 scripts/cache.py read <pass> <video_id> <prompt-path> [--cache-dir DIR]
         Read canonical inputs JSON from stdin. If a matching cache wrapper
         exists at ~/youtube-reports/.cache/{video_id}-pass{N}.json, print its
-        `output` field to stdout (JSON for pass 1/2, raw string for pass 3)
+        `output` field to stdout (JSON for pass 1/2/3, raw string for pass 4)
         and exit 0. On miss, print a one-word reason to stderr (`not-found`,
         `corrupt`, `prompt-mismatch`, `inputs-mismatch`, `field-missing`,
         `wrong-pass`, `wrong-video`) and exit 1.
@@ -327,7 +327,12 @@ def main(argv: list[str] | None = None) -> int:
         "read",
         help="Read pass cache; print output on hit, exit 1 on miss",
     )
-    p_read.add_argument("pass_n", type=int, choices=[1, 2, 3], help="Pass number (1, 2, or 3)")
+    p_read.add_argument(
+        "pass_n",
+        type=int,
+        choices=[1, 2, 3, 4],
+        help="Pass number (1, 2, 3, or 4)",
+    )
     p_read.add_argument("video_id", help="11-char YouTube video ID")
     p_read.add_argument("prompt_path", help="Path to the prompt file used by this pass")
     p_read.add_argument(
@@ -342,7 +347,7 @@ def main(argv: list[str] | None = None) -> int:
         "write",
         help="Write pass cache wrapper; stdin = {inputs, output}",
     )
-    p_write.add_argument("pass_n", type=int, choices=[1, 2, 3])
+    p_write.add_argument("pass_n", type=int, choices=[1, 2, 3, 4])
     p_write.add_argument("video_id")
     p_write.add_argument("prompt_path")
     p_write.add_argument(

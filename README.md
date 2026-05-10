@@ -13,7 +13,7 @@
 
 Four [agent skills](https://skills.sh) that turn any YouTube URL into a watch-decision, a neutral summary, an artifact list, or a claim inventory — vendor-neutral, no API keys, with verbatim transcript citations on every flag and claim.
 
-- **Pre-watch verdict** — WATCH / OKAY / SKIP with a 0–10 score, best-minutes range, and who-should-watch / who-should-skip split.
+- **Pre-watch verdict** — WATCH or SKIP with a 0–10 score (5 and 6 disallowed), title-vs-content and thumbnail-vs-content gap analysis, best-minutes range, who-should-watch / who-should-skip split, and three follow-up questions.
 - **Section-by-section TL;DR** — 3–4 sentence summary, per-section breakdown, skippable-segment markers for pitches and outros.
 - **Categorized artifact extraction** — links, code, books, tools, and people referenced in the video, each with timestamp and verbatim mention.
 - **Research-grade claim inventory** — concrete claims, vague claims, evidence shown, and pitches, every entry timestamped and quoted verbatim.
@@ -24,31 +24,48 @@ Four [agent skills](https://skills.sh) that turn any YouTube URL into a watch-de
 
 ```
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-  ⚠️  OKAY  ·  5/10  ·  Gap MEDIUM
+  ❌  SKIP  ·  3/10  ·  Title gap HIGH  ·  Thumb gap HIGH
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-  ⏩ A short pitch wrapped around three real numbers and a vague stack
-     reveal. Useful as a beginner-level intro to digital-product income;
-     the actual workflow is deferred to upcoming videos.
+  🚫 The $5,219 case study at the center of this video stays
+     redacted: the actual store, the influencer who drove seed
+     traffic, the Facebook ad account, and the ad spend are all
+     withheld on camera. What remains is a generic
+     Facebook-pixel-to-lookalike-audience tutorial wrapped in
+     affiliate plugs.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-  The Lazy Way I Make Money With AI (2026)
-  Travis Nicholson  ·  3:48
+  I Just Used Claude AI To Make $5,000 In 24 Hours Online
+  Money Talk With Leon  ·  22:44  ·  168,099 views
 
-  🎯 Best minutes   [1:10–2:25] — Stack reveal and revenue progression
-  📊 Substance      29 concrete · 11 vague · 4 evidence
-  👥 Watch if       Beginners curious about Canva + ChatGPT + Gumroad
-  👥 Skip if        Viewers wanting an actual step-by-step workflow
+  🎯 Best minutes   [17:00–22:00] — Concrete walkthrough of building add-to-cart custom audiences and a 5% lookalike for the parenting niche.
+  📊 Substance      15 concrete · 3 vague · 2 evidence · 5 pitches
+  📐 Title says     A verifiable 24-hour case study showing how Claude AI generated $5,000.
+     Delivers      A redacted narrative around the dollar figure plus a generic Facebook pixel + lookalike audience walkthrough.
+  🖼️  Thumbnail     A Claude AI + PDF product method that produces $5,000 in 24 hours.
+     Delivers      The headline figure is repeated verbally; no unredacted Stripe, Shopify, or ad-account screenshot ties it to a real store.
+  👥 Watch if       Marketers who want a fast verbal recap of the Facebook custom-audience to lookalike-audience workflow and don't need verified case-study numbers.
+  👥 Skip if        Anyone hoping to verify the $5,219 figure, see an unredacted Shopify or ad account, or learn what it actually cost to generate the result.
 
   🚩 Flags (6)
-     [0:02] "I've made over $26,000…"          — Headline revenue, no proof
-     [0:04] "I work maybe 1 hour per week…"    — "Lazy" claim asserted only
+     [thumb] "$5,000 in 24 Hours"   — Headline dollar number on the thumbnail; no unredacted dashboard ties it to a real store anywhere in the video.
+     [5:14] "$5,219 in 24 hours"   — Central revenue claim repeats throughout, with the actual store and screenshot deliberately hidden.
+     [8:18] "I had a 3.67 conversion rate"   — On-screen conversion-rate proof is on a proxy account the creator admits is not the real store.
 
-  📄 ~/youtube-reports/2026-05-05-the-lazy-way-...-n0phBDPz8z0.md
+  ❓ Ask next
+     1. What was the gross ad spend behind the $5,219 day, and what
+        was the resulting net margin after Shopify, payment, and
+        Facebook fees?
+     2. Which redacted product, store, and influencer drove the seed
+        traffic — without those, the case study can't be replicated.
+     3. Does the 3.67% conversion rate on the proxy store hold on
+        the real store, or only on a low-volume staging account?
+
+  📄 ~/youtube-reports/2026-05-09-i-just-used-claude-ai-...-cqY6_zyLt1Q.md
 ```
 
-Saved to `~/youtube-reports/<date>-<slug>-<video_id>.md`. Same shape across all four skills (verdict adds `WATCH/OKAY/SKIP`; tldr/extract/claims swap in their own dashboards).
+Saved to `~/youtube-reports/<date>-<slug>-<video_id>.md`. Same shape across all four skills (verdict adds `WATCH/SKIP`; tldr/extract/claims swap in their own dashboards).
 
 ## Install
 
@@ -84,7 +101,7 @@ Each skill runs `scripts/doctor.py` automatically before its first fetch (Step 1
 
 ## Skills
 
-- **`youtube-verdict`** — *"is this worth watching?"* → WATCH / OKAY / SKIP, 0–10 score, best-minutes range, substance density, who-should-watch / who-should-skip split, every flag a timestamped verbatim quote.
+- **`youtube-verdict`** — *"is this worth watching?"* → WATCH or SKIP, 0–10 score (5/6 disallowed), title-vs-content and thumbnail-vs-content gap, best-minutes range, substance density, who-should-watch / who-should-skip split, three follow-up questions, every flag a timestamped verbatim quote.
 - **`youtube-summary`** — *"summarize this video"* / *"tl;dr"* → 3–4 sentence TL;DR, section-by-section breakdown, top takeaways, skippable-section markers. Factual and neutral — never recommends watching or skipping.
 - **`youtube-extract`** — *"what tools / books / links did they mention?"* → categorized list of links, code, books, tools, and people, each with timestamp and verbatim mention.
 - **`youtube-claims`** — *"list every claim this video makes"* → research-grade chronological inventory of concrete claims, vague claims, evidence shown, and pitches, with timestamps and verbatim quotes. V1 is inventory-only; no external verification.
